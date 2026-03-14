@@ -226,7 +226,7 @@ const App = (() => {
               <span class="card-label">THINK<br>TWICE</span>
             </div>
             <div class="card-front">
-              <span class="bias-name">${sanitize(card.biasData.name)}</span>
+              <span class="bias-name">???</span>
             </div>
           </div>
         `;

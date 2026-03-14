@@ -88,11 +88,13 @@ const Players = (() => {
       slot.className = 'player-slot';
       slot.dataset.id = player.id;
       const lockIcon = player.pin ? ' 🔒' : '';
+      const lb = Storage.getLeaderboard();
+      const allTime = lb[player.id] ? lb[player.id].totalPoints : 0;
       slot.innerHTML = `
         ${iconHTML(player)}
         <div class="info">
           <div class="name">${sanitize(player.name)}${lockIcon}</div>
-          <div class="age">Age ${player.age} · Tier ${getAgeTier(player.age)}</div>
+          <div class="age">${allTime} PTS</div>
         </div>
         <span class="check">✓</span>
       `;
