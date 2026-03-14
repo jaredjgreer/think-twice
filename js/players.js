@@ -6,6 +6,7 @@
 const Players = (() => {
 
   const ICONS = [
+    // Geometric icons
     { char: '★', color: 'yellow' },
     { char: '◆', color: 'cyan' },
     { char: '▲', color: 'pink' },
@@ -26,6 +27,27 @@ const Players = (() => {
     { char: '⊞', color: 'pink' },
     { char: '▣', color: 'yellow' },
     { char: '◎', color: 'green' },
+    // Emojis
+    { char: '🧠', color: 'pink', emoji: true },
+    { char: '🎮', color: 'green', emoji: true },
+    { char: '🚀', color: 'cyan', emoji: true },
+    { char: '⚡', color: 'yellow', emoji: true },
+    { char: '🔥', color: 'pink', emoji: true },
+    { char: '👾', color: 'green', emoji: true },
+    { char: '🤖', color: 'cyan', emoji: true },
+    { char: '👽', color: 'green', emoji: true },
+    { char: '🎯', color: 'pink', emoji: true },
+    { char: '💡', color: 'yellow', emoji: true },
+    { char: '🦊', color: 'yellow', emoji: true },
+    { char: '🐉', color: 'green', emoji: true },
+    { char: '🦄', color: 'pink', emoji: true },
+    { char: '🐙', color: 'cyan', emoji: true },
+    { char: '🎲', color: 'yellow', emoji: true },
+    { char: '🏆', color: 'yellow', emoji: true },
+    { char: '💎', color: 'cyan', emoji: true },
+    { char: '🌈', color: 'pink', emoji: true },
+    { char: '☠️', color: 'green', emoji: true },
+    { char: '🎸', color: 'pink', emoji: true },
   ];
 
   const MONTHS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
@@ -150,9 +172,11 @@ const Players = (() => {
     iconContainer.innerHTML = '';
     ICONS.forEach((ic, idx) => {
       const btn = document.createElement('button');
-      btn.className = 'icon-pick';
+      btn.className = ic.emoji ? 'icon-pick icon-emoji' : 'icon-pick';
       btn.dataset.index = idx;
-      btn.innerHTML = `<span class="glow-${ic.color}">${ic.char}</span>`;
+      btn.innerHTML = ic.emoji
+        ? ic.char
+        : `<span class="glow-${ic.color}">${ic.char}</span>`;
       btn.addEventListener('click', () => {
         iconContainer.querySelectorAll('.icon-pick').forEach(b => b.classList.remove('selected'));
         btn.classList.add('selected');
