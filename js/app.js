@@ -24,6 +24,9 @@ const App = (() => {
     const resp = await fetch('data/cognitive-biases.json');
     deckData = await resp.json();
 
+    // Initialize cloud sync (non-blocking)
+    CloudSync.init().then(() => renderHomeLeaderboard());
+
     // Wire up home screen
     document.getElementById('btn-press-start').addEventListener('click', () => openSetup());
     document.getElementById('btn-players-home').addEventListener('click', () => openSetup());
@@ -71,13 +74,6 @@ const App = (() => {
       showScreen('home-screen');
     });
 
-    // Wire export/import
-    document.getElementById('btn-export').addEventListener('click', handleExport);
-    document.getElementById('btn-import').addEventListener('click', () => {
-      document.getElementById('import-file').click();
-    });
-    document.getElementById('import-file').addEventListener('change', handleImport);
-
     // Wire help
     document.getElementById('btn-help').addEventListener('click', () => {
       document.getElementById('help-modal').classList.add('active');
@@ -89,6 +85,10 @@ const App = (() => {
     // Render initial leaderboard
     renderHomeLeaderboard();
     showScreen('home-screen');
+
+    // Admin mode (tap title 5x)
+    initAdminTrigger();
+    wireAdminEvents();
 
     // Check for saved game
     const savedGame = Storage.getGameState();
@@ -112,9 +112,18 @@ const App = (() => {
 
   // ─── Home Screen ───
 
-  function renderHomeLeaderboard() {
+  async function renderHomeLeaderboard() {
     const container = document.getElementById('home-leaderboard');
-    const sorted = Storage.getLeaderboardSorted();
+
+    // Try cloud leaderboard first, fall back to local
+    let sorted = null;
+    const cloudLb = await CloudSync.fetchLeaderboard();
+    if (cloudLb && cloudLb.length > 0) {
+      sorted = cloudLb;
+    } else {
+      sorted = Storage.getLeaderboardSorted();
+    }
+
     container.innerHTML = '';
 
     if (sorted.length === 0) {
@@ -158,6 +167,9 @@ const App = (() => {
     const player = Players.saveNewPlayerFromModal();
     if (player) {
       Players.hideAddPlayerModal();
+      // Sync new player to cloud
+      const lb = Storage.getLeaderboard();
+      if (lb[player.id]) CloudSync.syncNewPlayer(player, lb[player.id]);
       Players.renderPlayerList(document.getElementById('player-list-container'), (ids) => {
         selectedPlayerIds = ids;
       });
@@ -241,7 +253,8 @@ const App = (() => {
 
     const banner = document.getElementById('turn-banner');
     const cp = Game.getCurrentPlayer();
-    banner.innerHTML = `═══ ${Players.iconHTML(cp)} ${sanitize(cp.name.toUpperCase())}'S TURN ═══`;
+    const tierLabel = ['', 'EASY', 'MEDIUM', 'HARD'][cp.tier] || '';
+    banner.innerHTML = `═══ ${Players.iconHTML(cp)} ${sanitize(cp.name.toUpperCase())}'S TURN · ${tierLabel} ═══`;
   }
 
   // ─── Pass Screen (between turns) ───
@@ -303,6 +316,12 @@ const App = (() => {
     const biasNameEl = document.getElementById('challenge-bias-name');
     const definitionEl = document.getElementById('challenge-definition');
     const scenarioEl = document.getElementById('challenge-scenario');
+
+    // Show tier/difficulty label
+    const tierLabel = ['', 'EASY', 'MEDIUM', 'HARD'][cardData.tier] || '';
+    const tierEl = document.getElementById('challenge-tier-label');
+    tierEl.textContent = isSteal ? `⚡ STEAL · ${tierLabel}` : tierLabel;
+    tierEl.className = `tier-label tier-${cardData.tier}`;
 
     // Store bias name for post-answer reveal
     biasNameEl.dataset.answer = cardData.biasName;
@@ -415,25 +434,65 @@ const App = (() => {
     setTimeout(() => challengeBox.scrollTo({ top: challengeBox.scrollHeight, behavior: 'smooth' }), 150);
 
     // Show next button or steal option
-    if (result.correct || isSteal) {
+    if (result.correct) {
+      document.getElementById('btn-challenge-next').style.display = 'block';
+      document.getElementById('steal-section').style.display = 'none';
+      document.getElementById('btn-challenge-next').onclick = () => {
+        closeChallengeAndAdvance(result);
+      };
+    } else if (isSteal && result.stealAvailable) {
+      // Cascading steal — another player can try for even more points
+      document.getElementById('steal-section').style.display = 'block';
+      document.getElementById('btn-challenge-next').style.display = 'none';
+
+      const nextStealPoints = result.nextStealPoints || 5;
+      const nextPlayer = peekNextStealPlayer();
+      document.getElementById('steal-player-name').innerHTML =
+        `${Players.iconHTML(nextPlayer)} ${sanitize(nextPlayer.name.toUpperCase())} CAN STEAL FOR ${nextStealPoints} PTS!`;
+
+      document.getElementById('btn-steal-yes').onclick = () => {
+        closeChallenge();
+        Game.advanceTurn();
+        const card = Game.getCard(cardIndex);
+        const stealer = Game.getCurrentPlayer();
+        const stealTier = stealer.tier.toString();
+        const tierData = card.biasData.tiers[stealTier];
+        const stealChallenge = Game.buildStealChallenge(card, stealTier);
+        const stealCardData = {
+          biasName: card.biasData.name,
+          definition: tierData.definition,
+          tip: tierData.tip || '',
+          challenge: stealChallenge,
+          tier: stealer.tier,
+          mode: stealChallenge.mode
+        };
+        Sound.play('steal');
+        showChallenge(stealCardData, cardIndex, true);
+      };
+
+      document.getElementById('btn-steal-no').onclick = () => {
+        Game.skipSteal();
+        closeChallengeAndAdvance({ correct: false, gameOver: false });
+      };
+    } else if (isSteal) {
+      // Everyone missed — move on
       document.getElementById('btn-challenge-next').style.display = 'block';
       document.getElementById('steal-section').style.display = 'none';
       document.getElementById('btn-challenge-next').onclick = () => {
         closeChallengeAndAdvance(result);
       };
     } else if (result.stealAvailable) {
-      // Show steal option
+      // First miss — offer steal to next player
       document.getElementById('steal-section').style.display = 'block';
       document.getElementById('btn-challenge-next').style.display = 'none';
 
-      const nextPlayer = peekNextPlayer();
+      const nextPlayer = peekNextStealPlayer();
       document.getElementById('steal-player-name').innerHTML =
-        `${Players.iconHTML(nextPlayer)} ${sanitize(nextPlayer.name.toUpperCase())} CAN STEAL`;
+        `${Players.iconHTML(nextPlayer)} ${sanitize(nextPlayer.name.toUpperCase())} CAN STEAL FOR 25 PTS!`;
 
       document.getElementById('btn-steal-yes').onclick = () => {
         closeChallenge();
         Game.advanceTurn();
-        // Re-flip the card data with the stealing player's tier
         const card = Game.getCard(cardIndex);
         const stealer = Game.getCurrentPlayer();
         const stealTier = stealer.tier.toString();
@@ -464,8 +523,19 @@ const App = (() => {
     }
   }
 
-  function peekNextPlayer() {
+  function peekNextStealPlayer() {
     const gs = Game.getState();
+    if (gs.pendingSteal) {
+      // Find the next player who hasn't missed yet
+      let idx = (gs.currentTurnIndex + 1) % gs.players.length;
+      let safety = 0;
+      while (gs.pendingSteal.missedPlayers.includes(idx) && safety < gs.players.length) {
+        idx = (idx + 1) % gs.players.length;
+        safety++;
+      }
+      return gs.players[idx];
+    }
+    // Fallback to simple next
     const nextIndex = (gs.currentTurnIndex + 1) % gs.players.length;
     return gs.players[nextIndex];
   }
@@ -493,6 +563,12 @@ const App = (() => {
     Sound.play('gameover');
     Game.finalizeScores();
     const { sortedPlayers, biasesSeen } = Game.getResults();
+    const gs = Game.getState();
+
+    // Push each player's score to cloud
+    sortedPlayers.forEach(p => {
+      CloudSync.pushScore(p.id, p.sessionScore, gs.gameMode || 'classic');
+    });
 
     document.getElementById('gameover-winner-text').innerHTML =
       `WINNER: ${Players.iconHTML(sortedPlayers[0])} ${sanitize(sortedPlayers[0].name.toUpperCase())}`;
@@ -538,35 +614,6 @@ const App = (() => {
     showPassScreen();
   }
 
-  // ─── Export ───
-
-  function handleExport() {
-    const data = Storage.exportData();
-    const blob = new Blob([data], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'think-twice-backup.json';
-    a.click();
-    URL.revokeObjectURL(url);
-  }
-
-  function handleImport(e) {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      try {
-        Storage.importData(event.target.result);
-        renderHomeLeaderboard();
-        e.target.value = '';
-      } catch (err) {
-        // Invalid file
-      }
-    };
-    reader.readAsText(file);
-  }
-
   // ─── Utilities ───
 
   function padScore(n) {
@@ -587,6 +634,156 @@ const App = (() => {
         // Wake lock not available — that's okay
       }
     }
+  }
+
+  // ─── Admin Mode ───
+
+  let adminAuthenticated = false; // Session-only, never persisted
+  let titleTapCount = 0;
+  let titleTapTimer = null;
+
+  function initAdminTrigger() {
+    const titleEl = document.querySelector('.game-title');
+    if (!titleEl) return;
+    titleEl.addEventListener('click', () => {
+      titleTapCount++;
+      clearTimeout(titleTapTimer);
+      titleTapTimer = setTimeout(() => { titleTapCount = 0; }, 2000);
+      if (titleTapCount >= 5) {
+        titleTapCount = 0;
+        openAdminModal();
+      }
+    });
+  }
+
+  function openAdminModal() {
+    const overlay = document.getElementById('admin-modal');
+    const loginSection = document.getElementById('admin-login');
+    const panelSection = document.getElementById('admin-panel');
+    const errorEl = document.getElementById('admin-login-error');
+    const keyInput = document.getElementById('admin-key-input');
+
+    overlay.classList.add('active');
+    errorEl.textContent = '';
+
+    if (adminAuthenticated) {
+      loginSection.style.display = 'none';
+      panelSection.style.display = '';
+      renderAdminPlayerList();
+    } else {
+      loginSection.style.display = '';
+      panelSection.style.display = 'none';
+      keyInput.value = '';
+      setTimeout(() => keyInput.focus(), 100);
+    }
+  }
+
+  function closeAdminModal() {
+    document.getElementById('admin-modal').classList.remove('active');
+  }
+
+  async function adminLogin() {
+    const keyInput = document.getElementById('admin-key-input');
+    const errorEl = document.getElementById('admin-login-error');
+    const key = keyInput.value.trim();
+
+    if (!key) {
+      errorEl.textContent = 'ENTER ADMIN KEY';
+      return;
+    }
+
+    const apiUrl = window.THINK_TWICE_API;
+    if (!apiUrl) {
+      errorEl.textContent = 'API NOT CONFIGURED';
+      return;
+    }
+
+    try {
+      const resp = await fetch(`${apiUrl}/api/admin/auth`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-admin-key': key }
+      });
+      if (resp.ok) {
+        adminAuthenticated = true;
+        window._adminKey = key; // Keep in memory only
+        document.getElementById('admin-login').style.display = 'none';
+        document.getElementById('admin-panel').style.display = '';
+        renderAdminPlayerList();
+      } else {
+        errorEl.textContent = 'WRONG KEY';
+        keyInput.value = '';
+        keyInput.focus();
+      }
+    } catch (e) {
+      errorEl.textContent = 'CONNECTION FAILED';
+    }
+  }
+
+  function renderAdminPlayerList() {
+    const container = document.getElementById('admin-player-list');
+    // Show local players (these are the ones on this device)
+    const players = Storage.getPlayers();
+    container.innerHTML = '';
+
+    if (players.length === 0) {
+      container.innerHTML = '<p style="text-align:center; color:var(--text-dim); font-family:var(--font-terminal);">No players on this device</p>';
+      return;
+    }
+
+    players.forEach(player => {
+      const row = document.createElement('div');
+      row.className = 'admin-player-row';
+      const lockIcon = player.pin ? ' 🔒' : '';
+      row.innerHTML = `
+        <div class="info">
+          <span class="neon-icon glow-${player.iconColor || 'cyan'}">${player.icon || '★'}</span>
+          ${sanitize(player.name)}${lockIcon}
+        </div>
+      `;
+      const delBtn = document.createElement('button');
+      delBtn.className = 'admin-delete';
+      delBtn.textContent = 'DELETE';
+      delBtn.addEventListener('click', () => adminDeletePlayer(player, row));
+      row.appendChild(delBtn);
+      container.appendChild(row);
+    });
+  }
+
+  async function adminDeletePlayer(player, rowEl) {
+    // Delete locally (bypasses PIN entirely)
+    Storage.deletePlayer(player.id);
+
+    // Delete from cloud
+    const apiUrl = window.THINK_TWICE_API;
+    if (apiUrl && window._adminKey) {
+      try {
+        await fetch(`${apiUrl}/api/admin/player/${player.id}`, {
+          method: 'DELETE',
+          headers: { 'x-admin-key': window._adminKey }
+        });
+      } catch (e) {
+        // Cloud delete failed — local still removed
+      }
+    } else {
+      // Fallback to regular cloud delete
+      CloudSync.deletePlayer(player.id);
+    }
+
+    rowEl.remove();
+    // Check if list is now empty
+    const container = document.getElementById('admin-player-list');
+    if (!container.querySelector('.admin-player-row')) {
+      container.innerHTML = '<p style="text-align:center; color:var(--text-dim); font-family:var(--font-terminal);">No players on this device</p>';
+    }
+  }
+
+  function wireAdminEvents() {
+    document.getElementById('btn-admin-cancel').addEventListener('click', closeAdminModal);
+    document.getElementById('btn-admin-close').addEventListener('click', closeAdminModal);
+    document.getElementById('btn-admin-login').addEventListener('click', adminLogin);
+    document.getElementById('admin-key-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') adminLogin();
+    });
   }
 
   return { init, showScreen };

@@ -476,6 +476,128 @@ html, body {
   min-height: 18px;
 }
 
+.pin-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.pin-label {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--neon-yellow);
+}
+.pin-input {
+  width: 80px;
+  padding: 6px 10px;
+  font-family: var(--font-terminal);
+  font-size: 18px;
+  text-align: center;
+  background: var(--bg-dark);
+  border: 2px solid var(--neon-yellow);
+  color: var(--neon-yellow);
+  border-radius: 4px;
+  letter-spacing: 4px;
+}
+
+.pin-entry-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+.pin-digit {
+  width: 40px;
+  height: 48px;
+  font-family: var(--font-terminal);
+  font-size: 24px;
+  text-align: center;
+  background: var(--bg-dark);
+  border: 2px solid var(--neon-yellow);
+  color: var(--neon-yellow);
+  border-radius: 6px;
+}
+.pin-digit:focus {
+  border-color: var(--neon-cyan);
+  outline: none;
+  box-shadow: 0 0 8px var(--neon-cyan);
+}
+.pin-error {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--neon-pink);
+  min-height: 18px;
+  text-align: center;
+}
+
+/* ─── ADMIN PANEL ─── */
+
+.admin-modal {
+  max-height: 80vh;
+}
+
+.admin-key-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--neon-pink);
+  color: var(--neon-pink);
+  font-family: var(--font-terminal);
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+}
+
+.admin-key-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--neon-pink);
+}
+
+.admin-player-list {
+  max-height: 50vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 0;
+}
+
+.admin-player-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-dim);
+  border-radius: 4px;
+}
+
+.admin-player-row .info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-terminal);
+  font-size: 16px;
+  color: var(--text-white);
+}
+
+.admin-player-row .admin-delete {
+  background: transparent;
+  border: 2px solid var(--neon-pink);
+  color: var(--neon-pink);
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  padding: 4px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.admin-player-row .admin-delete:active {
+  background: var(--neon-pink);
+  color: black;
+}
+
 .modal-buttons {
   display: flex;
   gap: 12px;
@@ -700,6 +822,19 @@ html, body {
   flex-direction: column;
   gap: 14px;
 }
+
+.challenge-box .tier-label {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  align-self: center;
+}
+.tier-label.tier-1 { color: var(--neon-green); border: 1px solid var(--neon-green); }
+.tier-label.tier-2 { color: var(--neon-yellow); border: 1px solid var(--neon-yellow); }
+.tier-label.tier-3 { color: var(--neon-pink); border: 1px solid var(--neon-pink); }
 
 .challenge-box .bias-title {
   font-family: var(--font-pixel);

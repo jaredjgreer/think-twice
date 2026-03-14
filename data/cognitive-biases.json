@@ -50,7 +50,7 @@
           "tip": "Do your own research before starting a negotiation or discussion. Decide your number before you hear theirs."
         },
         "3": {
-          "definition": "A cognitive bias where an initial reference point disproportionately influences subsequent judgments, even when the anchor is arbitrary or irrelevant.",
+          "definition": "The first number or fact you encounter acts as an anchor that pulls all your later judgments toward it — even if that anchor was random or irrelevant to the decision.",
           "scenarioDoneTo": "A salary negotiation opens at $45K. You counter at $55K and settle at $50K feeling good — but the market rate is actually $62K. The opening number framed the entire discussion.",
           "scenarioYouDo": "You present last quarter's budget numbers first in a meeting, knowing that even if this quarter's need is very different, people will anchor to what was spent before.",
           "challenge": {
@@ -114,7 +114,7 @@
           "tip": "Actively search for evidence that contradicts your belief. Read the best argument from the other side before forming your final opinion."
         },
         "3": {
-          "definition": "A systematic tendency to favor information that validates one's hypotheses, leading to statistical errors, selective evidence gathering, and overconfidence in personal beliefs.",
+          "definition": "The habit of seeking out and remembering information that supports what you already believe, while ignoring or discounting evidence that contradicts it — making you more confident than you should be.",
           "scenarioDoneTo": "A hiring manager who believes a candidate is strong unconsciously asks easier interview questions and interprets ambiguous answers favorably, while doing the opposite for candidates they doubt.",
           "scenarioYouDo": "You form an early opinion about a new policy and then selectively share data that supports your view in the group chat, shaping the conversation before anyone else can form an independent opinion.",
           "challenge": {
@@ -178,7 +178,7 @@
           "tip": "Form your opinion before you see what others think. In votes or discussions, write down your answer first, then share it."
         },
         "3": {
-          "definition": "A psychological phenomenon in which the rate of adoption increases proportionally to the number of existing adopters, creating self-reinforcing cycles independent of quality or evidence.",
+          "definition": "The more people who adopt a belief or trend, the more others follow — creating a snowball effect where popularity drives more popularity, regardless of whether it actually makes sense.",
           "scenarioDoneTo": "An investment goes viral on social media. Millions buy in solely because others are buying. The price soars based on momentum, not fundamentals, until the bubble collapses.",
           "scenarioYouDo": "In a strategy meeting, you see three senior people nod in agreement. You had a different perspective but stay silent, assuming they must know something you don't. Your silence is counted as agreement.",
           "challenge": {
@@ -243,7 +243,7 @@
           "tip": "Rate your confidence, then check it against feedback or results. If there's a big gap, you may be on the peak of 'Mount Stupid.' Seek honest critics, not cheerleaders."
         },
         "3": {
-          "definition": "A metacognitive failure in which individuals with minimal expertise lack the skills to recognize their own incompetence, resulting in inflated self-assessment, while highly skilled individuals assume tasks easy for them are easy for everyone.",
+          "definition": "People who know very little about a subject often overestimate their ability because they don't know enough to see what they're missing — while true experts tend to underestimate themselves because they assume others find it just as easy.",
           "scenarioDoneTo": "A new team member redesigns an entire workflow in their first week, breaking things that were built carefully over years. They can't see the complexity because they don't yet understand the system.",
           "scenarioYouDo": "You read one article about a complex geopolitical issue and now argue confidently about it online, dismissing people who have studied it for years because their nuanced answers seem like indecision.",
           "challenge": {
@@ -307,7 +307,7 @@
           "tip": "Focus on future value, not past investment. Ask: 'What's the best use of my time and energy starting NOW?' The past cost is gone either way."
         },
         "3": {
-          "definition": "An irrational escalation of commitment in which past costs — which are unrecoverable — are treated as relevant to future decisions, violating the economic principle that only marginal future costs and benefits should inform rational choice.",
+          "definition": "Continuing to invest time, money, or effort into something because of what you've already put in — even when quitting would be the smarter move. The past cost is gone either way, but it feels impossible to walk away.",
           "scenarioDoneTo": "A government continues funding a defense program years behind schedule and billions over budget because canceling it would mean 'admitting failure,' even though an alternative system could be built for less than the remaining cost.",
           "scenarioYouDo": "You've been in a relationship for four years that makes you miserable. You stay because leaving would 'waste' those four years — even though staying wastes every future year too.",
           "challenge": {
@@ -371,7 +371,7 @@
           "tip": "Check the actual numbers before making judgments about how common something is. Vivid stories feel more real than statistics, but statistics are more accurate."
         },
         "3": {
-          "definition": "A cognitive shortcut in which the perceived probability of an event is influenced by the ease with which instances are retrieved from memory, systematically biasing risk assessment toward vivid, recent, or emotionally charged events.",
+          "definition": "Judging how likely something is based on how easily you can think of an example — which means vivid, recent, or emotional events feel more common than they actually are.",
           "scenarioDoneTo": "After a high-profile data breach at a competitor, a company's board redirects $2M from long-term infrastructure to cybersecurity theater — visible but ineffective measures — because the breach is top of mind.",
           "scenarioYouDo": "You just read about a startup that went viral and made millions. You overestimate your own startup's odds and take reckless risks, because that success story is vivid in your mind while the thousands of quiet failures are invisible.",
           "challenge": {
@@ -435,7 +435,7 @@
           "tip": "Separate the person from the trait. Make a list of specific evidence for each quality you're judging. Would you still rate them the same if one trait were removed?"
         },
         "3": {
-          "definition": "A cognitive bias in which an observer's overall impression of a person, company, or brand unduly influences judgments about their specific attributes, leading to systematically biased evaluations across unrelated dimensions.",
+          "definition": "When one strong impression of a person — like attractiveness or success — colors how you judge everything else about them, even traits that are completely unrelated.",
           "scenarioDoneTo": "A CEO with a charismatic stage presence receives glowing performance reviews from the board, even though the company's financials have declined. The board can't separate their personal impression from the data.",
           "scenarioYouDo": "You meet someone impressive at a conference and immediately trust their opinion on a topic completely outside their expertise. Their competence in one domain cast a halo over everything they say.",
           "challenge": {
@@ -500,7 +500,7 @@
           "tip": "Check whether the authority's expertise actually covers the topic. A doctor's opinion on medicine carries weight — their opinion on car repair does not."
         },
         "3": {
-          "definition": "A cognitive bias in which the perceived legitimacy of the source disproportionately influences the acceptance of information, bypassing critical evaluation of the content itself.",
+          "definition": "Trusting information more because of who said it rather than what was said — which can lead you to accept claims without questioning them, especially when the authority is speaking outside their expertise.",
           "scenarioDoneTo": "A Nobel laureate in physics publicly comments on economic policy. Media treats their opinion as expert-level, and the public accepts it uncritically, despite economics being entirely outside their expertise.",
           "scenarioYouDo": "You cite your company's most senior executive in a presentation to settle a technical debate—not because their argument is sound, but because their title ends the discussion.",
           "challenge": {
@@ -553,7 +553,7 @@
           "tip": "Practice seeing people as individuals, not as members of a group. Ask: 'Would I judge this person differently if they were on my team?'"
         },
         "3": {
-          "definition": "A pattern of systematic favoritism toward members of one's perceived social, cultural, or organizational group, combined with distrust or devaluation of out-group members, even when group membership is arbitrary.",
+          "definition": "Automatically favoring people in your own group — your team, school, culture — while being more skeptical or dismissive of outsiders, even when the group boundaries are arbitrary.",
           "scenarioDoneTo": "A hiring manager unconsciously favors candidates who share their alma mater, cultural background, or hobbies — screening out equally qualified candidates who don't share those surface-level similarities.",
           "scenarioYouDo": "In a cross-departmental meeting, you dismiss a valid concern from another team because they 'don't understand what we do' — when their outside perspective was exactly what was needed.",
           "challenge": {
@@ -618,7 +618,7 @@
           "tip": "Use the ratio test: how many positives vs. negatives actually exist? If the ratio is heavily positive but you feel negative, your brain is weighting them unfairly."
         },
         "3": {
-          "definition": "An asymmetry in cognitive processing where negative stimuli produce larger psychological responses than neutral or positive stimuli of equal magnitude, influencing attention, learning, memory, and decision-making.",
+          "definition": "Bad experiences hit harder than good ones of the same size. One negative event can outweigh multiple positive ones in how it affects your mood, memory, and decisions.",
           "scenarioDoneTo": "A leader delivers a performance review that is 90% positive. The employee fixates on the single area of improvement, interprets it as criticism, and leaves the meeting demoralized despite an excellent overall assessment.",
           "scenarioYouDo": "You evaluate two job candidates. One has a flawless but unremarkable record. The other has a brilliant track record with one notable failure. You rank the flawless candidate higher because the failure looms larger than the accomplishments.",
           "challenge": {
@@ -671,7 +671,7 @@
           "tip": "List the pros and cons of changing vs. staying. If 'staying is easier' is your only pro for the status quo, that's the bias talking."
         },
         "3": {
-          "definition": "A cognitive preference for maintaining the existing state of affairs, rooted in loss aversion and regret avoidance, where the disadvantages of change are weighted more heavily than the advantages, leading to irrational persistence with suboptimal conditions.",
+          "definition": "A strong preference for keeping things the way they are, where any change feels riskier than staying put — even when the change would clearly be an improvement.",
           "scenarioDoneTo": "A company continues using a legacy software system that costs more to maintain than to replace. Every year they study the replacement option, and every year they defer the decision because migration feels riskier than the slow bleed.",
           "scenarioYouDo": "You've structured your team's workflow a certain way for two years. A new approach would clearly save time. But you argue against it in the meeting because this is 'your' process and change implies the old way was wrong.",
           "challenge": {
@@ -724,7 +724,7 @@
           "tip": "Remember: everyone else has their own spotlight effect too. They're worrying about themselves, not watching you. The audience notices about half as much as you think."
         },
         "3": {
-          "definition": "An egocentric bias in which individuals overestimate the extent to which their actions and appearance are noticed by others, stemming from the difficulty of stepping outside one's own perspective to evaluate how much attention others actually allocate.",
+          "definition": "Believing that other people notice your appearance, mistakes, or behavior much more than they actually do — because you're the center of your own world, but barely a background character in theirs.",
           "scenarioDoneTo": "In professional settings, this bias causes people to over-prepare for minor presentations and under-invest in the ones that matter — because they misjudge which situations others are actually paying attention to.",
           "scenarioYouDo": "You send a slightly awkward email and spend the next hour worrying about how it landed. The recipient read it in 10 seconds, understood the point, and moved on without a second thought.",
           "challenge": {
@@ -777,7 +777,7 @@
           "tip": "Check your track record. Look at how similar situations actually turned out in the past. Use history, not hope, to predict results."
         },
         "3": {
-          "definition": "A well-documented cognitive bias in which individuals systematically underestimate their personal risk for negative outcomes while overestimating their prospects for positive outcomes, independent of actual probability distributions.",
+          "definition": "Believing that bad things are less likely to happen to you specifically than to other people, and that good things are more likely — even when there's no real reason to think you're the exception.",
           "scenarioDoneTo": "Despite knowing that most mergers fail to create value, executives consistently predict that their acquisition will be 'different.' Post-merger analysis routinely shows they overpaid and underestimated integration costs.",
           "scenarioYouDo": "You set an aggressive project timeline, genuinely believing your team will beat the deadline despite three similar projects running late. You dismiss the historical data because 'this time the team is more focused.'",
           "challenge": {
@@ -830,7 +830,7 @@
           "tip": "Before making a judgment, look at the full timeline — not just what happened last. Write down data from the whole period, not just the end."
         },
         "3": {
-          "definition": "A temporal weighting bias in which the most recent data points are treated as more representative than they are, distorting trend analysis, performance evaluation, and strategic decisions toward short-term patterns that may not persist.",
+          "definition": "Giving the most recent events way too much weight when making judgments — what happened last week feels more important and representative than what happened over the past year.",
           "scenarioDoneTo": "A quarterly business review focuses 80% of discussion on the last two weeks of the quarter because those numbers are freshest, even though structural trends from months one and two are more predictive of future performance.",
           "scenarioYouDo": "You advocate for a strategy pivot based on last quarter's results, ignoring that the previous eight quarters showed a clear positive trajectory. You're overweighting the most recent noise.",
           "challenge": {
@@ -883,7 +883,7 @@
           "tip": "Always restate the information in the opposite frame. If '90% survival' sounds good, say '10% die' and see if you still feel the same. The facts haven't changed — only the frame."
         },
         "3": {
-          "definition": "A cognitive bias in which equivalent information produces systematically different decisions depending on whether it is presented in terms of gains or losses, demonstrating that preference is not purely a function of outcomes but is heavily influenced by the description of outcomes.",
+          "definition": "The way information is worded changes how people react to it — the same facts presented as a gain vs. a loss can lead to completely different decisions, even though nothing actually changed.",
           "scenarioDoneTo": "A financial advisor presents retirement projections showing 'expected returns' in one scenario and 'probability of shortfall' in another. Clients make dramatically different allocation decisions even though the underlying math is identical.",
           "scenarioYouDo": "You frame a budget cut as 'efficiency improvement' in your presentation, knowing that identical proposals labeled as 'cost reduction' face more resistance in your organization. You're using framing strategically.",
           "challenge": {
@@ -936,7 +936,7 @@
           "tip": "Write down your honest evaluation of options BEFORE choosing. Then compare it to how you feel after. If your ratings magically shifted, your brain is rewriting history."
         },
         "3": {
-          "definition": "A post-decisional bias in which individuals distort their memories and evaluations to be more favorable toward chosen alternatives and more critical of rejected ones, reducing cognitive dissonance and creating a false sense of decisional competence.",
+          "definition": "After making a choice, your brain rewrites the story — making the thing you picked seem better than it was and the thing you rejected seem worse, so you feel good about your decision.",
           "scenarioDoneTo": "This bias is almost exclusively self-directed — your brain retroactively edits your perception to align with your choices.",
           "scenarioYouDo": "After selecting a vendor for a major contract, you start emphasizing their strengths in internal communications while downplaying the advantages of the vendor you didn't select — even though your original evaluation had them nearly tied.",
           "challenge": {

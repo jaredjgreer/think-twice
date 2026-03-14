@@ -27,11 +27,8 @@
 
     <div class="home-buttons">
       <button id="btn-players-home" class="btn">PLAYERS</button>
-      <button id="btn-export" class="btn btn-pink">BACKUP</button>
-      <button id="btn-import" class="btn btn-pink">RESTORE</button>
-      <button id="btn-help" class="btn btn-yellow">? HELP</button>
+      <button id="btn-help" class="btn btn-yellow">HOW TO PLAY</button>
     </div>
-    <input type="file" id="import-file" accept=".json" style="display:none">
   </div>
 
   <!-- ═══ SETUP SCREEN ═══ -->
@@ -90,6 +87,11 @@
       <div id="age-picker" class="birthday-picker"></div>
       <div id="age-display" class="age-display"></div>
 
+      <div class="pin-row">
+        <label class="pin-label">PIN?</label>
+        <input type="password" id="new-player-pin" placeholder="OPTIONAL" maxlength="4" inputmode="numeric" pattern="[0-9]*" autocomplete="off" class="pin-input">
+      </div>
+
       <div class="modal-buttons">
         <button id="btn-cancel-player" class="btn">CANCEL</button>
         <button id="btn-save-player" class="btn btn-green">SAVE</button>
@@ -119,6 +121,7 @@
   <!-- ═══ CHALLENGE MODAL ═══ -->
   <div id="challenge-overlay" class="challenge-overlay">
     <div class="challenge-box box-glow-cyan">
+      <div id="challenge-tier-label" class="tier-label"></div>
       <div id="challenge-bias-name" class="bias-title glow-pink"></div>
       <div id="challenge-definition" class="definition"></div>
 
@@ -170,13 +173,13 @@
     <div class="modal box-glow-cyan help-content">
       <h2 class="glow-yellow">HOW TO PLAY</h2>
       <div class="help-rules">
-        <p>1. Create players — pick your icon & age</p>
+        <p>1. Create players — pick your icon & birthday</p>
         <p>2. Select a grid size (2×2 to 6×6)</p>
         <p>3. Take turns flipping cards</p>
-        <p>4. Each card reveals a cognitive bias</p>
-        <p>5. Answer the multiple choice question</p>
-        <p>6. Get it right? <span class="glow-green">+10 pts</span> and GO AGAIN!</p>
-        <p>7. Get it wrong? Next player can <span class="glow-yellow">STEAL for 5 pts</span></p>
+        <p>4. Each card reveals a cognitive bias challenge</p>
+        <p>5. Answer the question correctly</p>
+        <p>6. Get it right? <span class="glow-green">+50 pts!</span></p>
+        <p>7. Get it wrong? Next player can <span class="glow-yellow">STEAL for 25 pts</span> — if they miss, the pot keeps growing!</p>
         <p>8. Most points wins!</p>
       </div>
       <div class="help-what">
@@ -199,8 +202,50 @@
     </div>
   </div>
 
+  <!-- ═══ ADMIN PANEL MODAL ═══ -->
+  <div id="admin-modal" class="modal-overlay">
+    <div class="modal box-glow-pink admin-modal">
+      <h2 class="glow-pink">⚙ ADMIN MODE</h2>
+      <div id="admin-login" style="text-align:center;">
+        <p style="font-family:var(--font-terminal); font-size:18px; color:var(--text-dim);">ENTER ADMIN KEY</p>
+        <input type="password" id="admin-key-input" class="admin-key-input" placeholder="ADMIN KEY" autocomplete="off">
+        <div id="admin-login-error" class="pin-error"></div>
+        <div class="modal-buttons">
+          <button id="btn-admin-cancel" class="btn">CANCEL</button>
+          <button id="btn-admin-login" class="btn btn-pink">LOGIN</button>
+        </div>
+      </div>
+      <div id="admin-panel" style="display:none;">
+        <p style="font-family:var(--font-terminal); font-size:14px; color:var(--neon-pink); text-align:center;">DELETE ANY PLAYER (BYPASSES PIN)</p>
+        <div id="admin-player-list" class="admin-player-list"></div>
+        <button id="btn-admin-close" class="btn" style="margin-top:12px; width:100%;">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PIN ENTRY MODAL ═══ -->
+  <div id="pin-modal" class="modal-overlay">
+    <div class="modal box-glow-yellow" style="text-align:center;">
+      <h2 id="pin-modal-title" class="glow-yellow">ENTER PIN</h2>
+      <div class="pin-entry-row">
+        <input type="password" id="pin-entry-1" class="pin-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+        <input type="password" id="pin-entry-2" class="pin-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+        <input type="password" id="pin-entry-3" class="pin-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+        <input type="password" id="pin-entry-4" class="pin-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+      </div>
+      <div id="pin-modal-error" class="pin-error"></div>
+      <div class="modal-buttons">
+        <button id="btn-pin-cancel" class="btn">CANCEL</button>
+        <button id="btn-pin-ok" class="btn btn-green">OK</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts (order matters) -->
+  <!-- Set your API URL for cloud scores. Leave empty for local-only mode. -->
+  <script>window.THINK_TWICE_API = 'https://thinktw.greermethod.com';</script>
   <script src="js/storage.js"></script>
+  <script src="js/cloud-sync.js"></script>
   <script src="js/players.js"></script>
   <script src="js/sound.js"></script>
   <script src="js/game.js"></script>

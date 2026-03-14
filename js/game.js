@@ -187,25 +187,27 @@ const Game = (() => {
     const correct = selectedOptionIndex === challenge.correct;
 
     if (correct) {
-      // Award points — flat 10 for level playing field
-      player.sessionScore += 10;
+      // Award points
+      player.sessionScore += 50;
       card.completedBy = player.id;
       state.cardsCompleted++;
       saveState();
 
       return {
         correct: true,
-        points: 10,
+        points: 50,
         player,
         gameOver: state.cardsCompleted >= state.totalCards
       };
     } else {
-      // Flip card back, set up steal opportunity
+      // Flip card back, set up cascading steal opportunity
       card.flipped = false;
       state.pendingSteal = {
         cardIndex,
         biasId: card.biasId,
-        originalPlayerIndex: state.currentTurnIndex
+        originalPlayerIndex: state.currentTurnIndex,
+        stealPoints: 25,
+        missedPlayers: [state.currentTurnIndex]
       };
       saveState();
 
@@ -225,9 +227,10 @@ const Game = (() => {
     const card = state.cards[state.pendingSteal.cardIndex];
     const stealPlayer = getCurrentPlayer();
     const correct = selectedOptionIndex === challenge.correct;
+    const stealPoints = state.pendingSteal.stealPoints;
 
     if (correct) {
-      stealPlayer.sessionScore += 5; // Half points for steal
+      stealPlayer.sessionScore += stealPoints;
       card.completedBy = stealPlayer.id;
       card.flipped = true;
       state.cardsCompleted++;
@@ -235,29 +238,53 @@ const Game = (() => {
 
       return {
         correct: true,
-        points: 5,
+        points: stealPoints,
         player: stealPlayer,
         gameOver: state.cardsCompleted >= state.totalCards
       };
     } else {
-      // Steal failed — card stays face-down for a future turn
-      state.pendingSteal = null;
+      // Steal failed — pot grows, track who missed
+      state.pendingSteal.missedPlayers.push(state.currentTurnIndex);
+      state.pendingSteal.stealPoints += 25;
+
+      // Check if any player hasn't tried yet
+      const remaining = state.players.filter((_, i) =>
+        !state.pendingSteal.missedPlayers.includes(i)
+      );
+
+      if (remaining.length === 0) {
+        // Everyone missed — card goes back face-down
+        state.pendingSteal = null;
+        saveState();
+        return {
+          correct: false,
+          points: 0,
+          player: stealPlayer,
+          gameOver: false,
+          stealAvailable: false
+        };
+      }
+
+      saveState();
       return {
         correct: false,
         points: 0,
         player: stealPlayer,
-        gameOver: false
+        gameOver: false,
+        stealAvailable: true,
+        nextStealPoints: state.pendingSteal.stealPoints
       };
     }
   }
 
   function advanceTurn() {
     state.currentTurnIndex = (state.currentTurnIndex + 1) % state.players.length;
-    // Skip to steal target if pending
+    // Skip players who already missed during cascading steal
     if (state.pendingSteal) {
-      // Advance past the original player
-      if (state.currentTurnIndex === state.pendingSteal.originalPlayerIndex) {
+      let safety = 0;
+      while (state.pendingSteal.missedPlayers.includes(state.currentTurnIndex) && safety < state.players.length) {
         state.currentTurnIndex = (state.currentTurnIndex + 1) % state.players.length;
+        safety++;
       }
     }
     saveState();

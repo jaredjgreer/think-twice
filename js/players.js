@@ -65,10 +65,11 @@ const Players = (() => {
       const slot = document.createElement('div');
       slot.className = 'player-slot';
       slot.dataset.id = player.id;
+      const lockIcon = player.pin ? ' 🔒' : '';
       slot.innerHTML = `
         ${iconHTML(player)}
         <div class="info">
-          <div class="name">${sanitize(player.name)}</div>
+          <div class="name">${sanitize(player.name)}${lockIcon}</div>
           <div class="age">Age ${player.age} · Tier ${getAgeTier(player.age)}</div>
         </div>
         <span class="check">✓</span>
@@ -79,25 +80,42 @@ const Players = (() => {
       delBtn.textContent = '✕';
       delBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        // Admin PIN protection
-        let pin = Storage.getAdminPin();
-        if (!pin) {
-          const newPin = prompt('SET ADMIN PIN (4 digits):');
-          if (!newPin || !/^\d{4}$/.test(newPin)) return;
-          Storage.setAdminPin(newPin);
-          pin = newPin;
+        if (player.pin) {
+          showPinModal(`DELETE ${player.name.toUpperCase()}`, (entered) => {
+            if (entered !== player.pin) return false; // wrong pin
+            Storage.deletePlayer(player.id);
+            CloudSync.deletePlayer(player.id);
+            renderPlayerList(containerEl, onSelectionChange);
+            if (onSelectionChange) onSelectionChange(getSelectedIds(containerEl));
+            return true;
+          });
+        } else {
+          Storage.deletePlayer(player.id);
+          CloudSync.deletePlayer(player.id);
+          renderPlayerList(containerEl, onSelectionChange);
+          if (onSelectionChange) onSelectionChange(getSelectedIds(containerEl));
         }
-        const entered = prompt('ENTER ADMIN PIN TO DELETE:');
-        if (entered !== pin) { alert('WRONG PIN'); return; }
-        Storage.deletePlayer(player.id);
-        renderPlayerList(containerEl, onSelectionChange);
-        if (onSelectionChange) onSelectionChange(getSelectedIds(containerEl));
       });
       slot.appendChild(delBtn);
 
       slot.addEventListener('click', () => {
-        slot.classList.toggle('selected');
-        if (onSelectionChange) onSelectionChange(getSelectedIds(containerEl));
+        // Deselecting never needs a PIN
+        if (slot.classList.contains('selected')) {
+          slot.classList.remove('selected');
+          if (onSelectionChange) onSelectionChange(getSelectedIds(containerEl));
+          return;
+        }
+        if (player.pin) {
+          showPinModal(`UNLOCK ${player.name.toUpperCase()}`, (entered) => {
+            if (entered !== player.pin) return false;
+            slot.classList.add('selected');
+            if (onSelectionChange) onSelectionChange(getSelectedIds(containerEl));
+            return true;
+          });
+        } else {
+          slot.classList.add('selected');
+          if (onSelectionChange) onSelectionChange(getSelectedIds(containerEl));
+        }
       });
       containerEl.appendChild(slot);
     });
@@ -110,7 +128,12 @@ const Players = (() => {
 
   function getPlayersById(ids) {
     const all = Storage.getPlayers();
-    return ids.map(id => all.find(p => p.id === id)).filter(Boolean);
+    return ids.map(id => all.find(p => p.id === id)).filter(Boolean).map(p => {
+      if (p.birthMonth && p.birthYear) {
+        p.age = computeAge(p.birthMonth, p.birthYear);
+      }
+      return p;
+    });
   }
 
   function showAddPlayerModal() {
@@ -119,6 +142,8 @@ const Players = (() => {
 
     document.getElementById('new-player-name').value = '';
     document.getElementById('age-display').textContent = '';
+    const pinInput = document.getElementById('new-player-pin');
+    if (pinInput) pinInput.value = '';
 
     // Render icon picker
     const iconContainer = document.getElementById('emoji-picker');
@@ -195,6 +220,7 @@ const Players = (() => {
     const iconEl = document.querySelector('#emoji-picker .icon-pick.selected');
     const monthEl = document.getElementById('birth-month');
     const yearEl = document.getElementById('birth-year');
+    const pinEl = document.getElementById('new-player-pin');
 
     if (!name || !iconEl) return null;
     if (!monthEl || !monthEl.value || !yearEl || !yearEl.value) return null;
@@ -204,8 +230,9 @@ const Players = (() => {
     const birthMonth = parseInt(monthEl.value);
     const birthYear = parseInt(yearEl.value);
     const age = computeAge(birthMonth, birthYear);
+    const pin = pinEl && pinEl.value.trim();
 
-    return Storage.addPlayer({
+    const playerData = {
       name,
       icon: ic.char,
       iconColor: ic.color,
@@ -213,13 +240,76 @@ const Players = (() => {
       birthMonth,
       birthYear,
       age
-    });
+    };
+    if (pin && /^\d{4}$/.test(pin)) {
+      playerData.pin = pin;
+    }
+
+    return Storage.addPlayer(playerData);
   }
 
   function sanitize(str) {
     const div = document.createElement('div');
     div.textContent = str;
     return div.innerHTML;
+  }
+
+  // ─── PIN Entry Modal ───
+
+  function showPinModal(title, onSubmit) {
+    const overlay = document.getElementById('pin-modal');
+    const titleEl = document.getElementById('pin-modal-title');
+    const errorEl = document.getElementById('pin-modal-error');
+    const digits = [
+      document.getElementById('pin-entry-1'),
+      document.getElementById('pin-entry-2'),
+      document.getElementById('pin-entry-3'),
+      document.getElementById('pin-entry-4')
+    ];
+
+    titleEl.textContent = title;
+    errorEl.textContent = '';
+    digits.forEach(d => { d.value = ''; });
+    overlay.classList.add('active');
+    setTimeout(() => digits[0].focus(), 100);
+
+    // Auto-advance on digit entry
+    digits.forEach((d, i) => {
+      d.oninput = () => {
+        d.value = d.value.replace(/[^0-9]/g, '');
+        if (d.value && i < 3) digits[i + 1].focus();
+      };
+      d.onkeydown = (e) => {
+        if (e.key === 'Backspace' && !d.value && i > 0) {
+          digits[i - 1].focus();
+        }
+      };
+    });
+
+    const cleanup = () => {
+      overlay.classList.remove('active');
+      digits.forEach(d => { d.oninput = null; d.onkeydown = null; });
+      document.getElementById('btn-pin-ok').onclick = null;
+      document.getElementById('btn-pin-cancel').onclick = null;
+    };
+
+    document.getElementById('btn-pin-cancel').onclick = () => cleanup();
+
+    document.getElementById('btn-pin-ok').onclick = () => {
+      const entered = digits.map(d => d.value).join('');
+      if (entered.length < 4) {
+        errorEl.textContent = 'ENTER 4 DIGITS';
+        return;
+      }
+      const success = onSubmit(entered);
+      if (success) {
+        cleanup();
+      } else {
+        errorEl.textContent = 'WRONG PIN';
+        digits.forEach(d => { d.value = ''; });
+        digits[0].focus();
+      }
+    };
   }
 
   return {

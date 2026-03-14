@@ -122,6 +122,7 @@ const Storage = (() => {
     getGameState,
     clearGameState,
     getAdminPin,
-    setAdminPin
+    setAdminPin,
+    saveLeaderboard
   };
 })();
