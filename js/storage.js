@@ -50,6 +50,33 @@ const Storage = (() => {
     saveLeaderboard(lb);
   }
 
+  function importCloudPlayer(cloudPlayer) {
+    const players = getPlayers();
+    if (players.some(p => p.id === cloudPlayer.id)) return;
+    players.push({
+      id: cloudPlayer.id,
+      name: cloudPlayer.name,
+      icon: cloudPlayer.icon || '★',
+      iconColor: cloudPlayer.iconColor || 'cyan',
+      birthMonth: null,
+      birthYear: null,
+      age: 15
+    });
+    savePlayers(players);
+    const lb = getLeaderboard();
+    if (!lb[cloudPlayer.id]) {
+      lb[cloudPlayer.id] = {
+        name: cloudPlayer.name,
+        icon: cloudPlayer.icon || '★',
+        iconColor: cloudPlayer.iconColor || 'cyan',
+        totalPoints: cloudPlayer.totalPoints || 0,
+        gamesPlayed: cloudPlayer.gamesPlayed || 0,
+        bestGame: cloudPlayer.bestGame || 0
+      };
+      saveLeaderboard(lb);
+    }
+  }
+
   function getLeaderboard() {
     const raw = localStorage.getItem(KEYS.LEADERBOARD);
     return raw ? JSON.parse(raw) : {};
@@ -113,6 +140,7 @@ const Storage = (() => {
     savePlayers,
     addPlayer,
     deletePlayer,
+    importCloudPlayer,
     getLeaderboard,
     updateLeaderboard,
     getLeaderboardSorted,

@@ -17,6 +17,7 @@ const CloudSync = (() => {
       const res = await fetch(`${API_URL}/api/health`, { signal: AbortSignal.timeout(3000) });
       if (res.ok) {
         online = true;
+        await pullCloudPlayers();
         await syncAllPlayers();
       }
     } catch (e) {
@@ -26,6 +27,22 @@ const CloudSync = (() => {
 
   function isOnline() {
     return online && !!API_URL;
+  }
+
+  // Pull cloud players into local storage
+  async function pullCloudPlayers() {
+    if (!isOnline()) return;
+    try {
+      const res = await fetch(`${API_URL}/api/leaderboard`, { signal: AbortSignal.timeout(3000) });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.leaderboard) {
+          data.leaderboard.forEach(cp => Storage.importCloudPlayer(cp));
+        }
+      }
+    } catch (e) {
+      // Non-critical
+    }
   }
 
   // Sync all local players to cloud on startup
