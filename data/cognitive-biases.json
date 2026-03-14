@@ -1,0 +1,957 @@
+{
+  "deckName": "Cognitive Biases",
+  "deckId": "cognitive-biases",
+  "description": "Common cognitive biases that affect how we think, decide, and interact.",
+  "cards": [
+    {
+      "id": "anchoring",
+      "name": "Anchoring Bias",
+      "tiers": {
+        "1": {
+          "definition": "When the first number you hear sticks in your head and changes what you think is fair.",
+          "scenarioDoneTo": "Your friend says the new Jordans cost $400. Later you see them for $250 and think that's a great deal — but you only planned to spend $80.",
+          "scenarioYouDo": "You ask your parents for $50 allowance knowing they'll say no, so when you suggest $25 it sounds reasonable. You really only expected $15.",
+          "challenge": {
+            "scenario": "A store marks a jacket at $300, then puts it 'on sale' for $150. You feel like you're saving money.",
+            "options": [
+              "Framing Effect",
+              "Anchoring Bias",
+              "Status Quo Bias"
+            ],
+            "correct": 1
+          },
+          "altChallenges": [
+            {
+              "scenario": "A friend tells you a puzzle takes 2 hours. You give up after 45 minutes thinking you're too slow. The puzzle actually takes most people about 20 minutes — your friend was just guessing.",
+              "options": [
+                "Dunning-Kruger Effect",
+                "Anchoring Bias",
+                "Sunk Cost Fallacy"
+              ],
+              "correct": 1
+            }
+          ],
+          "tip": "Before you decide if something is a good deal, ask yourself: what did I think BEFORE I heard that first number?"
+        },
+        "2": {
+          "definition": "The tendency to rely too heavily on the first piece of information offered when making decisions.",
+          "scenarioDoneTo": "A used car dealer shows you a $25,000 car first. Then shows one for $15,000. You feel like you're saving $10K, but the car is only worth $11,000.",
+          "scenarioYouDo": "You tell your group the project will take 3 weeks. Nobody questions it. You actually have no idea how long it takes — you just said a number first.",
+          "challenge": {
+            "scenario": "During a negotiation, one side names a high price first. Every counteroffer stays closer to that number than either side expected.",
+            "options": [
+              "Bandwagon Effect",
+              "Anchoring Bias",
+              "Confirmation Bias",
+              "Dunning-Kruger Effect"
+            ],
+            "correct": 1
+          },
+          "tip": "Do your own research before starting a negotiation or discussion. Decide your number before you hear theirs."
+        },
+        "3": {
+          "definition": "A cognitive bias where an initial reference point disproportionately influences subsequent judgments, even when the anchor is arbitrary or irrelevant.",
+          "scenarioDoneTo": "A salary negotiation opens at $45K. You counter at $55K and settle at $50K feeling good — but the market rate is actually $62K. The opening number framed the entire discussion.",
+          "scenarioYouDo": "You present last quarter's budget numbers first in a meeting, knowing that even if this quarter's need is very different, people will anchor to what was spent before.",
+          "challenge": {
+            "scenario": "Researchers asked people to spin a random number wheel, then estimate what percentage of African countries are in the UN. People who spun higher numbers gave higher estimates — even though the wheel was random.",
+            "options": [
+              "Anchoring Bias",
+              "Availability Heuristic",
+              "Representative Bias",
+              "Framing Effect"
+            ],
+            "correct": 0
+          },
+          "tip": "Establish your own independent estimate before exposure to any anchor. When you hear an opening number, actively question whether it's based on anything real."
+        }
+      }
+    },
+    {
+      "id": "confirmation",
+      "name": "Confirmation Bias",
+      "tiers": {
+        "1": {
+          "definition": "When you only pay attention to things that agree with what you already believe.",
+          "scenarioDoneTo": "You think a classmate is mean. Now every time they don't say hi, you think 'See? They're rude.' But you ignore the times they were nice.",
+          "scenarioYouDo": "You decide a movie is going to be bad. You watch it looking for flaws and ignore everything good about it, then tell your friends it was terrible.",
+          "challenge": {
+            "scenario": "You think your team is the best. You remember every win but forget the losses. When someone brings up a loss, you make excuses.",
+            "options": [
+              "Confirmation Bias",
+              "Halo Effect",
+              "Negativity Bias"
+            ],
+            "correct": 0
+          },
+          "altChallenges": [
+            {
+              "scenario": "You think cats are unfriendly. Every time a cat ignores you, you say 'See?' But when a cat is nice to you, you think it's just that one cat.",
+              "options": [
+                "Confirmation Bias",
+                "Negativity Bias",
+                "Availability Heuristic"
+              ],
+              "correct": 0
+            }
+          ],
+          "tip": "Try to find one reason you might be wrong. If you can't think of any, that's a clue this bias might be happening."
+        },
+        "2": {
+          "definition": "The tendency to search for, interpret, and remember information that confirms your preexisting beliefs while ignoring contradictory evidence.",
+          "scenarioDoneTo": "A news app shows you articles that match your political views because that's what you click on. Over time, you think everyone agrees with you.",
+          "scenarioYouDo": "You're writing a research paper and only include sources that support your argument. You skip the studies that found the opposite result.",
+          "challenge": {
+            "scenario": "Two fans watch the same controversial referee call. Each one sees clear evidence that the call should have gone their team's way.",
+            "options": [
+              "In-Group Bias",
+              "Anchoring Bias",
+              "Confirmation Bias",
+              "Spotlight Effect"
+            ],
+            "correct": 2
+          },
+          "tip": "Actively search for evidence that contradicts your belief. Read the best argument from the other side before forming your final opinion."
+        },
+        "3": {
+          "definition": "A systematic tendency to favor information that validates one's hypotheses, leading to statistical errors, selective evidence gathering, and overconfidence in personal beliefs.",
+          "scenarioDoneTo": "A hiring manager who believes a candidate is strong unconsciously asks easier interview questions and interprets ambiguous answers favorably, while doing the opposite for candidates they doubt.",
+          "scenarioYouDo": "You form an early opinion about a new policy and then selectively share data that supports your view in the group chat, shaping the conversation before anyone else can form an independent opinion.",
+          "challenge": {
+            "scenario": "A detective becomes convinced a suspect is guilty early in the investigation. They focus the entire case on building evidence against that person, overlooking leads pointing elsewhere.",
+            "options": [
+              "Sunk Cost Fallacy",
+              "Confirmation Bias",
+              "Authority Bias",
+              "Dunning-Kruger Effect"
+            ],
+            "correct": 1
+          },
+          "tip": "Practice 'steel-manning' — construct the strongest possible version of the opposing argument before rebutting it. If your belief can't survive the best counterargument, it needs revision."
+        }
+      }
+    },
+    {
+      "id": "bandwagon",
+      "name": "Bandwagon Effect",
+      "tiers": {
+        "1": {
+          "definition": "When you do something mainly because everyone else is doing it.",
+          "scenarioDoneTo": "Everyone at school is wearing a certain brand of shoes. You feel like you need them too, even though you never cared about that brand before.",
+          "scenarioYouDo": "All your friends say the new kid is weird. You've never talked to them, but you start avoiding them too because everyone else does.",
+          "challenge": {
+            "scenario": "A new app gets popular at school. You download it even though you have no idea what it does — just because everyone is talking about it.",
+            "options": [
+              "Authority Bias",
+              "Bandwagon Effect",
+              "Spotlight Effect"
+            ],
+            "correct": 1
+          },
+          "altChallenges": [
+            {
+              "scenario": "Everyone at the lunch table says the test was easy. You were going to say it was hard, but instead you nod and agree.",
+              "options": [
+                "Bandwagon Effect",
+                "Authority Bias",
+                "In-Group Bias"
+              ],
+              "correct": 0
+            }
+          ],
+          "tip": "Ask yourself: would I still want this if nobody else was doing it? If the answer is no, that's the bandwagon talking."
+        },
+        "2": {
+          "definition": "The tendency to adopt beliefs or behaviors because many other people do, regardless of the underlying evidence.",
+          "scenarioDoneTo": "A product has 50,000 five-star reviews. You buy it without reading any of them. Turns out most reviews were fake.",
+          "scenarioYouDo": "In a class vote, you see most hands go up for option A. You switch your vote even though you preferred option B — you didn't want to be the only one.",
+          "challenge": {
+            "scenario": "A restaurant always has a long line outside. People assume it must be amazing and join the line. Half of them have never read a single review.",
+            "options": [
+              "Halo Effect",
+              "Bandwagon Effect",
+              "Availability Heuristic",
+              "Anchoring Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Form your opinion before you see what others think. In votes or discussions, write down your answer first, then share it."
+        },
+        "3": {
+          "definition": "A psychological phenomenon in which the rate of adoption increases proportionally to the number of existing adopters, creating self-reinforcing cycles independent of quality or evidence.",
+          "scenarioDoneTo": "An investment goes viral on social media. Millions buy in solely because others are buying. The price soars based on momentum, not fundamentals, until the bubble collapses.",
+          "scenarioYouDo": "In a strategy meeting, you see three senior people nod in agreement. You had a different perspective but stay silent, assuming they must know something you don't. Your silence is counted as agreement.",
+          "challenge": {
+            "scenario": "A political poll shows one candidate with a significant lead. Undecided voters begin breaking heavily toward that candidate, not because of policy, but because they want to support the likely winner.",
+            "options": [
+              "Bandwagon Effect",
+              "Authority Bias",
+              "Framing Effect",
+              "Status Quo Bias"
+            ],
+            "correct": 0
+          },
+          "tip": "Use anonymous polling or blind input in group decisions. When evaluating trends, separate the popularity metric from the quality metric — they are often unrelated."
+        }
+      }
+    },
+    {
+      "id": "dunning-kruger",
+      "name": "Dunning-Kruger Effect",
+      "tiers": {
+        "1": {
+          "definition": "When you just learned something and think you know way more than you actually do.",
+          "scenarioDoneTo": "A kid watches one YouTube video about coding and tells everyone they can build an app. They have no idea how much they don't know.",
+          "scenarioYouDo": "You learn three chords on guitar and tell people you can play. Then someone asks you to play a song and you freeze.",
+          "challenge": {
+            "scenario": "After one cooking class, you tell your family you're basically a chef now. You burn dinner that night.",
+            "options": [
+              "Optimism Bias",
+              "Halo Effect",
+              "Dunning-Kruger Effect"
+            ],
+            "correct": 2
+          },
+          "tip": "When you feel super confident about something new, ask someone who's been doing it a long time how much there is left to learn."
+        },
+        "2": {
+          "definition": "A bias where people with limited knowledge in an area greatly overestimate their competence, while true experts often underestimate theirs.",
+          "scenarioDoneTo": "A classmate who got an A on one test starts giving study advice to everyone, including people who consistently outperform them.",
+          "scenarioYouDo": "You won your first debate and now feel like you're the best on the team. You stop preparing as hard and get demolished in the next round.",
+          "challenge": {
+            "scenario": "A first-year medical student confidently tells friends what diagnoses they would make. A senior doctor, meanwhile, says 'I'm not sure, we need more tests.'",
+            "options": [
+              "Authority Bias",
+              "Confirmation Bias",
+              "Dunning-Kruger Effect",
+              "Spotlight Effect"
+            ],
+            "correct": 2
+          },
+          "altChallenges": [
+            {
+              "scenario": "After one semester of psychology class, a student starts diagnosing their friends with mental disorders. Their teacher, who has a PhD, says 'It's not that simple.'",
+              "options": [
+                "Authority Bias",
+                "Dunning-Kruger Effect",
+                "Confirmation Bias",
+                "Halo Effect"
+              ],
+              "correct": 1
+            }
+          ],
+          "tip": "Rate your confidence, then check it against feedback or results. If there's a big gap, you may be on the peak of 'Mount Stupid.' Seek honest critics, not cheerleaders."
+        },
+        "3": {
+          "definition": "A metacognitive failure in which individuals with minimal expertise lack the skills to recognize their own incompetence, resulting in inflated self-assessment, while highly skilled individuals assume tasks easy for them are easy for everyone.",
+          "scenarioDoneTo": "A new team member redesigns an entire workflow in their first week, breaking things that were built carefully over years. They can't see the complexity because they don't yet understand the system.",
+          "scenarioYouDo": "You read one article about a complex geopolitical issue and now argue confidently about it online, dismissing people who have studied it for years because their nuanced answers seem like indecision.",
+          "challenge": {
+            "scenario": "Research shows that people who score in the bottom quartile on logic tests predict they scored in the top 40%. Those who actually scored in the top quartile predicted they were only slightly above average.",
+            "options": [
+              "Confirmation Bias",
+              "Dunning-Kruger Effect",
+              "Optimism Bias",
+              "Anchoring Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Use the 'explain it to a 5-year-old' test — if you can't simplify your knowledge clearly, you may not understand it as well as you think. Treat uncertainty in experts as a sign of depth, not weakness."
+        }
+      }
+    },
+    {
+      "id": "sunk-cost",
+      "name": "Sunk Cost Fallacy",
+      "tiers": {
+        "1": {
+          "definition": "When you keep doing something just because you already spent time or money on it, even though it's not working.",
+          "scenarioDoneTo": "You're 90 minutes into a terrible movie. You keep watching because 'I already spent this long on it' — even though the last 30 minutes won't get better.",
+          "scenarioYouDo": "You keep playing a video game you hate because you spent $60 on it. You could be doing something fun, but you feel like you have to 'get your money's worth.'",
+          "challenge": {
+            "scenario": "You ate half a huge meal and you're stuffed. But you keep eating because 'I paid for it and I don't want to waste food.'",
+            "options": [
+              "Sunk Cost Fallacy",
+              "Status Quo Bias",
+              "Anchoring Bias"
+            ],
+            "correct": 0
+          },
+          "altChallenges": [
+            {
+              "scenario": "You waited in line for an hour to ride a roller coaster. You start feeling sick but stay in line because you already waited so long.",
+              "options": [
+                "Status Quo Bias",
+                "Optimism Bias",
+                "Sunk Cost Fallacy"
+              ],
+              "correct": 2
+            }
+          ],
+          "tip": "Ask yourself: if I hadn't already spent that time or money, would I still choose to keep going? If not, stop."
+        },
+        "2": {
+          "definition": "The tendency to continue investing in a decision based on previously invested resources rather than future value, even when continuing is irrational.",
+          "scenarioDoneTo": "Your team is losing 28-0 at halftime. The coach refuses to rest the starters because 'we've worked too hard this season to give up now' — risking injuries in an unwinnable game.",
+          "scenarioYouDo": "You've spent three months on a school project that's going nowhere. Instead of pivoting to a better idea, you keep going because you can't stand the thought of wasting those three months.",
+          "challenge": {
+            "scenario": "A company has spent $10 million on a product nobody wants. Leadership approves another $5 million because 'we can't walk away from our investment now.'",
+            "options": [
+              "Anchoring Bias",
+              "Status Quo Bias",
+              "Sunk Cost Fallacy",
+              "Optimism Bias"
+            ],
+            "correct": 2
+          },
+          "tip": "Focus on future value, not past investment. Ask: 'What's the best use of my time and energy starting NOW?' The past cost is gone either way."
+        },
+        "3": {
+          "definition": "An irrational escalation of commitment in which past costs — which are unrecoverable — are treated as relevant to future decisions, violating the economic principle that only marginal future costs and benefits should inform rational choice.",
+          "scenarioDoneTo": "A government continues funding a defense program years behind schedule and billions over budget because canceling it would mean 'admitting failure,' even though an alternative system could be built for less than the remaining cost.",
+          "scenarioYouDo": "You've been in a relationship for four years that makes you miserable. You stay because leaving would 'waste' those four years — even though staying wastes every future year too.",
+          "challenge": {
+            "scenario": "A startup founder turns down an acquisition offer because 'I've given five years of my life to this.' The company folds 18 months later for less than the offer.",
+            "options": [
+              "Sunk Cost Fallacy",
+              "Dunning-Kruger Effect",
+              "Bandwagon Effect",
+              "Loss Aversion"
+            ],
+            "correct": 0
+          },
+          "tip": "Apply the 'clean slate' test: if you were starting fresh today with no history, would you make the same choice? If not, the sunk cost is driving your decision, not logic."
+        }
+      }
+    },
+    {
+      "id": "availability",
+      "name": "Availability Heuristic",
+      "tiers": {
+        "1": {
+          "definition": "When you think something happens a lot just because you can easily remember an example of it.",
+          "scenarioDoneTo": "You see a shark attack on the news and now you're scared to swim. Shark attacks are incredibly rare — but the story was so vivid it feels common.",
+          "scenarioYouDo": "You remember one time a dog bit someone, and now you tell everyone that dogs are dangerous. You've met hundreds of friendly dogs but that one story sticks.",
+          "challenge": {
+            "scenario": "After watching a plane crash documentary, you decide to drive 12 hours instead of fly — even though driving is statistically much more dangerous.",
+            "options": [
+              "Availability Heuristic",
+              "Negativity Bias",
+              "Confirmation Bias"
+            ],
+            "correct": 0
+          },
+          "altChallenges": [
+            {
+              "scenario": "Your neighbor's house got broken into last year. Now you think your whole neighborhood is dangerous, even though it's one of the safest in town.",
+              "options": [
+                "Negativity Bias",
+                "Availability Heuristic",
+                "Confirmation Bias"
+              ],
+              "correct": 1
+            }
+          ],
+          "tip": "Just because you can remember something scary doesn't mean it happens often. Ask: how many times has this actually happened vs. how many times has it not?"
+        },
+        "2": {
+          "definition": "A mental shortcut where you judge the likelihood of events based on how easily examples come to mind, rather than actual statistics or evidence.",
+          "scenarioDoneTo": "Social media shows you five stories about identity theft in one week. You panic and freeze your credit — but the actual rate hasn't changed. The algorithm just showed you more of those stories.",
+          "scenarioYouDo": "Your friend asks if the neighborhood is safe. You remember one car break-in from two years ago and say 'not really' — even though the crime rate is very low.",
+          "challenge": {
+            "scenario": "People overestimate the frequency of dramatic causes of death like tornadoes and underestimate common ones like heart disease, because tornadoes make the news.",
+            "options": [
+              "Framing Effect",
+              "Bandwagon Effect",
+              "Availability Heuristic",
+              "Anchoring Bias"
+            ],
+            "correct": 2
+          },
+          "tip": "Check the actual numbers before making judgments about how common something is. Vivid stories feel more real than statistics, but statistics are more accurate."
+        },
+        "3": {
+          "definition": "A cognitive shortcut in which the perceived probability of an event is influenced by the ease with which instances are retrieved from memory, systematically biasing risk assessment toward vivid, recent, or emotionally charged events.",
+          "scenarioDoneTo": "After a high-profile data breach at a competitor, a company's board redirects $2M from long-term infrastructure to cybersecurity theater — visible but ineffective measures — because the breach is top of mind.",
+          "scenarioYouDo": "You just read about a startup that went viral and made millions. You overestimate your own startup's odds and take reckless risks, because that success story is vivid in your mind while the thousands of quiet failures are invisible.",
+          "challenge": {
+            "scenario": "A doctor who recently lost a patient to a rare disease starts over-testing other patients for that same disease, significantly increasing costs and patient anxiety.",
+            "options": [
+              "Confirmation Bias",
+              "Availability Heuristic",
+              "Dunning-Kruger Effect",
+              "Recency Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Seek base-rate data before reacting to anecdotes. Ask: 'What does the overall data say?' rather than 'What's the most memorable example I can think of?'"
+        }
+      }
+    },
+    {
+      "id": "halo-effect",
+      "name": "Halo Effect",
+      "tiers": {
+        "1": {
+          "definition": "When you think someone is good at everything just because they're good at one thing — or because they look good.",
+          "scenarioDoneTo": "The popular kid at school gets picked as group leader, even though they're not organized at all. People just assume they'll be good at it because everyone likes them.",
+          "scenarioYouDo": "You meet someone who's good-looking and immediately assume they're also smart, funny, and trustworthy — without knowing anything about them.",
+          "challenge": {
+            "scenario": "A teacher gives higher participation grades to the student who always dresses nicely, even though a quieter student actually contributes more.",
+            "options": [
+              "Halo Effect",
+              "Authority Bias",
+              "Bandwagon Effect"
+            ],
+            "correct": 0
+          },
+          "altChallenges": [
+            {
+              "scenario": "The kid who's the fastest runner gets picked as team captain. Everyone assumes they'll be a good leader, but they don't even know the rules of the game.",
+              "options": [
+                "Authority Bias",
+                "Halo Effect",
+                "Bandwagon Effect"
+              ],
+              "correct": 1
+            }
+          ],
+          "tip": "Judge each skill or trait separately. Being good at one thing doesn't mean someone is good at everything. Ask: what's the actual evidence for THIS specific thing?"
+        },
+        "2": {
+          "definition": "The tendency to let one positive trait (attractiveness, success, likeability) influence your overall impression of a person, product, or brand.",
+          "scenarioDoneTo": "A company hires someone because they went to a famous university, assuming they must be competent. The school name created a glow that covered up a weak interview.",
+          "scenarioYouDo": "Your favorite athlete promotes a protein bar. You buy it thinking it must be great — but they were paid to say that, and they might not even eat it.",
+          "challenge": {
+            "scenario": "Apple releases a new product. Before reading any reviews, millions of people assume it will be excellent because previous Apple products were good.",
+            "options": [
+              "Bandwagon Effect",
+              "Halo Effect",
+              "Confirmation Bias",
+              "Anchoring Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Separate the person from the trait. Make a list of specific evidence for each quality you're judging. Would you still rate them the same if one trait were removed?"
+        },
+        "3": {
+          "definition": "A cognitive bias in which an observer's overall impression of a person, company, or brand unduly influences judgments about their specific attributes, leading to systematically biased evaluations across unrelated dimensions.",
+          "scenarioDoneTo": "A CEO with a charismatic stage presence receives glowing performance reviews from the board, even though the company's financials have declined. The board can't separate their personal impression from the data.",
+          "scenarioYouDo": "You meet someone impressive at a conference and immediately trust their opinion on a topic completely outside their expertise. Their competence in one domain cast a halo over everything they say.",
+          "challenge": {
+            "scenario": "Studies show that attractive defendants receive shorter sentences on average than less attractive ones convicted of the same crime, all else being equal.",
+            "options": [
+              "In-Group Bias",
+              "Halo Effect",
+              "Authority Bias",
+              "Confirmation Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Use structured evaluation criteria with specific metrics for each dimension. Rate traits independently and compare before forming an overall impression — never let one dimension bleed into others."
+        }
+      }
+    },
+    {
+      "id": "authority",
+      "name": "Authority Bias",
+      "tiers": {
+        "1": {
+          "definition": "When you believe something just because someone important or famous said it.",
+          "scenarioDoneTo": "A YouTuber with 10 million subscribers says a product is amazing. You buy it. They were paid to say that.",
+          "scenarioYouDo": "A teacher says something in class that doesn't sound right. You don't question it because they're the teacher — they must know.",
+          "challenge": {
+            "scenario": "A famous athlete recommends a math tutoring app. You trust their recommendation even though they have nothing to do with math.",
+            "options": [
+              "Halo Effect",
+              "Authority Bias",
+              "Bandwagon Effect"
+            ],
+            "correct": 1
+          },
+          "tip": "Ask yourself: is this person an expert in THIS topic? Being famous or important in one area doesn't make them right about everything."
+        },
+        "2": {
+          "definition": "The tendency to place excessive trust in the opinions of authority figures, even when they are speaking outside their area of expertise.",
+          "scenarioDoneTo": "A doctor gives you advice about investing your money. You listen carefully because they're a doctor — but their medical degree doesn't make them a financial expert.",
+          "scenarioYouDo": "You quote a famous scientist in your essay to make your argument seem stronger, even though the scientist was talking about a completely different topic.",
+          "challenge": {
+            "scenario": "A toothpaste ad features someone in a white lab coat saying 'I recommend this brand.' The person is an actor, not a dentist, but sales increase anyway.",
+            "options": [
+              "Authority Bias",
+              "Halo Effect",
+              "Framing Effect",
+              "Anchoring Bias"
+            ],
+            "correct": 0
+          },
+          "altChallenges": [
+            {
+              "scenario": "Your school principal talks about climate science at an assembly. Students take notes carefully, even though the principal teaches history and has no science background.",
+              "options": [
+                "Bandwagon Effect",
+                "Authority Bias",
+                "Halo Effect",
+                "In-Group Bias"
+              ],
+              "correct": 1
+            }
+          ],
+          "tip": "Check whether the authority's expertise actually covers the topic. A doctor's opinion on medicine carries weight — their opinion on car repair does not."
+        },
+        "3": {
+          "definition": "A cognitive bias in which the perceived legitimacy of the source disproportionately influences the acceptance of information, bypassing critical evaluation of the content itself.",
+          "scenarioDoneTo": "A Nobel laureate in physics publicly comments on economic policy. Media treats their opinion as expert-level, and the public accepts it uncritically, despite economics being entirely outside their expertise.",
+          "scenarioYouDo": "You cite your company's most senior executive in a presentation to settle a technical debate—not because their argument is sound, but because their title ends the discussion.",
+          "challenge": {
+            "scenario": "The Milgram experiment showed that ordinary people would administer what they believed were dangerous electric shocks to strangers simply because a researcher in a lab coat told them to continue.",
+            "options": [
+              "Bandwagon Effect",
+              "Sunk Cost Fallacy",
+              "Authority Bias",
+              "In-Group Bias"
+            ],
+            "correct": 2
+          },
+          "tip": "Evaluate the argument on its own merits, regardless of who's making it. Ask: 'Would this reasoning be convincing if an anonymous person said it?' If not, you're following the title, not the logic."
+        }
+      }
+    },
+    {
+      "id": "ingroup",
+      "name": "In-Group Bias",
+      "tiers": {
+        "1": {
+          "definition": "When you automatically favor people who are in your group — your team, your school, your friend circle — over outsiders.",
+          "scenarioDoneTo": "The ref makes a fair call against your team. Your whole side of the bleachers boos because it hurt YOUR team, not because it was wrong.",
+          "scenarioYouDo": "Two kids get in a fight. One is your friend. You automatically take their side without asking what happened.",
+          "challenge": {
+            "scenario": "In a group project, you give your friends easier jobs and give the kid you don't know the hardest part.",
+            "options": [
+              "In-Group Bias",
+              "Halo Effect",
+              "Confirmation Bias"
+            ],
+            "correct": 0
+          },
+          "tip": "Before taking sides, imagine the exact same situation but swap who's in your group. Would you still feel the same way?"
+        },
+        "2": {
+          "definition": "The tendency to give preferential treatment to people you identify as part of your own group while being skeptical or dismissive of outsiders.",
+          "scenarioDoneTo": "You transfer to a new school. Existing friend groups don't invite you to anything — not because you did anything wrong, but because you're not 'one of them' yet.",
+          "scenarioYouDo": "Your school plays a rival. A player on the other team makes an incredible play. Instead of appreciating it, you trash-talk them because they're on the other side.",
+          "challenge": {
+            "scenario": "In a study, people were randomly assigned to 'red team' and 'blue team.' Within minutes, they rated their own team members as more creative, trustworthy, and intelligent.",
+            "options": [
+              "Bandwagon Effect",
+              "Halo Effect",
+              "In-Group Bias",
+              "Confirmation Bias"
+            ],
+            "correct": 2
+          },
+          "tip": "Practice seeing people as individuals, not as members of a group. Ask: 'Would I judge this person differently if they were on my team?'"
+        },
+        "3": {
+          "definition": "A pattern of systematic favoritism toward members of one's perceived social, cultural, or organizational group, combined with distrust or devaluation of out-group members, even when group membership is arbitrary.",
+          "scenarioDoneTo": "A hiring manager unconsciously favors candidates who share their alma mater, cultural background, or hobbies — screening out equally qualified candidates who don't share those surface-level similarities.",
+          "scenarioYouDo": "In a cross-departmental meeting, you dismiss a valid concern from another team because they 'don't understand what we do' — when their outside perspective was exactly what was needed.",
+          "challenge": {
+            "scenario": "Research shows that people allocate more prize money to strangers who were randomly assigned the same color t-shirt as them in an experiment — with no other shared traits.",
+            "options": [
+              "In-Group Bias",
+              "Halo Effect",
+              "Authority Bias",
+              "Bandwagon Effect"
+            ],
+            "correct": 0
+          },
+          "tip": "Actively seek input from people outside your group. Use blind evaluation processes where possible. Treat outsider perspectives as valuable data, not threats."
+        }
+      }
+    },
+    {
+      "id": "negativity",
+      "name": "Negativity Bias",
+      "tiers": {
+        "1": {
+          "definition": "When one bad thing feels way bigger than many good things.",
+          "scenarioDoneTo": "You get nine compliments on your art project and one kid says it's ugly. You go home only thinking about that one comment.",
+          "scenarioYouDo": "Your brother does ten nice things for you this week. He eats the last slice of pizza once. You tell your mom he's 'always selfish.'",
+          "challenge": {
+            "scenario": "You had an amazing day at school — good grades, fun at lunch, scored in gym. Then you tripped in the hallway. That's all you talk about at dinner.",
+            "options": [
+              "Negativity Bias",
+              "Spotlight Effect",
+              "Availability Heuristic"
+            ],
+            "correct": 0
+          },
+          "tip": "Keep a score. When something bad happens, count how many good things also happened. Write them down if you have to — your brain won't count them automatically."
+        },
+        "2": {
+          "definition": "The psychological tendency to give more weight to negative experiences, information, or emotions than to equally intense positive ones.",
+          "scenarioDoneTo": "A restaurant has 200 five-star reviews and 3 one-star reviews. You read the bad ones first and almost don't go.",
+          "scenarioYouDo": "Your friend cancels on you once. You've hung out 50 times this year. But you start telling people they're flakey based on that one time.",
+          "challenge": {
+            "scenario": "A study found that losing $100 feels about twice as painful as gaining $100 feels good. People will take bigger risks to avoid loss than to achieve gain.",
+            "options": [
+              "Sunk Cost Fallacy",
+              "Negativity Bias",
+              "Anchoring Bias",
+              "Framing Effect"
+            ],
+            "correct": 1
+          },
+          "altChallenges": [
+            {
+              "scenario": "A teacher writes ten positive comments on your essay and one suggestion for improvement. You go home upset about the one suggestion.",
+              "options": [
+                "Negativity Bias",
+                "Spotlight Effect",
+                "Confirmation Bias",
+                "Framing Effect"
+              ],
+              "correct": 0
+            }
+          ],
+          "tip": "Use the ratio test: how many positives vs. negatives actually exist? If the ratio is heavily positive but you feel negative, your brain is weighting them unfairly."
+        },
+        "3": {
+          "definition": "An asymmetry in cognitive processing where negative stimuli produce larger psychological responses than neutral or positive stimuli of equal magnitude, influencing attention, learning, memory, and decision-making.",
+          "scenarioDoneTo": "A leader delivers a performance review that is 90% positive. The employee fixates on the single area of improvement, interprets it as criticism, and leaves the meeting demoralized despite an excellent overall assessment.",
+          "scenarioYouDo": "You evaluate two job candidates. One has a flawless but unremarkable record. The other has a brilliant track record with one notable failure. You rank the flawless candidate higher because the failure looms larger than the accomplishments.",
+          "challenge": {
+            "scenario": "Researchers found that people can detect angry faces in a crowd faster than happy faces. Our brains are literally wired to spot threats before rewards.",
+            "options": [
+              "Availability Heuristic",
+              "Negativity Bias",
+              "Confirmation Bias",
+              "Spotlight Effect"
+            ],
+            "correct": 1
+          },
+          "tip": "Build a deliberate practice of listing positives before addressing negatives. In evaluations, weight positive and negative data equally by using structured scoring rather than gut feeling."
+        }
+      }
+    },
+    {
+      "id": "status-quo",
+      "name": "Status Quo Bias",
+      "tiers": {
+        "1": {
+          "definition": "When you stick with the way things are just because that's how they've always been, even if changing would be better.",
+          "scenarioDoneTo": "Your school uses a terrible lunch schedule. Everyone hates it. But when someone proposes a new one, people say 'it's fine how it is.'",
+          "scenarioYouDo": "You always sit in the same seat in class. One day someone takes it and you feel annoyed — even though the other open seats are just as good.",
+          "challenge": {
+            "scenario": "Your family has gone to the same vacation spot every year. Someone suggests somewhere new and better. Everyone says 'No, we always go there.'",
+            "options": [
+              "Sunk Cost Fallacy",
+              "Status Quo Bias",
+              "Anchoring Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Pretend you're choosing for the first time. If you weren't already doing it this way, would you pick this option? If not, maybe it's time to try something new."
+        },
+        "2": {
+          "definition": "A preference for the current state of affairs, where any change from the baseline is perceived as a loss even when the change would be objectively beneficial.",
+          "scenarioDoneTo": "Your phone defaults to certain privacy settings. Most people never change them — not because the defaults are good, but because changing them feels like work.",
+          "scenarioYouDo": "You stay in a class you don't like because switching would mean learning a new teacher's system. The cost of change feels scarier than the cost of staying unhappy.",
+          "challenge": {
+            "scenario": "Studies on organ donation show that countries with opt-out policies (you're a donor unless you say no) have 90%+ donation rates, while opt-in countries sit at 15%. Same people, different default.",
+            "options": [
+              "Status Quo Bias",
+              "Bandwagon Effect",
+              "Authority Bias",
+              "Sunk Cost Fallacy"
+            ],
+            "correct": 0
+          },
+          "tip": "List the pros and cons of changing vs. staying. If 'staying is easier' is your only pro for the status quo, that's the bias talking."
+        },
+        "3": {
+          "definition": "A cognitive preference for maintaining the existing state of affairs, rooted in loss aversion and regret avoidance, where the disadvantages of change are weighted more heavily than the advantages, leading to irrational persistence with suboptimal conditions.",
+          "scenarioDoneTo": "A company continues using a legacy software system that costs more to maintain than to replace. Every year they study the replacement option, and every year they defer the decision because migration feels riskier than the slow bleed.",
+          "scenarioYouDo": "You've structured your team's workflow a certain way for two years. A new approach would clearly save time. But you argue against it in the meeting because this is 'your' process and change implies the old way was wrong.",
+          "challenge": {
+            "scenario": "Retirement plan research shows that employees overwhelmingly stick with whichever investment allocations they were automatically enrolled in, even when reviewing better-performing alternatives.",
+            "options": [
+              "Anchoring Bias",
+              "Sunk Cost Fallacy",
+              "Status Quo Bias",
+              "Confirmation Bias"
+            ],
+            "correct": 2
+          },
+          "tip": "Frame the decision as 'choosing between two options' rather than 'changing vs. not changing.' This removes the false advantage that the current option gets just for being current."
+        }
+      }
+    },
+    {
+      "id": "spotlight",
+      "name": "Spotlight Effect",
+      "tiers": {
+        "1": {
+          "definition": "When you think everyone noticed your mistake or something embarrassing — but almost nobody did.",
+          "scenarioDoneTo": "This one is almost always about what you do to yourself.",
+          "scenarioYouDo": "You trip in the hallway and think about it for the rest of the day. Nobody else remembers it by lunch.",
+          "challenge": {
+            "scenario": "You have a small stain on your shirt. You're convinced everyone is staring at it all day. After school you ask your friend and they say 'What stain?'",
+            "options": [
+              "Negativity Bias",
+              "Spotlight Effect",
+              "Confirmation Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Ask someone else if they noticed. Almost every time, they didn't. Other people are too busy thinking about themselves to watch you."
+        },
+        "2": {
+          "definition": "The tendency to overestimate how much other people notice your appearance, behavior, or mistakes, because you are the center of your own world but not theirs.",
+          "scenarioDoneTo": "This bias is almost entirely self-inflicted — it's your own brain tricking you.",
+          "scenarioYouDo": "You give a class presentation and stumble over one word. You're sure everyone noticed. A study would show that most of the class was thinking about their own presentation.",
+          "challenge": {
+            "scenario": "Researchers had people wear embarrassing t-shirts into a room. The wearers estimated that 50% of people noticed. The actual number who noticed was about 25%.",
+            "options": [
+              "Spotlight Effect",
+              "Negativity Bias",
+              "Halo Effect",
+              "Dunning-Kruger Effect"
+            ],
+            "correct": 0
+          },
+          "tip": "Remember: everyone else has their own spotlight effect too. They're worrying about themselves, not watching you. The audience notices about half as much as you think."
+        },
+        "3": {
+          "definition": "An egocentric bias in which individuals overestimate the extent to which their actions and appearance are noticed by others, stemming from the difficulty of stepping outside one's own perspective to evaluate how much attention others actually allocate.",
+          "scenarioDoneTo": "In professional settings, this bias causes people to over-prepare for minor presentations and under-invest in the ones that matter — because they misjudge which situations others are actually paying attention to.",
+          "scenarioYouDo": "You send a slightly awkward email and spend the next hour worrying about how it landed. The recipient read it in 10 seconds, understood the point, and moved on without a second thought.",
+          "challenge": {
+            "scenario": "A study found that people who arrived late to a meeting believed their tardiness was far more disruptive and noticed than their colleagues actually reported.",
+            "options": [
+              "Availability Heuristic",
+              "Negativity Bias",
+              "Spotlight Effect",
+              "In-Group Bias"
+            ],
+            "correct": 2
+          },
+          "tip": "Apply the 'one week test' — will this moment matter in a week? In a month? Redirect the energy you'd spend worrying about perception toward the substance of your work."
+        }
+      }
+    },
+    {
+      "id": "optimism",
+      "name": "Optimism Bias",
+      "tiers": {
+        "1": {
+          "definition": "When you believe bad things are less likely to happen to YOU than to other people.",
+          "scenarioDoneTo": "Everyone knows texting and riding a bike is dangerous. But you think 'I'm good at it, I won't crash.' Until you crash.",
+          "scenarioYouDo": "You don't study for a test because you 'just have a feeling' you'll do fine. You don't have a plan — you have optimism bias.",
+          "challenge": {
+            "scenario": "A kid knows the roller coaster makes some people sick. They think 'That won't happen to me.' Halfway through, it happens to them.",
+            "options": [
+              "Optimism Bias",
+              "Dunning-Kruger Effect",
+              "Spotlight Effect"
+            ],
+            "correct": 0
+          },
+          "tip": "Ask yourself: if my friend were in this exact situation, what advice would I give them? Give yourself that same honest advice."
+        },
+        "2": {
+          "definition": "The belief that you are less likely to experience negative events and more likely to experience positive events compared to others, even without evidence.",
+          "scenarioDoneTo": "Most new businesses fail within 5 years. Every entrepreneur believes theirs will be the exception. Statistically, most of them are wrong.",
+          "scenarioYouDo": "You start a big project the night before it's due because you believe you work best under pressure. You always say this. It almost never works out.",
+          "challenge": {
+            "scenario": "Surveys show that 93% of drivers rate themselves as 'above average.' Obviously, 43% of them are wrong — but each one believes it.",
+            "options": [
+              "Dunning-Kruger Effect",
+              "Optimism Bias",
+              "Confirmation Bias",
+              "Halo Effect"
+            ],
+            "correct": 1
+          },
+          "tip": "Check your track record. Look at how similar situations actually turned out in the past. Use history, not hope, to predict results."
+        },
+        "3": {
+          "definition": "A well-documented cognitive bias in which individuals systematically underestimate their personal risk for negative outcomes while overestimating their prospects for positive outcomes, independent of actual probability distributions.",
+          "scenarioDoneTo": "Despite knowing that most mergers fail to create value, executives consistently predict that their acquisition will be 'different.' Post-merger analysis routinely shows they overpaid and underestimated integration costs.",
+          "scenarioYouDo": "You set an aggressive project timeline, genuinely believing your team will beat the deadline despite three similar projects running late. You dismiss the historical data because 'this time the team is more focused.'",
+          "challenge": {
+            "scenario": "The 'planning fallacy' — a subset of optimism bias — predicts that the Sydney Opera House, budgeted at $7M and 4 years, would actually cost $102M and take 16 years. Almost every major project shows this pattern.",
+            "options": [
+              "Anchoring Bias",
+              "Optimism Bias",
+              "Status Quo Bias",
+              "Sunk Cost Fallacy"
+            ],
+            "correct": 1
+          },
+          "tip": "Use 'reference class forecasting' — look at how similar projects or decisions turned out for others, and use that as your baseline instead of your personal optimism."
+        }
+      }
+    },
+    {
+      "id": "recency",
+      "name": "Recency Bias",
+      "tiers": {
+        "1": {
+          "definition": "When you judge something based only on what happened most recently, ignoring everything before.",
+          "scenarioDoneTo": "Your favorite player has one bad game. Social media says they're 'washed.' They had 20 great games before that.",
+          "scenarioYouDo": "You had a fight with your friend yesterday. Today you tell someone they're a bad friend — even though they've been great to you for years.",
+          "challenge": {
+            "scenario": "A student gets a C on the last test of the semester. They say the class was 'too hard' — even though they got A's on every other test.",
+            "options": [
+              "Recency Bias",
+              "Negativity Bias",
+              "Confirmation Bias"
+            ],
+            "correct": 0
+          },
+          "tip": "Zoom out. Think about the last 10 times, not just the last time. One moment doesn't tell the whole story."
+        },
+        "2": {
+          "definition": "A cognitive bias where recent events are given more importance than earlier events when making judgments, because recent memories are more vivid and accessible.",
+          "scenarioDoneTo": "A coach benches a strong player because of one bad practice, ignoring a season of excellent performance, because yesterday's mistakes are freshest in mind.",
+          "scenarioYouDo": "You rate a TV series as 'terrible' because the finale was bad. You loved seasons 1-5, but the last episode is all you can feel.",
+          "challenge": {
+            "scenario": "Investors pour money into stocks that performed well in the last month, even though long-term data shows those stocks often revert to the mean.",
+            "options": [
+              "Availability Heuristic",
+              "Optimism Bias",
+              "Recency Bias",
+              "Bandwagon Effect"
+            ],
+            "correct": 2
+          },
+          "tip": "Before making a judgment, look at the full timeline — not just what happened last. Write down data from the whole period, not just the end."
+        },
+        "3": {
+          "definition": "A temporal weighting bias in which the most recent data points are treated as more representative than they are, distorting trend analysis, performance evaluation, and strategic decisions toward short-term patterns that may not persist.",
+          "scenarioDoneTo": "A quarterly business review focuses 80% of discussion on the last two weeks of the quarter because those numbers are freshest, even though structural trends from months one and two are more predictive of future performance.",
+          "scenarioYouDo": "You advocate for a strategy pivot based on last quarter's results, ignoring that the previous eight quarters showed a clear positive trajectory. You're overweighting the most recent noise.",
+          "challenge": {
+            "scenario": "Performance review research shows that managers disproportionately weight an employee's last 4-6 weeks when writing annual reviews, effectively discounting 10 months of performance data.",
+            "options": [
+              "Negativity Bias",
+              "Recency Bias",
+              "Confirmation Bias",
+              "Anchoring Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Use equal-weighted time periods in analysis. Force yourself to review the full dataset before drawing conclusions. Ask: 'Am I reacting to a trend or a blip?'"
+        }
+      }
+    },
+    {
+      "id": "framing",
+      "name": "Framing Effect",
+      "tiers": {
+        "1": {
+          "definition": "When how something is said changes how you feel about it, even though the facts are the same.",
+          "scenarioDoneTo": "A snack package says '90% fat free.' That sounds healthy. But '10% fat' sounds gross. It's the exact same thing.",
+          "scenarioYouDo": "You tell your parents 'I passed 4 out of 5 classes!' instead of 'I failed one class.' Same fact, totally different reaction.",
+          "challenge": {
+            "scenario": "A sign says 'Save $50!' on a $200 item. Another sign says '$150 price.' You feel more excited about the first one even though the price is identical.",
+            "options": [
+              "Framing Effect",
+              "Anchoring Bias",
+              "Availability Heuristic"
+            ],
+            "correct": 0
+          },
+          "tip": "Flip it around. Say the same thing in the opposite way and see if you feel different. If you do, the framing was doing the work, not the facts."
+        },
+        "2": {
+          "definition": "A bias where the way information is presented — positive vs. negative framing, gains vs. losses — significantly impacts decisions and judgments, even when the underlying facts are identical.",
+          "scenarioDoneTo": "A doctor says 'This surgery has a 90% survival rate.' Another says 'This surgery has a 10% mortality rate.' Patients choose differently despite identical odds.",
+          "scenarioYouDo": "You present class election results as 'I got 60% of the vote!' but leave out that only 25 people voted out of 200 students.",
+          "challenge": {
+            "scenario": "A study offered people two programs to combat a disease: Program A 'saves 200 people' vs. Program B 'lets 400 people die.' They're the same outcome for 600 people, but people overwhelmingly chose A.",
+            "options": [
+              "Anchoring Bias",
+              "Framing Effect",
+              "Confirmation Bias",
+              "Negativity Bias"
+            ],
+            "correct": 1
+          },
+          "tip": "Always restate the information in the opposite frame. If '90% survival' sounds good, say '10% die' and see if you still feel the same. The facts haven't changed — only the frame."
+        },
+        "3": {
+          "definition": "A cognitive bias in which equivalent information produces systematically different decisions depending on whether it is presented in terms of gains or losses, demonstrating that preference is not purely a function of outcomes but is heavily influenced by the description of outcomes.",
+          "scenarioDoneTo": "A financial advisor presents retirement projections showing 'expected returns' in one scenario and 'probability of shortfall' in another. Clients make dramatically different allocation decisions even though the underlying math is identical.",
+          "scenarioYouDo": "You frame a budget cut as 'efficiency improvement' in your presentation, knowing that identical proposals labeled as 'cost reduction' face more resistance in your organization. You're using framing strategically.",
+          "challenge": {
+            "scenario": "Kahneman and Tversky's prospect theory demonstrates that a certain gain of $500 is preferred over a 50% chance of $1,000 — but a certain loss of $500 is rejected in favor of a 50% chance of losing $1,000. The only difference is the frame.",
+            "options": [
+              "Framing Effect",
+              "Anchoring Bias",
+              "Sunk Cost Fallacy",
+              "Optimism Bias"
+            ],
+            "correct": 0
+          },
+          "tip": "Strip the language and focus on the raw numbers. Translate any framed statement into neutral, quantitative terms before making a decision. Be suspicious of anyone (including yourself) who resists reframing."
+        }
+      }
+    },
+    {
+      "id": "choice-supportive",
+      "name": "Choice-Supportive Bias",
+      "tiers": {
+        "1": {
+          "definition": "When you convince yourself that the choice you already made was great — even when it wasn't.",
+          "scenarioDoneTo": "This bias is almost entirely self-inflicted — your brain protects you from regret.",
+          "scenarioYouDo": "You pick a character in a video game. Your friend picks one that's clearly better. You spend the next hour explaining why your choice is actually superior.",
+          "challenge": {
+            "scenario": "You chose the blue backpack. Your friend got the red one and it has more pockets. You say 'Blue is way cooler though' and act like pockets don't matter.",
+            "options": [
+              "Choice-Supportive Bias",
+              "Confirmation Bias",
+              "Sunk Cost Fallacy"
+            ],
+            "correct": 0
+          },
+          "tip": "It's okay to admit a choice wasn't perfect. Being honest about it helps you make better choices next time instead of pretending everything is fine."
+        },
+        "2": {
+          "definition": "The tendency to retroactively assign positive attributes to a choice you've already made and negative attributes to the options you rejected, in order to feel good about your decision.",
+          "scenarioDoneTo": "Your brain does this to you automatically — it rewrites your memory to make your choices seem better than they were.",
+          "scenarioYouDo": "You chose to attend one summer camp over another. The whole summer you talk about how great your camp is and find reasons why the other camp would have been worse — even though you have no way to compare.",
+          "challenge": {
+            "scenario": "After buying a car, people rate their chosen model higher and competing models lower — even on objective metrics they previously rated equally.",
+            "options": [
+              "Sunk Cost Fallacy",
+              "Confirmation Bias",
+              "Choice-Supportive Bias",
+              "Status Quo Bias"
+            ],
+            "correct": 2
+          },
+          "tip": "Write down your honest evaluation of options BEFORE choosing. Then compare it to how you feel after. If your ratings magically shifted, your brain is rewriting history."
+        },
+        "3": {
+          "definition": "A post-decisional bias in which individuals distort their memories and evaluations to be more favorable toward chosen alternatives and more critical of rejected ones, reducing cognitive dissonance and creating a false sense of decisional competence.",
+          "scenarioDoneTo": "This bias is almost exclusively self-directed — your brain retroactively edits your perception to align with your choices.",
+          "scenarioYouDo": "After selecting a vendor for a major contract, you start emphasizing their strengths in internal communications while downplaying the advantages of the vendor you didn't select — even though your original evaluation had them nearly tied.",
+          "challenge": {
+            "scenario": "Research shows that voters become significantly more positive about their chosen candidate and more negative about opponents after casting their ballot — even though nothing about the candidates changed in that moment.",
+            "options": [
+              "Choice-Supportive Bias",
+              "In-Group Bias",
+              "Confirmation Bias",
+              "Bandwagon Effect"
+            ],
+            "correct": 0
+          },
+          "tip": "Conduct pre-mortems and post-mortems using your original evaluation criteria. Compare your pre-decision and post-decision assessments side by side — the gap reveals the bias at work."
+        }
+      }
+    }
+  ]
+}

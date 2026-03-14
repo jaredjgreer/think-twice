@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a0a0f">
+  <title>Think Twice</title>
+
+  <link rel="stylesheet" href="css/retro.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="crt-flicker">
+
+  <!-- ═══ HOME SCREEN ═══ -->
+  <div id="home-screen" class="screen home-screen active">
+    <div class="game-title glow-cyan">🧠 THINK<br>TWICE</div>
+    <div class="game-subtitle glow-pink">OUTSMART YOUR BRAIN</div>
+
+    <div class="high-scores">
+      <h2>HIGH SCORES</h2>
+      <div id="home-leaderboard"></div>
+    </div>
+
+    <div id="btn-press-start" class="press-start blink glow-yellow">▶ PRESS START ◀</div>
+
+    <div class="home-buttons">
+      <button id="btn-players-home" class="btn">PLAYERS</button>
+      <button id="btn-export" class="btn btn-pink">BACKUP</button>
+      <button id="btn-import" class="btn btn-pink">RESTORE</button>
+      <button id="btn-help" class="btn btn-yellow">? HELP</button>
+    </div>
+    <input type="file" id="import-file" accept=".json" style="display:none">
+  </div>
+
+  <!-- ═══ SETUP SCREEN ═══ -->
+  <div id="setup-screen" class="screen setup-screen">
+    <div class="setup-title glow-cyan">WHO'S PLAYING?</div>
+
+    <div class="player-list" id="player-list-container"></div>
+
+    <button id="btn-add-player" class="btn btn-pink">+ ADD PLAYER</button>
+
+    <div class="setup-title glow-cyan" style="margin-top: 16px;">GRID SIZE</div>
+    <div class="grid-selector">
+      <button class="grid-option" data-size="2">2×2</button>
+      <button class="grid-option" data-size="3">3×3</button>
+      <button class="grid-option selected" data-size="4">4×4</button>
+      <button class="grid-option" data-size="6">6×6</button>
+    </div>
+
+    <div class="setup-title glow-cyan" style="margin-top: 16px;">GAME MODE</div>
+    <div class="mode-selector">
+      <button class="mode-option selected" data-mode="classic">
+        <span class="mode-name">CLASSIC</span>
+        <span class="mode-desc">Read scenario, name the bias</span>
+      </button>
+      <button class="mode-option" data-mode="define">
+        <span class="mode-name">DEFINE IT</span>
+        <span class="mode-desc">See the bias, pick its meaning</span>
+      </button>
+      <button class="mode-option" data-mode="spot">
+        <span class="mode-name">SPOT IT</span>
+        <span class="mode-desc">See description, find the scenario</span>
+      </button>
+      <button class="mode-option" data-mode="mixed">
+        <span class="mode-name">MIXED</span>
+        <span class="mode-desc">Random mode every card</span>
+      </button>
+    </div>
+
+    <div style="display: flex; gap: 12px; margin-top: 16px;">
+      <button id="btn-back-home" class="btn">← BACK</button>
+      <button id="btn-start-game" class="btn btn-green btn-large">START GAME</button>
+    </div>
+  </div>
+
+  <!-- ═══ ADD PLAYER MODAL ═══ -->
+  <div id="add-player-modal" class="modal-overlay">
+    <div class="modal box-glow-cyan">
+      <h2>NEW PLAYER</h2>
+
+      <input type="text" id="new-player-name" placeholder="NAME" maxlength="20" autocomplete="off">
+
+      <div style="text-align: center; font-family: var(--font-pixel); font-size: 9px; color: var(--neon-cyan);">PICK YOUR ICON</div>
+      <div id="emoji-picker" class="emoji-picker"></div>
+
+      <div style="text-align: center; font-family: var(--font-pixel); font-size: 9px; color: var(--neon-cyan);">YOUR AGE</div>
+      <div id="age-picker" class="birthday-picker"></div>
+      <div id="age-display" class="age-display"></div>
+
+      <div class="modal-buttons">
+        <button id="btn-cancel-player" class="btn">CANCEL</button>
+        <button id="btn-save-player" class="btn btn-green">SAVE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PASS SCREEN (between turns) ═══ -->
+  <div id="pass-screen" class="screen pass-screen grid-bg">
+    <div id="pass-emoji" class="pass-emoji glow-cyan">★</div>
+    <div class="pass-text">
+      <span id="pass-name">PASS TO SOFIA</span>
+    </div>
+    <button id="btn-ready" class="btn btn-yellow btn-large blink">TAP WHEN READY</button>
+  </div>
+
+  <!-- ═══ GAME SCREEN ═══ -->
+  <div id="game-screen" class="screen game-screen">
+    <div class="game-topbar">
+      <button id="btn-game-home" class="btn btn-sm">← HOME</button>
+      <div id="scoreboard" class="scoreboard"></div>
+    </div>
+    <div id="turn-banner" class="turn-banner glow-yellow"></div>
+    <div id="card-grid" class="card-grid grid-bg grid-4x4"></div>
+  </div>
+
+  <!-- ═══ CHALLENGE MODAL ═══ -->
+  <div id="challenge-overlay" class="challenge-overlay">
+    <div class="challenge-box box-glow-cyan">
+      <div id="challenge-bias-name" class="bias-title glow-pink"></div>
+      <div id="challenge-definition" class="definition"></div>
+
+      <div id="challenge-scenario" class="scenario"></div>
+
+      <div id="challenge-question" class="question">WHAT BIAS IS THIS?</div>
+      <div id="challenge-options" class="challenge-options"></div>
+
+      <div id="challenge-result" class="challenge-result"></div>
+
+      <div id="tip-reveal" class="tip-reveal">
+        <span class="tip-label">🛡 HOW TO AVOID IT</span>
+        <div id="tip-text" class="tip-text"></div>
+      </div>
+
+      <!-- Steal Section -->
+      <div id="steal-section" style="display:none; text-align:center;">
+        <div id="steal-player-name" class="steal-banner blink glow-yellow"></div>
+        <div style="display: flex; gap: 12px; justify-content: center; margin-top: 10px;">
+          <button id="btn-steal-yes" class="btn btn-yellow">⚡ STEAL</button>
+          <button id="btn-steal-no" class="btn">SKIP</button>
+        </div>
+      </div>
+
+      <button id="btn-challenge-next" class="btn btn-green btn-large" style="display:none; align-self:center;">NEXT →</button>
+    </div>
+  </div>
+
+  <!-- ═══ GAME OVER SCREEN ═══ -->
+  <div id="gameover-screen" class="screen gameover-screen grid-bg">
+    <div class="gameover-title glow-yellow">★ ★ ★ GAME OVER ★ ★ ★</div>
+    <div id="gameover-winner-text" class="gameover-winner glow-green"></div>
+
+    <div id="gameover-scores" class="gameover-scores"></div>
+
+    <div class="gameover-biases" id="gameover-biases-section">
+      <h3>BIASES ENCOUNTERED</h3>
+      <div id="gameover-biases-list"></div>
+    </div>
+
+    <div class="gameover-buttons">
+      <button id="btn-rematch" class="btn btn-yellow btn-large">▶ REMATCH</button>
+      <button id="btn-go-home" class="btn">HIGH SCORES</button>
+    </div>
+  </div>
+
+  <!-- ═══ HELP MODAL ═══ -->
+  <div id="help-modal" class="modal-overlay">
+    <div class="modal box-glow-cyan help-content">
+      <h2 class="glow-yellow">HOW TO PLAY</h2>
+      <div class="help-rules">
+        <p>1. Create players — pick your icon & age</p>
+        <p>2. Select a grid size (2×2 to 6×6)</p>
+        <p>3. Take turns flipping cards</p>
+        <p>4. Each card reveals a cognitive bias</p>
+        <p>5. Answer the multiple choice question</p>
+        <p>6. Get it right? <span class="glow-green">+10 pts</span> and GO AGAIN!</p>
+        <p>7. Get it wrong? Next player can <span class="glow-yellow">STEAL for 5 pts</span></p>
+        <p>8. Most points wins!</p>
+      </div>
+      <div class="help-what">
+        <h3>WHAT ARE COGNITIVE BIASES?</h3>
+        <p>Tricks your brain plays on you — shortcuts that can lead to bad decisions. Learning to spot them helps you THINK TWICE!</p>
+      </div>
+      <button id="btn-close-help" class="btn btn-green">GOT IT</button>
+    </div>
+  </div>
+
+  <!-- ═══ RESUME MODAL ═══ -->
+  <div id="resume-modal" class="modal-overlay">
+    <div class="modal box-glow-yellow" style="text-align:center;">
+      <h2 class="glow-yellow">GAME IN PROGRESS</h2>
+      <p style="font-family:var(--font-terminal); font-size:22px; color:var(--text-white);">You have an unfinished game. Resume where you left off?</p>
+      <div class="modal-buttons">
+        <button id="btn-resume-no" class="btn">NEW GAME</button>
+        <button id="btn-resume-yes" class="btn btn-green">RESUME</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts (order matters) -->
+  <script src="js/storage.js"></script>
+  <script src="js/players.js"></script>
+  <script src="js/sound.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
