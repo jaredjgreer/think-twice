@@ -296,6 +296,75 @@ const Game = (() => {
     saveState();
   }
 
+  // Tic-tac-toe bonus: check if a player completed a full row, column, or diagonal
+  function checkTTTBonus(cardIndex, playerId) {
+    const size = state.gridSize;
+    const row = Math.floor(cardIndex / size);
+    const col = cardIndex % size;
+    const bonusIndices = new Set();
+
+    // Check row
+    const rowStart = row * size;
+    let rowComplete = true;
+    for (let c = 0; c < size; c++) {
+      if (state.cards[rowStart + c].completedBy !== playerId) { rowComplete = false; break; }
+    }
+    if (rowComplete) {
+      for (let c = 0; c < size; c++) bonusIndices.add(rowStart + c);
+    }
+
+    // Check column
+    let colComplete = true;
+    for (let r = 0; r < size; r++) {
+      if (state.cards[r * size + col].completedBy !== playerId) { colComplete = false; break; }
+    }
+    if (colComplete) {
+      for (let r = 0; r < size; r++) bonusIndices.add(r * size + col);
+    }
+
+    // Check main diagonal (if card is on it)
+    if (row === col) {
+      let diagComplete = true;
+      for (let d = 0; d < size; d++) {
+        if (state.cards[d * size + d].completedBy !== playerId) { diagComplete = false; break; }
+      }
+      if (diagComplete) {
+        for (let d = 0; d < size; d++) bonusIndices.add(d * size + d);
+      }
+    }
+
+    // Check anti-diagonal (if card is on it)
+    if (row + col === size - 1) {
+      let antiComplete = true;
+      for (let d = 0; d < size; d++) {
+        if (state.cards[d * size + (size - 1 - d)].completedBy !== playerId) { antiComplete = false; break; }
+      }
+      if (antiComplete) {
+        for (let d = 0; d < size; d++) bonusIndices.add(d * size + (size - 1 - d));
+      }
+    }
+
+    if (bonusIndices.size === 0) return null;
+
+    // Mark cards and award bonus (only for newly-detected bonus cards)
+    let newBonusCards = 0;
+    bonusIndices.forEach(idx => {
+      if (!state.cards[idx].tttBonus) {
+        state.cards[idx].tttBonus = true;
+        newBonusCards++;
+      }
+    });
+
+    if (newBonusCards === 0) return null;
+
+    const bonusPoints = newBonusCards * 25;
+    const player = state.players.find(p => p.id === playerId);
+    if (player) player.sessionScore += bonusPoints;
+
+    saveState();
+    return { bonusPoints, bonusCardIndices: [...bonusIndices] };
+  }
+
   function isGameOver() {
     return state.cardsCompleted >= state.totalCards;
   }
@@ -348,6 +417,7 @@ const Game = (() => {
     buildStealChallenge,
     answerChallenge,
     attemptSteal,
+    checkTTTBonus,
     advanceTurn,
     skipSteal,
     isGameOver,

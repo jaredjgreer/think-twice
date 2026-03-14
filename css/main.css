@@ -1149,6 +1149,23 @@ html, body {
   box-shadow: 0 0 5px var(--neon-yellow), 0 0 15px rgba(255, 230, 0, 0.3), inset 0 0 5px rgba(255, 230, 0, 0.1);
 }
 
+/* ─── TTT BONUS GLOW ─── */
+
+.card.ttt-bonus .card-front {
+  border-color: var(--neon-yellow);
+  background: rgba(255, 230, 0, 0.08);
+  opacity: 1;
+}
+
+.card.ttt-bonus .card-inner {
+  animation: tttPulse 0.6s ease-in-out 3;
+}
+
+@keyframes tttPulse {
+  0%, 100% { box-shadow: 0 0 4px var(--neon-yellow); }
+  50% { box-shadow: 0 0 18px var(--neon-yellow), 0 0 30px rgba(255, 230, 0, 0.4); }
+}
+
 /* ─── RESPONSIVE ─── */
 
 @media (max-width: 600px) {
@@ -1161,4 +1178,100 @@ html, body {
 
 @media (min-width: 1024px) {
   .card-grid { max-width: 900px; }
+}
+
+/* ─── LANDSCAPE MODE ─── */
+
+@media (orientation: landscape) and (max-height: 600px) {
+  .game-screen {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6px 10px;
+    gap: 4px;
+    overflow: hidden;
+  }
+
+  .game-topbar {
+    flex-direction: column;
+    width: auto;
+    min-width: 120px;
+    max-width: 160px;
+    gap: 6px;
+    order: 1;
+    align-self: stretch;
+    overflow-y: auto;
+  }
+
+  .game-topbar .scoreboard {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .sb-player { font-size: 8px; padding: 2px 6px; }
+  .sb-player .sb-score { font-size: 10px; }
+
+  .turn-banner {
+    width: 100%;
+    order: 0;
+    font-size: 9px;
+    padding: 2px 0;
+  }
+
+  .card-grid {
+    order: 2;
+    flex: 1;
+    max-width: none;
+    height: calc(100vh - 40px);
+    max-height: calc(100vh - 40px);
+    align-content: center;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .card {
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-back .card-label { font-size: 6px; }
+  .card-front .bias-name { font-size: 5px; }
+}
+
+@media (orientation: landscape) and (min-height: 601px) {
+  .game-screen {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    gap: 6px;
+  }
+
+  .game-topbar {
+    flex-direction: column;
+    width: auto;
+    min-width: 140px;
+    max-width: 180px;
+    gap: 8px;
+    order: 1;
+    align-self: flex-start;
+  }
+
+  .game-topbar .scoreboard {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .turn-banner {
+    width: 100%;
+    order: 0;
+    font-size: 10px;
+    padding: 4px 0;
+  }
+
+  .card-grid {
+    order: 2;
+    flex: 1;
+    max-width: none;
+    align-content: center;
+    padding: 6px;
+    gap: 6px;
+  }
 }

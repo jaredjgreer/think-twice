@@ -208,6 +208,7 @@ const App = (() => {
       if (card.completedBy) {
         const completedPlayer = gs.players.find(p => p.id === card.completedBy);
         cardEl.classList.add('completed', 'flipped');
+        if (card.tttBonus) cardEl.classList.add('ttt-bonus');
         cardEl.innerHTML = `
           <div class="card-inner">
             <div class="card-back">
@@ -438,7 +439,7 @@ const App = (() => {
       document.getElementById('btn-challenge-next').style.display = 'block';
       document.getElementById('steal-section').style.display = 'none';
       document.getElementById('btn-challenge-next').onclick = () => {
-        closeChallengeAndAdvance(result);
+        closeChallengeAndAdvance(result, cardIndex);
       };
     } else if (isSteal && result.stealAvailable) {
       // Cascading steal — another player can try for even more points
@@ -472,14 +473,14 @@ const App = (() => {
 
       document.getElementById('btn-steal-no').onclick = () => {
         Game.skipSteal();
-        closeChallengeAndAdvance({ correct: false, gameOver: false });
+        closeChallengeAndAdvance({ correct: false, gameOver: false }, cardIndex);
       };
     } else if (isSteal) {
       // Everyone missed — move on
       document.getElementById('btn-challenge-next').style.display = 'block';
       document.getElementById('steal-section').style.display = 'none';
       document.getElementById('btn-challenge-next').onclick = () => {
-        closeChallengeAndAdvance(result);
+        closeChallengeAndAdvance(result, cardIndex);
       };
     } else if (result.stealAvailable) {
       // First miss — offer steal to next player
@@ -512,13 +513,13 @@ const App = (() => {
 
       document.getElementById('btn-steal-no').onclick = () => {
         Game.skipSteal();
-        closeChallengeAndAdvance({ correct: false, gameOver: false });
+        closeChallengeAndAdvance({ correct: false, gameOver: false }, cardIndex);
       };
     } else {
       document.getElementById('btn-challenge-next').style.display = 'block';
       document.getElementById('btn-challenge-next').onclick = () => {
         Game.skipSteal();
-        closeChallengeAndAdvance(result);
+        closeChallengeAndAdvance(result, cardIndex);
       };
     }
   }
@@ -544,8 +545,35 @@ const App = (() => {
     document.getElementById('challenge-overlay').classList.remove('active');
   }
 
-  function closeChallengeAndAdvance(result) {
+  function closeChallengeAndAdvance(result, cardIndex) {
     closeChallenge();
+
+    // Check for tic-tac-toe bonus after correct answer
+    if (result.correct && cardIndex !== undefined) {
+      const ttt = Game.checkTTTBonus(cardIndex, result.player.id);
+      if (ttt) {
+        renderGameBoard();
+        Sound.play('goagain');
+        // Flash bonus cards gold
+        ttt.bonusCardIndices.forEach(idx => {
+          const el = document.querySelector(`.card[data-index="${idx}"]`);
+          if (el) el.classList.add('ttt-bonus');
+        });
+        // Show bonus banner
+        const banner = document.getElementById('turn-banner');
+        banner.innerHTML = `★ ROW BONUS! +${ttt.bonusPoints} PTS ★`;
+        banner.classList.add('glow-yellow');
+        renderScoreboard();
+        setTimeout(() => {
+          if (result.gameOver || Game.isGameOver()) { endGame(); return; }
+          Game.advanceTurn();
+          showPassScreen();
+        }, 2000);
+        return;
+      }
+    }
+
+    renderGameBoard();
 
     if (result.gameOver || Game.isGameOver()) {
       endGame();
