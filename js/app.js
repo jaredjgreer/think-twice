@@ -9,6 +9,12 @@ const App = (() => {
   let selectedGridSize = 4;
   let selectedGameMode = 'classic';
   let selectedPlayerIds = [];
+  let selectedDeckId = 'cognitive-biases';
+
+  const DECK_FILES = {
+    'cognitive-biases': 'data/cognitive-biases.json',
+    'sunday': 'data/sunday.json'
+  };
 
   // ─── Screen Navigation ───
 
@@ -20,9 +26,8 @@ const App = (() => {
   // ─── Initialize ───
 
   async function init() {
-    // Load deck data
-    const resp = await fetch('data/cognitive-biases.json');
-    deckData = await resp.json();
+    // Load default deck data
+    await loadDeck('cognitive-biases');
 
     // Initialize cloud sync (non-blocking)
     CloudSync.init().then(() => renderHomeLeaderboard());
@@ -71,6 +76,17 @@ const App = (() => {
         document.querySelectorAll('.mode-option').forEach(b => b.classList.remove('selected'));
         btn.classList.add('selected');
         selectedGameMode = btn.dataset.mode;
+      });
+    });
+
+    // Wire deck selectors
+    document.querySelectorAll('.deck-option').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        document.querySelectorAll('.deck-option').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        selectedDeckId = btn.dataset.deck;
+        await loadDeck(selectedDeckId);
+        updateModeLabels();
       });
     });
 
@@ -125,6 +141,30 @@ const App = (() => {
     requestWakeLock();
   }
 
+  async function loadDeck(deckId) {
+    const resp = await fetch(DECK_FILES[deckId]);
+    deckData = await resp.json();
+    selectedDeckId = deckId;
+  }
+
+  function updateModeLabels() {
+    const isSunday = selectedDeckId === 'sunday';
+    const labels = {
+      classic: isSunday ? 'Read scenario, name the principle' : 'Read scenario, name the bias',
+      define: isSunday ? 'See the principle, pick its meaning' : 'See the bias, pick its meaning',
+      spot: isSunday ? 'See description, find the scenario' : 'See description, find the scenario',
+      mixed: 'Random mode every card'
+    };
+    document.querySelectorAll('.mode-option').forEach(btn => {
+      const desc = btn.querySelector('.mode-desc');
+      if (desc && labels[btn.dataset.mode]) desc.textContent = labels[btn.dataset.mode];
+    });
+  }
+
+  function getDeckType() {
+    return deckData && deckData.deckId === 'sunday' ? 'sunday' : 'biases';
+  }
+
   // ─── Home Screen ───
 
   async function renderHomeLeaderboard() {
@@ -176,6 +216,12 @@ const App = (() => {
     document.querySelectorAll('.mode-option').forEach(b => b.classList.remove('selected'));
     const defaultMode = document.querySelector(`.mode-option[data-mode="${selectedGameMode}"]`);
     if (defaultMode) defaultMode.classList.add('selected');
+
+    // Default deck selection
+    document.querySelectorAll('.deck-option').forEach(b => b.classList.remove('selected'));
+    const defaultDeck = document.querySelector(`.deck-option[data-deck="${selectedDeckId}"]`);
+    if (defaultDeck) defaultDeck.classList.add('selected');
+    updateModeLabels();
   }
 
   function handleSavePlayer() {
@@ -662,6 +708,8 @@ const App = (() => {
     Game.finalizeScores();
     const { sortedPlayers, biasesSeen } = Game.getResults();
     const gs = Game.getState();
+    const isSunday = gs.deckData && gs.deckData.deckId === 'sunday';
+    document.getElementById('gameover-biases-heading').textContent = isSunday ? 'PRINCIPLES ENCOUNTERED' : 'BIASES ENCOUNTERED';
 
     // Push each player's score to cloud
     sortedPlayers.forEach(p => {

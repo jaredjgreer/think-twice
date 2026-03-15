@@ -45,6 +45,18 @@
 
     <button id="btn-add-player" class="btn btn-pink">+ ADD PLAYER</button>
 
+    <div class="setup-title glow-cyan" style="margin-top: 16px;">DECK</div>
+    <div class="deck-selector">
+      <button class="deck-option selected" data-deck="cognitive-biases">
+        <span class="deck-name">🧠 BIASES</span>
+        <span class="deck-desc">Cognitive biases &amp; thinking traps</span>
+      </button>
+      <button class="deck-option" data-deck="sunday">
+        <span class="deck-name">☀️ SUNDAY</span>
+        <span class="deck-desc">Gospel principles &amp; choices</span>
+      </button>
+    </div>
+
     <div class="setup-title glow-cyan" style="margin-top: 16px;">GRID SIZE</div>
     <div class="grid-selector">
       <button class="grid-option" data-size="2">2×2</button>
@@ -164,7 +176,7 @@
     <div id="gameover-scores" class="gameover-scores"></div>
 
     <div class="gameover-biases" id="gameover-biases-section">
-      <h3>BIASES ENCOUNTERED</h3>
+      <h3 id="gameover-biases-heading">BIASES ENCOUNTERED</h3>
       <div id="gameover-biases-list"></div>
     </div>
 
@@ -182,7 +194,7 @@
         <p>1. Create players — pick your icon & birthday</p>
         <p>2. Select a grid size (2×2 to 6×6)</p>
         <p>3. Take turns flipping cards</p>
-        <p>4. Each card reveals a cognitive bias challenge</p>
+        <p>4. Each card reveals a challenge</p>
         <p>5. Answer the question correctly</p>
         <p>6. Get it right? <span class="glow-green">+50 pts!</span></p>
         <p>7. Get it wrong? Next player can <span class="glow-yellow">STEAL for 25 pts</span> — if they miss, the pot keeps growing!</p>

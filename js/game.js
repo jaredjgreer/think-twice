@@ -122,6 +122,7 @@ const Game = (() => {
   function buildChallenge(card, tier, mode) {
     const tierData = card.biasData.tiers[tier];
     const allBiases = state.deckData.cards;
+    const isSunday = state.deckData.deckId === 'sunday';
 
     if (mode === 'define') {
       // Show bias name, pick correct definition from options
@@ -135,7 +136,7 @@ const Game = (() => {
       const options = shuffle([correctDef, ...decoys]);
       return {
         scenario: null,
-        prompt: `What does "${card.biasData.name}" mean?`,
+        prompt: isSunday ? `What does "${card.biasData.name}" mean?` : `What does "${card.biasData.name}" mean?`,
         options,
         correct: options.indexOf(correctDef),
         mode: 'define'
@@ -154,7 +155,7 @@ const Game = (() => {
       const options = shuffle([correctScenario, ...decoys]);
       return {
         scenario: null,
-        prompt: 'Which scenario shows this bias?',
+        prompt: isSunday ? 'Which scenario shows this principle?' : 'Which scenario shows this bias?',
         options,
         correct: options.indexOf(correctScenario),
         mode: 'spot'
@@ -167,7 +168,7 @@ const Game = (() => {
       : tierData.challenge;
     return {
       scenario: origChallenge.scenario,
-      prompt: 'What bias is this?',
+      prompt: isSunday ? 'What principle is this?' : 'What bias is this?',
       options: origChallenge.options,
       correct: origChallenge.correct,
       mode: 'classic'
