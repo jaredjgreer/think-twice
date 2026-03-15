@@ -93,10 +93,12 @@ const Players = (() => {
       const lockIcon = player.pin ? ' 🔒' : '';
       const lb = Storage.getLeaderboard();
       const allTime = lb[player.id] ? lb[player.id].totalPoints : 0;
+      const tierLabel = player.age ? `TIER ${getAgeTier(player.age)}` : '';
       slot.innerHTML = `
         ${iconHTML(player)}
         <div class="info">
           <div class="name">${sanitize(player.name)}${lockIcon}</div>
+          <div class="tier-label">${tierLabel}</div>
           <div class="age">${allTime} PTS</div>
         </div>
         <span class="check">✓</span>
@@ -241,7 +243,7 @@ const Players = (() => {
     yearDefault.textContent = 'YEAR';
     yearSelect.appendChild(yearDefault);
     const currentYear = new Date().getFullYear();
-    for (let y = currentYear - 5; y >= 1950; y--) {
+    for (let y = currentYear; y >= 1950; y--) {
       const opt = document.createElement('option');
       opt.value = y;
       opt.textContent = y;
@@ -320,6 +322,11 @@ const Players = (() => {
   let editOnSelectionChange = null;
 
   function showEditPlayerModal(player, containerEl, onSelectionChange) {
+    // Re-read from storage to get fresh data (including birthMonth/birthYear)
+    const freshPlayers = Storage.getPlayers();
+    const fresh = freshPlayers.find(p => p.id === player.id);
+    if (fresh) player = fresh;
+
     editingPlayerId = player.id;
     editContainerEl = containerEl;
     editOnSelectionChange = onSelectionChange;
@@ -385,7 +392,7 @@ const Players = (() => {
     yearDefault.textContent = 'YEAR';
     yearSelect.appendChild(yearDefault);
     const currentYear = new Date().getFullYear();
-    for (let y = currentYear - 5; y >= 1950; y--) {
+    for (let y = currentYear; y >= 1950; y--) {
       const opt = document.createElement('option');
       opt.value = y;
       opt.textContent = y;
