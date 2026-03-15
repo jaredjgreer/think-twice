@@ -86,7 +86,7 @@
 
       <input type="text" id="new-player-name" placeholder="NAME" maxlength="20" autocomplete="off">
 
-      <div style="text-align: center; font-family: var(--font-pixel); font-size: 9px; color: var(--neon-cyan);">PICK YOUR ICON</div>
+      <div style="text-align: center; font-family: var(--font-pixel); font-size: 9px; color: var(--neon-cyan);">PICK YOUR ICONS (UP TO 3)</div>
       <div id="emoji-picker" class="emoji-picker"></div>
 
       <div style="text-align: center; font-family: var(--font-pixel); font-size: 9px; color: var(--neon-cyan);">YOUR AGE</div>
@@ -243,6 +243,33 @@
       <div class="modal-buttons">
         <button id="btn-pin-cancel" class="btn">CANCEL</button>
         <button id="btn-pin-ok" class="btn btn-green">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ EDIT PLAYER MODAL ═══ -->
+  <div id="edit-player-modal" class="modal-overlay">
+    <div class="modal box-glow-cyan">
+      <h2>EDIT PLAYER</h2>
+
+      <input type="text" id="edit-player-name" placeholder="NAME" maxlength="20" autocomplete="off">
+
+      <div style="text-align: center; font-family: var(--font-pixel); font-size: 9px; color: var(--neon-cyan);">PICK YOUR ICONS (UP TO 3)</div>
+      <div id="edit-emoji-picker" class="emoji-picker"></div>
+
+      <div style="text-align: center; font-family: var(--font-pixel); font-size: 9px; color: var(--neon-cyan);">YOUR AGE</div>
+      <div id="edit-age-picker" class="birthday-picker"></div>
+      <div id="edit-age-display" class="age-display"></div>
+
+      <div class="pin-row">
+        <label class="pin-label">PIN</label>
+        <input type="password" id="edit-player-pin" placeholder="4 DIGITS" maxlength="4" inputmode="numeric" pattern="[0-9]*" autocomplete="off" class="pin-input">
+      </div>
+      <div style="text-align:center; font-family:var(--font-terminal); font-size:11px; color:var(--text-dim);">Leave blank to remove PIN</div>
+
+      <div class="modal-buttons">
+        <button id="btn-cancel-edit" class="btn">CANCEL</button>
+        <button id="btn-save-edit" class="btn btn-green">SAVE</button>
       </div>
     </div>
   </div>

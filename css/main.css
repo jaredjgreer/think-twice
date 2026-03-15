@@ -240,9 +240,10 @@ html, body {
 }
 
 .player-slot .info .age {
-  font-family: var(--font-terminal);
-  font-size: 18px;
-  color: var(--text-dim);
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  color: var(--neon-yellow);
+  text-shadow: 0 0 8px rgba(255, 230, 0, 0.6);
 }
 
 .player-slot .check {
@@ -412,6 +413,11 @@ html, body {
 .icon-pick.selected {
   border-color: var(--neon-yellow);
   background: rgba(255, 230, 0, 0.08);
+}
+
+.multi-icon {
+  display: inline-flex;
+  gap: 2px;
 }
 
 .icon-pick.icon-emoji {
@@ -1087,19 +1093,41 @@ html, body {
   margin-top: 10px;
 }
 
-/* ─── PLAYER DELETE ─── */
+/* ─── PLAYER ACTIONS ─── */
+
+.player-actions {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.player-edit {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  padding: 6px 8px;
+  border: 1px solid var(--neon-cyan);
+  background: transparent;
+  color: var(--neon-cyan);
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.15s;
+}
+
+.player-edit:hover {
+  opacity: 1;
+  background: rgba(0, 255, 255, 0.1);
+}
 
 .player-delete {
   font-family: var(--font-pixel);
   font-size: 10px;
-  padding: 6px 10px;
+  padding: 6px 8px;
   border: 1px solid var(--neon-red);
   background: transparent;
   color: var(--neon-red);
   cursor: pointer;
   opacity: 0.4;
   transition: opacity 0.15s;
-  margin-left: 8px;
 }
 
 .player-delete:hover {

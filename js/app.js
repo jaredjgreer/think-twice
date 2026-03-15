@@ -28,14 +28,29 @@ const App = (() => {
     CloudSync.init().then(() => renderHomeLeaderboard());
 
     // Wire up home screen
-    document.getElementById('btn-press-start').addEventListener('click', () => openSetup());
-    document.getElementById('btn-players-home').addEventListener('click', () => openSetup());
+    document.getElementById('btn-press-start').addEventListener('click', () => {
+      Sound.startMusic();
+      openSetup();
+    });
+    document.getElementById('btn-players-home').addEventListener('click', () => {
+      Sound.startMusic();
+      openSetup();
+    });
 
     // Wire up setup screen
     document.getElementById('btn-add-player').addEventListener('click', () => Players.showAddPlayerModal());
     document.getElementById('btn-save-player').addEventListener('click', handleSavePlayer);
     document.getElementById('btn-cancel-player').addEventListener('click', () => Players.hideAddPlayerModal());
     document.getElementById('btn-start-game').addEventListener('click', handleStartGame);
+
+    // Wire edit player modal
+    document.getElementById('btn-save-edit').addEventListener('click', () => {
+      if (Players.saveEditPlayerFromModal()) {
+        Players.hideEditPlayerModal();
+      }
+    });
+    document.getElementById('btn-cancel-edit').addEventListener('click', () => Players.hideEditPlayerModal());
+
     document.getElementById('btn-back-home').addEventListener('click', () => {
       renderHomeLeaderboard();
       showScreen('home-screen');
@@ -188,6 +203,7 @@ const App = (() => {
     if (!deckData || deckData.cards.length === 0) return;
 
     Game.init(players, selectedGridSize, deckData, selectedGameMode);
+    Sound.stopMusic();
     renderGameBoard();
     showPassScreen();
   }
@@ -435,7 +451,14 @@ const App = (() => {
     setTimeout(() => challengeBox.scrollTo({ top: challengeBox.scrollHeight, behavior: 'smooth' }), 150);
 
     // Show next button or steal option
-    if (result.correct) {
+    if (isSteal && result.correct) {
+      // Successful steal — award points, then give stealer a bonus turn
+      document.getElementById('btn-challenge-next').style.display = 'block';
+      document.getElementById('steal-section').style.display = 'none';
+      document.getElementById('btn-challenge-next').onclick = () => {
+        closeChallengeAndBonusTurn(result, cardIndex);
+      };
+    } else if (result.correct) {
       document.getElementById('btn-challenge-next').style.display = 'block';
       document.getElementById('steal-section').style.display = 'none';
       document.getElementById('btn-challenge-next').onclick = () => {
@@ -585,10 +608,57 @@ const App = (() => {
     showPassScreen();
   }
 
+  function closeChallengeAndBonusTurn(result, cardIndex) {
+    closeChallenge();
+
+    // Check for tic-tac-toe bonus on the stolen card
+    if (cardIndex !== undefined) {
+      const ttt = Game.checkTTTBonus(cardIndex, result.player.id);
+      if (ttt) {
+        renderGameBoard();
+        Sound.play('goagain');
+        ttt.bonusCardIndices.forEach(idx => {
+          const el = document.querySelector(`.card[data-index="${idx}"]`);
+          if (el) el.classList.add('ttt-bonus');
+        });
+        const banner = document.getElementById('turn-banner');
+        banner.innerHTML = `★ ROW BONUS! +${ttt.bonusPoints} PTS ★`;
+        banner.classList.add('glow-yellow');
+        renderScoreboard();
+        setTimeout(() => {
+          if (result.gameOver || Game.isGameOver()) { endGame(); return; }
+          // Show bonus turn banner — stealer picks another card
+          showBonusTurnBanner();
+        }, 2000);
+        return;
+      }
+    }
+
+    if (result.gameOver || Game.isGameOver()) {
+      renderGameBoard();
+      endGame();
+      return;
+    }
+
+    // Stealer gets a bonus turn — show the board with a banner
+    showBonusTurnBanner();
+  }
+
+  function showBonusTurnBanner() {
+    renderGameBoard();
+    const banner = document.getElementById('turn-banner');
+    const cp = Game.getCurrentPlayer();
+    banner.innerHTML = `⚡ STOLEN! ${Players.iconHTML(cp)} ${sanitize(cp.name.toUpperCase())} — PICK YOUR CARD! ⚡`;
+    banner.className = 'turn-banner glow-green';
+    Sound.play('steal');
+    showScreen('game-screen');
+  }
+
   // ─── Game Over ───
 
   function endGame() {
     Sound.play('gameover');
+    Sound.startMusic();
     Game.finalizeScores();
     const { sortedPlayers, biasesSeen } = Game.getResults();
     const gs = Game.getState();

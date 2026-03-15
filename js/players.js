@@ -66,13 +66,16 @@ const Players = (() => {
   }
 
   function iconHTML(player) {
-    const ch = player.icon || player.emoji || '?';
-    const color = player.iconColor || 'cyan';
-    return `<span class="neon-icon glow-${color}">${ch}</span>`;
+    const icons = player.icons || [{ char: player.icon || player.emoji || '?', color: player.iconColor || 'cyan' }];
+    if (icons.length === 1) {
+      return `<span class="neon-icon glow-${icons[0].color}">${icons[0].char}</span>`;
+    }
+    return `<span class="multi-icon">${icons.map(ic => `<span class="neon-icon glow-${ic.color}">${ic.char}</span>`).join('')}</span>`;
   }
 
   function iconChar(player) {
-    return player.icon || player.emoji || '?';
+    const icons = player.icons || [{ char: player.icon || player.emoji || '?' }];
+    return icons.map(ic => ic.char).join('');
   }
 
   function renderPlayerList(containerEl, onSelectionChange) {
@@ -99,6 +102,26 @@ const Players = (() => {
         <span class="check">✓</span>
       `;
 
+      const actionsDiv = document.createElement('div');
+      actionsDiv.className = 'player-actions';
+
+      const editBtn = document.createElement('button');
+      editBtn.className = 'player-edit';
+      editBtn.textContent = '✎';
+      editBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (player.pin) {
+          showPinModal(`EDIT ${player.name.toUpperCase()}`, (entered) => {
+            if (entered !== player.pin) return false;
+            showEditPlayerModal(player, containerEl, onSelectionChange);
+            return true;
+          });
+        } else {
+          showEditPlayerModal(player, containerEl, onSelectionChange);
+        }
+      });
+      actionsDiv.appendChild(editBtn);
+
       const delBtn = document.createElement('button');
       delBtn.className = 'player-delete';
       delBtn.textContent = '✕';
@@ -120,7 +143,8 @@ const Players = (() => {
           if (onSelectionChange) onSelectionChange(getSelectedIds(containerEl));
         }
       });
-      slot.appendChild(delBtn);
+      actionsDiv.appendChild(delBtn);
+      slot.appendChild(actionsDiv);
 
       slot.addEventListener('click', () => {
         // Deselecting never needs a PIN
@@ -169,7 +193,7 @@ const Players = (() => {
     const pinInput = document.getElementById('new-player-pin');
     if (pinInput) pinInput.value = '';
 
-    // Render icon picker
+    // Render icon picker (multi-select up to 3)
     const iconContainer = document.getElementById('emoji-picker');
     iconContainer.innerHTML = '';
     ICONS.forEach((ic, idx) => {
@@ -180,8 +204,13 @@ const Players = (() => {
         ? ic.char
         : `<span class="glow-${ic.color}">${ic.char}</span>`;
       btn.addEventListener('click', () => {
-        iconContainer.querySelectorAll('.icon-pick').forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
+        if (btn.classList.contains('selected')) {
+          btn.classList.remove('selected');
+        } else {
+          const selectedCount = iconContainer.querySelectorAll('.icon-pick.selected').length;
+          if (selectedCount >= 3) return; // max 3
+          btn.classList.add('selected');
+        }
       });
       iconContainer.appendChild(btn);
     });
@@ -243,16 +272,19 @@ const Players = (() => {
 
   function saveNewPlayerFromModal() {
     const name = document.getElementById('new-player-name').value.trim();
-    const iconEl = document.querySelector('#emoji-picker .icon-pick.selected');
+    const iconEls = document.querySelectorAll('#emoji-picker .icon-pick.selected');
     const monthEl = document.getElementById('birth-month');
     const yearEl = document.getElementById('birth-year');
     const pinEl = document.getElementById('new-player-pin');
 
-    if (!name || !iconEl) return null;
+    if (!name || iconEls.length === 0) return null;
     if (!monthEl || !monthEl.value || !yearEl || !yearEl.value) return null;
 
-    const iconIdx = parseInt(iconEl.dataset.index);
-    const ic = ICONS[iconIdx];
+    const icons = Array.from(iconEls).map(el => {
+      const idx = parseInt(el.dataset.index);
+      return { char: ICONS[idx].char, color: ICONS[idx].color };
+    });
+    const primaryIcon = icons[0];
     const birthMonth = parseInt(monthEl.value);
     const birthYear = parseInt(yearEl.value);
     const age = computeAge(birthMonth, birthYear);
@@ -260,9 +292,10 @@ const Players = (() => {
 
     const playerData = {
       name,
-      icon: ic.char,
-      iconColor: ic.color,
-      emoji: ic.char,
+      icon: primaryIcon.char,
+      iconColor: primaryIcon.color,
+      emoji: primaryIcon.char,
+      icons,
       birthMonth,
       birthYear,
       age
@@ -278,6 +311,167 @@ const Players = (() => {
     const div = document.createElement('div');
     div.textContent = str;
     return div.innerHTML;
+  }
+
+  // ─── Edit Player Modal ───
+
+  let editingPlayerId = null;
+  let editContainerEl = null;
+  let editOnSelectionChange = null;
+
+  function showEditPlayerModal(player, containerEl, onSelectionChange) {
+    editingPlayerId = player.id;
+    editContainerEl = containerEl;
+    editOnSelectionChange = onSelectionChange;
+
+    const overlay = document.getElementById('edit-player-modal');
+    overlay.classList.add('active');
+
+    document.getElementById('edit-player-name').value = player.name;
+    const pinInput = document.getElementById('edit-player-pin');
+    pinInput.value = player.pin || '';
+
+    // Render icon picker (multi-select up to 3)
+    const iconContainer = document.getElementById('edit-emoji-picker');
+    iconContainer.innerHTML = '';
+    const playerIcons = player.icons || [{ char: player.icon, color: player.iconColor }];
+    ICONS.forEach((ic, idx) => {
+      const btn = document.createElement('button');
+      btn.className = ic.emoji ? 'icon-pick icon-emoji' : 'icon-pick';
+      btn.dataset.index = idx;
+      btn.innerHTML = ic.emoji
+        ? ic.char
+        : `<span class="glow-${ic.color}">${ic.char}</span>`;
+      // Pre-select current icons
+      if (playerIcons.some(pi => pi.char === ic.char)) {
+        btn.classList.add('selected');
+      }
+      btn.addEventListener('click', () => {
+        if (btn.classList.contains('selected')) {
+          btn.classList.remove('selected');
+        } else {
+          const selectedCount = iconContainer.querySelectorAll('.icon-pick.selected').length;
+          if (selectedCount >= 3) return;
+          btn.classList.add('selected');
+        }
+      });
+      iconContainer.appendChild(btn);
+    });
+
+    // Render birthday picker
+    const bdayContainer = document.getElementById('edit-age-picker');
+    bdayContainer.innerHTML = '';
+
+    const monthSelect = document.createElement('select');
+    monthSelect.id = 'edit-birth-month';
+    monthSelect.className = 'retro-select';
+    const monthDefault = document.createElement('option');
+    monthDefault.value = '';
+    monthDefault.textContent = 'MONTH';
+    monthSelect.appendChild(monthDefault);
+    MONTHS.forEach((m, i) => {
+      const opt = document.createElement('option');
+      opt.value = i + 1;
+      opt.textContent = m;
+      if (player.birthMonth === i + 1) opt.selected = true;
+      monthSelect.appendChild(opt);
+    });
+
+    const yearSelect = document.createElement('select');
+    yearSelect.id = 'edit-birth-year';
+    yearSelect.className = 'retro-select';
+    const yearDefault = document.createElement('option');
+    yearDefault.value = '';
+    yearDefault.textContent = 'YEAR';
+    yearSelect.appendChild(yearDefault);
+    const currentYear = new Date().getFullYear();
+    for (let y = currentYear - 5; y >= 1950; y--) {
+      const opt = document.createElement('option');
+      opt.value = y;
+      opt.textContent = y;
+      if (player.birthYear === y) opt.selected = true;
+      yearSelect.appendChild(opt);
+    }
+
+    bdayContainer.appendChild(monthSelect);
+    bdayContainer.appendChild(yearSelect);
+
+    const updateAge = () => {
+      const m = parseInt(monthSelect.value);
+      const y = parseInt(yearSelect.value);
+      const display = document.getElementById('edit-age-display');
+      if (m && y) {
+        const age = computeAge(m, y);
+        display.textContent = `AGE: ${age} · TIER ${getAgeTier(age)}`;
+      } else {
+        display.textContent = '';
+      }
+    };
+    monthSelect.addEventListener('change', updateAge);
+    yearSelect.addEventListener('change', updateAge);
+    updateAge();
+  }
+
+  function hideEditPlayerModal() {
+    document.getElementById('edit-player-modal').classList.remove('active');
+    editingPlayerId = null;
+  }
+
+  function saveEditPlayerFromModal() {
+    if (!editingPlayerId) return false;
+    const name = document.getElementById('edit-player-name').value.trim();
+    const iconEls = document.querySelectorAll('#edit-emoji-picker .icon-pick.selected');
+    const monthEl = document.getElementById('edit-birth-month');
+    const yearEl = document.getElementById('edit-birth-year');
+    const pinEl = document.getElementById('edit-player-pin');
+
+    if (!name || iconEls.length === 0) return false;
+    if (!monthEl || !monthEl.value || !yearEl || !yearEl.value) return false;
+
+    const icons = Array.from(iconEls).map(el => {
+      const idx = parseInt(el.dataset.index);
+      return { char: ICONS[idx].char, color: ICONS[idx].color };
+    });
+    const primaryIcon = icons[0];
+    const birthMonth = parseInt(monthEl.value);
+    const birthYear = parseInt(yearEl.value);
+    const age = computeAge(birthMonth, birthYear);
+    const pin = pinEl ? pinEl.value.trim() : '';
+
+    const players = Storage.getPlayers();
+    const player = players.find(p => p.id === editingPlayerId);
+    if (!player) return false;
+
+    player.name = name;
+    player.icon = primaryIcon.char;
+    player.iconColor = primaryIcon.color;
+    player.emoji = primaryIcon.char;
+    player.icons = icons;
+    player.birthMonth = birthMonth;
+    player.birthYear = birthYear;
+    player.age = age;
+    if (pin && /^\d{4}$/.test(pin)) {
+      player.pin = pin;
+    } else {
+      delete player.pin;
+    }
+
+    Storage.savePlayers(players);
+
+    // Update leaderboard entry
+    const lb = Storage.getLeaderboard();
+    if (lb[editingPlayerId]) {
+      lb[editingPlayerId].name = name;
+      lb[editingPlayerId].icon = primaryIcon.char;
+      lb[editingPlayerId].iconColor = primaryIcon.color;
+      Storage.saveLeaderboard(lb);
+    }
+
+    // Re-render
+    if (editContainerEl) {
+      renderPlayerList(editContainerEl, editOnSelectionChange);
+    }
+    return true;
   }
 
   // ─── PIN Entry Modal ───
@@ -349,6 +543,9 @@ const Players = (() => {
     getPlayersById,
     showAddPlayerModal,
     hideAddPlayerModal,
-    saveNewPlayerFromModal
+    saveNewPlayerFromModal,
+    showEditPlayerModal,
+    hideEditPlayerModal,
+    saveEditPlayerFromModal
   };
 })();
