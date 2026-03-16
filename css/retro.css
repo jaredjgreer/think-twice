@@ -2,8 +2,8 @@
    THINK TWICE — Retro CRT & Arcade Effects
    ═══════════════════════════════════════════ */
 
-/* Google Fonts — Press Start 2P (pixel) + VT323 (terminal) */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+/* Google Fonts — Press Start 2P (pixel) + Share Tech Mono (terminal) */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
 
 :root {
   /* Neon Arcade Palette */
@@ -20,7 +20,7 @@
 
   /* Fonts */
   --font-pixel: 'Press Start 2P', monospace;
-  --font-terminal: 'VT323', monospace;
+  --font-terminal: 'Share Tech Mono', monospace;
 }
 
 /* CRT Scanline Overlay — applied to body::after */
