@@ -13,7 +13,9 @@ const App = (() => {
 
   const DECK_FILES = {
     'cognitive-biases': 'data/cognitive-biases.json',
-    'sunday': 'data/sunday.json'
+    'sunday': 'data/sunday.json',
+    'emotional-intelligence': 'data/emotional-intelligence.json',
+    'gospel-questions': 'data/gospel-questions.json'
   };
 
   // ─── Screen Navigation ───
@@ -148,11 +150,16 @@ const App = (() => {
   }
 
   function updateModeLabels() {
-    const isSunday = selectedDeckId === 'sunday';
+    const isSunday = selectedDeckId === 'sunday' || selectedDeckId === 'gospel-questions';
+    const isEQ = selectedDeckId === 'emotional-intelligence';
     const labels = {
-      classic: isSunday ? 'Read scenario, name the principle' : 'Read scenario, name the bias',
-      define: isSunday ? 'See the principle, pick its meaning' : 'See the bias, pick its meaning',
-      spot: isSunday ? 'See description, find the scenario' : 'See description, find the scenario',
+      classic: isSunday ? 'Read scenario, name the principle'
+             : isEQ ? 'Read scenario, name the skill'
+             : 'Read scenario, name the bias',
+      define: isSunday ? 'See the principle, pick its meaning'
+            : isEQ ? 'See the skill, pick its meaning'
+            : 'See the bias, pick its meaning',
+      spot: 'See description, find the scenario',
       mixed: 'Random mode every card'
     };
     document.querySelectorAll('.mode-option').forEach(btn => {
@@ -708,8 +715,12 @@ const App = (() => {
     Game.finalizeScores();
     const { sortedPlayers, biasesSeen } = Game.getResults();
     const gs = Game.getState();
-    const isSunday = gs.deckData && gs.deckData.deckId === 'sunday';
-    document.getElementById('gameover-biases-heading').textContent = isSunday ? 'PRINCIPLES ENCOUNTERED' : 'BIASES ENCOUNTERED';
+    const isSunday = gs.deckData && (gs.deckData.deckId === 'sunday' || gs.deckData.deckId === 'gospel-questions');
+    const isEQ = gs.deckData && gs.deckData.deckId === 'emotional-intelligence';
+    document.getElementById('gameover-biases-heading').textContent =
+      isSunday ? 'PRINCIPLES ENCOUNTERED'
+      : isEQ ? 'EQ SKILLS ENCOUNTERED'
+      : 'BIASES ENCOUNTERED';
 
     // Push each player's score to cloud
     sortedPlayers.forEach(p => {
