@@ -60,7 +60,7 @@ const Storage = (() => {
       iconColor: cloudPlayer.iconColor || 'cyan',
       birthMonth: null,
       birthYear: null,
-      age: 15
+      age: null
     });
     savePlayers(players);
     const lb = getLeaderboard();

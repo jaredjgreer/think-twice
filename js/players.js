@@ -53,7 +53,7 @@ const Players = (() => {
   const MONTHS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
 
   function getAgeTier(age) {
-    if (age <= 12) return 1;
+    if (!age || age <= 12) return 1;
     if (age <= 14) return 2;
     return 3;
   }
