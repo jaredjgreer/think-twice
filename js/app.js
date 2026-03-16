@@ -662,11 +662,14 @@ const App = (() => {
     // Disable all options
     document.querySelectorAll('.challenge-option').forEach(btn => btn.classList.add('disabled'));
 
-    // Highlight correct/wrong
+    // Highlight answer feedback
     const options = document.querySelectorAll('.challenge-option');
     const correctIndex = cardData.challenge.correct;
-    if (options[correctIndex]) options[correctIndex].classList.add('correct');
-    if (!result.correct && selectedIndex >= 0 && options[selectedIndex]) {
+    if (result.correct) {
+      // Show correct highlight only when they got it right
+      if (options[correctIndex]) options[correctIndex].classList.add('correct');
+    } else if (selectedIndex >= 0 && options[selectedIndex]) {
+      // Only mark their wrong pick — do NOT reveal the correct answer
       options[selectedIndex].classList.add('wrong');
     }
 
