@@ -6,16 +6,18 @@
 const Game = (() => {
 
   let state = {
-    players: [],       // { id, name, emoji, age, tier, sessionScore }
+    players: [],       // { id, name, emoji, age, tier, sessionScore, streak }
     currentTurnIndex: 0,
-    cards: [],         // { index, biasId, biasData, flipped, completedBy }
+    cards: [],         // { index, biasId, biasData, flipped, completedBy, rarity }
     gridSize: 4,
     gameMode: 'classic', // classic, define, spot, mixed
     deckData: null,
     totalCards: 16,
     cardsCompleted: 0,
     pendingSteal: null, // { cardIndex, biasId, tier, challenge }
-    gameActive: false
+    gameActive: false,
+    teams: null,        // null or [{ name, color, playerIds }]
+    leaderId: null      // player id of current score leader (for crown system)
   };
 
   const MODES = {
@@ -25,7 +27,7 @@ const Game = (() => {
     mixed:   { name: 'MIXED', desc: 'A random mode each card' }
   };
 
-  function init(players, gridSize, deckData, gameMode) {
+  function init(players, gridSize, deckData, gameMode, teams) {
     const totalCards = gridSize * gridSize;
 
     // Shuffle the deck and pick enough cards
@@ -53,9 +55,27 @@ const Game = (() => {
         biasData: bias,
         selectedChallenges,
         flipped: false,
-        completedBy: null
+        completedBy: null,
+        rarity: 'normal' // will be assigned below
       };
     });
+
+    // Assign card rarity (~10% rare/2x, ~5% wild, ~5% sabotage)
+    const indices = cards.map((_, i) => i);
+    const rarityPool = shuffle(indices);
+    const rarCount = Math.max(1, Math.round(totalCards * 0.10));
+    const wildCount = Math.max(0, Math.round(totalCards * 0.05));
+    const saboCount = Math.max(0, Math.round(totalCards * 0.05));
+    let ri = 0;
+    for (let n = 0; n < rarCount && ri < rarityPool.length; n++, ri++) {
+      cards[rarityPool[ri]].rarity = 'rare';
+    }
+    for (let n = 0; n < wildCount && ri < rarityPool.length; n++, ri++) {
+      cards[rarityPool[ri]].rarity = 'wild';
+    }
+    for (let n = 0; n < saboCount && ri < rarityPool.length; n++, ri++) {
+      cards[rarityPool[ri]].rarity = 'sabotage';
+    }
 
     // Shuffle card positions
     const shuffledCards = shuffle(cards).map((card, i) => ({ ...card, index: i }));
@@ -64,7 +84,8 @@ const Game = (() => {
       players: players.map(p => ({
         ...p,
         tier: Players.getAgeTier(p.age),
-        sessionScore: 0
+        sessionScore: 0,
+        streak: 0
       })),
       currentTurnIndex: 0,
       cards: shuffledCards,
@@ -74,7 +95,9 @@ const Game = (() => {
       totalCards,
       cardsCompleted: 0,
       pendingSteal: null,
-      gameActive: true
+      gameActive: true,
+      teams: teams || null,
+      leaderId: null
     };
 
     saveState();
@@ -99,7 +122,14 @@ const Game = (() => {
     card.flipped = true;
 
     const player = getCurrentPlayer();
-    const tier = player.tier.toString();
+    let tier = player.tier.toString();
+
+    // Sabotage: bump tier up by 1 (harder question)
+    if (card.rarity === 'sabotage') {
+      const bumped = Math.min(3, parseInt(tier) + 1);
+      tier = bumped.toString();
+    }
+
     const tierData = card.biasData.tiers[tier];
 
     const mode = state.gameMode === 'mixed'
@@ -115,7 +145,8 @@ const Game = (() => {
       tip: tierData.tip || '',
       challenge,
       tier: parseInt(tier),
-      mode
+      mode,
+      rarity: card.rarity
     };
   }
 
@@ -195,21 +226,37 @@ const Game = (() => {
     const correct = selectedOptionIndex === challenge.correct;
 
     if (correct) {
-      // Award points
-      player.sessionScore += 50;
+      // Calculate points based on card rarity
+      let basePoints = 50;
+      if (card.rarity === 'rare') basePoints = 100;
+      if (card.rarity === 'wild') basePoints = 75;
+      player.sessionScore += basePoints;
+      player.streak = (player.streak || 0) + 1;
       card.completedBy = player.id;
       state.cardsCompleted++;
+
+      // Update leader tracking
+      const oldLeader = state.leaderId;
+      updateLeader();
+      const newLeader = state.leaderId;
+      const dethroned = oldLeader && oldLeader !== newLeader && oldLeader !== player.id;
+
       saveState();
 
       return {
         correct: true,
-        points: 50,
+        points: basePoints,
         player,
-        gameOver: state.cardsCompleted >= state.totalCards
+        gameOver: state.cardsCompleted >= state.totalCards,
+        streak: player.streak,
+        rarity: card.rarity,
+        dethroned: dethroned ? state.players.find(p => p.id === oldLeader) : null,
+        newLeader: dethroned ? player : null
       };
     } else {
       // Flip card back, set up cascading steal opportunity
       card.flipped = false;
+      player.streak = 0;
       state.pendingSteal = {
         cardIndex,
         biasId: card.biasId,
@@ -224,7 +271,9 @@ const Game = (() => {
         points: 0,
         player,
         gameOver: false,
-        stealAvailable: state.players.length > 1
+        stealAvailable: state.players.length > 1,
+        streak: 0,
+        rarity: card.rarity
       };
     }
   }
@@ -239,18 +288,27 @@ const Game = (() => {
 
     if (correct) {
       stealPlayer.sessionScore += stealPoints;
+      stealPlayer.streak = (stealPlayer.streak || 0) + 1;
       card.completedBy = stealPlayer.id;
       card.flipped = true;
       state.cardsCompleted++;
       state.pendingSteal = null;
 
+      const oldLeader = state.leaderId;
+      updateLeader();
+      const newLeader = state.leaderId;
+      const dethroned = oldLeader && oldLeader !== newLeader && oldLeader !== stealPlayer.id;
+
       return {
         correct: true,
         points: stealPoints,
         player: stealPlayer,
-        gameOver: state.cardsCompleted >= state.totalCards
+        gameOver: state.cardsCompleted >= state.totalCards,
+        dethroned: dethroned ? state.players.find(p => p.id === oldLeader) : null,
+        newLeader: dethroned ? stealPlayer : null
       };
     } else {
+      stealPlayer.streak = 0;
       // Steal failed — pot grows, track who missed
       state.pendingSteal.missedPlayers.push(state.currentTurnIndex);
       state.pendingSteal.stealPoints += 25;
@@ -283,6 +341,15 @@ const Game = (() => {
         nextStealPoints: state.pendingSteal.stealPoints
       };
     }
+  }
+
+  function skipCard(cardIndex) {
+    const card = state.cards[cardIndex];
+    card.flipped = false;
+    const player = getCurrentPlayer();
+    player.streak = 0;
+    state.pendingSteal = null;
+    saveState();
   }
 
   function advanceTurn() {
@@ -373,6 +440,36 @@ const Game = (() => {
     return { bonusPoints, bonusCardIndices: [...bonusIndices] };
   }
 
+  function updateLeader() {
+    let maxScore = -1;
+    let leader = null;
+    state.players.forEach(p => {
+      if (p.sessionScore > maxScore) {
+        maxScore = p.sessionScore;
+        leader = p.id;
+      }
+    });
+    // Only set leader if someone actually has points and leads uniquely
+    const tied = state.players.filter(p => p.sessionScore === maxScore);
+    state.leaderId = (maxScore > 0 && tied.length === 1) ? leader : state.leaderId;
+  }
+
+  // Timer duration shrinks with streak: 60 → 50 → 40 → 30 (min 30)
+  function getTimerDuration(player) {
+    const streak = player.streak || 0;
+    return Math.max(30, 60 - streak * 10);
+  }
+
+  function getTeamScores() {
+    if (!state.teams) return null;
+    return state.teams.map(team => ({
+      ...team,
+      score: state.players
+        .filter(p => team.playerIds.includes(p.id))
+        .reduce((sum, p) => sum + p.sessionScore, 0)
+    }));
+  }
+
   function isGameOver() {
     return state.cardsCompleted >= state.totalCards;
   }
@@ -428,9 +525,12 @@ const Game = (() => {
     checkTTTBonus,
     advanceTurn,
     skipSteal,
+    skipCard,
     isGameOver,
     getResults,
     finalizeScores,
-    restoreState
+    restoreState,
+    getTimerDuration,
+    getTeamScores
   };
 })();

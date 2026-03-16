@@ -26,6 +26,17 @@ const Sound = (() => {
         case 'gameover': playGameOver(c); break;
         case 'click': playClick(c); break;
         case 'goagain': playCorrect(c); break;
+        case 'tick': playTick(c); break;
+        case 'tickUrgent': playTickUrgent(c); break;
+        case 'timeout': playTimeout(c); break;
+        case 'streak': playStreak(c); break;
+        case 'crown': playCrown(c); break;
+        case 'dethrone': playDethrone(c); break;
+        case 'wildcard': playWildCard(c); break;
+        case 'sabotage': playSabotage(c); break;
+        case 'doublepoints': playDoublePoints(c); break;
+        case 'combo': playCombo(c); break;
+        case 'crowdOoh': playCrowdOoh(c); break;
       }
     } catch (e) { /* audio not available */ }
   }
@@ -119,7 +130,179 @@ const Sound = (() => {
     osc.stop(c.currentTime + 0.05);
   }
 
-  // ─── Background Music (chiptune loop) ───
+  function playTick(c) {
+    const osc = c.createOscillator();
+    const gain = c.createGain();
+    osc.connect(gain);
+    gain.connect(c.destination);
+    osc.type = 'sine';
+    osc.frequency.value = 880;
+    gain.gain.setValueAtTime(0.04, c.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, c.currentTime + 0.05);
+    osc.start(c.currentTime);
+    osc.stop(c.currentTime + 0.05);
+  }
+
+  function playTickUrgent(c) {
+    const osc = c.createOscillator();
+    const gain = c.createGain();
+    osc.connect(gain);
+    gain.connect(c.destination);
+    osc.type = 'square';
+    osc.frequency.value = 1200;
+    gain.gain.setValueAtTime(0.08, c.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, c.currentTime + 0.08);
+    osc.start(c.currentTime);
+    osc.stop(c.currentTime + 0.08);
+  }
+
+  function playTimeout(c) {
+    [400, 300, 200].forEach((freq, i) => {
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.type = 'sawtooth';
+      osc.frequency.value = freq;
+      const t = c.currentTime + i * 0.15;
+      gain.gain.setValueAtTime(0.12, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.15);
+      osc.start(t);
+      osc.stop(t + 0.15);
+    });
+  }
+
+  function playStreak(c) {
+    [523, 659, 784, 1047].forEach((freq, i) => {
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.type = 'square';
+      osc.frequency.value = freq;
+      const t = c.currentTime + i * 0.08;
+      gain.gain.setValueAtTime(0.08, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.1);
+      osc.start(t);
+      osc.stop(t + 0.1);
+    });
+  }
+
+  function playCrown(c) {
+    [392, 494, 587, 784, 784].forEach((freq, i) => {
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.type = 'square';
+      osc.frequency.value = freq;
+      const t = c.currentTime + i * 0.12;
+      gain.gain.setValueAtTime(0.1, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.14);
+      osc.start(t);
+      osc.stop(t + 0.14);
+    });
+  }
+
+  function playDethrone(c) {
+    [784, 587, 392, 294, 196].forEach((freq, i) => {
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.type = 'sawtooth';
+      osc.frequency.value = freq;
+      const t = c.currentTime + i * 0.1;
+      gain.gain.setValueAtTime(0.1, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.12);
+      osc.start(t);
+      osc.stop(t + 0.12);
+    });
+  }
+
+  function playWildCard(c) {
+    [330, 440, 554, 660, 554, 440].forEach((freq, i) => {
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      const t = c.currentTime + i * 0.07;
+      gain.gain.setValueAtTime(0.1, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.08);
+      osc.start(t);
+      osc.stop(t + 0.08);
+    });
+  }
+
+  function playSabotage(c) {
+    const osc = c.createOscillator();
+    const gain = c.createGain();
+    osc.connect(gain);
+    gain.connect(c.destination);
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(600, c.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(100, c.currentTime + 0.4);
+    gain.gain.setValueAtTime(0.12, c.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, c.currentTime + 0.4);
+    osc.start(c.currentTime);
+    osc.stop(c.currentTime + 0.4);
+  }
+
+  function playDoublePoints(c) {
+    [523, 0, 523, 659, 784, 1047].forEach((freq, i) => {
+      if (!freq) return;
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.type = 'square';
+      osc.frequency.value = freq;
+      const t = c.currentTime + i * 0.1;
+      gain.gain.setValueAtTime(0.09, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.12);
+      osc.start(t);
+      osc.stop(t + 0.12);
+    });
+  }
+
+  function playCombo(c) {
+    const baseFreq = 440;
+    for (let i = 0; i < 6; i++) {
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.type = 'square';
+      osc.frequency.value = baseFreq + i * 100;
+      const t = c.currentTime + i * 0.06;
+      gain.gain.setValueAtTime(0.07, t);
+      gain.gain.exponentialRampToValueAtTime(0.01, t + 0.08);
+      osc.start(t);
+      osc.stop(t + 0.08);
+    }
+  }
+
+  function playCrowdOoh(c) {
+    // Synthesize a descending "ooh" reaction with multiple detuned oscillators
+    for (let j = 0; j < 3; j++) {
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.connect(gain);
+      gain.connect(c.destination);
+      osc.type = 'sine';
+      const base = 400 + j * 30;
+      osc.frequency.setValueAtTime(base, c.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(base * 0.7, c.currentTime + 0.35);
+      gain.gain.setValueAtTime(0.06, c.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, c.currentTime + 0.35);
+      osc.start(c.currentTime);
+      osc.stop(c.currentTime + 0.35);
+    }
+  }
+
+  // ─── Background Music (original chiptune loop) ───
 
   function startMusic() {
     if (musicPlaying) return;
@@ -132,24 +315,28 @@ const Sound = (() => {
       musicGain.gain.value = 0.07;
       musicGain.connect(c.destination);
 
-      // Chiptune melody pattern (notes in Hz, 0 = rest)
+      // Original chiptune melody (notes in Hz, 0 = rest)
       const melody = [
-        330, 330, 0, 330, 0, 262, 330, 0,
-        392, 0, 0, 0, 196, 0, 0, 0,
-        262, 0, 0, 196, 0, 0, 165, 0,
-        0, 220, 0, 247, 0, 233, 220, 0,
-        196, 330, 392, 440, 0, 349, 392, 0,
-        330, 0, 262, 294, 247, 0, 0, 0
+        392, 0, 440, 0, 494, 0, 523, 0,
+        587, 0, 523, 0, 494, 0, 440, 0,
+        392, 0, 0, 0, 330, 0, 0, 0,
+        294, 0, 330, 0, 392, 0, 330, 0,
+        294, 0, 0, 0, 262, 0, 0, 0,
+        294, 0, 330, 0, 392, 0, 440, 0,
+        494, 0, 523, 0, 587, 0, 0, 0,
+        523, 0, 494, 0, 440, 0, 392, 0
       ];
 
       // Bass pattern
       const bass = [
-        131, 0, 131, 0, 165, 0, 165, 0,
-        196, 0, 196, 0, 98, 0, 98, 0,
-        131, 0, 131, 0, 98, 0, 98, 0,
-        110, 0, 110, 0, 123, 0, 117, 0,
-        98, 0, 165, 0, 196, 0, 220, 0,
-        165, 0, 131, 0, 123, 0, 98, 0
+        196, 0, 196, 0, 196, 0, 196, 0,
+        220, 0, 220, 0, 220, 0, 220, 0,
+        196, 0, 196, 0, 165, 0, 165, 0,
+        147, 0, 147, 0, 196, 0, 196, 0,
+        147, 0, 147, 0, 131, 0, 131, 0,
+        147, 0, 165, 0, 196, 0, 220, 0,
+        247, 0, 262, 0, 294, 0, 294, 0,
+        262, 0, 247, 0, 220, 0, 196, 0
       ];
 
       const bpm = 140;

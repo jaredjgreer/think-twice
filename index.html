@@ -45,7 +45,7 @@
 
     <button id="btn-add-player" class="btn btn-pink">+ ADD PLAYER</button>
 
-    <div class="setup-title glow-cyan" style="margin-top: 16px;">DECK</div>
+    <div class="setup-title glow-cyan" style="margin-top: 16px;">DECK <span class="deck-hint">(select multiple to combine)</span></div>
     <div class="deck-selector">
       <button class="deck-option selected" data-deck="cognitive-biases">
         <span class="deck-name">🧠 BIASES</span>
@@ -71,6 +71,11 @@
       <button class="grid-option" data-size="3">3×3</button>
       <button class="grid-option selected" data-size="4">4×4</button>
       <button class="grid-option" data-size="6">6×6</button>
+    </div>
+
+    <div id="team-section" class="team-section" style="display:none;">
+      <div class="setup-title glow-cyan" style="margin-top: 16px;">TEAMS</div>
+      <div id="team-options" class="team-selector"></div>
     </div>
 
     <div class="setup-title glow-cyan" style="margin-top: 16px;">GAME MODE</div>
@@ -141,12 +146,24 @@
       <div id="scoreboard" class="scoreboard"></div>
     </div>
     <div id="turn-banner" class="turn-banner glow-yellow"></div>
+    <div id="streak-banner" class="streak-banner" style="display:none;"></div>
     <div id="card-grid" class="card-grid grid-bg grid-4x4"></div>
+  </div>
+
+  <!-- ═══ DETHRONE OVERLAY ═══ -->
+  <div id="dethrone-overlay" class="dethrone-overlay" style="display:none;">
+    <div class="dethrone-text glow-pink">👑 DETHRONED! 👑</div>
+    <div id="dethrone-detail" class="dethrone-detail"></div>
   </div>
 
   <!-- ═══ CHALLENGE MODAL ═══ -->
   <div id="challenge-overlay" class="challenge-overlay">
     <div class="challenge-box box-glow-cyan">
+      <div id="timer-bar-container" class="timer-bar-container">
+        <div id="timer-bar" class="timer-bar"></div>
+        <span id="timer-text" class="timer-text">60</span>
+      </div>
+      <div id="challenge-rarity-badge" class="rarity-badge" style="display:none;"></div>
       <div id="challenge-tier-label" class="tier-label"></div>
       <div id="challenge-bias-name" class="bias-title glow-pink"></div>
       <div id="challenge-definition" class="definition"></div>
@@ -172,6 +189,7 @@
         </div>
       </div>
 
+      <button id="btn-challenge-skip" class="btn btn-sm" style="display:none; align-self:center; margin-top: 4px;">✕ SKIP CARD</button>
       <button id="btn-challenge-next" class="btn btn-green btn-large" style="display:none; align-self:center;">NEXT →</button>
     </div>
   </div>
@@ -199,18 +217,34 @@
     <div class="modal box-glow-cyan help-content">
       <h2 class="glow-yellow">HOW TO PLAY</h2>
       <div class="help-rules">
-        <p>1. Create players — pick your icon & birthday</p>
-        <p>2. Select a grid size (2×2 to 6×6)</p>
-        <p>3. Take turns flipping cards</p>
-        <p>4. Each card reveals a challenge</p>
-        <p>5. Answer the question correctly</p>
-        <p>6. Get it right? <span class="glow-green">+50 pts!</span></p>
-        <p>7. Get it wrong? Next player can <span class="glow-yellow">STEAL for 25 pts</span> — if they miss, the pot keeps growing!</p>
-        <p>8. Most points wins!</p>
+        <h3 class="help-section-title glow-cyan">⬡ SETUP</h3>
+        <p>Create players with your icon & birthday. Your <span class="glow-cyan">age sets your difficulty tier</span> (Easy / Medium / Hard).</p>
+        <p>Pick one or more <span class="glow-cyan">decks</span> — mix them for variety! Choose your grid size and game mode.</p>
+        <p>With 4+ players you can form <span class="glow-green">teams</span> — valid team sizes light up based on your player count.</p>
+
+        <h3 class="help-section-title glow-yellow">⬡ GAMEPLAY</h3>
+        <p>Take turns flipping cards on the grid. Each card hides a challenge question.</p>
+        <p>You have a <span class="glow-pink">countdown timer</span> to answer — if it runs out, that counts as wrong!</p>
+        <p>Don't want to answer? Hit <span class="glow-cyan">SKIP</span> to flip the card back, but you'll lose your streak and your turn.</p>
+        <p>Answer correctly = <span class="glow-green">+50 pts</span>. Wrong = the card flips back and the next player can <span class="glow-yellow">STEAL for 25 pts</span>. If they miss, the pot grows and the next player gets a shot!</p>
+
+        <h3 class="help-section-title glow-green">⬡ SPECIAL CARDS</h3>
+        <p>Cards have hidden rarities — you won't know until you flip!</p>
+        <p><span class="glow-green">✧ RARE</span> — Worth <span class="glow-green">2× points (100 pts)</span>!</p>
+        <p><span class="glow-yellow">★ WILD</span> — Worth <span class="glow-yellow">75 pts</span> for a surprise twist!</p>
+        <p><span class="glow-pink">☠ SABOTAGE</span> — Bumps you to a <span class="glow-pink">harder difficulty tier</span>!</p>
+
+        <h3 class="help-section-title glow-pink">⬡ STREAKS & CROWN</h3>
+        <p>Answer correctly in a row to build a <span class="glow-yellow">🔥 STREAK</span>. The higher your streak, the <span class="glow-pink">shorter your timer</span> gets (60s → 50s → 40s → 30s minimum).</p>
+        <p>The player in the lead wears the <span class="glow-yellow">👑 CROWN</span>. Take the lead and you'll see the <span class="glow-pink">DETHRONED!</span> animation. Hold the crown to flex on everyone!</p>
+
+        <h3 class="help-section-title glow-cyan">⬡ BONUS</h3>
+        <p>Complete a full <span class="glow-yellow">row, column, or diagonal</span> on the grid for a <span class="glow-yellow">tic-tac-toe bonus</span> (+25 pts per card in the line)!</p>
+        <p>The player with the most points at the end wins!</p>
       </div>
       <div class="help-what">
-        <h3>WHAT ARE COGNITIVE BIASES?</h3>
-        <p>Tricks your brain plays on you — shortcuts that can lead to bad decisions. Learning to spot them helps you THINK TWICE!</p>
+        <h3>WHAT IS THINK TWICE?</h3>
+        <p>A brain-training card game that teaches you to recognize cognitive biases, emotional intelligence skills, gospel principles, and more — while competing with friends and family!</p>
       </div>
       <button id="btn-close-help" class="btn btn-green">GOT IT</button>
     </div>

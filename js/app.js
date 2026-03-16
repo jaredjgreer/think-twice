@@ -9,7 +9,10 @@ const App = (() => {
   let selectedGridSize = 4;
   let selectedGameMode = 'classic';
   let selectedPlayerIds = [];
-  let selectedDeckId = 'cognitive-biases';
+  let selectedDeckIds = ['cognitive-biases'];
+  let timerInterval = null;
+  let timerSeconds = 60;
+  let selectedTeams = null; // null or [{ name, color, playerIds }]
 
   const DECK_FILES = {
     'cognitive-biases': 'data/cognitive-biases.json',
@@ -17,6 +20,8 @@ const App = (() => {
     'emotional-intelligence': 'data/emotional-intelligence.json',
     'gospel-questions': 'data/gospel-questions.json'
   };
+
+  const TEAM_COLORS = ['cyan', 'pink', 'yellow', 'green'];
 
   // ─── Screen Navigation ───
 
@@ -29,7 +34,7 @@ const App = (() => {
 
   async function init() {
     // Load default deck data
-    await loadDeck('cognitive-biases');
+    await loadDecks(selectedDeckIds);
 
     // Initialize cloud sync (non-blocking)
     CloudSync.init().then(() => renderHomeLeaderboard());
@@ -81,13 +86,17 @@ const App = (() => {
       });
     });
 
-    // Wire deck selectors
+    // Wire deck selectors (multi-select toggle)
     document.querySelectorAll('.deck-option').forEach(btn => {
       btn.addEventListener('click', async () => {
-        document.querySelectorAll('.deck-option').forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
-        selectedDeckId = btn.dataset.deck;
-        await loadDeck(selectedDeckId);
+        btn.classList.toggle('selected');
+        selectedDeckIds = [...document.querySelectorAll('.deck-option.selected')].map(b => b.dataset.deck);
+        // Must have at least one deck
+        if (selectedDeckIds.length === 0) {
+          btn.classList.add('selected');
+          selectedDeckIds = [btn.dataset.deck];
+        }
+        await loadDecks(selectedDeckIds);
         updateModeLabels();
       });
     });
@@ -146,12 +155,32 @@ const App = (() => {
   async function loadDeck(deckId) {
     const resp = await fetch(DECK_FILES[deckId]);
     deckData = await resp.json();
-    selectedDeckId = deckId;
+  }
+
+  async function loadDecks(deckIds) {
+    if (deckIds.length === 1) {
+      await loadDeck(deckIds[0]);
+      return;
+    }
+    // Combine multiple decks
+    const allCards = [];
+    let combinedName = [];
+    for (const id of deckIds) {
+      const resp = await fetch(DECK_FILES[id]);
+      const d = await resp.json();
+      allCards.push(...d.cards);
+      combinedName.push(d.name || id);
+    }
+    deckData = {
+      deckId: 'combined',
+      name: combinedName.join(' + '),
+      cards: allCards
+    };
   }
 
   function updateModeLabels() {
-    const isSunday = selectedDeckId === 'sunday' || selectedDeckId === 'gospel-questions';
-    const isEQ = selectedDeckId === 'emotional-intelligence';
+    const isSunday = selectedDeckIds.length === 1 && (selectedDeckIds[0] === 'sunday' || selectedDeckIds[0] === 'gospel-questions');
+    const isEQ = selectedDeckIds.length === 1 && selectedDeckIds[0] === 'emotional-intelligence';
     const labels = {
       classic: isSunday ? 'Read scenario, name the principle'
              : isEQ ? 'Read scenario, name the skill'
@@ -169,7 +198,8 @@ const App = (() => {
   }
 
   function getDeckType() {
-    return deckData && deckData.deckId === 'sunday' ? 'sunday' : 'biases';
+    if (selectedDeckIds.length > 1 || !deckData) return 'mixed';
+    return deckData.deckId === 'sunday' ? 'sunday' : 'biases';
   }
 
   // ─── Home Screen ───
@@ -210,9 +240,11 @@ const App = (() => {
 
   function openSetup() {
     selectedPlayerIds = [];
+    selectedTeams = null;
     showScreen('setup-screen');
     Players.renderPlayerList(document.getElementById('player-list-container'), (ids) => {
       selectedPlayerIds = ids;
+      updateTeamOptions();
     });
     // Default grid size selection
     document.querySelectorAll('.grid-option').forEach(b => b.classList.remove('selected'));
@@ -224,11 +256,14 @@ const App = (() => {
     const defaultMode = document.querySelector(`.mode-option[data-mode="${selectedGameMode}"]`);
     if (defaultMode) defaultMode.classList.add('selected');
 
-    // Default deck selection
+    // Default deck selection (multi-select)
     document.querySelectorAll('.deck-option').forEach(b => b.classList.remove('selected'));
-    const defaultDeck = document.querySelector(`.deck-option[data-deck="${selectedDeckId}"]`);
-    if (defaultDeck) defaultDeck.classList.add('selected');
+    selectedDeckIds.forEach(id => {
+      const deckBtn = document.querySelector(`.deck-option[data-deck="${id}"]`);
+      if (deckBtn) deckBtn.classList.add('selected');
+    });
     updateModeLabels();
+    updateTeamOptions();
   }
 
   function handleSavePlayer() {
@@ -240,22 +275,94 @@ const App = (() => {
       if (lb[player.id]) CloudSync.syncNewPlayer(player, lb[player.id]);
       Players.renderPlayerList(document.getElementById('player-list-container'), (ids) => {
         selectedPlayerIds = ids;
+        updateTeamOptions();
       });
     }
   }
 
+  // ─── Team Selection ───
+
+  function updateTeamOptions() {
+    const section = document.getElementById('team-section');
+    const container = document.getElementById('team-options');
+    const count = selectedPlayerIds.length;
+
+    // Always show team section when 2+ players selected
+    if (count < 2) {
+      section.style.display = 'none';
+      selectedTeams = null;
+      return;
+    }
+
+    section.style.display = '';
+    container.innerHTML = '';
+
+    // "No teams" option — always available
+    const noTeamBtn = document.createElement('button');
+    noTeamBtn.className = 'team-option selected';
+    noTeamBtn.dataset.teams = '0';
+    noTeamBtn.textContent = 'FREE FOR ALL';
+    noTeamBtn.addEventListener('click', () => {
+      document.querySelectorAll('.team-option').forEach(b => b.classList.remove('selected'));
+      noTeamBtn.classList.add('selected');
+      selectedTeams = null;
+    });
+    container.appendChild(noTeamBtn);
+
+    // Show team configs for 2, 3, 4 teams — enable only valid divisors
+    const possibleTeamCounts = [2, 3, 4];
+    possibleTeamCounts.forEach(numTeams => {
+      if (numTeams > count) return; // can't have more teams than players
+      const valid = count % numTeams === 0 && (count / numTeams) >= 1;
+      const playersPerTeam = valid ? count / numTeams : '?';
+      const btn = document.createElement('button');
+      btn.className = 'team-option' + (valid ? '' : ' team-disabled');
+      btn.dataset.teams = numTeams;
+      btn.textContent = valid
+        ? `${numTeams} TEAMS (${playersPerTeam}v${playersPerTeam})`
+        : `${numTeams} TEAMS`;
+      if (valid) {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.team-option').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          buildTeams(numTeams);
+        });
+      }
+      container.appendChild(btn);
+    });
+  }
+
+  function buildTeams(numTeams) {
+    const players = Players.getPlayersById(selectedPlayerIds);
+    const perTeam = Math.floor(players.length / numTeams);
+    // Shuffle players for random team assignment
+    const shuffled = [...players].sort(() => Math.random() - 0.5);
+    const teams = [];
+    for (let t = 0; t < numTeams; t++) {
+      teams.push({
+        name: `TEAM ${t + 1}`,
+        color: TEAM_COLORS[t % TEAM_COLORS.length],
+        playerIds: shuffled.slice(t * perTeam, (t + 1) * perTeam).map(p => p.id)
+      });
+    }
+    selectedTeams = teams;
+  }
+
   // ─── Start Game ───
 
-  function handleStartGame() {
+  async function handleStartGame() {
     if (selectedPlayerIds.length < 1) return;
 
     const players = Players.getPlayersById(selectedPlayerIds);
     const totalCards = selectedGridSize * selectedGridSize;
 
+    // Load/combine selected decks
+    await loadDecks(selectedDeckIds);
+
     // Check if we have enough bias content
     if (!deckData || deckData.cards.length === 0) return;
 
-    Game.init(players, selectedGridSize, deckData, selectedGameMode);
+    Game.init(players, selectedGridSize, deckData, selectedGameMode, selectedTeams);
     Sound.stopMusic();
     renderGameBoard();
     showPassScreen();
@@ -314,10 +421,25 @@ const App = (() => {
     const sb = document.getElementById('scoreboard');
     sb.innerHTML = '';
 
+    // Team scores header
+    if (gs.teams) {
+      const teamScores = Game.getTeamScores();
+      if (teamScores) {
+        const teamRow = document.createElement('div');
+        teamRow.className = 'sb-teams';
+        teamScores.forEach(t => {
+          teamRow.innerHTML += `<span class="sb-team glow-${t.color}">${t.name}: ${padScore(t.score)}</span>`;
+        });
+        sb.appendChild(teamRow);
+      }
+    }
+
     gs.players.forEach((p, i) => {
       const div = document.createElement('div');
       div.className = 'sb-player' + (i === gs.currentTurnIndex ? ' active-turn' : '');
-      div.innerHTML = `${Players.iconHTML(p)} ${sanitize(p.name)} <span class="sb-score">${padScore(p.sessionScore)}</span>`;
+      const crown = gs.leaderId === p.id ? '<span class="crown-icon">👑</span>' : '';
+      const streakBadge = p.streak >= 2 ? `<span class="sb-streak glow-yellow">🔥${p.streak}</span>` : '';
+      div.innerHTML = `${crown}${Players.iconHTML(p)} ${sanitize(p.name)} ${streakBadge}<span class="sb-score">${padScore(p.sessionScore)}</span>`;
       sb.appendChild(div);
     });
 
@@ -343,7 +465,15 @@ const App = (() => {
     const passIcon = document.getElementById('pass-emoji');
     passIcon.textContent = Players.iconChar(cp);
     passIcon.className = 'pass-emoji glow-' + (cp.iconColor || 'cyan');
-    document.getElementById('pass-name').textContent = `PASS TO ${cp.name.toUpperCase()}`;
+
+    // Show team info on pass screen
+    let teamText = '';
+    if (gs.teams) {
+      const team = gs.teams.find(t => t.playerIds.includes(cp.id));
+      if (team) teamText = `<br><span class="glow-${team.color}" style="font-size:10px;">${team.name}</span>`;
+    }
+
+    document.getElementById('pass-name').innerHTML = `PASS TO ${sanitize(cp.name.toUpperCase())}${teamText}`;
     showScreen('pass-screen');
 
     document.getElementById('btn-ready').onclick = () => {
@@ -387,6 +517,27 @@ const App = (() => {
     const definitionEl = document.getElementById('challenge-definition');
     const scenarioEl = document.getElementById('challenge-scenario');
 
+    // Show rarity badge (only revealed now — not before flip)
+    const rarityBadge = document.getElementById('challenge-rarity-badge');
+    if (cardData.rarity && cardData.rarity !== 'normal') {
+      rarityBadge.style.display = 'block';
+      if (cardData.rarity === 'rare') {
+        rarityBadge.textContent = '✧ RARE — 2× POINTS! ✧';
+        rarityBadge.className = 'rarity-badge rarity-rare';
+        Sound.play('doublepoints');
+      } else if (cardData.rarity === 'wild') {
+        rarityBadge.textContent = '★ WILD CARD ★';
+        rarityBadge.className = 'rarity-badge rarity-wild';
+        Sound.play('wildcard');
+      } else if (cardData.rarity === 'sabotage') {
+        rarityBadge.textContent = '☠ SABOTAGE — HARDER TIER! ☠';
+        rarityBadge.className = 'rarity-badge rarity-sabotage';
+        Sound.play('sabotage');
+      }
+    } else {
+      rarityBadge.style.display = 'none';
+    }
+
     // Show tier/difficulty label
     const tierLabel = ['', 'EASY', 'MEDIUM', 'HARD'][cardData.tier] || '';
     const tierEl = document.getElementById('challenge-tier-label');
@@ -398,22 +549,18 @@ const App = (() => {
 
     // Mode-specific layout
     if (mode === 'define') {
-      // Define mode: show the bias name (it's the prompt), hide definition & scenario
       biasNameEl.textContent = cardData.biasName;
       definitionEl.textContent = '';
       definitionEl.style.display = 'none';
       scenarioEl.textContent = '';
       scenarioEl.style.display = 'none';
     } else if (mode === 'spot') {
-      // Spot mode: hide bias name, show definition, player picks the scenario
       biasNameEl.textContent = '? ? ?';
       definitionEl.textContent = cardData.definition;
       definitionEl.style.display = '';
       scenarioEl.textContent = '';
       scenarioEl.style.display = 'none';
     } else {
-      // Classic mode: hide bias name (it's the answer!), show scenario only
-      // Definition is revealed after answering
       biasNameEl.textContent = '? ? ?';
       definitionEl.textContent = '';
       definitionEl.style.display = 'none';
@@ -444,9 +591,66 @@ const App = (() => {
     document.getElementById('tip-reveal').className = 'tip-reveal';
     document.getElementById('btn-challenge-next').style.display = 'none';
     document.getElementById('steal-section').style.display = 'none';
+
+    // Show skip button (only for non-steal turns)
+    const skipBtn = document.getElementById('btn-challenge-skip');
+    skipBtn.style.display = isSteal ? 'none' : '';
+    skipBtn.onclick = () => handleSkipCard(cardIndex);
+
+    // Start timer
+    startTimer(cardData, cardIndex, isSteal);
+  }
+
+  // ─── Timer ───
+
+  function startTimer(cardData, cardIndex, isSteal) {
+    stopTimer();
+    const cp = Game.getCurrentPlayer();
+    timerSeconds = Game.getTimerDuration(cp);
+    const totalTime = timerSeconds;
+    const timerBar = document.getElementById('timer-bar');
+    const timerText = document.getElementById('timer-text');
+    const container = document.getElementById('timer-bar-container');
+    container.style.display = '';
+    timerBar.style.width = '100%';
+    timerBar.className = 'timer-bar';
+    timerText.textContent = timerSeconds;
+
+    timerInterval = setInterval(() => {
+      timerSeconds--;
+      timerText.textContent = Math.max(0, timerSeconds);
+      const pct = (timerSeconds / totalTime) * 100;
+      timerBar.style.width = pct + '%';
+
+      if (timerSeconds <= 10 && timerSeconds > 0) {
+        timerBar.className = 'timer-bar timer-urgent';
+        Sound.play('tickUrgent');
+      } else if (timerSeconds > 10) {
+        Sound.play('tick');
+      }
+
+      if (timerSeconds <= 0) {
+        stopTimer();
+        Sound.play('timeout');
+        // Time's up — treat as wrong answer
+        handleChallengeAnswer(cardIndex, -1, cardData, isSteal);
+      }
+    }, 1000);
+  }
+
+  function stopTimer() {
+    if (timerInterval) {
+      clearInterval(timerInterval);
+      timerInterval = null;
+    }
+    const container = document.getElementById('timer-bar-container');
+    if (container) container.style.display = 'none';
   }
 
   function handleChallengeAnswer(cardIndex, selectedIndex, cardData, isSteal) {
+    stopTimer();
+    // Hide skip button once an answer is submitted
+    document.getElementById('btn-challenge-skip').style.display = 'none';
     let result;
 
     if (isSteal) {
@@ -461,8 +665,8 @@ const App = (() => {
     // Highlight correct/wrong
     const options = document.querySelectorAll('.challenge-option');
     const correctIndex = cardData.challenge.correct;
-    options[correctIndex].classList.add('correct');
-    if (!result.correct) {
+    if (options[correctIndex]) options[correctIndex].classList.add('correct');
+    if (!result.correct && selectedIndex >= 0 && options[selectedIndex]) {
       options[selectedIndex].classList.add('wrong');
     }
 
@@ -470,15 +674,37 @@ const App = (() => {
     const resultEl = document.getElementById('challenge-result');
     resultEl.style.display = 'block';
     if (result.correct) {
+      const streakText = result.streak >= 2 ? ` 🔥 STREAK ×${result.streak}!` : '';
+      const rarityText = cardData.rarity === 'rare' ? ' ✧ 2× RARE!' : '';
       resultEl.className = 'challenge-result show correct';
-      resultEl.textContent = isSteal ? `⚡ STOLEN! +${result.points}` : `✧ CORRECT! +${result.points} ✧`;
+      resultEl.textContent = isSteal
+        ? `⚡ STOLEN! +${result.points}${rarityText}`
+        : `✧ CORRECT! +${result.points}${rarityText}${streakText} ✧`;
       Sound.play(isSteal ? 'steal' : 'correct');
+
+      // Streak sound
+      if (result.streak >= 3) Sound.play('combo');
+      else if (result.streak >= 2) Sound.play('streak');
+
+      // Screen juice
       document.getElementById('game-screen').classList.add('correct-burst');
       setTimeout(() => document.getElementById('game-screen').classList.remove('correct-burst'), 400);
+
+      // Show streak banner
+      if (result.streak >= 2) {
+        showStreakBanner(result.streak, result.player);
+      }
+
+      // Crown/Dethrone animation
+      if (result.dethroned) {
+        showDethroneAnimation(result.dethroned, result.newLeader);
+      }
+
     } else {
       resultEl.className = 'challenge-result show wrong';
-      resultEl.textContent = '✗ WRONG ✗';
+      resultEl.textContent = selectedIndex < 0 ? '⏰ TIME\'S UP!' : '✗ WRONG ✗';
       Sound.play('wrong');
+      if (selectedIndex >= 0) Sound.play('crowdOoh');
       document.getElementById('game-screen').classList.add('screen-shake');
       setTimeout(() => document.getElementById('game-screen').classList.remove('screen-shake'), 400);
     }
@@ -617,7 +843,64 @@ const App = (() => {
     return gs.players[nextIndex];
   }
 
+  // ─── Streak & Crown Effects ───
+
+  function showStreakBanner(streak, player) {
+    const banner = document.getElementById('streak-banner');
+    banner.style.display = 'block';
+    banner.className = 'streak-banner glow-yellow streak-animate';
+    banner.innerHTML = `🔥 ${sanitize(player.name.toUpperCase())} — ${streak} STREAK! 🔥`;
+    setTimeout(() => {
+      banner.style.display = 'none';
+      banner.classList.remove('streak-animate');
+    }, 2500);
+  }
+
+  function showDethroneAnimation(oldLeader, newLeader) {
+    const overlay = document.getElementById('dethrone-overlay');
+    const detail = document.getElementById('dethrone-detail');
+    detail.innerHTML = `${Players.iconHTML(newLeader)} ${sanitize(newLeader.name.toUpperCase())} TAKES THE 👑 FROM ${Players.iconHTML(oldLeader)} ${sanitize(oldLeader.name.toUpperCase())}!`;
+    overlay.style.display = 'flex';
+    overlay.className = 'dethrone-overlay dethrone-animate';
+    Sound.play('dethrone');
+    setTimeout(() => {
+      Sound.play('crown');
+    }, 500);
+    setTimeout(() => {
+      overlay.style.display = 'none';
+      overlay.classList.remove('dethrone-animate');
+    }, 3000);
+  }
+
+  // ─── Confetti/Particles ───
+
+  function spawnParticles(count, color) {
+    const container = document.getElementById('game-screen');
+    for (let i = 0; i < count; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = (30 + Math.random() * 40) + '%';
+      p.style.setProperty('--hue', color || Math.floor(Math.random() * 360));
+      p.style.animationDelay = (Math.random() * 0.3) + 's';
+      container.appendChild(p);
+      setTimeout(() => p.remove(), 1200);
+    }
+  }
+
+  function handleSkipCard(cardIndex) {
+    stopTimer();
+    Game.skipCard(cardIndex);
+    closeChallenge();
+    // Flip card element back
+    const cardEl = document.querySelector(`.card[data-index="${cardIndex}"]`);
+    if (cardEl) cardEl.classList.remove('flipped');
+    Game.advanceTurn();
+    showPassScreen();
+  }
+
   function closeChallenge() {
+    stopTimer();
+    document.getElementById('btn-challenge-skip').style.display = 'none';
     document.getElementById('challenge-overlay').classList.remove('active');
   }
 
@@ -710,6 +993,7 @@ const App = (() => {
   // ─── Game Over ───
 
   function endGame() {
+    stopTimer();
     Sound.play('gameover');
     Sound.startMusic();
     Game.finalizeScores();
@@ -717,8 +1001,10 @@ const App = (() => {
     const gs = Game.getState();
     const isSunday = gs.deckData && (gs.deckData.deckId === 'sunday' || gs.deckData.deckId === 'gospel-questions');
     const isEQ = gs.deckData && gs.deckData.deckId === 'emotional-intelligence';
+    const isCombined = gs.deckData && gs.deckData.deckId === 'combined';
     document.getElementById('gameover-biases-heading').textContent =
-      isSunday ? 'PRINCIPLES ENCOUNTERED'
+      isCombined ? 'TOPICS ENCOUNTERED'
+      : isSunday ? 'PRINCIPLES ENCOUNTERED'
       : isEQ ? 'EQ SKILLS ENCOUNTERED'
       : 'BIASES ENCOUNTERED';
 
@@ -730,8 +1016,25 @@ const App = (() => {
     document.getElementById('gameover-winner-text').innerHTML =
       `WINNER: ${Players.iconHTML(sortedPlayers[0])} ${sanitize(sortedPlayers[0].name.toUpperCase())}`;
 
+    // Show team results if in team mode
+    const teamScores = Game.getTeamScores();
     const scoresContainer = document.getElementById('gameover-scores');
     scoresContainer.innerHTML = '';
+
+    if (teamScores) {
+      const sortedTeams = [...teamScores].sort((a, b) => b.score - a.score);
+      sortedTeams.forEach((t, i) => {
+        const row = document.createElement('div');
+        row.className = 'gameover-row';
+        row.innerHTML = `<span class="go-name glow-${t.color}">${i === 0 ? '👑 ' : ''}${t.name}</span><span class="go-score">${padScore(t.score)}</span>`;
+        scoresContainer.appendChild(row);
+      });
+      // Separator
+      const sep = document.createElement('div');
+      sep.style.cssText = 'border-top:1px solid var(--text-dim); margin:8px 0;';
+      scoresContainer.appendChild(sep);
+    }
+
     sortedPlayers.forEach((p, i) => {
       const row = document.createElement('div');
       row.className = 'gameover-row';
@@ -765,7 +1068,8 @@ const App = (() => {
       gs.players.map(p => ({ id: p.id, name: p.name, icon: p.icon, iconColor: p.iconColor, emoji: p.icon || p.emoji, age: p.age, birthMonth: p.birthMonth, birthYear: p.birthYear })),
       gs.gridSize,
       gs.deckData,
-      gs.gameMode
+      gs.gameMode,
+      gs.teams
     );
     renderGameBoard();
     showPassScreen();
