@@ -484,6 +484,486 @@
       }
     },
     {
+      "id": "leveraged-buyout-lbo",
+      "name": "Leveraged Buyout (LBO)",
+      "tiers": {
+        "1": {
+          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
+          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
+          "challenge": {
+            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
+            "options": [
+              "Company A\u2014its volatility creates more upside potential for equity holders",
+              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
+              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
+            ],
+            "correct": 1
+          },
+          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
+        },
+        "2": {
+          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
+          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
+          "challenge": {
+            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
+            "options": [
+              "Company A\u2014its volatility creates more upside potential for equity holders",
+              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
+              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
+            ],
+            "correct": 1
+          },
+          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
+        },
+        "3": {
+          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
+          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
+          "challenge": {
+            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
+            "options": [
+              "Company A\u2014its volatility creates more upside potential for equity holders",
+              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
+              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
+            ],
+            "correct": 1
+          },
+          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
+        }
+      }
+    },
+    {
+      "id": "enterprise-value-equity-value",
+      "name": "Enterprise Value vs Equity Value",
+      "tiers": {
+        "1": {
+          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
+          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
+          "challenge": {
+            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
+            "options": [
+              "Company X because it has the same EV/EBITDA multiple",
+              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
+              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
+            ],
+            "correct": 1
+          },
+          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
+        },
+        "2": {
+          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
+          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
+          "challenge": {
+            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
+            "options": [
+              "Company X because it has the same EV/EBITDA multiple",
+              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
+              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
+            ],
+            "correct": 1
+          },
+          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
+        },
+        "3": {
+          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
+          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
+          "challenge": {
+            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
+            "options": [
+              "Company X because it has the same EV/EBITDA multiple",
+              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
+              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
+            ],
+            "correct": 1
+          },
+          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
+        }
+      }
+    },
+    {
+      "id": "ebitda-measurement",
+      "name": "EBITDA",
+      "tiers": {
+        "1": {
+          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
+          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
+          "challenge": {
+            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
+            "options": [
+              "Company B is more valuable because higher EBITDA always indicates superior business quality",
+              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
+              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
+            ],
+            "correct": 1
+          },
+          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
+        },
+        "2": {
+          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
+          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
+          "challenge": {
+            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
+            "options": [
+              "Company B is more valuable because higher EBITDA always indicates superior business quality",
+              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
+              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
+            ],
+            "correct": 1
+          },
+          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
+        },
+        "3": {
+          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
+          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
+          "challenge": {
+            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
+            "options": [
+              "Company B is more valuable because higher EBITDA always indicates superior business quality",
+              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
+              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
+            ],
+            "correct": 1
+          },
+          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
+        }
+      }
+    },
+    {
+      "id": "multiple-ev-ebitda",
+      "name": "Multiple (EV/EBITDA)",
+      "tiers": {
+        "1": {
+          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
+          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
+          "challenge": {
+            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
+            "options": [
+              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
+              "The discount proves the market is irrational; it's the same business and should command the same multiple",
+              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
+            ],
+            "correct": 0
+          },
+          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
+        },
+        "2": {
+          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
+          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
+          "challenge": {
+            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
+            "options": [
+              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
+              "The discount proves the market is irrational; it's the same business and should command the same multiple",
+              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
+            ],
+            "correct": 0
+          },
+          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
+        },
+        "3": {
+          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
+          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
+          "challenge": {
+            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
+            "options": [
+              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
+              "The discount proves the market is irrational; it's the same business and should command the same multiple",
+              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
+            ],
+            "correct": 0
+          },
+          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
+        }
+      }
+    },
+    {
+      "id": "dry-powder",
+      "name": "Dry Powder",
+      "tiers": {
+        "1": {
+          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
+          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
+          "challenge": {
+            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
+            "options": [
+              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
+              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
+              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
+            ],
+            "correct": 1
+          },
+          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
+        },
+        "2": {
+          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
+          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
+          "challenge": {
+            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
+            "options": [
+              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
+              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
+              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
+            ],
+            "correct": 1
+          },
+          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
+        },
+        "3": {
+          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
+          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
+          "challenge": {
+            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
+            "options": [
+              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
+              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
+              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
+            ],
+            "correct": 1
+          },
+          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
+        }
+      }
+    },
+    {
+      "id": "fund-life-fund-term",
+      "name": "Fund Life / Fund Term",
+      "tiers": {
+        "1": {
+          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
+          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
+          "challenge": {
+            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
+            "options": [
+              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
+              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
+              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
+        },
+        "2": {
+          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
+          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
+          "challenge": {
+            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
+            "options": [
+              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
+              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
+              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
+        },
+        "3": {
+          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
+          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
+          "challenge": {
+            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
+            "options": [
+              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
+              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
+              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
+        }
+      }
+    },
+    {
+      "id": "investment-period",
+      "name": "Investment Period",
+      "tiers": {
+        "1": {
+          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
+          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
+          "challenge": {
+            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
+            "options": [
+              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
+              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
+              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
+            ],
+            "correct": 1
+          },
+          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
+        },
+        "2": {
+          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
+          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
+          "challenge": {
+            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
+            "options": [
+              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
+              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
+              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
+            ],
+            "correct": 1
+          },
+          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
+        },
+        "3": {
+          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
+          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
+          "challenge": {
+            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
+            "options": [
+              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
+              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
+              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
+            ],
+            "correct": 1
+          },
+          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
+        }
+      }
+    },
+    {
+      "id": "harvest-period",
+      "name": "Harvest Period",
+      "tiers": {
+        "1": {
+          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
+          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
+          "challenge": {
+            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
+            "options": [
+              "Exit immediately to lock gains and redeploy capital within the fund",
+              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
+              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
+            ],
+            "correct": 0
+          },
+          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
+        },
+        "2": {
+          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
+          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
+          "challenge": {
+            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
+            "options": [
+              "Exit immediately to lock gains and redeploy capital within the fund",
+              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
+              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
+            ],
+            "correct": 0
+          },
+          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
+        },
+        "3": {
+          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
+          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
+          "challenge": {
+            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
+            "options": [
+              "Exit immediately to lock gains and redeploy capital within the fund",
+              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
+              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
+            ],
+            "correct": 0
+          },
+          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
+        }
+      }
+    },
+    {
+      "id": "gp-commitment-co-invest",
+      "name": "GP Commitment / GP Co-invest",
+      "tiers": {
+        "1": {
+          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
+          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
+          "challenge": {
+            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
+            "options": [
+              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
+              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
+              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
+        },
+        "2": {
+          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
+          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
+          "challenge": {
+            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
+            "options": [
+              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
+              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
+              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
+        },
+        "3": {
+          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
+          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
+          "challenge": {
+            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
+            "options": [
+              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
+              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
+              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
+        }
+      }
+    },
+    {
+      "id": "clawback-provision",
+      "name": "Clawback Provision",
+      "tiers": {
+        "1": {
+          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
+          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
+          "challenge": {
+            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
+            "options": [
+              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
+              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
+              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
+            ],
+            "correct": 1
+          },
+          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
+        },
+        "2": {
+          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
+          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
+          "challenge": {
+            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
+            "options": [
+              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
+              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
+              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
+            ],
+            "correct": 1
+          },
+          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
+        },
+        "3": {
+          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
+          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
+          "challenge": {
+            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
+            "options": [
+              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
+              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
+              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
+            ],
+            "correct": 1
+          },
+          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
+        }
+      }
+    },
+    {
       "id": "due-diligence-types-purpose",
       "name": "Due Diligence - Types and Purpose in PE Transactions",
       "tiers": {
@@ -1440,486 +1920,6 @@
             "correct": 2
           },
           "tip": "No-fault divorce = optionality for LPs. GPs trade this for LP credibility; narrow vs. broad versions create negotiation tension."
-        }
-      }
-    },
-    {
-      "id": "leveraged-buyout-lbo",
-      "name": "Leveraged Buyout (LBO)",
-      "tiers": {
-        "1": {
-          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
-          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
-          "challenge": {
-            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
-            "options": [
-              "Company A\u2014its volatility creates more upside potential for equity holders",
-              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
-              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
-            ],
-            "correct": 1
-          },
-          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
-        },
-        "2": {
-          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
-          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
-          "challenge": {
-            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
-            "options": [
-              "Company A\u2014its volatility creates more upside potential for equity holders",
-              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
-              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
-            ],
-            "correct": 1
-          },
-          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
-        },
-        "3": {
-          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
-          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
-          "challenge": {
-            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
-            "options": [
-              "Company A\u2014its volatility creates more upside potential for equity holders",
-              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
-              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
-            ],
-            "correct": 1
-          },
-          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
-        }
-      }
-    },
-    {
-      "id": "enterprise-value-equity-value",
-      "name": "Enterprise Value vs Equity Value",
-      "tiers": {
-        "1": {
-          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
-          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
-          "challenge": {
-            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
-            "options": [
-              "Company X because it has the same EV/EBITDA multiple",
-              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
-              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
-            ],
-            "correct": 1
-          },
-          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
-        },
-        "2": {
-          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
-          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
-          "challenge": {
-            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
-            "options": [
-              "Company X because it has the same EV/EBITDA multiple",
-              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
-              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
-            ],
-            "correct": 1
-          },
-          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
-        },
-        "3": {
-          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
-          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
-          "challenge": {
-            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
-            "options": [
-              "Company X because it has the same EV/EBITDA multiple",
-              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
-              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
-            ],
-            "correct": 1
-          },
-          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
-        }
-      }
-    },
-    {
-      "id": "ebitda-measurement",
-      "name": "EBITDA",
-      "tiers": {
-        "1": {
-          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
-          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
-          "challenge": {
-            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
-            "options": [
-              "Company B is more valuable because higher EBITDA always indicates superior business quality",
-              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
-              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
-            ],
-            "correct": 1
-          },
-          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
-        },
-        "2": {
-          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
-          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
-          "challenge": {
-            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
-            "options": [
-              "Company B is more valuable because higher EBITDA always indicates superior business quality",
-              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
-              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
-            ],
-            "correct": 1
-          },
-          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
-        },
-        "3": {
-          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
-          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
-          "challenge": {
-            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
-            "options": [
-              "Company B is more valuable because higher EBITDA always indicates superior business quality",
-              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
-              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
-            ],
-            "correct": 1
-          },
-          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
-        }
-      }
-    },
-    {
-      "id": "multiple-ev-ebitda",
-      "name": "Multiple (EV/EBITDA)",
-      "tiers": {
-        "1": {
-          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
-          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
-          "challenge": {
-            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
-            "options": [
-              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
-              "The discount proves the market is irrational; it's the same business and should command the same multiple",
-              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
-            ],
-            "correct": 0
-          },
-          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
-        },
-        "2": {
-          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
-          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
-          "challenge": {
-            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
-            "options": [
-              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
-              "The discount proves the market is irrational; it's the same business and should command the same multiple",
-              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
-            ],
-            "correct": 0
-          },
-          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
-        },
-        "3": {
-          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
-          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
-          "challenge": {
-            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
-            "options": [
-              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
-              "The discount proves the market is irrational; it's the same business and should command the same multiple",
-              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
-            ],
-            "correct": 0
-          },
-          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
-        }
-      }
-    },
-    {
-      "id": "dry-powder",
-      "name": "Dry Powder",
-      "tiers": {
-        "1": {
-          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
-          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
-          "challenge": {
-            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
-            "options": [
-              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
-              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
-              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
-            ],
-            "correct": 1
-          },
-          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
-        },
-        "2": {
-          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
-          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
-          "challenge": {
-            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
-            "options": [
-              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
-              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
-              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
-            ],
-            "correct": 1
-          },
-          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
-        },
-        "3": {
-          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
-          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
-          "challenge": {
-            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
-            "options": [
-              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
-              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
-              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
-            ],
-            "correct": 1
-          },
-          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
-        }
-      }
-    },
-    {
-      "id": "fund-life-fund-term",
-      "name": "Fund Life / Fund Term",
-      "tiers": {
-        "1": {
-          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
-          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
-          "challenge": {
-            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
-            "options": [
-              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
-              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
-              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
-            ],
-            "correct": 1
-          },
-          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
-        },
-        "2": {
-          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
-          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
-          "challenge": {
-            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
-            "options": [
-              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
-              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
-              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
-            ],
-            "correct": 1
-          },
-          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
-        },
-        "3": {
-          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
-          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
-          "challenge": {
-            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
-            "options": [
-              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
-              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
-              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
-            ],
-            "correct": 1
-          },
-          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
-        }
-      }
-    },
-    {
-      "id": "investment-period",
-      "name": "Investment Period",
-      "tiers": {
-        "1": {
-          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
-          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
-          "challenge": {
-            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
-            "options": [
-              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
-              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
-              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
-            ],
-            "correct": 1
-          },
-          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
-        },
-        "2": {
-          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
-          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
-          "challenge": {
-            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
-            "options": [
-              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
-              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
-              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
-            ],
-            "correct": 1
-          },
-          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
-        },
-        "3": {
-          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
-          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
-          "challenge": {
-            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
-            "options": [
-              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
-              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
-              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
-            ],
-            "correct": 1
-          },
-          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
-        }
-      }
-    },
-    {
-      "id": "harvest-period",
-      "name": "Harvest Period",
-      "tiers": {
-        "1": {
-          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
-          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
-          "challenge": {
-            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
-            "options": [
-              "Exit immediately to lock gains and redeploy capital within the fund",
-              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
-              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
-            ],
-            "correct": 0
-          },
-          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
-        },
-        "2": {
-          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
-          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
-          "challenge": {
-            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
-            "options": [
-              "Exit immediately to lock gains and redeploy capital within the fund",
-              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
-              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
-            ],
-            "correct": 0
-          },
-          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
-        },
-        "3": {
-          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
-          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
-          "challenge": {
-            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
-            "options": [
-              "Exit immediately to lock gains and redeploy capital within the fund",
-              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
-              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
-            ],
-            "correct": 0
-          },
-          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
-        }
-      }
-    },
-    {
-      "id": "gp-commitment-co-invest",
-      "name": "GP Commitment / GP Co-invest",
-      "tiers": {
-        "1": {
-          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
-          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
-          "challenge": {
-            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
-            "options": [
-              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
-              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
-              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
-            ],
-            "correct": 1
-          },
-          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
-        },
-        "2": {
-          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
-          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
-          "challenge": {
-            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
-            "options": [
-              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
-              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
-              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
-            ],
-            "correct": 1
-          },
-          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
-        },
-        "3": {
-          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
-          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
-          "challenge": {
-            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
-            "options": [
-              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
-              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
-              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
-            ],
-            "correct": 1
-          },
-          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
-        }
-      }
-    },
-    {
-      "id": "clawback-provision",
-      "name": "Clawback Provision",
-      "tiers": {
-        "1": {
-          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
-          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
-          "challenge": {
-            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
-            "options": [
-              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
-              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
-              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
-            ],
-            "correct": 1
-          },
-          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
-        },
-        "2": {
-          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
-          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
-          "challenge": {
-            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
-            "options": [
-              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
-              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
-              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
-            ],
-            "correct": 1
-          },
-          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
-        },
-        "3": {
-          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
-          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
-          "challenge": {
-            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
-            "options": [
-              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
-              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
-              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
-            ],
-            "correct": 1
-          },
-          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
         }
       }
     }
