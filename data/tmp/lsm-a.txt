@@ -1,0 +1,364 @@
+```json
+[
+  {
+    "id": "pharma-ma-due-diligence",
+    "name": "Pharmaceutical M&A Due Diligence Process",
+    "tiers": {
+      "1": {
+        "definition": "Systematic evaluation of a target company's assets, liabilities, regulatory status, and pipeline to assess acquisition risk and valuation before closing",
+        "scenarioDoneTo": "Your company is planning to acquire a biotech firm with three marketed drugs. You need to evaluate clinical trial data, patent landscapes, manufacturing capabilities, and regulatory compliance.",
+        "challenge": {
+          "scenario": "In M&A due diligence, what is the primary focus of regulatory due diligence?",
+          "options": ["Assessing FDA inspection history and compliance records", "Reviewing marketing department performance metrics", "Evaluating employee retirement benefits"],
+          "correct": 0
+        },
+        "tip": "Regulatory due diligence examines inspection records, warning letters, and compliance status across all marketed products"
+      },
+      "2": {
+        "definition": "Systematic evaluation of a target company's assets, liabilities, regulatory status, and pipeline to assess acquisition risk and valuation before closing",
+        "scenarioDoneTo": "Your company is planning to acquire a biotech firm with three marketed drugs. You need to evaluate clinical trial data, patent landscapes, manufacturing capabilities, and regulatory compliance.",
+        "challenge": {
+          "scenario": "In M&A due diligence, what is the primary focus of regulatory due diligence?",
+          "options": ["Assessing FDA inspection history and compliance records", "Reviewing marketing department performance metrics", "Evaluating employee retirement benefits"],
+          "correct": 0
+        },
+        "tip": "Regulatory due diligence examines inspection records, warning letters, and compliance status across all marketed products"
+      },
+      "3": {
+        "definition": "Systematic evaluation of a target company's assets, liabilities, regulatory status, and pipeline to assess acquisition risk and valuation before closing",
+        "scenarioDoneTo": "Your company is planning to acquire a biotech firm with three marketed drugs. You need to evaluate clinical trial data, patent landscapes, manufacturing capabilities, and regulatory compliance.",
+        "challenge": {
+          "scenario": "In M&A due diligence, what is the primary focus of regulatory due diligence?",
+          "options": ["Assessing FDA inspection history and compliance records", "Reviewing marketing department performance metrics", "Evaluating employee retirement benefits"],
+          "correct": 0
+        },
+        "tip": "Regulatory due diligence examines inspection records, warning letters, and compliance status across all marketed products"
+      }
+    }
+  },
+  {
+    "id": "drug-licensing-deal-structure",
+    "name": "Drug Licensing Deal Structure",
+    "tiers": {
+      "1": {
+        "definition": "Framework for transferring intellectual property rights between parties, typically including upfront payments, milestone payments, royalties, and field-of-use restrictions",
+        "scenarioDoneTo": "You are negotiating a licensing deal where your company wants to license a Phase II oncology candidate from a biotech partner. The deal must balance risk-sharing and cash flow.",
+        "challenge": {
+          "scenario": "Which component of a licensing deal is contingent on achieving regulatory approval?",
+          "options": ["Regulatory milestone payments", "Upfront payment", "Royalty rate percentage"],
+          "correct": 0
+        },
+        "tip": "Milestone payments are staged payments tied to development, regulatory, and commercial achievements to align risk with both parties"
+      },
+      "2": {
+        "definition": "Framework for transferring intellectual property rights between parties, typically including upfront payments, milestone payments, royalties, and field-of-use restrictions",
+        "scenarioDoneTo": "You are negotiating a licensing deal where your company wants to license a Phase II oncology candidate from a biotech partner. The deal must balance risk-sharing and cash flow.",
+        "challenge": {
+          "scenario": "Which component of a licensing deal is contingent on achieving regulatory approval?",
+          "options": ["Regulatory milestone payments", "Upfront payment", "Royalty rate percentage"],
+          "correct": 0
+        },
+        "tip": "Milestone payments are staged payments tied to development, regulatory, and commercial achievements to align risk with both parties"
+      },
+      "3": {
+        "definition": "Framework for transferring intellectual property rights between parties, typically including upfront payments, milestone payments, royalties, and field-of-use restrictions",
+        "scenarioDoneTo": "You are negotiating a licensing deal where your company wants to license a Phase II oncology candidate from a biotech partner. The deal must balance risk-sharing and cash flow.",
+        "challenge": {
+          "scenario": "Which component of a licensing deal is contingent on achieving regulatory approval?",
+          "options": ["Regulatory milestone payments", "Upfront payment", "Royalty rate percentage"],
+          "correct": 0
+        },
+        "tip": "Milestone payments are staged payments tied to development, regulatory, and commercial achievements to align risk with both parties"
+      }
+    }
+  },
+  {
+    "id": "payer-negotiation-rebate-mechanics",
+    "name": "Payer Negotiation and Rebate Mechanics",
+    "tiers": {
+      "1": {
+        "definition": "Process of establishing product pricing, formulary placement, and rebate structures with health plans to balance patient access, market share, and net revenue",
+        "scenarioDoneTo": "Your new specialty drug costs $8,500 per month. A major health plan wants volume guarantees and is requesting a 30% rebate to place it on their preferred formulary tier.",
+        "challenge": {
+          "scenario": "How do performance-based rebates differ from volume rebates in payer negotiations?",
+          "options": ["Performance rebates are tied to real-world outcomes; volume rebates are tied to units sold", "Performance rebates are always higher value", "Volume rebates only apply to specialty drugs"],
+          "correct": 0
+        },
+        "tip": "Volume rebates incentivize market share gain, while performance-based rebates tie discounts to clinical outcomes or adherence metrics"
+      },
+      "2": {
+        "definition": "Process of establishing product pricing, formulary placement, and rebate structures with health plans to balance patient access, market share, and net revenue",
+        "scenarioDoneTo": "Your new specialty drug costs $8,500 per month. A major health plan wants volume guarantees and is requesting a 30% rebate to place it on their preferred formulary tier.",
+        "challenge": {
+          "scenario": "How do performance-based rebates differ from volume rebates in payer negotiations?",
+          "options": ["Performance rebates are tied to real-world outcomes; volume rebates are tied to units sold", "Performance rebates are always higher value", "Volume rebates only apply to specialty drugs"],
+          "correct": 0
+        },
+        "tip": "Volume rebates incentivize market share gain, while performance-based rebates tie discounts to clinical outcomes or adherence metrics"
+      },
+      "3": {
+        "definition": "Process of establishing product pricing, formulary placement, and rebate structures with health plans to balance patient access, market share, and net revenue",
+        "scenarioDoneTo": "Your new specialty drug costs $8,500 per month. A major health plan wants volume guarantees and is requesting a 30% rebate to place it on their preferred formulary tier.",
+        "challenge": {
+          "scenario": "How do performance-based rebates differ from volume rebates in payer negotiations?",
+          "options": ["Performance rebates are tied to real-world outcomes; volume rebates are tied to units sold", "Performance rebates are always higher value", "Volume rebates only apply to specialty drugs"],
+          "correct": 0
+        },
+        "tip": "Volume rebates incentivize market share gain, while performance-based rebates tie discounts to clinical outcomes or adherence metrics"
+      }
+    }
+  },
+  {
+    "id": "phase-iii-trial-design-powering",
+    "name": "Phase III Trial Design and Powering",
+    "tiers": {
+      "1": {
+        "definition": "Process of determining sample size and statistical parameters to ensure a trial has sufficient power to detect clinically meaningful treatment effects with acceptable Type I and Type II error rates",
+        "scenarioDoneTo": "You are designing a Phase III trial for a new diabetes drug with a primary endpoint of HbA1c reduction of 0.5%. You need to power the study to detect this difference with 90% power and 5% significance.",
+        "challenge": {
+          "scenario": "What is the relationship between increasing sample size and statistically detecting a treatment effect?",
+          "options": ["Larger sample sizes increase statistical power and ability to detect smaller effects", "Sample size has no impact on power", "Smaller samples are always more powerful"],
+          "correct": 0
+        },
+        "tip": "Power is directly proportional to sample size; larger studies can detect smaller clinically meaningful differences with greater confidence"
+      },
+      "2": {
+        "definition": "Process of determining sample size and statistical parameters to ensure a trial has sufficient power to detect clinically meaningful treatment effects with acceptable Type I and Type II error rates",
+        "scenarioDoneTo": "You are designing a Phase III trial for a new diabetes drug with a primary endpoint of HbA1c reduction of 0.5%. You need to power the study to detect this difference with 90% power and 5% significance.",
+        "challenge": {
+          "scenario": "What is the relationship between increasing sample size and statistically detecting a treatment effect?",
+          "options": ["Larger sample sizes increase statistical power and ability to detect smaller effects", "Sample size has no impact on power", "Smaller samples are always more powerful"],
+          "correct": 0
+        },
+        "tip": "Power is directly proportional to sample size; larger studies can detect smaller clinically meaningful differences with greater confidence"
+      },
+      "3": {
+        "definition": "Process of determining sample size and statistical parameters to ensure a trial has sufficient power to detect clinically meaningful treatment effects with acceptable Type I and Type II error rates",
+        "scenarioDoneTo": "You are designing a Phase III trial for a new diabetes drug with a primary endpoint of HbA1c reduction of 0.5%. You need to power the study to detect this difference with 90% power and 5% significance.",
+        "challenge": {
+          "scenario": "What is the relationship between increasing sample size and statistically detecting a treatment effect?",
+          "options": ["Larger sample sizes increase statistical power and ability to detect smaller effects", "Sample size has no impact on power", "Smaller samples are always more powerful"],
+          "correct": 0
+        },
+        "tip": "Power is directly proportional to sample size; larger studies can detect smaller clinically meaningful differences with greater confidence"
+      }
+    }
+  },
+  {
+    "id": "nda-submission-process",
+    "name": "NDA Submission Process",
+    "tiers": {
+      "1": {
+        "definition": "Formal regulatory pathway for submitting comprehensive manufacturing, preclinical, clinical, and safety data to FDA for review and approval of a new drug application",
+        "scenarioDoneTo": "Your company has completed Phase III trials for a cardiovascular drug and is preparing to submit an NDA. You must compile CMC data, analytical methods, stability studies, and clinical summary documents.",
+        "challenge": {
+          "scenario": "What is the purpose of the CMC section in an NDA submission?",
+          "options": ["To document Chemistry, Manufacturing, and Controls for the drug substance and product", "To provide clinical management criteria only", "To list competitor pricing information"],
+          "correct": 0
+        },
+        "tip": "CMC sections establish that the drug can be manufactured consistently with appropriate quality standards and controls"
+      },
+      "2": {
+        "definition": "Formal regulatory pathway for submitting comprehensive manufacturing, preclinical, clinical, and safety data to FDA for review and approval of a new drug application",
+        "scenarioDoneTo": "Your company has completed Phase III trials for a cardiovascular drug and is preparing to submit an NDA. You must compile CMC data, analytical methods, stability studies, and clinical summary documents.",
+        "challenge": {
+          "scenario": "What is the purpose of the CMC section in an NDA submission?",
+          "options": ["To document Chemistry, Manufacturing, and Controls for the drug substance and product", "To provide clinical management criteria only", "To list competitor pricing information"],
+          "correct": 0
+        },
+        "tip": "CMC sections establish that the drug can be manufactured consistently with appropriate quality standards and controls"
+      },
+      "3": {
+        "definition": "Formal regulatory pathway for submitting comprehensive manufacturing, preclinical, clinical, and safety data to FDA for review and approval of a new drug application",
+        "scenarioDoneTo": "Your company has completed Phase III trials for a cardiovascular drug and is preparing to submit an NDA. You must compile CMC data, analytical methods, stability studies, and clinical summary documents.",
+        "challenge": {
+          "scenario": "What is the purpose of the CMC section in an NDA submission?",
+          "options": ["To document Chemistry, Manufacturing, and Controls for the drug substance and product", "To provide clinical management criteria only", "To list competitor pricing information"],
+          "correct": 0
+        },
+        "tip": "CMC sections establish that the drug can be manufactured consistently with appropriate quality standards and controls"
+      }
+    }
+  },
+  {
+    "id": "market-access-strategy-execution",
+    "name": "Market Access Strategy Execution",
+    "tiers": {
+      "1": {
+        "definition": "Strategic framework for obtaining coverage and reimbursement from payers, implementing patient assistance programs, and managing market access barriers pre- and post-launch",
+        "scenarioDoneTo": "Your company is about to launch an orphan drug for a rare disease. You must secure coverage from major health plans, establish a patient assistance program, and navigate specialty pharmacy contracting.",
+        "challenge": {
+          "scenario": "Which tactic is most effective for securing payer coverage before product launch?",
+          "options": ["Conducting health economics research and submitting dossiers to payers during Phase III", "Waiting until after FDA approval to approach payers", "Focusing exclusively on patient demand generation"],
+          "correct": 0
+        },
+        "tip": "Pre-launch payer engagement during Phase III development allows time for negotiation and dossier preparation before launch"
+      },
+      "2": {
+        "definition": "Strategic framework for obtaining coverage and reimbursement from payers, implementing patient assistance programs, and managing market access barriers pre- and post-launch",
+        "scenarioDoneTo": "Your company is about to launch an orphan drug for a rare disease. You must secure coverage from major health plans, establish a patient assistance program, and navigate specialty pharmacy contracting.",
+        "challenge": {
+          "scenario": "Which tactic is most effective for securing payer coverage before product launch?",
+          "options": ["Conducting health economics research and submitting dossiers to payers during Phase III", "Waiting until after FDA approval to approach payers", "Focusing exclusively on patient demand generation"],
+          "correct": 0
+        },
+        "tip": "Pre-launch payer engagement during Phase III development allows time for negotiation and dossier preparation before launch"
+      },
+      "3": {
+        "definition": "Strategic framework for obtaining coverage and reimbursement from payers, implementing patient assistance programs, and managing market access barriers pre- and post-launch",
+        "scenarioDoneTo": "Your company is about to launch an orphan drug for a rare disease. You must secure coverage from major health plans, establish a patient assistance program, and navigate specialty pharmacy contracting.",
+        "challenge": {
+          "scenario": "Which tactic is most effective for securing payer coverage before product launch?",
+          "options": ["Conducting health economics research and submitting dossiers to payers during Phase III", "Waiting until after FDA approval to approach payers", "Focusing exclusively on patient demand generation"],
+          "correct": 0
+        },
+        "tip": "Pre-launch payer engagement during Phase III development allows time for negotiation and dossier preparation before launch"
+      }
+    }
+  },
+  {
+    "id": "product-launch-sequencing",
+    "name": "Product Launch Sequencing",
+    "tiers": {
+      "1": {
+        "definition": "Strategic ordering of market entry, territory prioritization, customer segment sequencing, and timing decisions to maximize uptake, revenue, and competitive positioning",
+        "scenarioDoneTo": "Your oncology drug has just been approved. You must decide whether to launch first in the US, Europe, or Japan, and whether to target high-volume community oncology centers or elite academic medical centers first.",
+        "challenge": {
+          "scenario": "Which sequencing approach typically maximizes early revenue for a specialty drug?",
+          "options": ["Launch in highest-paying markets first; target specialists with highest prescribing volumes early", "Launch simultaneously everywhere regardless of reimbursement", "Launch in lower-income countries first"],
+          "correct": 0
+        },
+        "tip": "Sequencing high-revenue markets and high-volume prescribers early maximizes cash flow while building clinical evidence"
+      },
+      "2": {
+        "definition": "Strategic ordering of market entry, territory prioritization, customer segment sequencing, and timing decisions to maximize uptake, revenue, and competitive positioning",
+        "scenarioDoneTo": "Your oncology drug has just been approved. You must decide whether to launch first in the US, Europe, or Japan, and whether to target high-volume community oncology centers or elite academic medical centers first.",
+        "challenge": {
+          "scenario": "Which sequencing approach typically maximizes early revenue for a specialty drug?",
+          "options": ["Launch in highest-paying markets first; target specialists with highest prescribing volumes early", "Launch simultaneously everywhere regardless of reimbursement", "Launch in lower-income countries first"],
+          "correct": 0
+        },
+        "tip": "Sequencing high-revenue markets and high-volume prescribers early maximizes cash flow while building clinical evidence"
+      },
+      "3": {
+        "definition": "Strategic ordering of market entry, territory prioritization, customer segment sequencing, and timing decisions to maximize uptake, revenue, and competitive positioning",
+        "scenarioDoneTo": "Your oncology drug has just been approved. You must decide whether to launch first in the US, Europe, or Japan, and whether to target high-volume community oncology centers or elite academic medical centers first.",
+        "challenge": {
+          "scenario": "Which sequencing approach typically maximizes early revenue for a specialty drug?",
+          "options": ["Launch in highest-paying markets first; target specialists with highest prescribing volumes early", "Launch simultaneously everywhere regardless of reimbursement", "Launch in lower-income countries first"],
+          "correct": 0
+        },
+        "tip": "Sequencing high-revenue markets and high-volume prescribers early maximizes cash flow while building clinical evidence"
+      }
+    }
+  },
+  {
+    "id": "pharmacoeconomic-modeling",
+    "name": "Pharmacoeconomic Modeling",
+    "tiers": {
+      "1": {
+        "definition": "Quantitative analysis comparing the costs and health outcomes of a drug relative to existing treatments using frameworks like cost-effectiveness, budget impact, and health utility modeling",
+        "scenarioDoneTo": "Your company developed a new rheumatoid arthritis biologic costing 3000 per month that reduces disease progression by 40% versus standard therapy. You need to model budget impact for a 1-million-member health plan.",
+        "challenge": {
+          "scenario": "In pharmacoeconomic modeling, what does QALY represent?",
+          "options": ["Quality-Adjusted Life Year, a measure combining lifespan and quality of life", "Quarterly Assessment of Lagged Yields", "Quick Analysis of Year-Long Assessments"],
+          "correct": 0
+        },
+        "tip": "QALYs quantify the health benefit of treatments by combining mortality reduction with improvements in quality of life using utility weights"
+      },
+      "2": {
+        "definition": "Quantitative analysis comparing the costs and health outcomes of a drug relative to existing treatments using frameworks like cost-effectiveness, budget impact, and health utility modeling",
+        "scenarioDoneTo": "Your company developed a new rheumatoid arthritis biologic costing 3000 per month that reduces disease progression by 40% versus standard therapy. You need to model budget impact for a 1-million-member health plan.",
+        "challenge": {
+          "scenario": "In pharmacoeconomic modeling, what does QALY represent?",
+          "options": ["Quality-Adjusted Life Year, a measure combining lifespan and quality of life", "Quarterly Assessment of Lagged Yields", "Quick Analysis of Year-Long Assessments"],
+          "correct": 0
+        },
+        "tip": "QALYs quantify the health benefit of treatments by combining mortality reduction with improvements in quality of life using utility weights"
+      },
+      "3": {
+        "definition": "Quantitative analysis comparing the costs and health outcomes of a drug relative to existing treatments using frameworks like cost-effectiveness, budget impact, and health utility modeling",
+        "scenarioDoneTo": "Your company developed a new rheumatoid arthritis biologic costing 3000 per month that reduces disease progression by 40% versus standard therapy. You need to model budget impact for a 1-million-member health plan.",
+        "challenge": {
+          "scenario": "In pharmacoeconomic modeling, what does QALY represent?",
+          "options": ["Quality-Adjusted Life Year, a measure combining lifespan and quality of life", "Quarterly Assessment of Lagged Yields", "Quick Analysis of Year-Long Assessments"],
+          "correct": 0
+        },
+        "tip": "QALYs quantify the health benefit of treatments by combining mortality reduction with improvements in quality of life using utility weights"
+      }
+    }
+  },
+  {
+    "id": "patent-strategy-paragraph-iv",
+    "name": "Patent Strategy and Paragraph IV",
+    "tiers": {
+      "1": {
+        "definition": "Framework for protecting intellectual property through patent filing, prosecution, and lifecycle extension while defending against generic challenges and navigating paragraph IV certifications",
+        "scenarioDoneTo": "Your company has a blockbuster drug protected by a composition patent expiring in 2028. A generic company has filed an ANDA with a Paragraph IV certification. You must decide whether to settle, litigate, or extend patent protection through formulation changes.",
+        "challenge": {
+          "scenario": "What is the primary effect of a Paragraph IV certification in a generic ANDA filing?",
+          "options": ["The generic applicant certifies the patent is invalid, expired, or will not be infringed", "It guarantees FDA approval for the generic drug", "It provides automatic 10-year market exclusivity"],
+          "correct": 0
+        },
+        "tip": "Paragraph IV triggers patent litigation rights and activates 30-month stay of approval, giving branded companies time to defend their patents"
+      },
+      "2": {
+        "definition": "Framework for protecting intellectual property through patent filing, prosecution, and lifecycle extension while defending against generic challenges and navigating paragraph IV certifications",
+        "scenarioDoneTo": "Your company has a blockbuster drug protected by a composition patent expiring in 2028. A generic company has filed an ANDA with a Paragraph IV certification. You must decide whether to settle, litigate, or extend patent protection through formulation changes.",
+        "challenge": {
+          "scenario": "What is the primary effect of a Paragraph IV certification in a generic ANDA filing?",
+          "options": ["The generic applicant certifies the patent is invalid, expired, or will not be infringed", "It guarantees FDA approval for the generic drug", "It provides automatic 10-year market exclusivity"],
+          "correct": 0
+        },
+        "tip": "Paragraph IV triggers patent litigation rights and activates 30-month stay of approval, giving branded companies time to defend their patents"
+      },
+      "3": {
+        "definition": "Framework for protecting intellectual property through patent filing, prosecution, and lifecycle extension while defending against generic challenges and navigating paragraph IV certifications",
+        "scenarioDoneTo": "Your company has a blockbuster drug protected by a composition patent expiring in 2028. A generic company has filed an ANDA with a Paragraph IV certification. You must decide whether to settle, litigate, or extend patent protection through formulation changes.",
+        "challenge": {
+          "scenario": "What is the primary effect of a Paragraph IV certification in a generic ANDA filing?",
+          "options": ["The generic applicant certifies the patent is invalid, expired, or will not be infringed", "It guarantees FDA approval for the generic drug", "It provides automatic 10-year market exclusivity"],
+          "correct": 0
+        },
+        "tip": "Paragraph IV triggers patent litigation rights and activates 30-month stay of approval, giving branded companies time to defend their patents"
+      }
+    }
+  },
+  {
+    "id": "sales-force-sizing-deployment",
+    "name": "Sales Force Sizing and Deployment",
+    "tiers": {
+      "1": {
+        "definition": "Data-driven process for determining ideal sales team size, geographic allocation, specialization structure, and account assignment to maximize market coverage and revenue while controlling costs",
+        "scenarioDoneTo": "Your new primary care diabetes drug is launching nationally. You have a budget to hire 200 sales representatives. You must decide on geographic territories, target physician density, and coverage strategy to optimize first-year market penetration.",
+        "challenge": {
+          "scenario": "How is optimal sales force size typically determined in pharmaceutical launches?",
+          "options": ["Using market potential analysis and call productivity benchmarks from comparable launches", "Hiring as many reps as budget allows without evaluation", "Allocating representatives equally to all states"],
+          "correct": 0
+        },
+        "tip": "Evidence-based sizing uses market segmentation, call frequency optimization, and conversion rates from comparable products to maximize ROI"
+      },
+      "2": {
+        "definition": "Data-driven process for determining ideal sales team size, geographic allocation, specialization structure, and account assignment to maximize market coverage and revenue while controlling costs",
+        "scenarioDoneTo": "Your new primary care diabetes drug is launching nationally. You have a budget to hire 200 sales representatives. You must decide on geographic territories, target physician density, and coverage strategy to optimize first-year market penetration.",
+        "challenge": {
+          "scenario": "How is optimal sales force size typically determined in pharmaceutical launches?",
+          "options": ["Using market potential analysis and call productivity benchmarks from comparable launches", "Hiring as many reps as budget allows without evaluation", "Allocating representatives equally to all states"],
+          "correct": 0
+        },
+        "tip": "Evidence-based sizing uses market segmentation, call frequency optimization, and conversion rates from comparable products to maximize ROI"
+      },
+      "3": {
+        "definition": "Data-driven process for determining ideal sales team size, geographic allocation, specialization structure, and account assignment to maximize market coverage and revenue while controlling costs",
+        "scenarioDoneTo": "Your new primary care diabetes drug is launching nationally. You have a budget to hire 200 sales representatives. You must decide on geographic territories, target physician density, and coverage strategy to optimize first-year market penetration.",
+        "challenge": {
+          "scenario": "How is optimal sales force size typically determined in pharmaceutical launches?",
+          "options": ["Using market potential analysis and call productivity benchmarks from comparable launches", "Hiring as many reps as budget allows without evaluation", "Allocating representatives equally to all states"],
+          "correct": 0
+        },
+        "tip": "Evidence-based sizing uses market segmentation, call frequency optimization, and conversion rates from comparable products to maximize ROI"
+      }
+    }
+  }
+]
+```

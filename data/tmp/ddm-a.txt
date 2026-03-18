@@ -1,0 +1,364 @@
+```json
+[
+  {
+    "id": "adaptive-trial-design-strategy",
+    "name": "Adaptive Trial Design Strategy",
+    "tiers": {
+      "1": {
+        "definition": "Adaptive trial designs allow prospectively planned modifications to trial parameters based on interim data while maintaining statistical integrity through pre-specified adaptation rules. These designs optimize resource allocation and increase probability of success by adjusting sample size, treatment arms, or patient populations mid-trial without inflating Type I error.",
+        "scenarioDoneTo": "Roche implemented an adaptive design for their late-stage oncology trial, adding a biomarker-stratified arm after interim analysis showed stronger efficacy in HER2-positive patients. This modification reduced overall study duration by 18 months and increased primary endpoint achievement probability.",
+        "challenge": {
+          "scenario": "Your Phase 2b diabetes drug shows promising efficacy in obese patients (BMI >32) but marginal results in the overall population at interim analysis. Your team proposes dropping the non-obese cohort and enriching the Phase 3 population. Regulatory feedback suggests this works, but your financial model depends on a broader market label. What's your optimal strategy?",
+          "options": ["Proceed with adaptive enrichment to maximize Phase 3 success—the broader label can come from post-hoc analysis of non-obese subgroup", "Keep the full population in Phase 3 while requesting FDA guidance on sample size re-estimation—regulatory support de-risks the broader indication", "Split into two parallel adaptive trials: one enriched, one broader—hedge by pursuing both labels simultaneously"],
+          "correct": 1
+        },
+        "tip": "FDA's 2019 guidance embraces adaptive designs for efficiency, but regulatory alignment on adaptation rules pre-study is non-negotiable. Document everything prospectively."
+      },
+      "2": {
+        "definition": "Adaptive trial designs allow prospectively planned modifications to trial parameters based on interim data while maintaining statistical integrity through pre-specified adaptation rules. These designs optimize resource allocation and increase probability of success by adjusting sample size, treatment arms, or patient populations mid-trial without inflating Type I error.",
+        "scenarioDoneTo": "Roche implemented an adaptive design for their late-stage oncology trial, adding a biomarker-stratified arm after interim analysis showed stronger efficacy in HER2-positive patients. This modification reduced overall study duration by 18 months and increased primary endpoint achievement probability.",
+        "challenge": {
+          "scenario": "Your Phase 2b diabetes drug shows promising efficacy in obese patients (BMI >32) but marginal results in the overall population at interim analysis. Your team proposes dropping the non-obese cohort and enriching the Phase 3 population. Regulatory feedback suggests this works, but your financial model depends on a broader market label. What's your optimal strategy?",
+          "options": ["Proceed with adaptive enrichment to maximize Phase 3 success—the broader label can come from post-hoc analysis of non-obese subgroup", "Keep the full population in Phase 3 while requesting FDA guidance on sample size re-estimation—regulatory support de-risks the broader indication", "Split into two parallel adaptive trials: one enriched, one broader—hedge by pursuing both labels simultaneously"],
+          "correct": 1
+        },
+        "tip": "FDA's 2019 guidance embraces adaptive designs for efficiency, but regulatory alignment on adaptation rules pre-study is non-negotiable. Document everything prospectively."
+      },
+      "3": {
+        "definition": "Adaptive trial designs allow prospectively planned modifications to trial parameters based on interim data while maintaining statistical integrity through pre-specified adaptation rules. These designs optimize resource allocation and increase probability of success by adjusting sample size, treatment arms, or patient populations mid-trial without inflating Type I error.",
+        "scenarioDoneTo": "Roche implemented an adaptive design for their late-stage oncology trial, adding a biomarker-stratified arm after interim analysis showed stronger efficacy in HER2-positive patients. This modification reduced overall study duration by 18 months and increased primary endpoint achievement probability.",
+        "challenge": {
+          "scenario": "Your Phase 2b diabetes drug shows promising efficacy in obese patients (BMI >32) but marginal results in the overall population at interim analysis. Your team proposes dropping the non-obese cohort and enriching the Phase 3 population. Regulatory feedback suggests this works, but your financial model depends on a broader market label. What's your optimal strategy?",
+          "options": ["Proceed with adaptive enrichment to maximize Phase 3 success—the broader label can come from post-hoc analysis of non-obese subgroup", "Keep the full population in Phase 3 while requesting FDA guidance on sample size re-estimation—regulatory support de-risks the broader indication", "Split into two parallel adaptive trials: one enriched, one broader—hedge by pursuing both labels simultaneously"],
+          "correct": 1
+        },
+        "tip": "FDA's 2019 guidance embraces adaptive designs for efficiency, but regulatory alignment on adaptation rules pre-study is non-negotiable. Document everything prospectively."
+      }
+    }
+  },
+  {
+    "id": "biomarker-driven-patient-stratification",
+    "name": "Biomarker-Driven Patient Stratification",
+    "tiers": {
+      "1": {
+        "definition": "Patient stratification using companion or complementary diagnostics divides trial populations based on biomarker status to identify responder subgroups, reducing heterogeneity and increasing statistical power. This approach enables precision medicine claims but requires early coordination with diagnostic manufacturers, biomarker validation, and clear regulatory communication about companion diagnostic pathways.",
+        "scenarioDoneTo": "Merck's KEYNOTE trials for PD-L1+ lung cancer used PD-L1 expression as a stratification biomarker, showing 10x improvement in response rates in high-expressers. This enabled a narrow but commercially valuable indication and faster regulatory approval than a broader population would have achieved.",
+        "challenge": {
+          "scenario": "Your investigational immunotherapy shows strong efficacy only in patients with high tumor mutational burden (TMB >10 mut/Mb), representing ~35% of your target NSCLC population. Your diagnostics partner can deliver a validated TMB test, but it's expensive ($3,500/patient) and not yet reimbursed. Narrowing to TMB-high risks market size; broader claims require larger trial. Competitive pressures mount.",
+          "options": ["Stratify Phase 3 for TMB-high and negotiate companion diagnostic reimbursement pathway before launch—premium pricing justifies the test cost", "Run Phase 3 in unselected population to maximize addressable market—stratified analysis supports post-hoc claims for TMB-high label", "Partner with a molecular diagnostics vendor to make testing free to patients during the launch year—build adoption and data while deferring reimbursement negotiation"],
+          "correct": 0
+        },
+        "tip": "Companion diagnostics must be developed in parallel and validated early. Regulatory and commercial success depends on having a clear reimbursement story by Phase 3."
+      },
+      "2": {
+        "definition": "Patient stratification using companion or complementary diagnostics divides trial populations based on biomarker status to identify responder subgroups, reducing heterogeneity and increasing statistical power. This approach enables precision medicine claims but requires early coordination with diagnostic manufacturers, biomarker validation, and clear regulatory communication about companion diagnostic pathways.",
+        "scenarioDoneTo": "Merck's KEYNOTE trials for PD-L1+ lung cancer used PD-L1 expression as a stratification biomarker, showing 10x improvement in response rates in high-expressers. This enabled a narrow but commercially valuable indication and faster regulatory approval than a broader population would have achieved.",
+        "challenge": {
+          "scenario": "Your investigational immunotherapy shows strong efficacy only in patients with high tumor mutational burden (TMB >10 mut/Mb), representing ~35% of your target NSCLC population. Your diagnostics partner can deliver a validated TMB test, but it's expensive ($3,500/patient) and not yet reimbursed. Narrowing to TMB-high risks market size; broader claims require larger trial. Competitive pressures mount.",
+          "options": ["Stratify Phase 3 for TMB-high and negotiate companion diagnostic reimbursement pathway before launch—premium pricing justifies the test cost", "Run Phase 3 in unselected population to maximize addressable market—stratified analysis supports post-hoc claims for TMB-high label", "Partner with a molecular diagnostics vendor to make testing free to patients during the launch year—build adoption and data while deferring reimbursement negotiation"],
+          "correct": 0
+        },
+        "tip": "Companion diagnostics must be developed in parallel and validated early. Regulatory and commercial success depends on having a clear reimbursement story by Phase 3."
+      },
+      "3": {
+        "definition": "Patient stratification using companion or complementary diagnostics divides trial populations based on biomarker status to identify responder subgroups, reducing heterogeneity and increasing statistical power. This approach enables precision medicine claims but requires early coordination with diagnostic manufacturers, biomarker validation, and clear regulatory communication about companion diagnostic pathways.",
+        "scenarioDoneTo": "Merck's KEYNOTE trials for PD-L1+ lung cancer used PD-L1 expression as a stratification biomarker, showing 10x improvement in response rates in high-expressers. This enabled a narrow but commercially valuable indication and faster regulatory approval than a broader population would have achieved.",
+        "challenge": {
+          "scenario": "Your investigational immunotherapy shows strong efficacy only in patients with high tumor mutational burden (TMB >10 mut/Mb), representing ~35% of your target NSCLC population. Your diagnostics partner can deliver a validated TMB test, but it's expensive ($3,500/patient) and not yet reimbursed. Narrowing to TMB-high risks market size; broader claims require larger trial. Competitive pressures mount.",
+          "options": ["Stratify Phase 3 for TMB-high and negotiate companion diagnostic reimbursement pathway before launch—premium pricing justifies the test cost", "Run Phase 3 in unselected population to maximize addressable market—stratified analysis supports post-hoc claims for TMB-high label", "Partner with a molecular diagnostics vendor to make testing free to patients during the launch year—build adoption and data while deferring reimbursement negotiation"],
+          "correct": 0
+        },
+        "tip": "Companion diagnostics must be developed in parallel and validated early. Regulatory and commercial success depends on having a clear reimbursement story by Phase 3."
+      }
+    }
+  },
+  {
+    "id": "regulatory-pathway-selection",
+    "name": "Regulatory Pathway Selection (NDA vs BLA vs 505(b)(2))",
+    "tiers": {
+      "1": {
+        "definition": "Selection of the appropriate FDA pathway—NDA (New Drug Application) for small molecules, BLA (Biologics License Application) for biologics, or 505(b)(2) for modified drugs referencing an approved agent—determines timeline, evidence standards, and competitive positioning. Each pathway carries distinct regulatory burdens, data requirements, and potential for patent term extension or exclusivity.",
+        "scenarioDoneTo": "AbbVie's selection of the 505(b)(2) pathway for their new JAK inhibitor formulation (referencing Xeljanz) enabled approval in 18 months versus 26+ months for an NDA, accelerating market entry while maintaining robust protection through combination patents and data exclusivity.",
+        "challenge": {
+          "scenario": "Your team has developed an oral formulation of an existing IV cancer drug with significant manufacturing improvements (25% cost reduction) and superior bioavailability. A competitor recently launched a different oral formulation under 505(b)(2), setting precedent. Your legal team flags that the reference drug's patent portfolio expires in 3 years. Do you pursue 505(b)(2) referencing that drug or invest in full NDA development?",
+          "options": ["File a 505(b)(2)—faster approval supports launch before reference patent expiry, and you can establish market position and brand loyalty before generic competition", "Pursue full NDA—you differentiate on manufacturing innovation, and avoiding the reference labeling restrictions provides marketing flexibility and sustained protection", "Negotiate a co-development agreement with the reference brand holder—bundled offering increases total addressable market and de-risks patent litigation"],
+          "correct": 0
+        },
+        "tip": "505(b)(2) trade-offs: faster approval but constrained by reference labeling, potential for 180-day exclusivity disputes, and patent uncertainties. Only pursue if timeline advantage exceeds labeling restrictions."
+      },
+      "2": {
+        "definition": "Selection of the appropriate FDA pathway—NDA (New Drug Application) for small molecules, BLA (Biologics License Application) for biologics, or 505(b)(2) for modified drugs referencing an approved agent—determines timeline, evidence standards, and competitive positioning. Each pathway carries distinct regulatory burdens, data requirements, and potential for patent term extension or exclusivity.",
+        "scenarioDoneTo": "AbbVie's selection of the 505(b)(2) pathway for their new JAK inhibitor formulation (referencing Xeljanz) enabled approval in 18 months versus 26+ months for an NDA, accelerating market entry while maintaining robust protection through combination patents and data exclusivity.",
+        "challenge": {
+          "scenario": "Your team has developed an oral formulation of an existing IV cancer drug with significant manufacturing improvements (25% cost reduction) and superior bioavailability. A competitor recently launched a different oral formulation under 505(b)(2), setting precedent. Your legal team flags that the reference drug's patent portfolio expires in 3 years. Do you pursue 505(b)(2) referencing that drug or invest in full NDA development?",
+          "options": ["File a 505(b)(2)—faster approval supports launch before reference patent expiry, and you can establish market position and brand loyalty before generic competition", "Pursue full NDA—you differentiate on manufacturing innovation, and avoiding the reference labeling restrictions provides marketing flexibility and sustained protection", "Negotiate a co-development agreement with the reference brand holder—bundled offering increases total addressable market and de-risks patent litigation"],
+          "correct": 0
+        },
+        "tip": "505(b)(2) trade-offs: faster approval but constrained by reference labeling, potential for 180-day exclusivity disputes, and patent uncertainties. Only pursue if timeline advantage exceeds labeling restrictions."
+      },
+      "3": {
+        "definition": "Selection of the appropriate FDA pathway—NDA (New Drug Application) for small molecules, BLA (Biologics License Application) for biologics, or 505(b)(2) for modified drugs referencing an approved agent—determines timeline, evidence standards, and competitive positioning. Each pathway carries distinct regulatory burdens, data requirements, and potential for patent term extension or exclusivity.",
+        "scenarioDoneTo": "AbbVie's selection of the 505(b)(2) pathway for their new JAK inhibitor formulation (referencing Xeljanz) enabled approval in 18 months versus 26+ months for an NDA, accelerating market entry while maintaining robust protection through combination patents and data exclusivity.",
+        "challenge": {
+          "scenario": "Your team has developed an oral formulation of an existing IV cancer drug with significant manufacturing improvements (25% cost reduction) and superior bioavailability. A competitor recently launched a different oral formulation under 505(b)(2), setting precedent. Your legal team flags that the reference drug's patent portfolio expires in 3 years. Do you pursue 505(b)(2) referencing that drug or invest in full NDA development?",
+          "options": ["File a 505(b)(2)—faster approval supports launch before reference patent expiry, and you can establish market position and brand loyalty before generic competition", "Pursue full NDA—you differentiate on manufacturing innovation, and avoiding the reference labeling restrictions provides marketing flexibility and sustained protection", "Negotiate a co-development agreement with the reference brand holder—bundled offering increases total addressable market and de-risks patent litigation"],
+          "correct": 0
+        },
+        "tip": "505(b)(2) trade-offs: faster approval but constrained by reference labeling, potential for 180-day exclusivity disputes, and patent uncertainties. Only pursue if timeline advantage exceeds labeling restrictions."
+      }
+    }
+  },
+  {
+    "id": "clinical-hold-response-strategy",
+    "name": "Clinical Hold Response Strategy",
+    "tiers": {
+      "1": {
+        "definition": "A Clinical Hold issued by the FDA suspends all INDs until the company resolves safety, chemistry, or manufacturing concerns. Effective response requires rapid root-cause diagnosis, transparent communication with regulators, robust corrective action planning, and strategic decisions about trial continuation versus redesign. The response can determine program viability and investor confidence.",
+        "scenarioDoneTo": "Juno Therapeutics faced a Clinical Hold on their CAR-T program (2017) due to unexpected cytokine-release syndrome deaths. Their rapid pivot to reduced-intensity dosing, enhanced monitoring protocols, and pre-clinical mechanistic work led to Hold lifting in 9 weeks and program continuation with stronger safety controls.",
+        "challenge": {
+          "scenario": "Your Phase 2 neurology program receives a Clinical Hold after 3 treatment-related strokes in 120 patients (2.5%, vs. 0.3% background incidence). Your lead compound affects cerebral blood flow indirectly through a mechanism you partially understand. The DMCB convenes, investigators dispute causality, and regulators appear skeptical of continuation. Your board is pressuring speed-to-market. What's your response?",
+          "options": ["Suspend enrollment, pause all dosing, and fund extensive mechanistic studies to prove safety—regain FDA confidence through transparency even if it delays the program 18+ months", "Implement dose reduction and enhanced neuroimaging monitoring mid-trial—allows continued enrollment with de-risked safety profile while you investigate mechanism", "Design a smaller Phase 2b with enhanced safety endpoints and strict stopping rules—demonstrate you can manage the risk while progressing the program faster than a full pause"],
+          "correct": 1
+        },
+        "tip": "Clinical Holds are recoverable if you show genuine safety management and scientific rigor. Transparency and rapid action matter more than defending the original strategy."
+      },
+      "2": {
+        "definition": "A Clinical Hold issued by the FDA suspends all INDs until the company resolves safety, chemistry, or manufacturing concerns. Effective response requires rapid root-cause diagnosis, transparent communication with regulators, robust corrective action planning, and strategic decisions about trial continuation versus redesign. The response can determine program viability and investor confidence.",
+        "scenarioDoneTo": "Juno Therapeutics faced a Clinical Hold on their CAR-T program (2017) due to unexpected cytokine-release syndrome deaths. Their rapid pivot to reduced-intensity dosing, enhanced monitoring protocols, and pre-clinical mechanistic work led to Hold lifting in 9 weeks and program continuation with stronger safety controls.",
+        "challenge": {
+          "scenario": "Your Phase 2 neurology program receives a Clinical Hold after 3 treatment-related strokes in 120 patients (2.5%, vs. 0.3% background incidence). Your lead compound affects cerebral blood flow indirectly through a mechanism you partially understand. The DMCB convenes, investigators dispute causality, and regulators appear skeptical of continuation. Your board is pressuring speed-to-market. What's your response?",
+          "options": ["Suspend enrollment, pause all dosing, and fund extensive mechanistic studies to prove safety—regain FDA confidence through transparency even if it delays the program 18+ months", "Implement dose reduction and enhanced neuroimaging monitoring mid-trial—allows continued enrollment with de-risked safety profile while you investigate mechanism", "Design a smaller Phase 2b with enhanced safety endpoints and strict stopping rules—demonstrate you can manage the risk while progressing the program faster than a full pause"],
+          "correct": 1
+        },
+        "tip": "Clinical Holds are recoverable if you show genuine safety management and scientific rigor. Transparency and rapid action matter more than defending the original strategy."
+      },
+      "3": {
+        "definition": "A Clinical Hold issued by the FDA suspends all INDs until the company resolves safety, chemistry, or manufacturing concerns. Effective response requires rapid root-cause diagnosis, transparent communication with regulators, robust corrective action planning, and strategic decisions about trial continuation versus redesign. The response can determine program viability and investor confidence.",
+        "scenarioDoneTo": "Juno Therapeutics faced a Clinical Hold on their CAR-T program (2017) due to unexpected cytokine-release syndrome deaths. Their rapid pivot to reduced-intensity dosing, enhanced monitoring protocols, and pre-clinical mechanistic work led to Hold lifting in 9 weeks and program continuation with stronger safety controls.",
+        "challenge": {
+          "scenario": "Your Phase 2 neurology program receives a Clinical Hold after 3 treatment-related strokes in 120 patients (2.5%, vs. 0.3% background incidence). Your lead compound affects cerebral blood flow indirectly through a mechanism you partially understand. The DMCB convenes, investigators dispute causality, and regulators appear skeptical of continuation. Your board is pressuring speed-to-market. What's your response?",
+          "options": ["Suspend enrollment, pause all dosing, and fund extensive mechanistic studies to prove safety—regain FDA confidence through transparency even if it delays the program 18+ months", "Implement dose reduction and enhanced neuroimaging monitoring mid-trial—allows continued enrollment with de-risked safety profile while you investigate mechanism", "Design a smaller Phase 2b with enhanced safety endpoints and strict stopping rules—demonstrate you can manage the risk while progressing the program faster than a full pause"],
+          "correct": 1
+        },
+        "tip": "Clinical Holds are recoverable if you show genuine safety management and scientific rigor. Transparency and rapid action matter more than defending the original strategy."
+      }
+    }
+  },
+  {
+    "id": "surrogate-endpoint-negotiation-fda",
+    "name": "Surrogate Endpoint Negotiation with FDA",
+    "tiers": {
+      "1": {
+        "definition": "Surrogate endpoints are biomarkers or laboratory measurements that correlate with clinical benefit but are measured and observed earlier than clinical endpoints. Successful negotiation with the FDA enables accelerated approval pathways, but requires robust evidence linking the surrogate to clinical outcome, pre-study alignment on analytical strategies, and assumptions about mechanism of action that regulators will scrutinize.",
+        "scenarioDoneTo": "Gilead's use of HCV RNA reduction as a surrogate endpoint for sustained virological response shortened hepatitis C trials from years to months, enabling rapid approval and real-world adoption. FDA accepted HCV RNA clearly predicts clinical cure, enabling accelerated pathways that transformed treatment landscapes.",
+        "challenge": {
+          "scenario": "Your Alzheimer's disease drug shows compelling reduction in amyloid burden on PET imaging and improved CSF biomarker ratios at 18 months (surrogate measures). Clinical cognitive decline is slower in treated patients, but the effect is modest (0.2 point slower decline on MMSE vs placebo over 2 years). You want to pursue accelerated approval on amyloid reduction alone; competitors are designing full Phase 3s for cognitive endpoints. Your CFO demands a label within 36 months.",
+          "options": ["Negotiate accelerated approval on amyloid surrogate—prioritize biomarker linkage evidence over clinical correlation, accept conditional approval with Phase 4 cognitive study obligation", "Design a Phase 3 with amyloid reduction as primary endpoint and cognitive decline as key secondary—de-risk regulatory questions and position for full approval if signals align", "Pursue two parallel paths: accelerated approval on biomarker for orphan subset (MCI patients, narrower label) and full Phase 3 in broader AD population for faster overall market entry"],
+          "correct": 2
+        },
+        "tip": "FDA skepticism runs deep on surrogate endpoints in neurodegeneration. Amyloid reduction alone won't carry approval weight without compelling mechanistic and observational evidence of cognitive benefit."
+      },
+      "2": {
+        "definition": "Surrogate endpoints are biomarkers or laboratory measurements that correlate with clinical benefit but are measured and observed earlier than clinical endpoints. Successful negotiation with the FDA enables accelerated approval pathways, but requires robust evidence linking the surrogate to clinical outcome, pre-study alignment on analytical strategies, and assumptions about mechanism of action that regulators will scrutinize.",
+        "scenarioDoneTo": "Gilead's use of HCV RNA reduction as a surrogate endpoint for sustained virological response shortened hepatitis C trials from years to months, enabling rapid approval and real-world adoption. FDA accepted HCV RNA clearly predicts clinical cure, enabling accelerated pathways that transformed treatment landscapes.",
+        "challenge": {
+          "scenario": "Your Alzheimer's disease drug shows compelling reduction in amyloid burden on PET imaging and improved CSF biomarker ratios at 18 months (surrogate measures). Clinical cognitive decline is slower in treated patients, but the effect is modest (0.2 point slower decline on MMSE vs placebo over 2 years). You want to pursue accelerated approval on amyloid reduction alone; competitors are designing full Phase 3s for cognitive endpoints. Your CFO demands a label within 36 months.",
+          "options": ["Negotiate accelerated approval on amyloid surrogate—prioritize biomarker linkage evidence over clinical correlation, accept conditional approval with Phase 4 cognitive study obligation", "Design a Phase 3 with amyloid reduction as primary endpoint and cognitive decline as key secondary—de-risk regulatory questions and position for full approval if signals align", "Pursue two parallel paths: accelerated approval on biomarker for orphan subset (MCI patients, narrower label) and full Phase 3 in broader AD population for faster overall market entry"],
+          "correct": 2
+        },
+        "tip": "FDA skepticism runs deep on surrogate endpoints in neurodegeneration. Amyloid reduction alone won't carry approval weight without compelling mechanistic and observational evidence of cognitive benefit."
+      },
+      "3": {
+        "definition": "Surrogate endpoints are biomarkers or laboratory measurements that correlate with clinical benefit but are measured and observed earlier than clinical endpoints. Successful negotiation with the FDA enables accelerated approval pathways, but requires robust evidence linking the surrogate to clinical outcome, pre-study alignment on analytical strategies, and assumptions about mechanism of action that regulators will scrutinize.",
+        "scenarioDoneTo": "Gilead's use of HCV RNA reduction as a sustained virological response shortened hepatitis C trials from years to months, enabling rapid approval and real-world adoption. FDA accepted HCV RNA clearly predicts clinical cure, enabling accelerated pathways that transformed treatment landscapes.",
+        "challenge": {
+          "scenario": "Your Alzheimer's disease drug shows compelling reduction in amyloid burden on PET imaging and improved CSF biomarker ratios at 18 months (surrogate measures). Clinical cognitive decline is slower in treated patients, but the effect is modest (0.2 point slower decline on MMSE vs placebo over 2 years). You want to pursue accelerated approval on amyloid reduction alone; competitors are designing full Phase 3s for cognitive endpoints. Your CFO demands a label within 36 months.",
+          "options": ["Negotiate accelerated approval on amyloid surrogate—prioritize biomarker linkage evidence over clinical correlation, accept conditional approval with Phase 4 cognitive study obligation", "Design a Phase 3 with amyloid reduction as primary endpoint and cognitive decline as key secondary—de-risk regulatory questions and position for full approval if signals align", "Pursue two parallel paths: accelerated approval on biomarker for orphan subset (MCI patients, narrower label) and full Phase 3 in broader AD population for faster overall market entry"],
+          "correct": 2
+        },
+        "tip": "FDA skepticism runs deep on surrogate endpoints in neurodegeneration. Amyloid reduction alone won't carry approval weight without compelling mechanistic and observational evidence of cognitive benefit."
+      }
+    }
+  },
+  {
+    "id": "orphan-drug-commercial-viability",
+    "name": "Orphan Drug Commercial Viability",
+    "tiers": {
+      "1": {
+        "definition": "Orphan drug designations apply to products treating diseases affecting fewer than 200,000 patients in the US, offering incentives like 7-year market exclusivity, R&D tax credits, and reduced user fees. Commercial viability requires differentiating between regulatory advantages (which de-risk approval) and market realities (small patient pools, payer scrutiny, manufacturing constraints), and structuring pricing strategy to justify development costs while maintaining access.",
+        "scenarioDoneTo": "Vertex's Kalydeco for cystic fibrosis (orphan designation) achieved annual sales exceeding $1.5B despite ~2,500 eligible US patients by executing premium pricing, robust patient support, and genetic-specific diagnosis-treatment pathways. Orphan status enabled rapid approval and exclusivity protection despite niche population.",
+        "challenge": {
+          "scenario": "Your investigational rare genetic disorder therapy has received orphan designation (~8,000 eligible US patients, ~12,000 EU patients). Phase 2 data is compelling, approval timeline is fast-tracked, and manufacturing is scalable. Your board discusses launch pricing: analysts project $350K-$500K annual cost per patient based on development expenses and comparable orphan drugs. Physicians warn that payers will push back aggressively at mid-range pricing; patient advocacy groups signal 30% of patients lack insurance /access support.",
+          "options": ["Launch at $450K annually with tiered patient assistance programs—maximize net revenue, invest profits in global market development and combination therapies", "Price at $300K with strict volume-based rebates and mandatory outcomes-based agreements—prioritize market penetration and real-world evidence generation over peak pricing", "Offer $500K for identified responders; lower pricing ($200K) for trial-and-error (non-responder) use—generate evidence on biomarker predictivity while managing access tensions"],
+          "correct": 1
+        },
+        "tip": "Orphan premium pricing is not unlimited. Payer resistance, reputational risk, and access pressure grow faster in niche markets. Sustainable revenue combines moderate pricing with volume and global reach."
+      },
+      "2": {
+        "definition": "Orphan drug designations apply to products treating diseases affecting fewer than 200,000 patients in the US, offering incentives like 7-year market exclusivity, R&D tax credits, and reduced user fees. Commercial viability requires differentiating between regulatory advantages (which de-risk approval) and market realities (small patient pools, payer scrutiny, manufacturing constraints), and structuring pricing strategy to justify development costs while maintaining access.",
+        "scenarioDoneTo": "Vertex's Kalydeco for cystic fibrosis (orphan designation) achieved annual sales exceeding $1.5B despite ~2,500 eligible US patients by executing premium pricing, robust patient support, and genetic-specific diagnosis-treatment pathways. Orphan status enabled rapid approval and exclusivity protection despite niche population.",
+        "challenge": {
+          "scenario": "Your investigational rare genetic disorder therapy has received orphan designation (~8,000 eligible US patients, ~12,000 EU patients). Phase 2 data is compelling, approval timeline is fast-tracked, and manufacturing is scalable. Your board discusses launch pricing: analysts project $350K-$500K annual cost per patient based on development expenses and comparable orphan drugs. Physicians warn that payers will push back aggressively at mid-range pricing; patient advocacy groups signal 30% of patients lack insurance /access support.",
+          "options": ["Launch at $450K annually with tiered patient assistance programs—maximize net revenue, invest profits in global market development and combination therapies", "Price at $300K with strict volume-based rebates and mandatory outcomes-based agreements—prioritize market penetration and real-world evidence generation over peak pricing", "Offer $500K for identified responders; lower pricing ($200K) for trial-and-error (non-responder) use—generate evidence on biomarker predictivity while managing access tensions"],
+          "correct": 1
+        },
+        "tip": "Orphan premium pricing is not unlimited. Payer resistance, reputational risk, and access pressure grow faster in niche markets. Sustainable revenue combines moderate pricing with volume and global reach."
+      },
+      "3": {
+        "definition": "Orphan drug designations apply to products treating diseases affecting fewer than 200,000 patients in the US, offering incentives like 7-year market exclusivity, R&D tax credits, and reduced user fees. Commercial viability requires differentiating between regulatory advantages (which de-risk approval) and market realities (small patient pools, payer scrutiny, manufacturing constraints), and structuring pricing strategy to justify development costs while maintaining access.",
+        "scenarioDoneTo": "Vertex's Kalydeco for cystic fibrosis (orphan designation) achieved annual sales exceeding $1.5B despite ~2,500 eligible US patients by executing premium pricing, robust patient support, and genetic-specific diagnosis-treatment pathways. Orphan status enabled rapid approval and exclusivity protection despite niche population.",
+        "challenge": {
+          "scenario": "Your investigational rare genetic disorder therapy has received orphan designation (~8,000 eligible US patients, ~12,000 EU patients). Phase 2 data is compelling, approval timeline is fast-tracked, and manufacturing is scalable. Your board discusses launch pricing: analysts project $350K-$500K annual cost per patient based on development expenses and comparable orphan drugs. Physicians warn that payers will push back aggressively at mid-range pricing; patient advocacy groups signal 30% of patients lack insurance /access support.",
+          "options": ["Launch at $450K annually with tiered patient assistance programs—maximize net revenue, invest profits in global market development and combination therapies", "Price at $300K with strict volume-based rebates and mandatory outcomes-based agreements—prioritize market penetration and real-world evidence generation over peak pricing", "Offer $500K for identified responders; lower pricing ($200K) for trial-and-error (non-responder) use—generate evidence on biomarker predictivity while managing access tensions"],
+          "correct": 1
+        },
+        "tip": "Orphan premium pricing is not unlimited. Payer resistance, reputational risk, and access pressure grow faster in niche markets. Sustainable revenue combines moderate pricing with volume and global reach."
+      }
+    }
+  },
+  {
+    "id": "platform-technology-valuation",
+    "name": "Platform Technology Valuation",
+    "tiers": {
+      "1": {
+        "definition": "Platform technologies (delivery systems, biomarker infrastructure, manufacturing capabilities, AI-driven workflows) create optionality across multiple indications and reduce per-program development risk. Valuation reflects risk-adjusted present value of lead programs plus implicit value of future program economics, but requires disciplined forecasting of attrition, time-to-market, and differentiation across pipeline breadth.",
+        "scenarioDoneTo": "Moderna's mRNA platform was valued at $2.7B+ pre-marketing (2020) despite no marketed products, based on momentum and future portfolio optionality across vaccines, oncology, and rare disease. Platform breadth justified premium valuation over single-asset companies.",
+        "challenge": {
+          "scenario": "Your biotech has a proprietary nanoparticle delivery platform enabling multiple assets: Phase 2 cancer therapy (best-in-class potential), Phase 1 rare disease program, and early exploratory programs in immunology and CNS. Private equity approaches with an acquisition offer of $800M. During diligence, they model platform value as 0.8x lead program peak sales, discount by attrition risk, and add modest option value for pipeline. Your CFO argues the platform is worth 2x that based on comparable platform exits (Moderna, Arcturus). How do you rationalize platform value?",
+          "options": ["Defend platform premium (1.8-2.0x) by demonstrating clinical breakthroughs in lead program, regulatory clarity on platform durability, and documented de-risking across multiple indications", "Accept moderate premium (1.2-1.4x) by emphasizing near-term lead program approval potential and manufacturing scale rather than speculative future programs", "Reject the bid and pursue dual-track: accelerate lead program through approval while licensing platform for non-core applications—realize platform value through milestone economics"],
+          "correct": 2
+        },
+        "tip": "Platform valuation is built on evidence, not speculation. Premium multiples require near-term regulatory wins, manufacturing validation, or clinical proof-of-concept across multiple programs."
+      },
+      "2": {
+        "definition": "Platform technologies (delivery systems, biomarker infrastructure, manufacturing capabilities, AI-driven workflows) create optionality across multiple indications and reduce per-program development risk. Valuation reflects risk-adjusted present value of lead programs plus implicit value of future program economics, but requires disciplined forecasting of attrition, time-to-market, and differentiation across pipeline breadth.",
+        "scenarioDoneTo": "Moderna's mRNA platform was valued at $2.7B+ pre-marketing (2020) based on momentum and future portfolio optionality across vaccines, oncology, and rare disease. Platform breadth justified premium valuation over single-asset companies.",
+        "challenge": {
+          "scenario": "Your biotech has a proprietary nanoparticle delivery platform enabling multiple assets: Phase 2 cancer therapy (best-in-class potential), Phase 1 rare disease program, and early exploratory programs in immunology and CNS. Private equity approaches with an acquisition offer of $800M. During diligence, they model platform value as 0.8x lead program peak sales, discount by attrition risk, and add modest option value for pipeline. Your CFO argues the platform is worth 2x that based on comparable platform exits (Moderna, Arcturus). How do you rationalize platform value?",
+          "options": ["Defend platform premium (1.8-2.0x) by demonstrating clinical breakthroughs in lead program, regulatory clarity on platform durability, and documented de-risking across multiple indications", "Accept moderate premium (1.2-1.4x) by emphasizing near-term lead program approval potential and manufacturing scale rather than speculative future programs", "Reject the bid and pursue dual-track: accelerate lead program through approval while licensing platform for non-core applications—realize platform value through milestone economics"],
+          "correct": 2
+        },
+        "tip": "Platform valuation is built on evidence, not speculation. Premium multiples require near-term regulatory wins, manufacturing validation, or clinical proof-of-concept across multiple programs."
+      },
+      "3": {
+        "definition": "Platform technologies (delivery systems, biomarker infrastructure, manufacturing capabilities, AI-driven workflows) create optionality across multiple indications and reduce per-program development risk. Valuation reflects risk-adjusted present value of lead programs plus implicit value of future program economics, but requires disciplined forecasting of attrition, time-to-market, and differentiation across pipeline breadth.",
+        "scenarioDoneTo": "Moderna's mRNA platform was valued at $2.7B+ pre-marketing (2020) based on momentum and future portfolio optionality across vaccines, oncology, and rare disease. Platform breadth justified premium valuation over single-asset companies.",
+        "challenge": {
+          "scenario": "Your biotech has a proprietary nanoparticle delivery platform enabling multiple assets: Phase 2 cancer therapy (best-in-class potential), Phase 1 rare disease program, and early exploratory programs in immunology and CNS. Private equity approaches with an acquisition offer of $800M. During diligence, they model platform value as 0.8x lead program peak sales, discount by attrition risk, and add modest option value for pipeline. Your CFO argues the platform is worth 2x that based on comparable platform exits (Moderna, Arcturus). How do you rationalize platform value?",
+          "options": ["Defend platform premium (1.8-2.0x) by demonstrating clinical breakthroughs in lead program, regulatory clarity on platform durability, and documented de-risking across multiple indications", "Accept moderate premium (1.2-1.4x) by emphasizing near-term lead program approval potential and manufacturing scale rather than speculative future programs", "Reject the bid and pursue dual-track: accelerate lead program through approval while licensing platform for non-core applications—realize platform value through milestone economics"],
+          "correct": 2
+        },
+        "tip": "Platform valuation is built on evidence, not speculation. Premium multiples require near-term regulatory wins, manufacturing validation, or clinical proof-of-concept across multiple programs."
+      }
+    }
+  },
+  {
+    "id": "clinical-trial-enrollment-crisis",
+    "name": "Clinical Trial Enrollment Crisis Management",
+    "tiers": {
+      "1": {
+        "definition": "Clinical trial enrollment crises—when recruitment falls 30%+ below forecast—accelerate timelines erosion, inflate per-patient costs, introduce selection bias, and erode statistical power. Crisis recovery requires rapid diagnosis (protocol barriers, site dysfunction, competitive recruitment, patient awareness), regional rebalancing, protocol amendments to relax inclusion criteria, or expansion to decentralized trial sites and digital health tools.",
+        "scenarioDoneTo": "During the COVID-19 pandemic, multiple Phase 3 oncology trials faced 40%+ enrollment declines. Companies rapidly implemented home-based collection, telehealth visits, and geographic expansion to underrepresented regions. Trials with flexible protocols recovered to baseline enrollment within 8-12 weeks; rigid ones faced months of delays.",
+        "challenge": {
+          "scenario": "Your Phase 3 rheumatoid arthritis study (enrollment target: 450 patients over 18 months) is now 12 months in with only 190 enrolled (42% behind pace). Your CRO attributes the gap to strict inclusion criteria (DAS28 >5.1 required), competition from new biologic launches, and patient preference for established therapies. FDA has hinted willingness to discuss protocol amendments, but your lead biostatistician warns relaxed inclusion criteria will increase heterogeneity and noise. Your board demands acceleration of existing sites rather than protocol deviation.",
+          "options": ["Expand to 15 new sites in underrepresented regions and boost patient recruitment marketing ($2M incremental cost)—preserve protocol integrity and statistical purity", "Amend inclusion criteria to DAS28 >4.5 and add digital enrollment (home visits, telehealth assessments)—accept 5% noise increase for 60% faster enrollment trajectory", "Enrich secondary endpoints for biomarker-stratified populations and explore adaptive designs that allow intensity/dosing adjustments—keep primary endpoint but increase explanatory power of sub-analyses"],
+          "correct": 1
+        },
+        "tip": "Trial delays cost $500K+ per week. Protocol flexibility is often the faster, cheaper path than site expansion alone. Statistical noise from broader inclusion criteria is often acceptable for timely data."
+      },
+      "2": {
+        "definition": "Clinical trial enrollment crises—when recruitment falls 30%+ below forecast—accelerate timelines erosion, inflate per-patient costs, introduce selection bias, and erode statistical power. Crisis recovery requires rapid diagnosis (protocol barriers, site dysfunction, competitive recruitment, patient awareness), regional rebalancing, protocol amendments to relax inclusion criteria, or expansion to decentralized trial sites and digital health tools.",
+        "scenarioDoneTo": "During the COVID-19 pandemic, multiple Phase 3 oncology trials faced 40%+ enrollment declines. Companies rapidly implemented home-based collection, telehealth visits, and geographic expansion to underrepresented regions. Trials with flexible protocols recovered to baseline enrollment within 8-12 weeks; rigid ones faced months of delays.",
+        "challenge": {
+          "scenario": "Your Phase 3 rheumatoid arthritis study (enrollment target: 450 patients over 18 months) is now 12 months in with only 190 enrolled (42% behind pace). Your CRO attributes the gap to strict inclusion criteria (DAS28 >5.1 required), competition from new biologic launches, and patient preference for established therapies. FDA has hinted willingness to discuss protocol amendments, but your lead biostatistician warns relaxed inclusion criteria will increase heterogeneity and noise. Your board demands acceleration of existing sites rather than protocol deviation.",
+          "options": ["Expand to 15 new sites in underrepresented regions and boost patient recruitment marketing ($2M incremental cost)—preserve protocol integrity and statistical purity", "Amend inclusion criteria to DAS28 >4.5 and add digital enrollment (home visits, telehealth assessments)—accept 5% noise increase for 60% faster enrollment trajectory", "Enrich secondary endpoints for biomarker-stratified populations and explore adaptive designs that allow intensity/dosing adjustments—keep primary endpoint but increase explanatory power of sub-analyses"],
+          "correct": 1
+        },
+        "tip": "Trial delays cost $500K+ per week. Protocol flexibility is often the faster, cheaper path than site expansion alone. Statistical noise from broader inclusion criteria is often acceptable for timely data."
+      },
+      "3": {
+        "definition": "Clinical trial enrollment crises—when recruitment falls 30%+ below forecast—accelerate timelines erosion, inflate per-patient costs, introduce selection bias, and erode statistical power. Crisis recovery requires rapid diagnosis (protocol barriers, site dysfunction, competitive recruitment, patient awareness), regional rebalancing, protocol amendments to relax inclusion criteria, or expansion to decentralized trial sites and digital health tools.",
+        "scenarioDoneTo": "During the COVID-19 pandemic, multiple Phase 3 oncology trials faced 40%+ enrollment declines. Companies rapidly implemented home-based collection, telehealth visits, and geographic expansion to underrepresented regions. Trials with flexible protocols recovered to baseline enrollment within 8-12 weeks; rigid ones faced months of delays.",
+        "challenge": {
+          "scenario": "Your Phase 3 rheumatoid arthritis study (enrollment target: 450 patients over 18 months) is now 12 months in with only 190 enrolled (42% behind pace). Your CRO attributes the gap to strict inclusion criteria (DAS28 >5.1 required), competition from new biologic launches, and patient preference for established therapies. FDA has hinted willingness to discuss protocol amendments, but your lead biostatistician warns relaxed inclusion criteria will increase heterogeneity and noise. Your board demands acceleration of existing sites rather than protocol deviation.",
+          "options": ["Expand to 15 new sites in underrepresented regions and boost patient recruitment marketing ($2M incremental cost)—preserve protocol integrity and statistical purity", "Amend inclusion criteria to DAS28 >4.5 and add digital enrollment (home visits, telehealth assessments)—accept 5% noise increase for 60% faster enrollment trajectory", "Enrich secondary endpoints for biomarker-stratified populations and explore adaptive designs that allow intensity/dosing adjustments—keep primary endpoint but increase explanatory power of sub-analyses"],
+          "correct": 1
+        },
+        "tip": "Trial delays cost $500K+ per week. Protocol flexibility is often the faster, cheaper path than site expansion alone. Statistical noise from broader inclusion criteria is often acceptable for timely data."
+      }
+    }
+  },
+  {
+    "id": "post-marketing-commitment-strategy",
+    "name": "Post-Marketing Commitment Strategy (Phase IV)",
+    "tiers": {
+      "1": {
+        "definition": "Post-marketing commitments (PMCs) are obligations negotiated between sponsors and regulators to conduct post-approval research addressing unresolved efficacy or safety questions. PMCs span pharmacovigilance, registry studies, long-term outcomes tracking, and mechanistic investigations. Strategic deployment of PMCs can accelerate approval by substituting post-market evidence collection for pre-approval studies, but requires robust execution planning and realistic timelines to avoid regulatory penalties.",
+        "scenarioDoneTo": "Bristol Myers Squibb secured accelerated approval for Opdivo in melanoma with a PMC to complete a Phase 3b trial comparing to standard chemotherapy. PMC completion within 4 years provided the comparative efficacy evidence, enabling full approval and label expansion while maintaining market access from accelerated pathway.",
+        "challenge": {
+          "scenario": "Your Phase 3 heart failure drug shows benefit in HFrEF patients but shows inconsistent results in HFpEF (preserved ejection fraction) subgroup. The FDA signals willingness to approve for HFrEF now, but requests a PMC for a dedicated HFpEF Phase 3 study (estimated cost: $40M, 4-year timeline). Your CFO estimates approval would add $200M in value vs. a full Phase 3 before approval (delayed 18 months). However, if you fail the HFpEF PMC, label restrictions or post-market restrictions could follow.",
+          "options": ["Accept accelerated approval with HFpEF PMC—capture early market entry and revenue; invest profits in robust PMC design to de-risk post-market studies", "Decline accelerated pathway and complete HFpEF Phase 3 pre-approval—accept timeline delay but gain certainty on label breadth and avoid post-market execution risk", "Negotiate hybrid PMC: complete HFpEF study in treated patients (registry-based) while running smaller Phase 2c confirmatory trial—lower cost, partial evidence collection"],
+          "correct": 0
+        },
+        "tip": "PMC value is highest when regulatory benefit from acceleration exceeds execution risk. HFrEF indications alone justify market entry; PMC failure on HFpEF is manageable post-approval."
+      },
+      "2": {
+        "definition": "Post-marketing commitments (PMCs) are obligations negotiated between sponsors and regulators to conduct post-approval research addressing unresolved efficacy or safety questions. PMCs span pharmacovigilance, registry studies, long-term outcomes tracking, and mechanistic investigations. Strategic deployment of PMCs can accelerate approval by substituting post-market evidence collection for pre-approval studies, but requires robust execution planning and realistic timelines to avoid regulatory penalties.",
+        "scenarioDoneTo": "Bristol Myers Squibb secured accelerated approval for Opdivo in melanoma with a PMC to complete a Phase 3b trial comparing to standard chemotherapy. PMC completion within 4 years provided the comparative efficacy evidence, enabling full approval and label expansion while maintaining market access from accelerated pathway.",
+        "challenge": {
+          "scenario": "Your Phase 3 heart failure drug shows benefit in HFrEF patients but shows inconsistent results in HFpEF (preserved ejection fraction) subgroup. The FDA signals willingness to approve for HFrEF now, but requests a PMC for a dedicated HFpEF Phase 3 study (estimated cost: $40M, 4-year timeline). Your CFO estimates approval would add $200M in value vs. a full Phase 3 before approval (delayed 18 months). However, if you fail the HFpEF PMC, label restrictions or post-market restrictions could follow.",
+          "options": ["Accept accelerated approval with HFpEF PMC—capture early market entry and revenue; invest profits in robust PMC design to de-risk post-market studies", "Decline accelerated pathway and complete HFpEF Phase 3 pre-approval—accept timeline delay but gain certainty on label breadth and avoid post-market execution risk", "Negotiate hybrid PMC: complete HFpEF study in treated patients (registry-based) while running smaller Phase 2c confirmatory trial—lower cost, partial evidence collection"],
+          "correct": 0
+        },
+        "tip": "PMC value is highest when regulatory benefit from acceleration exceeds execution risk. HFrEF indications alone justify market entry; PMC failure on HFpEF is manageable post-approval."
+      },
+      "3": {
+        "definition": "Post-marketing commitments (PMCs) are obligations negotiated between sponsors and regulators to conduct post-approval research addressing unresolved efficacy or safety questions. PMCs span pharmacovigilance, registry studies, long-term outcomes tracking, and mechanistic investigations. Strategic deployment of PMCs can accelerate approval by substituting post-market evidence collection for pre-approval studies, but requires robust execution planning and realistic timelines to avoid regulatory penalties.",
+        "scenarioDoneTo": "Bristol Myers Squibb secured accelerated approval for Opdivo in melanoma with a PMC to complete a Phase 3b trial comparing to standard chemotherapy. PMC completion within 4 years provided the comparative efficacy evidence, enabling full approval and label expansion while maintaining market access from accelerated pathway.",
+        "challenge": {
+          "scenario": "Your Phase 3 heart failure drug shows benefit in HFrEF patients but shows inconsistent results in HFpEF (preserved ejection fraction) subgroup. The FDA signals willingness to approve for HFrEF now, but requests a PMC for a dedicated HFpEF Phase 3 study (estimated cost: $40M, 4-year timeline). Your CFO estimates approval would add $200M in value vs. a full Phase 3 before approval (delayed 18 months). However, if you fail the HFpEF PMC, label restrictions or post-market restrictions could follow.",
+          "options": ["Accept accelerated approval with HFpEF PMC—capture early market entry and revenue; invest profits in robust PMC design to de-risk post-market studies", "Decline accelerated pathway and complete HFpEF Phase 3 pre-approval—accept timeline delay but gain certainty on label breadth and avoid post-market execution risk", "Negotiate hybrid PMC: complete HFpEF study in treated patients (registry-based) while running smaller Phase 2c confirmatory trial—lower cost, partial evidence collection"],
+          "correct": 0
+        },
+        "tip": "PMC value is highest when regulatory benefit from acceleration exceeds execution risk. HFrEF indications alone justify market entry; PMC failure on HFpEF is manageable post-approval."
+      }
+    }
+  },
+  {
+    "id": "drug-repurposing-business-case",
+    "name": "Drug Repurposing Business Case",
+    "tiers": {
+      "1": {
+        "definition": "Drug repurposing applies existing, approved medications to new disease indications, leveraging known pharmacology, safety data, and manufacturing infrastructure. Business case evaluation weighs reduced development risk and timelines against market size uncertainty, patent/exclusivity vulnerabilities, competitive dynamics, and pricing constraints that often accompany off-label repositionings. Success requires clear regulatory clarity, defensible IP, and demonstrated clinical evidence.",
+        "scenarioDoneTo": "Gilead's repurposing of remdesivir (originally developed for Ebola) for COVID-19 accelerated clinical trials from years to months, leveraging existing safety data and manufacturing capacity. Regulatory flexibility and urgent medical need enabled rapid trial design and approval, capturing first-mover advantage despite IP limitations.",
+        "challenge": {
+          "scenario": "Your company holds a marketed psychiatric drug (approved 2015, exclusivity expired 2022) showing unexpected promise in a small Phase 2 exploratory study for treatment-resistant depression (TRD). The unmet need is large (~2M TRD patients in US), but competitors are launching novel mechanisms. Your IP counsel confirms the original patent portfolio offers minimal protection in TRD; generic competition will arrive within 18 months of any label expansion. Manufacturing can scale with minimal capex. Do you pursue a TRD indication?",
+          "options": ["Pursue full Phase 3 in TRD with premium pricing (2-3x psychiatric indication) during brand period—capture early market share and establish market leader position before generics enter", "Partner with a specialist psychiatry CRO for a Phase 3 at minimal cost; out-license TRD rights post-approval—reduce execution risk and capture upfront licensing fee", "Decline TRD indication; license the compound to academic researchers for low-cost trials—maintain brand reputation and avoid regulatory/reputational risk if Phase 3 fails"],
+          "correct": 1
+        },
+        "tip": "Repurposing economics hinge on exclusivity duration. With 18-month generic window, partnership/out-licensing strategies maximize upfront value. Full internal development only if you can differentiate against generics or capture significant first-mover premium."
+      },
+      "2": {
+        "definition": "Drug repurposing applies existing, approved medications to new disease indications, leveraging known pharmacology, safety data, and manufacturing infrastructure. Business case evaluation weighs reduced development risk and timelines against market size uncertainty, patent/exclusivity vulnerabilities, competitive dynamics, and pricing constraints that often accompany off-label repositionings. Success requires clear regulatory clarity, defensible IP, and demonstrated clinical evidence.",
+        "scenarioDoneTo": "Gilead's repurposing of remdesivir (originally developed for Ebola) for COVID-19 accelerated clinical trials from years to months, leveraging existing safety data and manufacturing capacity. Regulatory flexibility and urgent medical need enabled rapid trial design and approval, capturing first-mover advantage despite IP limitations.",
+        "challenge": {
+          "scenario": "Your company holds a marketed psychiatric drug (approved 2015, exclusivity expired 2022) showing unexpected promise in a small Phase 2 exploratory study for treatment-resistant depression (TRD). The unmet need is large (~2M TRD patients in US), but competitors are launching novel mechanisms. Your IP counsel confirms the original patent portfolio offers minimal protection in TRD; generic competition will arrive within 18 months of any label expansion. Manufacturing can scale with minimal capex. Do you pursue a TRD indication?",
+          "options": ["Pursue full Phase 3 in TRD with premium pricing (2-3x psychiatric indication) during brand period—capture early market share and establish market leader position before generics enter", "Partner with a specialist psychiatry CRO for a Phase 3 at minimal cost; out-license TRD rights post-approval—reduce execution risk and capture upfront licensing fee", "Decline TRD indication; license the compound to academic researchers for low-cost trials—maintain brand reputation and avoid regulatory/reputational risk if Phase 3 fails"],
+          "correct": 1
+        },
+        "tip": "Repurposing economics hinge on exclusivity duration. With 18-month generic window, partnership/out-licensing strategies maximize upfront value. Full internal development only if you can differentiate against generics or capture significant first-mover premium."
+      },
+      "3": {
+        "definition": "Drug repurposing applies existing, approved medications to new disease indications, leveraging known pharmacology, safety data, and manufacturing infrastructure. Business case evaluation weighs reduced development risk and timelines against market size uncertainty, patent/exclusivity vulnerabilities, competitive dynamics, and pricing constraints that often accompany off-label repositionings. Success requires clear regulatory clarity, defensible IP, and demonstrated clinical evidence.",
+        "scenarioDoneTo": "Gilead's repurposing of remdesivir (originally developed for Ebola) for COVID-19 accelerated clinical trials from years to months, leveraging existing safety data and manufacturing capacity. Regulatory flexibility and urgent medical need enabled rapid trial design and approval, capturing first-mover advantage despite IP limitations.",
+        "challenge": {
+          "scenario": "Your company holds a marketed psychiatric drug (approved 2015, exclusivity expired 2022) showing unexpected promise in a small Phase 2 exploratory study for treatment-resistant depression (TRD). The unmet need is large (~2M TRD patients in US), but competitors are launching novel mechanisms. Your IP counsel confirms the original patent portfolio offers minimal protection in TRD; generic competition will arrive within 18 months of any label expansion. Manufacturing can scale with minimal capex. Do you pursue a TRD indication?",
+          "options": ["Pursue full Phase 3 in TRD with premium pricing (2-3x psychiatric indication) during brand period—capture early market share and establish market leader position before generics enter", "Partner with a specialist psychiatry CRO for a Phase 3 at minimal cost; out-license TRD rights post-approval—reduce execution risk and capture upfront licensing fee", "Decline TRD indication; license the compound to academic researchers for low-cost trials—maintain brand reputation and avoid regulatory/reputational risk if Phase 3 fails"],
+          "correct": 1
+        },
+        "tip": "Repurposing economics hinge on exclusivity duration. With 18-month generic window, partnership/out-licensing strategies maximize upfront value. Full internal development only if you can differentiate against generics or capture significant first-mover premium."
+      }
+    }
+  }
+]
+```

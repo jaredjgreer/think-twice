@@ -18,7 +18,16 @@ const App = (() => {
     'cognitive-biases': 'data/cognitive-biases.json',
     'sunday': 'data/sunday.json',
     'emotional-intelligence': 'data/emotional-intelligence.json',
-    'gospel-questions': 'data/gospel-questions.json'
+    'gospel-questions': 'data/gospel-questions.json',
+    'drugdev-foundations': 'data/drugdev-foundations.json',
+    'drugdev-mechanics': 'data/drugdev-mechanics.json',
+    'drugdev-mastery': 'data/drugdev-mastery.json',
+    'pe-foundations': 'data/pe-foundations.json',
+    'pe-mechanics': 'data/pe-mechanics.json',
+    'pe-mastery': 'data/pe-mastery.json',
+    'lifesci-foundations': 'data/lifesci-foundations.json',
+    'lifesci-mechanics': 'data/lifesci-mechanics.json',
+    'lifesci-mastery': 'data/lifesci-mastery.json'
   };
 
   const TEAM_COLORS = ['cyan', 'pink', 'yellow', 'green'];

@@ -1,0 +1,486 @@
+Good, I now have the format. Here are the 10 cards:
+
+[
+  {
+    "id": "portfolio-optimization-patent-cliff",
+    "name": "Portfolio Optimization Under Patent Cliff Pressure",
+    "tiers": {
+      "1": {
+        "definition": "The strategic rebalancing of a pharma company's product portfolio in anticipation of major revenue losses from patent expirations, involving lifecycle management, M&A, and pipeline acceleration to sustain long-term growth.",
+        "scenarioDoneTo": "You are the Chief Strategy Officer of a top-20 pharma company. Your two largest products, representing 45% of total revenue, face patent cliffs within 18 months of each other. The board is demanding a plan to protect shareholder value, and your pipeline has three Phase II assets but nothing in late-stage registration.",
+        "challenge": {
+          "scenario": "Your lead immunology franchise loses exclusivity in 14 months. You have a biosimilar-resistant next-gen formulation in Phase III, a bolt-on acquisition target with a complementary approved product, and an option to aggressively launch an authorized generic yourself. Which approach best preserves franchise value?",
+          "options": [
+            "Launch an authorized generic immediately to capture the generic wave and maintain volume share",
+            "Accelerate the next-gen formulation switch while using the authorized generic as a bridge strategy to retain patients in-franchise",
+            "Acquire the complementary product to diversify revenue and abandon the legacy franchise entirely"
+          ],
+          "correct": 1
+        },
+        "tip": "The best patent cliff strategy layers defenses: bridge with an authorized generic to slow erosion while converting patients to the next-gen product that resets the exclusivity clock."
+      },
+      "2": {
+        "definition": "The strategic rebalancing of a pharma company's product portfolio in anticipation of major revenue losses from patent expirations, involving lifecycle management, M&A, and pipeline acceleration to sustain long-term growth.",
+        "scenarioDoneTo": "You are the Chief Strategy Officer of a top-20 pharma company. Your two largest products, representing 45% of total revenue, face patent cliffs within 18 months of each other. The board is demanding a plan to protect shareholder value, and your pipeline has three Phase II assets but nothing in late-stage registration.",
+        "challenge": {
+          "scenario": "Your lead immunology franchise loses exclusivity in 14 months. You have a biosimilar-resistant next-gen formulation in Phase III, a bolt-on acquisition target with a complementary approved product, and an option to aggressively launch an authorized generic yourself. Which approach best preserves franchise value?",
+          "options": [
+            "Launch an authorized generic immediately to capture the generic wave and maintain volume share",
+            "Accelerate the next-gen formulation switch while using the authorized generic as a bridge strategy to retain patients in-franchise",
+            "Acquire the complementary product to diversify revenue and abandon the legacy franchise entirely"
+          ],
+          "correct": 1
+        },
+        "tip": "The best patent cliff strategy layers defenses: bridge with an authorized generic to slow erosion while converting patients to the next-gen product that resets the exclusivity clock."
+      },
+      "3": {
+        "definition": "The strategic rebalancing of a pharma company's product portfolio in anticipation of major revenue losses from patent expirations, involving lifecycle management, M&A, and pipeline acceleration to sustain long-term growth.",
+        "scenarioDoneTo": "You are the Chief Strategy Officer of a top-20 pharma company. Your two largest products, representing 45% of total revenue, face patent cliffs within 18 months of each other. The board is demanding a plan to protect shareholder value, and your pipeline has three Phase II assets but nothing in late-stage registration.",
+        "challenge": {
+          "scenario": "Your lead immunology franchise loses exclusivity in 14 months. You have a biosimilar-resistant next-gen formulation in Phase III, a bolt-on acquisition target with a complementary approved product, and an option to aggressively launch an authorized generic yourself. Which approach best preserves franchise value?",
+          "options": [
+            "Launch an authorized generic immediately to capture the generic wave and maintain volume share",
+            "Accelerate the next-gen formulation switch while using the authorized generic as a bridge strategy to retain patients in-franchise",
+            "Acquire the complementary product to diversify revenue and abandon the legacy franchise entirely"
+          ],
+          "correct": 1
+        },
+        "tip": "The best patent cliff strategy layers defenses: bridge with an authorized generic to slow erosion while converting patients to the next-gen product that resets the exclusivity clock."
+      }
+    }
+  },
+  {
+    "id": "build-vs-buy-vs-license-framework",
+    "name": "Build-vs-Buy-vs-License Strategic Framework",
+    "tiers": {
+      "1": {
+        "definition": "A strategic decision framework used by pharma and biotech executives to evaluate whether to develop an asset internally, acquire a company outright, or in-license rights to a molecule, weighing speed-to-market, capital efficiency, risk sharing, and long-term strategic control.",
+        "scenarioDoneTo": "You lead corporate development at a large pharma company with a gap in your oncology portfolio. A mid-stage biotech has a promising bispecific antibody in Phase II with strong early data. You must recommend whether to build a competing program internally, acquire the biotech, or negotiate a licensing deal. Your CEO wants a recommendation within two weeks.",
+        "challenge": {
+          "scenario": "The biotech's bispecific antibody has differentiated Phase II data in a competitive indication where three other companies have Phase III programs. The biotech is publicly traded at a $4B market cap with a 60% premium expected for acquisition. Your internal discovery team estimates 4-5 years to reach Phase II with a similar molecule. What is the strongest strategic rationale for in-licensing over acquiring?",
+          "options": [
+            "In-licensing avoids the cultural integration challenges that destroy value in biotech acquisitions",
+            "In-licensing preserves capital flexibility and limits downside exposure while securing commercial rights, critical when clinical risk remains high and the competitive window is uncertain",
+            "In-licensing always offers better NPV than acquisition because you avoid paying a control premium"
+          ],
+          "correct": 1
+        },
+        "tip": "License when clinical risk is still meaningful and the competitive landscape is crowded — you pay less upfront, preserve optionality, and avoid owning the full downside if the indication becomes saturated."
+      },
+      "2": {
+        "definition": "A strategic decision framework used by pharma and biotech executives to evaluate whether to develop an asset internally, acquire a company outright, or in-license rights to a molecule, weighing speed-to-market, capital efficiency, risk sharing, and long-term strategic control.",
+        "scenarioDoneTo": "You lead corporate development at a large pharma company with a gap in your oncology portfolio. A mid-stage biotech has a promising bispecific antibody in Phase II with strong early data. You must recommend whether to build a competing program internally, acquire the biotech, or negotiate a licensing deal. Your CEO wants a recommendation within two weeks.",
+        "challenge": {
+          "scenario": "The biotech's bispecific antibody has differentiated Phase II data in a competitive indication where three other companies have Phase III programs. The biotech is publicly traded at a $4B market cap with a 60% premium expected for acquisition. Your internal discovery team estimates 4-5 years to reach Phase II with a similar molecule. What is the strongest strategic rationale for in-licensing over acquiring?",
+          "options": [
+            "In-licensing avoids the cultural integration challenges that destroy value in biotech acquisitions",
+            "In-licensing preserves capital flexibility and limits downside exposure while securing commercial rights, critical when clinical risk remains high and the competitive window is uncertain",
+            "In-licensing always offers better NPV than acquisition because you avoid paying a control premium"
+          ],
+          "correct": 1
+        },
+        "tip": "License when clinical risk is still meaningful and the competitive landscape is crowded — you pay less upfront, preserve optionality, and avoid owning the full downside if the indication becomes saturated."
+      },
+      "3": {
+        "definition": "A strategic decision framework used by pharma and biotech executives to evaluate whether to develop an asset internally, acquire a company outright, or in-license rights to a molecule, weighing speed-to-market, capital efficiency, risk sharing, and long-term strategic control.",
+        "scenarioDoneTo": "You lead corporate development at a large pharma company with a gap in your oncology portfolio. A mid-stage biotech has a promising bispecific antibody in Phase II with strong early data. You must recommend whether to build a competing program internally, acquire the biotech, or negotiate a licensing deal. Your CEO wants a recommendation within two weeks.",
+        "challenge": {
+          "scenario": "The biotech's bispecific antibody has differentiated Phase II data in a competitive indication where three other companies have Phase III programs. The biotech is publicly traded at a $4B market cap with a 60% premium expected for acquisition. Your internal discovery team estimates 4-5 years to reach Phase II with a similar molecule. What is the strongest strategic rationale for in-licensing over acquiring?",
+          "options": [
+            "In-licensing avoids the cultural integration challenges that destroy value in biotech acquisitions",
+            "In-licensing preserves capital flexibility and limits downside exposure while securing commercial rights, critical when clinical risk remains high and the competitive window is uncertain",
+            "In-licensing always offers better NPV than acquisition because you avoid paying a control premium"
+          ],
+          "correct": 1
+        },
+        "tip": "License when clinical risk is still meaningful and the competitive landscape is crowded — you pay less upfront, preserve optionality, and avoid owning the full downside if the indication becomes saturated."
+      }
+    }
+  },
+  {
+    "id": "activist-investor-response-pharma",
+    "name": "Activist Investor Response in Pharma",
+    "tiers": {
+      "1": {
+        "definition": "The strategic and governance response a pharmaceutical company's leadership must mount when an activist investor takes a significant stake and publicly demands changes such as pipeline cuts, divestitures, capital return acceleration, or management changes.",
+        "scenarioDoneTo": "You are the CEO of a mid-cap pharma company. An activist hedge fund has acquired a 7% stake and published a white paper demanding you divest your slower-growing primary care franchise, cut R&D spending by 30%, and return $5B to shareholders via buybacks. Your stock is up 12% on the news. The board wants your response strategy before the next quarterly call.",
+        "challenge": {
+          "scenario": "The activist's thesis centers on your primary care portfolio dragging down margins and your R&D spend being 22% of revenue versus a peer median of 17%. They argue divesting primary care and cutting R&D will unlock 40% upside. Your primary care franchise generates $3B in stable cash flow that funds your early-stage oncology pipeline. What is the most defensible board-level counter-strategy?",
+          "options": [
+            "Accept the activist's core thesis, announce the primary care divestiture, and use proceeds for a special dividend to neutralize the campaign",
+            "Publicly reject all demands and adopt a poison pill to prevent further stake accumulation",
+            "Engage constructively by commissioning an independent portfolio review, articulate the strategic value of primary care cash flows funding pipeline innovation, and propose targeted operational efficiencies that address margin concerns without dismantling the R&D engine"
+          ],
+          "correct": 2
+        },
+        "tip": "The winning activist defense is neither capitulation nor entrenchment — it is reframing the narrative with data, showing the board and shareholders that your portfolio's cash flow engine is what makes the growth pipeline possible."
+      },
+      "2": {
+        "definition": "The strategic and governance response a pharmaceutical company's leadership must mount when an activist investor takes a significant stake and publicly demands changes such as pipeline cuts, divestitures, capital return acceleration, or management changes.",
+        "scenarioDoneTo": "You are the CEO of a mid-cap pharma company. An activist hedge fund has acquired a 7% stake and published a white paper demanding you divest your slower-growing primary care franchise, cut R&D spending by 30%, and return $5B to shareholders via buybacks. Your stock is up 12% on the news. The board wants your response strategy before the next quarterly call.",
+        "challenge": {
+          "scenario": "The activist's thesis centers on your primary care portfolio dragging down margins and your R&D spend being 22% of revenue versus a peer median of 17%. They argue divesting primary care and cutting R&D will unlock 40% upside. Your primary care franchise generates $3B in stable cash flow that funds your early-stage oncology pipeline. What is the most defensible board-level counter-strategy?",
+          "options": [
+            "Accept the activist's core thesis, announce the primary care divestiture, and use proceeds for a special dividend to neutralize the campaign",
+            "Publicly reject all demands and adopt a poison pill to prevent further stake accumulation",
+            "Engage constructively by commissioning an independent portfolio review, articulate the strategic value of primary care cash flows funding pipeline innovation, and propose targeted operational efficiencies that address margin concerns without dismantling the R&D engine"
+          ],
+          "correct": 2
+        },
+        "tip": "The winning activist defense is neither capitulation nor entrenchment — it is reframing the narrative with data, showing the board and shareholders that your portfolio's cash flow engine is what makes the growth pipeline possible."
+      },
+      "3": {
+        "definition": "The strategic and governance response a pharmaceutical company's leadership must mount when an activist investor takes a significant stake and publicly demands changes such as pipeline cuts, divestitures, capital return acceleration, or management changes.",
+        "scenarioDoneTo": "You are the CEO of a mid-cap pharma company. An activist hedge fund has acquired a 7% stake and published a white paper demanding you divest your slower-growing primary care franchise, cut R&D spending by 30%, and return $5B to shareholders via buybacks. Your stock is up 12% on the news. The board wants your response strategy before the next quarterly call.",
+        "challenge": {
+          "scenario": "The activist's thesis centers on your primary care portfolio dragging down margins and your R&D spend being 22% of revenue versus a peer median of 17%. They argue divesting primary care and cutting R&D will unlock 40% upside. Your primary care franchise generates $3B in stable cash flow that funds your early-stage oncology pipeline. What is the most defensible board-level counter-strategy?",
+          "options": [
+            "Accept the activist's core thesis, announce the primary care divestiture, and use proceeds for a special dividend to neutralize the campaign",
+            "Publicly reject all demands and adopt a poison pill to prevent further stake accumulation",
+            "Engage constructively by commissioning an independent portfolio review, articulate the strategic value of primary care cash flows funding pipeline innovation, and propose targeted operational efficiencies that address margin concerns without dismantling the R&D engine"
+          ],
+          "correct": 2
+        },
+        "tip": "The winning activist defense is neither capitulation nor entrenchment — it is reframing the narrative with data, showing the board and shareholders that your portfolio's cash flow engine is what makes the growth pipeline possible."
+      }
+    }
+  },
+  {
+    "id": "pipeline-prioritization-constrained-budget",
+    "name": "Pipeline Prioritization with Constrained R&D Budget",
+    "tiers": {
+      "1": {
+        "definition": "The executive-level discipline of allocating limited R&D capital across competing pipeline programs by evaluating risk-adjusted NPV, strategic fit, probability of technical success, competitive dynamics, and portfolio balance to maximize long-term enterprise value.",
+        "scenarioDoneTo": "You are the Head of R&D at a pharma company facing a 15% budget cut. You must decide how to allocate remaining funds across five pipeline programs spanning oncology, immunology, and neuroscience. Two programs are in Phase III, two in Phase II, and one is a first-in-class Phase I asset with breakthrough potential but high binary risk.",
+        "challenge": {
+          "scenario": "After the budget cut, you can fully fund three of five programs. Program A is a Phase III cardiovascular asset with 70% probability of success and $2B peak sales in a crowded market. Program B is a Phase II immunology asset with 45% probability of success and $4B peak sales with best-in-class potential. Program C is a Phase III rare disease asset with 65% probability of success and $800M peak sales but no competition. Program D is a Phase I gene therapy with 25% probability of success and $3B peak sales if it works. Program E is a Phase II CNS asset with 35% probability of success and $1.5B peak sales. Which three programs should you prioritize?",
+          "options": [
+            "A, B, and C — the two Phase III assets de-risk near-term revenue while B offers upside",
+            "B, C, and D — best-in-class potential, uncontested rare disease returns, and transformative science maximize risk-adjusted portfolio value",
+            "A, C, and E — prioritize the highest-probability assets to guarantee near-term approvals and steady revenue"
+          ],
+          "correct": 1
+        },
+        "tip": "Portfolio optimization is not about picking the safest bets — it is about maximizing risk-adjusted value. An uncontested rare disease program and a best-in-class asset create more durable value than a me-too cardiovascular drug in a crowded market, even at lower individual probabilities."
+      },
+      "2": {
+        "definition": "The executive-level discipline of allocating limited R&D capital across competing pipeline programs by evaluating risk-adjusted NPV, strategic fit, probability of technical success, competitive dynamics, and portfolio balance to maximize long-term enterprise value.",
+        "scenarioDoneTo": "You are the Head of R&D at a pharma company facing a 15% budget cut. You must decide how to allocate remaining funds across five pipeline programs spanning oncology, immunology, and neuroscience. Two programs are in Phase III, two in Phase II, and one is a first-in-class Phase I asset with breakthrough potential but high binary risk.",
+        "challenge": {
+          "scenario": "After the budget cut, you can fully fund three of five programs. Program A is a Phase III cardiovascular asset with 70% probability of success and $2B peak sales in a crowded market. Program B is a Phase II immunology asset with 45% probability of success and $4B peak sales with best-in-class potential. Program C is a Phase III rare disease asset with 65% probability of success and $800M peak sales but no competition. Program D is a Phase I gene therapy with 25% probability of success and $3B peak sales if it works. Program E is a Phase II CNS asset with 35% probability of success and $1.5B peak sales. Which three programs should you prioritize?",
+          "options": [
+            "A, B, and C — the two Phase III assets de-risk near-term revenue while B offers upside",
+            "B, C, and D — best-in-class potential, uncontested rare disease returns, and transformative science maximize risk-adjusted portfolio value",
+            "A, C, and E — prioritize the highest-probability assets to guarantee near-term approvals and steady revenue"
+          ],
+          "correct": 1
+        },
+        "tip": "Portfolio optimization is not about picking the safest bets — it is about maximizing risk-adjusted value. An uncontested rare disease program and a best-in-class asset create more durable value than a me-too cardiovascular drug in a crowded market, even at lower individual probabilities."
+      },
+      "3": {
+        "definition": "The executive-level discipline of allocating limited R&D capital across competing pipeline programs by evaluating risk-adjusted NPV, strategic fit, probability of technical success, competitive dynamics, and portfolio balance to maximize long-term enterprise value.",
+        "scenarioDoneTo": "You are the Head of R&D at a pharma company facing a 15% budget cut. You must decide how to allocate remaining funds across five pipeline programs spanning oncology, immunology, and neuroscience. Two programs are in Phase III, two in Phase II, and one is a first-in-class Phase I asset with breakthrough potential but high binary risk.",
+        "challenge": {
+          "scenario": "After the budget cut, you can fully fund three of five programs. Program A is a Phase III cardiovascular asset with 70% probability of success and $2B peak sales in a crowded market. Program B is a Phase II immunology asset with 45% probability of success and $4B peak sales with best-in-class potential. Program C is a Phase III rare disease asset with 65% probability of success and $800M peak sales but no competition. Program D is a Phase I gene therapy with 25% probability of success and $3B peak sales if it works. Program E is a Phase II CNS asset with 35% probability of success and $1.5B peak sales. Which three programs should you prioritize?",
+          "options": [
+            "A, B, and C — the two Phase III assets de-risk near-term revenue while B offers upside",
+            "B, C, and D — best-in-class potential, uncontested rare disease returns, and transformative science maximize risk-adjusted portfolio value",
+            "A, C, and E — prioritize the highest-probability assets to guarantee near-term approvals and steady revenue"
+          ],
+          "correct": 1
+        },
+        "tip": "Portfolio optimization is not about picking the safest bets — it is about maximizing risk-adjusted value. An uncontested rare disease program and a best-in-class asset create more durable value than a me-too cardiovascular drug in a crowded market, even at lower individual probabilities."
+      }
+    }
+  },
+  {
+    "id": "platform-vs-single-asset-valuation",
+    "name": "Platform Technology Valuation vs Single-Asset Valuation",
+    "tiers": {
+      "1": {
+        "definition": "The distinction between valuing a biotech company based on a single lead therapeutic candidate versus valuing an underlying technology platform that can generate multiple product candidates, where the platform's optionality and repeatability command a structural valuation premium.",
+        "scenarioDoneTo": "You are a senior banker advising a biotech company with a proprietary mRNA delivery platform. They have one Phase II asset in respiratory disease, but the platform can generate candidates across oncology, rare disease, and vaccines. A potential acquirer is offering a price based on a DCF of the Phase II asset alone. Your client believes the offer dramatically undervalues the company.",
+        "challenge": {
+          "scenario": "The acquirer's offer values your client at $3.5B based on risk-adjusted NPV of the single Phase II respiratory asset. Your client's mRNA platform has generated 12 preclinical candidates across four therapeutic areas, with two additional IND-ready programs. What is the strongest argument for why platform valuation should exceed single-asset DCF?",
+          "options": [
+            "Platform companies always trade at higher multiples because investors prefer diversified pipelines over single-asset risk",
+            "The platform generates perpetual call options on future programs — each new candidate created adds incremental value at low marginal cost, and the repeatability reduces the company's dependence on any single clinical outcome",
+            "The preclinical candidates should each be valued at the same risk-adjusted NPV as the Phase II asset, so total value is simply the sum of all 14 programs"
+          ],
+          "correct": 1
+        },
+        "tip": "Platform value is not just the sum of current programs — it is the option value of programs not yet created. A validated platform that can efficiently generate new candidates has compounding value that single-asset DCF completely misses."
+      },
+      "2": {
+        "definition": "The distinction between valuing a biotech company based on a single lead therapeutic candidate versus valuing an underlying technology platform that can generate multiple product candidates, where the platform's optionality and repeatability command a structural valuation premium.",
+        "scenarioDoneTo": "You are a senior banker advising a biotech company with a proprietary mRNA delivery platform. They have one Phase II asset in respiratory disease, but the platform can generate candidates across oncology, rare disease, and vaccines. A potential acquirer is offering a price based on a DCF of the Phase II asset alone. Your client believes the offer dramatically undervalues the company.",
+        "challenge": {
+          "scenario": "The acquirer's offer values your client at $3.5B based on risk-adjusted NPV of the single Phase II respiratory asset. Your client's mRNA platform has generated 12 preclinical candidates across four therapeutic areas, with two additional IND-ready programs. What is the strongest argument for why platform valuation should exceed single-asset DCF?",
+          "options": [
+            "Platform companies always trade at higher multiples because investors prefer diversified pipelines over single-asset risk",
+            "The platform generates perpetual call options on future programs — each new candidate created adds incremental value at low marginal cost, and the repeatability reduces the company's dependence on any single clinical outcome",
+            "The preclinical candidates should each be valued at the same risk-adjusted NPV as the Phase II asset, so total value is simply the sum of all 14 programs"
+          ],
+          "correct": 1
+        },
+        "tip": "Platform value is not just the sum of current programs — it is the option value of programs not yet created. A validated platform that can efficiently generate new candidates has compounding value that single-asset DCF completely misses."
+      },
+      "3": {
+        "definition": "The distinction between valuing a biotech company based on a single lead therapeutic candidate versus valuing an underlying technology platform that can generate multiple product candidates, where the platform's optionality and repeatability command a structural valuation premium.",
+        "scenarioDoneTo": "You are a senior banker advising a biotech company with a proprietary mRNA delivery platform. They have one Phase II asset in respiratory disease, but the platform can generate candidates across oncology, rare disease, and vaccines. A potential acquirer is offering a price based on a DCF of the Phase II asset alone. Your client believes the offer dramatically undervalues the company.",
+        "challenge": {
+          "scenario": "The acquirer's offer values your client at $3.5B based on risk-adjusted NPV of the single Phase II respiratory asset. Your client's mRNA platform has generated 12 preclinical candidates across four therapeutic areas, with two additional IND-ready programs. What is the strongest argument for why platform valuation should exceed single-asset DCF?",
+          "options": [
+            "Platform companies always trade at higher multiples because investors prefer diversified pipelines over single-asset risk",
+            "The platform generates perpetual call options on future programs — each new candidate created adds incremental value at low marginal cost, and the repeatability reduces the company's dependence on any single clinical outcome",
+            "The preclinical candidates should each be valued at the same risk-adjusted NPV as the Phase II asset, so total value is simply the sum of all 14 programs"
+          ],
+          "correct": 1
+        },
+        "tip": "Platform value is not just the sum of current programs — it is the option value of programs not yet created. A validated platform that can efficiently generate new candidates has compounding value that single-asset DCF completely misses."
+      }
+    }
+  },
+  {
+    "id": "strategic-ma-oncology-consolidation",
+    "name": "Strategic M&A in Oncology — Consolidation Logic",
+    "tiers": {
+      "1": {
+        "definition": "The strategic rationale for large-scale acquisitions in oncology, where consolidation creates value through complementary pipeline combinations, shared tumor biology expertise, combination therapy control, overlapping commercial infrastructure, and dominance in key treatment paradigms.",
+        "scenarioDoneTo": "You are the CEO of a large pharma company with a strong oncology franchise built around checkpoint inhibitors. A competitor with a differentiated ADC (antibody-drug conjugate) platform and three approved products in solid tumors is exploring strategic options. Your head of oncology R&D believes combining your checkpoint inhibitors with their ADCs in rational combinations could be transformative. The target's market cap is $28B.",
+        "challenge": {
+          "scenario": "Your board is debating whether the $35B acquisition price (25% premium) is justified. The target's standalone revenue is $6B with 25% growth. Your CFO argues the premium is too high relative to the target's current EBITDA. What is the most compelling strategic justification for paying the premium?",
+          "options": [
+            "The target's 25% revenue growth rate alone justifies the premium because high-growth oncology assets are scarce and the multiple will expand further post-acquisition",
+            "Owning both the checkpoint inhibitor and ADC platforms gives you control over the most important combination regimens in solid tumors — controlling both arms of a combination creates a competitive moat that cannot be replicated through partnerships",
+            "The acquisition eliminates a competitor and reduces pricing pressure across your existing oncology portfolio, which is worth the premium in avoided margin erosion"
+          ],
+          "correct": 1
+        },
+        "tip": "In oncology M&A, the deepest moat comes from controlling both sides of a combination regimen. When you own the checkpoint inhibitor AND the ADC, competitors cannot run the combination trial without you — that is structural competitive advantage, not just revenue addition."
+      },
+      "2": {
+        "definition": "The strategic rationale for large-scale acquisitions in oncology, where consolidation creates value through complementary pipeline combinations, shared tumor biology expertise, combination therapy control, overlapping commercial infrastructure, and dominance in key treatment paradigms.",
+        "scenarioDoneTo": "You are the CEO of a large pharma company with a strong oncology franchise built around checkpoint inhibitors. A competitor with a differentiated ADC (antibody-drug conjugate) platform and three approved products in solid tumors is exploring strategic options. Your head of oncology R&D believes combining your checkpoint inhibitors with their ADCs in rational combinations could be transformative. The target's market cap is $28B.",
+        "challenge": {
+          "scenario": "Your board is debating whether the $35B acquisition price (25% premium) is justified. The target's standalone revenue is $6B with 25% growth. Your CFO argues the premium is too high relative to the target's current EBITDA. What is the most compelling strategic justification for paying the premium?",
+          "options": [
+            "The target's 25% revenue growth rate alone justifies the premium because high-growth oncology assets are scarce and the multiple will expand further post-acquisition",
+            "Owning both the checkpoint inhibitor and ADC platforms gives you control over the most important combination regimens in solid tumors — controlling both arms of a combination creates a competitive moat that cannot be replicated through partnerships",
+            "The acquisition eliminates a competitor and reduces pricing pressure across your existing oncology portfolio, which is worth the premium in avoided margin erosion"
+          ],
+          "correct": 1
+        },
+        "tip": "In oncology M&A, the deepest moat comes from controlling both sides of a combination regimen. When you own the checkpoint inhibitor AND the ADC, competitors cannot run the combination trial without you — that is structural competitive advantage, not just revenue addition."
+      },
+      "3": {
+        "definition": "The strategic rationale for large-scale acquisitions in oncology, where consolidation creates value through complementary pipeline combinations, shared tumor biology expertise, combination therapy control, overlapping commercial infrastructure, and dominance in key treatment paradigms.",
+        "scenarioDoneTo": "You are the CEO of a large pharma company with a strong oncology franchise built around checkpoint inhibitors. A competitor with a differentiated ADC (antibody-drug conjugate) platform and three approved products in solid tumors is exploring strategic options. Your head of oncology R&D believes combining your checkpoint inhibitors with their ADCs in rational combinations could be transformative. The target's market cap is $28B.",
+        "challenge": {
+          "scenario": "Your board is debating whether the $35B acquisition price (25% premium) is justified. The target's standalone revenue is $6B with 25% growth. Your CFO argues the premium is too high relative to the target's current EBITDA. What is the most compelling strategic justification for paying the premium?",
+          "options": [
+            "The target's 25% revenue growth rate alone justifies the premium because high-growth oncology assets are scarce and the multiple will expand further post-acquisition",
+            "Owning both the checkpoint inhibitor and ADC platforms gives you control over the most important combination regimens in solid tumors — controlling both arms of a combination creates a competitive moat that cannot be replicated through partnerships",
+            "The acquisition eliminates a competitor and reduces pricing pressure across your existing oncology portfolio, which is worth the premium in avoided margin erosion"
+          ],
+          "correct": 1
+        },
+        "tip": "In oncology M&A, the deepest moat comes from controlling both sides of a combination regimen. When you own the checkpoint inhibitor AND the ADC, competitors cannot run the combination trial without you — that is structural competitive advantage, not just revenue addition."
+      }
+    }
+  },
+  {
+    "id": "ceo-decision-fda-crl",
+    "name": "CEO Decision-Making During FDA Complete Response Letter",
+    "tiers": {
+      "1": {
+        "definition": "The high-stakes executive decision framework activated when the FDA issues a Complete Response Letter (CRL), refusing to approve a drug application and requiring the company to address deficiencies — forcing leadership to evaluate whether to resubmit, run additional studies, pivot the program, or abandon development entirely.",
+        "scenarioDoneTo": "You are the CEO of a mid-cap biotech whose lead asset, a novel NASH therapy, just received a CRL. The FDA cited concerns about the liver biopsy endpoint's clinical meaningfulness and requested an additional outcomes study that would take 3-4 years. Your stock has dropped 40% overnight. You have 18 months of cash runway, your second program is in Phase I, and your board is meeting in 48 hours.",
+        "challenge": {
+          "scenario": "The CRL demands an additional cardiovascular outcomes study. Your CMO believes a redesigned surrogate endpoint strategy using non-invasive biomarkers could satisfy the FDA in a pre-submission meeting, potentially avoiding the full outcomes trial. Your CFO says the company cannot fund a 3-year outcomes study without dilutive financing. Your board chair is privately suggesting exploring a sale of the company. What is the optimal CEO decision in the first 72 hours?",
+          "options": [
+            "Immediately announce a strategic review process to explore a sale while the NASH asset still has residual value and before cash constraints become public",
+            "Request an urgent Type A meeting with FDA to test the surrogate endpoint strategy before making any irreversible corporate decisions, while simultaneously engaging bankers to understand the full range of options",
+            "Announce the company will fund the full outcomes study and immediately launch a secondary offering to demonstrate commitment to the program"
+          ],
+          "correct": 1
+        },
+        "tip": "After a CRL, the worst mistakes are panic selling and blind commitment. The right first move is always to test FDA's flexibility through a Type A meeting — you need data on whether there is a faster regulatory path before making any corporate-level decision."
+      },
+      "2": {
+        "definition": "The high-stakes executive decision framework activated when the FDA issues a Complete Response Letter (CRL), refusing to approve a drug application and requiring the company to address deficiencies — forcing leadership to evaluate whether to resubmit, run additional studies, pivot the program, or abandon development entirely.",
+        "scenarioDoneTo": "You are the CEO of a mid-cap biotech whose lead asset, a novel NASH therapy, just received a CRL. The FDA cited concerns about the liver biopsy endpoint's clinical meaningfulness and requested an additional outcomes study that would take 3-4 years. Your stock has dropped 40% overnight. You have 18 months of cash runway, your second program is in Phase I, and your board is meeting in 48 hours.",
+        "challenge": {
+          "scenario": "The CRL demands an additional cardiovascular outcomes study. Your CMO believes a redesigned surrogate endpoint strategy using non-invasive biomarkers could satisfy the FDA in a pre-submission meeting, potentially avoiding the full outcomes trial. Your CFO says the company cannot fund a 3-year outcomes study without dilutive financing. Your board chair is privately suggesting exploring a sale of the company. What is the optimal CEO decision in the first 72 hours?",
+          "options": [
+            "Immediately announce a strategic review process to explore a sale while the NASH asset still has residual value and before cash constraints become public",
+            "Request an urgent Type A meeting with FDA to test the surrogate endpoint strategy before making any irreversible corporate decisions, while simultaneously engaging bankers to understand the full range of options",
+            "Announce the company will fund the full outcomes study and immediately launch a secondary offering to demonstrate commitment to the program"
+          ],
+          "correct": 1
+        },
+        "tip": "After a CRL, the worst mistakes are panic selling and blind commitment. The right first move is always to test FDA's flexibility through a Type A meeting — you need data on whether there is a faster regulatory path before making any corporate-level decision."
+      },
+      "3": {
+        "definition": "The high-stakes executive decision framework activated when the FDA issues a Complete Response Letter (CRL), refusing to approve a drug application and requiring the company to address deficiencies — forcing leadership to evaluate whether to resubmit, run additional studies, pivot the program, or abandon development entirely.",
+        "scenarioDoneTo": "You are the CEO of a mid-cap biotech whose lead asset, a novel NASH therapy, just received a CRL. The FDA cited concerns about the liver biopsy endpoint's clinical meaningfulness and requested an additional outcomes study that would take 3-4 years. Your stock has dropped 40% overnight. You have 18 months of cash runway, your second program is in Phase I, and your board is meeting in 48 hours.",
+        "challenge": {
+          "scenario": "The CRL demands an additional cardiovascular outcomes study. Your CMO believes a redesigned surrogate endpoint strategy using non-invasive biomarkers could satisfy the FDA in a pre-submission meeting, potentially avoiding the full outcomes trial. Your CFO says the company cannot fund a 3-year outcomes study without dilutive financing. Your board chair is privately suggesting exploring a sale of the company. What is the optimal CEO decision in the first 72 hours?",
+          "options": [
+            "Immediately announce a strategic review process to explore a sale while the NASH asset still has residual value and before cash constraints become public",
+            "Request an urgent Type A meeting with FDA to test the surrogate endpoint strategy before making any irreversible corporate decisions, while simultaneously engaging bankers to understand the full range of options",
+            "Announce the company will fund the full outcomes study and immediately launch a secondary offering to demonstrate commitment to the program"
+          ],
+          "correct": 1
+        },
+        "tip": "After a CRL, the worst mistakes are panic selling and blind commitment. The right first move is always to test FDA's flexibility through a Type A meeting — you need data on whether there is a faster regulatory path before making any corporate-level decision."
+      }
+    }
+  },
+  {
+    "id": "gene-therapy-pricing-strategy-launch",
+    "name": "Gene Therapy Pricing Strategy at Launch",
+    "tiers": {
+      "1": {
+        "definition": "The complex pricing framework for one-time curative gene therapies, balancing the enormous upfront cost of a durable or potentially curative treatment against the lifetime cost of chronic standard-of-care, payer willingness to pay, outcomes-based contracting feasibility, and the political and reputational risks of a multi-million-dollar price tag.",
+        "scenarioDoneTo": "You are the Chief Commercial Officer of a gene therapy company preparing to launch a one-time treatment for a severe inherited blood disorder. Clinical data shows 90% of patients achieve transfusion independence at 5-year follow-up. Current standard of care costs $400K per year in chronic transfusions and chelation therapy. Your health economics team has modeled a cost-effectiveness threshold of $2.8M based on lifetime cost offsets. Payer pushback is already intense.",
+        "challenge": {
+          "scenario": "Your HEOR team recommends a list price of $2.5M based on cost-effectiveness analysis showing the gene therapy saves the healthcare system $3.2M in lifetime chronic care costs per patient. However, your head of market access warns that no US commercial payer has ever approved a single claim above $2M and CMS is signaling resistance. What pricing strategy best balances market access with value capture?",
+          "options": [
+            "Price at $2.5M with an outcomes-based annuity model that spreads payments over 5 years, with rebates if patients lose transfusion independence — this aligns price to demonstrated value and solves the payer budget impact problem",
+            "Price at $1.2M to ensure immediate broad access and avoid political backlash, accepting a lower margin to drive volume and establish the franchise",
+            "Price at $2.5M with no alternative payment models to establish the precedent that curative therapies deserve full value-based pricing from day one"
+          ],
+          "correct": 0
+        },
+        "tip": "Gene therapy pricing requires solving two problems simultaneously: justifying the clinical value (which supports a high price) and solving the budget impact problem for payers (which requires innovative payment structures like annuity models or outcomes-based rebates)."
+      },
+      "2": {
+        "definition": "The complex pricing framework for one-time curative gene therapies, balancing the enormous upfront cost of a durable or potentially curative treatment against the lifetime cost of chronic standard-of-care, payer willingness to pay, outcomes-based contracting feasibility, and the political and reputational risks of a multi-million-dollar price tag.",
+        "scenarioDoneTo": "You are the Chief Commercial Officer of a gene therapy company preparing to launch a one-time treatment for a severe inherited blood disorder. Clinical data shows 90% of patients achieve transfusion independence at 5-year follow-up. Current standard of care costs $400K per year in chronic transfusions and chelation therapy. Your health economics team has modeled a cost-effectiveness threshold of $2.8M based on lifetime cost offsets. Payer pushback is already intense.",
+        "challenge": {
+          "scenario": "Your HEOR team recommends a list price of $2.5M based on cost-effectiveness analysis showing the gene therapy saves the healthcare system $3.2M in lifetime chronic care costs per patient. However, your head of market access warns that no US commercial payer has ever approved a single claim above $2M and CMS is signaling resistance. What pricing strategy best balances market access with value capture?",
+          "options": [
+            "Price at $2.5M with an outcomes-based annuity model that spreads payments over 5 years, with rebates if patients lose transfusion independence — this aligns price to demonstrated value and solves the payer budget impact problem",
+            "Price at $1.2M to ensure immediate broad access and avoid political backlash, accepting a lower margin to drive volume and establish the franchise",
+            "Price at $2.5M with no alternative payment models to establish the precedent that curative therapies deserve full value-based pricing from day one"
+          ],
+          "correct": 0
+        },
+        "tip": "Gene therapy pricing requires solving two problems simultaneously: justifying the clinical value (which supports a high price) and solving the budget impact problem for payers (which requires innovative payment structures like annuity models or outcomes-based rebates)."
+      },
+      "3": {
+        "definition": "The complex pricing framework for one-time curative gene therapies, balancing the enormous upfront cost of a durable or potentially curative treatment against the lifetime cost of chronic standard-of-care, payer willingness to pay, outcomes-based contracting feasibility, and the political and reputational risks of a multi-million-dollar price tag.",
+        "scenarioDoneTo": "You are the Chief Commercial Officer of a gene therapy company preparing to launch a one-time treatment for a severe inherited blood disorder. Clinical data shows 90% of patients achieve transfusion independence at 5-year follow-up. Current standard of care costs $400K per year in chronic transfusions and chelation therapy. Your health economics team has modeled a cost-effectiveness threshold of $2.8M based on lifetime cost offsets. Payer pushback is already intense.",
+        "challenge": {
+          "scenario": "Your HEOR team recommends a list price of $2.5M based on cost-effectiveness analysis showing the gene therapy saves the healthcare system $3.2M in lifetime chronic care costs per patient. However, your head of market access warns that no US commercial payer has ever approved a single claim above $2M and CMS is signaling resistance. What pricing strategy best balances market access with value capture?",
+          "options": [
+            "Price at $2.5M with an outcomes-based annuity model that spreads payments over 5 years, with rebates if patients lose transfusion independence — this aligns price to demonstrated value and solves the payer budget impact problem",
+            "Price at $1.2M to ensure immediate broad access and avoid political backlash, accepting a lower margin to drive volume and establish the franchise",
+            "Price at $2.5M with no alternative payment models to establish the precedent that curative therapies deserve full value-based pricing from day one"
+          ],
+          "correct": 0
+        },
+        "tip": "Gene therapy pricing requires solving two problems simultaneously: justifying the clinical value (which supports a high price) and solving the budget impact problem for payers (which requires innovative payment structures like annuity models or outcomes-based rebates)."
+      }
+    }
+  },
+  {
+    "id": "rare-disease-franchise-architecture",
+    "name": "Rare Disease Franchise Architecture",
+    "tiers": {
+      "1": {
+        "definition": "The deliberate strategic construction of a rare disease business as a multi-product franchise rather than a single-product company, leveraging shared patient identification infrastructure, specialized sales forces, KOL networks, and regulatory expertise across related ultra-rare indications to create durable competitive advantages and recurring platform value.",
+        "scenarioDoneTo": "You are the President of Rare Disease at a specialty pharma company with one approved enzyme replacement therapy generating $1.2B in annual revenue. The board wants to grow the franchise to $5B within seven years. You have a proprietary enzyme engineering platform that could generate therapies for adjacent lysosomal storage disorders, but each indication has fewer than 5,000 patients globally.",
+        "challenge": {
+          "scenario": "You can pursue three strategic paths to reach $5B: (A) expand your current ERT into adjacent indications where the biology is well-understood but patient populations are very small (1,000-3,000 patients each), (B) acquire a gene therapy company targeting the same lysosomal storage disorders with potentially curative one-time treatments, or (C) diversify into larger rare disease populations (30,000+ patients) outside your current biology expertise. Which path best leverages franchise architecture principles?",
+          "options": [
+            "Option C — larger patient populations provide the revenue scale needed to reach $5B, and the rare disease commercial model transfers across indications",
+            "Option B — gene therapy will obsolete ERT, so acquiring the technology now is a defensive necessity regardless of franchise strategy",
+            "Option A — expanding into adjacent ultra-rare indications leverages your existing patient identification networks, KOL relationships, and regulatory expertise, creating a multi-product franchise with shared infrastructure that competitors cannot easily replicate"
+          ],
+          "correct": 2
+        },
+        "tip": "The power of rare disease franchise architecture is infrastructure leverage — once you have built the patient-finding, KOL, and regulatory apparatus for one ultra-rare indication, the marginal cost of adding adjacent indications is dramatically lower than a competitor starting from scratch."
+      },
+      "2": {
+        "definition": "The deliberate strategic construction of a rare disease business as a multi-product franchise rather than a single-product company, leveraging shared patient identification infrastructure, specialized sales forces, KOL networks, and regulatory expertise across related ultra-rare indications to create durable competitive advantages and recurring platform value.",
+        "scenarioDoneTo": "You are the President of Rare Disease at a specialty pharma company with one approved enzyme replacement therapy generating $1.2B in annual revenue. The board wants to grow the franchise to $5B within seven years. You have a proprietary enzyme engineering platform that could generate therapies for adjacent lysosomal storage disorders, but each indication has fewer than 5,000 patients globally.",
+        "challenge": {
+          "scenario": "You can pursue three strategic paths to reach $5B: (A) expand your current ERT into adjacent indications where the biology is well-understood but patient populations are very small (1,000-3,000 patients each), (B) acquire a gene therapy company targeting the same lysosomal storage disorders with potentially curative one-time treatments, or (C) diversify into larger rare disease populations (30,000+ patients) outside your current biology expertise. Which path best leverages franchise architecture principles?",
+          "options": [
+            "Option C — larger patient populations provide the revenue scale needed to reach $5B, and the rare disease commercial model transfers across indications",
+            "Option B — gene therapy will obsolete ERT, so acquiring the technology now is a defensive necessity regardless of franchise strategy",
+            "Option A — expanding into adjacent ultra-rare indications leverages your existing patient identification networks, KOL relationships, and regulatory expertise, creating a multi-product franchise with shared infrastructure that competitors cannot easily replicate"
+          ],
+          "correct": 2
+        },
+        "tip": "The power of rare disease franchise architecture is infrastructure leverage — once you have built the patient-finding, KOL, and regulatory apparatus for one ultra-rare indication, the marginal cost of adding adjacent indications is dramatically lower than a competitor starting from scratch."
+      },
+      "3": {
+        "definition": "The deliberate strategic construction of a rare disease business as a multi-product franchise rather than a single-product company, leveraging shared patient identification infrastructure, specialized sales forces, KOL networks, and regulatory expertise across related ultra-rare indications to create durable competitive advantages and recurring platform value.",
+        "scenarioDoneTo": "You are the President of Rare Disease at a specialty pharma company with one approved enzyme replacement therapy generating $1.2B in annual revenue. The board wants to grow the franchise to $5B within seven years. You have a proprietary enzyme engineering platform that could generate therapies for adjacent lysosomal storage disorders, but each indication has fewer than 5,000 patients globally.",
+        "challenge": {
+          "scenario": "You can pursue three strategic paths to reach $5B: (A) expand your current ERT into adjacent indications where the biology is well-understood but patient populations are very small (1,000-3,000 patients each), (B) acquire a gene therapy company targeting the same lysosomal storage disorders with potentially curative one-time treatments, or (C) diversify into larger rare disease populations (30,000+ patients) outside your current biology expertise. Which path best leverages franchise architecture principles?",
+          "options": [
+            "Option C — larger patient populations provide the revenue scale needed to reach $5B, and the rare disease commercial model transfers across indications",
+            "Option B — gene therapy will obsolete ERT, so acquiring the technology now is a defensive necessity regardless of franchise strategy",
+            "Option A — expanding into adjacent ultra-rare indications leverages your existing patient identification networks, KOL relationships, and regulatory expertise, creating a multi-product franchise with shared infrastructure that competitors cannot easily replicate"
+          ],
+          "correct": 2
+        },
+        "tip": "The power of rare disease franchise architecture is infrastructure leverage — once you have built the patient-finding, KOL, and regulatory apparatus for one ultra-rare indication, the marginal cost of adding adjacent indications is dramatically lower than a competitor starting from scratch."
+      }
+    }
+  },
+  {
+    "id": "board-risk-tolerance-phase-iii-bets",
+    "name": "Board-Level Risk Tolerance for Phase III Bets",
+    "tiers": {
+      "1": {
+        "definition": "The governance challenge of aligning board-level risk appetite with management's recommendation to commit hundreds of millions of dollars to Phase III clinical trials, where the binary outcome of success or failure can materially impact the company's valuation, balance sheet, and strategic trajectory.",
+        "scenarioDoneTo": "You are presenting to your board of directors requesting $450M to fund a Phase III program for a first-in-class Alzheimer's disease therapy. Phase II data showed a statistically significant but modest cognitive benefit. Your chief medical officer is confident, but two board members with pharma backgrounds are skeptical given the historical 97% failure rate of Alzheimer's drugs in Phase III. The decision will determine whether you remain an independent company.",
+        "challenge": {
+          "scenario": "The Phase II data showed a 25% slowing of cognitive decline versus placebo (p=0.03) in a 200-patient study over 18 months. The proposed Phase III requires 1,800 patients over 24 months at a cost of $450M. Your current cash position is $800M with no other late-stage assets. Two board members argue the company should partner the asset to share risk. Your head of R&D argues that partnering will give away 50% of the economics of what could be a $10B-per-year drug. What should you recommend to the board?",
+          "options": [
+            "Fund the Phase III independently — the Phase II data is strong enough, and giving away 50% of a potential blockbuster to a partner is unacceptable value destruction for shareholders",
+            "Partner the asset with a large pharma company that contributes 70% of Phase III costs in exchange for ex-US commercial rights, preserving US economics while de-risking the balance sheet enough to survive a trial failure",
+            "Shelve the Alzheimer's program entirely and redeploy the $450M into lower-risk indications where your mechanism has shown stronger preclinical signal"
+          ],
+          "correct": 1
+        },
+        "tip": "Board-level risk management is about survivability, not just expected value. When a single Phase III bet can bankrupt the company, the right answer is almost always to share the risk — owning 100% of nothing after a failed trial is worse than owning 50% of a blockbuster after a successful one."
+      },
+      "2": {
+        "definition": "The governance challenge of aligning board-level risk appetite with management's recommendation to commit hundreds of millions of dollars to Phase III clinical trials, where the binary outcome of success or failure can materially impact the company's valuation, balance sheet, and strategic trajectory.",
+        "scenarioDoneTo": "You are presenting to your board of directors requesting $450M to fund a Phase III program for a first-in-class Alzheimer's disease therapy. Phase II data showed a statistically significant but modest cognitive benefit. Your chief medical officer is confident, but two board members with pharma backgrounds are skeptical given the historical 97% failure rate of Alzheimer's drugs in Phase III. The decision will determine whether you remain an independent company.",
+        "challenge": {
+          "scenario": "The Phase II data showed a 25% slowing of cognitive decline versus placebo (p=0.03) in a 200-patient study over 18 months. The proposed Phase III requires 1,800 patients over 24 months at a cost of $450M. Your current cash position is $800M with no other late-stage assets. Two board members argue the company should partner the asset to share risk. Your head of R&D argues that partnering will give away 50% of the economics of what could be a $10B-per-year drug. What should you recommend to the board?",
+          "options": [
+            "Fund the Phase III independently — the Phase II data is strong enough, and giving away 50% of a potential blockbuster to a partner is unacceptable value destruction for shareholders",
+            "Partner the asset with a large pharma company that contributes 70% of Phase III costs in exchange for ex-US commercial rights, preserving US economics while de-risking the balance sheet enough to survive a trial failure",
+            "Shelve the Alzheimer's program entirely and redeploy the $450M into lower-risk indications where your mechanism has shown stronger preclinical signal"
+          ],
+          "correct": 1
+        },
+        "tip": "Board-level risk management is about survivability, not just expected value. When a single Phase III bet can bankrupt the company, the right answer is almost always to share the risk — owning 100% of nothing after a failed trial is worse than owning 50% of a blockbuster after a successful one."
+      },
+      "3": {
+        "definition": "The governance challenge of aligning board-level risk appetite with management's recommendation to commit hundreds of millions of dollars to Phase III clinical trials, where the binary outcome of success or failure can materially impact the company's valuation, balance sheet, and strategic trajectory.",
+        "scenarioDoneTo": "You are presenting to your board of directors requesting $450M to fund a Phase III program for a first-in-class Alzheimer's disease therapy. Phase II data showed a statistically significant but modest cognitive benefit. Your chief medical officer is confident, but two board members with pharma backgrounds are skeptical given the historical 97% failure rate of Alzheimer's drugs in Phase III. The decision will determine whether you remain an independent company.",
+        "challenge": {
+          "scenario": "The Phase II data showed a 25% slowing of cognitive decline versus placebo (p=0.03) in a 200-patient study over 18 months. The proposed Phase III requires 1,800 patients over 24 months at a cost of $450M. Your current cash position is $800M with no other late-stage assets. Two board members argue the company should partner the asset to share risk. Your head of R&D argues that partnering will give away 50% of the economics of what could be a $10B-per-year drug. What should you recommend to the board?",
+          "options": [
+            "Fund the Phase III independently — the Phase II data is strong enough, and giving away 50% of a potential blockbuster to a partner is unacceptable value destruction for shareholders",
+            "Partner the asset with a large pharma company that contributes 70% of Phase III costs in exchange for ex-US commercial rights, preserving US economics while de-risking the balance sheet enough to survive a trial failure",
+            "Shelve the Alzheimer's program entirely and redeploy the $450M into lower-risk indications where your mechanism has shown stronger preclinical signal"
+          ],
+          "correct": 1
+        },
+        "tip": "Board-level risk management is about survivability, not just expected value. When a single Phase III bet can bankrupt the company, the right answer is almost always to share the risk — owning 100% of nothing after a failed trial is worse than owning 50% of a blockbuster after a successful one."
+      }
+    }
+  }
+]
+
+**Summary of correct answer distribution:** Cards use indices 1, 1, 2, 1, 1, 1, 1, 0, 2, 1 — varied across 0, 1, and 2.

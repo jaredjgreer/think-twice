@@ -1,0 +1,482 @@
+[
+  {
+    "id": "cmc-strategy-biologics",
+    "name": "CMC Strategy for Biologics",
+    "tiers": {
+      "1": {
+        "definition": "CMC (Chemistry, Manufacturing, and Controls) strategy for biologics encompasses process characterization studies, comparability protocols for manufacturing changes, and cell line development decisions that collectively define product quality. Unlike small molecules, biologics are defined by their manufacturing process, making CMC strategy inseparable from clinical and regulatory planning. Key decisions include selecting expression systems, defining critical quality attributes (CQAs), and establishing process acceptable ranges through design of experiments.",
+        "scenarioDoneTo": "A biotech firm scaling from Phase 1 to Phase 3 must transfer its monoclonal antibody process to a larger bioreactor and demonstrate comparability of the product before and after the change.",
+        "challenge": {
+          "scenario": "Your company needs to change the manufacturing site for a monoclonal antibody between Phase 2 and Phase 3. The FDA expects a comparability protocol. Which element is MOST critical to include?",
+          "options": [
+            "A side-by-side analytical comparison of CQAs with pre-defined acceptance criteria and a statistical equivalence framework",
+            "A full repeat of Phase 1 clinical studies using material from the new site to re-establish safety",
+            "Submission of an entirely new IND application since the manufacturing process defines the biologic product"
+          ],
+          "correct": 0
+        },
+        "tip": "ICH Q5E governs comparability for biologics — analytical comparability with pre-specified CQA acceptance criteria is the cornerstone, not repeat clinical trials."
+      },
+      "2": {
+        "definition": "CMC (Chemistry, Manufacturing, and Controls) strategy for biologics encompasses process characterization studies, comparability protocols for manufacturing changes, and cell line development decisions that collectively define product quality. Unlike small molecules, biologics are defined by their manufacturing process, making CMC strategy inseparable from clinical and regulatory planning. Key decisions include selecting expression systems, defining critical quality attributes (CQAs), and establishing process acceptable ranges through design of experiments.",
+        "scenarioDoneTo": "A biotech firm scaling from Phase 1 to Phase 3 must transfer its monoclonal antibody process to a larger bioreactor and demonstrate comparability of the product before and after the change.",
+        "challenge": {
+          "scenario": "Your company needs to change the manufacturing site for a monoclonal antibody between Phase 2 and Phase 3. The FDA expects a comparability protocol. Which element is MOST critical to include?",
+          "options": [
+            "A side-by-side analytical comparison of CQAs with pre-defined acceptance criteria and a statistical equivalence framework",
+            "A full repeat of Phase 1 clinical studies using material from the new site to re-establish safety",
+            "Submission of an entirely new IND application since the manufacturing process defines the biologic product"
+          ],
+          "correct": 0
+        },
+        "tip": "ICH Q5E governs comparability for biologics — analytical comparability with pre-specified CQA acceptance criteria is the cornerstone, not repeat clinical trials."
+      },
+      "3": {
+        "definition": "CMC (Chemistry, Manufacturing, and Controls) strategy for biologics encompasses process characterization studies, comparability protocols for manufacturing changes, and cell line development decisions that collectively define product quality. Unlike small molecules, biologics are defined by their manufacturing process, making CMC strategy inseparable from clinical and regulatory planning. Key decisions include selecting expression systems, defining critical quality attributes (CQAs), and establishing process acceptable ranges through design of experiments.",
+        "scenarioDoneTo": "A biotech firm scaling from Phase 1 to Phase 3 must transfer its monoclonal antibody process to a larger bioreactor and demonstrate comparability of the product before and after the change.",
+        "challenge": {
+          "scenario": "Your company needs to change the manufacturing site for a monoclonal antibody between Phase 2 and Phase 3. The FDA expects a comparability protocol. Which element is MOST critical to include?",
+          "options": [
+            "A side-by-side analytical comparison of CQAs with pre-defined acceptance criteria and a statistical equivalence framework",
+            "A full repeat of Phase 1 clinical studies using material from the new site to re-establish safety",
+            "Submission of an entirely new IND application since the manufacturing process defines the biologic product"
+          ],
+          "correct": 0
+        },
+        "tip": "ICH Q5E governs comparability for biologics — analytical comparability with pre-specified CQA acceptance criteria is the cornerstone, not repeat clinical trials."
+      }
+    }
+  },
+  {
+    "id": "supply-chain-risk-management",
+    "name": "Supply Chain Risk Management",
+    "tiers": {
+      "1": {
+        "definition": "Pharmaceutical supply chain risk management involves identifying, assessing, and mitigating vulnerabilities across the entire value chain — from API sourcing and intermediate manufacturing through finished drug product distribution. Dual-source strategies, cold chain validation, and pandemic preparedness planning are essential components. Regulatory expectations under ICH Q10 and FDA's drug shortage guidance require sponsors to maintain supply continuity and quality oversight of all suppliers in the network.",
+        "scenarioDoneTo": "A global pharma company discovers its sole API supplier in China faces a regulatory shutdown, threatening commercial supply of a critical oncology drug with no therapeutic alternatives.",
+        "challenge": {
+          "scenario": "Post-COVID, your company sources a critical API from a single supplier. Leadership asks for a risk mitigation plan. What is the MOST strategically sound first step?",
+          "options": [
+            "Stockpile 24 months of API inventory to buffer against any future disruptions",
+            "Qualify a second API supplier in a different geographic region and file a prior-approval supplement with the FDA",
+            "Switch entirely to a synthetic route that can be manufactured in-house regardless of cost"
+          ],
+          "correct": 1
+        },
+        "tip": "Dual-sourcing with geographic diversification addresses both regulatory and geopolitical risk — stockpiling alone does not solve the underlying single-point-of-failure vulnerability."
+      },
+      "2": {
+        "definition": "Pharmaceutical supply chain risk management involves identifying, assessing, and mitigating vulnerabilities across the entire value chain — from API sourcing and intermediate manufacturing through finished drug product distribution. Dual-source strategies, cold chain validation, and pandemic preparedness planning are essential components. Regulatory expectations under ICH Q10 and FDA's drug shortage guidance require sponsors to maintain supply continuity and quality oversight of all suppliers in the network.",
+        "scenarioDoneTo": "A global pharma company discovers its sole API supplier in China faces a regulatory shutdown, threatening commercial supply of a critical oncology drug with no therapeutic alternatives.",
+        "challenge": {
+          "scenario": "Post-COVID, your company sources a critical API from a single supplier. Leadership asks for a risk mitigation plan. What is the MOST strategically sound first step?",
+          "options": [
+            "Stockpile 24 months of API inventory to buffer against any future disruptions",
+            "Qualify a second API supplier in a different geographic region and file a prior-approval supplement with the FDA",
+            "Switch entirely to a synthetic route that can be manufactured in-house regardless of cost"
+          ],
+          "correct": 1
+        },
+        "tip": "Dual-sourcing with geographic diversification addresses both regulatory and geopolitical risk — stockpiling alone does not solve the underlying single-point-of-failure vulnerability."
+      },
+      "3": {
+        "definition": "Pharmaceutical supply chain risk management involves identifying, assessing, and mitigating vulnerabilities across the entire value chain — from API sourcing and intermediate manufacturing through finished drug product distribution. Dual-source strategies, cold chain validation, and pandemic preparedness planning are essential components. Regulatory expectations under ICH Q10 and FDA's drug shortage guidance require sponsors to maintain supply continuity and quality oversight of all suppliers in the network.",
+        "scenarioDoneTo": "A global pharma company discovers its sole API supplier in China faces a regulatory shutdown, threatening commercial supply of a critical oncology drug with no therapeutic alternatives.",
+        "challenge": {
+          "scenario": "Post-COVID, your company sources a critical API from a single supplier. Leadership asks for a risk mitigation plan. What is the MOST strategically sound first step?",
+          "options": [
+            "Stockpile 24 months of API inventory to buffer against any future disruptions",
+            "Qualify a second API supplier in a different geographic region and file a prior-approval supplement with the FDA",
+            "Switch entirely to a synthetic route that can be manufactured in-house regardless of cost"
+          ],
+          "correct": 1
+        },
+        "tip": "Dual-sourcing with geographic diversification addresses both regulatory and geopolitical risk — stockpiling alone does not solve the underlying single-point-of-failure vulnerability."
+      }
+    }
+  },
+  {
+    "id": "patent-strategy-pharma",
+    "name": "Patent Strategy in Pharma",
+    "tiers": {
+      "1": {
+        "definition": "Pharmaceutical patent strategy under the Hatch-Waxman framework involves securing and extending market exclusivity through patent term extensions (PTE), Orange Book listings, and lifecycle management tactics. Patent term extensions compensate for time lost during FDA review, while Orange Book listings of drug substance, formulation, and method-of-use patents trigger automatic 30-month stays against ANDA filers. Strategic patent layering — sometimes called evergreening — involves filing successive patents on formulations, polymorphs, or dosing regimens to extend effective exclusivity beyond the original compound patent.",
+        "scenarioDoneTo": "A brand-name company's core compound patent expires in 18 months and multiple ANDA filers have submitted Paragraph IV certifications challenging listed Orange Book patents.",
+        "challenge": {
+          "scenario": "A generic company files an ANDA with a Paragraph IV certification against your Orange Book-listed patent. You have 45 days to respond. What happens if you file a patent infringement suit within that window?",
+          "options": [
+            "The FDA immediately denies the ANDA and the generic cannot launch until the patent expires",
+            "A 30-month stay is triggered, during which the FDA cannot grant final approval to the ANDA unless the court rules in the generic's favor sooner",
+            "The generic company must withdraw its ANDA and refile after the patent expiration date"
+          ],
+          "correct": 1
+        },
+        "tip": "The 30-month stay is automatic upon timely suit filing — it delays FDA approval but does not kill the ANDA; the litigation proceeds in parallel and can terminate the stay early."
+      },
+      "2": {
+        "definition": "Pharmaceutical patent strategy under the Hatch-Waxman framework involves securing and extending market exclusivity through patent term extensions (PTE), Orange Book listings, and lifecycle management tactics. Patent term extensions compensate for time lost during FDA review, while Orange Book listings of drug substance, formulation, and method-of-use patents trigger automatic 30-month stays against ANDA filers. Strategic patent layering — sometimes called evergreening — involves filing successive patents on formulations, polymorphs, or dosing regimens to extend effective exclusivity beyond the original compound patent.",
+        "scenarioDoneTo": "A brand-name company's core compound patent expires in 18 months and multiple ANDA filers have submitted Paragraph IV certifications challenging listed Orange Book patents.",
+        "challenge": {
+          "scenario": "A generic company files an ANDA with a Paragraph IV certification against your Orange Book-listed patent. You have 45 days to respond. What happens if you file a patent infringement suit within that window?",
+          "options": [
+            "The FDA immediately denies the ANDA and the generic cannot launch until the patent expires",
+            "A 30-month stay is triggered, during which the FDA cannot grant final approval to the ANDA unless the court rules in the generic's favor sooner",
+            "The generic company must withdraw its ANDA and refile after the patent expiration date"
+          ],
+          "correct": 1
+        },
+        "tip": "The 30-month stay is automatic upon timely suit filing — it delays FDA approval but does not kill the ANDA; the litigation proceeds in parallel and can terminate the stay early."
+      },
+      "3": {
+        "definition": "Pharmaceutical patent strategy under the Hatch-Waxman framework involves securing and extending market exclusivity through patent term extensions (PTE), Orange Book listings, and lifecycle management tactics. Patent term extensions compensate for time lost during FDA review, while Orange Book listings of drug substance, formulation, and method-of-use patents trigger automatic 30-month stays against ANDA filers. Strategic patent layering — sometimes called evergreening — involves filing successive patents on formulations, polymorphs, or dosing regimens to extend effective exclusivity beyond the original compound patent.",
+        "scenarioDoneTo": "A brand-name company's core compound patent expires in 18 months and multiple ANDA filers have submitted Paragraph IV certifications challenging listed Orange Book patents.",
+        "challenge": {
+          "scenario": "A generic company files an ANDA with a Paragraph IV certification against your Orange Book-listed patent. You have 45 days to respond. What happens if you file a patent infringement suit within that window?",
+          "options": [
+            "The FDA immediately denies the ANDA and the generic cannot launch until the patent expires",
+            "A 30-month stay is triggered, during which the FDA cannot grant final approval to the ANDA unless the court rules in the generic's favor sooner",
+            "The generic company must withdraw its ANDA and refile after the patent expiration date"
+          ],
+          "correct": 1
+        },
+        "tip": "The 30-month stay is automatic upon timely suit filing — it delays FDA approval but does not kill the ANDA; the litigation proceeds in parallel and can terminate the stay early."
+      }
+    }
+  },
+  {
+    "id": "fda-advisory-committee-prep",
+    "name": "FDA Advisory Committee Preparation",
+    "tiers": {
+      "1": {
+        "definition": "FDA Advisory Committee (AdCom) preparation is a high-stakes regulatory strategy encompassing briefing document development, Key Opinion Leader (KOL) management, and voting question negotiation. The sponsor's briefing document frames the benefit-risk narrative weeks before the meeting, while the FDA's own briefing document can reshape the discussion. Voting question framing is critical — the way questions are structured can influence whether the committee votes on overall benefit-risk versus individual safety signals, dramatically affecting outcomes.",
+        "scenarioDoneTo": "A sponsor faces an AdCom for a novel cardiovascular drug where the FDA's briefing document raises concerns about a numerical imbalance in MACE events, and the sponsor must present a compelling counter-narrative.",
+        "challenge": {
+          "scenario": "You are preparing for an FDA Advisory Committee meeting. The FDA proposes a voting question that isolates a specific safety signal rather than asking about overall benefit-risk. What is the BEST strategic response?",
+          "options": [
+            "Accept the FDA's proposed voting questions without modification to avoid appearing adversarial",
+            "Refuse to participate in the AdCom meeting and request a direct decision from the review division instead",
+            "Negotiate with the FDA to reframe the question to address integrated benefit-risk, supported by a pre-specified analysis contextualizing the safety signal"
+          ],
+          "correct": 2
+        },
+        "tip": "Voting question framing is negotiable — sponsors can and should propose alternative questions that contextualize safety within the overall benefit-risk framework rather than isolating signals."
+      },
+      "2": {
+        "definition": "FDA Advisory Committee (AdCom) preparation is a high-stakes regulatory strategy encompassing briefing document development, Key Opinion Leader (KOL) management, and voting question negotiation. The sponsor's briefing document frames the benefit-risk narrative weeks before the meeting, while the FDA's own briefing document can reshape the discussion. Voting question framing is critical — the way questions are structured can influence whether the committee votes on overall benefit-risk versus individual safety signals, dramatically affecting outcomes.",
+        "scenarioDoneTo": "A sponsor faces an AdCom for a novel cardiovascular drug where the FDA's briefing document raises concerns about a numerical imbalance in MACE events, and the sponsor must present a compelling counter-narrative.",
+        "challenge": {
+          "scenario": "You are preparing for an FDA Advisory Committee meeting. The FDA proposes a voting question that isolates a specific safety signal rather than asking about overall benefit-risk. What is the BEST strategic response?",
+          "options": [
+            "Accept the FDA's proposed voting questions without modification to avoid appearing adversarial",
+            "Refuse to participate in the AdCom meeting and request a direct decision from the review division instead",
+            "Negotiate with the FDA to reframe the question to address integrated benefit-risk, supported by a pre-specified analysis contextualizing the safety signal"
+          ],
+          "correct": 2
+        },
+        "tip": "Voting question framing is negotiable — sponsors can and should propose alternative questions that contextualize safety within the overall benefit-risk framework rather than isolating signals."
+      },
+      "3": {
+        "definition": "FDA Advisory Committee (AdCom) preparation is a high-stakes regulatory strategy encompassing briefing document development, Key Opinion Leader (KOL) management, and voting question negotiation. The sponsor's briefing document frames the benefit-risk narrative weeks before the meeting, while the FDA's own briefing document can reshape the discussion. Voting question framing is critical — the way questions are structured can influence whether the committee votes on overall benefit-risk versus individual safety signals, dramatically affecting outcomes.",
+        "scenarioDoneTo": "A sponsor faces an AdCom for a novel cardiovascular drug where the FDA's briefing document raises concerns about a numerical imbalance in MACE events, and the sponsor must present a compelling counter-narrative.",
+        "challenge": {
+          "scenario": "You are preparing for an FDA Advisory Committee meeting. The FDA proposes a voting question that isolates a specific safety signal rather than asking about overall benefit-risk. What is the BEST strategic response?",
+          "options": [
+            "Accept the FDA's proposed voting questions without modification to avoid appearing adversarial",
+            "Refuse to participate in the AdCom meeting and request a direct decision from the review division instead",
+            "Negotiate with the FDA to reframe the question to address integrated benefit-risk, supported by a pre-specified analysis contextualizing the safety signal"
+          ],
+          "correct": 2
+        },
+        "tip": "Voting question framing is negotiable — sponsors can and should propose alternative questions that contextualize safety within the overall benefit-risk framework rather than isolating signals."
+      }
+    }
+  },
+  {
+    "id": "accelerated-approval-confirmatory-trials",
+    "name": "Accelerated Approval Confirmatory Trials",
+    "tiers": {
+      "1": {
+        "definition": "Accelerated Approval under FDA's Subpart H (drugs) or Subpart E (biologics) grants marketing authorization based on surrogate endpoints reasonably likely to predict clinical benefit, contingent on post-marketing confirmatory trials verifying actual clinical benefit. The Accelerated Approval Integrity Act of 2023 strengthened FDA's authority to require and enforce confirmatory studies, including expedited withdrawal proceedings. Historical withdrawals — such as Avastin for breast cancer and Makena — illustrate the consequences when confirmatory trials fail to verify clinical benefit.",
+        "scenarioDoneTo": "An oncology drug received accelerated approval based on objective response rate, but the confirmatory trial shows no overall survival benefit and the FDA initiates withdrawal proceedings.",
+        "challenge": {
+          "scenario": "Your oncology drug received accelerated approval based on ORR. The confirmatory Phase 3 trial misses its overall survival primary endpoint. Under the Accelerated Approval Integrity Act, what is the FDA's enhanced authority?",
+          "options": [
+            "The FDA must wait for the sponsor to voluntarily withdraw before taking any action",
+            "The FDA can initiate expedited withdrawal proceedings without first going through the traditional lengthy hearing process",
+            "The FDA automatically converts the accelerated approval to a full approval if the drug shows any clinical activity"
+          ],
+          "correct": 1
+        },
+        "tip": "The 2023 Act replaced the cumbersome withdrawal hearing process with an expedited pathway, giving FDA meaningful enforcement tools when confirmatory trials fail."
+      },
+      "2": {
+        "definition": "Accelerated Approval under FDA's Subpart H (drugs) or Subpart E (biologics) grants marketing authorization based on surrogate endpoints reasonably likely to predict clinical benefit, contingent on post-marketing confirmatory trials verifying actual clinical benefit. The Accelerated Approval Integrity Act of 2023 strengthened FDA's authority to require and enforce confirmatory studies, including expedited withdrawal proceedings. Historical withdrawals — such as Avastin for breast cancer and Makena — illustrate the consequences when confirmatory trials fail to verify clinical benefit.",
+        "scenarioDoneTo": "An oncology drug received accelerated approval based on objective response rate, but the confirmatory trial shows no overall survival benefit and the FDA initiates withdrawal proceedings.",
+        "challenge": {
+          "scenario": "Your oncology drug received accelerated approval based on ORR. The confirmatory Phase 3 trial misses its overall survival primary endpoint. Under the Accelerated Approval Integrity Act, what is the FDA's enhanced authority?",
+          "options": [
+            "The FDA must wait for the sponsor to voluntarily withdraw before taking any action",
+            "The FDA can initiate expedited withdrawal proceedings without first going through the traditional lengthy hearing process",
+            "The FDA automatically converts the accelerated approval to a full approval if the drug shows any clinical activity"
+          ],
+          "correct": 1
+        },
+        "tip": "The 2023 Act replaced the cumbersome withdrawal hearing process with an expedited pathway, giving FDA meaningful enforcement tools when confirmatory trials fail."
+      },
+      "3": {
+        "definition": "Accelerated Approval under FDA's Subpart H (drugs) or Subpart E (biologics) grants marketing authorization based on surrogate endpoints reasonably likely to predict clinical benefit, contingent on post-marketing confirmatory trials verifying actual clinical benefit. The Accelerated Approval Integrity Act of 2023 strengthened FDA's authority to require and enforce confirmatory studies, including expedited withdrawal proceedings. Historical withdrawals — such as Avastin for breast cancer and Makena — illustrate the consequences when confirmatory trials fail to verify clinical benefit.",
+        "scenarioDoneTo": "An oncology drug received accelerated approval based on objective response rate, but the confirmatory trial shows no overall survival benefit and the FDA initiates withdrawal proceedings.",
+        "challenge": {
+          "scenario": "Your oncology drug received accelerated approval based on ORR. The confirmatory Phase 3 trial misses its overall survival primary endpoint. Under the Accelerated Approval Integrity Act, what is the FDA's enhanced authority?",
+          "options": [
+            "The FDA must wait for the sponsor to voluntarily withdraw before taking any action",
+            "The FDA can initiate expedited withdrawal proceedings without first going through the traditional lengthy hearing process",
+            "The FDA automatically converts the accelerated approval to a full approval if the drug shows any clinical activity"
+          ],
+          "correct": 1
+        },
+        "tip": "The 2023 Act replaced the cumbersome withdrawal hearing process with an expedited pathway, giving FDA meaningful enforcement tools when confirmatory trials fail."
+      }
+    }
+  },
+  {
+    "id": "gene-therapy-manufacturing-challenges",
+    "name": "Gene Therapy Manufacturing Challenges",
+    "tiers": {
+      "1": {
+        "definition": "Gene therapy manufacturing faces unique challenges centered on viral vector production (primarily AAV and lentivirus), potency assay development, lot-to-lot variability, and the scale-out versus scale-up paradigm. Unlike traditional biologics that scale up in larger bioreactors, many gene therapy processes rely on adherent cell culture or transient transfection, requiring scale-out across multiple production units. Potency assays must capture biological activity (not just vector genome titer), and lot-to-lot consistency remains a major GMP challenge due to the complexity of multi-plasmid transfection systems.",
+        "scenarioDoneTo": "A gene therapy company transitioning from Phase 1 to Phase 3 must dramatically increase AAV vector supply while maintaining consistent potency across manufacturing lots.",
+        "challenge": {
+          "scenario": "Your AAV gene therapy uses a triple-transfection HEK293 process. As you scale for Phase 3, you observe significant lot-to-lot variability in potency. What is the MOST likely root cause?",
+          "options": [
+            "Using the wrong AAV serotype for the target tissue, causing variable transduction efficiency",
+            "Inherent variability in transient transfection efficiency across production runs, compounded by differences in plasmid ratios, cell passage number, and transfection reagent lots",
+            "Regulatory requirements forcing different manufacturing protocols for each production lot"
+          ],
+          "correct": 1
+        },
+        "tip": "Transient transfection is inherently variable — stable producer cell lines or fixed suspension-based processes reduce lot-to-lot variability but require significant upfront development."
+      },
+      "2": {
+        "definition": "Gene therapy manufacturing faces unique challenges centered on viral vector production (primarily AAV and lentivirus), potency assay development, lot-to-lot variability, and the scale-out versus scale-up paradigm. Unlike traditional biologics that scale up in larger bioreactors, many gene therapy processes rely on adherent cell culture or transient transfection, requiring scale-out across multiple production units. Potency assays must capture biological activity (not just vector genome titer), and lot-to-lot consistency remains a major GMP challenge due to the complexity of multi-plasmid transfection systems.",
+        "scenarioDoneTo": "A gene therapy company transitioning from Phase 1 to Phase 3 must dramatically increase AAV vector supply while maintaining consistent potency across manufacturing lots.",
+        "challenge": {
+          "scenario": "Your AAV gene therapy uses a triple-transfection HEK293 process. As you scale for Phase 3, you observe significant lot-to-lot variability in potency. What is the MOST likely root cause?",
+          "options": [
+            "Using the wrong AAV serotype for the target tissue, causing variable transduction efficiency",
+            "Inherent variability in transient transfection efficiency across production runs, compounded by differences in plasmid ratios, cell passage number, and transfection reagent lots",
+            "Regulatory requirements forcing different manufacturing protocols for each production lot"
+          ],
+          "correct": 1
+        },
+        "tip": "Transient transfection is inherently variable — stable producer cell lines or fixed suspension-based processes reduce lot-to-lot variability but require significant upfront development."
+      },
+      "3": {
+        "definition": "Gene therapy manufacturing faces unique challenges centered on viral vector production (primarily AAV and lentivirus), potency assay development, lot-to-lot variability, and the scale-out versus scale-up paradigm. Unlike traditional biologics that scale up in larger bioreactors, many gene therapy processes rely on adherent cell culture or transient transfection, requiring scale-out across multiple production units. Potency assays must capture biological activity (not just vector genome titer), and lot-to-lot consistency remains a major GMP challenge due to the complexity of multi-plasmid transfection systems.",
+        "scenarioDoneTo": "A gene therapy company transitioning from Phase 1 to Phase 3 must dramatically increase AAV vector supply while maintaining consistent potency across manufacturing lots.",
+        "challenge": {
+          "scenario": "Your AAV gene therapy uses a triple-transfection HEK293 process. As you scale for Phase 3, you observe significant lot-to-lot variability in potency. What is the MOST likely root cause?",
+          "options": [
+            "Using the wrong AAV serotype for the target tissue, causing variable transduction efficiency",
+            "Inherent variability in transient transfection efficiency across production runs, compounded by differences in plasmid ratios, cell passage number, and transfection reagent lots",
+            "Regulatory requirements forcing different manufacturing protocols for each production lot"
+          ],
+          "correct": 1
+        },
+        "tip": "Transient transfection is inherently variable — stable producer cell lines or fixed suspension-based processes reduce lot-to-lot variability but require significant upfront development."
+      }
+    }
+  },
+  {
+    "id": "real-world-evidence-regulatory",
+    "name": "Real-World Evidence for Regulatory Decisions",
+    "tiers": {
+      "1": {
+        "definition": "Real-World Evidence (RWE) derived from Real-World Data (RWD) — including electronic health records, claims databases, registries, and digital health technologies — is increasingly used to support regulatory decision-making. FDA's RWE Framework emphasizes fit-for-purpose data quality, meaning the data source and analytical methods must match the specific regulatory question. External control arms using RWD can supplement single-arm trials, particularly in rare diseases or oncology, but require rigorous methodology to address confounding, missing data, and selection bias.",
+        "scenarioDoneTo": "A rare disease sponsor with a single-arm Phase 2 trial proposes using an external control arm derived from a natural history registry to support accelerated approval.",
+        "challenge": {
+          "scenario": "You propose using a natural history registry as an external control arm for your single-arm rare disease trial. The FDA asks you to demonstrate the data is 'fit for purpose.' What is the MOST important element to address?",
+          "options": [
+            "Showing that the registry was originally designed by an FDA-approved vendor using GCP-compliant data collection",
+            "Demonstrating that key variables (endpoints, covariates, inclusion criteria) in the registry align with the trial and that a pre-specified statistical plan addresses confounding and missing data",
+            "Proving that the registry contains at least 10,000 patients to ensure statistical power regardless of data quality"
+          ],
+          "correct": 1
+        },
+        "tip": "Fit-for-purpose means the data quality and relevance match the regulatory question — variable alignment, confounding adjustment, and missing data handling matter more than raw sample size or vendor credentials."
+      },
+      "2": {
+        "definition": "Real-World Evidence (RWE) derived from Real-World Data (RWD) — including electronic health records, claims databases, registries, and digital health technologies — is increasingly used to support regulatory decision-making. FDA's RWE Framework emphasizes fit-for-purpose data quality, meaning the data source and analytical methods must match the specific regulatory question. External control arms using RWD can supplement single-arm trials, particularly in rare diseases or oncology, but require rigorous methodology to address confounding, missing data, and selection bias.",
+        "scenarioDoneTo": "A rare disease sponsor with a single-arm Phase 2 trial proposes using an external control arm derived from a natural history registry to support accelerated approval.",
+        "challenge": {
+          "scenario": "You propose using a natural history registry as an external control arm for your single-arm rare disease trial. The FDA asks you to demonstrate the data is 'fit for purpose.' What is the MOST important element to address?",
+          "options": [
+            "Showing that the registry was originally designed by an FDA-approved vendor using GCP-compliant data collection",
+            "Demonstrating that key variables (endpoints, covariates, inclusion criteria) in the registry align with the trial and that a pre-specified statistical plan addresses confounding and missing data",
+            "Proving that the registry contains at least 10,000 patients to ensure statistical power regardless of data quality"
+          ],
+          "correct": 1
+        },
+        "tip": "Fit-for-purpose means the data quality and relevance match the regulatory question — variable alignment, confounding adjustment, and missing data handling matter more than raw sample size or vendor credentials."
+      },
+      "3": {
+        "definition": "Real-World Evidence (RWE) derived from Real-World Data (RWD) — including electronic health records, claims databases, registries, and digital health technologies — is increasingly used to support regulatory decision-making. FDA's RWE Framework emphasizes fit-for-purpose data quality, meaning the data source and analytical methods must match the specific regulatory question. External control arms using RWD can supplement single-arm trials, particularly in rare diseases or oncology, but require rigorous methodology to address confounding, missing data, and selection bias.",
+        "scenarioDoneTo": "A rare disease sponsor with a single-arm Phase 2 trial proposes using an external control arm derived from a natural history registry to support accelerated approval.",
+        "challenge": {
+          "scenario": "You propose using a natural history registry as an external control arm for your single-arm rare disease trial. The FDA asks you to demonstrate the data is 'fit for purpose.' What is the MOST important element to address?",
+          "options": [
+            "Showing that the registry was originally designed by an FDA-approved vendor using GCP-compliant data collection",
+            "Demonstrating that key variables (endpoints, covariates, inclusion criteria) in the registry align with the trial and that a pre-specified statistical plan addresses confounding and missing data",
+            "Proving that the registry contains at least 10,000 patients to ensure statistical power regardless of data quality"
+          ],
+          "correct": 1
+        },
+        "tip": "Fit-for-purpose means the data quality and relevance match the regulatory question — variable alignment, confounding adjustment, and missing data handling matter more than raw sample size or vendor credentials."
+      }
+    }
+  },
+  {
+    "id": "clinical-operations-excellence",
+    "name": "Clinical Operations Excellence",
+    "tiers": {
+      "1": {
+        "definition": "Clinical operations excellence encompasses site performance management, patient retention strategies, and risk-based monitoring (RBM) implementation to ensure trial quality and efficiency. Under ICH E6(R2), sponsors must adopt a risk-proportionate approach to monitoring, using centralized statistical monitoring to detect data anomalies across sites rather than relying solely on 100% source data verification. Key performance indicators — enrollment velocity, screen failure rates, protocol deviation frequency, and query resolution time — enable proactive site management and early intervention at underperforming sites.",
+        "scenarioDoneTo": "A Phase 3 cardiovascular outcomes trial across 200 sites in 30 countries is experiencing a 25% patient dropout rate and inconsistent data quality, requiring the clinical operations team to implement corrective measures.",
+        "challenge": {
+          "scenario": "Your global Phase 3 trial has 200 sites. Centralized statistical monitoring detects one site with unusually low variability in blood pressure readings and zero adverse events reported across 50 patients. What is the MOST appropriate action?",
+          "options": [
+            "Congratulate the site for excellent patient outcomes and use it as a model for other sites",
+            "Immediately close the site and exclude all its data from the final analysis",
+            "Trigger a targeted for-cause on-site audit to investigate potential data fabrication or systematic underreporting"
+          ],
+          "correct": 2
+        },
+        "tip": "Low data variability and zero AEs across many patients are classic signals of potential data fabrication — centralized monitoring exists precisely to detect these statistical anomalies and trigger for-cause audits."
+      },
+      "2": {
+        "definition": "Clinical operations excellence encompasses site performance management, patient retention strategies, and risk-based monitoring (RBM) implementation to ensure trial quality and efficiency. Under ICH E6(R2), sponsors must adopt a risk-proportionate approach to monitoring, using centralized statistical monitoring to detect data anomalies across sites rather than relying solely on 100% source data verification. Key performance indicators — enrollment velocity, screen failure rates, protocol deviation frequency, and query resolution time — enable proactive site management and early intervention at underperforming sites.",
+        "scenarioDoneTo": "A Phase 3 cardiovascular outcomes trial across 200 sites in 30 countries is experiencing a 25% patient dropout rate and inconsistent data quality, requiring the clinical operations team to implement corrective measures.",
+        "challenge": {
+          "scenario": "Your global Phase 3 trial has 200 sites. Centralized statistical monitoring detects one site with unusually low variability in blood pressure readings and zero adverse events reported across 50 patients. What is the MOST appropriate action?",
+          "options": [
+            "Congratulate the site for excellent patient outcomes and use it as a model for other sites",
+            "Immediately close the site and exclude all its data from the final analysis",
+            "Trigger a targeted for-cause on-site audit to investigate potential data fabrication or systematic underreporting"
+          ],
+          "correct": 2
+        },
+        "tip": "Low data variability and zero AEs across many patients are classic signals of potential data fabrication — centralized monitoring exists precisely to detect these statistical anomalies and trigger for-cause audits."
+      },
+      "3": {
+        "definition": "Clinical operations excellence encompasses site performance management, patient retention strategies, and risk-based monitoring (RBM) implementation to ensure trial quality and efficiency. Under ICH E6(R2), sponsors must adopt a risk-proportionate approach to monitoring, using centralized statistical monitoring to detect data anomalies across sites rather than relying solely on 100% source data verification. Key performance indicators — enrollment velocity, screen failure rates, protocol deviation frequency, and query resolution time — enable proactive site management and early intervention at underperforming sites.",
+        "scenarioDoneTo": "A Phase 3 cardiovascular outcomes trial across 200 sites in 30 countries is experiencing a 25% patient dropout rate and inconsistent data quality, requiring the clinical operations team to implement corrective measures.",
+        "challenge": {
+          "scenario": "Your global Phase 3 trial has 200 sites. Centralized statistical monitoring detects one site with unusually low variability in blood pressure readings and zero adverse events reported across 50 patients. What is the MOST appropriate action?",
+          "options": [
+            "Congratulate the site for excellent patient outcomes and use it as a model for other sites",
+            "Immediately close the site and exclude all its data from the final analysis",
+            "Trigger a targeted for-cause on-site audit to investigate potential data fabrication or systematic underreporting"
+          ],
+          "correct": 2
+        },
+        "tip": "Low data variability and zero AEs across many patients are classic signals of potential data fabrication — centralized monitoring exists precisely to detect these statistical anomalies and trigger for-cause audits."
+      }
+    }
+  },
+  {
+    "id": "medical-affairs-drug-development",
+    "name": "Medical Affairs in Drug Development",
+    "tiers": {
+      "1": {
+        "definition": "Medical Affairs functions as the scientific bridge between R&D and commercialization, encompassing publication planning, advisory board management, Medical Science Liaison (MSL) deployment, and evidence generation strategy. Publication planning follows GPP (Good Publication Practice) guidelines to ensure timely, transparent dissemination of clinical data. MSLs provide non-promotional scientific exchange with KOLs, while advisory boards must serve legitimate scientific purposes and comply with anti-kickback regulations. Integrated Evidence Plans (IEPs) align clinical, RWE, and health economics data generation across the product lifecycle.",
+        "scenarioDoneTo": "A Medical Affairs team is launching an MSL field force 18 months before anticipated approval of a first-in-class immunology drug, needing to build KOL relationships and gather medical insights without crossing into pre-launch promotion.",
+        "challenge": {
+          "scenario": "Your MSL team is engaging KOLs 12 months pre-launch. A KOL asks the MSL to provide specific dosing recommendations for off-label use in a patient population not studied in clinical trials. What should the MSL do?",
+          "options": [
+            "Provide the dosing recommendation since MSLs are classified as non-promotional and can share any scientific information",
+            "Share only the published clinical trial data and approved labeling, and document the unsolicited request while referring specific prescribing questions to the KOL's own clinical judgment",
+            "Decline all engagement with the KOL until after FDA approval to avoid any risk of pre-launch promotion"
+          ],
+          "correct": 1
+        },
+        "tip": "MSLs can respond to unsolicited requests with on-label data and published evidence but cannot proactively recommend off-label dosing — the line between scientific exchange and promotion is defined by the nature of the request and the response."
+      },
+      "2": {
+        "definition": "Medical Affairs functions as the scientific bridge between R&D and commercialization, encompassing publication planning, advisory board management, Medical Science Liaison (MSL) deployment, and evidence generation strategy. Publication planning follows GPP (Good Publication Practice) guidelines to ensure timely, transparent dissemination of clinical data. MSLs provide non-promotional scientific exchange with KOLs, while advisory boards must serve legitimate scientific purposes and comply with anti-kickback regulations. Integrated Evidence Plans (IEPs) align clinical, RWE, and health economics data generation across the product lifecycle.",
+        "scenarioDoneTo": "A Medical Affairs team is launching an MSL field force 18 months before anticipated approval of a first-in-class immunology drug, needing to build KOL relationships and gather medical insights without crossing into pre-launch promotion.",
+        "challenge": {
+          "scenario": "Your MSL team is engaging KOLs 12 months pre-launch. A KOL asks the MSL to provide specific dosing recommendations for off-label use in a patient population not studied in clinical trials. What should the MSL do?",
+          "options": [
+            "Provide the dosing recommendation since MSLs are classified as non-promotional and can share any scientific information",
+            "Share only the published clinical trial data and approved labeling, and document the unsolicited request while referring specific prescribing questions to the KOL's own clinical judgment",
+            "Decline all engagement with the KOL until after FDA approval to avoid any risk of pre-launch promotion"
+          ],
+          "correct": 1
+        },
+        "tip": "MSLs can respond to unsolicited requests with on-label data and published evidence but cannot proactively recommend off-label dosing — the line between scientific exchange and promotion is defined by the nature of the request and the response."
+      },
+      "3": {
+        "definition": "Medical Affairs functions as the scientific bridge between R&D and commercialization, encompassing publication planning, advisory board management, Medical Science Liaison (MSL) deployment, and evidence generation strategy. Publication planning follows GPP (Good Publication Practice) guidelines to ensure timely, transparent dissemination of clinical data. MSLs provide non-promotional scientific exchange with KOLs, while advisory boards must serve legitimate scientific purposes and comply with anti-kickback regulations. Integrated Evidence Plans (IEPs) align clinical, RWE, and health economics data generation across the product lifecycle.",
+        "scenarioDoneTo": "A Medical Affairs team is launching an MSL field force 18 months before anticipated approval of a first-in-class immunology drug, needing to build KOL relationships and gather medical insights without crossing into pre-launch promotion.",
+        "challenge": {
+          "scenario": "Your MSL team is engaging KOLs 12 months pre-launch. A KOL asks the MSL to provide specific dosing recommendations for off-label use in a patient population not studied in clinical trials. What should the MSL do?",
+          "options": [
+            "Provide the dosing recommendation since MSLs are classified as non-promotional and can share any scientific information",
+            "Share only the published clinical trial data and approved labeling, and document the unsolicited request while referring specific prescribing questions to the KOL's own clinical judgment",
+            "Decline all engagement with the KOL until after FDA approval to avoid any risk of pre-launch promotion"
+          ],
+          "correct": 1
+        },
+        "tip": "MSLs can respond to unsolicited requests with on-label data and published evidence but cannot proactively recommend off-label dosing — the line between scientific exchange and promotion is defined by the nature of the request and the response."
+      }
+    }
+  },
+  {
+    "id": "regulatory-intelligence",
+    "name": "Regulatory Intelligence",
+    "tiers": {
+      "1": {
+        "definition": "Regulatory Intelligence (RI) is the systematic tracking, analysis, and strategic interpretation of regulatory developments — including FDA guidance documents, Federal Register notices, docket comments, advisory committee outcomes, and competitive regulatory filings. Effective RI teams monitor regulations.gov dockets, track FDA's semi-annual Unified Agenda for upcoming rulemaking, analyze competitor approval packages via FDA review documents, and anticipate shifts in regulatory expectations. RI informs corporate strategy by translating regulatory signals into actionable development and filing decisions.",
+        "scenarioDoneTo": "A regulatory intelligence team identifies that the FDA has issued a draft guidance changing the endpoint expectations for a therapeutic area where their company has a Phase 3 asset approaching NDA submission.",
+        "challenge": {
+          "scenario": "FDA publishes a draft guidance proposing new primary endpoint requirements for your therapeutic area. Your Phase 3 trial is fully enrolled with the old endpoint. What is the MOST strategically sound RI-driven action?",
+          "options": [
+            "Ignore the draft guidance since it is not yet finalized and proceed with the current NDA submission plan unchanged",
+            "Immediately halt the trial and redesign it around the new proposed endpoint before enrolling additional patients",
+            "Submit a detailed docket comment during the public comment period while proactively requesting a Pre-NDA meeting to discuss alignment of existing data with the evolving regulatory expectations"
+          ],
+          "correct": 2
+        },
+        "tip": "Draft guidances signal FDA's thinking but aren't binding — the strategic move is to engage through public comments and direct FDA meetings to understand implications for your specific program rather than ignoring or overreacting."
+      },
+      "2": {
+        "definition": "Regulatory Intelligence (RI) is the systematic tracking, analysis, and strategic interpretation of regulatory developments — including FDA guidance documents, Federal Register notices, docket comments, advisory committee outcomes, and competitive regulatory filings. Effective RI teams monitor regulations.gov dockets, track FDA's semi-annual Unified Agenda for upcoming rulemaking, analyze competitor approval packages via FDA review documents, and anticipate shifts in regulatory expectations. RI informs corporate strategy by translating regulatory signals into actionable development and filing decisions.",
+        "scenarioDoneTo": "A regulatory intelligence team identifies that the FDA has issued a draft guidance changing the endpoint expectations for a therapeutic area where their company has a Phase 3 asset approaching NDA submission.",
+        "challenge": {
+          "scenario": "FDA publishes a draft guidance proposing new primary endpoint requirements for your therapeutic area. Your Phase 3 trial is fully enrolled with the old endpoint. What is the MOST strategically sound RI-driven action?",
+          "options": [
+            "Ignore the draft guidance since it is not yet finalized and proceed with the current NDA submission plan unchanged",
+            "Immediately halt the trial and redesign it around the new proposed endpoint before enrolling additional patients",
+            "Submit a detailed docket comment during the public comment period while proactively requesting a Pre-NDA meeting to discuss alignment of existing data with the evolving regulatory expectations"
+          ],
+          "correct": 2
+        },
+        "tip": "Draft guidances signal FDA's thinking but aren't binding — the strategic move is to engage through public comments and direct FDA meetings to understand implications for your specific program rather than ignoring or overreacting."
+      },
+      "3": {
+        "definition": "Regulatory Intelligence (RI) is the systematic tracking, analysis, and strategic interpretation of regulatory developments — including FDA guidance documents, Federal Register notices, docket comments, advisory committee outcomes, and competitive regulatory filings. Effective RI teams monitor regulations.gov dockets, track FDA's semi-annual Unified Agenda for upcoming rulemaking, analyze competitor approval packages via FDA review documents, and anticipate shifts in regulatory expectations. RI informs corporate strategy by translating regulatory signals into actionable development and filing decisions.",
+        "scenarioDoneTo": "A regulatory intelligence team identifies that the FDA has issued a draft guidance changing the endpoint expectations for a therapeutic area where their company has a Phase 3 asset approaching NDA submission.",
+        "challenge": {
+          "scenario": "FDA publishes a draft guidance proposing new primary endpoint requirements for your therapeutic area. Your Phase 3 trial is fully enrolled with the old endpoint. What is the MOST strategically sound RI-driven action?",
+          "options": [
+            "Ignore the draft guidance since it is not yet finalized and proceed with the current NDA submission plan unchanged",
+            "Immediately halt the trial and redesign it around the new proposed endpoint before enrolling additional patients",
+            "Submit a detailed docket comment during the public comment period while proactively requesting a Pre-NDA meeting to discuss alignment of existing data with the evolving regulatory expectations"
+          ],
+          "correct": 2
+        },
+        "tip": "Draft guidances signal FDA's thinking but aren't binding — the strategic move is to engage through public comments and direct FDA meetings to understand implications for your specific program rather than ignoring or overreacting."
+      }
+    }
+  }
+]

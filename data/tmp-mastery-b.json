@@ -1,0 +1,482 @@
+[
+  {
+    "id": "risk-benefit-assessment-frameworks",
+    "name": "Risk-Benefit Assessment Frameworks",
+    "tiers": {
+      "1": {
+        "definition": "Structured analytical frameworks used by FDA and other regulators to quantitatively and qualitatively weigh a drug's therapeutic benefits against its safety risks across the intended population. These include metrics like number needed to treat (NNT) and number needed to harm (NNH) ratios, the FDA's Benefit-Risk Framework with its five key dimensions, and Bayesian benefit-risk models such as multi-criteria decision analysis (MCDA) that assign weighted utilities to outcomes.",
+        "scenarioDoneTo": "An advisory committee is evaluating whether to recommend approval of a novel anticoagulant that reduces stroke by 30% relative to warfarin but carries a 15% higher rate of GI bleeding, requiring a formal benefit-risk framework to structure the vote.",
+        "challenge": {
+          "scenario": "A sponsor presents NNT of 12 for stroke prevention and NNH of 45 for major bleeding. An advisory committee member argues these metrics alone are insufficient for a recommendation. What is the most valid reason?",
+          "options": [
+            "NNT and NNH do not capture the severity differential between the benefit endpoint and the harm endpoint",
+            "NNT and NNH are only valid for superiority trials, not non-inferiority designs",
+            "FDA no longer accepts NNT/NNH calculations in briefing documents"
+          ],
+          "correct": 0
+        },
+        "tip": "NNT/NNH treat all events equally — a stroke prevented and a GI bleed caused are counted the same, ignoring that stroke may be far more devastating. Severity weighting requires frameworks like MCDA."
+      },
+      "2": {
+        "definition": "Structured analytical frameworks used by FDA and other regulators to quantitatively and qualitatively weigh a drug's therapeutic benefits against its safety risks across the intended population. These include metrics like number needed to treat (NNT) and number needed to harm (NNH) ratios, the FDA's Benefit-Risk Framework with its five key dimensions, and Bayesian benefit-risk models such as multi-criteria decision analysis (MCDA) that assign weighted utilities to outcomes.",
+        "scenarioDoneTo": "An advisory committee is evaluating whether to recommend approval of a novel anticoagulant that reduces stroke by 30% relative to warfarin but carries a 15% higher rate of GI bleeding, requiring a formal benefit-risk framework to structure the vote.",
+        "challenge": {
+          "scenario": "A sponsor presents NNT of 12 for stroke prevention and NNH of 45 for major bleeding. An advisory committee member argues these metrics alone are insufficient for a recommendation. What is the most valid reason?",
+          "options": [
+            "NNT and NNH do not capture the severity differential between the benefit endpoint and the harm endpoint",
+            "NNT and NNH are only valid for superiority trials, not non-inferiority designs",
+            "FDA no longer accepts NNT/NNH calculations in briefing documents"
+          ],
+          "correct": 0
+        },
+        "tip": "NNT/NNH treat all events equally — a stroke prevented and a GI bleed caused are counted the same, ignoring that stroke may be far more devastating. Severity weighting requires frameworks like MCDA."
+      },
+      "3": {
+        "definition": "Structured analytical frameworks used by FDA and other regulators to quantitatively and qualitatively weigh a drug's therapeutic benefits against its safety risks across the intended population. These include metrics like number needed to treat (NNT) and number needed to harm (NNH) ratios, the FDA's Benefit-Risk Framework with its five key dimensions, and Bayesian benefit-risk models such as multi-criteria decision analysis (MCDA) that assign weighted utilities to outcomes.",
+        "scenarioDoneTo": "An advisory committee is evaluating whether to recommend approval of a novel anticoagulant that reduces stroke by 30% relative to warfarin but carries a 15% higher rate of GI bleeding, requiring a formal benefit-risk framework to structure the vote.",
+        "challenge": {
+          "scenario": "A sponsor presents NNT of 12 for stroke prevention and NNH of 45 for major bleeding. An advisory committee member argues these metrics alone are insufficient for a recommendation. What is the most valid reason?",
+          "options": [
+            "NNT and NNH do not capture the severity differential between the benefit endpoint and the harm endpoint",
+            "NNT and NNH are only valid for superiority trials, not non-inferiority designs",
+            "FDA no longer accepts NNT/NNH calculations in briefing documents"
+          ],
+          "correct": 0
+        },
+        "tip": "NNT/NNH treat all events equally — a stroke prevented and a GI bleed caused are counted the same, ignoring that stroke may be far more devastating. Severity weighting requires frameworks like MCDA."
+      }
+    }
+  },
+  {
+    "id": "pediatric-development-requirements",
+    "name": "Pediatric Development Requirements",
+    "tiers": {
+      "1": {
+        "definition": "Regulatory mandates requiring sponsors to evaluate drugs in pediatric populations, including the Pediatric Research Equity Act (PREA) which requires pediatric studies for new active ingredients unless waived or deferred, and the EMA's Pediatric Investigation Plans (PIPs) required before MAA filing. Strategies include extrapolation of efficacy from adult data when disease progression and drug response are sufficiently similar, reducing the need for full pediatric efficacy trials while still requiring pediatric PK and safety data.",
+        "scenarioDoneTo": "A sponsor developing a JAK inhibitor for rheumatoid arthritis must submit an initial Pediatric Study Plan (iPSP) to FDA and file a PIP with EMA before the adult Phase 3 readout, requiring strategic decisions about age cohorts and extrapolation feasibility.",
+        "challenge": {
+          "scenario": "A sponsor seeks to extrapolate adult efficacy data to adolescents (12–17 years) for a new oral GLP-1 agonist in type 2 diabetes. FDA pushes back on the extrapolation approach. What is the most likely regulatory concern?",
+          "options": [
+            "GLP-1 agonists have never been studied in any pediatric population before",
+            "The pathophysiology of type 2 diabetes in adolescents differs meaningfully from adults, with greater beta-cell decline rates undermining the similarity assumption",
+            "Extrapolation is only permitted under EMA PIPs, not under FDA's PREA framework"
+          ],
+          "correct": 1
+        },
+        "tip": "Extrapolation requires that disease course and drug response be sufficiently similar between adults and children. Adolescent T2D features more aggressive beta-cell loss, which breaks the similarity assumption needed for extrapolation."
+      },
+      "2": {
+        "definition": "Regulatory mandates requiring sponsors to evaluate drugs in pediatric populations, including the Pediatric Research Equity Act (PREA) which requires pediatric studies for new active ingredients unless waived or deferred, and the EMA's Pediatric Investigation Plans (PIPs) required before MAA filing. Strategies include extrapolation of efficacy from adult data when disease progression and drug response are sufficiently similar, reducing the need for full pediatric efficacy trials while still requiring pediatric PK and safety data.",
+        "scenarioDoneTo": "A sponsor developing a JAK inhibitor for rheumatoid arthritis must submit an initial Pediatric Study Plan (iPSP) to FDA and file a PIP with EMA before the adult Phase 3 readout, requiring strategic decisions about age cohorts and extrapolation feasibility.",
+        "challenge": {
+          "scenario": "A sponsor seeks to extrapolate adult efficacy data to adolescents (12–17 years) for a new oral GLP-1 agonist in type 2 diabetes. FDA pushes back on the extrapolation approach. What is the most likely regulatory concern?",
+          "options": [
+            "GLP-1 agonists have never been studied in any pediatric population before",
+            "The pathophysiology of type 2 diabetes in adolescents differs meaningfully from adults, with greater beta-cell decline rates undermining the similarity assumption",
+            "Extrapolation is only permitted under EMA PIPs, not under FDA's PREA framework"
+          ],
+          "correct": 1
+        },
+        "tip": "Extrapolation requires that disease course and drug response be sufficiently similar between adults and children. Adolescent T2D features more aggressive beta-cell loss, which breaks the similarity assumption needed for extrapolation."
+      },
+      "3": {
+        "definition": "Regulatory mandates requiring sponsors to evaluate drugs in pediatric populations, including the Pediatric Research Equity Act (PREA) which requires pediatric studies for new active ingredients unless waived or deferred, and the EMA's Pediatric Investigation Plans (PIPs) required before MAA filing. Strategies include extrapolation of efficacy from adult data when disease progression and drug response are sufficiently similar, reducing the need for full pediatric efficacy trials while still requiring pediatric PK and safety data.",
+        "scenarioDoneTo": "A sponsor developing a JAK inhibitor for rheumatoid arthritis must submit an initial Pediatric Study Plan (iPSP) to FDA and file a PIP with EMA before the adult Phase 3 readout, requiring strategic decisions about age cohorts and extrapolation feasibility.",
+        "challenge": {
+          "scenario": "A sponsor seeks to extrapolate adult efficacy data to adolescents (12–17 years) for a new oral GLP-1 agonist in type 2 diabetes. FDA pushes back on the extrapolation approach. What is the most likely regulatory concern?",
+          "options": [
+            "GLP-1 agonists have never been studied in any pediatric population before",
+            "The pathophysiology of type 2 diabetes in adolescents differs meaningfully from adults, with greater beta-cell decline rates undermining the similarity assumption",
+            "Extrapolation is only permitted under EMA PIPs, not under FDA's PREA framework"
+          ],
+          "correct": 1
+        },
+        "tip": "Extrapolation requires that disease course and drug response be sufficiently similar between adults and children. Adolescent T2D features more aggressive beta-cell loss, which breaks the similarity assumption needed for extrapolation."
+      }
+    }
+  },
+  {
+    "id": "orphan-drug-strategy",
+    "name": "Orphan Drug Strategy",
+    "tiers": {
+      "1": {
+        "definition": "A regulatory and commercial strategy leveraging the Orphan Drug Act, which grants 7 years of marketing exclusivity in the US (10 years in the EU) for drugs treating rare diseases affecting fewer than 200,000 patients in the US. Key strategic considerations include the 'same disease or condition' determination that defines exclusivity scope, the clinical superiority exception allowing a second orphan drug for the same indication if it demonstrates superior efficacy or safety, and prevalence threshold calculations that must account for the entire eligible population.",
+        "scenarioDoneTo": "A biotech company developing a gene therapy for Duchenne muscular dystrophy discovers a competitor already holds orphan drug exclusivity for a different gene therapy in the same indication, requiring the sponsor to navigate the clinical superiority pathway.",
+        "challenge": {
+          "scenario": "A sponsor holds orphan exclusivity for Drug A in a rare lysosomal storage disorder. A competitor files a BLA for Drug B for the same condition claiming clinical superiority. Which evidence would be INSUFFICIENT to establish clinical superiority?",
+          "options": [
+            "Drug B demonstrates a statistically significant improvement in the primary efficacy endpoint over Drug A in a head-to-head trial",
+            "Drug B shows equivalent efficacy but eliminates a black box warning present on Drug A's label",
+            "Drug B uses a more convenient once-monthly dosing schedule compared to Drug A's weekly infusions"
+          ],
+          "correct": 2
+        },
+        "tip": "Clinical superiority under orphan drug regulations requires demonstrated greater efficacy, greater safety, or a major contribution to patient care — simple dosing convenience alone does not meet the statutory threshold without a meaningful clinical impact."
+      },
+      "2": {
+        "definition": "A regulatory and commercial strategy leveraging the Orphan Drug Act, which grants 7 years of marketing exclusivity in the US (10 years in the EU) for drugs treating rare diseases affecting fewer than 200,000 patients in the US. Key strategic considerations include the 'same disease or condition' determination that defines exclusivity scope, the clinical superiority exception allowing a second orphan drug for the same indication if it demonstrates superior efficacy or safety, and prevalence threshold calculations that must account for the entire eligible population.",
+        "scenarioDoneTo": "A biotech company developing a gene therapy for Duchenne muscular dystrophy discovers a competitor already holds orphan drug exclusivity for a different gene therapy in the same indication, requiring the sponsor to navigate the clinical superiority pathway.",
+        "challenge": {
+          "scenario": "A sponsor holds orphan exclusivity for Drug A in a rare lysosomal storage disorder. A competitor files a BLA for Drug B for the same condition claiming clinical superiority. Which evidence would be INSUFFICIENT to establish clinical superiority?",
+          "options": [
+            "Drug B demonstrates a statistically significant improvement in the primary efficacy endpoint over Drug A in a head-to-head trial",
+            "Drug B shows equivalent efficacy but eliminates a black box warning present on Drug A's label",
+            "Drug B uses a more convenient once-monthly dosing schedule compared to Drug A's weekly infusions"
+          ],
+          "correct": 2
+        },
+        "tip": "Clinical superiority under orphan drug regulations requires demonstrated greater efficacy, greater safety, or a major contribution to patient care — simple dosing convenience alone does not meet the statutory threshold without a meaningful clinical impact."
+      },
+      "3": {
+        "definition": "A regulatory and commercial strategy leveraging the Orphan Drug Act, which grants 7 years of marketing exclusivity in the US (10 years in the EU) for drugs treating rare diseases affecting fewer than 200,000 patients in the US. Key strategic considerations include the 'same disease or condition' determination that defines exclusivity scope, the clinical superiority exception allowing a second orphan drug for the same indication if it demonstrates superior efficacy or safety, and prevalence threshold calculations that must account for the entire eligible population.",
+        "scenarioDoneTo": "A biotech company developing a gene therapy for Duchenne muscular dystrophy discovers a competitor already holds orphan drug exclusivity for a different gene therapy in the same indication, requiring the sponsor to navigate the clinical superiority pathway.",
+        "challenge": {
+          "scenario": "A sponsor holds orphan exclusivity for Drug A in a rare lysosomal storage disorder. A competitor files a BLA for Drug B for the same condition claiming clinical superiority. Which evidence would be INSUFFICIENT to establish clinical superiority?",
+          "options": [
+            "Drug B demonstrates a statistically significant improvement in the primary efficacy endpoint over Drug A in a head-to-head trial",
+            "Drug B shows equivalent efficacy but eliminates a black box warning present on Drug A's label",
+            "Drug B uses a more convenient once-monthly dosing schedule compared to Drug A's weekly infusions"
+          ],
+          "correct": 2
+        },
+        "tip": "Clinical superiority under orphan drug regulations requires demonstrated greater efficacy, greater safety, or a major contribution to patient care — simple dosing convenience alone does not meet the statutory threshold without a meaningful clinical impact."
+      }
+    }
+  },
+  {
+    "id": "combination-product-development",
+    "name": "Combination Product Development",
+    "tiers": {
+      "1": {
+        "definition": "The co-development of a therapeutic product with an in vitro diagnostic (IVD) device, where a companion diagnostic (CDx) is required to identify eligible patients for safe and effective use of the drug, while a complementary diagnostic provides additional information but is not mandatory for prescribing. CDx devices typically require Premarket Approval (PMA) and must be approved or cleared contemporaneously with the therapeutic, requiring tightly coordinated development timelines between the drug sponsor and diagnostics partner.",
+        "scenarioDoneTo": "An oncology sponsor developing a KRAS G12C inhibitor must decide whether the biomarker test selecting patients is a companion diagnostic (requiring PMA submission to CDRH) or a complementary diagnostic, a decision that fundamentally shapes the regulatory strategy.",
+        "challenge": {
+          "scenario": "A sponsor developing an ADC with a novel biomarker-selected population negotiates with a diagnostics company for CDx co-development. The CDx PMA submission is delayed 6 months beyond the BLA filing date. What is the most critical regulatory consequence?",
+          "options": [
+            "FDA may refuse to file the BLA until the CDx PMA is submitted",
+            "The drug can still be approved but the label cannot reference the biomarker",
+            "FDA will approve the BLA but require the CDx PMA within 90 days post-approval"
+          ],
+          "correct": 0
+        },
+        "tip": "FDA expects contemporaneous CDx and therapeutic submissions. If the CDx is essential for safe and effective use per the label, FDA may issue a refuse-to-file letter for the BLA if the CDx PMA has not been submitted."
+      },
+      "2": {
+        "definition": "The co-development of a therapeutic product with an in vitro diagnostic (IVD) device, where a companion diagnostic (CDx) is required to identify eligible patients for safe and effective use of the drug, while a complementary diagnostic provides additional information but is not mandatory for prescribing. CDx devices typically require Premarket Approval (PMA) and must be approved or cleared contemporaneously with the therapeutic, requiring tightly coordinated development timelines between the drug sponsor and diagnostics partner.",
+        "scenarioDoneTo": "An oncology sponsor developing a KRAS G12C inhibitor must decide whether the biomarker test selecting patients is a companion diagnostic (requiring PMA submission to CDRH) or a complementary diagnostic, a decision that fundamentally shapes the regulatory strategy.",
+        "challenge": {
+          "scenario": "A sponsor developing an ADC with a novel biomarker-selected population negotiates with a diagnostics company for CDx co-development. The CDx PMA submission is delayed 6 months beyond the BLA filing date. What is the most critical regulatory consequence?",
+          "options": [
+            "FDA may refuse to file the BLA until the CDx PMA is submitted",
+            "The drug can still be approved but the label cannot reference the biomarker",
+            "FDA will approve the BLA but require the CDx PMA within 90 days post-approval"
+          ],
+          "correct": 0
+        },
+        "tip": "FDA expects contemporaneous CDx and therapeutic submissions. If the CDx is essential for safe and effective use per the label, FDA may issue a refuse-to-file letter for the BLA if the CDx PMA has not been submitted."
+      },
+      "3": {
+        "definition": "The co-development of a therapeutic product with an in vitro diagnostic (IVD) device, where a companion diagnostic (CDx) is required to identify eligible patients for safe and effective use of the drug, while a complementary diagnostic provides additional information but is not mandatory for prescribing. CDx devices typically require Premarket Approval (PMA) and must be approved or cleared contemporaneously with the therapeutic, requiring tightly coordinated development timelines between the drug sponsor and diagnostics partner.",
+        "scenarioDoneTo": "An oncology sponsor developing a KRAS G12C inhibitor must decide whether the biomarker test selecting patients is a companion diagnostic (requiring PMA submission to CDRH) or a complementary diagnostic, a decision that fundamentally shapes the regulatory strategy.",
+        "challenge": {
+          "scenario": "A sponsor developing an ADC with a novel biomarker-selected population negotiates with a diagnostics company for CDx co-development. The CDx PMA submission is delayed 6 months beyond the BLA filing date. What is the most critical regulatory consequence?",
+          "options": [
+            "FDA may refuse to file the BLA until the CDx PMA is submitted",
+            "The drug can still be approved but the label cannot reference the biomarker",
+            "FDA will approve the BLA but require the CDx PMA within 90 days post-approval"
+          ],
+          "correct": 0
+        },
+        "tip": "FDA expects contemporaneous CDx and therapeutic submissions. If the CDx is essential for safe and effective use per the label, FDA may issue a refuse-to-file letter for the BLA if the CDx PMA has not been submitted."
+      }
+    }
+  },
+  {
+    "id": "global-regulatory-harmonization",
+    "name": "Global Regulatory Harmonization",
+    "tiers": {
+      "1": {
+        "definition": "The international effort led by the International Council for Harmonisation (ICH) to align regulatory requirements across major markets (US, EU, Japan, and beyond), primarily through the Common Technical Document (CTD) format standardizing submission structure into five modules. ICH E5 provides a framework for bridging studies to extrapolate clinical data across ethnic populations, while regional differences in clinical requirements, manufacturing standards, and labeling persist despite harmonization efforts.",
+        "scenarioDoneTo": "A sponsor plans simultaneous NDA and MAA filings using a single CTD-formatted dossier, but must address regional clinical data requirements including a Japanese bridging study under ICH E5 guidelines to support PMDA submission.",
+        "challenge": {
+          "scenario": "A US-based sponsor with Phase 3 data from North American and European sites plans to file in Japan. PMDA requests a bridging study under ICH E5. What is the primary purpose of this bridging study?",
+          "options": [
+            "To repeat the full Phase 3 trial in a Japanese population as required by PMDA regulations",
+            "To demonstrate that the foreign clinical data can be extrapolated to the Japanese population by evaluating pharmacokinetic and pharmacodynamic similarities",
+            "To satisfy ICH requirements for including at least 100 Japanese patients in the global dataset"
+          ],
+          "correct": 1
+        },
+        "tip": "ICH E5 bridging studies are not full replications — they evaluate whether intrinsic (genetic, metabolic) and extrinsic (diet, medical practice) ethnic factors allow extrapolation of foreign data to the new population, typically via PK/PD comparisons."
+      },
+      "2": {
+        "definition": "The international effort led by the International Council for Harmonisation (ICH) to align regulatory requirements across major markets (US, EU, Japan, and beyond), primarily through the Common Technical Document (CTD) format standardizing submission structure into five modules. ICH E5 provides a framework for bridging studies to extrapolate clinical data across ethnic populations, while regional differences in clinical requirements, manufacturing standards, and labeling persist despite harmonization efforts.",
+        "scenarioDoneTo": "A sponsor plans simultaneous NDA and MAA filings using a single CTD-formatted dossier, but must address regional clinical data requirements including a Japanese bridging study under ICH E5 guidelines to support PMDA submission.",
+        "challenge": {
+          "scenario": "A US-based sponsor with Phase 3 data from North American and European sites plans to file in Japan. PMDA requests a bridging study under ICH E5. What is the primary purpose of this bridging study?",
+          "options": [
+            "To repeat the full Phase 3 trial in a Japanese population as required by PMDA regulations",
+            "To demonstrate that the foreign clinical data can be extrapolated to the Japanese population by evaluating pharmacokinetic and pharmacodynamic similarities",
+            "To satisfy ICH requirements for including at least 100 Japanese patients in the global dataset"
+          ],
+          "correct": 1
+        },
+        "tip": "ICH E5 bridging studies are not full replications — they evaluate whether intrinsic (genetic, metabolic) and extrinsic (diet, medical practice) ethnic factors allow extrapolation of foreign data to the new population, typically via PK/PD comparisons."
+      },
+      "3": {
+        "definition": "The international effort led by the International Council for Harmonisation (ICH) to align regulatory requirements across major markets (US, EU, Japan, and beyond), primarily through the Common Technical Document (CTD) format standardizing submission structure into five modules. ICH E5 provides a framework for bridging studies to extrapolate clinical data across ethnic populations, while regional differences in clinical requirements, manufacturing standards, and labeling persist despite harmonization efforts.",
+        "scenarioDoneTo": "A sponsor plans simultaneous NDA and MAA filings using a single CTD-formatted dossier, but must address regional clinical data requirements including a Japanese bridging study under ICH E5 guidelines to support PMDA submission.",
+        "challenge": {
+          "scenario": "A US-based sponsor with Phase 3 data from North American and European sites plans to file in Japan. PMDA requests a bridging study under ICH E5. What is the primary purpose of this bridging study?",
+          "options": [
+            "To repeat the full Phase 3 trial in a Japanese population as required by PMDA regulations",
+            "To demonstrate that the foreign clinical data can be extrapolated to the Japanese population by evaluating pharmacokinetic and pharmacodynamic similarities",
+            "To satisfy ICH requirements for including at least 100 Japanese patients in the global dataset"
+          ],
+          "correct": 1
+        },
+        "tip": "ICH E5 bridging studies are not full replications — they evaluate whether intrinsic (genetic, metabolic) and extrinsic (diet, medical practice) ethnic factors allow extrapolation of foreign data to the new population, typically via PK/PD comparisons."
+      }
+    }
+  },
+  {
+    "id": "drug-pricing-and-value-evidence",
+    "name": "Drug Pricing and Value Evidence",
+    "tiers": {
+      "1": {
+        "definition": "The systematic generation of health economic and outcomes research (HEOR) evidence to support drug pricing, reimbursement, and formulary access decisions. Central metrics include cost-per-QALY (quality-adjusted life year) evaluated against willingness-to-pay thresholds (commonly $50,000–$150,000/QALY in the US, with ICER assessments), outcomes-based contracts tying payment to real-world clinical results, and comprehensive payer evidence packages (dossiers) including budget impact models, indirect treatment comparisons, and real-world evidence.",
+        "scenarioDoneTo": "A specialty pharma company launching a gene therapy at $2.1 million per patient must build a value evidence package demonstrating long-term cost offsets and negotiate outcomes-based agreements with payers who question the upfront cost.",
+        "challenge": {
+          "scenario": "A sponsor's gene therapy shows a cost-per-QALY of $175,000 — above ICER's commonly cited $150,000/QALY threshold. The sponsor wants to secure broad commercial access. What is the strongest strategic approach?",
+          "options": [
+            "Price the therapy below the $150,000/QALY threshold to ensure automatic formulary inclusion",
+            "Offer outcomes-based contracts with installment payments contingent on sustained efficacy at 3- and 5-year milestones",
+            "Argue that ICER thresholds are advisory only and have no impact on payer decisions"
+          ],
+          "correct": 1
+        },
+        "tip": "Outcomes-based contracts with milestone-linked payments directly address payer uncertainty about long-term durability — the core concern with high-cost gene therapies — while maintaining the list price needed for the product's commercial viability."
+      },
+      "2": {
+        "definition": "The systematic generation of health economic and outcomes research (HEOR) evidence to support drug pricing, reimbursement, and formulary access decisions. Central metrics include cost-per-QALY (quality-adjusted life year) evaluated against willingness-to-pay thresholds (commonly $50,000–$150,000/QALY in the US, with ICER assessments), outcomes-based contracts tying payment to real-world clinical results, and comprehensive payer evidence packages (dossiers) including budget impact models, indirect treatment comparisons, and real-world evidence.",
+        "scenarioDoneTo": "A specialty pharma company launching a gene therapy at $2.1 million per patient must build a value evidence package demonstrating long-term cost offsets and negotiate outcomes-based agreements with payers who question the upfront cost.",
+        "challenge": {
+          "scenario": "A sponsor's gene therapy shows a cost-per-QALY of $175,000 — above ICER's commonly cited $150,000/QALY threshold. The sponsor wants to secure broad commercial access. What is the strongest strategic approach?",
+          "options": [
+            "Price the therapy below the $150,000/QALY threshold to ensure automatic formulary inclusion",
+            "Offer outcomes-based contracts with installment payments contingent on sustained efficacy at 3- and 5-year milestones",
+            "Argue that ICER thresholds are advisory only and have no impact on payer decisions"
+          ],
+          "correct": 1
+        },
+        "tip": "Outcomes-based contracts with milestone-linked payments directly address payer uncertainty about long-term durability — the core concern with high-cost gene therapies — while maintaining the list price needed for the product's commercial viability."
+      },
+      "3": {
+        "definition": "The systematic generation of health economic and outcomes research (HEOR) evidence to support drug pricing, reimbursement, and formulary access decisions. Central metrics include cost-per-QALY (quality-adjusted life year) evaluated against willingness-to-pay thresholds (commonly $50,000–$150,000/QALY in the US, with ICER assessments), outcomes-based contracts tying payment to real-world clinical results, and comprehensive payer evidence packages (dossiers) including budget impact models, indirect treatment comparisons, and real-world evidence.",
+        "scenarioDoneTo": "A specialty pharma company launching a gene therapy at $2.1 million per patient must build a value evidence package demonstrating long-term cost offsets and negotiate outcomes-based agreements with payers who question the upfront cost.",
+        "challenge": {
+          "scenario": "A sponsor's gene therapy shows a cost-per-QALY of $175,000 — above ICER's commonly cited $150,000/QALY threshold. The sponsor wants to secure broad commercial access. What is the strongest strategic approach?",
+          "options": [
+            "Price the therapy below the $150,000/QALY threshold to ensure automatic formulary inclusion",
+            "Offer outcomes-based contracts with installment payments contingent on sustained efficacy at 3- and 5-year milestones",
+            "Argue that ICER thresholds are advisory only and have no impact on payer decisions"
+          ],
+          "correct": 1
+        },
+        "tip": "Outcomes-based contracts with milestone-linked payments directly address payer uncertainty about long-term durability — the core concern with high-cost gene therapies — while maintaining the list price needed for the product's commercial viability."
+      }
+    }
+  },
+  {
+    "id": "post-marketing-safety-surveillance",
+    "name": "Post-Marketing Safety Surveillance",
+    "tiers": {
+      "1": {
+        "definition": "The ongoing systematic monitoring of drug safety after market approval, primarily conducted through FDA's Adverse Event Reporting System (FAERS) using data mining algorithms (empirical Bayesian and proportional reporting ratios) to detect safety signals. When new risks emerge, FDA may require modifications to Risk Evaluation and Mitigation Strategies (REMS), mandate label changes, or conduct formal benefit-risk reassessments that can result in market withdrawal. Post-marketing requirements (PMRs) and post-marketing commitments (PMCs) represent enforceable and voluntary obligations, respectively.",
+        "scenarioDoneTo": "FAERS data mining identifies a disproportionate signal for progressive multifocal leukoencephalopathy (PML) in patients taking an approved immunosuppressant, triggering a safety review that may require a new REMS with elements to assure safe use (ETASU).",
+        "challenge": {
+          "scenario": "Two years post-approval, FAERS signal detection identifies a disproportionality signal for hepatotoxicity with a new NASH drug. The sponsor already has a REMS with a Medication Guide. FDA determines the signal is validated. What is the most appropriate next regulatory action?",
+          "options": [
+            "Immediately withdraw the drug from the market based on the FAERS signal alone",
+            "Require the sponsor to modify the REMS to include Elements to Assure Safe Use (ETASU) such as mandatory liver function monitoring and a restricted distribution program",
+            "Issue an untitled letter asking the sponsor to voluntarily update the Medication Guide"
+          ],
+          "correct": 1
+        },
+        "tip": "A validated FAERS signal for serious hepatotoxicity warrants REMS escalation to ETASU — not withdrawal (which requires a formal determination that risks outweigh benefits) and not merely an untitled letter (which is for promotional violations, not safety actions)."
+      },
+      "2": {
+        "definition": "The ongoing systematic monitoring of drug safety after market approval, primarily conducted through FDA's Adverse Event Reporting System (FAERS) using data mining algorithms (empirical Bayesian and proportional reporting ratios) to detect safety signals. When new risks emerge, FDA may require modifications to Risk Evaluation and Mitigation Strategies (REMS), mandate label changes, or conduct formal benefit-risk reassessments that can result in market withdrawal. Post-marketing requirements (PMRs) and post-marketing commitments (PMCs) represent enforceable and voluntary obligations, respectively.",
+        "scenarioDoneTo": "FAERS data mining identifies a disproportionate signal for progressive multifocal leukoencephalopathy (PML) in patients taking an approved immunosuppressant, triggering a safety review that may require a new REMS with elements to assure safe use (ETASU).",
+        "challenge": {
+          "scenario": "Two years post-approval, FAERS signal detection identifies a disproportionality signal for hepatotoxicity with a new NASH drug. The sponsor already has a REMS with a Medication Guide. FDA determines the signal is validated. What is the most appropriate next regulatory action?",
+          "options": [
+            "Immediately withdraw the drug from the market based on the FAERS signal alone",
+            "Require the sponsor to modify the REMS to include Elements to Assure Safe Use (ETASU) such as mandatory liver function monitoring and a restricted distribution program",
+            "Issue an untitled letter asking the sponsor to voluntarily update the Medication Guide"
+          ],
+          "correct": 1
+        },
+        "tip": "A validated FAERS signal for serious hepatotoxicity warrants REMS escalation to ETASU — not withdrawal (which requires a formal determination that risks outweigh benefits) and not merely an untitled letter (which is for promotional violations, not safety actions)."
+      },
+      "3": {
+        "definition": "The ongoing systematic monitoring of drug safety after market approval, primarily conducted through FDA's Adverse Event Reporting System (FAERS) using data mining algorithms (empirical Bayesian and proportional reporting ratios) to detect safety signals. When new risks emerge, FDA may require modifications to Risk Evaluation and Mitigation Strategies (REMS), mandate label changes, or conduct formal benefit-risk reassessments that can result in market withdrawal. Post-marketing requirements (PMRs) and post-marketing commitments (PMCs) represent enforceable and voluntary obligations, respectively.",
+        "scenarioDoneTo": "FAERS data mining identifies a disproportionate signal for progressive multifocal leukoencephalopathy (PML) in patients taking an approved immunosuppressant, triggering a safety review that may require a new REMS with elements to assure safe use (ETASU).",
+        "challenge": {
+          "scenario": "Two years post-approval, FAERS signal detection identifies a disproportionality signal for hepatotoxicity with a new NASH drug. The sponsor already has a REMS with a Medication Guide. FDA determines the signal is validated. What is the most appropriate next regulatory action?",
+          "options": [
+            "Immediately withdraw the drug from the market based on the FAERS signal alone",
+            "Require the sponsor to modify the REMS to include Elements to Assure Safe Use (ETASU) such as mandatory liver function monitoring and a restricted distribution program",
+            "Issue an untitled letter asking the sponsor to voluntarily update the Medication Guide"
+          ],
+          "correct": 1
+        },
+        "tip": "A validated FAERS signal for serious hepatotoxicity warrants REMS escalation to ETASU — not withdrawal (which requires a formal determination that risks outweigh benefits) and not merely an untitled letter (which is for promotional violations, not safety actions)."
+      }
+    }
+  },
+  {
+    "id": "clinical-trial-endpoint-selection",
+    "name": "Clinical Trial Endpoint Selection",
+    "tiers": {
+      "1": {
+        "definition": "The strategic selection and regulatory negotiation of primary, secondary, and exploratory endpoints in clinical trials, including composite endpoints that combine multiple clinical events to increase statistical power, hierarchical (gatekeeping) testing procedures to control type I error across multiple endpoints, and patient-reported outcomes (PROs) validated with instruments meeting FDA's PRO Guidance standards. Endpoint selection must balance clinical meaningfulness, regulatory acceptability, and statistical feasibility.",
+        "scenarioDoneTo": "A cardiovascular outcomes trial team must decide whether to use a three-component MACE composite (CV death, MI, stroke) as primary endpoint or test individual components hierarchically, knowing FDA will scrutinize whether the composite is driven by a single component.",
+        "challenge": {
+          "scenario": "A sponsor proposes a composite primary endpoint of CV death, MI, and hospitalization for heart failure in a Phase 3 trial. FDA raises concerns during the EOP2 meeting. What is the most likely regulatory objection?",
+          "options": [
+            "Composite endpoints are never accepted by FDA for cardiovascular outcomes trials",
+            "The components have vastly different clinical importance and the composite may be driven by the least clinically meaningful component (HF hospitalization), masking a null effect on mortality",
+            "FDA requires all composite endpoint components to individually achieve statistical significance"
+          ],
+          "correct": 1
+        },
+        "tip": "FDA scrutinizes composites where a softer component (like HF hospitalization) could drive the overall result while harder endpoints (CV death) show no benefit — this creates misleading efficacy conclusions. Components should be of similar clinical weight."
+      },
+      "2": {
+        "definition": "The strategic selection and regulatory negotiation of primary, secondary, and exploratory endpoints in clinical trials, including composite endpoints that combine multiple clinical events to increase statistical power, hierarchical (gatekeeping) testing procedures to control type I error across multiple endpoints, and patient-reported outcomes (PROs) validated with instruments meeting FDA's PRO Guidance standards. Endpoint selection must balance clinical meaningfulness, regulatory acceptability, and statistical feasibility.",
+        "scenarioDoneTo": "A cardiovascular outcomes trial team must decide whether to use a three-component MACE composite (CV death, MI, stroke) as primary endpoint or test individual components hierarchically, knowing FDA will scrutinize whether the composite is driven by a single component.",
+        "challenge": {
+          "scenario": "A sponsor proposes a composite primary endpoint of CV death, MI, and hospitalization for heart failure in a Phase 3 trial. FDA raises concerns during the EOP2 meeting. What is the most likely regulatory objection?",
+          "options": [
+            "Composite endpoints are never accepted by FDA for cardiovascular outcomes trials",
+            "The components have vastly different clinical importance and the composite may be driven by the least clinically meaningful component (HF hospitalization), masking a null effect on mortality",
+            "FDA requires all composite endpoint components to individually achieve statistical significance"
+          ],
+          "correct": 1
+        },
+        "tip": "FDA scrutinizes composites where a softer component (like HF hospitalization) could drive the overall result while harder endpoints (CV death) show no benefit — this creates misleading efficacy conclusions. Components should be of similar clinical weight."
+      },
+      "3": {
+        "definition": "The strategic selection and regulatory negotiation of primary, secondary, and exploratory endpoints in clinical trials, including composite endpoints that combine multiple clinical events to increase statistical power, hierarchical (gatekeeping) testing procedures to control type I error across multiple endpoints, and patient-reported outcomes (PROs) validated with instruments meeting FDA's PRO Guidance standards. Endpoint selection must balance clinical meaningfulness, regulatory acceptability, and statistical feasibility.",
+        "scenarioDoneTo": "A cardiovascular outcomes trial team must decide whether to use a three-component MACE composite (CV death, MI, stroke) as primary endpoint or test individual components hierarchically, knowing FDA will scrutinize whether the composite is driven by a single component.",
+        "challenge": {
+          "scenario": "A sponsor proposes a composite primary endpoint of CV death, MI, and hospitalization for heart failure in a Phase 3 trial. FDA raises concerns during the EOP2 meeting. What is the most likely regulatory objection?",
+          "options": [
+            "Composite endpoints are never accepted by FDA for cardiovascular outcomes trials",
+            "The components have vastly different clinical importance and the composite may be driven by the least clinically meaningful component (HF hospitalization), masking a null effect on mortality",
+            "FDA requires all composite endpoint components to individually achieve statistical significance"
+          ],
+          "correct": 1
+        },
+        "tip": "FDA scrutinizes composites where a softer component (like HF hospitalization) could drive the overall result while harder endpoints (CV death) show no benefit — this creates misleading efficacy conclusions. Components should be of similar clinical weight."
+      }
+    }
+  },
+  {
+    "id": "regulatory-pathway-selection",
+    "name": "Regulatory Pathway Selection",
+    "tiers": {
+      "1": {
+        "definition": "The strategic decision of which FDA regulatory pathway to pursue for a drug application: 505(b)(1) for full NDAs with complete safety and efficacy data packages; 505(b)(2) allowing reliance on FDA's prior findings of safety/efficacy for a referenced listed drug plus bridging studies; ANDAs under 505(j) for generic drugs demonstrating bioequivalence; and BLAs under the PHS Act for biological products. Pathway selection determines data requirements, development timelines, patent certification obligations, and exclusivity periods.",
+        "scenarioDoneTo": "A sponsor reformulating an approved oral drug into a long-acting injectable must choose between a full 505(b)(1) NDA and a 505(b)(2) application referencing the original drug's safety data, with significant implications for development cost and timeline.",
+        "challenge": {
+          "scenario": "A sponsor develops a novel extended-release formulation of an approved immediate-release drug (NDA holder: competitor). The sponsor has new bioavailability data but no independent efficacy trials. Which pathway is optimal?",
+          "options": [
+            "ANDA (505(j)) citing bioequivalence to the reference listed drug",
+            "Full 505(b)(1) NDA with a complete independent clinical data package",
+            "505(b)(2) NDA referencing the competitor's efficacy data with bridging PK studies demonstrating comparable exposure"
+          ],
+          "correct": 2
+        },
+        "tip": "505(b)(2) is designed for modifications of approved drugs — it lets you reference the original drug's safety and efficacy data while submitting only bridging studies (PK/BA) for the new formulation. An ANDA won't work because the formulation isn't bioequivalent to the RLD."
+      },
+      "2": {
+        "definition": "The strategic decision of which FDA regulatory pathway to pursue for a drug application: 505(b)(1) for full NDAs with complete safety and efficacy data packages; 505(b)(2) allowing reliance on FDA's prior findings of safety/efficacy for a referenced listed drug plus bridging studies; ANDAs under 505(j) for generic drugs demonstrating bioequivalence; and BLAs under the PHS Act for biological products. Pathway selection determines data requirements, development timelines, patent certification obligations, and exclusivity periods.",
+        "scenarioDoneTo": "A sponsor reformulating an approved oral drug into a long-acting injectable must choose between a full 505(b)(1) NDA and a 505(b)(2) application referencing the original drug's safety data, with significant implications for development cost and timeline.",
+        "challenge": {
+          "scenario": "A sponsor develops a novel extended-release formulation of an approved immediate-release drug (NDA holder: competitor). The sponsor has new bioavailability data but no independent efficacy trials. Which pathway is optimal?",
+          "options": [
+            "ANDA (505(j)) citing bioequivalence to the reference listed drug",
+            "Full 505(b)(1) NDA with a complete independent clinical data package",
+            "505(b)(2) NDA referencing the competitor's efficacy data with bridging PK studies demonstrating comparable exposure"
+          ],
+          "correct": 2
+        },
+        "tip": "505(b)(2) is designed for modifications of approved drugs — it lets you reference the original drug's safety and efficacy data while submitting only bridging studies (PK/BA) for the new formulation. An ANDA won't work because the formulation isn't bioequivalent to the RLD."
+      },
+      "3": {
+        "definition": "The strategic decision of which FDA regulatory pathway to pursue for a drug application: 505(b)(1) for full NDAs with complete safety and efficacy data packages; 505(b)(2) allowing reliance on FDA's prior findings of safety/efficacy for a referenced listed drug plus bridging studies; ANDAs under 505(j) for generic drugs demonstrating bioequivalence; and BLAs under the PHS Act for biological products. Pathway selection determines data requirements, development timelines, patent certification obligations, and exclusivity periods.",
+        "scenarioDoneTo": "A sponsor reformulating an approved oral drug into a long-acting injectable must choose between a full 505(b)(1) NDA and a 505(b)(2) application referencing the original drug's safety data, with significant implications for development cost and timeline.",
+        "challenge": {
+          "scenario": "A sponsor develops a novel extended-release formulation of an approved immediate-release drug (NDA holder: competitor). The sponsor has new bioavailability data but no independent efficacy trials. Which pathway is optimal?",
+          "options": [
+            "ANDA (505(j)) citing bioequivalence to the reference listed drug",
+            "Full 505(b)(1) NDA with a complete independent clinical data package",
+            "505(b)(2) NDA referencing the competitor's efficacy data with bridging PK studies demonstrating comparable exposure"
+          ],
+          "correct": 2
+        },
+        "tip": "505(b)(2) is designed for modifications of approved drugs — it lets you reference the original drug's safety and efficacy data while submitting only bridging studies (PK/BA) for the new formulation. An ANDA won't work because the formulation isn't bioequivalent to the RLD."
+      }
+    }
+  },
+  {
+    "id": "drug-development-partnerships",
+    "name": "Drug Development Partnerships",
+    "tiers": {
+      "1": {
+        "definition": "Structured commercial agreements between pharmaceutical companies for jointly developing and commercializing drug candidates, involving in-licensing (acquiring rights to an external asset) with deal structures that typically include upfront payments, development and regulatory milestone payments, sales-based royalties, and opt-in/opt-out decision points at key development stages. Co-development arrangements share costs, risks, and profits according to negotiated splits, with critical terms including territory rights, diligence obligations, and intellectual property ownership of improvements.",
+        "scenarioDoneTo": "A mid-size pharma company evaluating an in-licensing deal for a Phase 2 oncology asset must negotiate opt-in rights at Phase 2 data readout, balancing the upfront payment against the risk of the Phase 3 program failing while protecting against the licensor out-licensing to a competitor.",
+        "challenge": {
+          "scenario": "A biotech in-licenses a Phase 1 oncology asset with an opt-in right at end of Phase 2. The deal includes $30M upfront, up to $500M in milestones, and tiered royalties. At Phase 2 readout, the data shows modest efficacy (ORR 22%) in a competitive landscape. What is the most strategically sound decision?",
+          "options": [
+            "Exercise the opt-in immediately to lock in the asset before competitors bid",
+            "Allow the opt-in to lapse, forfeiting the $30M upfront but avoiding the significantly larger Phase 3 investment in a competitive market with modest efficacy",
+            "Renegotiate the royalty rates downward before exercising the opt-in"
+          ],
+          "correct": 1
+        },
+        "tip": "The opt-in/opt-out structure exists precisely for this scenario — it limits downside exposure. The $30M upfront is a sunk cost; the Phase 3 investment would be $200M+ with low probability of a competitive label given 22% ORR. Rational decision-making requires ignoring sunk costs."
+      },
+      "2": {
+        "definition": "Structured commercial agreements between pharmaceutical companies for jointly developing and commercializing drug candidates, involving in-licensing (acquiring rights to an external asset) with deal structures that typically include upfront payments, development and regulatory milestone payments, sales-based royalties, and opt-in/opt-out decision points at key development stages. Co-development arrangements share costs, risks, and profits according to negotiated splits, with critical terms including territory rights, diligence obligations, and intellectual property ownership of improvements.",
+        "scenarioDoneTo": "A mid-size pharma company evaluating an in-licensing deal for a Phase 2 oncology asset must negotiate opt-in rights at Phase 2 data readout, balancing the upfront payment against the risk of the Phase 3 program failing while protecting against the licensor out-licensing to a competitor.",
+        "challenge": {
+          "scenario": "A biotech in-licenses a Phase 1 oncology asset with an opt-in right at end of Phase 2. The deal includes $30M upfront, up to $500M in milestones, and tiered royalties. At Phase 2 readout, the data shows modest efficacy (ORR 22%) in a competitive landscape. What is the most strategically sound decision?",
+          "options": [
+            "Exercise the opt-in immediately to lock in the asset before competitors bid",
+            "Allow the opt-in to lapse, forfeiting the $30M upfront but avoiding the significantly larger Phase 3 investment in a competitive market with modest efficacy",
+            "Renegotiate the royalty rates downward before exercising the opt-in"
+          ],
+          "correct": 1
+        },
+        "tip": "The opt-in/opt-out structure exists precisely for this scenario — it limits downside exposure. The $30M upfront is a sunk cost; the Phase 3 investment would be $200M+ with low probability of a competitive label given 22% ORR. Rational decision-making requires ignoring sunk costs."
+      },
+      "3": {
+        "definition": "Structured commercial agreements between pharmaceutical companies for jointly developing and commercializing drug candidates, involving in-licensing (acquiring rights to an external asset) with deal structures that typically include upfront payments, development and regulatory milestone payments, sales-based royalties, and opt-in/opt-out decision points at key development stages. Co-development arrangements share costs, risks, and profits according to negotiated splits, with critical terms including territory rights, diligence obligations, and intellectual property ownership of improvements.",
+        "scenarioDoneTo": "A mid-size pharma company evaluating an in-licensing deal for a Phase 2 oncology asset must negotiate opt-in rights at Phase 2 data readout, balancing the upfront payment against the risk of the Phase 3 program failing while protecting against the licensor out-licensing to a competitor.",
+        "challenge": {
+          "scenario": "A biotech in-licenses a Phase 1 oncology asset with an opt-in right at end of Phase 2. The deal includes $30M upfront, up to $500M in milestones, and tiered royalties. At Phase 2 readout, the data shows modest efficacy (ORR 22%) in a competitive landscape. What is the most strategically sound decision?",
+          "options": [
+            "Exercise the opt-in immediately to lock in the asset before competitors bid",
+            "Allow the opt-in to lapse, forfeiting the $30M upfront but avoiding the significantly larger Phase 3 investment in a competitive market with modest efficacy",
+            "Renegotiate the royalty rates downward before exercising the opt-in"
+          ],
+          "correct": 1
+        },
+        "tip": "The opt-in/opt-out structure exists precisely for this scenario — it limits downside exposure. The $30M upfront is a sunk cost; the Phase 3 investment would be $200M+ with low probability of a competitive label given 22% ORR. Rational decision-making requires ignoring sunk costs."
+      }
+    }
+  }
+]

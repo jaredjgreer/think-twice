@@ -1,0 +1,482 @@
+[
+  {
+    "id": "digital-therapeutics-integration-strategy",
+    "name": "Digital Therapeutics Integration Strategy",
+    "tiers": {
+      "1": {
+        "definition": "Strategic approach to incorporating prescription digital therapeutics (PDTs) into a pharma company's portfolio, addressing unique challenges around FDA regulatory pathways (De Novo, 510(k)), reimbursement via digital health CPT codes, real-world evidence generation through continuous data streams, and integration with existing commercial infrastructure designed for pill-based products.",
+        "scenarioDoneTo": "You are a strategy lead at a mid-size pharma company that just acquired a prescription digital therapeutic for substance use disorder. The product has FDA authorization but minimal commercial traction, and your sales force has no experience detailing software-based therapies to physicians who are skeptical of non-pharmacological interventions.",
+        "challenge": {
+          "scenario": "Your company launches a prescription digital therapeutic alongside its oral medication for the same indication. Six months in, physician adoption is extremely low despite strong clinical data. What is the most likely root cause?",
+          "options": [
+            "Physicians lack a clear workflow for prescribing, activating, and monitoring a software-based therapy within existing EHR systems",
+            "The clinical trial design used a non-inferiority framework instead of superiority",
+            "The FDA's regulatory pathway for digital therapeutics is not recognized by most physicians as legitimate"
+          ],
+          "correct": 0
+        },
+        "tip": "Digital therapeutics fail not on clinical evidence but on workflow integration — if prescribing a PDT requires steps outside the physician's normal EHR workflow, adoption stalls regardless of efficacy data."
+      },
+      "2": {
+        "definition": "Strategic approach to incorporating prescription digital therapeutics (PDTs) into a pharma company's portfolio, addressing unique challenges around FDA regulatory pathways (De Novo, 510(k)), reimbursement via digital health CPT codes, real-world evidence generation through continuous data streams, and integration with existing commercial infrastructure designed for pill-based products.",
+        "scenarioDoneTo": "You are a strategy lead at a mid-size pharma company that just acquired a prescription digital therapeutic for substance use disorder. The product has FDA authorization but minimal commercial traction, and your sales force has no experience detailing software-based therapies to physicians who are skeptical of non-pharmacological interventions.",
+        "challenge": {
+          "scenario": "Your company launches a prescription digital therapeutic alongside its oral medication for the same indication. Six months in, physician adoption is extremely low despite strong clinical data. What is the most likely root cause?",
+          "options": [
+            "Physicians lack a clear workflow for prescribing, activating, and monitoring a software-based therapy within existing EHR systems",
+            "The clinical trial design used a non-inferiority framework instead of superiority",
+            "The FDA's regulatory pathway for digital therapeutics is not recognized by most physicians as legitimate"
+          ],
+          "correct": 0
+        },
+        "tip": "Digital therapeutics fail not on clinical evidence but on workflow integration — if prescribing a PDT requires steps outside the physician's normal EHR workflow, adoption stalls regardless of efficacy data."
+      },
+      "3": {
+        "definition": "Strategic approach to incorporating prescription digital therapeutics (PDTs) into a pharma company's portfolio, addressing unique challenges around FDA regulatory pathways (De Novo, 510(k)), reimbursement via digital health CPT codes, real-world evidence generation through continuous data streams, and integration with existing commercial infrastructure designed for pill-based products.",
+        "scenarioDoneTo": "You are a strategy lead at a mid-size pharma company that just acquired a prescription digital therapeutic for substance use disorder. The product has FDA authorization but minimal commercial traction, and your sales force has no experience detailing software-based therapies to physicians who are skeptical of non-pharmacological interventions.",
+        "challenge": {
+          "scenario": "Your company launches a prescription digital therapeutic alongside its oral medication for the same indication. Six months in, physician adoption is extremely low despite strong clinical data. What is the most likely root cause?",
+          "options": [
+            "Physicians lack a clear workflow for prescribing, activating, and monitoring a software-based therapy within existing EHR systems",
+            "The clinical trial design used a non-inferiority framework instead of superiority",
+            "The FDA's regulatory pathway for digital therapeutics is not recognized by most physicians as legitimate"
+          ],
+          "correct": 0
+        },
+        "tip": "Digital therapeutics fail not on clinical evidence but on workflow integration — if prescribing a PDT requires steps outside the physician's normal EHR workflow, adoption stalls regardless of efficacy data."
+      }
+    }
+  },
+  {
+    "id": "ai-ml-drug-discovery-portfolio",
+    "name": "AI/ML Impact on Drug Discovery Portfolio Decisions",
+    "tiers": {
+      "1": {
+        "definition": "The strategic implications of integrating artificial intelligence and machine learning into drug discovery, affecting portfolio decisions through accelerated target identification, predictive toxicology, de novo molecular design, and clinical trial optimization. The challenge lies not in the technology itself but in recalibrating portfolio governance, risk models, and capital allocation frameworks designed for traditional discovery timelines.",
+        "scenarioDoneTo": "You lead portfolio strategy at a top-20 pharma company. Your R&D team has deployed an AI platform that generates novel drug candidates 3x faster than traditional medicinal chemistry, but your stage-gate governance model and FTE allocation still assume 4-5 year discovery timelines. The board wants to know how AI changes the portfolio risk profile.",
+        "challenge": {
+          "scenario": "Your AI-driven discovery platform has generated 15 viable candidates in a therapeutic area where you historically advanced 3-4 per year. Your portfolio governance committee must decide how to adapt. What is the most strategically sound response?",
+          "options": [
+            "Advance all 15 candidates simultaneously to maximize the probability of at least one approval",
+            "Maintain the same number of advancing candidates but apply AI-generated predictive attrition models to select the highest-probability subset earlier",
+            "Pause AI-generated candidates until traditional validation methods can confirm each target independently"
+          ],
+          "correct": 1
+        },
+        "tip": "AI's greatest portfolio value is not generating more candidates but enabling smarter, earlier selection — shifting attrition left so you fail faster and cheaper, concentrating resources on the highest-probability molecules."
+      },
+      "2": {
+        "definition": "The strategic implications of integrating artificial intelligence and machine learning into drug discovery, affecting portfolio decisions through accelerated target identification, predictive toxicology, de novo molecular design, and clinical trial optimization. The challenge lies not in the technology itself but in recalibrating portfolio governance, risk models, and capital allocation frameworks designed for traditional discovery timelines.",
+        "scenarioDoneTo": "You lead portfolio strategy at a top-20 pharma company. Your R&D team has deployed an AI platform that generates novel drug candidates 3x faster than traditional medicinal chemistry, but your stage-gate governance model and FTE allocation still assume 4-5 year discovery timelines. The board wants to know how AI changes the portfolio risk profile.",
+        "challenge": {
+          "scenario": "Your AI-driven discovery platform has generated 15 viable candidates in a therapeutic area where you historically advanced 3-4 per year. Your portfolio governance committee must decide how to adapt. What is the most strategically sound response?",
+          "options": [
+            "Advance all 15 candidates simultaneously to maximize the probability of at least one approval",
+            "Maintain the same number of advancing candidates but apply AI-generated predictive attrition models to select the highest-probability subset earlier",
+            "Pause AI-generated candidates until traditional validation methods can confirm each target independently"
+          ],
+          "correct": 1
+        },
+        "tip": "AI's greatest portfolio value is not generating more candidates but enabling smarter, earlier selection — shifting attrition left so you fail faster and cheaper, concentrating resources on the highest-probability molecules."
+      },
+      "3": {
+        "definition": "The strategic implications of integrating artificial intelligence and machine learning into drug discovery, affecting portfolio decisions through accelerated target identification, predictive toxicology, de novo molecular design, and clinical trial optimization. The challenge lies not in the technology itself but in recalibrating portfolio governance, risk models, and capital allocation frameworks designed for traditional discovery timelines.",
+        "scenarioDoneTo": "You lead portfolio strategy at a top-20 pharma company. Your R&D team has deployed an AI platform that generates novel drug candidates 3x faster than traditional medicinal chemistry, but your stage-gate governance model and FTE allocation still assume 4-5 year discovery timelines. The board wants to know how AI changes the portfolio risk profile.",
+        "challenge": {
+          "scenario": "Your AI-driven discovery platform has generated 15 viable candidates in a therapeutic area where you historically advanced 3-4 per year. Your portfolio governance committee must decide how to adapt. What is the most strategically sound response?",
+          "options": [
+            "Advance all 15 candidates simultaneously to maximize the probability of at least one approval",
+            "Maintain the same number of advancing candidates but apply AI-generated predictive attrition models to select the highest-probability subset earlier",
+            "Pause AI-generated candidates until traditional validation methods can confirm each target independently"
+          ],
+          "correct": 1
+        },
+        "tip": "AI's greatest portfolio value is not generating more candidates but enabling smarter, earlier selection — shifting attrition left so you fail faster and cheaper, concentrating resources on the highest-probability molecules."
+      }
+    }
+  },
+  {
+    "id": "esg-strategy-pharmaceutical",
+    "name": "ESG Strategy for Pharmaceutical Companies",
+    "tiers": {
+      "1": {
+        "definition": "The development and execution of Environmental, Social, and Governance strategies specific to pharmaceutical companies, where traditional ESG frameworks must be adapted to address drug pricing transparency, clinical trial diversity, antimicrobial resistance stewardship, supply chain environmental impact, and access-to-medicine commitments — all while managing investor expectations that ESG initiatives enhance rather than erode long-term shareholder value.",
+        "scenarioDoneTo": "You are the newly appointed Chief Sustainability Officer at a large pharma company. Institutional investors representing 40% of your shares are demanding a credible ESG strategy, but your CEO is concerned that aggressive access-to-medicine commitments will pressure margins. Meanwhile, the Access to Medicine Index ranking is about to be published.",
+        "challenge": {
+          "scenario": "An institutional investor group demands your pharma company set measurable ESG targets. Your leadership team disagrees on priorities. Which ESG initiative is MOST likely to create durable competitive advantage while satisfying both investor and public stakeholder expectations?",
+          "options": [
+            "Committing to carbon-neutral manufacturing operations by a fixed target date",
+            "Publishing an annual diversity report on corporate board composition and executive demographics",
+            "Establishing a tiered pricing framework linked to country income levels with transparent reporting on patient reach in LMICs"
+          ],
+          "correct": 2
+        },
+        "tip": "For pharma specifically, access-to-medicine and pricing transparency are the ESG dimensions with the highest materiality — they directly connect to the industry's social license to operate and are weighted most heavily by pharma-specific ESG indices."
+      },
+      "2": {
+        "definition": "The development and execution of Environmental, Social, and Governance strategies specific to pharmaceutical companies, where traditional ESG frameworks must be adapted to address drug pricing transparency, clinical trial diversity, antimicrobial resistance stewardship, supply chain environmental impact, and access-to-medicine commitments — all while managing investor expectations that ESG initiatives enhance rather than erode long-term shareholder value.",
+        "scenarioDoneTo": "You are the newly appointed Chief Sustainability Officer at a large pharma company. Institutional investors representing 40% of your shares are demanding a credible ESG strategy, but your CEO is concerned that aggressive access-to-medicine commitments will pressure margins. Meanwhile, the Access to Medicine Index ranking is about to be published.",
+        "challenge": {
+          "scenario": "An institutional investor group demands your pharma company set measurable ESG targets. Your leadership team disagrees on priorities. Which ESG initiative is MOST likely to create durable competitive advantage while satisfying both investor and public stakeholder expectations?",
+          "options": [
+            "Committing to carbon-neutral manufacturing operations by a fixed target date",
+            "Publishing an annual diversity report on corporate board composition and executive demographics",
+            "Establishing a tiered pricing framework linked to country income levels with transparent reporting on patient reach in LMICs"
+          ],
+          "correct": 2
+        },
+        "tip": "For pharma specifically, access-to-medicine and pricing transparency are the ESG dimensions with the highest materiality — they directly connect to the industry's social license to operate and are weighted most heavily by pharma-specific ESG indices."
+      },
+      "3": {
+        "definition": "The development and execution of Environmental, Social, and Governance strategies specific to pharmaceutical companies, where traditional ESG frameworks must be adapted to address drug pricing transparency, clinical trial diversity, antimicrobial resistance stewardship, supply chain environmental impact, and access-to-medicine commitments — all while managing investor expectations that ESG initiatives enhance rather than erode long-term shareholder value.",
+        "scenarioDoneTo": "You are the newly appointed Chief Sustainability Officer at a large pharma company. Institutional investors representing 40% of your shares are demanding a credible ESG strategy, but your CEO is concerned that aggressive access-to-medicine commitments will pressure margins. Meanwhile, the Access to Medicine Index ranking is about to be published.",
+        "challenge": {
+          "scenario": "An institutional investor group demands your pharma company set measurable ESG targets. Your leadership team disagrees on priorities. Which ESG initiative is MOST likely to create durable competitive advantage while satisfying both investor and public stakeholder expectations?",
+          "options": [
+            "Committing to carbon-neutral manufacturing operations by a fixed target date",
+            "Publishing an annual diversity report on corporate board composition and executive demographics",
+            "Establishing a tiered pricing framework linked to country income levels with transparent reporting on patient reach in LMICs"
+          ],
+          "correct": 2
+        },
+        "tip": "For pharma specifically, access-to-medicine and pricing transparency are the ESG dimensions with the highest materiality — they directly connect to the industry's social license to operate and are weighted most heavily by pharma-specific ESG indices."
+      }
+    }
+  },
+  {
+    "id": "talent-war-strategy-biotech",
+    "name": "Talent War Strategy in Biotech",
+    "tiers": {
+      "1": {
+        "definition": "Strategic approaches to attracting, retaining, and developing scarce specialized talent in biotechnology, where competition for scientists with niche expertise (gene therapy, cell therapy, computational biology) creates winner-take-all dynamics. Effective talent strategy extends beyond compensation to encompass scientific culture, publication freedom, equity participation structures, and career development pathways that differentiate a company in a market where top researchers can command multiple competing offers.",
+        "scenarioDoneTo": "You are the CHRO of a clinical-stage gene therapy company that has lost three senior scientists to a Big Pharma competitor in the last quarter. Your lead program is entering a pivotal trial, and the departing scientists held critical institutional knowledge about your manufacturing process. Your board is demanding a retention plan.",
+        "challenge": {
+          "scenario": "A clinical-stage biotech is hemorrhaging senior scientists to larger competitors offering 40% salary premiums. The CEO asks for a retention strategy. What approach is MOST effective for retaining top scientific talent at a biotech?",
+          "options": [
+            "Match competitor salaries across the board and implement retention bonuses tied to 2-year cliff vesting",
+            "Create a scientific advisory ladder with equity refresh grants, publication autonomy, and named-investigator status on key programs",
+            "Restrict non-compete agreements to prevent scientists from joining competitors within the therapeutic area"
+          ],
+          "correct": 1
+        },
+        "tip": "Top biotech scientists are motivated by scientific ownership and recognition more than pure compensation — a named role on a breakthrough program and freedom to publish creates stickiness that salary alone cannot match."
+      },
+      "2": {
+        "definition": "Strategic approaches to attracting, retaining, and developing scarce specialized talent in biotechnology, where competition for scientists with niche expertise (gene therapy, cell therapy, computational biology) creates winner-take-all dynamics. Effective talent strategy extends beyond compensation to encompass scientific culture, publication freedom, equity participation structures, and career development pathways that differentiate a company in a market where top researchers can command multiple competing offers.",
+        "scenarioDoneTo": "You are the CHRO of a clinical-stage gene therapy company that has lost three senior scientists to a Big Pharma competitor in the last quarter. Your lead program is entering a pivotal trial, and the departing scientists held critical institutional knowledge about your manufacturing process. Your board is demanding a retention plan.",
+        "challenge": {
+          "scenario": "A clinical-stage biotech is hemorrhaging senior scientists to larger competitors offering 40% salary premiums. The CEO asks for a retention strategy. What approach is MOST effective for retaining top scientific talent at a biotech?",
+          "options": [
+            "Match competitor salaries across the board and implement retention bonuses tied to 2-year cliff vesting",
+            "Create a scientific advisory ladder with equity refresh grants, publication autonomy, and named-investigator status on key programs",
+            "Restrict non-compete agreements to prevent scientists from joining competitors within the therapeutic area"
+          ],
+          "correct": 1
+        },
+        "tip": "Top biotech scientists are motivated by scientific ownership and recognition more than pure compensation — a named role on a breakthrough program and freedom to publish creates stickiness that salary alone cannot match."
+      },
+      "3": {
+        "definition": "Strategic approaches to attracting, retaining, and developing scarce specialized talent in biotechnology, where competition for scientists with niche expertise (gene therapy, cell therapy, computational biology) creates winner-take-all dynamics. Effective talent strategy extends beyond compensation to encompass scientific culture, publication freedom, equity participation structures, and career development pathways that differentiate a company in a market where top researchers can command multiple competing offers.",
+        "scenarioDoneTo": "You are the CHRO of a clinical-stage gene therapy company that has lost three senior scientists to a Big Pharma competitor in the last quarter. Your lead program is entering a pivotal trial, and the departing scientists held critical institutional knowledge about your manufacturing process. Your board is demanding a retention plan.",
+        "challenge": {
+          "scenario": "A clinical-stage biotech is hemorrhaging senior scientists to larger competitors offering 40% salary premiums. The CEO asks for a retention strategy. What approach is MOST effective for retaining top scientific talent at a biotech?",
+          "options": [
+            "Match competitor salaries across the board and implement retention bonuses tied to 2-year cliff vesting",
+            "Create a scientific advisory ladder with equity refresh grants, publication autonomy, and named-investigator status on key programs",
+            "Restrict non-compete agreements to prevent scientists from joining competitors within the therapeutic area"
+          ],
+          "correct": 1
+        },
+        "tip": "Top biotech scientists are motivated by scientific ownership and recognition more than pure compensation — a named role on a breakthrough program and freedom to publish creates stickiness that salary alone cannot match."
+      }
+    }
+  },
+  {
+    "id": "china-market-entry-innovative-medicines",
+    "name": "China Market Entry Strategy for Innovative Medicines",
+    "tiers": {
+      "1": {
+        "definition": "Strategic framework for entering China's pharmaceutical market with innovative therapies, navigating the NMPA regulatory pathway, National Reimbursement Drug List (NRDL) negotiations with aggressive price cuts, volume-based procurement (VBP) dynamics, data localization requirements, and intellectual property risks — all within a market that offers massive patient volume but requires fundamentally different commercial models than Western markets.",
+        "scenarioDoneTo": "You are the Head of International Strategy for a US biotech with a first-in-class oncology therapy. China represents 25% of the global patient population for your indication, but your management team is split between entering via a local partner versus building a wholly-owned subsidiary. The NMPA has recently accelerated review timelines for breakthrough therapies.",
+        "challenge": {
+          "scenario": "Your oncology drug receives NMPA approval. To achieve broad access, you must negotiate inclusion in the NRDL. What is the most critical strategic consideration during NRDL negotiation?",
+          "options": [
+            "Delaying NRDL inclusion until patent expiry is closer to maximize full-price commercial years",
+            "Securing the highest possible price to maintain global reference pricing parity with the US and EU",
+            "Accepting a significant price reduction in exchange for volume-driven revenue, while structuring the deal to minimize reference pricing spillover into other markets"
+          ],
+          "correct": 2
+        },
+        "tip": "NRDL negotiations typically demand 50-70% price cuts from list price — the strategic skill is accepting volume-for-price tradeoffs while using confidential rebate structures to limit international reference pricing contamination."
+      },
+      "2": {
+        "definition": "Strategic framework for entering China's pharmaceutical market with innovative therapies, navigating the NMPA regulatory pathway, National Reimbursement Drug List (NRDL) negotiations with aggressive price cuts, volume-based procurement (VBP) dynamics, data localization requirements, and intellectual property risks — all within a market that offers massive patient volume but requires fundamentally different commercial models than Western markets.",
+        "scenarioDoneTo": "You are the Head of International Strategy for a US biotech with a first-in-class oncology therapy. China represents 25% of the global patient population for your indication, but your management team is split between entering via a local partner versus building a wholly-owned subsidiary. The NMPA has recently accelerated review timelines for breakthrough therapies.",
+        "challenge": {
+          "scenario": "Your oncology drug receives NMPA approval. To achieve broad access, you must negotiate inclusion in the NRDL. What is the most critical strategic consideration during NRDL negotiation?",
+          "options": [
+            "Delaying NRDL inclusion until patent expiry is closer to maximize full-price commercial years",
+            "Securing the highest possible price to maintain global reference pricing parity with the US and EU",
+            "Accepting a significant price reduction in exchange for volume-driven revenue, while structuring the deal to minimize reference pricing spillover into other markets"
+          ],
+          "correct": 2
+        },
+        "tip": "NRDL negotiations typically demand 50-70% price cuts from list price — the strategic skill is accepting volume-for-price tradeoffs while using confidential rebate structures to limit international reference pricing contamination."
+      },
+      "3": {
+        "definition": "Strategic framework for entering China's pharmaceutical market with innovative therapies, navigating the NMPA regulatory pathway, National Reimbursement Drug List (NRDL) negotiations with aggressive price cuts, volume-based procurement (VBP) dynamics, data localization requirements, and intellectual property risks — all within a market that offers massive patient volume but requires fundamentally different commercial models than Western markets.",
+        "scenarioDoneTo": "You are the Head of International Strategy for a US biotech with a first-in-class oncology therapy. China represents 25% of the global patient population for your indication, but your management team is split between entering via a local partner versus building a wholly-owned subsidiary. The NMPA has recently accelerated review timelines for breakthrough therapies.",
+        "challenge": {
+          "scenario": "Your oncology drug receives NMPA approval. To achieve broad access, you must negotiate inclusion in the NRDL. What is the most critical strategic consideration during NRDL negotiation?",
+          "options": [
+            "Delaying NRDL inclusion until patent expiry is closer to maximize full-price commercial years",
+            "Securing the highest possible price to maintain global reference pricing parity with the US and EU",
+            "Accepting a significant price reduction in exchange for volume-driven revenue, while structuring the deal to minimize reference pricing spillover into other markets"
+          ],
+          "correct": 2
+        },
+        "tip": "NRDL negotiations typically demand 50-70% price cuts from list price — the strategic skill is accepting volume-for-price tradeoffs while using confidential rebate structures to limit international reference pricing contamination."
+      }
+    }
+  },
+  {
+    "id": "patent-strategy-lifecycle-management",
+    "name": "Patent Strategy and Lifecycle Management",
+    "tiers": {
+      "1": {
+        "definition": "The integrated approach to maximizing the commercial life of pharmaceutical products through strategic patent filing, patent term extensions (PTEs), Paragraph IV litigation defense, authorized generics, product line extensions (new formulations, new indications, pediatric exclusivity), and skinny labeling considerations — designed to delay or manage generic entry while maintaining market exclusivity beyond the base compound patent.",
+        "scenarioDoneTo": "You are the VP of Lifecycle Management for a blockbuster cardiovascular drug whose base compound patent expires in 18 months. Three generic companies have filed ANDAs with Paragraph IV certifications. Your company holds 12 additional patents covering formulation, polymorphs, and a method-of-use for a secondary indication.",
+        "challenge": {
+          "scenario": "Your blockbuster drug faces Paragraph IV ANDA challenges. You hold a polymorph patent, a formulation patent, and a method-of-use patent for a secondary indication. A generic company files a skinny label ANDA excluding the patented secondary indication. What is your MOST effective strategic response?",
+          "options": [
+            "File suit on all three patents to trigger the 30-month stay and delay generic entry as long as possible",
+            "Focus litigation resources on the formulation patent since skinny labels cannot avoid practicing the formulation, while monitoring for off-label promotional carve-out violations",
+            "Voluntarily delist the method-of-use patent from the Orange Book to simplify the litigation landscape"
+          ],
+          "correct": 1
+        },
+        "tip": "Skinny labels can carve out method-of-use patents but cannot avoid formulation patents — if the generic must use the same formulation to be bioequivalent, the formulation patent is the strongest litigation lever."
+      },
+      "2": {
+        "definition": "The integrated approach to maximizing the commercial life of pharmaceutical products through strategic patent filing, patent term extensions (PTEs), Paragraph IV litigation defense, authorized generics, product line extensions (new formulations, new indications, pediatric exclusivity), and skinny labeling considerations — designed to delay or manage generic entry while maintaining market exclusivity beyond the base compound patent.",
+        "scenarioDoneTo": "You are the VP of Lifecycle Management for a blockbuster cardiovascular drug whose base compound patent expires in 18 months. Three generic companies have filed ANDAs with Paragraph IV certifications. Your company holds 12 additional patents covering formulation, polymorphs, and a method-of-use for a secondary indication.",
+        "challenge": {
+          "scenario": "Your blockbuster drug faces Paragraph IV ANDA challenges. You hold a polymorph patent, a formulation patent, and a method-of-use patent for a secondary indication. A generic company files a skinny label ANDA excluding the patented secondary indication. What is your MOST effective strategic response?",
+          "options": [
+            "File suit on all three patents to trigger the 30-month stay and delay generic entry as long as possible",
+            "Focus litigation resources on the formulation patent since skinny labels cannot avoid practicing the formulation, while monitoring for off-label promotional carve-out violations",
+            "Voluntarily delist the method-of-use patent from the Orange Book to simplify the litigation landscape"
+          ],
+          "correct": 1
+        },
+        "tip": "Skinny labels can carve out method-of-use patents but cannot avoid formulation patents — if the generic must use the same formulation to be bioequivalent, the formulation patent is the strongest litigation lever."
+      },
+      "3": {
+        "definition": "The integrated approach to maximizing the commercial life of pharmaceutical products through strategic patent filing, patent term extensions (PTEs), Paragraph IV litigation defense, authorized generics, product line extensions (new formulations, new indications, pediatric exclusivity), and skinny labeling considerations — designed to delay or manage generic entry while maintaining market exclusivity beyond the base compound patent.",
+        "scenarioDoneTo": "You are the VP of Lifecycle Management for a blockbuster cardiovascular drug whose base compound patent expires in 18 months. Three generic companies have filed ANDAs with Paragraph IV certifications. Your company holds 12 additional patents covering formulation, polymorphs, and a method-of-use for a secondary indication.",
+        "challenge": {
+          "scenario": "Your blockbuster drug faces Paragraph IV ANDA challenges. You hold a polymorph patent, a formulation patent, and a method-of-use patent for a secondary indication. A generic company files a skinny label ANDA excluding the patented secondary indication. What is your MOST effective strategic response?",
+          "options": [
+            "File suit on all three patents to trigger the 30-month stay and delay generic entry as long as possible",
+            "Focus litigation resources on the formulation patent since skinny labels cannot avoid practicing the formulation, while monitoring for off-label promotional carve-out violations",
+            "Voluntarily delist the method-of-use patent from the Orange Book to simplify the litigation landscape"
+          ],
+          "correct": 1
+        },
+        "tip": "Skinny labels can carve out method-of-use patents but cannot avoid formulation patents — if the generic must use the same formulation to be bioequivalent, the formulation patent is the strongest litigation lever."
+      }
+    }
+  },
+  {
+    "id": "stakeholder-management-product-recall",
+    "name": "Stakeholder Management During a Product Recall",
+    "tiers": {
+      "1": {
+        "definition": "The coordinated management of multiple stakeholder groups during a pharmaceutical product recall, requiring simultaneous engagement with FDA (recall classification and strategy), healthcare providers (patient safety communications), patients (direct notifications and therapy transitions), payers (formulary adjustments), investors (material disclosure obligations), and media — where sequencing, message consistency, and transparent root cause communication determine whether a recall becomes a manageable event or an existential reputational crisis.",
+        "scenarioDoneTo": "You are the Chief Medical Officer of a pharma company that has just discovered a nitrosamine impurity above acceptable limits in three batches of your top-selling hypertension drug. The affected batches have been on the market for four months. FDA is classifying the recall, your stock is trading after hours, and a journalist has already called your communications team.",
+        "challenge": {
+          "scenario": "Your company initiates a Class II recall for a widely prescribed medication due to a manufacturing impurity. Within 48 hours, you must address FDA, physicians, patients, investors, and media. What is the MOST critical sequencing decision?",
+          "options": [
+            "Notify FDA and align on recall classification first, then simultaneously communicate to healthcare providers and issue investor disclosure before broader media engagement",
+            "Issue a press release to media first to control the narrative before FDA publishes the recall notice",
+            "Brief institutional investors first to prevent insider trading concerns, then coordinate with FDA on timing"
+          ],
+          "correct": 0
+        },
+        "tip": "Recall sequencing follows a regulatory-first principle — align with FDA on classification and strategy, then fan out to HCPs and investors simultaneously. Getting ahead of FDA with media creates regulatory antagonism; briefing investors first creates securities law risk."
+      },
+      "2": {
+        "definition": "The coordinated management of multiple stakeholder groups during a pharmaceutical product recall, requiring simultaneous engagement with FDA (recall classification and strategy), healthcare providers (patient safety communications), patients (direct notifications and therapy transitions), payers (formulary adjustments), investors (material disclosure obligations), and media — where sequencing, message consistency, and transparent root cause communication determine whether a recall becomes a manageable event or an existential reputational crisis.",
+        "scenarioDoneTo": "You are the Chief Medical Officer of a pharma company that has just discovered a nitrosamine impurity above acceptable limits in three batches of your top-selling hypertension drug. The affected batches have been on the market for four months. FDA is classifying the recall, your stock is trading after hours, and a journalist has already called your communications team.",
+        "challenge": {
+          "scenario": "Your company initiates a Class II recall for a widely prescribed medication due to a manufacturing impurity. Within 48 hours, you must address FDA, physicians, patients, investors, and media. What is the MOST critical sequencing decision?",
+          "options": [
+            "Notify FDA and align on recall classification first, then simultaneously communicate to healthcare providers and issue investor disclosure before broader media engagement",
+            "Issue a press release to media first to control the narrative before FDA publishes the recall notice",
+            "Brief institutional investors first to prevent insider trading concerns, then coordinate with FDA on timing"
+          ],
+          "correct": 0
+        },
+        "tip": "Recall sequencing follows a regulatory-first principle — align with FDA on classification and strategy, then fan out to HCPs and investors simultaneously. Getting ahead of FDA with media creates regulatory antagonism; briefing investors first creates securities law risk."
+      },
+      "3": {
+        "definition": "The coordinated management of multiple stakeholder groups during a pharmaceutical product recall, requiring simultaneous engagement with FDA (recall classification and strategy), healthcare providers (patient safety communications), patients (direct notifications and therapy transitions), payers (formulary adjustments), investors (material disclosure obligations), and media — where sequencing, message consistency, and transparent root cause communication determine whether a recall becomes a manageable event or an existential reputational crisis.",
+        "scenarioDoneTo": "You are the Chief Medical Officer of a pharma company that has just discovered a nitrosamine impurity above acceptable limits in three batches of your top-selling hypertension drug. The affected batches have been on the market for four months. FDA is classifying the recall, your stock is trading after hours, and a journalist has already called your communications team.",
+        "challenge": {
+          "scenario": "Your company initiates a Class II recall for a widely prescribed medication due to a manufacturing impurity. Within 48 hours, you must address FDA, physicians, patients, investors, and media. What is the MOST critical sequencing decision?",
+          "options": [
+            "Notify FDA and align on recall classification first, then simultaneously communicate to healthcare providers and issue investor disclosure before broader media engagement",
+            "Issue a press release to media first to control the narrative before FDA publishes the recall notice",
+            "Brief institutional investors first to prevent insider trading concerns, then coordinate with FDA on timing"
+          ],
+          "correct": 0
+        },
+        "tip": "Recall sequencing follows a regulatory-first principle — align with FDA on classification and strategy, then fan out to HCPs and investors simultaneously. Getting ahead of FDA with media creates regulatory antagonism; briefing investors first creates securities law risk."
+      }
+    }
+  },
+  {
+    "id": "navigating-340b-program-complexity",
+    "name": "Navigating 340B Program Complexity",
+    "tiers": {
+      "1": {
+        "definition": "Strategic navigation of the 340B Drug Pricing Program, which requires manufacturers participating in Medicaid to sell outpatient drugs at deeply discounted prices to covered entities (safety-net hospitals, FQHCs, hemophilia treatment centers). The program's complexity arises from contract pharmacy arrangements, duplicate discount prohibitions, lack of a universal claims-level identification system, and the tension between the program's original safety-net intent and its expansion into a significant revenue driver for large hospital systems.",
+        "scenarioDoneTo": "You are the Head of Market Access at a specialty pharma company. Your analysis reveals that 340B purchases now represent 28% of your total drug volume, but you suspect that a significant portion of discounted drugs are being dispensed to commercially insured patients through contract pharmacies, generating spread revenue that does not benefit uninsured or underinsured patients.",
+        "challenge": {
+          "scenario": "Your specialty drug's 340B utilization has grown 300% in three years, driven primarily by contract pharmacy arrangements. Analysis shows most 340B-acquired units are dispensed to commercially insured patients. What is the MOST strategically defensible action?",
+          "options": [
+            "Immediately restrict all contract pharmacy 340B access to protect net revenue and force covered entities to use in-house pharmacies",
+            "Implement a claims-level data sharing requirement with contract pharmacies to verify patient eligibility and prevent duplicate discounts while maintaining program access",
+            "Withdraw from the 340B program entirely to eliminate margin erosion on your specialty products"
+          ],
+          "correct": 1
+        },
+        "tip": "The 340B strategic sweet spot is data transparency, not access restriction — requiring claims-level data from contract pharmacies demonstrates good-faith program compliance while exposing inappropriate utilization, a position HRSA and courts have increasingly supported."
+      },
+      "2": {
+        "definition": "Strategic navigation of the 340B Drug Pricing Program, which requires manufacturers participating in Medicaid to sell outpatient drugs at deeply discounted prices to covered entities (safety-net hospitals, FQHCs, hemophilia treatment centers). The program's complexity arises from contract pharmacy arrangements, duplicate discount prohibitions, lack of a universal claims-level identification system, and the tension between the program's original safety-net intent and its expansion into a significant revenue driver for large hospital systems.",
+        "scenarioDoneTo": "You are the Head of Market Access at a specialty pharma company. Your analysis reveals that 340B purchases now represent 28% of your total drug volume, but you suspect that a significant portion of discounted drugs are being dispensed to commercially insured patients through contract pharmacies, generating spread revenue that does not benefit uninsured or underinsured patients.",
+        "challenge": {
+          "scenario": "Your specialty drug's 340B utilization has grown 300% in three years, driven primarily by contract pharmacy arrangements. Analysis shows most 340B-acquired units are dispensed to commercially insured patients. What is the MOST strategically defensible action?",
+          "options": [
+            "Immediately restrict all contract pharmacy 340B access to protect net revenue and force covered entities to use in-house pharmacies",
+            "Implement a claims-level data sharing requirement with contract pharmacies to verify patient eligibility and prevent duplicate discounts while maintaining program access",
+            "Withdraw from the 340B program entirely to eliminate margin erosion on your specialty products"
+          ],
+          "correct": 1
+        },
+        "tip": "The 340B strategic sweet spot is data transparency, not access restriction — requiring claims-level data from contract pharmacies demonstrates good-faith program compliance while exposing inappropriate utilization, a position HRSA and courts have increasingly supported."
+      },
+      "3": {
+        "definition": "Strategic navigation of the 340B Drug Pricing Program, which requires manufacturers participating in Medicaid to sell outpatient drugs at deeply discounted prices to covered entities (safety-net hospitals, FQHCs, hemophilia treatment centers). The program's complexity arises from contract pharmacy arrangements, duplicate discount prohibitions, lack of a universal claims-level identification system, and the tension between the program's original safety-net intent and its expansion into a significant revenue driver for large hospital systems.",
+        "scenarioDoneTo": "You are the Head of Market Access at a specialty pharma company. Your analysis reveals that 340B purchases now represent 28% of your total drug volume, but you suspect that a significant portion of discounted drugs are being dispensed to commercially insured patients through contract pharmacies, generating spread revenue that does not benefit uninsured or underinsured patients.",
+        "challenge": {
+          "scenario": "Your specialty drug's 340B utilization has grown 300% in three years, driven primarily by contract pharmacy arrangements. Analysis shows most 340B-acquired units are dispensed to commercially insured patients. What is the MOST strategically defensible action?",
+          "options": [
+            "Immediately restrict all contract pharmacy 340B access to protect net revenue and force covered entities to use in-house pharmacies",
+            "Implement a claims-level data sharing requirement with contract pharmacies to verify patient eligibility and prevent duplicate discounts while maintaining program access",
+            "Withdraw from the 340B program entirely to eliminate margin erosion on your specialty products"
+          ],
+          "correct": 1
+        },
+        "tip": "The 340B strategic sweet spot is data transparency, not access restriction — requiring claims-level data from contract pharmacies demonstrates good-faith program compliance while exposing inappropriate utilization, a position HRSA and courts have increasingly supported."
+      }
+    }
+  },
+  {
+    "id": "preparing-glp1-class-competition",
+    "name": "Preparing for GLP-1 Class Competition",
+    "tiers": {
+      "1": {
+        "definition": "Strategic preparation for intensifying competition in the GLP-1 receptor agonist class, where blockbuster incumbents face challenges from next-generation oral formulations, combination therapies (GLP-1/GIP/glucagon tri-agonists), and expanding indications beyond diabetes into obesity, NASH, cardiovascular risk reduction, and neurodegeneration — requiring companies to differentiate on efficacy magnitude, tolerability profile, dosing convenience, supply chain reliability, and payer value propositions in an increasingly crowded landscape.",
+        "scenarioDoneTo": "You are the franchise head for a large pharma company's GLP-1 portfolio. Your injectable GLP-1 has strong diabetes market share but a competitor's oral GLP-1 is gaining traction, a tri-agonist with superior weight loss data enters Phase 3, and supply constraints are limiting your ability to meet demand for the obesity indication.",
+        "challenge": {
+          "scenario": "Your injectable GLP-1 dominates in diabetes but faces a competitor's oral formulation gaining share and a tri-agonist with 25% weight loss data entering Phase 3. Supply is constrained. What is the MOST strategically sound competitive response?",
+          "options": [
+            "Reduce list price aggressively to win exclusive formulary positions before competitors can launch",
+            "Prioritize supply allocation to the obesity indication where growth is highest and margins are strongest",
+            "Accelerate development of differentiated combination approaches while securing supply chain capacity, and build real-world cardiovascular outcomes evidence to create formulary stickiness beyond weight loss"
+          ],
+          "correct": 2
+        },
+        "tip": "In a rapidly expanding class, sustainable competitive advantage comes from clinical differentiation (outcomes data beyond weight loss) and supply reliability — price wars in a demand-exceeding-supply market sacrifice margin without gaining share."
+      },
+      "2": {
+        "definition": "Strategic preparation for intensifying competition in the GLP-1 receptor agonist class, where blockbuster incumbents face challenges from next-generation oral formulations, combination therapies (GLP-1/GIP/glucagon tri-agonists), and expanding indications beyond diabetes into obesity, NASH, cardiovascular risk reduction, and neurodegeneration — requiring companies to differentiate on efficacy magnitude, tolerability profile, dosing convenience, supply chain reliability, and payer value propositions in an increasingly crowded landscape.",
+        "scenarioDoneTo": "You are the franchise head for a large pharma company's GLP-1 portfolio. Your injectable GLP-1 has strong diabetes market share but a competitor's oral GLP-1 is gaining traction, a tri-agonist with superior weight loss data enters Phase 3, and supply constraints are limiting your ability to meet demand for the obesity indication.",
+        "challenge": {
+          "scenario": "Your injectable GLP-1 dominates in diabetes but faces a competitor's oral formulation gaining share and a tri-agonist with 25% weight loss data entering Phase 3. Supply is constrained. What is the MOST strategically sound competitive response?",
+          "options": [
+            "Reduce list price aggressively to win exclusive formulary positions before competitors can launch",
+            "Prioritize supply allocation to the obesity indication where growth is highest and margins are strongest",
+            "Accelerate development of differentiated combination approaches while securing supply chain capacity, and build real-world cardiovascular outcomes evidence to create formulary stickiness beyond weight loss"
+          ],
+          "correct": 2
+        },
+        "tip": "In a rapidly expanding class, sustainable competitive advantage comes from clinical differentiation (outcomes data beyond weight loss) and supply reliability — price wars in a demand-exceeding-supply market sacrifice margin without gaining share."
+      },
+      "3": {
+        "definition": "Strategic preparation for intensifying competition in the GLP-1 receptor agonist class, where blockbuster incumbents face challenges from next-generation oral formulations, combination therapies (GLP-1/GIP/glucagon tri-agonists), and expanding indications beyond diabetes into obesity, NASH, cardiovascular risk reduction, and neurodegeneration — requiring companies to differentiate on efficacy magnitude, tolerability profile, dosing convenience, supply chain reliability, and payer value propositions in an increasingly crowded landscape.",
+        "scenarioDoneTo": "You are the franchise head for a large pharma company's GLP-1 portfolio. Your injectable GLP-1 has strong diabetes market share but a competitor's oral GLP-1 is gaining traction, a tri-agonist with superior weight loss data enters Phase 3, and supply constraints are limiting your ability to meet demand for the obesity indication.",
+        "challenge": {
+          "scenario": "Your injectable GLP-1 dominates in diabetes but faces a competitor's oral formulation gaining share and a tri-agonist with 25% weight loss data entering Phase 3. Supply is constrained. What is the MOST strategically sound competitive response?",
+          "options": [
+            "Reduce list price aggressively to win exclusive formulary positions before competitors can launch",
+            "Prioritize supply allocation to the obesity indication where growth is highest and margins are strongest",
+            "Accelerate development of differentiated combination approaches while securing supply chain capacity, and build real-world cardiovascular outcomes evidence to create formulary stickiness beyond weight loss"
+          ],
+          "correct": 2
+        },
+        "tip": "In a rapidly expanding class, sustainable competitive advantage comes from clinical differentiation (outcomes data beyond weight loss) and supply reliability — price wars in a demand-exceeding-supply market sacrifice margin without gaining share."
+      }
+    }
+  },
+  {
+    "id": "organizational-transformation-legacy-pharma",
+    "name": "Leading Organizational Transformation in a Legacy Pharma Company",
+    "tiers": {
+      "1": {
+        "definition": "The leadership challenge of transforming a legacy pharmaceutical company from a primary-care-oriented, blockbuster-dependent model to a specialty and biologics-focused organization, requiring simultaneous restructuring of R&D capabilities, commercial model (from broad primary care sales forces to specialized medical teams), manufacturing infrastructure (small molecule to biologics), and organizational culture — while maintaining revenue from declining legacy products that fund the transformation.",
+        "scenarioDoneTo": "You are the incoming CEO of a legacy pharma company where 60% of revenue comes from three small-molecule products facing patent cliffs within four years. The board has approved a transformation to specialty biologics, but your 15,000-person primary care sales force, small-molecule manufacturing plants, and deeply embedded command-and-control culture were built for a different era.",
+        "challenge": {
+          "scenario": "As CEO of a legacy pharma company, you must transform from primary care small molecules to specialty biologics while managing a 4-year patent cliff on 60% of revenue. Your leadership team presents three transformation approaches. Which is MOST likely to succeed?",
+          "options": [
+            "Execute a rapid full-scale restructuring — simultaneously downsize the primary care sales force, acquire biologics capabilities, and reorganize R&D into therapeutic area units within 18 months",
+            "Run a dual operating model that maintains the legacy commercial engine to fund transformation while building a separate specialty/biologics unit with distinct culture, talent, and governance until it reaches scale",
+            "Divest the legacy portfolio immediately to a generics company and use the proceeds to acquire a mid-size biologics company with an established commercial infrastructure"
+          ],
+          "correct": 1
+        },
+        "tip": "Successful pharma transformations protect the cash-generating legacy business while incubating the future model separately — companies that gut legacy operations too fast starve the transformation of funding, while those that never separate the new model see it absorbed by legacy culture."
+      },
+      "2": {
+        "definition": "The leadership challenge of transforming a legacy pharmaceutical company from a primary-care-oriented, blockbuster-dependent model to a specialty and biologics-focused organization, requiring simultaneous restructuring of R&D capabilities, commercial model (from broad primary care sales forces to specialized medical teams), manufacturing infrastructure (small molecule to biologics), and organizational culture — while maintaining revenue from declining legacy products that fund the transformation.",
+        "scenarioDoneTo": "You are the incoming CEO of a legacy pharma company where 60% of revenue comes from three small-molecule products facing patent cliffs within four years. The board has approved a transformation to specialty biologics, but your 15,000-person primary care sales force, small-molecule manufacturing plants, and deeply embedded command-and-control culture were built for a different era.",
+        "challenge": {
+          "scenario": "As CEO of a legacy pharma company, you must transform from primary care small molecules to specialty biologics while managing a 4-year patent cliff on 60% of revenue. Your leadership team presents three transformation approaches. Which is MOST likely to succeed?",
+          "options": [
+            "Execute a rapid full-scale restructuring — simultaneously downsize the primary care sales force, acquire biologics capabilities, and reorganize R&D into therapeutic area units within 18 months",
+            "Run a dual operating model that maintains the legacy commercial engine to fund transformation while building a separate specialty/biologics unit with distinct culture, talent, and governance until it reaches scale",
+            "Divest the legacy portfolio immediately to a generics company and use the proceeds to acquire a mid-size biologics company with an established commercial infrastructure"
+          ],
+          "correct": 1
+        },
+        "tip": "Successful pharma transformations protect the cash-generating legacy business while incubating the future model separately — companies that gut legacy operations too fast starve the transformation of funding, while those that never separate the new model see it absorbed by legacy culture."
+      },
+      "3": {
+        "definition": "The leadership challenge of transforming a legacy pharmaceutical company from a primary-care-oriented, blockbuster-dependent model to a specialty and biologics-focused organization, requiring simultaneous restructuring of R&D capabilities, commercial model (from broad primary care sales forces to specialized medical teams), manufacturing infrastructure (small molecule to biologics), and organizational culture — while maintaining revenue from declining legacy products that fund the transformation.",
+        "scenarioDoneTo": "You are the incoming CEO of a legacy pharma company where 60% of revenue comes from three small-molecule products facing patent cliffs within four years. The board has approved a transformation to specialty biologics, but your 15,000-person primary care sales force, small-molecule manufacturing plants, and deeply embedded command-and-control culture were built for a different era.",
+        "challenge": {
+          "scenario": "As CEO of a legacy pharma company, you must transform from primary care small molecules to specialty biologics while managing a 4-year patent cliff on 60% of revenue. Your leadership team presents three transformation approaches. Which is MOST likely to succeed?",
+          "options": [
+            "Execute a rapid full-scale restructuring — simultaneously downsize the primary care sales force, acquire biologics capabilities, and reorganize R&D into therapeutic area units within 18 months",
+            "Run a dual operating model that maintains the legacy commercial engine to fund transformation while building a separate specialty/biologics unit with distinct culture, talent, and governance until it reaches scale",
+            "Divest the legacy portfolio immediately to a generics company and use the proceeds to acquire a mid-size biologics company with an established commercial infrastructure"
+          ],
+          "correct": 1
+        },
+        "tip": "Successful pharma transformations protect the cash-generating legacy business while incubating the future model separately — companies that gut legacy operations too fast starve the transformation of funding, while those that never separate the new model see it absorbed by legacy culture."
+      }
+    }
+  }
+]
