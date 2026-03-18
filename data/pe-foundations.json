@@ -1,0 +1,1927 @@
+{
+  "deckName": "PE Foundations",
+  "deckId": "pe-foundations",
+  "description": "Private equity fundamentals: fund structure, LP/GP economics, key metrics, and core terminology.",
+  "cards": [
+    {
+      "id": "limited-partner-lp",
+      "name": "Limited Partner (LP)",
+      "tiers": {
+        "1": {
+          "definition": "A passive investor in a private equity fund with liability limited to their committed capital contribution. LPs provide capital but have no management authority and receive distributions according to the fund's waterfall structure.",
+          "scenarioDoneTo": "A pension fund commits $50M to a buyout fund but delegates all investment decisions and operational oversight to the GP, receiving quarterly distributions based on fund performance.",
+          "challenge": {
+            "scenario": "An LP in a $500M fund grows frustrated with GP decision-making on a specific portfolio company exit. The LP wants to force the GP to sell the asset immediately. What is the likely outcome?",
+            "options": [
+              "The LP can demand the sale through voting rights granted by their capital commitment",
+              "The LP has no contractual power to force the sale; they can only voice concerns or exit via secondary sales",
+              "The LP must wait until the fund's maturity date when all assets are liquidated by default"
+            ],
+            "correct": 1
+          },
+          "tip": "Remember: 'Limited' means limited liability AND limited control. LPs are passive capital providers, not active managers. Their leverage is exit through secondaries, not operational control."
+        },
+        "2": {
+          "definition": "A passive investor in a private equity fund with liability limited to their committed capital contribution. LPs provide capital but have no management authority and receive distributions according to the fund's waterfall structure.",
+          "scenarioDoneTo": "A pension fund commits $50M to a buyout fund but delegates all investment decisions and operational oversight to the GP, receiving quarterly distributions based on fund performance.",
+          "challenge": {
+            "scenario": "An LP in a $500M fund grows frustrated with GP decision-making on a specific portfolio company exit. The LP wants to force the GP to sell the asset immediately. What is the likely outcome?",
+            "options": [
+              "The LP can demand the sale through voting rights granted by their capital commitment",
+              "The LP has no contractual power to force the sale; they can only voice concerns or exit via secondary sales",
+              "The LP must wait until the fund's maturity date when all assets are liquidated by default"
+            ],
+            "correct": 1
+          },
+          "tip": "Remember: 'Limited' means limited liability AND limited control. LPs are passive capital providers, not active managers. Their leverage is exit through secondaries, not operational control."
+        },
+        "3": {
+          "definition": "A passive investor in a private equity fund with liability limited to their committed capital contribution. LPs provide capital but have no management authority and receive distributions according to the fund's waterfall structure.",
+          "scenarioDoneTo": "A pension fund commits $50M to a buyout fund but delegates all investment decisions and operational oversight to the GP, receiving quarterly distributions based on fund performance.",
+          "challenge": {
+            "scenario": "An LP in a $500M fund grows frustrated with GP decision-making on a specific portfolio company exit. The LP wants to force the GP to sell the asset immediately. What is the likely outcome?",
+            "options": [
+              "The LP can demand the sale through voting rights granted by their capital commitment",
+              "The LP has no contractual power to force the sale; they can only voice concerns or exit via secondary sales",
+              "The LP must wait until the fund's maturity date when all assets are liquidated by default"
+            ],
+            "correct": 1
+          },
+          "tip": "Remember: 'Limited' means limited liability AND limited control. LPs are passive capital providers, not active managers. Their leverage is exit through secondaries, not operational control."
+        }
+      }
+    },
+    {
+      "id": "general-partner-gp",
+      "name": "General Partner (GP)",
+      "tiers": {
+        "1": {
+          "definition": "The active manager and operator of a private equity fund responsible for sourcing deals, making investment decisions, executing portfolio company improvements, and managing returns. GPs earn carried interest and typically contribute 1-3% of fund capital alongside management fees.",
+          "scenarioDoneTo": "A GP team sources a manufacturing company acquisition, implements operational improvements over 4 years, and exits at a 4x multiple, earning carried interest on the outperformance.",
+          "challenge": {
+            "scenario": "A GP at a mid-market firm commits 2% of the fund's $300M to the fund itself. Later, during a down market, the fund becomes underwater. Which statement best reflects the GP's exposure?",
+            "options": [
+              "The GP's personal $6M commitment means they absorb losses proportional to their stake, similar to LP losses",
+              "The GP's commitment is primarily to align incentives; the GP absorbs losses from carried interest clawback provisions, not capital contribution",
+              "The GP carries unlimited liability for fund obligations due to their general partner status, unlike LPs"
+            ],
+            "correct": 0
+          },
+          "tip": "GPs have 'skin in the game' through both capital commitment AND carried interest. Their losses can be real (capital down) AND defer future returns (clawbacks from carry). They're the true believers in the thesis."
+        },
+        "2": {
+          "definition": "The active manager and operator of a private equity fund responsible for sourcing deals, making investment decisions, executing portfolio company improvements, and managing returns. GPs earn carried interest and typically contribute 1-3% of fund capital alongside management fees.",
+          "scenarioDoneTo": "A GP team sources a manufacturing company acquisition, implements operational improvements over 4 years, and exits at a 4x multiple, earning carried interest on the outperformance.",
+          "challenge": {
+            "scenario": "A GP at a mid-market firm commits 2% of the fund's $300M to the fund itself. Later, during a down market, the fund becomes underwater. Which statement best reflects the GP's exposure?",
+            "options": [
+              "The GP's personal $6M commitment means they absorb losses proportional to their stake, similar to LP losses",
+              "The GP's commitment is primarily to align incentives; the GP absorbs losses from carried interest clawback provisions, not capital contribution",
+              "The GP carries unlimited liability for fund obligations due to their general partner status, unlike LPs"
+            ],
+            "correct": 0
+          },
+          "tip": "GPs have 'skin in the game' through both capital commitment AND carried interest. Their losses can be real (capital down) AND defer future returns (clawbacks from carry). They're the true believers in the thesis."
+        },
+        "3": {
+          "definition": "The active manager and operator of a private equity fund responsible for sourcing deals, making investment decisions, executing portfolio company improvements, and managing returns. GPs earn carried interest and typically contribute 1-3% of fund capital alongside management fees.",
+          "scenarioDoneTo": "A GP team sources a manufacturing company acquisition, implements operational improvements over 4 years, and exits at a 4x multiple, earning carried interest on the outperformance.",
+          "challenge": {
+            "scenario": "A GP at a mid-market firm commits 2% of the fund's $300M to the fund itself. Later, during a down market, the fund becomes underwater. Which statement best reflects the GP's exposure?",
+            "options": [
+              "The GP's personal $6M commitment means they absorb losses proportional to their stake, similar to LP losses",
+              "The GP's commitment is primarily to align incentives; the GP absorbs losses from carried interest clawback provisions, not capital contribution",
+              "The GP carries unlimited liability for fund obligations due to their general partner status, unlike LPs"
+            ],
+            "correct": 0
+          },
+          "tip": "GPs have 'skin in the game' through both capital commitment AND carried interest. Their losses can be real (capital down) AND defer future returns (clawbacks from carry). They're the true believers in the thesis."
+        }
+      }
+    },
+    {
+      "id": "management-fee",
+      "name": "Management Fee",
+      "tiers": {
+        "1": {
+          "definition": "An annual fee charged by the GP to fund operations, typically 1.5-2.5% of committed capital in years 1-5, declining to a percentage of invested capital in later years. Management fees cover salaries, office expenses, and professional fees, independent of fund performance.",
+          "scenarioDoneTo": "An $800M fund charges 2% management fee on committed capital ($16M annually) for 5 years. As investments complete and the fund enters harvest mode, the fee drops to 1.5% of invested capital (~$12M), declining further.",
+          "challenge": {
+            "scenario": "A fund deployed $200M of its $500M committed capital by year 3. GP wants to reduce management fees in year 4 due to market conditions. Of the following, which change most directly impacts the fees paid to the GP?",
+            "options": [
+              "Transitioning to a fee-on-invested-capital model would likely reduce annual fees from $10M to approximately $3M",
+              "Replacing underperforming analysts would reduce headcount costs, allowing the GP to accept smaller fees",
+              "Increasing the portfolio company add-on acquisitions would expand the capital base, generating higher fees"
+            ],
+            "correct": 2
+          },
+          "tip": "Management fees are mechanical\u2014tied to capital, not performance. The transition point from 'committed' to 'invested' is a real fee cliff. Understanding this structure reveals how GPs incentivize rapid deployment."
+        },
+        "2": {
+          "definition": "An annual fee charged by the GP to fund operations, typically 1.5-2.5% of committed capital in years 1-5, declining to a percentage of invested capital in later years. Management fees cover salaries, office expenses, and professional fees, independent of fund performance.",
+          "scenarioDoneTo": "An $800M fund charges 2% management fee on committed capital ($16M annually) for 5 years. As investments complete and the fund enters harvest mode, the fee drops to 1.5% of invested capital (~$12M), declining further.",
+          "challenge": {
+            "scenario": "A fund deployed $200M of its $500M committed capital by year 3. GP wants to reduce management fees in year 4 due to market conditions. Of the following, which change most directly impacts the fees paid to the GP?",
+            "options": [
+              "Transitioning to a fee-on-invested-capital model would likely reduce annual fees from $10M to approximately $3M",
+              "Replacing underperforming analysts would reduce headcount costs, allowing the GP to accept smaller fees",
+              "Increasing the portfolio company add-on acquisitions would expand the capital base, generating higher fees"
+            ],
+            "correct": 2
+          },
+          "tip": "Management fees are mechanical\u2014tied to capital, not performance. The transition point from 'committed' to 'invested' is a real fee cliff. Understanding this structure reveals how GPs incentivize rapid deployment."
+        },
+        "3": {
+          "definition": "An annual fee charged by the GP to fund operations, typically 1.5-2.5% of committed capital in years 1-5, declining to a percentage of invested capital in later years. Management fees cover salaries, office expenses, and professional fees, independent of fund performance.",
+          "scenarioDoneTo": "An $800M fund charges 2% management fee on committed capital ($16M annually) for 5 years. As investments complete and the fund enters harvest mode, the fee drops to 1.5% of invested capital (~$12M), declining further.",
+          "challenge": {
+            "scenario": "A fund deployed $200M of its $500M committed capital by year 3. GP wants to reduce management fees in year 4 due to market conditions. Of the following, which change most directly impacts the fees paid to the GP?",
+            "options": [
+              "Transitioning to a fee-on-invested-capital model would likely reduce annual fees from $10M to approximately $3M",
+              "Replacing underperforming analysts would reduce headcount costs, allowing the GP to accept smaller fees",
+              "Increasing the portfolio company add-on acquisitions would expand the capital base, generating higher fees"
+            ],
+            "correct": 2
+          },
+          "tip": "Management fees are mechanical\u2014tied to capital, not performance. The transition point from 'committed' to 'invested' is a real fee cliff. Understanding this structure reveals how GPs incentivize rapid deployment."
+        }
+      }
+    },
+    {
+      "id": "carried-interest",
+      "name": "Carried Interest",
+      "tiers": {
+        "1": {
+          "definition": "The GP's stake in fund profits, typically 20%, earned only after LPs receive their committed capital plus preferred return. Carried interest aligns GP incentives with LP returns and is the primary wealth-creation mechanism for GP professionals.",
+          "scenarioDoneTo": "A fund generates a 3x gross multiple. After returning committed capital and a preferred return to LPs, $150M in excess profits remain. The GP captures 20% carry ($30M), split among partners and staff.",
+          "challenge": {
+            "scenario": "Fund A generates gross returns of 2x (committed capital returned + modest gains). Fund B generates 4x returns. A GP earned carry in Fund B but not Fund A. Which best explains this gap?",
+            "options": [
+              "Fund A likely didn't clear the preferred return hurdle before the GP could claim any carried interest",
+              "Fund B had a higher management fee structure, allowing the GP to earn carry earlier in the fund lifecycle",
+              "The GP negotiated better term sheets in Fund B, resulting in higher carry percentages"
+            ],
+            "correct": 1
+          },
+          "tip": "Carry is earned AFTER the hurdle. A 2x return often sounds good\u2014until you realize the GP got zero. This teaches a critical lesson: gross returns \u2260 GP economics."
+        },
+        "2": {
+          "definition": "The GP's stake in fund profits, typically 20%, earned only after LPs receive their committed capital plus preferred return. Carried interest aligns GP incentives with LP returns and is the primary wealth-creation mechanism for GP professionals.",
+          "scenarioDoneTo": "A fund generates a 3x gross multiple. After returning committed capital and a preferred return to LPs, $150M in excess profits remain. The GP captures 20% carry ($30M), split among partners and staff.",
+          "challenge": {
+            "scenario": "Fund A generates gross returns of 2x (committed capital returned + modest gains). Fund B generates 4x returns. A GP earned carry in Fund B but not Fund A. Which best explains this gap?",
+            "options": [
+              "Fund A likely didn't clear the preferred return hurdle before the GP could claim any carried interest",
+              "Fund B had a higher management fee structure, allowing the GP to earn carry earlier in the fund lifecycle",
+              "The GP negotiated better term sheets in Fund B, resulting in higher carry percentages"
+            ],
+            "correct": 1
+          },
+          "tip": "Carry is earned AFTER the hurdle. A 2x return often sounds good\u2014until you realize the GP got zero. This teaches a critical lesson: gross returns \u2260 GP economics."
+        },
+        "3": {
+          "definition": "The GP's stake in fund profits, typically 20%, earned only after LPs receive their committed capital plus preferred return. Carried interest aligns GP incentives with LP returns and is the primary wealth-creation mechanism for GP professionals.",
+          "scenarioDoneTo": "A fund generates a 3x gross multiple. After returning committed capital and a preferred return to LPs, $150M in excess profits remain. The GP captures 20% carry ($30M), split among partners and staff.",
+          "challenge": {
+            "scenario": "Fund A generates gross returns of 2x (committed capital returned + modest gains). Fund B generates 4x returns. A GP earned carry in Fund B but not Fund A. Which best explains this gap?",
+            "options": [
+              "Fund A likely didn't clear the preferred return hurdle before the GP could claim any carried interest",
+              "Fund B had a higher management fee structure, allowing the GP to earn carry earlier in the fund lifecycle",
+              "The GP negotiated better term sheets in Fund B, resulting in higher carry percentages"
+            ],
+            "correct": 1
+          },
+          "tip": "Carry is earned AFTER the hurdle. A 2x return often sounds good\u2014until you realize the GP got zero. This teaches a critical lesson: gross returns \u2260 GP economics."
+        }
+      }
+    },
+    {
+      "id": "committed-capital",
+      "name": "Committed Capital",
+      "tiers": {
+        "1": {
+          "definition": "The total amount an LP contractually pledges to contribute to a fund over its investment period, not necessarily deployed immediately. LPs are obligated to fund capital calls up to this committed amount, and committed capital serves as the baseline for calculating management fees and preferred returns.",
+          "scenarioDoneTo": "A university endowment commits $100M to a buyout fund but only $45M is actually invested in three portfolio companies over 4 years. The endowment remains obligated for the $55M difference if the GP issues capital calls.",
+          "challenge": {
+            "scenario": "An LP commits $50M to a fund but the GP deploys only $35M before the fund closes to new investments in year 5. For management fee calculations in years 1-5, what BASE is most likely used?",
+            "options": [
+              "The $35M invested capital, keeping fees proportional to deployed capital",
+              "The full $50M committed capital, as fees are typically calculated on commitments regardless of deployment timing",
+              "An amount between $35-50M, with fees stepping down once the deployment percentage exceeds 80%"
+            ],
+            "correct": 0
+          },
+          "tip": "Committed \u2260 invested. The commitment is the LIABILITY ceiling. But fees are typically anchored to the commitment in early years, then shift to invested. This creates tension\u2014faster deployment = better fee terms."
+        },
+        "2": {
+          "definition": "The total amount an LP contractually pledges to contribute to a fund over its investment period, not necessarily deployed immediately. LPs are obligated to fund capital calls up to this committed amount, and committed capital serves as the baseline for calculating management fees and preferred returns.",
+          "scenarioDoneTo": "A university endowment commits $100M to a buyout fund but only $45M is actually invested in three portfolio companies over 4 years. The endowment remains obligated for the $55M difference if the GP issues capital calls.",
+          "challenge": {
+            "scenario": "An LP commits $50M to a fund but the GP deploys only $35M before the fund closes to new investments in year 5. For management fee calculations in years 1-5, what BASE is most likely used?",
+            "options": [
+              "The $35M invested capital, keeping fees proportional to deployed capital",
+              "The full $50M committed capital, as fees are typically calculated on commitments regardless of deployment timing",
+              "An amount between $35-50M, with fees stepping down once the deployment percentage exceeds 80%"
+            ],
+            "correct": 0
+          },
+          "tip": "Committed \u2260 invested. The commitment is the LIABILITY ceiling. But fees are typically anchored to the commitment in early years, then shift to invested. This creates tension\u2014faster deployment = better fee terms."
+        },
+        "3": {
+          "definition": "The total amount an LP contractually pledges to contribute to a fund over its investment period, not necessarily deployed immediately. LPs are obligated to fund capital calls up to this committed amount, and committed capital serves as the baseline for calculating management fees and preferred returns.",
+          "scenarioDoneTo": "A university endowment commits $100M to a buyout fund but only $45M is actually invested in three portfolio companies over 4 years. The endowment remains obligated for the $55M difference if the GP issues capital calls.",
+          "challenge": {
+            "scenario": "An LP commits $50M to a fund but the GP deploys only $35M before the fund closes to new investments in year 5. For management fee calculations in years 1-5, what BASE is most likely used?",
+            "options": [
+              "The $35M invested capital, keeping fees proportional to deployed capital",
+              "The full $50M committed capital, as fees are typically calculated on commitments regardless of deployment timing",
+              "An amount between $35-50M, with fees stepping down once the deployment percentage exceeds 80%"
+            ],
+            "correct": 0
+          },
+          "tip": "Committed \u2260 invested. The commitment is the LIABILITY ceiling. But fees are typically anchored to the commitment in early years, then shift to invested. This creates tension\u2014faster deployment = better fee terms."
+        }
+      }
+    },
+    {
+      "id": "capital-call-drawdown",
+      "name": "Capital Call / Drawdown",
+      "tiers": {
+        "1": {
+          "definition": "A formal demand by the GP for LPs to contribute committed capital to fund specific investments or operations. Capital calls are issued over the fund's investment period; LPs must typically fund within 5-10 business days or face penalties. Drawdown is the total capital pulled from LPs cumulatively.",
+          "scenarioDoneTo": "A fund makes its first capital call in month 3 for $15M to acquire Company A, its second call in month 8 for $20M for Company B, and a third in month 14 for $8M in add-on capital. Total drawdown by month 14 is $43M.",
+          "challenge": {
+            "scenario": "An LP receives a capital call for $10M with a 7-day funding requirement. The LP misses the deadline by 2 days. What is the most likely consequence?",
+            "options": [
+              "The LP automatically loses their limited liability status and becomes jointly liable for fund obligations",
+              "The LP faces penalties (typically interest, sometimes reduced returns), but the capital is still required unless formally defaulted",
+              "The GP can immediately liquidate the LP's existing fund holdings to cover the capital call amount"
+            ],
+            "correct": 2
+          },
+          "tip": "Capital calls are deadlines with teeth. Miss a call = penalties. Fail repeatedly = default, which triggers LP removal or forced liquidation. The LP's flexibility ends once committed; the 'call' is enforced."
+        },
+        "2": {
+          "definition": "A formal demand by the GP for LPs to contribute committed capital to fund specific investments or operations. Capital calls are issued over the fund's investment period; LPs must typically fund within 5-10 business days or face penalties. Drawdown is the total capital pulled from LPs cumulatively.",
+          "scenarioDoneTo": "A fund makes its first capital call in month 3 for $15M to acquire Company A, its second call in month 8 for $20M for Company B, and a third in month 14 for $8M in add-on capital. Total drawdown by month 14 is $43M.",
+          "challenge": {
+            "scenario": "An LP receives a capital call for $10M with a 7-day funding requirement. The LP misses the deadline by 2 days. What is the most likely consequence?",
+            "options": [
+              "The LP automatically loses their limited liability status and becomes jointly liable for fund obligations",
+              "The LP faces penalties (typically interest, sometimes reduced returns), but the capital is still required unless formally defaulted",
+              "The GP can immediately liquidate the LP's existing fund holdings to cover the capital call amount"
+            ],
+            "correct": 2
+          },
+          "tip": "Capital calls are deadlines with teeth. Miss a call = penalties. Fail repeatedly = default, which triggers LP removal or forced liquidation. The LP's flexibility ends once committed; the 'call' is enforced."
+        },
+        "3": {
+          "definition": "A formal demand by the GP for LPs to contribute committed capital to fund specific investments or operations. Capital calls are issued over the fund's investment period; LPs must typically fund within 5-10 business days or face penalties. Drawdown is the total capital pulled from LPs cumulatively.",
+          "scenarioDoneTo": "A fund makes its first capital call in month 3 for $15M to acquire Company A, its second call in month 8 for $20M for Company B, and a third in month 14 for $8M in add-on capital. Total drawdown by month 14 is $43M.",
+          "challenge": {
+            "scenario": "An LP receives a capital call for $10M with a 7-day funding requirement. The LP misses the deadline by 2 days. What is the most likely consequence?",
+            "options": [
+              "The LP automatically loses their limited liability status and becomes jointly liable for fund obligations",
+              "The LP faces penalties (typically interest, sometimes reduced returns), but the capital is still required unless formally defaulted",
+              "The GP can immediately liquidate the LP's existing fund holdings to cover the capital call amount"
+            ],
+            "correct": 2
+          },
+          "tip": "Capital calls are deadlines with teeth. Miss a call = penalties. Fail repeatedly = default, which triggers LP removal or forced liquidation. The LP's flexibility ends once committed; the 'call' is enforced."
+        }
+      }
+    },
+    {
+      "id": "distribution-waterfall",
+      "name": "Distribution Waterfall",
+      "tiers": {
+        "1": {
+          "definition": "The formula defining the order and priority in which fund proceeds are distributed to LPs and GPs. Typically: LPs receive committed capital first, then preferred return, then remainders are split (e.g., 80% LP / 20% GP carry). Waterfall terms vary significantly by fund and LP agreement.",
+          "scenarioDoneTo": "A fund generates $150M in gross proceeds from exits. LPs are owed $80M capital + $20M preferred return. After LPs receive $100M, the remaining $50M is split 80/20, giving LPs $40M and GP $10M in carry.",
+          "challenge": {
+            "scenario": "A fund agreement says LPs get their capital back first, then an 8% preferred return. After these hurdles, profits are split 85/15 (LP/GP). Fund realizes $180M in proceeds and owes LPs $120M in capital. How much carry do GPs earn?",
+            "options": [
+              "$12M, calculated as 15% of the $80M excess after capital return",
+              "$16M, calculated as 15% of proceeds after capital and preferred return are satisfied",
+              "$8M, because the preferred return threshold reduces the GP's claim to profits"
+            ],
+            "correct": 1
+          },
+          "tip": "Waterfalls are sequential, not simultaneous. Capital flows like water down stairs: capital \u2192 preferred return \u2192 then split. Get the order wrong, and your waterfall math collapses."
+        },
+        "2": {
+          "definition": "The formula defining the order and priority in which fund proceeds are distributed to LPs and GPs. Typically: LPs receive committed capital first, then preferred return, then remainders are split (e.g., 80% LP / 20% GP carry). Waterfall terms vary significantly by fund and LP agreement.",
+          "scenarioDoneTo": "A fund generates $150M in gross proceeds from exits. LPs are owed $80M capital + $20M preferred return. After LPs receive $100M, the remaining $50M is split 80/20, giving LPs $40M and GP $10M in carry.",
+          "challenge": {
+            "scenario": "A fund agreement says LPs get their capital back first, then an 8% preferred return. After these hurdles, profits are split 85/15 (LP/GP). Fund realizes $180M in proceeds and owes LPs $120M in capital. How much carry do GPs earn?",
+            "options": [
+              "$12M, calculated as 15% of the $80M excess after capital return",
+              "$16M, calculated as 15% of proceeds after capital and preferred return are satisfied",
+              "$8M, because the preferred return threshold reduces the GP's claim to profits"
+            ],
+            "correct": 1
+          },
+          "tip": "Waterfalls are sequential, not simultaneous. Capital flows like water down stairs: capital \u2192 preferred return \u2192 then split. Get the order wrong, and your waterfall math collapses."
+        },
+        "3": {
+          "definition": "The formula defining the order and priority in which fund proceeds are distributed to LPs and GPs. Typically: LPs receive committed capital first, then preferred return, then remainders are split (e.g., 80% LP / 20% GP carry). Waterfall terms vary significantly by fund and LP agreement.",
+          "scenarioDoneTo": "A fund generates $150M in gross proceeds from exits. LPs are owed $80M capital + $20M preferred return. After LPs receive $100M, the remaining $50M is split 80/20, giving LPs $40M and GP $10M in carry.",
+          "challenge": {
+            "scenario": "A fund agreement says LPs get their capital back first, then an 8% preferred return. After these hurdles, profits are split 85/15 (LP/GP). Fund realizes $180M in proceeds and owes LPs $120M in capital. How much carry do GPs earn?",
+            "options": [
+              "$12M, calculated as 15% of the $80M excess after capital return",
+              "$16M, calculated as 15% of proceeds after capital and preferred return are satisfied",
+              "$8M, because the preferred return threshold reduces the GP's claim to profits"
+            ],
+            "correct": 1
+          },
+          "tip": "Waterfalls are sequential, not simultaneous. Capital flows like water down stairs: capital \u2192 preferred return \u2192 then split. Get the order wrong, and your waterfall math collapses."
+        }
+      }
+    },
+    {
+      "id": "preferred-return-hurdle-rate",
+      "name": "Preferred Return / Hurdle Rate",
+      "tiers": {
+        "1": {
+          "definition": "A minimum annual return (typically 6-8%) that LPs must receive before the GP participates in excess profits. The hurdle rate is calculated annually on capital deployed and ensures LPs earn a baseline return before the GP's carried interest kicks in. Hurdle thresholds vary by fund vintage and market conditions.",
+          "scenarioDoneTo": "A fund has a 7% preferred return on $80M invested capital. Year 1 generates 10% returns ($8M). LPs receive their full 7% ($5.6M), then the GP and LPs share the remaining 3% gains. By year 5, cumulative returns lag the hurdle; GP carry is withheld until the hurdle is satisfied globally.",
+          "challenge": {
+            "scenario": "Fund A has an 8% hurdle with a 'catch-up' provision. In year 1, the fund posts a 12% return. What does 'catch-up' allow?",
+            "options": [
+              "The GP can apply year 1 outperformance against future underperformance, deferring carry recognition until the fund life ends",
+              "The GP receives 100% of returns above the 8% hurdle until the GP is caught up to their preferred split, then reverts to normal waterfall",
+              "Remaining unreturned LP capital is eligible for a retroactive 8% calculation if the fund subsequently underperforms"
+            ],
+            "correct": 1
+          },
+          "tip": "The hurdle is a gate; catch-up is a sprint. With catch-up, the GP can briefly take all upside until their 'fair share' of outperformance is realized. Without catch-up, the LP advantage is permanent."
+        },
+        "2": {
+          "definition": "A minimum annual return (typically 6-8%) that LPs must receive before the GP participates in excess profits. The hurdle rate is calculated annually on capital deployed and ensures LPs earn a baseline return before the GP's carried interest kicks in. Hurdle thresholds vary by fund vintage and market conditions.",
+          "scenarioDoneTo": "A fund has a 7% preferred return on $80M invested capital. Year 1 generates 10% returns ($8M). LPs receive their full 7% ($5.6M), then the GP and LPs share the remaining 3% gains. By year 5, cumulative returns lag the hurdle; GP carry is withheld until the hurdle is satisfied globally.",
+          "challenge": {
+            "scenario": "Fund A has an 8% hurdle with a 'catch-up' provision. In year 1, the fund posts a 12% return. What does 'catch-up' allow?",
+            "options": [
+              "The GP can apply year 1 outperformance against future underperformance, deferring carry recognition until the fund life ends",
+              "The GP receives 100% of returns above the 8% hurdle until the GP is caught up to their preferred split, then reverts to normal waterfall",
+              "Remaining unreturned LP capital is eligible for a retroactive 8% calculation if the fund subsequently underperforms"
+            ],
+            "correct": 1
+          },
+          "tip": "The hurdle is a gate; catch-up is a sprint. With catch-up, the GP can briefly take all upside until their 'fair share' of outperformance is realized. Without catch-up, the LP advantage is permanent."
+        },
+        "3": {
+          "definition": "A minimum annual return (typically 6-8%) that LPs must receive before the GP participates in excess profits. The hurdle rate is calculated annually on capital deployed and ensures LPs earn a baseline return before the GP's carried interest kicks in. Hurdle thresholds vary by fund vintage and market conditions.",
+          "scenarioDoneTo": "A fund has a 7% preferred return on $80M invested capital. Year 1 generates 10% returns ($8M). LPs receive their full 7% ($5.6M), then the GP and LPs share the remaining 3% gains. By year 5, cumulative returns lag the hurdle; GP carry is withheld until the hurdle is satisfied globally.",
+          "challenge": {
+            "scenario": "Fund A has an 8% hurdle with a 'catch-up' provision. In year 1, the fund posts a 12% return. What does 'catch-up' allow?",
+            "options": [
+              "The GP can apply year 1 outperformance against future underperformance, deferring carry recognition until the fund life ends",
+              "The GP receives 100% of returns above the 8% hurdle until the GP is caught up to their preferred split, then reverts to normal waterfall",
+              "Remaining unreturned LP capital is eligible for a retroactive 8% calculation if the fund subsequently underperforms"
+            ],
+            "correct": 1
+          },
+          "tip": "The hurdle is a gate; catch-up is a sprint. With catch-up, the GP can briefly take all upside until their 'fair share' of outperformance is realized. Without catch-up, the LP advantage is permanent."
+        }
+      }
+    },
+    {
+      "id": "j-curve-effect",
+      "name": "J-Curve Effect",
+      "tiers": {
+        "1": {
+          "definition": "The characteristic pattern of PE fund returns over time, where early distributions are negative (capital invested before returns realized) and returns become positive over time, creating a 'J' shape on a chart. The J-Curve reflects the timing mismatch between capital deployment and exit proceeds.",
+          "scenarioDoneTo": "Year 1-3: Fund invests $100M, generates -$100M cumulative returns (cash deployed). Years 4-7: Portfolio companies appreciate and are exited, generating +$320M, resulting in a final 3x multiple despite the deep early trench.",
+          "challenge": {
+            "scenario": "An LP evaluates two PE funds at their 3-year mark. Fund X shows -8% returns (deep in the J), Fund Y shows +4% returns (exiting the J early). What is the most accurate interpretation?",
+            "options": [
+              "Fund X is underperforming and likely to underperform over the full fund life due to early losses",
+              "Fund X may be executing on its thesis normally; the J-Curve suggests exits are ahead, potentially catching up to or exceeding Fund Y's trajectory",
+              "Fund Y's early positive returns guarantee superior long-term outperformance regardless of exit timing or multiples"
+            ],
+            "correct": 2
+          },
+          "tip": "The J-Curve is a feature, not a bug. Deep early negative returns don't predict failure\u2014they predict heavy deployment. The J isn't scary if you understand the follow-through math."
+        },
+        "2": {
+          "definition": "The characteristic pattern of PE fund returns over time, where early distributions are negative (capital invested before returns realized) and returns become positive over time, creating a 'J' shape on a chart. The J-Curve reflects the timing mismatch between capital deployment and exit proceeds.",
+          "scenarioDoneTo": "Year 1-3: Fund invests $100M, generates -$100M cumulative returns (cash deployed). Years 4-7: Portfolio companies appreciate and are exited, generating +$320M, resulting in a final 3x multiple despite the deep early trench.",
+          "challenge": {
+            "scenario": "An LP evaluates two PE funds at their 3-year mark. Fund X shows -8% returns (deep in the J), Fund Y shows +4% returns (exiting the J early). What is the most accurate interpretation?",
+            "options": [
+              "Fund X is underperforming and likely to underperform over the full fund life due to early losses",
+              "Fund X may be executing on its thesis normally; the J-Curve suggests exits are ahead, potentially catching up to or exceeding Fund Y's trajectory",
+              "Fund Y's early positive returns guarantee superior long-term outperformance regardless of exit timing or multiples"
+            ],
+            "correct": 2
+          },
+          "tip": "The J-Curve is a feature, not a bug. Deep early negative returns don't predict failure\u2014they predict heavy deployment. The J isn't scary if you understand the follow-through math."
+        },
+        "3": {
+          "definition": "The characteristic pattern of PE fund returns over time, where early distributions are negative (capital invested before returns realized) and returns become positive over time, creating a 'J' shape on a chart. The J-Curve reflects the timing mismatch between capital deployment and exit proceeds.",
+          "scenarioDoneTo": "Year 1-3: Fund invests $100M, generates -$100M cumulative returns (cash deployed). Years 4-7: Portfolio companies appreciate and are exited, generating +$320M, resulting in a final 3x multiple despite the deep early trench.",
+          "challenge": {
+            "scenario": "An LP evaluates two PE funds at their 3-year mark. Fund X shows -8% returns (deep in the J), Fund Y shows +4% returns (exiting the J early). What is the most accurate interpretation?",
+            "options": [
+              "Fund X is underperforming and likely to underperform over the full fund life due to early losses",
+              "Fund X may be executing on its thesis normally; the J-Curve suggests exits are ahead, potentially catching up to or exceeding Fund Y's trajectory",
+              "Fund Y's early positive returns guarantee superior long-term outperformance regardless of exit timing or multiples"
+            ],
+            "correct": 2
+          },
+          "tip": "The J-Curve is a feature, not a bug. Deep early negative returns don't predict failure\u2014they predict heavy deployment. The J isn't scary if you understand the follow-through math."
+        }
+      }
+    },
+    {
+      "id": "vintage-year",
+      "name": "Vintage Year",
+      "tiers": {
+        "1": {
+          "definition": "The year in which a fund closes its initial funding and begins making investments, used to group and benchmark funds based on market conditions and cycles at their inception. Vintage year is critical for benchmarking because funds from the same vintage year share exposure to similar economic cycles and market multiples.",
+          "scenarioDoneTo": "A fund closes in Q4 2019 (vintage 2019), then deploys capital into companies purchased at moderate multiples. In contrast, a vintage 2021 fund enters a heated market with inflated entry multiples. By 2025, the 2019 vintage significantly outperforms due to disciplined entry pricing.",
+          "challenge": {
+            "scenario": "An LP compares Fund A (vintage 2018) and Fund B (vintage 2022), both showing 1.8x returns at their 4-year mark. What does vintage year suggest about their relative performance?",
+            "options": [
+              "Fund A entered a downturn market; Fund B is closing gap despite entering a hotter market, signaling stronger operational execution",
+              "Both achieved the same multiple, so vintage year has no bearing on interpreting relative skill or outperformance",
+              "Fund B's 1.8x is superior because it was achieved in a more difficult, competitive market entry environment"
+            ],
+            "correct": 1
+          },
+          "tip": "Vintage year is a context lens. Same returns \u2260 same skill across vintages. A fund from the 2009 vintage that clears 2x might be less skilled than a 1.8x from 2022. Always normalize for cycle."
+        },
+        "2": {
+          "definition": "The year in which a fund closes its initial funding and begins making investments, used to group and benchmark funds based on market conditions and cycles at their inception. Vintage year is critical for benchmarking because funds from the same vintage year share exposure to similar economic cycles and market multiples.",
+          "scenarioDoneTo": "A fund closes in Q4 2019 (vintage 2019), then deploys capital into companies purchased at moderate multiples. In contrast, a vintage 2021 fund enters a heated market with inflated entry multiples. By 2025, the 2019 vintage significantly outperforms due to disciplined entry pricing.",
+          "challenge": {
+            "scenario": "An LP compares Fund A (vintage 2018) and Fund B (vintage 2022), both showing 1.8x returns at their 4-year mark. What does vintage year suggest about their relative performance?",
+            "options": [
+              "Fund A entered a downturn market; Fund B is closing gap despite entering a hotter market, signaling stronger operational execution",
+              "Both achieved the same multiple, so vintage year has no bearing on interpreting relative skill or outperformance",
+              "Fund B's 1.8x is superior because it was achieved in a more difficult, competitive market entry environment"
+            ],
+            "correct": 1
+          },
+          "tip": "Vintage year is a context lens. Same returns \u2260 same skill across vintages. A fund from the 2009 vintage that clears 2x might be less skilled than a 1.8x from 2022. Always normalize for cycle."
+        },
+        "3": {
+          "definition": "The year in which a fund closes its initial funding and begins making investments, used to group and benchmark funds based on market conditions and cycles at their inception. Vintage year is critical for benchmarking because funds from the same vintage year share exposure to similar economic cycles and market multiples.",
+          "scenarioDoneTo": "A fund closes in Q4 2019 (vintage 2019), then deploys capital into companies purchased at moderate multiples. In contrast, a vintage 2021 fund enters a heated market with inflated entry multiples. By 2025, the 2019 vintage significantly outperforms due to disciplined entry pricing.",
+          "challenge": {
+            "scenario": "An LP compares Fund A (vintage 2018) and Fund B (vintage 2022), both showing 1.8x returns at their 4-year mark. What does vintage year suggest about their relative performance?",
+            "options": [
+              "Fund A entered a downturn market; Fund B is closing gap despite entering a hotter market, signaling stronger operational execution",
+              "Both achieved the same multiple, so vintage year has no bearing on interpreting relative skill or outperformance",
+              "Fund B's 1.8x is superior because it was achieved in a more difficult, competitive market entry environment"
+            ],
+            "correct": 1
+          },
+          "tip": "Vintage year is a context lens. Same returns \u2260 same skill across vintages. A fund from the 2009 vintage that clears 2x might be less skilled than a 1.8x from 2022. Always normalize for cycle."
+        }
+      }
+    },
+    {
+      "id": "due-diligence-types-purpose",
+      "name": "Due Diligence - Types and Purpose in PE Transactions",
+      "tiers": {
+        "1": {
+          "definition": "Systematic investigation and analysis of a target company's financial, legal, operational, and strategic characteristics to assess value, identify risks, and uncover material liabilities before acquisition commitment.",
+          "scenarioDoneTo": "A PE firm investigates a manufacturing target and discovers that 60% of revenue comes from a single customer with a contract expiring in 18 months, revealing concentration risk that affects valuation.",
+          "challenge": {
+            "scenario": "During financial due diligence on a SaaS acquisition, the team identifies that revenue recognition accounting differs between IFRS and GAAP standards. What is the primary concern?",
+            "options": [
+              "The accounting methods create temporary timing differences that reconcile over time, so no adjustment to valuation is needed",
+              "The accounting methodology may have materially overstated reported EBITDA, requiring normalized financial restatement to compare with peer multiples",
+              "The company must immediately convert all statements to US GAAP standards as a condition of the deal"
+            ],
+            "correct": 1
+          },
+          "tip": "DD layers reveal hidden vulnerabilities: financial DD surfaces accounting quality; legal DD exposes liabilities; operational DD identifies inefficiencies; commercial DD validates market assumptions; strategic DD stress-tests the thesis."
+        },
+        "2": {
+          "definition": "Systematic investigation and analysis of a target company's financial, legal, operational, and strategic characteristics to assess value, identify risks, and uncover material liabilities before acquisition commitment.",
+          "scenarioDoneTo": "A PE firm investigates a manufacturing target and discovers that 60% of revenue comes from a single customer with a contract expiring in 18 months, revealing concentration risk that affects valuation.",
+          "challenge": {
+            "scenario": "During financial due diligence on a SaaS acquisition, the team identifies that revenue recognition accounting differs between IFRS and GAAP standards. What is the primary concern?",
+            "options": [
+              "The accounting methods create temporary timing differences that reconcile over time, so no adjustment to valuation is needed",
+              "The accounting methodology may have materially overstated reported EBITDA, requiring normalized financial restatement to compare with peer multiples",
+              "The company must immediately convert all statements to US GAAP standards as a condition of the deal"
+            ],
+            "correct": 1
+          },
+          "tip": "DD layers reveal hidden vulnerabilities: financial DD surfaces accounting quality; legal DD exposes liabilities; operational DD identifies inefficiencies; commercial DD validates market assumptions; strategic DD stress-tests the thesis."
+        },
+        "3": {
+          "definition": "Systematic investigation and analysis of a target company's financial, legal, operational, and strategic characteristics to assess value, identify risks, and uncover material liabilities before acquisition commitment.",
+          "scenarioDoneTo": "A PE firm investigates a manufacturing target and discovers that 60% of revenue comes from a single customer with a contract expiring in 18 months, revealing concentration risk that affects valuation.",
+          "challenge": {
+            "scenario": "During financial due diligence on a SaaS acquisition, the team identifies that revenue recognition accounting differs between IFRS and GAAP standards. What is the primary concern?",
+            "options": [
+              "The accounting methods create temporary timing differences that reconcile over time, so no adjustment to valuation is needed",
+              "The accounting methodology may have materially overstated reported EBITDA, requiring normalized financial restatement to compare with peer multiples",
+              "The company must immediately convert all statements to US GAAP standards as a condition of the deal"
+            ],
+            "correct": 1
+          },
+          "tip": "DD layers reveal hidden vulnerabilities: financial DD surfaces accounting quality; legal DD exposes liabilities; operational DD identifies inefficiencies; commercial DD validates market assumptions; strategic DD stress-tests the thesis."
+        }
+      }
+    },
+    {
+      "id": "platform-company-buy-and-build",
+      "name": "Platform Company - Buy-and-Build Strategy",
+      "tiers": {
+        "1": {
+          "definition": "The initial anchor acquisition in a buy-and-build strategy; typically a larger, highest-quality business with strong management and infrastructure that serves as the foundation for acquiring and integrating smaller complementary competitors or adjacent services.",
+          "scenarioDoneTo": "A PE firm acquires a $50M revenue regional staffing firm as a platform, then adds four smaller staffing companies from adjacent geographies and verticals over three years, consolidating back-office functions into the platform's infrastructure.",
+          "challenge": {
+            "scenario": "In evaluating a platform candidate, the investment team debates whether to select a market-leading business with strong margins and solid management versus a fragmented player with lower margins but faster growth. What is the key strategic rationale for platform selection?",
+            "options": [
+              "The fragmented player is preferable because its lower margins provide more upside from margin expansion",
+              "The market leader is preferable because it provides operational infrastructure, best practices, and management depth to accelerate add-on integration and value creation",
+              "Neither choice matters since add-on acquisitions will eventually standardize both platforms"
+            ],
+            "correct": 1
+          },
+          "tip": "Platform = MVP (Most V-add Parent): credibility with targets, infrastructure to absorb add-ons, and management bench to run multiple companies post-integration."
+        },
+        "2": {
+          "definition": "The initial anchor acquisition in a buy-and-build strategy; typically a larger, highest-quality business with strong management and infrastructure that serves as the foundation for acquiring and integrating smaller complementary competitors or adjacent services.",
+          "scenarioDoneTo": "A PE firm acquires a $50M revenue regional staffing firm as a platform, then adds four smaller staffing companies from adjacent geographies and verticals over three years, consolidating back-office functions into the platform's infrastructure.",
+          "challenge": {
+            "scenario": "In evaluating a platform candidate, the investment team debates whether to select a market-leading business with strong margins and solid management versus a fragmented player with lower margins but faster growth. What is the key strategic rationale for platform selection?",
+            "options": [
+              "The fragmented player is preferable because its lower margins provide more upside from margin expansion",
+              "The market leader is preferable because it provides operational infrastructure, best practices, and management depth to accelerate add-on integration and value creation",
+              "Neither choice matters since add-on acquisitions will eventually standardize both platforms"
+            ],
+            "correct": 1
+          },
+          "tip": "Platform = MVP (Most V-add Parent): credibility with targets, infrastructure to absorb add-ons, and management bench to run multiple companies post-integration."
+        },
+        "3": {
+          "definition": "The initial anchor acquisition in a buy-and-build strategy; typically a larger, highest-quality business with strong management and infrastructure that serves as the foundation for acquiring and integrating smaller complementary competitors or adjacent services.",
+          "scenarioDoneTo": "A PE firm acquires a $50M revenue regional staffing firm as a platform, then adds four smaller staffing companies from adjacent geographies and verticals over three years, consolidating back-office functions into the platform's infrastructure.",
+          "challenge": {
+            "scenario": "In evaluating a platform candidate, the investment team debates whether to select a market-leading business with strong margins and solid manager versus a fragmented player with lower margins but faster growth. What is the key strategic rationale for platform selection?",
+            "options": [
+              "The fragmented player is preferable because its lower margins provide more upside from margin expansion",
+              "The market leader is preferable because it provides operational infrastructure, best practices, and management depth to accelerate add-on integration and value creation",
+              "Neither choice matters since add-on acquisitions will eventually standardize both platforms"
+            ],
+            "correct": 1
+          },
+          "tip": "Platform = MVP (Most V-add Parent): credibility with targets, infrastructure to absorb add-ons, and management bench to run multiple companies post-integration."
+        }
+      }
+    },
+    {
+      "id": "add-on-bolt-on-acquisition",
+      "name": "Add-on / Bolt-on Acquisition - Differences from Platform",
+      "tiers": {
+        "1": {
+          "definition": "A smaller, complementary business acquired after the platform company to increase revenue, fill capability gaps, expand geographically, or reduce competition; integrated into the platform's operational infrastructure and cost structure to generate synergies.",
+          "scenarioDoneTo": "After buying a pest control platform with strong residential services in the Southeast, the PE firm acquires smaller commercial pest control competitors in the Midwest and Southwest, consolidating them into one sales and operations model.",
+          "challenge": {
+            "scenario": "An add-on acquisition is expected to contribute $5M revenue at 15% EBITDA margins. However, pre-integration analysis reveals that consolidating 40% of the add-on's overhead functions into the platform will reduce combined costs by $1.2M annually. What is the most accurate adjusted EBITDA contribution?",
+            "options": [
+              "$750K (15% of $5M in standalone margins)",
+              "$1.95M (15% of $5M plus $1.2M synergies, but discounted 25% for integration risk)",
+              "$2.95M (15% of $5M plus $1.2M cost synergies, reflecting post-integration run-rate EBITDA)"
+            ],
+            "correct": 2
+          },
+          "tip": "Add-ons are acquisition by subtraction: target revenues minus redundant costs equals platform-adjusted margins\u2014the synergy math is the whole rationale."
+        },
+        "2": {
+          "definition": "A smaller, complementary business acquired after the platform company to increase revenue, fill capability gaps, expand geographically, or reduce competition; integrated into the platform's operational infrastructure and cost structure to generate synergies.",
+          "scenarioDoneTo": "After buying a pest control platform with strong residential services in the Southeast, the PE firm acquires smaller commercial pest control competitors in the Midwest and Southwest, consolidating them into one sales and operations model.",
+          "challenge": {
+            "scenario": "An add-on acquisition is expected to contribute $5M revenue at 15% EBITDA margins. However, pre-integration analysis reveals that consolidating 40% of the add-on's overhead functions into the platform will reduce combined costs by $1.2M annually. What is the most accurate adjusted EBITDA contribution?",
+            "options": [
+              "$750K (15% of $5M in standalone margins)",
+              "$1.95M (15% of $5M plus $1.2M synergies, but discounted 25% for integration risk)",
+              "$2.95M (15% of $5M plus $1.2M cost synergies, reflecting post-integration run-rate EBITDA)"
+            ],
+            "correct": 2
+          },
+          "tip": "Add-ons are acquisition by subtraction: target revenues minus redundant costs equals platform-adjusted margins\u2014the synergy math is the whole rationale."
+        },
+        "3": {
+          "definition": "A smaller, complementary business acquired after the platform company to increase revenue, fill capability gaps, expand geographically, or reduce competition; integrated into the platform's operational infrastructure and cost structure to generate synergies.",
+          "scenarioDoneTo": "After buying a pest control platform with strong residential services in the Southeast, the PE firm acquires smaller commercial pest control competitors in the Midwest and Southwest, consolidating them into one sales and operations model.",
+          "challenge": {
+            "scenario": "An add-on acquisition is expected to contribute $5M revenue at 15% EBITDA margins. However, pre-integration analysis reveals that consolidating 40% of the add-on's overhead functions into the platform will reduce combined costs by $1.2M annually. What is the most accurate adjusted EBITDA contribution?",
+            "options": [
+              "$750K (15% of $5M in standalone margins)",
+              "$1.95M (15% of $5M plus $1.2M synergies, but discounted 25% for integration risk)",
+              "$2.95M (15% of $5M plus $1.2M cost synergies, reflecting post-integration run-rate EBITDA)"
+            ],
+            "correct": 2
+          },
+          "tip": "Add-ons are acquisition by subtraction: target revenues minus redundant costs equals platform-adjusted margins\u2014the synergy math is the whole rationale."
+        }
+      }
+    },
+    {
+      "id": "portfolio-company-fund-relationship",
+      "name": "Portfolio Company - Relationship to the PE Fund",
+      "tiers": {
+        "1": {
+          "definition": "An operating company held by a PE fund; the fund owns equity (typically majority or control stake) alongside co-investors and management, creating fiduciary accountability for value creation, operational improvement, and eventual exit within the fund's investment period.",
+          "scenarioDoneTo": "A PE fund acquires a manufacturing company with a $30M equity investment and $70M debt financing, making it a portfolio company. The fund now controls board decisions, strategic direction, and exit timing while sharing returns with co-investors and management rollover shareholders.",
+          "challenge": {
+            "scenario": "A portfolio company generates $50M in EBITDA. The fund's LP agreement requires distributions from portfolio companies only after achieving debt paydown targets. Why would the PE fund elect to retain earnings rather than distribute immediately to LPs?",
+            "options": [
+              "Tax optimization: retaining earnings avoids LP-level capital gains treatment",
+              "Debt covenants and deleveraging targets require cash retention to maintain financial flexibility and credit facility compliance",
+              "Fund managers prefer to avoid LP distributions because they reduce Assets Under Management fees"
+            ],
+            "correct": 1
+          },
+          "tip": "Portfolio companies are the fund's working capital: retained cash funds growth investments, debt paydown, and dividend recaps\u2014each creates LP value through different mechanisms."
+        },
+        "2": {
+          "definition": "An operating company held by a PE fund; the fund owns equity (typically majority or control stake) alongside co-investors and management, creating fiduciary accountability for value creation, operational improvement, and eventual exit within the fund's investment period.",
+          "scenarioDoneTo": "A PE fund acquires a manufacturing company with a $30M equity investment and $70M debt financing, making it a portfolio company. The fund now controls board decisions, strategic direction, and exit timing while sharing returns with co-investors and management rollover shareholders.",
+          "challenge": {
+            "scenario": "A portfolio company generates $50M in EBITDA. The fund's LP agreement requires distributions from portfolio companies only after achieving debt paydown targets. Why would the PE fund elect to retain earnings rather than distribute immediately to LPs?",
+            "options": [
+              "Tax optimization: retaining earnings avoids LP-level capital gains treatment",
+              "Debt covenants and deleveraging targets require cash retention to maintain financial flexibility and credit facility compliance",
+              "Fund managers prefer to avoid LP distributions because they reduce Assets Under Management fees"
+            ],
+            "correct": 1
+          },
+          "tip": "Portfolio companies are the fund's working capital: retained cash funds growth investments, debt paydown, and dividend recaps\u2014each creates LP value through different mechanisms."
+        },
+        "3": {
+          "definition": "An operating company held by a PE fund; the fund owns equity (typically majority or control stake) alongside co-investors and management, creating fiduciary accountability for value creation, operational improvement, and eventual exit within the fund's investment period.",
+          "scenarioDoneTo": "A PE fund acquires a manufacturing company with a $30M equity investment and $70M debt financing, making it a portfolio company. The fund now controls board decisions, strategic direction, and exit timing while sharing returns with co-investors and management rollover shareholders.",
+          "challenge": {
+            "scenario": "A portfolio company generates $50M in EBITDA. The fund's LP agreement requires distributions from portfolio companies only after achieving debt paydown targets. Why would the PE fund elect to retain earnings rather than distribute immediately to LPs?",
+            "options": [
+              "Tax optimization: retaining earnings avoids LP-level capital gains treatment",
+              "Debt covenants and deleveraging targets require cash retention to maintain financial flexibility and credit facility compliance",
+              "Fund managers prefer to avoid LP distributions because they reduce Assets Under Management fees"
+            ],
+            "correct": 1
+          },
+          "tip": "Portfolio companies are the fund's working capital: retained cash funds growth investments, debt paydown, and dividend recaps\u2014each creates LP value through different mechanisms."
+        }
+      }
+    },
+    {
+      "id": "operating-partner-value-creation",
+      "name": "Operating Partner - Role and Value Creation",
+      "tiers": {
+        "1": {
+          "definition": "An experienced executive embedded at the PE portfolio company (usually reporting to the board or CEO) charged with implementing operational improvements, building management teams, executing strategic initiatives, and capturing identified value levers to accelerate EBITDA growth and margin expansion.",
+          "scenarioDoneTo": "A PE fund hires a former VP of Operations as Operating Partner for a recently acquired distribution company, tasked with cost benchmarking, supply chain optimization, sales process redesign, and management recruiting\u2014ultimately targeting 300 basis points of EBITDA margin uplift over 18 months.",
+          "challenge": {
+            "scenario": "An Operating Partner identifies $2M in annual cost savings through warehouse consolidation but encounters resistance from the existing finance director who reports to the CEO. The OP recommends hiring a new CFO externally. What is the underlying value creation methodology?",
+            "options": [
+              "Replacing underperforming managers with talent that embraces operational change, ensuring cost savings plans survive post-exit",
+              "Reducing friction through direct control hierarchy so the new CFO reports to the OP rather than the CEO",
+              "Standardizing finance processes across all portfolio companies to share best practices"
+            ],
+            "correct": 0
+          },
+          "tip": "Operating Partners don't execute; they enable: they supply urgency, expertise, and alignment on what metrics matter, transforming strategy into cash improvement."
+        },
+        "2": {
+          "definition": "An experienced executive embedded at the PE portfolio company (usually reporting to the board or CEO) charged with implementing operational improvements, building management teams, executing strategic initiatives, and capturing identified value levers to accelerate EBITDA growth and margin expansion.",
+          "scenarioDoneTo": "A PE fund hires a former VP of Operations as Operating Partner for a recently acquired distribution company, tasked with cost benchmarking, supply chain optimization, sales process redesign, and management recruiting\u2014ultimately targeting 300 basis points of EBITDA margin uplift over 18 months.",
+          "challenge": {
+            "scenario": "An Operating Partner identifies $2M in annual cost savings through warehouse consolidation but encounters resistance from the existing finance director who reports to the CEO. The OP recommends hiring a new CFO externally. What is the underlying value creation methodology?",
+            "options": [
+              "Replacing underperforming managers with talent that embraces operational change, ensuring cost savings plans survive post-exit",
+              "Reducing friction through direct control hierarchy so the new CFO reports to the OP rather than the CEO",
+              "Standardizing finance processes across all portfolio companies to share best practices"
+            ],
+            "correct": 0
+          },
+          "tip": "Operating Partners don't execute; they enable: they supply urgency, expertise, and alignment on what metrics matter, transforming strategy into cash improvement."
+        },
+        "3": {
+          "definition": "An experienced executive embedded at the PE portfolio company (usually reporting to the board or CEO) charged with implementing operational improvements, building management teams, executing strategic initiatives, and capturing identified value levers to accelerate EBITDA growth and margin expansion.",
+          "scenarioDoneTo": "A PE fund hires a former VP of Operations as Operating Partner for a recently acquired distribution company, tasked with cost benchmarking, supply chain optimization, sales process redesign, and management recruiting\u2014ultimately targeting 300 basis points of EBITDA margin uplift over 18 months.",
+          "challenge": {
+            "scenario": "An Operating Partner identifies $2M in annual cost savings through warehouse consolidation but encounters resistance from the existing finance director who reports to the CEO. The OP recommends hiring a new CFO externally. What is the underlying value creation methodology?",
+            "options": [
+              "Replacing underperforming managers with talent that embraces operational change, ensuring cost savings plans survive post-exit",
+              "Reducing friction through direct control hierarchy so the new CFO reports to the OP rather than the CEO",
+              "Standardizing finance processes across all portfolio companies to share best practices"
+            ],
+            "correct": 0
+          },
+          "tip": "Operating Partners don't execute; they enable: they supply urgency, expertise, and alignment on what metrics matter, transforming strategy into cash improvement."
+        }
+      }
+    },
+    {
+      "id": "limited-partnership-agreement-governing",
+      "name": "Limited Partnership Agreement (LPA) - What It Governs",
+      "tiers": {
+        "1": {
+          "definition": "The binding contract between the PE fund (General Partner) and its investors (Limited Partners) that defines fund governance, management fees, carry/performance fees, capital call procedures, distribution waterfall, LP consent rights, fund term, key person provisions, and fiduciary duties\u2014establishing the legal and economic framework for the entire fund relationship.",
+          "scenarioDoneTo": "An LPA specifies that management fees are 2% of committed capital for years 1-3, then 2% of invested capital thereafter; defines 20% carried interest for the GP above an 8% preferred return hurdle; and requires LP approval for transactions above $50M.",
+          "challenge": {
+            "scenario": "A fund's LPA allows the GP to charge transaction fees (advisory fees paid by portfolio companies to the fund for M&A support) but stipulates they must be 'no more than 1% of transaction value.' An OP identifies a cross-portfolio synergy deal valued at $100M. If the fund charges $1.5M, what is the likely consequence?",
+            "options": [
+              "No consequence; transaction fees are discretionary and GP-controlled regardless of LPA wording",
+              "LP lawsuits and breach claim because the fee violates the LPA cap, potentially requiring repayment to the fund and damaging GP reputation",
+              "Automatic reclassification of excess fees as ordinary income subject to withholding tax"
+            ],
+            "correct": 1
+          },
+          "tip": "LPA = Constitution for the fund: every material economic and governance decision hinges on LPA language\u2014violations expose GPs to LP litigation and damage."
+        },
+        "2": {
+          "definition": "The binding contract between the PE fund (General Partner) and its investors (Limited Partners) that defines fund governance, management fees, carry/performance fees, capital call procedures, distribution waterfall, LP consent rights, fund term, key person provisions, and fiduciary duties\u2014establishing the legal and economic framework for the entire fund relationship.",
+          "scenarioDoneTo": "An LPA specifies that management fees are 2% of committed capital for years 1-3, then 2% of invested capital thereafter; defines 20% carried interest for the GP above an 8% preferred return hurdle; and requires LP approval for transactions above $50M.",
+          "challenge": {
+            "scenario": "A fund's LPA allows the GP to charge transaction fees (advisory fees paid by portfolio companies to the fund for M&A support) but stipulates they must be 'no more than 1% of transaction value.' An OP identifies a cross-portfolio synergy deal valued at $100M. If the fund charges $1.5M, what is the likely consequence?",
+            "options": [
+              "No consequence; transaction fees are discretionary and GP-controlled regardless of LPA wording",
+              "LP lawsuits and breach claim because the fee violates the LPA cap, potentially requiring repayment to the fund and damaging GP reputation",
+              "Automatic reclassification of excess fees as ordinary income subject to withholding tax"
+            ],
+            "correct": 1
+          },
+          "tip": "LPA = Constitution for the fund: every material economic and governance decision hinges on LPA language\u2014violations expose GPs to LP litigation and damage."
+        },
+        "3": {
+          "definition": "The binding contract between the PE fund (General Partner) and its investors (Limited Partners) that defines fund governance, management fees, carry/performance fees, capital call procedures, distribution waterfall, LP consent rights, fund term, key person provisions, and fiduciary duties\u2014establishing the legal and economic framework for the entire fund relationship.",
+          "scenarioDoneTo": "An LPA specifies that management fees are 2% of committed capital for years 1-3, then 2% of invested capital thereafter; defines 20% carried interest for the GP above an 8% preferred return hurdle; and requires LP approval for transactions above $50M.",
+          "challenge": {
+            "scenario": "A fund's LPA allows the GP to charge transaction fees (advisory fees paid by portfolio companies to the fund for M&A support) but stipulates they must be 'no more than 1% of transaction value.' An OP identifies a cross-portfolio synergy deal valued at $100M. If the fund charges $1.5M, what is the likely consequence?",
+            "options": [
+              "No consequence; transaction fees are discretionary and GP-controlled regardless of LPA wording",
+              "LP lawsuits and breach claim because the fee violates the LPA cap, potentially requiring repayment to the fund and damaging GP reputation",
+              "Automatic reclassification of excess fees as ordinary income subject to withholding tax"
+            ],
+            "correct": 1
+          },
+          "tip": "LPA = Constitution for the fund: every material economic and governance decision hinges on LPA language\u2014violations expose GPs to LP litigation and damage."
+        }
+      }
+    },
+    {
+      "id": "capital-account-lp-ownership-tracking",
+      "name": "Capital Account - How LP Ownership Is Tracked",
+      "tiers": {
+        "1": {
+          "definition": "The accounting ledger maintained for each LP that records initial capital contributions, allocated fund profits/losses, management and performance fee deductions, and distributions\u2014determining the LP's ownership percentage, investment basis, and liquidation claim on fund assets.",
+          "scenarioDoneTo": "An LP commits $10M to a PE fund. After capital call, Year 1 allocates $2M profit (increasing the capital account to $12M). Year 2 allocates $500K loss (reducing to $11.5M). If the fund distributes $3M, the capital account drops to $8.5M, representing remaining ownership stake.",
+          "challenge": {
+            "scenario": "Two LPs invest in a fund: LP-A commits $20M and LP-B commits $30M. After initial capital calls, the fund generates $15M in management fees (deducted from committed capital). How should the fee impact each LP's capital account?",
+            "options": [
+              "Both LPs' accounts are reduced equally ($7.5M each) because fees benefit the entire fund",
+              "Both LPs' accounts are reduced pro rata to their commitment ($6M for LP-A, $9M for LP-B)",
+              "Management fees are never deducted from capital accounts; they reduce fund value but not individual LP positions"
+            ],
+            "correct": 1
+          },
+          "tip": "Capital accounts float: contributions up, fees/losses down, allocations up/down, distributions down. The account is the LP's real-time ownership claim."
+        },
+        "2": {
+          "definition": "The accounting ledger maintained for each LP that records initial capital contributions, allocated fund profits/losses, management and performance fee deductions, and distributions\u2014determining the LP's ownership percentage, investment basis, and liquidation claim on fund assets.",
+          "scenarioDoneTo": "An LP commits $10M to a PE fund. After capital call, Year 1 allocates $2M profit (increasing the capital account to $12M). Year 2 allocates $500K loss (reducing to $11.5M). If the fund distributes $3M, the capital account drops to $8.5M, representing remaining ownership stake.",
+          "challenge": {
+            "scenario": "Two LPs invest in a fund: LP-A commits $20M and LP-B commits $30M. After initial capital calls, the fund generates $15M in management fees (deducted from committed capital). How should the fee impact each LP's capital account?",
+            "options": [
+              "Both LPs' accounts are reduced equally ($7.5M each) because fees benefit the entire fund",
+              "Both LPs' accounts are reduced pro rata to their commitment ($6M for LP-A, $9M for LP-B)",
+              "Management fees are never deducted from capital accounts; they reduce fund value but not individual LP positions"
+            ],
+            "correct": 1
+          },
+          "tip": "Capital accounts float: contributions up, fees/losses down, allocations up/down, distributions down. The account is the LP's real-time ownership claim."
+        },
+        "3": {
+          "definition": "The accounting ledger maintained for each LP that records initial capital contributions, allocated fund profits/losses, management and performance fee deductions, and distributions\u2014determining the LP's ownership percentage, investment basis, and liquidation claim on fund assets.",
+          "scenarioDoneTo": "An LP commits $10M to a PE fund. After capital call, Year 1 allocates $2M profit (increasing the capital account to $12M). Year 2 allocates $500K loss (reducing to $11.5M). If the fund distributes $3M, the capital account drops to $8.5M, representing remaining ownership stake.",
+          "challenge": {
+            "scenario": "Two LPs invest in a fund: LP-A commits $20M and LP-B commits $30M. After initial capital calls, the fund generates $15M in management fees (deducted from committed capital). How should the fee impact each LP's capital account?",
+            "options": [
+              "Both LPs' accounts are reduced equally ($7.5M each) because fees benefit the entire fund",
+              "Both LPs' accounts are reduced pro rata to their commitment ($6M for LP-A, $9M for LP-B)",
+              "Management fees are never deducted from capital accounts; they reduce fund value but not individual LP positions"
+            ],
+            "correct": 1
+          },
+          "tip": "Capital accounts float: contributions up, fees/losses down, allocations up/down, distributions down. The account is the LP's real-time ownership claim."
+        }
+      }
+    },
+    {
+      "id": "net-asset-value-pe-funds",
+      "name": "Net Asset Value (NAV) - What It Represents for PE Funds",
+      "tiers": {
+        "1": {
+          "definition": "The estimated value of all fund assets net of liabilities, typically calculated as the sum of unrealized valuations of portfolio companies plus cash, net of debt and management fees\u2014reported quarterly or annually to track fund performance and often used to calculate LP distributions and GP carry.",
+          "scenarioDoneTo": "A PE fund with $500M in committed capital has portfolio valuations of $1.2B, cash of $100M, debt of $200M, and accrued fees of $50M. NAV = $1.2B + $100M - $200M - $50M = $1.05B, representing the pool available for LP distributions.",
+          "challenge": {
+            "scenario": "A fund reports NAV declining from $800M to $750M quarter-over-quarter. A new LP asks if this means the fund lost value. Which statement best explains the NAV change?",
+            "options": [
+              "Yes, the portfolio companies underperformed and NAV decline indicates negative returns to LPs",
+              "Not necessarily: the decline could result from management fee accrual, a quarterly distribution to LPs reducing fund assets, or conservative revaluation of one portfolio company while others appreciated",
+              "NAV is irrelevant to LP returns; only distributions and exit proceeds measure performance"
+            ],
+            "correct": 1
+          },
+          "tip": "NAV is a stock photo, not a video: it's point-in-time valuation including unrealized estimates. Changes reflect fees, distributions, asset revaluations\u2014not necessarily performance."
+        },
+        "2": {
+          "definition": "The estimated value of all fund assets net of liabilities, typically calculated as the sum of unrealized valuations of portfolio companies plus cash, net of debt and management fees\u2014reported quarterly or annually to track fund performance and often used to calculate LP distributions and GP carry.",
+          "scenarioDoneTo": "A PE fund with $500M in committed capital has portfolio valuations of $1.2B, cash of $100M, debt of $200M, and accrued fees of $50M. NAV = $1.2B + $100M - $200M - $50M = $1.05B, representing the pool available for LP distributions.",
+          "challenge": {
+            "scenario": "A fund reports NAV declining from $800M to $750M quarter-over-quarter. A new LP asks if this means the fund lost value. Which statement best explains the NAV change?",
+            "options": [
+              "Yes, the portfolio companies underperformed and NAV decline indicates negative returns to LPs",
+              "Not necessarily: the decline could result from management fee accrual, a quarterly distribution to LPs reducing fund assets, or conservative revaluation of one portfolio company while others appreciated",
+              "NAV is irrelevant to LP returns; only distributions and exit proceeds measure performance"
+            ],
+            "correct": 1
+          },
+          "tip": "NAV is a stock photo, not a video: it's point-in-time valuation including unrealized estimates. Changes reflect fees, distributions, asset revaluations\u2014not necessarily performance."
+        },
+        "3": {
+          "definition": "The estimated value of all fund assets net of liabilities, typically calculated as the sum of unrealized valuations of portfolio companies plus cash, net of debt and management fees\u2014reported quarterly or annually to track fund performance and often used to calculate LP distributions and GP carry.",
+          "scenarioDoneTo": "A PE fund with $500M in committed capital has portfolio valuations of $1.2B, cash of $100M, debt of $200M, and accrued fees of $50M. NAV = $1.2B + $100M - $200M - $50M = $1.05B, representing the pool available for LP distributions.",
+          "challenge": {
+            "scenario": "A fund reports NAV declining from $800M to $750M quarter-over-quarter. A new LP asks if this means the fund lost value. Which statement best explains the NAV change?",
+            "options": [
+              "Yes, the portfolio companies underperformed and NAV decline indicates negative returns to LPs",
+              "Not necessarily: the decline could result from management fee accrual, a quarterly distribution to LPs reducing fund assets, or conservative revaluation of one portfolio company while others appreciated",
+              "NAV is irrelevant to LP returns; only distributions and exit proceeds measure performance"
+            ],
+            "correct": 1
+          },
+          "tip": "NAV is a stock photo, not a video: it's point-in-time valuation including unrealized estimates. Changes reflect fees, distributions, asset revaluations\u2014not necessarily performance."
+        }
+      }
+    },
+    {
+      "id": "blind-pool-lp-commitment",
+      "name": "Blind Pool - Why LPs Commit Without Knowing Specific Deals",
+      "tiers": {
+        "1": {
+          "definition": "A PE fund raise model where LPs commit capital to the fund without pre-disclosure of specific portfolio companies or investments; LPs trust the GP's track record, investment thesis, and team, then fund capital is deployed into deals identified post-closing\u2014standard practice for most mid-market and lower-middle-market PE funds.",
+          "scenarioDoneTo": "A PE firm closes a $250M blind pool fund with commitments from 12 institutional LPs; the fund has a 5-year investment period during which the GP will identify add-on and platform acquisitions in software and business services, deploying capital as deals emerge.",
+          "challenge": {
+            "scenario": "Why do institutional LPs accept blind pools despite the risk of deploying capital without seeing specific investments in advance?",
+            "options": [
+              "Regulatory requirements prohibit LPs from reviewing deals, so blind pools are mandatory",
+              "LPs rely on the GP's historical IRRs, management team reputation, and sector expertise as proxies for deal quality; competitive fund dynamics reward speed, and early LPs secure better terms",
+              "Blind pools reduce fund raising costs and allow the GP to avoid market pressure from public deal announcements"
+            ],
+            "correct": 1
+          },
+          "tip": "Blind pools = trust contracts: LPs bet on the GP's thesis, track record, and alignment (GP co-investments)\u2014not on specific deals. Better for GPs (flexibility); riskier for LPs (commitment before seeing plays)."
+        },
+        "2": {
+          "definition": "A PE fund raise model where LPs commit capital to the fund without pre-disclosure of specific portfolio companies or investments; LPs trust the GP's track record, investment thesis, and team, then fund capital is deployed into deals identified post-closing\u2014standard practice for most mid-market and lower-middle-market PE funds.",
+          "scenarioDoneTo": "A PE firm closes a $250M blind pool fund with commitments from 12 institutional LPs; the fund has a 5-year investment period during which the GP will identify add-on and platform acquisitions in software and business services, deploying capital as deals emerge.",
+          "challenge": {
+            "scenario": "Why do institutional LPs accept blind pools despite the risk of deploying capital without seeing specific investments in advance?",
+            "options": [
+              "Regulatory requirements prohibit LPs from reviewing deals, so blind pools are mandatory",
+              "LPs rely on the GP's historical IRRs, management team reputation, and sector expertise as proxies for deal quality; competitive fund dynamics reward speed, and early LPs secure better terms",
+              "Blind pools reduce fund raising costs and allow the GP to avoid market pressure from public deal announcements"
+            ],
+            "correct": 1
+          },
+          "tip": "Blind pools = trust contracts: LPs bet on the GP's thesis, track record, and alignment (GP co-investments)\u2014not on specific deals. Better for GPs (flexibility); riskier for LPs (commitment before seeing plays)."
+        },
+        "3": {
+          "definition": "A PE fund raise model where LPs commit capital to the fund without pre-disclosure of specific portfolio companies or investments; LPs trust the GP's track record, investment thesis, and team, then fund capital is deployed into deals identified post-closing\u2014standard practice for most mid-market and lower-middle-market PE funds.",
+          "scenarioDoneTo": "A PE firm closes a $250M blind pool fund with commitments from 12 institutional LPs; the fund has a 5-year investment period during which the GP will identify add-on and platform acquisitions in software and business services, deploying capital as deals emerge.",
+          "challenge": {
+            "scenario": "Why do institutional LPs accept blind pools despite the risk of deploying capital without seeing specific investments in advance?",
+            "options": [
+              "Regulatory requirements prohibit LPs from reviewing deals, so blind pools are mandatory",
+              "LPs rely on the GP's historical IRRs, management team reputation, and sector expertise as proxies for deal quality; competitive fund dynamics reward speed, and early LPs secure better terms",
+              "Blind pools reduce fund raising costs and allow the GP to avoid market pressure from public deal announcements"
+            ],
+            "correct": 1
+          },
+          "tip": "Blind pools = trust contracts: LPs bet on the GP's thesis, track record, and alignment (GP co-investments)\u2014not on specific deals. Better for GPs (flexibility); riskier for LPs (commitment before seeing plays)."
+        }
+      }
+    },
+    {
+      "id": "key-person-clause-triggers",
+      "name": "Key Person Clause - What Triggers It, Why LPs Want It",
+      "tiers": {
+        "1": {
+          "definition": "An LPA provision that triggers if one or more named critical investment professionals (typically the fund sponsor or senior partners) depart or become unavailable; usually suspends new capital deployment and/or allows LPs to withdraw committed but undeployed capital, protecting LPs from inheriting a fund directed by unfamiliar managers.",
+          "scenarioDoneTo": "A $500M fund lists the founding partner and two senior investment directors as key persons. If any depart before fund deployment begins, undeployed capital must be returned to LPs within 90 days, and no new investments can close without LP approval.",
+          "challenge": {
+            "scenario": "The fund's founding partner unexpectedly retires after 18 months. The fund has deployed $300M of $500M committed capital, and $50M remains undeployed. Under the key person clause, what is the most likely outcome?",
+            "options": [
+              "All $50M undeployed capital is returned to LPs immediately, and no new add-on acquisitions can be approved without LP majority vote",
+              "$50M is returned to LPs, but the fund can continue operating under new senior leadership as long as management continuity is maintained",
+              "The key person clause is voided because capital has already been substantially deployed, and the fund continues normally"
+            ],
+            "correct": 0
+          },
+          "tip": "Key person clauses are LP insurance: they protect against the risk that 'key talent leaves, fund becomes zombie, and LPs' capital gets stuck behind unfamiliar management.' Better for LPs, restrictive for GPs."
+        },
+        "2": {
+          "definition": "An LPA provision that triggers if one or more named critical investment professionals (typically the fund sponsor or senior partners) depart or become unavailable; usually suspends new capital deployment and/or allows LPs to withdraw committed but undeployed capital, protecting LPs from inheriting a fund directed by unfamiliar managers.",
+          "scenarioDoneTo": "A $500M fund lists the founding partner and two senior investment directors as key persons. If any depart before fund deployment begins, undeployed capital must be returned to LPs within 90 days, and no new investments can close without LP approval.",
+          "challenge": {
+            "scenario": "The fund's founding partner unexpectedly retires after 18 months. The fund has deployed $300M of $500M committed capital, and $50M remains undeployed. Under the key person clause, what is the most likely outcome?",
+            "options": [
+              "All $50M undeployed capital is returned to LPs immediately, and no new add-on acquisitions can be approved without LP majority vote",
+              "$50M is returned to LPs, but the fund can continue operating under new senior leadership as long as management continuity is maintained",
+              "The key person clause is voided because capital has already been substantially deployed, and the fund continues normally"
+            ],
+            "correct": 0
+          },
+          "tip": "Key person clauses are LP insurance: they protect against the risk that 'key talent leaves, fund becomes zombie, and LPs' capital gets stuck behind unfamiliar management.' Better for LPs, restrictive for GPs."
+        },
+        "3": {
+          "definition": "An LPA provision that triggers if one or more named critical investment professionals (typically the fund sponsor or senior partners) depart or become unavailable; usually suspends new capital deployment and/or allows LPs to withdraw committed but undeployed capital, protecting LPs from inheriting a fund directed by unfamiliar managers.",
+          "scenarioDoneTo": "A $500M fund lists the founding partner and two senior investment directors as key persons. If any depart before fund deployment begins, undeployed capital must be returned to LPs within 90 days, and no new investments can close without LP approval.",
+          "challenge": {
+            "scenario": "The fund's founding partner unexpectedly retires after 18 months. The fund has deployed $300M of $500M committed capital, and $50M remains undeployed. Under the key person clause, what is the most likely outcome?",
+            "options": [
+              "All $50M undeployed capital is returned to LPs immediately, and no new add-on acquisitions can be approved without LP majority vote",
+              "$50M is returned to LPs, but the fund can continue operating under new senior leadership as long as management continuity is maintained",
+              "The key person clause is voided because capital has already been substantially deployed, and the fund continues normally"
+            ],
+            "correct": 0
+          },
+          "tip": "Key person clauses are LP insurance: they protect against the risk that 'key talent leaves, fund becomes zombie, and LPs' capital gets stuck behind unfamiliar management.' Better for LPs, restrictive for GPs."
+        }
+      }
+    },
+    {
+      "id": "pe-irr",
+      "name": "Internal Rate of Return (IRR)",
+      "tiers": {
+        "1": {
+          "definition": "The discount rate at which the net present value of a fund's cash flows equals zero, measuring the annualized return accounting for timing and magnitude of cash inflows and outflows.",
+          "scenarioDoneTo": "A PE fund invests $100M in a company in year 1, receives $50M distribution in year 3, and $150M in year 5, generating a 25% IRR that reflects the timing advantage of early distributions.",
+          "challenge": {
+            "scenario": "A PE fund reports a 30% IRR on a $500M investment exited in 3 years. Which statement most accurately describes what this IRR represents?",
+            "options": [
+              "The fund's annual simple average return divided by the investment period (500M/3)",
+              "The annualized discount rate making the present value of all cash flows sum to zero",
+              "The percentage gain relative to assets under management across all fund periods"
+            ],
+            "correct": 1
+          },
+          "tip": "IRR is time-weighted; the 'R' stands for Rate. It prioritizes when you get money back\u2014early exits boost IRR disproportionately."
+        },
+        "2": {
+          "definition": "The discount rate at which the net present value of a fund's cash flows equals zero, measuring the annualized return accounting for timing and magnitude of cash inflows and outflows.",
+          "scenarioDoneTo": "A PE fund invests $100M in a company in year 1, receives $50M distribution in year 3, and $150M in year 5, generating a 25% IRR that reflects the timing advantage of early distributions.",
+          "challenge": {
+            "scenario": "A PE fund reports a 30% IRR on a $500M investment exited in 3 years. Which statement most accurately describes what this IRR represents?",
+            "options": [
+              "The fund's annual simple average return divided by the investment period (500M/3)",
+              "The annualized discount rate making the present value of all cash flows sum to zero",
+              "The percentage gain relative to assets under management across all fund periods"
+            ],
+            "correct": 1
+          },
+          "tip": "IRR is time-weighted; the 'R' stands for Rate. It prioritizes when you get money back\u2014early exits boost IRR disproportionately."
+        },
+        "3": {
+          "definition": "The discount rate at which the net present value of a fund's cash flows equals zero, measuring the annualized return accounting for timing and magnitude of cash inflows and outflows.",
+          "scenarioDoneTo": "A PE fund invests $100M in a company in year 1, receives $50M distribution in year 3, and $150M in year 5, generating a 25% IRR that reflects the timing advantage of early distributions.",
+          "challenge": {
+            "scenario": "A PE fund reports a 30% IRR on a $500M investment exited in 3 years. Which statement most accurately describes what this IRR represents?",
+            "options": [
+              "The fund's annual simple average return divided by the investment period (500M/3)",
+              "The annualized discount rate making the present value of all cash flows sum to zero",
+              "The percentage gain relative to assets under management across all fund periods"
+            ],
+            "correct": 1
+          },
+          "tip": "IRR is time-weighted; the 'R' stands for Rate. It prioritizes when you get money back\u2014early exits boost IRR disproportionately."
+        }
+      }
+    },
+    {
+      "id": "pe-moic",
+      "name": "Multiple on Invested Capital (MOIC)",
+      "tiers": {
+        "1": {
+          "definition": "The ratio of cumulative distributions plus ending value to paid-in capital, measuring total return independent of timing; a multiple of 2.0x means $2 returned for every $1 invested.",
+          "scenarioDoneTo": "A fund invests $100M deployed over 2 years, receives $80M distributions in years 4-6, and holds $120M in remaining portfolio value, yielding a 2.0x MOIC without considering timing.",
+          "challenge": {
+            "scenario": "A PE fund has 2.5x MOIC and 18% IRR on a 5-year holding period. What does the divergence between these metrics primarily indicate?",
+            "options": [
+              "The fund deployed capital unevenly, with most invested early rather than at period-end",
+              "The timing of distributions was delayed relative to capital deployment, reducing annualized return despite strong absolute gains",
+              "The fund's management fees were unusually high, compressing IRR relative to total value creation"
+            ],
+            "correct": 1
+          },
+          "tip": "MOIC ignores timing ('multiples don't care when'). Compare MOIC to IRR to assess distribution timing quality."
+        },
+        "2": {
+          "definition": "The ratio of cumulative distributions plus ending value to paid-in capital, measuring total return independent of timing; a multiple of 2.0x means $2 returned for every $1 invested.",
+          "scenarioDoneTo": "A fund invests $100M deployed over 2 years, receives $80M distributions in years 4-6, and holds $120M in remaining portfolio value, yielding a 2.0x MOIC without considering timing.",
+          "challenge": {
+            "scenario": "A PE fund has 2.5x MOIC and 18% IRR on a 5-year holding period. What does the divergence between these metrics primarily indicate?",
+            "options": [
+              "The fund deployed capital unevenly, with most invested early rather than at period-end",
+              "The timing of distributions was delayed relative to capital deployment, reducing annualized return despite strong absolute gains",
+              "The fund's management fees were unusually high, compressing IRR relative to total value creation"
+            ],
+            "correct": 1
+          },
+          "tip": "MOIC ignores timing ('multiples don't care when'). Compare MOIC to IRR to assess distribution timing quality."
+        },
+        "3": {
+          "definition": "The ratio of cumulative distributions plus ending value to paid-in capital, measuring total return independent of timing; a multiple of 2.0x means $2 returned for every $1 invested.",
+          "scenarioDoneTo": "A fund invests $100M deployed over 2 years, receives $80M distributions in years 4-6, and holds $120M in remaining portfolio value, yielding a 2.0x MOIC without considering timing.",
+          "challenge": {
+            "scenario": "A PE fund has 2.5x MOIC and 18% IRR on a 5-year holding period. What does the divergence between these metrics primarily indicate?",
+            "options": [
+              "The fund deployed capital unevenly, with most invested early rather than at period-end",
+              "The timing of distributions was delayed relative to capital deployment, reducing annualized return despite strong absolute gains",
+              "The fund's management fees were unusually high, compressing IRR relative to total value creation"
+            ],
+            "correct": 1
+          },
+          "tip": "MOIC ignores timing ('multiples don't care when'). Compare MOIC to IRR to assess distribution timing quality."
+        }
+      }
+    },
+    {
+      "id": "pe-tvpi",
+      "name": "Total Value to Paid-In (TVPI)",
+      "tiers": {
+        "1": {
+          "definition": "The ratio of cumulative distributions to date plus remaining net asset value to total paid-in capital; captures both realized and unrealized gains, showing fund performance while companies are still held.",
+          "scenarioDoneTo": "A fund deploys $200M, distributes $100M from exits, and marks remaining portfolio at $250M NAV; TVPI of 1.75x reflects the blend of realized and unrealized value.",
+          "challenge": {
+            "scenario": "Why might a fund's TVPI be significantly higher than its DPI early in the fund's life cycle?",
+            "options": [
+              "The fund deployed capital more efficiently than peer funds, earning premium returns",
+              "Remaining unrealized portfolio holdings are marked aggressively above purchase cost, creating paper gains not yet distributed",
+              "The GP reserves less capital for management fees, allowing more upside to flow to TVPI calculation"
+            ],
+            "correct": 1
+          },
+          "tip": "TVPI = (Distributions + NAV) / Paid-In. It includes paper gains; DPI is cash in hand. Watch for NAV inflation late-cycle."
+        },
+        "2": {
+          "definition": "The ratio of cumulative distributions to date plus remaining net asset value to total paid-in capital; captures both realized and unrealized gains, showing fund performance while companies are still held.",
+          "scenarioDoneTo": "A fund deploys $200M, distributes $100M from exits, and marks remaining portfolio at $250M NAV; TVPI of 1.75x reflects the blend of realized and unrealized value.",
+          "challenge": {
+            "scenario": "Why might a fund's TVPI be significantly higher than its DPI early in the fund's life cycle?",
+            "options": [
+              "The fund deployed capital more efficiently than peer funds, earning premium returns",
+              "Remaining unrealized portfolio holdings are marked aggressively above purchase cost, creating paper gains not yet distributed",
+              "The GP reserves less capital for management fees, allowing more upside to flow to TVPI calculation"
+            ],
+            "correct": 1
+          },
+          "tip": "TVPI = (Distributions + NAV) / Paid-In. It includes paper gains; DPI is cash in hand. Watch for NAV inflation late-cycle."
+        },
+        "3": {
+          "definition": "The ratio of cumulative distributions to date plus remaining net asset value to total paid-in capital; captures both realized and unrealized gains, showing fund performance while companies are still held.",
+          "scenarioDoneTo": "A fund deploys $200M, distributes $100M from exits, and marks remaining portfolio at $250M NAV; TVPI of 1.75x reflects the blend of realized and unrealized value.",
+          "challenge": {
+            "scenario": "Why might a fund's TVPI be significantly higher than its DPI early in the fund's life cycle?",
+            "options": [
+              "The fund deployed capital more efficiently than peer funds, earning premium returns",
+              "Remaining unrealized portfolio holdings are marked aggressively above purchase cost, creating paper gains not yet distributed",
+              "The GP reserves less capital for management fees, allowing more upside to flow to TVPI calculation"
+            ],
+            "correct": 1
+          },
+          "tip": "TVPI = (Distributions + NAV) / Paid-In. It includes paper gains; DPI is cash in hand. Watch for NAV inflation late-cycle."
+        }
+      }
+    },
+    {
+      "id": "pe-dpi",
+      "name": "Distributions to Paid-In (DPI)",
+      "tiers": {
+        "1": {
+          "definition": "The ratio of cumulative cash distributions paid to LPs to total paid-in capital, reflecting only realized returns; a DPI of 1.5x means $1.50 in actual cash distributions for every $1 invested.",
+          "scenarioDoneTo": "A fund with $300M paid-in capital has distributed $450M to LPs through exits and dividend recapitalizations, yielding a DPI of 1.5x\u2014demonstrating realized cash returns only.",
+          "challenge": {
+            "scenario": "A mid-stage fund reports DPI of 0.8x while TVPI is 2.2x. What is the most likely explanation for this gap?",
+            "options": [
+              "The GP is taking excessive management fees, proportionally reducing cash returned to LPs",
+              "The fund has realized losses on some investments, offset by unrealized gains in the remaining portfolio",
+              "Most value creation remains locked in unrealized holdings that haven't yet been exited"
+            ],
+            "correct": 2
+          },
+          "tip": "DPI = Cash Out / Cash In. It's the hard metric; no opinion on valuations. Penny stock LPs only trust DPI."
+        },
+        "2": {
+          "definition": "The ratio of cumulative cash distributions paid to LPs to total paid-in capital, reflecting only realized returns; a DPI of 1.5x means $1.50 in actual cash distributions for every $1 invested.",
+          "scenarioDoneTo": "A fund with $300M paid-in capital has distributed $450M to LPs through exits and dividend recapitalizations, yielding a DPI of 1.5x\u2014demonstrating realized cash returns only.",
+          "challenge": {
+            "scenario": "A mid-stage fund reports DPI of 0.8x while TVPI is 2.2x. What is the most likely explanation for this gap?",
+            "options": [
+              "The GP is taking excessive management fees, proportionally reducing cash returned to LPs",
+              "The fund has realized losses on some investments, offset by unrealized gains in the remaining portfolio",
+              "Most value creation remains locked in unrealized holdings that haven't yet been exited"
+            ],
+            "correct": 2
+          },
+          "tip": "DPI = Cash Out / Cash In. It's the hard metric; no opinion on valuations. Penny stock LPs only trust DPI."
+        },
+        "3": {
+          "definition": "The ratio of cumulative cash distributions paid to LPs to total paid-in capital, reflecting only realized returns; a DPI of 1.5x means $1.50 in actual cash distributions for every $1 invested.",
+          "scenarioDoneTo": "A fund with $300M paid-in capital has distributed $450M to LPs through exits and dividend recapitalizations, yielding a DPI of 1.5x\u2014demonstrating realized cash returns only.",
+          "challenge": {
+            "scenario": "A mid-stage fund reports DPI of 0.8x while TVPI is 2.2x. What is the most likely explanation for this gap?",
+            "options": [
+              "The GP is taking excessive management fees, proportionally reducing cash returned to LPs",
+              "The fund has realized losses on some investments, offset by unrealized gains in the remaining portfolio",
+              "Most value creation remains locked in unrealized holdings that haven't yet been exited"
+            ],
+            "correct": 2
+          },
+          "tip": "DPI = Cash Out / Cash In. It's the hard metric; no opinion on valuations. Penny stock LPs only trust DPI."
+        }
+      }
+    },
+    {
+      "id": "pe-pme",
+      "name": "Public Market Equivalent (PME)",
+      "tiers": {
+        "1": {
+          "definition": "A benchmarking methodology that adjusts a PE fund's cash flows as if they had been invested in a public index (typically S&P 500) instead, comparing net PE returns to what passive public market investing would have delivered.",
+          "scenarioDoneTo": "A fund deploys $100M in year 1 and exits for $300M in year 5. PME calculates what $100M in the S&P 500 at year 1 would be worth in year 5, then divides actual PE proceeds by that PME value to derive alpha.",
+          "challenge": {
+            "scenario": "A PE fund reports 25% IRR and a PME of 0.92x. What does this most accurately convey?",
+            "options": [
+              "The PE fund underperformed the S&P 500 by 8% in total return despite its 25% IRR, due to unfavorable market timing",
+              "The fund's cash equity return was 25% IRR, but public markets appreciated faster during the same period",
+              "The GP took outsized fees, leaving LPs with returns tracking only 92% of S&P 500 growth"
+            ],
+            "correct": 0
+          },
+          "tip": "PME <1.0x is underperformance vs. public markets; >1.0x is outperformance. Benchmark, don't brag\u2014timing matters."
+        },
+        "2": {
+          "definition": "A benchmarking methodology that adjusts a PE fund's cash flows as if they had been invested in a public index (typically S&P 500) instead, comparing net PE returns to what passive public market investing would have delivered.",
+          "scenarioDoneTo": "A fund deploys $100M in year 1 and exits for $300M in year 5. PME calculates what $100M in the S&P 500 at year 1 would be worth in year 5, then divides actual PE proceeds by that PME value to derive alpha.",
+          "challenge": {
+            "scenario": "A PE fund reports 25% IRR and a PME of 0.92x. What does this most accurately convey?",
+            "options": [
+              "The PE fund underperformed the S&P 500 by 8% in total return despite its 25% IRR, due to unfavorable market timing",
+              "The fund's cash equity return was 25% IRR, but public markets appreciated faster during the same period",
+              "The GP took outsized fees, leaving LPs with returns tracking only 92% of S&P 500 growth"
+            ],
+            "correct": 0
+          },
+          "tip": "PME <1.0x is underperformance vs. public markets; >1.0x is outperformance. Benchmark, don't brag\u2014timing matters."
+        },
+        "3": {
+          "definition": "A benchmarking methodology that adjusts a PE fund's cash flows as if they had been invested in a public index (typically S&P 500) instead, comparing net PE returns to what passive public market investing would have delivered.",
+          "scenarioDoneTo": "A fund deploys $100M in year 1 and exits for $300M in year 5. PME calculates what $100M in the S&P 500 at year 1 would be worth in year 5, then divides actual PE proceeds by that PME value to derive alpha.",
+          "challenge": {
+            "scenario": "A PE fund reports 25% IRR and a PME of 0.92x. What does this most accurately convey?",
+            "options": [
+              "The PE fund underperformed the S&P 500 by 8% in total return despite its 25% IRR, due to unfavorable market timing",
+              "The fund's cash equity return was 25% IRR, but public markets appreciated faster during the same period",
+              "The GP took outsized fees, leaving LPs with returns tracking only 92% of S&P 500 growth"
+            ],
+            "correct": 0
+          },
+          "tip": "PME <1.0x is underperformance vs. public markets; >1.0x is outperformance. Benchmark, don't brag\u2014timing matters."
+        }
+      }
+    },
+    {
+      "id": "pe-fundraising-cycle",
+      "name": "Fundraising Cycle",
+      "tiers": {
+        "1": {
+          "definition": "The multi-year process GPs use to raise capital from LPs for a new fund: market period (1-2 years), close initial commitments, accept final closes, then deploy capital over 5-7 years while existing funds mature.",
+          "scenarioDoneTo": "Firm Fund V raises $500M over 18 months through investor pitches, secures anchor LPs at $250M, formally closes at $500M, then deploys capital over 6 years while Fund IV matures in parallel.",
+          "challenge": {
+            "scenario": "A successful PE firm closed Fund IV at $450M and Fund V at $600M simultaneously. Why would this strategy be challenging?",
+            "options": [
+              "Capital deployment across two funds competes for quality deal flow; monitoring and reporting obligations double",
+              "Fund performance dilutes since newer funds grow faster than maturing funds, suppressing blended returns on AUM",
+              "LPs have no issue with parallel funds; this is standard practice across top-quartile firms"
+            ],
+            "correct": 0
+          },
+          "tip": "Back-to-back fund closes are common, but GPs must manage deal flow, GP bandwidth, and LP fatigue carefully."
+        },
+        "2": {
+          "definition": "The multi-year process GPs use to raise capital from LPs for a new fund: market period (1-2 years), close initial commitments, accept final closes, then deploy capital over 5-7 years while existing funds mature.",
+          "scenarioDoneTo": "Firm Fund V raises $500M over 18 months through investor pitches, secures anchor LPs at $250M, formally closes at $500M, then deploys capital over 6 years while Fund IV matures in parallel.",
+          "challenge": {
+            "scenario": "A successful PE firm closed Fund IV at $450M and Fund V at $600M simultaneously. Why would this strategy be challenging?",
+            "options": [
+              "Capital deployment across two funds competes for quality deal flow; monitoring and reporting obligations double",
+              "Fund performance dilutes since newer funds grow faster than maturing funds, suppressing blended returns on AUM",
+              "LPs have no issue with parallel funds; this is standard practice across top-quartile firms"
+            ],
+            "correct": 0
+          },
+          "tip": "Back-to-back fund closes are common, but GPs must manage deal flow, GP bandwidth, and LP fatigue carefully."
+        },
+        "3": {
+          "definition": "The multi-year process GPs use to raise capital from LPs for a new fund: market period (1-2 years), close initial commitments, accept final closes, then deploy capital over 5-7 years while existing funds mature.",
+          "scenarioDoneTo": "Firm Fund V raises $500M over 18 months through investor pitches, secures anchor LPs at $250M, formally closes at $500M, then deploys capital over 6 years while Fund IV matures in parallel.",
+          "challenge": {
+            "scenario": "A successful PE firm closed Fund IV at $450M and Fund V at $600M simultaneously. Why would this strategy be challenging?",
+            "options": [
+              "Capital deployment across two funds competes for quality deal flow; monitoring and reporting obligations double",
+              "Fund performance dilutes since newer funds grow faster than maturing funds, suppressing blended returns on AUM",
+              "LPs have no issue with parallel funds; this is standard practice across top-quartile firms"
+            ],
+            "correct": 0
+          },
+          "tip": "Back-to-back fund closes are common, but GPs must manage deal flow, GP bandwidth, and LP fatigue carefully."
+        }
+      }
+    },
+    {
+      "id": "pe-fund-of-funds",
+      "name": "Fund-of-Funds (FoF)",
+      "tiers": {
+        "1": {
+          "definition": "An investment vehicle that pools capital and allocates it to multiple PE funds rather than direct company investments; offers diversification and professional manager selection but adds a layer of fees.",
+          "scenarioDoneTo": "A pension fund commits $500M to a FoF that allocates $50M to each of 10 PE firms across vintage years and geographies, gaining exposure without direct fund relationship management.",
+          "challenge": {
+            "scenario": "Compared to direct PE fund investment, a FoF structure is most advantageous for which type of LP?",
+            "options": [
+              "Large institutional investors with in-house PE teams and existing GP relationships who want maximum control",
+              "Smaller LPs or those lacking expertise to vet, underwrite, and monitor 8-12 individual PE fund relationships",
+              "Global sovereign wealth funds seeking to optimize tax efficiency through pooled investment vehicles"
+            ],
+            "correct": 1
+          },
+          "tip": "'Fee stacking': FoF GP takes ~1% fee, then each underlying PE fund takes ~2%, totaling ~3% drag vs. direct investment."
+        },
+        "2": {
+          "definition": "An investment vehicle that pools capital and allocates it to multiple PE funds rather than direct company investments; offers diversification and professional manager selection but adds a layer of fees.",
+          "scenarioDoneTo": "A pension fund commits $500M to a FoF that allocates $50M to each of 10 PE firms across vintage years and geographies, gaining exposure without direct fund relationship management.",
+          "challenge": {
+            "scenario": "Compared to direct PE fund investment, a FoF structure is most advantageous for which type of LP?",
+            "options": [
+              "Large institutional investors with in-house PE teams and existing GP relationships who want maximum control",
+              "Smaller LPs or those lacking expertise to vet, underwrite, and monitor 8-12 individual PE fund relationships",
+              "Global sovereign wealth funds seeking to optimize tax efficiency through pooled investment vehicles"
+            ],
+            "correct": 1
+          },
+          "tip": "'Fee stacking': FoF GP takes ~1% fee, then each underlying PE fund takes ~2%, totaling ~3% drag vs. direct investment."
+        },
+        "3": {
+          "definition": "An investment vehicle that pools capital and allocates it to multiple PE funds rather than direct company investments; offers diversification and professional manager selection but adds a layer of fees.",
+          "scenarioDoneTo": "A pension fund commits $500M to a FoF that allocates $50M to each of 10 PE firms across vintage years and geographies, gaining exposure without direct fund relationship management.",
+          "challenge": {
+            "scenario": "Compared to direct PE fund investment, a FoF structure is most advantageous for which type of LP?",
+            "options": [
+              "Large institutional investors with in-house PE teams and existing GP relationships who want maximum control",
+              "Smaller LPs or those lacking expertise to vet, underwrite, and monitor 8-12 individual PE fund relationships",
+              "Global sovereign wealth funds seeking to optimize tax efficiency through pooled investment vehicles"
+            ],
+            "correct": 1
+          },
+          "tip": "'Fee stacking': FoF GP takes ~1% fee, then each underlying PE fund takes ~2%, totaling ~3% drag vs. direct investment."
+        }
+      }
+    },
+    {
+      "id": "pe-secondary-market",
+      "name": "Secondary Market",
+      "tiers": {
+        "1": {
+          "definition": "The market for buying and selling existing LP interests in PE funds, typically at a discount to NAV; secondary buyers acquire partial fund interests from LPs seeking liquidity before the fund's maturity.",
+          "scenarioDoneTo": "An LP facing redemption pressure sells its $50M interest in a mature fund (NAV $60M) to a secondary buyer for $48M (20% discount), achieving liquidity while the buyer holds for future distributions.",
+          "challenge": {
+            "scenario": "Why do secondary market buyers typically acquire LP interests at 15-25% discounts to NAV?",
+            "options": [
+              "Secondary buyers have lower return requirements than primary LPs; they benefit from existing operational infrastructure",
+              "The discount reflects illiquidity, time value of money waiting for end-of-fund distributions, and the buyer's cost of capital",
+              "Sellers are distressed; secondaries exploit LP desperation, pricing aggressively below fundamental value"
+            ],
+            "correct": 2
+          },
+          "tip": "Secondaries unlock LP liquidity while buyers gain mature portfolio exposure. Discounts reflect duration and reinvestment risk."
+        },
+        "2": {
+          "definition": "The market for buying and selling existing LP interests in PE funds, typically at a discount to NAV; secondary buyers acquire partial fund interests from LPs seeking liquidity before the fund's maturity.",
+          "scenarioDoneTo": "An LP facing redemption pressure sells its $50M interest in a mature fund (NAV $60M) to a secondary buyer for $48M (20% discount), achieving liquidity while the buyer holds for future distributions.",
+          "challenge": {
+            "scenario": "Why do secondary market buyers typically acquire LP interests at 15-25% discounts to NAV?",
+            "options": [
+              "Secondary buyers have lower return requirements than primary LPs; they benefit from existing operational infrastructure",
+              "The discount reflects illiquidity, time value of money waiting for end-of-fund distributions, and the buyer's cost of capital",
+              "Sellers are distressed; secondaries exploit LP desperation, pricing aggressively below fundamental value"
+            ],
+            "correct": 2
+          },
+          "tip": "Secondaries unlock LP liquidity while buyers gain mature portfolio exposure. Discounts reflect duration and reinvestment risk."
+        },
+        "3": {
+          "definition": "The market for buying and selling existing LP interests in PE funds, typically at a discount to NAV; secondary buyers acquire partial fund interests from LPs seeking liquidity before the fund's maturity.",
+          "scenarioDoneTo": "An LP facing redemption pressure sells its $50M interest in a mature fund (NAV $60M) to a secondary buyer for $48M (20% discount), achieving liquidity while the buyer holds for future distributions.",
+          "challenge": {
+            "scenario": "Why do secondary market buyers typically acquire LP interests at 15-25% discounts to NAV?",
+            "options": [
+              "Secondary buyers have lower return requirements than primary LPs; they benefit from existing operational infrastructure",
+              "The discount reflects illiquidity, time value of money waiting for end-of-fund distributions, and the buyer's cost of capital",
+              "Sellers are distressed; secondaries exploit LP desperation, pricing aggressively below fundamental value"
+            ],
+            "correct": 2
+          },
+          "tip": "Secondaries unlock LP liquidity while buyers gain mature portfolio exposure. Discounts reflect duration and reinvestment risk."
+        }
+      }
+    },
+    {
+      "id": "pe-coinvestment-rights",
+      "name": "Co-Investment Rights",
+      "tiers": {
+        "1": {
+          "definition": "LP contractual rights to invest directly alongside the PE fund in specific portfolio companies, typically at the same terms as the fund and without paying the fund's management fees on that incremental capital.",
+          "scenarioDoneTo": "Limited Partner Pension Co-invests $10M directly in a platform acquisition alongside a $40M fund investment; same purchase price and governance, but Pension avoids the 2% management fee on that $10M.",
+          "challenge": {
+            "scenario": "Why do large institutional LPs specifically negotiate for co-investment rights?",
+            "options": [
+              "Co-investment rights guarantee returns above the fund IRR through fee arbitrage and concentrated bets",
+              "Larger LPs deploy more capital than standard fund commitments; co-invest allows them to scale while reducing fee drag and controlling deployment",
+              "Regulation mandates that GPs reserve a portion of each deal for LP direct investment"
+            ],
+            "correct": 1
+          },
+          "tip": "Co-invest = fee-free direct participation. A $20M co-invest saves ~2% annually in fees vs. fund-level investment."
+        },
+        "2": {
+          "definition": "LP contractual rights to invest directly alongside the PE fund in specific portfolio companies, typically at the same terms as the fund and without paying the fund's management fees on that incremental capital.",
+          "scenarioDoneTo": "Limited Partner Pension Co-invests $10M directly in a platform acquisition alongside a $40M fund investment; same purchase price and governance, but Pension avoids the 2% management fee on that $10M.",
+          "challenge": {
+            "scenario": "Why do large institutional LPs specifically negotiate for co-investment rights?",
+            "options": [
+              "Co-investment rights guarantee returns above the fund IRR through fee arbitrage and concentrated bets",
+              "Larger LPs deploy more capital than standard fund commitments; co-invest allows them to scale while reducing fee drag and controlling deployment",
+              "Regulation mandates that GPs reserve a portion of each deal for LP direct investment"
+            ],
+            "correct": 1
+          },
+          "tip": "Co-invest = fee-free direct participation. A $20M co-invest saves ~2% annually in fees vs. fund-level investment."
+        },
+        "3": {
+          "definition": "LP contractual rights to invest directly alongside the PE fund in specific portfolio companies, typically at the same terms as the fund and without paying the fund's management fees on that incremental capital.",
+          "scenarioDoneTo": "Limited Partner Pension Co-invests $10M directly in a platform acquisition alongside a $40M fund investment; same purchase price and governance, but Pension avoids the 2% management fee on that $10M.",
+          "challenge": {
+            "scenario": "Why do large institutional LPs specifically negotiate for co-investment rights?",
+            "options": [
+              "Co-investment rights guarantee returns above the fund IRR through fee arbitrage and concentrated bets",
+              "Larger LPs deploy more capital than standard fund commitments; co-invest allows them to scale while reducing fee drag and controlling deployment",
+              "Regulation mandates that GPs reserve a portion of each deal for LP direct investment"
+            ],
+            "correct": 1
+          },
+          "tip": "Co-invest = fee-free direct participation. A $20M co-invest saves ~2% annually in fees vs. fund-level investment."
+        }
+      }
+    },
+    {
+      "id": "pe-no-fault-divorce",
+      "name": "No-Fault Divorce Clause",
+      "tiers": {
+        "1": {
+          "definition": "An LP governance right allowing withdrawal from a fund without penalty based on specific life events (change of control, policy shift, key person departure) rather than performance failure; protects LPs from involuntary lock-up.",
+          "scenarioDoneTo": "A CIO commits to PE Fund VII. Post-close, the GP undergoes a partner transition and the CIO triggers the no-fault divorce clause to exit without breach, receiving NAV without the usual 2-year lockup or withdrawal restrictions.",
+          "challenge": {
+            "scenario": "When would a GP resist granting broad no-fault divorce rights to large LPs?",
+            "options": [
+              "GPs fear LP exits during downturns will trigger negative NAV markings, forcing fund-wide repricing",
+              "Broad no-fault exits reduce GP control over fund capital stability, complicating deployment planning and potentially triggering forced asset sales",
+              "No-fault divorce clauses create tax inefficiency for the remaining LP base due to portfolio restructuring"
+            ],
+            "correct": 2
+          },
+          "tip": "No-fault divorce = optionality for LPs. GPs trade this for LP credibility; narrow vs. broad versions create negotiation tension."
+        },
+        "2": {
+          "definition": "An LP governance right allowing withdrawal from a fund without penalty based on specific life events (change of control, policy shift, key person departure) rather than performance failure; protects LPs from involuntary lock-up.",
+          "scenarioDoneTo": "A CIO commits to PE Fund VII. Post-close, the GP undergoes a partner transition and the CIO triggers the no-fault divorce clause to exit without breach, receiving NAV without the usual 2-year lockup or withdrawal restrictions.",
+          "challenge": {
+            "scenario": "When would a GP resist granting broad no-fault divorce rights to large LPs?",
+            "options": [
+              "GPs fear LP exits during downturns will trigger negative NAV markings, forcing fund-wide repricing",
+              "Broad no-fault exits reduce GP control over fund capital stability, complicating deployment planning and potentially triggering forced asset sales",
+              "No-fault divorce clauses create tax inefficiency for the remaining LP base due to portfolio restructuring"
+            ],
+            "correct": 2
+          },
+          "tip": "No-fault divorce = optionality for LPs. GPs trade this for LP credibility; narrow vs. broad versions create negotiation tension."
+        },
+        "3": {
+          "definition": "An LP governance right allowing withdrawal from a fund without penalty based on specific life events (change of control, policy shift, key person departure) rather than performance failure; protects LPs from involuntary lock-up.",
+          "scenarioDoneTo": "A CIO commits to PE Fund VII. Post-close, the GP undergoes a partner transition and the CIO triggers the no-fault divorce clause to exit without breach, receiving NAV without the usual 2-year lockup or withdrawal restrictions.",
+          "challenge": {
+            "scenario": "When would a GP resist granting broad no-fault divorce rights to large LPs?",
+            "options": [
+              "GPs fear LP exits during downturns will trigger negative NAV markings, forcing fund-wide repricing",
+              "Broad no-fault exits reduce GP control over fund capital stability, complicating deployment planning and potentially triggering forced asset sales",
+              "No-fault divorce clauses create tax inefficiency for the remaining LP base due to portfolio restructuring"
+            ],
+            "correct": 2
+          },
+          "tip": "No-fault divorce = optionality for LPs. GPs trade this for LP credibility; narrow vs. broad versions create negotiation tension."
+        }
+      }
+    },
+    {
+      "id": "leveraged-buyout-lbo",
+      "name": "Leveraged Buyout (LBO)",
+      "tiers": {
+        "1": {
+          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
+          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
+          "challenge": {
+            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
+            "options": [
+              "Company A\u2014its volatility creates more upside potential for equity holders",
+              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
+              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
+            ],
+            "correct": 1
+          },
+          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
+        },
+        "2": {
+          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
+          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
+          "challenge": {
+            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
+            "options": [
+              "Company A\u2014its volatility creates more upside potential for equity holders",
+              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
+              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
+            ],
+            "correct": 1
+          },
+          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
+        },
+        "3": {
+          "definition": "A transaction structure where a PE firm acquires a company using a significant proportion of debt financing, with equity providing the remaining capital. Debt is used strategically to amplify returns since interest expense is tax-deductible and equity holders benefit from operating improvements.",
+          "scenarioDoneTo": "A PE firm identifying a mature company with stable cash flows and strong EBITDA. They structure a deal using 60% debt and 40% equity, banking on the company's cash generation to service debt while they improve operations.",
+          "challenge": {
+            "scenario": "A PE firm is evaluating two acquisition targets: Company A has volatile EBITDA with high working capital requirements. Company B has predictable EBITDA and minimal capex needs. The firm has limited capital and wants to maximize leverage. Which is better for an LBO structure?",
+            "options": [
+              "Company A\u2014its volatility creates more upside potential for equity holders",
+              "Company B\u2014predictable cash flows and low capex reduce refinancing risk and debt coverage concerns",
+              "Neither\u2014LBOs only work with acquisition targets under $50 million in revenue"
+            ],
+            "correct": 1
+          },
+          "tip": "LBOs work best when the target company generates stable, predictable cash to service debt. Think 'stable cash engine'\u2014not a high-growth startup."
+        }
+      }
+    },
+    {
+      "id": "enterprise-value-equity-value",
+      "name": "Enterprise Value vs Equity Value",
+      "tiers": {
+        "1": {
+          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
+          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
+          "challenge": {
+            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
+            "options": [
+              "Company X because it has the same EV/EBITDA multiple",
+              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
+              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
+            ],
+            "correct": 1
+          },
+          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
+        },
+        "2": {
+          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
+          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
+          "challenge": {
+            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
+            "options": [
+              "Company X because it has the same EV/EBITDA multiple",
+              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
+              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
+            ],
+            "correct": 1
+          },
+          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
+        },
+        "3": {
+          "definition": "Enterprise Value (EV) is the total economic value of a company independent of capital structure\u2014calculated as equity value plus net debt. Equity Value is the residual value belonging to equity holders after all obligations (debt, preferred shares, minorities) are satisfied. The relationship is: EV = Equity Value + Net Debt.",
+          "scenarioDoneTo": "A PE firm values a company at $500M Enterprise Value. The company has $200M in debt and $50M in cash. The equity value for PE investors is $350M ($500M - $150M net debt), the amount they'd actually pay after accounting for existing obligations.",
+          "challenge": {
+            "scenario": "You're comparing two companies using EV/EBITDA multiples. Company X: EV $1B, EBITDA $100M (10x). Company Y: EV $600M, EBITDA $60M (10x). Company X has $300M debt; Company Y has $100M debt. If you want the cheapest equity investment, which offers better value?",
+            "options": [
+              "Company X because it has the same EV/EBITDA multiple",
+              "Company Y because lower net debt means lower equity value required and lower refinancing risk",
+              "Neither\u2014both are identical values since the EV/EBITDA multiples are the same"
+            ],
+            "correct": 1
+          },
+          "tip": "EV/EBITDA ignores capital structure. Always convert to equity value by subtracting net debt to see what you actually pay PE investors."
+        }
+      }
+    },
+    {
+      "id": "ebitda-measurement",
+      "name": "EBITDA",
+      "tiers": {
+        "1": {
+          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
+          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
+          "challenge": {
+            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
+            "options": [
+              "Company B is more valuable because higher EBITDA always indicates superior business quality",
+              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
+              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
+            ],
+            "correct": 1
+          },
+          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
+        },
+        "2": {
+          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
+          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
+          "challenge": {
+            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
+            "options": [
+              "Company B is more valuable because higher EBITDA always indicates superior business quality",
+              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
+              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
+            ],
+            "correct": 1
+          },
+          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
+        },
+        "3": {
+          "definition": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) measures operating cash generation by stripping out financing decisions, tax effects, and non-cash charges. It represents the cash available to service debt and equity before capital allocation. EBITDA = Net Income + Interest + Taxes + D&A.",
+          "scenarioDoneTo": "A capital-intensive industrial company with high depreciation on machinery reports net income of $50M, but EBITDA of $150M. The high EBITDA reflects strong operational performance despite heavy accounting depreciation, making it an attractive LBO candidate because cash flows can service significant debt.",
+          "challenge": {
+            "scenario": "Two portfolio companies report the same net income of $80M. Company A (tech) generates $100M EBITDA. Company B (manufacturing) generates $180M EBITDA. Which statement best explains PE's preference for EBITDA-based valuation?",
+            "options": [
+              "Company B is more valuable because higher EBITDA always indicates superior business quality",
+              "EBITDA neutralizes different capital structures and accounting treatments, allowing PE to compare operational performance independent of how assets are financed or depreciated",
+              "EBITDA is irrelevant; PE should only compare companies on net income to avoid distortions"
+            ],
+            "correct": 1
+          },
+          "tip": "EBITDA is PE's 'operating performance lens'\u2014it filters out financing choices and accounting noise so you compare apples to apples."
+        }
+      }
+    },
+    {
+      "id": "multiple-ev-ebitda",
+      "name": "Multiple (EV/EBITDA)",
+      "tiers": {
+        "1": {
+          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
+          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
+          "challenge": {
+            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
+            "options": [
+              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
+              "The discount proves the market is irrational; it's the same business and should command the same multiple",
+              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
+            ],
+            "correct": 0
+          },
+          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
+        },
+        "2": {
+          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
+          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
+          "challenge": {
+            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
+            "options": [
+              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
+              "The discount proves the market is irrational; it's the same business and should command the same multiple",
+              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
+            ],
+            "correct": 0
+          },
+          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
+        },
+        "3": {
+          "definition": "The EV/EBITDA multiple expresses the relationship between Enterprise Value and operating cash generation. A 10x multiple means investors pay $10 for every $1 of EBITDA. It reflects market perception of growth, risk, and cash generation quality. Lower multiples indicate cheaper/riskier businesses; higher multiples signal stronger growth or quality.",
+          "scenarioDoneTo": "A stable industrial company trading at 8x EV/EBITDA with $100M EBITDA is valued at $800M EV. A high-growth software company trading at 15x EV/EBITDA with $50M EBITDA is valued at $750M EV. The multiple captures market expectations: industrials are mature/stable (lower multiple), software captures growth potential (premium multiple).",
+          "challenge": {
+            "scenario": "You're analyzing a PE acquisition target currently trading at 12x EV/EBITDA. Comparable companies trade at 14x. Management claims the target is identical quality to comps. What's the most likely reason for the discount?",
+            "options": [
+              "The target has lower EBITDA quality (e.g., customer concentration, contract duration) or perceived execution risk that comps don't have",
+              "The discount proves the market is irrational; it's the same business and should command the same multiple",
+              "The target must be losing market share since every basis point of multiple discount reflects 1% revenue decline"
+            ],
+            "correct": 0
+          },
+          "tip": "Multiple discounts signal risk or quality issues. Always ask 'what's different?' before assuming you found a bargain."
+        }
+      }
+    },
+    {
+      "id": "dry-powder",
+      "name": "Dry Powder",
+      "tiers": {
+        "1": {
+          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
+          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
+          "challenge": {
+            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
+            "options": [
+              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
+              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
+              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
+            ],
+            "correct": 1
+          },
+          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
+        },
+        "2": {
+          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
+          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
+          "challenge": {
+            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
+            "options": [
+              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
+              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
+              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
+            ],
+            "correct": 1
+          },
+          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
+        },
+        "3": {
+          "definition": "Dry powder refers to undeployed capital committed by Limited Partners to a PE fund but not yet invested in portfolio companies. It represents a fund's capacity to make new investments, fund add-on acquisitions, or provide working capital to existing portfolio companies. Managing dry powder efficiently is critical to fund performance and LP relationships.",
+          "scenarioDoneTo": "A $500M PE Fund II is in its third year, with $300M already deployed into four portfolio companies. The remaining $200M in dry powder is reserved for add-on acquisitions within existing portfolios and opportunistic new platform investments. The GP carefully deploys this capital strategically rather than rushing to deploy remaining funds.",
+          "challenge": {
+            "scenario": "A PE fund has $100M dry powder remaining with 2 years left in its investment period. The market is showing declining valuations. The LP pressure is mounting because 60% of capital is deployed. What is the most sophisticated dry powder management approach?",
+            "options": [
+              "Deploy remaining capital quickly to show momentum and satisfy LP concerns, even if valuations don't justify it",
+              "Reserve dry powder for add-ons and distressed opportunities, accepting temporary LP criticism for better long-term returns",
+              "Return excess dry powder to LPs immediately to demonstrate prudent capital management"
+            ],
+            "correct": 1
+          },
+          "tip": "Dry powder is strategic optionality. GPs who deploy it opportunistically (not desperately) outperform GPs who race the clock."
+        }
+      }
+    },
+    {
+      "id": "fund-life-fund-term",
+      "name": "Fund Life / Fund Term",
+      "tiers": {
+        "1": {
+          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
+          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
+          "challenge": {
+            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
+            "options": [
+              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
+              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
+              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
+        },
+        "2": {
+          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
+          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
+          "challenge": {
+            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
+            "options": [
+              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
+              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
+              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
+        },
+        "3": {
+          "definition": "Fund Life (or Fund Term) is the expected duration of a PE fund, typically 10 years for mature strategies. It encompasses three phases: investment period (5-7 years for acquiring portfolio companies), harvest period (3-5 years for exiting investments), and residual wind-down. The term is defined at fund inception and is contractually binding.",
+          "scenarioDoneTo": "A $1B PE Fund III is established with a 10-year life: a 6-year investment period where the GP actively deploys capital, followed by a 4-year harvest period focused on exiting positions. Extensions (rare) require LP consent. By year 10, substantially all capital and returns must be returned to LPs.",
+          "challenge": {
+            "scenario": "It's year 8 of a 10-year fund. The GP still holds three platforms worth combined $600M (at-cost). One performing well, one mediocre, one facing headwinds. LP's expect exits per fund term. Which action best reflects PE fund term discipline?",
+            "options": [
+              "Extend the fund term by 3-5 years since markets are soft and waiting improves outcome multiples",
+              "Execute exits even if pricing is suboptimal, honoring fund term covenants and LP return timelines",
+              "Hold through year 10 and manage lingering positions in a continuation fund with new LP commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Fund term is a sacred covenant. LPs plan around distributions. Missing term deadlines erodes GP credibility and future fundraising."
+        }
+      }
+    },
+    {
+      "id": "investment-period",
+      "name": "Investment Period",
+      "tiers": {
+        "1": {
+          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
+          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
+          "challenge": {
+            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
+            "options": [
+              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
+              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
+              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
+            ],
+            "correct": 1
+          },
+          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
+        },
+        "2": {
+          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
+          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
+          "challenge": {
+            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
+            "options": [
+              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
+              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
+              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
+            ],
+            "correct": 1
+          },
+          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
+        },
+        "3": {
+          "definition": "The Investment Period is the window during a PE fund's life when the GP is authorized to deploy capital and acquire new portfolio companies, typically 5-7 years. After the investment period ends, the fund transitions to the harvest period focused on exiting positions. Capital not deployed by period end is returned to LPs.",
+          "scenarioDoneTo": "A $500M fund has a 6-year investment period (years 1-6) and a 4-year harvest period (years 7-10). In year 3, the GP has deployed $300M across three platforms. In year 6 (final investment year), they deploy remaining capital into one add-on, then stop new acquisitions and execute exits from year 7 forward.",
+          "challenge": {
+            "scenario": "It's year 5.5 of the investment period (6 years total). The fund has $100M dry powder remaining. A world-class acquisition target appears at a 12% IRR\u2014strong quality but not the 15%+ the fund typically targets. PE convention suggests what action?",
+            "options": [
+              "Pass on the deal since it's below the fund's hurdle rate, even though capital will likely be returned undeployed",
+              "Deploy the capital because the investment period is almost closed and undeployed capital hurts GP optionality",
+              "Commit to the deal but negotiate extended closing to year 6, buying time for diligence"
+            ],
+            "correct": 1
+          },
+          "tip": "Investment period discipline is critical. Deploying suboptimal capital last-minute is better than returning it unused\u2014but barely. Stay disciplined on quality."
+        }
+      }
+    },
+    {
+      "id": "harvest-period",
+      "name": "Harvest Period",
+      "tiers": {
+        "1": {
+          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
+          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
+          "challenge": {
+            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
+            "options": [
+              "Exit immediately to lock gains and redeploy capital within the fund",
+              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
+              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
+            ],
+            "correct": 0
+          },
+          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
+        },
+        "2": {
+          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
+          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
+          "challenge": {
+            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
+            "options": [
+              "Exit immediately to lock gains and redeploy capital within the fund",
+              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
+              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
+            ],
+            "correct": 0
+          },
+          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
+        },
+        "3": {
+          "definition": "The Harvest Period is the latter phase of a fund's life (typically years 7-10 of a 10-year fund) when the GP focuses on exiting portfolio companies and generating returns to LPs. No new acquisitions occur. The GP executes strategic sales, secondary sales, or IPOs to monetize investments and return capital. Successful harvest execution determines fund performance.",
+          "scenarioDoneTo": "A PE fund acquired three platforms during years 1-6. By year 7, the harvest period begins. The GP executes: Platform 1 sold to a strategic buyer in year 7, Platform 2 sold in a secondary process in year 8, Platform 3 prepared for IPO in year 9. By year 10, fund life ends and capital returns to LPs.",
+          "challenge": {
+            "scenario": "Year 8 of harvest period. One portfolio platform has 2.5x MOIC (money multiple) but is trading at 8x EBITDA\u2014market is soft. The platform has 18 months until natural maturity/peak. Should the GP exit or hold?",
+            "options": [
+              "Exit immediately to lock gains and redeploy capital within the fund",
+              "Hold through maturity because exiting early into a soft market leaves value on the table and violates harvest discipline",
+              "Explore a continuation fund strategy to extend the GP's ability to maximize the hold"
+            ],
+            "correct": 0
+          },
+          "tip": "Harvest discipline means exiting when multiples and market conditions justify it, not waiting for perfection. A 2.5x return locked beats a speculative hold."
+        }
+      }
+    },
+    {
+      "id": "gp-commitment-co-invest",
+      "name": "GP Commitment / GP Co-invest",
+      "tiers": {
+        "1": {
+          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
+          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
+          "challenge": {
+            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
+            "options": [
+              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
+              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
+              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
+        },
+        "2": {
+          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
+          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
+          "challenge": {
+            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
+            "options": [
+              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
+              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
+              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
+        },
+        "3": {
+          "definition": "GP Commitment is capital contributed by the PE fund manager (General Partner) into their own fund alongside LP capital, typically 1-3% of fund size. GP Co-investment is additional capital the GP invests alongside LPs in specific portfolio companies. Both align GP and LP interests by ensuring GPs have 'skin in the game' and share downside risk.",
+          "scenarioDoneTo": "A $500M fund requires the GP to commit $10M (2%) at launch, eligible for management fee credits. Additionally, when the fund acquires portfolio companies, the GP co-invests directly alongside LP capital in transactions, sharing both upside and downside.",
+          "challenge": {
+            "scenario": "LP consideration: A fund GP demonstrates strong historical returns but commits only 0.5% (below-market). Another fund GP commits 3% but has middling returns. Regarding alignment and risk incentives, which GP structure is more protective to LPs?",
+            "options": [
+              "The 0.5% GP is superior because lower GP capital means the GP retains more optionality to invest in follow-on opportunities",
+              "The 3% GP is superior because higher personal capital creates stronger alignment and means the GP shares LP downside meaningfully",
+              "Both structures are equivalent since GP co-investment is what truly matters, not base commitments"
+            ],
+            "correct": 1
+          },
+          "tip": "Higher GP commitment signals confidence and alignment. Low GP skin-in-the-game = red flag for misaligned incentives."
+        }
+      }
+    },
+    {
+      "id": "clawback-provision",
+      "name": "Clawback Provision",
+      "tiers": {
+        "1": {
+          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
+          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
+          "challenge": {
+            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
+            "options": [
+              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
+              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
+              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
+            ],
+            "correct": 1
+          },
+          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
+        },
+        "2": {
+          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
+          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
+          "challenge": {
+            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
+            "options": [
+              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
+              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
+              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
+            ],
+            "correct": 1
+          },
+          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
+        },
+        "3": {
+          "definition": "A Clawback Provision is a contractual obligation requiring GPs to return previously distributed profits to the fund if final fund returns fall below the LP investment threshold (typically 7-8% IRR). Clawbacks protect LPs from early distributions based on overestimated gains; if later portfolio losses occur and cumulative returns fall short, GPs repay distributions to equalize LP returns.",
+          "scenarioDoneTo": "A fund distributes $50M to GPs in promotion/carry in year 5 based on strong early exits. By year 8, remaining portfolio companies underperform, and final fund IRR lands at 6% (below the 8% threshold). The clawback mechanism requires GPs to return $50M so distributions better reflect actual performance.",
+          "challenge": {
+            "scenario": "During fund diligence, you notice Fund A's docs have a standard clawback provision (LPs favor this). Fund B's docs have a 'limited clawback' capped at 20% of carry. All else equal, which signals higher-quality GP risk management?",
+            "options": [
+              "Fund B is better because limited clawback shows GP confidence they'll exceed hurdles",
+              "Fund A signals a more LP-protective structure because uncapped clawback means GPs internalize downside risk fully and are incentivized to be conservative in distributions",
+              "Clawback provisions don't meaningfully affect fund risk since most funds beat hurdles"
+            ],
+            "correct": 1
+          },
+          "tip": "Clawback provisions are LP protection against overoptimistic distributions. A GP comfortable with uncapped clawback signals alignment and discipline."
+        }
+      }
+    }
+  ]
+}
