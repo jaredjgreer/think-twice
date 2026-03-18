@@ -13,23 +13,32 @@ def extract_json_array(text):
             return data
     except:
         pass
-    # Find the outermost [ ... ]
-    depth = 0
-    start = None
-    for i, ch in enumerate(text):
-        if ch == '[' and start is None:
-            start = i
+    # Find ALL top-level arrays and merge their contents
+    all_items = []
+    i = 0
+    while i < len(text):
+        if text[i] == '[':
             depth = 1
-        elif ch == '[' and start is not None:
-            depth += 1
-        elif ch == ']' and start is not None:
-            depth -= 1
-            if depth == 0:
-                try:
-                    return json.loads(text[start:i+1])
-                except:
-                    start = None
-    return []
+            j = i + 1
+            while j < len(text) and depth > 0:
+                if text[j] == '[': depth += 1
+                elif text[j] == ']': depth -= 1
+                elif text[j] == '"':
+                    j += 1
+                    while j < len(text) and text[j] != '"':
+                        if text[j] == '\\': j += 1
+                        j += 1
+                j += 1
+            try:
+                arr = json.loads(text[i:j])
+                if isinstance(arr, list):
+                    all_items.extend(arr)
+            except:
+                pass
+            i = j
+        else:
+            i += 1
+    return all_items
 
 def main():
     if len(sys.argv) < 4:
