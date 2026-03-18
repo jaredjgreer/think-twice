@@ -4,7 +4,8 @@ import json, sys, re, glob
 
 def extract_json_array(text):
     """Extract a JSON array from text that may contain markdown or other content."""
-    # Try direct parse first
+    # Strip markdown code fences anywhere
+    text = re.sub(r'```(?:json)?', '', text)
     text = text.strip()
     try:
         data = json.loads(text)
