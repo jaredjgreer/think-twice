@@ -63,43 +63,8 @@
         <span class="deck-name">❓ QUESTIONS</span>
         <span class="deck-desc">Navigating faith &amp; doubt</span>
       </button>
-      <button class="deck-option" data-deck="drugdev-foundations">
-        <span class="deck-name">💊 DRUG DEV</span>
-        <span class="deck-desc">Drug development foundations</span>
-      </button>
-      <button class="deck-option" data-deck="drugdev-mechanics">
-        <span class="deck-name">⚙️ DRUG MECH</span>
-        <span class="deck-desc">Drug development processes</span>
-      </button>
-      <button class="deck-option" data-deck="drugdev-mastery">
-        <span class="deck-name">🎯 DRUG MASTER</span>
-        <span class="deck-desc">Advanced drug dev strategy</span>
-      </button>
-      <button class="deck-option" data-deck="pe-foundations">
-        <span class="deck-name">💰 PE FOUND</span>
-        <span class="deck-desc">Private equity fundamentals</span>
-      </button>
-      <button class="deck-option" data-deck="pe-mechanics">
-        <span class="deck-name">⚙️ PE MECH</span>
-        <span class="deck-desc">PE deal mechanics &amp; processes</span>
-      </button>
-      <button class="deck-option" data-deck="pe-mastery">
-        <span class="deck-name">🎯 PE MASTER</span>
-        <span class="deck-desc">PE strategy &amp; judgment calls</span>
-      </button>
-      <button class="deck-option" data-deck="lifesci-foundations">
-        <span class="deck-name">🧬 LIFESCI</span>
-        <span class="deck-desc">Life sciences business fundamentals</span>
-      </button>
-      <button class="deck-option" data-deck="lifesci-mechanics">
-        <span class="deck-name">⚙️ LIFESCI MECH</span>
-        <span class="deck-desc">Life sciences processes &amp; frameworks</span>
-      </button>
-      <button class="deck-option" data-deck="lifesci-mastery">
-        <span class="deck-name">🎯 LIFESCI MASTER</span>
-        <span class="deck-desc">Life sciences strategic leadership</span>
-      </button>
     </div>
+    <div id="pro-deck-selector" class="deck-selector" style="display:none; margin-top: 10px;"></div>
 
     <div class="setup-title glow-cyan" style="margin-top: 16px;">GRID SIZE</div>
     <div class="grid-selector">
@@ -118,11 +83,11 @@
     <div class="mode-selector">
       <button class="mode-option selected" data-mode="classic">
         <span class="mode-name">CLASSIC</span>
-        <span class="mode-desc">Read scenario, name the bias</span>
+        <span class="mode-desc">Read scenario, name the concept</span>
       </button>
       <button class="mode-option" data-mode="define">
         <span class="mode-name">DEFINE IT</span>
-        <span class="mode-desc">See the bias, pick its meaning</span>
+        <span class="mode-desc">See the name, pick its meaning</span>
       </button>
       <button class="mode-option" data-mode="spot">
         <span class="mode-name">SPOT IT</span>
@@ -206,13 +171,13 @@
 
       <div id="challenge-scenario" class="scenario"></div>
 
-      <div id="challenge-question" class="question">WHAT BIAS IS THIS?</div>
+      <div id="challenge-question" class="question">WHAT IS THIS?</div>
       <div id="challenge-options" class="challenge-options"></div>
 
       <div id="challenge-result" class="challenge-result"></div>
 
       <div id="tip-reveal" class="tip-reveal">
-        <span class="tip-label">🛡 HOW TO AVOID IT</span>
+        <span id="tip-label" class="tip-label">🛡 HOW TO AVOID IT</span>
         <div id="tip-text" class="tip-text"></div>
       </div>
 
@@ -238,7 +203,7 @@
     <div id="gameover-scores" class="gameover-scores"></div>
 
     <div class="gameover-biases" id="gameover-biases-section">
-      <h3 id="gameover-biases-heading">BIASES ENCOUNTERED</h3>
+      <h3 id="gameover-biases-heading">TOPICS ENCOUNTERED</h3>
       <div id="gameover-biases-list"></div>
     </div>
 
@@ -280,7 +245,7 @@
       </div>
       <div class="help-what">
         <h3>WHAT IS THINK TWICE?</h3>
-        <p>A brain-training card game that teaches you to recognize cognitive biases, emotional intelligence skills, gospel principles, and more — while competing with friends and family!</p>
+        <p>A brain-training card game that teaches you to recognize cognitive biases, emotional intelligence skills, gospel principles, professional concepts, and more — while competing with friends and family!</p>", "oldString": "        <p>A brain-training card game that teaches you to recognize cognitive biases
       </div>
       <button id="btn-close-help" class="btn btn-green">GOT IT</button>
     </div>
@@ -312,6 +277,9 @@
         </div>
       </div>
       <div id="admin-panel" style="display:none;">
+        <p style="font-family:var(--font-terminal); font-size:14px; color:var(--neon-pink); text-align:center;">PRO DECKS</p>
+        <div id="admin-pro-decks" class="admin-pro-decks"></div>
+        <hr style="border-color: var(--border-dim); margin: 12px 0;">
         <p style="font-family:var(--font-terminal); font-size:14px; color:var(--neon-pink); text-align:center;">DELETE ANY PLAYER (BYPASSES PIN)</p>
         <div id="admin-player-list" class="admin-player-list"></div>
         <button id="btn-admin-close" class="btn" style="margin-top:12px; width:100%;">CLOSE</button>

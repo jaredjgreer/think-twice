@@ -19,16 +19,44 @@ const App = (() => {
     'sunday': 'data/sunday.json',
     'emotional-intelligence': 'data/emotional-intelligence.json',
     'gospel-questions': 'data/gospel-questions.json',
-    'drugdev-foundations': 'data/drugdev-foundations.json',
-    'drugdev-mechanics': 'data/drugdev-mechanics.json',
-    'drugdev-mastery': 'data/drugdev-mastery.json',
     'pe-foundations': 'data/pe-foundations.json',
     'pe-mechanics': 'data/pe-mechanics.json',
     'pe-mastery': 'data/pe-mastery.json',
+    'drugdev-foundations': 'data/drugdev-foundations.json',
+    'drugdev-mechanics': 'data/drugdev-mechanics.json',
+    'drugdev-mastery': 'data/drugdev-mastery.json',
     'lifesci-foundations': 'data/lifesci-foundations.json',
     'lifesci-mechanics': 'data/lifesci-mechanics.json',
     'lifesci-mastery': 'data/lifesci-mastery.json'
   };
+
+  const PRO_DECKS = {
+    'pe-foundations':      { emoji: '💰', label: 'PE FOUND',        desc: 'Private equity fundamentals' },
+    'pe-mechanics':        { emoji: '⚙️', label: 'PE MECH',         desc: 'PE deal mechanics & processes' },
+    'pe-mastery':          { emoji: '🎯', label: 'PE MASTER',       desc: 'PE strategy & judgment calls' },
+    'drugdev-foundations':  { emoji: '💊', label: 'DRUG DEV',       desc: 'Drug development foundations' },
+    'drugdev-mechanics':    { emoji: '⚙️', label: 'DRUG MECH',      desc: 'Drug development processes' },
+    'drugdev-mastery':      { emoji: '🎯', label: 'DRUG MASTER',    desc: 'Advanced drug dev strategy' },
+    'lifesci-foundations':  { emoji: '🧬', label: 'LIFESCI',        desc: 'Life sciences business fundamentals' },
+    'lifesci-mechanics':    { emoji: '⚙️', label: 'LIFESCI MECH',   desc: 'Life sciences processes & frameworks' },
+    'lifesci-mastery':      { emoji: '🎯', label: 'LIFESCI MASTER', desc: 'Life sciences strategic leadership' }
+  };
+
+  function isProDeck(deckId) {
+    return deckId in PRO_DECKS;
+  }
+
+  function hasProDeckSelected() {
+    return selectedDeckIds.some(id => isProDeck(id));
+  }
+
+  function getEnabledProDecks() {
+    try { return JSON.parse(localStorage.getItem('tt_pro_decks') || '[]'); } catch { return []; }
+  }
+
+  function setEnabledProDecks(ids) {
+    localStorage.setItem('tt_pro_decks', JSON.stringify(ids));
+  }
 
   const TEAM_COLORS = ['cyan', 'pink', 'yellow', 'green'];
 
@@ -110,6 +138,9 @@ const App = (() => {
       });
     });
 
+    // Render any admin-unlocked pro decks in deck selector
+    renderProDeckSelector();
+
     // Wire game-over buttons
     document.getElementById('btn-rematch').addEventListener('click', handleRematch);
     document.getElementById('btn-go-home').addEventListener('click', () => {
@@ -188,15 +219,15 @@ const App = (() => {
   }
 
   function updateModeLabels() {
-    const isSunday = selectedDeckIds.length === 1 && (selectedDeckIds[0] === 'sunday' || selectedDeckIds[0] === 'gospel-questions');
-    const isEQ = selectedDeckIds.length === 1 && selectedDeckIds[0] === 'emotional-intelligence';
+    const single = selectedDeckIds.length === 1;
+    const isSunday = single && (selectedDeckIds[0] === 'sunday' || selectedDeckIds[0] === 'gospel-questions');
+    const isEQ = single && selectedDeckIds[0] === 'emotional-intelligence';
+    const isPro = single && isProDeck(selectedDeckIds[0]);
+    const isBias = single && selectedDeckIds[0] === 'cognitive-biases';
+    const word = isSunday ? 'principle' : isEQ ? 'skill' : isBias ? 'bias' : 'concept';
     const labels = {
-      classic: isSunday ? 'Read scenario, name the principle'
-             : isEQ ? 'Read scenario, name the skill'
-             : 'Read scenario, name the bias',
-      define: isSunday ? 'See the principle, pick its meaning'
-            : isEQ ? 'See the skill, pick its meaning'
-            : 'See the bias, pick its meaning',
+      classic: `Read scenario, name the ${word}`,
+      define: `See the ${word}, pick its meaning`,
       spot: 'See description, find the scenario',
       mixed: 'Random mode every card'
     };
@@ -204,11 +235,6 @@ const App = (() => {
       const desc = btn.querySelector('.mode-desc');
       if (desc && labels[btn.dataset.mode]) desc.textContent = labels[btn.dataset.mode];
     });
-  }
-
-  function getDeckType() {
-    if (selectedDeckIds.length > 1 || !deckData) return 'mixed';
-    return deckData.deckId === 'sunday' ? 'sunday' : 'biases';
   }
 
   // ─── Home Screen ───
@@ -267,6 +293,7 @@ const App = (() => {
 
     // Default deck selection (multi-select)
     document.querySelectorAll('.deck-option').forEach(b => b.classList.remove('selected'));
+    renderProDeckSelector();
     selectedDeckIds.forEach(id => {
       const deckBtn = document.querySelector(`.deck-option[data-deck="${id}"]`);
       if (deckBtn) deckBtn.classList.add('selected');
@@ -732,9 +759,12 @@ const App = (() => {
       definitionEl2.style.display = '';
     }
 
-    // Show avoidance tip
+    // Show tip
     const tipReveal = document.getElementById('tip-reveal');
     tipReveal.className = 'tip-reveal show';
+    const gs2 = Game.getState();
+    const tipIsBias = gs2.deckData && gs2.deckData.deckId === 'cognitive-biases';
+    document.getElementById('tip-label').textContent = tipIsBias ? '🛡 HOW TO AVOID IT' : '💡 PRO TIP';
     document.getElementById('tip-text').textContent = cardData.tip || '';
 
     // Scroll challenge box to show tip and next button
@@ -1014,10 +1044,12 @@ const App = (() => {
     const isSunday = gs.deckData && (gs.deckData.deckId === 'sunday' || gs.deckData.deckId === 'gospel-questions');
     const isEQ = gs.deckData && gs.deckData.deckId === 'emotional-intelligence';
     const isCombined = gs.deckData && gs.deckData.deckId === 'combined';
+    const isProGame = gs.deckData && isProDeck(gs.deckData.deckId);
     document.getElementById('gameover-biases-heading').textContent =
       isCombined ? 'TOPICS ENCOUNTERED'
       : isSunday ? 'PRINCIPLES ENCOUNTERED'
       : isEQ ? 'EQ SKILLS ENCOUNTERED'
+      : isProGame ? 'CONCEPTS ENCOUNTERED'
       : 'BIASES ENCOUNTERED';
 
     // Push each player's score to cloud
@@ -1142,6 +1174,7 @@ const App = (() => {
     if (adminAuthenticated) {
       loginSection.style.display = 'none';
       panelSection.style.display = '';
+      renderAdminProDecks();
       renderAdminPlayerList();
     } else {
       loginSection.style.display = '';
@@ -1153,6 +1186,74 @@ const App = (() => {
 
   function closeAdminModal() {
     document.getElementById('admin-modal').classList.remove('active');
+    renderProDeckSelector(); // refresh setup screen when admin closes
+  }
+
+  function renderAdminProDecks() {
+    const container = document.getElementById('admin-pro-decks');
+    const enabled = getEnabledProDecks();
+    container.innerHTML = '';
+    Object.entries(PRO_DECKS).forEach(([deckId, info]) => {
+      const row = document.createElement('div');
+      row.className = 'admin-player-row';
+      const active = enabled.includes(deckId);
+      row.innerHTML = `
+        <div class="info">
+          <span>${info.emoji} ${info.label}</span>
+        </div>
+      `;
+      const toggleBtn = document.createElement('button');
+      toggleBtn.className = active ? 'admin-toggle active' : 'admin-toggle';
+      toggleBtn.textContent = active ? 'ON' : 'OFF';
+      toggleBtn.addEventListener('click', () => {
+        const current = getEnabledProDecks();
+        if (current.includes(deckId)) {
+          setEnabledProDecks(current.filter(id => id !== deckId));
+          toggleBtn.textContent = 'OFF';
+          toggleBtn.className = 'admin-toggle';
+        } else {
+          current.push(deckId);
+          setEnabledProDecks(current);
+          toggleBtn.textContent = 'ON';
+          toggleBtn.className = 'admin-toggle active';
+        }
+      });
+      row.appendChild(toggleBtn);
+      container.appendChild(row);
+    });
+  }
+
+  function renderProDeckSelector() {
+    const container = document.getElementById('pro-deck-selector');
+    const enabled = getEnabledProDecks();
+    container.innerHTML = '';
+    if (enabled.length === 0) {
+      container.style.display = 'none';
+      // Deselect any pro decks that may have been selected
+      selectedDeckIds = selectedDeckIds.filter(id => !isProDeck(id));
+      if (selectedDeckIds.length === 0) selectedDeckIds = ['cognitive-biases'];
+      return;
+    }
+    container.style.display = '';
+    enabled.forEach(deckId => {
+      const info = PRO_DECKS[deckId];
+      if (!info) return;
+      const btn = document.createElement('button');
+      btn.className = 'deck-option';
+      btn.dataset.deck = deckId;
+      btn.innerHTML = `<span class=\"deck-name\">${info.emoji} ${info.label}</span><span class=\"deck-desc\">${info.desc}</span>`;
+      btn.addEventListener('click', async () => {
+        btn.classList.toggle('selected');
+        selectedDeckIds = [...document.querySelectorAll('.deck-option.selected')].map(b => b.dataset.deck);
+        if (selectedDeckIds.length === 0) {
+          btn.classList.add('selected');
+          selectedDeckIds = [btn.dataset.deck];
+        }
+        await loadDecks(selectedDeckIds);
+        updateModeLabels();
+      });
+      container.appendChild(btn);
+    });
   }
 
   async function adminLogin() {
@@ -1181,6 +1282,7 @@ const App = (() => {
         window._adminKey = key; // Keep in memory only
         document.getElementById('admin-login').style.display = 'none';
         document.getElementById('admin-panel').style.display = '';
+        renderAdminProDecks();
         renderAdminPlayerList();
       } else {
         errorEl.textContent = 'WRONG KEY';

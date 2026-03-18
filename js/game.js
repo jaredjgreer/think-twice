@@ -21,8 +21,8 @@ const Game = (() => {
   };
 
   const MODES = {
-    classic: { name: 'CLASSIC', desc: 'Read a scenario, name the bias' },
-    define:  { name: 'DEFINE IT', desc: 'See the bias name, pick its definition' },
+    classic: { name: 'CLASSIC', desc: 'Read a scenario, name the concept' },
+    define:  { name: 'DEFINE IT', desc: 'See the name, pick its definition' },
     spot:    { name: 'SPOT IT', desc: 'See the definition, pick the matching scenario' },
     mixed:   { name: 'MIXED', desc: 'A random mode each card' }
   };
@@ -153,8 +153,11 @@ const Game = (() => {
   function buildChallenge(card, tier, mode) {
     const tierData = card.biasData.tiers[tier];
     const allBiases = state.deckData.cards;
+    const isCombined = state.deckData.deckId === 'combined';
     const isSunday = state.deckData.deckId === 'sunday' || state.deckData.deckId === 'gospel-questions';
     const isEQ = state.deckData.deckId === 'emotional-intelligence';
+    const isPro = /^(pe|drugdev|lifesci)-/.test(state.deckData.deckId);
+    const word = isCombined ? 'concept' : isSunday ? 'principle' : isEQ ? 'skill' : isPro ? 'concept' : 'bias';
 
     if (mode === 'define') {
       // Show bias name, pick correct definition from options
@@ -168,9 +171,7 @@ const Game = (() => {
       const options = shuffle([correctDef, ...decoys]);
       return {
         scenario: null,
-        prompt: isSunday ? `What does "${card.biasData.name}" mean?`
-              : isEQ ? `What does "${card.biasData.name}" mean?`
-              : `What does "${card.biasData.name}" mean?`,
+        prompt: `What does "${card.biasData.name}" mean?`,
         options,
         correct: options.indexOf(correctDef),
         mode: 'define'
@@ -189,9 +190,7 @@ const Game = (() => {
       const options = shuffle([correctScenario, ...decoys]);
       return {
         scenario: null,
-        prompt: isSunday ? 'Which scenario shows this principle?'
-              : isEQ ? 'Which scenario shows this skill?'
-              : 'Which scenario shows this bias?',
+        prompt: `Which scenario shows this ${word}?`,
         options,
         correct: options.indexOf(correctScenario),
         mode: 'spot'
@@ -204,9 +203,7 @@ const Game = (() => {
       : tierData.challenge;
     return {
       scenario: origChallenge.scenario,
-      prompt: isSunday ? 'What principle is this?'
-            : isEQ ? 'What EQ skill is this?'
-            : 'What bias is this?',
+      prompt: `What ${word} is this?`,
       options: origChallenge.options,
       correct: origChallenge.correct,
       mode: 'classic'
