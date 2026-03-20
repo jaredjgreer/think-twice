@@ -10,12 +10,18 @@ const rateLimit = require('express-rate-limit');
 const Database = require('better-sqlite3');
 const path = require('path');
 
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 const ADMIN_KEY = process.env.ADMIN_KEY || '';
 const ALLOWED_ORIGINS = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',')
   : ['http://localhost:8765', 'http://127.0.0.1:8765'];
+
+// ─── Static File Serving ───
+const publicDir = path.resolve(__dirname, '..');
+app.use(express.static(publicDir));
+
 
 // ─── Middleware ───
 
@@ -258,7 +264,93 @@ app.delete('/api/admin/player/:id', requireAdmin, (req, res) => {
   res.json({ deleted: true });
 });
 
+// ─── AI Tutor Chat ───
+
+app.post('/api/chat', async (req, res) => {
+  const { message, context } = req.body;
+
+  if (!message || typeof message !== 'string' || message.length > 2000) {
+    return res.status(400).json({ error: 'Invalid message' });
+  }
+
+  // System prompt gives the AI its character personality
+  const systemPrompt = `You are Brain Coach — the AI tutor inside Think Twice, a retro-arcade educational game. Your personality:
+- You're enthusiastic, witty, and encouraging — like a mix of a wise mentor and a fun game show host
+- You use casual language with the occasional retro/arcade reference ("Level up!", "Power-up unlocked!", "Boss-level thinking!")
+- You keep answers concise (2-4 sentences) unless the user asks for more detail
+- You explain cognitive biases, logical fallacies, emotional intelligence, and critical thinking concepts in simple, relatable terms with real-life examples
+- When a user gets something right, celebrate briefly. When wrong, be encouraging and explain why
+- You sometimes pose follow-up questions to make the user think deeper
+- You NEVER break character or discuss being an AI language model
+- If asked about non-educational topics, playfully steer back: "That's outside my arcade! Let's power up your brain instead 🧠"
+- Use emoji sparingly but effectively (1-2 per message max)`;
+
+  // Try OpenAI API if configured
+  const openaiKey = process.env.OPENAI_API_KEY;
+  if (openaiKey) {
+    try {
+      const openaiResp = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${openaiKey}`
+        },
+        body: JSON.stringify({
+          model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
+          messages: [
+            { role: 'system', content: systemPrompt },
+            ...(context || []),
+            { role: 'user', content: message }
+          ],
+          max_tokens: 300,
+          temperature: 0.8
+        })
+      });
+      const data = await openaiResp.json();
+      if (data.choices && data.choices[0]) {
+        return res.json({ reply: data.choices[0].message.content });
+      }
+    } catch (e) {
+      console.error('OpenAI API error:', e.message);
+    }
+  }
+
+  // Fallback: offline responses based on keywords
+  const msg = message.toLowerCase();
+  let reply = '';
+  if (msg.includes('bias') || msg.includes('thinking trap')) {
+    reply = 'Great question! Cognitive biases are mental shortcuts our brains take that can lead us astray. They\'re like glitches in our mental software — totally normal, but worth spotting! Want me to quiz you on one? 🧠';
+  } else if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey')) {
+    reply = 'Hey there, challenger! 🕹️ Welcome to Brain Coach mode. I\'m here to help you level up your thinking skills. Ask me about any bias, concept, or just say "random topic" and I\'ll throw one your way!';
+  } else if (msg.includes('random') || msg.includes('topic') || msg.includes('teach')) {
+    const topics = [
+      'Let\'s talk about Confirmation Bias — we all tend to seek info that confirms what we already believe. Ever noticed yourself doing that?',
+      'How about the Dunning-Kruger Effect? It\'s when people with limited knowledge overestimate their ability. The cure? Stay curious and keep learning! 📚',
+      'Here\'s a fun one: the Anchoring Effect! The first number you hear in a negotiation tends to "anchor" your thinking. Next time you\'re shopping, watch for it!',
+      'The Sunk Cost Fallacy — ever kept watching a bad movie just because you already paid for the ticket? That\'s this bias in action! 🎬',
+      'Let\'s explore Emotional Intelligence! It\'s not just about being smart — it\'s about understanding and managing your emotions AND recognizing them in others.'
+    ];
+    reply = topics[Math.floor(Math.random() * topics.length)];
+  } else if (msg.includes('correct') || msg.includes('right') || msg.includes('got it')) {
+    reply = 'Nice work, champion! 🏆 Knowledge is your ultimate power-up. Want to explore another concept or go deeper on this one?';
+  } else if (msg.includes('wrong') || msg.includes('missed') || msg.includes('incorrect')) {
+    reply = 'No worries — every miss is a chance to level up! The fact that you\'re here learning puts you ahead of the game. Want me to break that one down for you? 💪';
+  } else {
+    reply = 'Interesting thought! I\'m best at helping with cognitive biases, thinking traps, emotional intelligence, and critical thinking. Try asking me about a specific concept, or say "random topic" for a surprise lesson! 🎮';
+  }
+
+  res.json({ reply });
+});
+
 // ─── Start ───
+
+app.get('*', (req, res, next) => {
+  // Fallback: serve index.html for any unknown route (for SPA support)
+  if (!req.path.startsWith('/api/')) {
+    return res.sendFile(path.join(publicDir, 'index.html'));
+  }
+  next();
+});
 
 app.listen(PORT, () => {
   console.log(`Think Twice API running on port ${PORT}`);

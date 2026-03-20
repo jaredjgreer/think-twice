@@ -20,6 +20,7 @@
 <body class="crt-flicker">
 
   <!-- ═══ HOME SCREEN ═══ -->
+  <button id="btn-mute" class="btn btn-sm mute-btn" style="position:fixed;top:12px;right:12px;z-index:1000;">🔊</button>
   <div id="home-screen" class="screen home-screen active">
     <div class="game-title glow-cyan"><span class="title-emoji">🧠</span><br>THINK<br>TWICE</div>
     <div class="game-subtitle glow-pink">OUTSMART YOUR BRAIN</div>
@@ -66,12 +67,14 @@
     </div>
     <div id="pro-deck-selector" class="deck-selector" style="display:none; margin-top: 10px;"></div>
 
-    <div class="setup-title glow-cyan" style="margin-top: 16px;">GRID SIZE</div>
-    <div class="grid-selector">
-      <button class="grid-option" data-size="2">2×2</button>
-      <button class="grid-option" data-size="3">3×3</button>
-      <button class="grid-option selected" data-size="4">4×4</button>
-      <button class="grid-option" data-size="6">6×6</button>
+    <div class="grid-section">
+      <div class="setup-title glow-cyan" style="margin-top: 16px;">GRID SIZE</div>
+      <div class="grid-selector">
+        <button class="grid-option" data-size="2">2×2</button>
+        <button class="grid-option" data-size="3">3×3</button>
+        <button class="grid-option selected" data-size="4">4×4</button>
+        <button class="grid-option" data-size="6">6×6</button>
+      </div>
     </div>
 
     <div id="team-section" class="team-section" style="display:none;">
@@ -97,11 +100,53 @@
         <span class="mode-name">MIXED</span>
         <span class="mode-desc">Random mode every card</span>
       </button>
+      <button class="mode-option" data-mode="tutor">
+        <span class="mode-name">AI TUTOR</span>
+        <span class="mode-desc">Guided learning with AI</span>
+      </button>
+    </div>
+
+    <div class="timer-toggles" style="display: flex; gap: 18px; margin: 18px 0 0 0; align-items: center;">
+      <label style="font-family: var(--font-terminal); font-size: 13px; color: var(--text-dim); display: flex; align-items: center; gap: 6px;">
+        <input type="checkbox" id="toggle-timer-tier1" style="accent-color: var(--neon-cyan);"> Timer Off for Tier 1
+      </label>
+      <label style="font-family: var(--font-terminal); font-size: 13px; color: var(--text-dim); display: flex; align-items: center; gap: 6px;">
+        <input type="checkbox" id="toggle-timer-all" style="accent-color: var(--neon-cyan);"> Timer Off for All
+      </label>
     </div>
 
     <div style="display: flex; gap: 12px; margin-top: 16px;">
       <button id="btn-back-home" class="btn">← BACK</button>
       <button id="btn-start-game" class="btn btn-green btn-large">START GAME</button>
+    </div>
+  </div>
+
+  <!-- ═══ TUTOR MODE SCREEN ═══ -->
+  <div id="tutor-mode-screen" class="screen tutor-screen">
+    <div class="tutor-topbar">
+      <button id="btn-tutor-home" class="btn btn-sm">← HOME</button>
+      <div class="tutor-title glow-cyan">🤖 BRAIN COACH</div>
+    </div>
+    <div class="tutor-chat-container">
+      <div id="tutor-chat-list" class="tutor-chat-list"></div>
+    </div>
+    <div class="tutor-input-bar">
+      <input id="tutor-chat-input" type="text" placeholder="Ask me anything..." autocomplete="off" class="tutor-input">
+      <button id="tutor-chat-send" class="btn btn-green">SEND</button>
+    </div>
+    <div class="tutor-concept-bar">
+      <button id="btn-tutor-random" class="btn btn-sm btn-yellow">🎲 RANDOM TOPIC</button>
+      <button id="btn-tutor-browse" class="btn btn-sm">📚 BROWSE</button>
+    </div>
+  </div>
+
+  <!-- ═══ CONCEPT BROWSER MODAL ═══ -->
+  <div id="concept-browser-modal" class="modal-overlay">
+    <div class="modal box-glow-cyan" style="max-width: 480px; max-height: 80vh; overflow-y: auto;">
+      <h2 class="glow-cyan">📚 CONCEPT BROWSER</h2>
+      <input id="concept-search" type="text" placeholder="SEARCH CONCEPTS..." autocomplete="off" style="margin-bottom: 12px;">
+      <div id="concept-list" class="concept-list"></div>
+      <button id="btn-close-concepts" class="btn" style="margin-top: 12px;">CLOSE</button>
     </div>
   </div>
 
@@ -245,7 +290,7 @@
       </div>
       <div class="help-what">
         <h3>WHAT IS THINK TWICE?</h3>
-        <p>A brain-training card game that teaches you to recognize cognitive biases, emotional intelligence skills, gospel principles, professional concepts, and more — while competing with friends and family!</p>", "oldString": "        <p>A brain-training card game that teaches you to recognize cognitive biases
+        <p>A brain-training card game that teaches you to recognize cognitive biases, emotional intelligence skills, gospel principles, professional concepts, and more — while competing with friends and family!</p>
       </div>
       <button id="btn-close-help" class="btn btn-green">GOT IT</button>
     </div>

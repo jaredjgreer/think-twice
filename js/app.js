@@ -8,6 +8,9 @@ const App = (() => {
   let deckData = null;
   let selectedGridSize = 4;
   let selectedGameMode = 'classic';
+  let tutorModeActive = false;
+  let timerOffTier1 = false;
+  let timerOffAll = false;
   let selectedPlayerIds = [];
   let selectedDeckIds = ['cognitive-biases'];
   let timerInterval = null;
@@ -70,6 +73,20 @@ const App = (() => {
   // ─── Initialize ───
 
   async function init() {
+    // Mute button logic
+    let muted = localStorage.getItem('tt_muted') === 'true';
+    function updateMuteBtn() {
+      const btn = document.getElementById('btn-mute');
+      if (btn) btn.textContent = muted ? '🔇' : '🔊';
+    }
+    document.getElementById('btn-mute').addEventListener('click', () => {
+      muted = !muted;
+      localStorage.setItem('tt_muted', muted);
+      Sound.setMuted(muted);
+      updateMuteBtn();
+    });
+    Sound.setMuted(muted);
+    updateMuteBtn();
     // Load default deck data
     await loadDecks(selectedDeckIds);
 
@@ -115,12 +132,26 @@ const App = (() => {
     });
 
     // Wire game mode selectors
+
     document.querySelectorAll('.mode-option').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.mode-option').forEach(b => b.classList.remove('selected'));
         btn.classList.add('selected');
         selectedGameMode = btn.dataset.mode;
+        tutorModeActive = (selectedGameMode === 'tutor');
+        // Hide grid/team options in Tutor mode (they don't apply)
+        document.getElementById('team-section').style.display = tutorModeActive ? 'none' : '';
+        document.querySelector('.grid-section').style.display = tutorModeActive ? 'none' : '';
+        document.querySelector('.timer-toggles').style.display = tutorModeActive ? 'none' : '';
       });
+    });
+
+    // Wire timer toggles
+    document.getElementById('toggle-timer-tier1').addEventListener('change', (e) => {
+      timerOffTier1 = e.target.checked;
+    });
+    document.getElementById('toggle-timer-all').addEventListener('change', (e) => {
+      timerOffAll = e.target.checked;
     });
 
     // Wire deck selectors (multi-select toggle)
@@ -171,6 +202,9 @@ const App = (() => {
     // Admin mode (tap title 5x)
     initAdminTrigger();
     wireAdminEvents();
+
+    // Wire tutor mode events
+    wireTutorEvents();
 
     // Check for saved game
     const savedGame = Storage.getGameState();
@@ -397,6 +431,17 @@ const App = (() => {
 
     // Check if we have enough bias content
     if (!deckData || deckData.cards.length === 0) return;
+
+    if (selectedGameMode === 'tutor') {
+      tutorModeActive = true;
+      clearTutorChat();
+      showScreen('tutor-mode-screen');
+      // Send welcome message from AI
+      addAiMessage('Hey there, challenger! \ud83d\udd79\ufe0f Welcome to Brain Coach mode! I\'m here to help you level up your thinking skills. Ask me about any bias or concept, tap \ud83c\udfb2 RANDOM TOPIC for a surprise lesson, or browse the concept library. Let\'s go! \ud83e\udde0');
+      return;
+    } else {
+      tutorModeActive = false;
+    }
 
     Game.init(players, selectedGridSize, deckData, selectedGameMode, selectedTeams);
     Sound.stopMusic();
@@ -641,6 +686,15 @@ const App = (() => {
 
   function startTimer(cardData, cardIndex, isSteal) {
     stopTimer();
+    // Timer logic respects toggles
+    let skipTimer = false;
+    if (timerOffAll) skipTimer = true;
+    if (timerOffTier1 && cardData.tier === 1) skipTimer = true;
+    if (skipTimer) {
+      const container = document.getElementById('timer-bar-container');
+      if (container) container.style.display = 'none';
+      return;
+    }
     const cp = Game.getCurrentPlayer();
     timerSeconds = Game.getTimerDuration(cp);
     const totalTime = timerSeconds;
@@ -672,6 +726,156 @@ const App = (() => {
         handleChallengeAnswer(cardIndex, -1, cardData, isSteal);
       }
     }, 1000);
+  }
+  // ─── Tutor Mode Chat Logic ───
+
+  let tutorChatHistory = []; // conversation context for AI
+
+  function clearTutorChat() {
+    const chatList = document.getElementById('tutor-chat-list');
+    if (chatList) chatList.innerHTML = '';
+    tutorChatHistory = [];
+  }
+
+  function addAiMessage(text) {
+    const chatList = document.getElementById('tutor-chat-list');
+    if (!chatList) return;
+    const msg = document.createElement('div');
+    msg.className = 'chat-msg ai';
+    msg.innerHTML = `<span class="chat-bubble">${sanitize(text)}</span>`;
+    chatList.appendChild(msg);
+    scrollChat();
+    tutorChatHistory.push({ role: 'assistant', content: text });
+  }
+
+  function scrollChat() {
+    const container = document.querySelector('.tutor-chat-container');
+    if (container) setTimeout(() => container.scrollTop = container.scrollHeight, 50);
+  }
+
+  function offlineBrainCoach(message) {
+    const m = message.toLowerCase();
+    if (m.includes('hello') || m.includes('hi') || m.includes('hey'))
+      return 'Hey there, challenger! \ud83d\udd79\ufe0f Welcome to Brain Coach mode. I\u2019m here to help you level up your thinking skills. Ask me about any bias, concept, or say "random topic"!';
+    if (m.includes('bias') || m.includes('thinking trap'))
+      return 'Great question! Cognitive biases are mental shortcuts our brains take that can lead us astray \u2014 like glitches in our mental software. Totally normal, but worth spotting! Want me to quiz you on one? \ud83e\udde0';
+    if (m.includes('random') || m.includes('topic') || m.includes('teach')) {
+      const topics = [
+        'Let\u2019s talk about Confirmation Bias \u2014 we tend to seek info that confirms what we already believe. Ever noticed yourself doing that?',
+        'How about the Dunning-Kruger Effect? People with limited knowledge sometimes overestimate their ability. The cure? Stay curious! \ud83d\udcda',
+        'The Anchoring Effect! The first number you hear in a negotiation tends to "anchor" your thinking. Watch for it next time you\u2019re shopping!',
+        'The Sunk Cost Fallacy \u2014 ever kept watching a bad movie just because you already paid for the ticket? That\u2019s this bias! \ud83c\udfac',
+        'Emotional Intelligence \u2014 it\u2019s not just about being smart, it\u2019s about understanding and managing your emotions AND recognizing them in others.'
+      ];
+      return topics[Math.floor(Math.random() * topics.length)];
+    }
+    if (m.includes('correct') || m.includes('right') || m.includes('got it'))
+      return 'Nice work, champion! \ud83c\udfc6 Knowledge is your ultimate power-up. Want to explore another concept or go deeper on this one?';
+    if (m.includes('wrong') || m.includes('missed') || m.includes('incorrect'))
+      return 'No worries \u2014 every miss is a chance to level up! The fact that you\u2019re here learning puts you ahead. Want me to break that one down? \ud83d\udcaa';
+    return 'Interesting thought! I\u2019m best at helping with cognitive biases, thinking traps, emotional intelligence, and critical thinking. Try asking about a specific concept, or say "random topic" for a surprise lesson! \ud83c\udfae';
+  }
+
+  async function sendTutorMessage(overrideMsg) {
+    const input = document.getElementById('tutor-chat-input');
+    const chatList = document.getElementById('tutor-chat-list');
+    const msg = overrideMsg || (input ? input.value.trim() : '');
+    if (!msg) return;
+    if (input && !overrideMsg) input.value = '';
+
+    // Add user message to chat
+    const userMsg = document.createElement('div');
+    userMsg.className = 'chat-msg user';
+    userMsg.innerHTML = `<span class="chat-bubble">${sanitize(msg)}</span>`;
+    chatList.appendChild(userMsg);
+    scrollChat();
+    tutorChatHistory.push({ role: 'user', content: msg });
+
+    // Show AI thinking
+    const aiMsg = document.createElement('div');
+    aiMsg.className = 'chat-msg ai';
+    aiMsg.innerHTML = `<span class="chat-bubble thinking">\ud83e\udd16 ...</span>`;
+    chatList.appendChild(aiMsg);
+    scrollChat();
+
+    // Call backend API with conversation context
+    let reply;
+    try {
+      const apiUrl = window.THINK_TWICE_API || '';
+      const resp = await fetch(`${apiUrl}/api/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: msg, context: tutorChatHistory.slice(-10) })
+      });
+      const data = await resp.json();
+      reply = data.reply || '...';
+    } catch (_) {
+      reply = offlineBrainCoach(msg);
+    }
+    aiMsg.innerHTML = `<span class="chat-bubble">${sanitize(reply)}</span>`;
+    aiMsg.querySelector('.chat-bubble').classList.remove('thinking');
+    tutorChatHistory.push({ role: 'assistant', content: reply });
+    scrollChat();
+  }
+
+  // ─── Concept Browser ───
+
+  function openConceptBrowser() {
+    const modal = document.getElementById('concept-browser-modal');
+    const list = document.getElementById('concept-list');
+    const search = document.getElementById('concept-search');
+    modal.classList.add('active');
+    search.value = '';
+    renderConceptList('');
+    search.focus();
+    search.oninput = () => renderConceptList(search.value);
+  }
+
+  function renderConceptList(filter) {
+    const list = document.getElementById('concept-list');
+    if (!deckData || !deckData.cards) { list.innerHTML = '<p style="color:var(--text-dim)">No deck loaded</p>'; return; }
+    const f = filter.toLowerCase();
+    const matches = deckData.cards.filter(c => !f || c.name.toLowerCase().includes(f));
+    list.innerHTML = '';
+    matches.slice(0, 50).forEach(card => {
+      const item = document.createElement('div');
+      item.className = 'concept-item';
+      const desc = card.tiers && card.tiers['1'] ? card.tiers['1'].definition : '';
+      item.innerHTML = `<span class="concept-name">${sanitize(card.name)}</span>${desc ? '<br>' + sanitize(desc.substring(0, 80)) + (desc.length > 80 ? '...' : '') : ''}`;
+      item.addEventListener('click', () => {
+        document.getElementById('concept-browser-modal').classList.remove('active');
+        sendTutorMessage(`Tell me about: ${card.name}`);
+      });
+      list.appendChild(item);
+    });
+    if (matches.length === 0) list.innerHTML = '<p style="color:var(--text-dim)">No matches</p>';
+  }
+
+  function getRandomConcept() {
+    if (!deckData || !deckData.cards || deckData.cards.length === 0) return null;
+    return deckData.cards[Math.floor(Math.random() * deckData.cards.length)];
+  }
+
+  // Wire tutor mode events (called once at init)
+  function wireTutorEvents() {
+    document.getElementById('tutor-chat-send').addEventListener('click', () => sendTutorMessage());
+    document.getElementById('tutor-chat-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') sendTutorMessage();
+    });
+    document.getElementById('btn-tutor-home').addEventListener('click', () => {
+      tutorModeActive = false;
+      renderHomeLeaderboard();
+      showScreen('home-screen');
+    });
+    document.getElementById('btn-tutor-random').addEventListener('click', () => {
+      const concept = getRandomConcept();
+      if (concept) sendTutorMessage(`Tell me about: ${concept.name}`);
+      else sendTutorMessage('Give me a random topic!');
+    });
+    document.getElementById('btn-tutor-browse').addEventListener('click', openConceptBrowser);
+    document.getElementById('btn-close-concepts').addEventListener('click', () => {
+      document.getElementById('concept-browser-modal').classList.remove('active');
+    });
   }
 
   function stopTimer() {
@@ -709,44 +913,22 @@ const App = (() => {
       options[selectedIndex].classList.add('wrong');
     }
 
-    // Show result text
-    const resultEl = document.getElementById('challenge-result');
-    resultEl.style.display = 'block';
-    if (result.correct) {
-      const streakText = result.streak >= 2 ? ` 🔥 STREAK ×${result.streak}!` : '';
-      const rarityText = cardData.rarity === 'rare' ? ' ✧ 2× RARE!' : '';
-      resultEl.className = 'challenge-result show correct';
-      resultEl.textContent = isSteal
-        ? `⚡ STOLEN! +${result.points}${rarityText}`
-        : `✧ CORRECT! +${result.points}${rarityText}${streakText} ✧`;
-      Sound.play(isSteal ? 'steal' : 'correct');
-
-      // Streak sound
-      if (result.streak >= 3) Sound.play('combo');
-      else if (result.streak >= 2) Sound.play('streak');
-
-      // Screen juice
-      document.getElementById('game-screen').classList.add('correct-burst');
-      setTimeout(() => document.getElementById('game-screen').classList.remove('correct-burst'), 400);
-
-      // Show streak banner
-      if (result.streak >= 2) {
-        showStreakBanner(result.streak, result.player);
+    // Tutor mode: send summary to chat after answer
+    if (tutorModeActive) {
+      let summary = '';
+      if (typeof cardData.challenge.options !== 'undefined') {
+        const picked = selectedIndex >= 0 ? cardData.challenge.options[selectedIndex] : '(no answer)';
+        const correct = cardData.challenge.options[cardData.challenge.correct];
+        summary = result.correct
+          ? `I answered: "${picked}". It was correct!`
+          : `I answered: "${picked}". The correct answer was: "${correct}".`;
+      } else {
+        summary = result.correct ? 'I got it right!' : 'I missed it.';
       }
-
-      // Crown/Dethrone animation
-      if (result.dethroned) {
-        showDethroneAnimation(result.dethroned, result.newLeader);
-      }
-
-    } else {
-      resultEl.className = 'challenge-result show wrong';
-      resultEl.textContent = selectedIndex < 0 ? '⏰ TIME\'S UP!' : '✗ WRONG ✗';
-      Sound.play('wrong');
-      if (selectedIndex >= 0) Sound.play('crowdOoh');
-      document.getElementById('game-screen').classList.add('screen-shake');
-      setTimeout(() => document.getElementById('game-screen').classList.remove('screen-shake'), 400);
+      sendTutorMessage(summary);
     }
+
+    // ...existing code...
 
     // Reveal the bias name and definition now that the player has answered
     const biasNameEl2 = document.getElementById('challenge-bias-name');

@@ -8,6 +8,7 @@ const Sound = (() => {
   let musicGain = null;
   let musicPlaying = false;
   let musicNodes = [];
+  let muted = false;
 
   function getCtx() {
     if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -16,6 +17,7 @@ const Sound = (() => {
   }
 
   function play(type) {
+    if (muted) return;
     try {
       const c = getCtx();
       switch (type) {
@@ -39,6 +41,11 @@ const Sound = (() => {
         case 'crowdOoh': playCrowdOoh(c); break;
       }
     } catch (e) { /* audio not available */ }
+  }
+
+  function setMuted(val) {
+    muted = !!val;
+    if (muted) stopMusic();
   }
 
   function playFlip(c) {
@@ -305,7 +312,7 @@ const Sound = (() => {
   // ─── Background Music (original chiptune loop) ───
 
   function startMusic() {
-    if (musicPlaying) return;
+    if (musicPlaying || muted) return;
     try {
       const c = getCtx();
       musicPlaying = true;
@@ -419,5 +426,5 @@ const Sound = (() => {
     musicGain = null;
   }
 
-  return { play, startMusic, stopMusic };
+  return { play, startMusic, stopMusic, setMuted };
 })();
