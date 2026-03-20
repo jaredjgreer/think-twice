@@ -1649,9 +1649,6 @@ html, body {
 /* ─── Tutor Mode Screen ─── */
 
 .tutor-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 100vh;
   height: 100dvh;
   background: var(--bg-dark);
