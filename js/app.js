@@ -776,6 +776,49 @@ const App = (() => {
     return 'Interesting thought! I\u2019m best at helping with cognitive biases, thinking traps, emotional intelligence, and critical thinking. Try asking about a specific concept, or say "random topic" for a surprise lesson! \ud83c\udfae';
   }
 
+  const BRAIN_COACH_PROMPT = `You are Brain Coach \u2014 the AI tutor inside Think Twice, a retro-arcade educational game. Your personality:
+- You're enthusiastic, witty, and encouraging \u2014 like a mix of a wise mentor and a fun game show host
+- You use casual language with the occasional retro/arcade reference ("Level up!", "Power-up unlocked!", "Boss-level thinking!")
+- You keep answers concise (2-4 sentences) unless the user asks for more detail
+- You explain cognitive biases, logical fallacies, emotional intelligence, and critical thinking concepts in simple, relatable terms with real-life examples
+- ADAPT your language and examples to the user's age, level, and context. If they say they're 7, use playground examples. If they're a CEO, use boardroom examples.
+- When a user gets something right, celebrate briefly. When wrong, be encouraging and explain why
+- You sometimes pose follow-up questions to make the user think deeper
+- You NEVER break character or discuss being an AI language model
+- If asked about non-educational topics, playfully steer back: "That's outside my arcade! Let's power up your brain instead \ud83e\udde0"
+- Use emoji sparingly but effectively (1-2 per message max)`;
+
+  async function clientSideAI(msg) {
+    const aiKey = localStorage.getItem('tt_ai_key');
+    if (!aiKey) return offlineBrainCoach(msg);
+    try {
+      const resp = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${aiKey}`
+        },
+        body: JSON.stringify({
+          model: 'gpt-4o-mini',
+          messages: [
+            { role: 'system', content: BRAIN_COACH_PROMPT },
+            ...tutorChatHistory.slice(-10),
+            { role: 'user', content: msg }
+          ],
+          max_tokens: 300,
+          temperature: 0.8
+        })
+      });
+      const data = await resp.json();
+      if (data.choices && data.choices[0]) {
+        return data.choices[0].message.content;
+      }
+      return offlineBrainCoach(msg);
+    } catch (_) {
+      return offlineBrainCoach(msg);
+    }
+  }
+
   async function sendTutorMessage(overrideMsg) {
     const input = document.getElementById('tutor-chat-input');
     const chatList = document.getElementById('tutor-chat-list');
@@ -798,7 +841,7 @@ const App = (() => {
     chatList.appendChild(aiMsg);
     scrollChat();
 
-    // Call backend API with conversation context
+    // Call backend API with conversation context, fall back to client-side AI
     let reply;
     try {
       const apiUrl = window.THINK_TWICE_API || '';
@@ -810,7 +853,7 @@ const App = (() => {
       const data = await resp.json();
       reply = data.reply || '...';
     } catch (_) {
-      reply = offlineBrainCoach(msg);
+      reply = await clientSideAI(msg);
     }
     aiMsg.innerHTML = `<span class="chat-bubble">${sanitize(reply)}</span>`;
     aiMsg.querySelector('.chat-bubble').classList.remove('thinking');
@@ -1466,6 +1509,10 @@ const App = (() => {
         document.getElementById('admin-panel').style.display = '';
         renderAdminProDecks();
         renderAdminPlayerList();
+        // Show AI key status
+        const status = document.getElementById('ai-key-status');
+        status.textContent = localStorage.getItem('tt_ai_key') ? 'AI KEY SET \u2713' : 'NO KEY SET \u2014 Brain Coach uses basic responses';
+        status.style.color = localStorage.getItem('tt_ai_key') ? 'var(--neon-green)' : 'var(--text-dim)';
       } else {
         errorEl.textContent = 'WRONG KEY';
         keyInput.value = '';
@@ -1540,6 +1587,20 @@ const App = (() => {
     document.getElementById('btn-admin-login').addEventListener('click', adminLogin);
     document.getElementById('admin-key-input').addEventListener('keydown', (e) => {
       if (e.key === 'Enter') adminLogin();
+    });
+    document.getElementById('btn-save-ai-key').addEventListener('click', () => {
+      const val = document.getElementById('admin-ai-key').value.trim();
+      const status = document.getElementById('ai-key-status');
+      if (val) {
+        localStorage.setItem('tt_ai_key', val);
+        status.textContent = 'KEY SAVED \u2713';
+        status.style.color = 'var(--neon-green)';
+        document.getElementById('admin-ai-key').value = '';
+      } else {
+        localStorage.removeItem('tt_ai_key');
+        status.textContent = 'KEY CLEARED';
+        status.style.color = 'var(--text-dim)';
+      }
     });
   }
 
