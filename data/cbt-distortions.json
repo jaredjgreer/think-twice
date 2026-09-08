@@ -1,7 +1,7 @@
 {
   "deckName": "Thinking Traps",
   "deckId": "cbt-distortions",
-  "description": "Spot the sneaky thinking traps (cognitive distortions) that make life feel worse than it is \u2014 and learn how to reframe them.",
+  "description": "Spot the sneaky thinking traps and pick the healthier thought.",
   "cards": [
     {
       "id": "all-or-nothing",
@@ -9,52 +9,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Seeing things as totally good or totally bad, with no middle. Life is usually somewhere in between.",
-          "scenarioDoneTo": "You got a B on a spelling test and think, 'I'm a total failure at spelling.'",
-          "scenarioYouDo": "You got a B on a spelling test and think, 'I'm a total failure at spelling.'",
+          "definition": "Seeing things as all good or all bad, with no middle.",
+          "scenarioDoneTo": "You got a B on your spelling test.",
+          "scenarioYouDo": "You got a B on your spelling test.",
           "challenge": {
-            "scenario": "You got a B on a spelling test and think, 'I'm a total failure at spelling.' What's a truer thought?",
+            "scenario": "You got a B and think, 'I'm a total failure.' What's a truer thought?",
             "options": [
-              "'A B means I got most of them right \u2014 I can practice the ones I missed.'",
-              "'Yeah, I'm the worst speller ever.'",
-              "'I should just stop trying at spelling.'"
+              "'A B means most of them were right.'",
+              "'I'm the worst speller ever born.'",
+              "'I should just quit trying at this.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: A B isn't 'failure' \u2014 it's mostly right. Look for the middle ground between 'perfect' and 'terrible.'"
+          "tip": "Look for the middle ground between perfect and terrible."
         },
         "2": {
-          "definition": "Black-and-white thinking. If it's not perfect, it's a disaster. Real life almost always has shades of gray.",
-          "scenarioDoneTo": "You missed one shot in the basketball game and think, 'I'm a terrible player, I should quit the team.'",
-          "scenarioYouDo": "You missed one shot in the basketball game and think, 'I'm a terrible player, I should quit the team.'",
+          "definition": "Black-and-white thinking. Not perfect = disaster.",
+          "scenarioDoneTo": "You missed one shot in the game.",
+          "scenarioYouDo": "You missed one shot in the game.",
           "challenge": {
-            "scenario": "You missed one shot and think, 'I should quit the team.' What's a healthier reframe?",
+            "scenario": "'One miss means I should quit the team.' Better?",
             "options": [
-              "'One missed shot doesn't erase every shot I've made. Every player misses sometimes.'",
-              "'Yeah, one miss proves I don't belong.'",
-              "'I'll just never shoot again.'"
+              "'One miss doesn't erase every make I have.'",
+              "'One miss proves I don't belong on this team.'",
+              "'I'll never shoot the ball again after this.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: 'One time doesn't equal always.' Look for evidence that shows the full picture, not just the worst moment."
+          "tip": "One time doesn't equal always."
         },
         "3": {
-          "definition": "Dichotomous thinking treats outcomes as binary (success/failure, hero/villain) and ignores the nuance where most of life actually lives.",
-          "scenarioDoneTo": "You didn't get accepted to your top-choice college and conclude your whole future is ruined.",
-          "scenarioYouDo": "You didn't get accepted to your top-choice college and conclude your whole future is ruined.",
+          "definition": "Treating outcomes as binary and skipping the nuance.",
+          "scenarioDoneTo": "You didn't get into your top-choice college.",
+          "scenarioYouDo": "You didn't get into your top-choice college.",
           "challenge": {
-            "scenario": "You didn't get into your top-choice college and think, 'My future is over.' What's a more balanced reframe?",
+            "scenario": "'My future is over.' Balanced reframe?",
             "options": [
-              "'This one door closed, but I have real options. My future isn't decided by one school.'",
-              "'Yeah, that was my only path. It's all downhill from here.'",
-              "'I'll just not go to college at all now.'"
+              "'One door closed. Still have real options.'",
+              "'That was my only path in life for me.'",
+              "'I'll just skip college entirely from here.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Ask yourself, 'What's the gray area here?' Rarely is one event the whole story."
+          "tip": "Rarely is one event the whole story."
         }
       }
     },
@@ -64,52 +64,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Imagining the worst possible outcome, even when it's very unlikely.",
-          "scenarioDoneTo": "Your friend didn't wave back at you and you think, 'They must hate me now, I'm going to lose all my friends.'",
-          "scenarioYouDo": "Your friend didn't wave back at you and you think, 'They must hate me now, I'm going to lose all my friends.'",
+          "definition": "Imagining the worst, even when it's unlikely.",
+          "scenarioDoneTo": "Your friend didn't wave back at you.",
+          "scenarioYouDo": "Your friend didn't wave back at you.",
           "challenge": {
-            "scenario": "Your friend didn't wave back and you think, 'They hate me now.' What's a truer thought?",
+            "scenario": "'They hate me.' Truer thought?",
             "options": [
-              "'Maybe they didn't see me. I can just ask them later.'",
-              "'They definitely hate me forever.'",
-              "'I should stop being friends with them first.'"
+              "'Maybe they didn't see me. I'll ask.'",
+              "'They definitely hate me forever now.'",
+              "'I should end the friendship first.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Ask, 'What's most likely?' Usually the boring explanation (they didn't see you) is the real one."
+          "tip": "Ask 'what's most likely?' Usually it's boring."
         },
         "2": {
-          "definition": "Jumping to the worst-case scenario as if it's already happening. Your brain skips over all the more likely outcomes.",
-          "scenarioDoneTo": "You have a small headache and immediately think, 'Something is seriously wrong with me.'",
-          "scenarioYouDo": "You have a small headache and immediately think, 'Something is seriously wrong with me.'",
+          "definition": "Jumping to the worst-case as if it's already true.",
+          "scenarioDoneTo": "You have a small headache.",
+          "scenarioYouDo": "You have a small headache.",
           "challenge": {
-            "scenario": "You have a headache and jump straight to 'something's seriously wrong.' What's a healthier response?",
+            "scenario": "'Something is seriously wrong with me.' Reframe?",
             "options": [
-              "'Headaches usually mean I'm tired, thirsty, or stressed. Let me check those first.'",
-              "'I need to google every disease that causes headaches right now.'",
-              "'I should just panic and assume the worst.'"
+              "'Probably tired, thirsty, or stressed. Check first.'",
+              "'Google every disease that causes bad headaches now.'",
+              "'Assume the very worst just to be safe here.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Rate the actual probability. 'What are the 5 most likely explanations?' The worst-case is almost never #1."
+          "tip": "The worst-case is almost never most likely."
         },
         "3": {
-          "definition": "Catastrophic thinking spins one negative signal into a doomsday chain (this bad thing \u2192 next bad thing \u2192 total collapse), often without evidence for any link in the chain.",
-          "scenarioDoneTo": "Your boss schedules a 'quick chat' and you spiral: 'I'm getting fired \u2192 I can't pay rent \u2192 I'll be homeless.'",
-          "scenarioYouDo": "Your boss schedules a 'quick chat' and you spiral: 'I'm getting fired \u2192 I can't pay rent \u2192 I'll be homeless.'",
+          "definition": "Spinning one bad signal into a doomsday chain.",
+          "scenarioDoneTo": "Your boss schedules a 'quick chat.'",
+          "scenarioYouDo": "Your boss schedules a 'quick chat.'",
           "challenge": {
-            "scenario": "You spiral 'chat \u2192 fired \u2192 homeless' before the meeting even happens. What's a grounded reframe?",
+            "scenario": "'Chat → fired → homeless.' Grounded reframe?",
             "options": [
-              "'A quick chat could be a hundred things. I'll deal with what actually happens, not what I imagine.'",
-              "'I should update my resume and pack my things right now.'",
-              "'Assume the worst, that way I'm ready.'"
+              "'A chat could be a hundred things.'",
+              "'Update the resume and pack up now.'",
+              "'Assume the worst so I'm ready.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Break the doom-chain. 'Even IF the worst happened, what would I actually do?' You're more resourceful than the spiral gives you credit for."
+          "tip": "Break the doom chain. Deal with what happens."
         }
       }
     },
@@ -119,52 +119,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Assuming you know what someone else is thinking \u2014 usually that it's something bad about you.",
-          "scenarioDoneTo": "Your teacher looks at you and you think, 'She thinks I'm dumb.'",
-          "scenarioYouDo": "Your teacher looks at you and you think, 'She thinks I'm dumb.'",
+          "definition": "Guessing what someone's thinking. Usually bad guess.",
+          "scenarioDoneTo": "Your teacher glances at you.",
+          "scenarioYouDo": "Your teacher glances at you.",
           "challenge": {
-            "scenario": "You catch your teacher looking at you and think, 'She thinks I'm dumb.' What's more likely?",
+            "scenario": "'She thinks I'm dumb.' Truer thought?",
             "options": [
-              "She might be looking around the room at everyone.",
-              "She definitely hates me.",
-              "I should just look down and hide."
+              "'She might just be scanning the whole room.'",
+              "'She definitely thinks I'm the dumbest ever.'",
+              "'I should hide and avoid her from now on.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: You can't actually read minds! Ask yourself, 'What's the evidence?' Usually there's none."
+          "tip": "You can't read minds. Check the actual evidence."
         },
         "2": {
-          "definition": "Deciding you know what people are thinking, then treating that guess like a fact.",
-          "scenarioDoneTo": "You post a photo and only get 3 likes. You think, 'Everyone must think it's stupid.'",
-          "scenarioYouDo": "You post a photo and only get 3 likes. You think, 'Everyone must think it's stupid.'",
+          "definition": "Treating your guess about someone as fact.",
+          "scenarioDoneTo": "Your post only got 3 likes.",
+          "scenarioYouDo": "Your post only got 3 likes.",
           "challenge": {
-            "scenario": "Your post only gets 3 likes and you think, 'Everyone hates it.' What's a more honest reframe?",
+            "scenario": "'Everyone hates it.' More honest thought?",
             "options": [
-              "'Most people probably didn't even see it. Likes aren't a mind-reading device.'",
-              "'They all secretly hate it.'",
-              "'I should delete it right now.'"
+              "'Most people didn't even see the post.'",
+              "'They all secretly hate the whole post.'",
+              "'I should delete it and disappear now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: 'What proof do I actually have?' If someone hasn't said it, you're guessing."
+          "tip": "If they haven't said it, you're guessing."
         },
         "3": {
-          "definition": "Projecting your own fears onto others and treating those projections as truth. Costs you accuracy and often damages relationships.",
-          "scenarioDoneTo": "A colleague was short with you in a meeting. You assume, 'She thinks my work is trash and wants me off the project.'",
-          "scenarioYouDo": "A colleague was short with you in a meeting. You assume, 'She thinks my work is trash and wants me off the project.'",
+          "definition": "Projecting your fears onto others as if they're truth.",
+          "scenarioDoneTo": "A colleague was short in a meeting.",
+          "scenarioYouDo": "A colleague was short in a meeting.",
           "challenge": {
-            "scenario": "A colleague is short in a meeting and you decide she wants you off the project. What's a better move?",
+            "scenario": "'She wants me off the project.' Better move?",
             "options": [
-              "Ask her directly: 'Hey \u2014 wanted to check in, everything okay?'",
-              "Assume she hates my work and start withdrawing.",
-              "Complain about her to someone else."
+              "Ask her directly: 'Hey, everything okay?'",
+              "Assume she hates my work and quietly withdraw.",
+              "Complain about her to someone else on the team."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: The cure for mind reading is a real conversation. Ask, don't assume."
+          "tip": "Cure for mind reading: a real conversation."
         }
       }
     },
@@ -174,52 +174,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Predicting the future \u2014 usually predicting it'll go badly \u2014 as if it's already true.",
-          "scenarioDoneTo": "Before your school play, you think, 'I know I'm going to mess up my lines and everyone will laugh at me.'",
-          "scenarioYouDo": "Before your school play, you think, 'I know I'm going to mess up my lines and everyone will laugh at me.'",
+          "definition": "Predicting the future as if it's already true.",
+          "scenarioDoneTo": "You have the school play tonight.",
+          "scenarioYouDo": "You have the school play tonight.",
           "challenge": {
-            "scenario": "You predict you'll mess up the play before it even happens. What's a healthier thought?",
+            "scenario": "'I know I'll mess up.' Healthier thought?",
             "options": [
-              "'I've practiced. I don't actually know what will happen \u2014 I'll do my best.'",
-              "'I should just fake being sick.'",
-              "'I'll definitely mess up, so why try?'"
+              "'I've practiced. I'll just do my best.'",
+              "'Fake sick and skip the whole thing.'",
+              "'I'll mess up big time, so why try?'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: 'I don't have a crystal ball.' The future isn't written yet."
+          "tip": "You don't have a crystal ball. Future isn't written."
         },
         "2": {
-          "definition": "Being so sure something bad will happen that you don't even try \u2014 and then you can never find out you were wrong.",
-          "scenarioDoneTo": "You want to ask someone to hang out, but you tell yourself, 'They'll definitely say no,' so you never ask.",
-          "scenarioYouDo": "You want to ask someone to hang out, but you tell yourself, 'They'll definitely say no,' so you never ask.",
+          "definition": "So sure it fails you don't try. Never find out.",
+          "scenarioDoneTo": "You want to ask someone to hang out.",
+          "scenarioYouDo": "You want to ask someone to hang out.",
           "challenge": {
-            "scenario": "You're sure they'll say no, so you don't ask. What's a better reframe?",
+            "scenario": "'They'll say no.' You don't ask. Reframe?",
             "options": [
-              "'I actually don't know what they'll say. The only way to find out is to ask.'",
-              "'They'd say no, so it's not worth asking.'",
-              "'I'll wait for them to ask me instead \u2014 forever.'"
+              "'I don't know until I ask them.'",
+              "'They'd say no, so save the effort.'",
+              "'I'll wait for them to ask me first.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: When you assume the answer, you never get the real one. Test the prediction."
+          "tip": "Assume the answer, never get the real one."
         },
         "3": {
-          "definition": "Confusing a fear with a forecast. Your brain treats 'this could go badly' as 'this will go badly' and behavior follows the prediction.",
-          "scenarioDoneTo": "You skip applying to a job you'd love because 'they'll never hire me.'",
-          "scenarioYouDo": "You skip applying to a job you'd love because 'they'll never hire me.'",
+          "definition": "Confusing a fear with a forecast about the future.",
+          "scenarioDoneTo": "You want to apply for a great job.",
+          "scenarioYouDo": "You want to apply for a great job.",
           "challenge": {
-            "scenario": "You skip the application, sure you'd be rejected. What's the reframe?",
+            "scenario": "'They'll never hire me.' Reframe?",
             "options": [
-              "'Not applying guarantees I don't get it. Applying gives me a real chance.'",
-              "'They'd never pick me, so save the effort.'",
-              "'I'll wait until I'm 100% qualified' (which is never).'"
+              "'Not applying guarantees I don't get it.'",
+              "'They'd never pick me, don't waste time.'",
+              "'Wait until I feel fully qualified' (never).'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Predicted rejection isn't real rejection. The only way to know is to try."
+          "tip": "Predicted rejection isn't real rejection. Try to know."
         }
       }
     },
@@ -229,52 +229,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Thinking something is your fault when it actually isn't. Sometimes stuff just happens \u2014 it's not about you.",
-          "scenarioDoneTo": "Your mom seems grumpy this morning and you think, 'She's mad at me. I must have done something wrong.'",
-          "scenarioYouDo": "Your mom seems grumpy this morning and you think, 'She's mad at me. I must have done something wrong.'",
+          "definition": "Thinking something is your fault when it isn't.",
+          "scenarioDoneTo": "Your mom seems grumpy this morning.",
+          "scenarioYouDo": "Your mom seems grumpy this morning.",
           "challenge": {
-            "scenario": "Mom is grumpy and you assume it's your fault. What's more likely?",
+            "scenario": "'She's mad at me.' More likely?",
             "options": [
-              "She might be tired or stressed about something else \u2014 it may have nothing to do with me.",
-              "It's definitely all my fault.",
-              "I should hide until she cheers up."
+              "'She's tired or stressed. Not about me.'",
+              "'It's definitely all my fault this morning.'",
+              "'Hide out until she's cheered up again.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Not everything is about you. People have their own days going on."
+          "tip": "Not everything is about you."
         },
         "2": {
-          "definition": "Taking blame for things you didn't cause \u2014 including other people's moods and choices.",
-          "scenarioDoneTo": "Your parents are arguing and you think, 'This is because of me. If I were a better kid, they wouldn't fight.'",
-          "scenarioYouDo": "Your parents are arguing and you think, 'This is because of me. If I were a better kid, they wouldn't fight.'",
+          "definition": "Taking blame for stuff you didn't cause.",
+          "scenarioDoneTo": "Your parents are arguing.",
+          "scenarioYouDo": "Your parents are arguing.",
           "challenge": {
-            "scenario": "You blame yourself for your parents' argument. What's a truer thought?",
+            "scenario": "'It's because of me.' Truer thought?",
             "options": [
-              "'Adults have their own issues. Their argument is not my fault or my job to fix.'",
-              "'If I was better, they wouldn't fight.'",
-              "'I need to be the perfect kid so they stop.'"
+              "'Adults have their own stuff. Not mine.'",
+              "'If I was better they wouldn't be fighting.'",
+              "'I need to be the perfect kid always.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Other people's emotions belong to them. You didn't cause it, and you can't fix it."
+          "tip": "Other people's emotions belong to them."
         },
         "3": {
-          "definition": "Assuming responsibility for outcomes that had many causes, most of them outside your control. It sounds humble but it's actually a distortion of scale.",
-          "scenarioDoneTo": "Your team missed a quarterly target and you think, 'This is entirely my fault.'",
-          "scenarioYouDo": "Your team missed a quarterly target and you think, 'This is entirely my fault.'",
+          "definition": "Taking responsibility for outcomes with many causes.",
+          "scenarioDoneTo": "Your team missed a quarterly target.",
+          "scenarioYouDo": "Your team missed a quarterly target.",
           "challenge": {
-            "scenario": "You take 100% of the blame for a team miss. What's the reframe?",
+            "scenario": "'It's entirely my fault.' Reframe?",
             "options": [
-              "'What was my actual share? What was outside my control? Both matter.'",
-              "'Yeah, it's all on me.'",
-              "'I should quit.'"
+              "'What was mine? What was outside my control?'",
+              "'Yeah, it's completely on me for sure.'",
+              "'I should just quit my job right now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Own your part, not everyone's. Ask: 'What's mine, what's shared, what's not mine at all?'"
+          "tip": "Own your part, not everyone's."
         }
       }
     },
@@ -284,52 +284,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Telling yourself you 'should' be different than you are \u2014 which usually just makes you feel worse.",
-          "scenarioDoneTo": "You forgot your homework and think, 'I should never forget things. I'm so stupid.'",
-          "scenarioYouDo": "You forgot your homework and think, 'I should never forget things. I'm so stupid.'",
+          "definition": "Telling yourself you 'should' be different than you are.",
+          "scenarioDoneTo": "You forgot your homework at home today.",
+          "scenarioYouDo": "You forgot your homework at home today.",
           "challenge": {
-            "scenario": "You forgot homework and beat yourself up with 'shoulds.' What's kinder and more useful?",
+            "scenario": "'I should never forget things.' More useful?",
             "options": [
-              "'Everyone forgets things sometimes. Let me set a reminder for tomorrow.'",
-              "'I'm the worst, I should be perfect.'",
-              "'I'll just give up on school.'"
+              "'Everyone forgets. Set a reminder for tomorrow.'",
+              "'I'm the absolute worst. I should be perfect.'",
+              "'I'll just give up on all of school now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Swap 'should' for 'I want to' or 'next time.' It's less punishing and more helpful."
+          "tip": "Swap 'should' for 'next time.' Less punishing."
         },
         "2": {
-          "definition": "Living by strict internal rules ('I should always be nice,' 'I shouldn't feel anxious') that make normal being-a-human feel like failure.",
-          "scenarioDoneTo": "You feel nervous before a party and think, 'I shouldn't feel this way. I should be more confident.'",
-          "scenarioYouDo": "You feel nervous before a party and think, 'I shouldn't feel this way. I should be more confident.'",
+          "definition": "Strict inner rules that make being human feel like failing.",
+          "scenarioDoneTo": "You're nervous before a party tonight.",
+          "scenarioYouDo": "You're nervous before a party tonight.",
           "challenge": {
-            "scenario": "You judge yourself for feeling nervous. What's a healthier reframe?",
+            "scenario": "'I shouldn't feel nervous.' Healthier?",
             "options": [
-              "'Nervous is a normal feeling before something new. I can feel nervous and still go.'",
-              "'I should feel nothing.'",
-              "'I'll just skip the party.'"
+              "'Nervous is normal. I can feel it and go.'",
+              "'I should feel absolutely nothing right now.'",
+              "'I'll just skip the whole party entirely.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: 'Should' rules are made up. Feelings aren't wrong \u2014 they're information."
+          "tip": "'Should' rules are made up. Feelings aren't wrong."
         },
         "3": {
-          "definition": "Internalized 'shoulds' inherited from culture, family, or old fears. Trading them for values-based choices ('I choose to' / 'it matters to me that') restores agency.",
-          "scenarioDoneTo": "You skip going to therapy because 'I shouldn't need help. I should be able to handle this alone.'",
-          "scenarioYouDo": "You skip going to therapy because 'I shouldn't need help. I should be able to handle this alone.'",
+          "definition": "Inherited 'shoulds' from family, culture, or old fears.",
+          "scenarioDoneTo": "You're skipping therapy.",
+          "scenarioYouDo": "You're skipping therapy.",
           "challenge": {
-            "scenario": "'I shouldn't need help' keeps you from therapy. What's the reframe?",
+            "scenario": "'I shouldn't need help.' Reframe?",
             "options": [
-              "'Getting help is a skill, not a weakness. I choose to take care of my mental health.'",
-              "'Real adults handle everything alone.'",
-              "'I'll just push through.'"
+              "'Getting help is a skill, not weakness.'",
+              "'Real adults handle it entirely alone.'",
+              "'I'll just push through this alone forever.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: 'I choose to' beats 'I should' every time. Values > rules."
+          "tip": "'I choose to' beats 'I should' every time."
         }
       }
     },
@@ -339,52 +339,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Believing something is true just because you feel it. Feelings are real, but they're not always facts.",
-          "scenarioDoneTo": "You feel stupid after getting an answer wrong in class, and decide, 'I really AM stupid.'",
-          "scenarioYouDo": "You feel stupid after getting an answer wrong in class, and decide, 'I really AM stupid.'",
+          "definition": "Believing something is true just because you feel it.",
+          "scenarioDoneTo": "You got an answer wrong in class today.",
+          "scenarioYouDo": "You got an answer wrong in class today.",
           "challenge": {
-            "scenario": "You feel stupid, so you decide you ARE stupid. What's a truer thought?",
+            "scenario": "'I feel stupid, so I AM stupid.' Truer?",
             "options": [
-              "'Feeling something doesn't make it true. I got one answer wrong \u2014 that's not who I am.'",
-              "'The feeling is the fact.'",
-              "'I'll never raise my hand again.'"
+              "'Feeling it doesn't make it true.'",
+              "'The feeling IS the actual fact.'",
+              "'Never raise my hand again ever.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: 'I feel it' \u2260 'It's true.' Feelings are weather, not the whole sky."
+          "tip": "Feelings are weather, not the whole sky."
         },
         "2": {
-          "definition": "Using emotions as proof. 'I feel like a loser, so I must be one.' Your mood is coloring your beliefs about yourself.",
-          "scenarioDoneTo": "You feel lonely at lunch and think, 'I feel like no one likes me, so no one must like me.'",
-          "scenarioYouDo": "You feel lonely at lunch and think, 'I feel like no one likes me, so no one must like me.'",
+          "definition": "Using emotions as proof about who you are.",
+          "scenarioDoneTo": "You feel lonely at lunch today.",
+          "scenarioYouDo": "You feel lonely at lunch today.",
           "challenge": {
-            "scenario": "Lonely feelings become 'nobody likes me.' What's a healthier reframe?",
+            "scenario": "'Feeling lonely means no one likes me.' Healthier?",
             "options": [
-              "'Feeling lonely right now doesn't mean I have no friends. Feelings shift.'",
-              "'The feeling is proof.'",
-              "'I should give up on friends.'"
+              "'Lonely right now doesn't mean no friends.'",
+              "'The feeling is the actual solid proof.'",
+              "'Give up on making friends entirely now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Emotions are signals, not verdicts. Check them against actual evidence."
+          "tip": "Emotions are signals, not verdicts."
         },
         "3": {
-          "definition": "Treating emotional experience as objective data. It leads to identity claims ('I am unlovable,' 'I am a fraud') that survive despite contradicting evidence.",
-          "scenarioDoneTo": "Despite consistent positive feedback, you feel like a fraud at work and conclude, 'I really am a fraud.'",
-          "scenarioYouDo": "Despite consistent positive feedback, you feel like a fraud at work and conclude, 'I really am a fraud.'",
+          "definition": "Treating emotional experience as objective data.",
+          "scenarioDoneTo": "You feel like a fraud at work.",
+          "scenarioYouDo": "You feel like a fraud at work.",
           "challenge": {
-            "scenario": "Feeling like a fraud, you conclude you ARE one \u2014 despite good feedback. What's the reframe?",
+            "scenario": "Feeling like a fraud despite good reviews. Reframe?",
             "options": [
-              "'The feeling is real. That doesn't make it accurate. What does the evidence actually show?'",
-              "'My feelings know the truth.'",
-              "'I should quit before they figure it out.'"
+              "'The feeling is real. Not always accurate.'",
+              "'My feelings clearly know the actual truth.'",
+              "'Quit now before they figure me out.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Impostor feelings are common in growth. Separate the feeling from the fact."
+          "tip": "Separate the feeling from the fact."
         }
       }
     },
@@ -394,52 +394,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Sticking a big label on yourself (or someone else) instead of just describing what happened.",
-          "scenarioDoneTo": "You drop your lunch tray and think, 'I'm such a loser.'",
-          "scenarioYouDo": "You drop your lunch tray and think, 'I'm such a loser.'",
+          "definition": "Slapping a big label on yourself instead of the moment.",
+          "scenarioDoneTo": "You dropped your lunch tray at school.",
+          "scenarioYouDo": "You dropped your lunch tray at school.",
           "challenge": {
-            "scenario": "You drop a tray and call yourself a loser. What's a truer thought?",
+            "scenario": "'I'm such a loser.' Truer thought?",
             "options": [
-              "'I dropped a tray. That's a thing that happened, not who I am.'",
-              "'I really am a loser.'",
-              "'I should be embarrassed forever.'"
+              "'I dropped a tray. That's a moment, not me.'",
+              "'I really am a loser through and through.'",
+              "'I should be embarrassed about it forever now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Describe the moment, not your whole self. 'I did X' \u2260 'I AM X.'"
+          "tip": "'I did X' isn't the same as 'I AM X.'"
         },
         "2": {
-          "definition": "Turning behaviors into identities. One mistake becomes 'I'm stupid,' one lie becomes 'I'm a liar,' one bad game becomes 'I suck.'",
-          "scenarioDoneTo": "You blew a test question and think, 'I'm stupid,' instead of 'I missed that one.'",
-          "scenarioYouDo": "You blew a test question and think, 'I'm stupid,' instead of 'I missed that one.'",
+          "definition": "Turning one behavior into a whole identity.",
+          "scenarioDoneTo": "You missed one test question today.",
+          "scenarioYouDo": "You missed one test question today.",
           "challenge": {
-            "scenario": "One missed question becomes 'I'm stupid.' What's healthier?",
+            "scenario": "'I missed one, so I'm stupid.' Healthier?",
             "options": [
-              "'I got that one wrong. I'll review it. That's different from being stupid.'",
-              "'Yep, stupid confirmed.'",
-              "'I'll never get anything right.'"
+              "'I missed one question. I'll review it later.'",
+              "'Yep, my stupidity is confirmed for good now.'",
+              "'I'll never get anything right ever again.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Behavior is changeable. Identity feels permanent. Don't confuse them."
+          "tip": "Behavior changes. Identity feels stuck."
         },
         "3": {
-          "definition": "Global self-labeling collapses complexity into a single word. It's efficient and inaccurate \u2014 humans are not one adjective.",
-          "scenarioDoneTo": "A relationship ends and you decide, 'I'm just unlovable.'",
-          "scenarioYouDo": "A relationship ends and you decide, 'I'm just unlovable.'",
+          "definition": "Collapsing all of you into one word.",
+          "scenarioDoneTo": "A relationship ended.",
+          "scenarioYouDo": "A relationship ended.",
           "challenge": {
-            "scenario": "You label yourself 'unlovable' after a breakup. What's the reframe?",
+            "scenario": "'I'm just unlovable.' Reframe?",
             "options": [
-              "'One relationship ended. That's data about fit, not proof about my worth.'",
-              "'Nobody could love me.'",
-              "'I'll be alone forever.'"
+              "'One relationship ended. That's about fit, not worth.'",
+              "'Nobody could ever really love someone like me.'",
+              "'I'll definitely be alone completely from now on.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: No one word is you. Zoom in on specific behaviors and situations instead."
+          "tip": "No one word is you. Zoom in instead."
         }
       }
     },
@@ -449,52 +449,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Brushing off the good stuff. 'It doesn't count.' 'That was luck.' 'They're just being nice.'",
-          "scenarioDoneTo": "You get an A on your project and think, 'It was probably an easy assignment. It doesn't really count.'",
-          "scenarioYouDo": "You get an A on your project and think, 'It was probably an easy assignment. It doesn't really count.'",
+          "definition": "Brushing off good stuff. 'It doesn't count.'",
+          "scenarioDoneTo": "You got an A on your project.",
+          "scenarioYouDo": "You got an A on your project.",
           "challenge": {
-            "scenario": "You dismiss your A. What's a healthier thought?",
+            "scenario": "'It was probably easy. Doesn't count.' Healthier?",
             "options": [
-              "'I worked hard and it paid off. I can let this win count.'",
-              "'It was easy so it doesn't matter.'",
-              "'Anyone could have done it.'"
+              "'I worked hard. Let this one count.'",
+              "'It was easy, so it doesn't really matter.'",
+              "'Literally anyone could have done that.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Let the good land. Wins count even when it's uncomfortable to say so."
+          "tip": "Wins count, even when it feels awkward."
         },
         "2": {
-          "definition": "Explaining away positives ('they had to say that,' 'anyone could do that') so they can't build up your sense of self.",
-          "scenarioDoneTo": "A friend compliments your art and you think, 'They're just saying that to be nice.'",
-          "scenarioYouDo": "A friend compliments your art and you think, 'They're just saying that to be nice.'",
+          "definition": "Explaining away positives so they can't build you up.",
+          "scenarioDoneTo": "A friend complimented your art.",
+          "scenarioYouDo": "A friend complimented your art.",
           "challenge": {
-            "scenario": "You brush off a genuine compliment. What's the reframe?",
+            "scenario": "'They're just being nice.' Reframe?",
             "options": [
-              "'Say thanks. Let it in. Compliments aren't lies just because they're kind.'",
-              "'They didn't mean it.'",
-              "'I should argue with them.'"
+              "'Say thanks. Let it actually land.'",
+              "'They didn't really mean any of it.'",
+              "'Argue with them about it right now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: 'Thank you' is a full sentence. You don't have to talk yourself out of good news."
+          "tip": "'Thank you' is a full sentence."
         },
         "3": {
-          "definition": "Systematic filter that only lets negatives in as evidence about you. Over time it starves your self-image.",
-          "scenarioDoneTo": "After a promotion you think, 'They just needed to fill the role. It's not about my ability.'",
-          "scenarioYouDo": "After a promotion you think, 'They just needed to fill the role. It's not about my ability.'",
+          "definition": "A filter that only lets negatives count as evidence.",
+          "scenarioDoneTo": "You just got a big promotion.",
+          "scenarioYouDo": "You just got a big promotion.",
           "challenge": {
-            "scenario": "You dismiss your promotion as luck. What's the reframe?",
+            "scenario": "'They just needed to fill the role.' Reframe?",
             "options": [
-              "'Multiple people chose me over other candidates. That's evidence I earned it.'",
-              "'It was pure luck.'",
-              "'I don't deserve it.'"
+              "'They picked me over others. That's earned.'",
+              "'It was purely luck, plain and simple.'",
+              "'I really don't deserve any of this.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: If you'd count it as evidence when someone else did it, count it when you do it."
+          "tip": "Count wins with the same rigor as losses."
         }
       }
     },
@@ -504,52 +504,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Focusing on one bad thing and ignoring everything good, like there's a filter over your brain.",
-          "scenarioDoneTo": "You had a fun day, but one kid called you a name. Now you can only think about that one moment.",
-          "scenarioYouDo": "You had a fun day, but one kid called you a name. Now you can only think about that one moment.",
+          "definition": "Focusing on one bad thing and ignoring the good stuff.",
+          "scenarioDoneTo": "You had a fun day but got teased once.",
+          "scenarioYouDo": "You had a fun day but got teased once.",
           "challenge": {
-            "scenario": "One mean comment ate the whole day. What's a truer picture?",
+            "scenario": "One tease ate the whole day. Truer picture?",
             "options": [
-              "'A bunch of good stuff happened AND one bad thing. Both are real.'",
-              "'That one thing ruined everything.'",
-              "'The whole day was terrible.'"
+              "'Lots of good AND one bad thing. Both real.'",
+              "'That one tease ruined the whole entire day.'",
+              "'My whole day was actually terrible.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Widen the lens. Ask, 'What ELSE happened today?'"
+          "tip": "Widen the lens. Ask 'what else happened?'"
         },
         "2": {
-          "definition": "Picking out the single negative detail in a long list and letting it define the whole experience.",
-          "scenarioDoneTo": "You performed 9 songs well at recital and hit one wrong note. All you can think about is the wrong note.",
-          "scenarioYouDo": "You performed 9 songs well at recital and hit one wrong note. All you can think about is the wrong note.",
+          "definition": "Picking one negative detail and letting it define everything.",
+          "scenarioDoneTo": "You played 9 songs well and hit 1 wrong note.",
+          "scenarioYouDo": "You played 9 songs well and hit 1 wrong note.",
           "challenge": {
-            "scenario": "9 good songs, 1 wrong note \u2014 you obsess over the note. What's healthier?",
+            "scenario": "You obsess over the wrong note. Healthier?",
             "options": [
-              "'9 out of 10 were great. One mistake doesn't erase the rest.'",
-              "'The whole recital was ruined.'",
-              "'I'll never perform again.'"
+              "'9 out of 10 were great. One miss is fine.'",
+              "'That wrong note ruined the whole entire recital.'",
+              "'I'll never perform in front of people again.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Count the whole scoreboard, not just the miss."
+          "tip": "Count the whole scoreboard, not just the miss."
         },
         "3": {
-          "definition": "Selective attention to negative information. It's biologically old (threat detection) but chronic use warps your self-narrative.",
-          "scenarioDoneTo": "You get a performance review with 20 positive notes and 2 development areas. You spiral on the 2.",
-          "scenarioYouDo": "You get a performance review with 20 positive notes and 2 development areas. You spiral on the 2.",
+          "definition": "Selective attention to negatives that warps your self-story.",
+          "scenarioDoneTo": "Your review had 20 positives and 2 growth notes.",
+          "scenarioYouDo": "Your review had 20 positives and 2 growth notes.",
           "challenge": {
-            "scenario": "You spiral on 2 negatives in a 22-item review. What's the reframe?",
+            "scenario": "You spiral on the 2 negatives. Reframe?",
             "options": [
-              "'Both the strengths and the growth areas are useful data. Neither cancels the other.'",
-              "'The 2 negatives are the real review.'",
-              "'The positives were just filler.'"
+              "'Both parts are useful. Neither cancels the other.'",
+              "'The 2 negatives are the actual real review here.'",
+              "'The 20 positives were basically just filler notes.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Read the whole page. Growth areas are how you get better \u2014 not the verdict on you."
+          "tip": "Read the whole page. Growth notes aren't a verdict."
         }
       }
     },
@@ -559,52 +559,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Deciding that because something happened once, it will always happen. 'Always' and 'never' are giveaway words.",
-          "scenarioDoneTo": "One kid says no to playing with you at recess. You think, 'Nobody EVER wants to play with me.'",
-          "scenarioYouDo": "One kid says no to playing with you at recess. You think, 'Nobody EVER wants to play with me.'",
+          "definition": "One time → 'always.' 'Always' and 'never' are giveaways.",
+          "scenarioDoneTo": "One kid said no to playing today.",
+          "scenarioYouDo": "One kid said no to playing today.",
           "challenge": {
-            "scenario": "One 'no' becomes 'nobody ever.' What's a truer thought?",
+            "scenario": "'Nobody EVER wants to play.' Truer?",
             "options": [
-              "'One person said no today. That doesn't mean everyone always will.'",
-              "'Nobody will ever play with me.'",
-              "'I'll play alone forever.'"
+              "'One no today. Doesn't mean everyone forever.'",
+              "'Nobody will ever want to play with me again.'",
+              "'I'll play alone forever for the rest of time.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Catch the 'always' and 'never.' They're almost always wrong."
+          "tip": "Catch 'always' and 'never.' Usually wrong."
         },
         "2": {
-          "definition": "Turning a single event into a lifelong pattern. One rejection becomes 'I always get rejected.'",
-          "scenarioDoneTo": "One person you liked wasn't interested. You think, 'This ALWAYS happens to me. I'll NEVER find someone.'",
-          "scenarioYouDo": "One person you liked wasn't interested. You think, 'This ALWAYS happens to me. I'll NEVER find someone.'",
+          "definition": "One event becomes a lifelong pattern in your head.",
+          "scenarioDoneTo": "One crush wasn't interested in you.",
+          "scenarioYouDo": "One crush wasn't interested in you.",
           "challenge": {
-            "scenario": "One rejection becomes 'always/never.' What's the reframe?",
+            "scenario": "'This ALWAYS happens. I'll NEVER find someone.' Reframe?",
             "options": [
-              "'One person, one moment. That's a data point, not a life sentence.'",
-              "'Nobody will ever want me.'",
-              "'This is my whole story.'"
+              "'One person, one moment. Just a data point.'",
+              "'Nobody will ever really want to be with me.'",
+              "'This is basically my whole life story now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: A sample size of 1 isn't a pattern."
+          "tip": "A sample of 1 isn't a pattern."
         },
         "3": {
-          "definition": "Drawing sweeping conclusions from limited data. Efficient for survival, terrible for accurate self-knowledge.",
-          "scenarioDoneTo": "One pitch didn't land and you decide, 'I'm bad at pitching. I always will be.'",
-          "scenarioYouDo": "One pitch didn't land and you decide, 'I'm bad at pitching. I always will be.'",
+          "definition": "Big conclusions from tiny data.",
+          "scenarioDoneTo": "One pitch didn't land in the meeting.",
+          "scenarioYouDo": "One pitch didn't land in the meeting.",
           "challenge": {
-            "scenario": "One failed pitch \u2192 'I'll always be bad at this.' What's the reframe?",
+            "scenario": "'I'm bad at pitching — always will be.' Reframe?",
             "options": [
-              "'Specific pitch, specific audience, specific day. What can I learn for next time?'",
-              "'I'm just bad at this forever.'",
-              "'I should never pitch again.'"
+              "'This pitch, this audience, this specific day.'",
+              "'I'm just bad at this forever, no matter what.'",
+              "'Never pitch anything again for the rest of my life.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Trade 'always/never' for 'sometimes/this time.' It's more accurate and less demoralizing."
+          "tip": "Trade 'always/never' for 'this time.'"
         }
       }
     },
@@ -614,52 +614,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Measuring yourself against other people and always coming up short. Comparison steals your joy.",
-          "scenarioDoneTo": "Your classmate got picked for the lead in the play and you didn't. You think, 'They're better than me at everything.'",
-          "scenarioYouDo": "Your classmate got picked for the lead in the play and you didn't. You think, 'They're better than me at everything.'",
+          "definition": "Measuring yourself against others and losing.",
+          "scenarioDoneTo": "Your classmate got the lead role.",
+          "scenarioYouDo": "Your classmate got the lead role.",
           "challenge": {
-            "scenario": "You decide they're better 'at everything.' What's a truer thought?",
+            "scenario": "'They're better at everything.' Truer thought?",
             "options": [
-              "'They're better at this ONE thing right now. I'm good at other things.'",
-              "'They win at everything, I lose at everything.'",
-              "'I should give up on plays.'"
+              "'Better at this. I'm good at other things.'",
+              "'They win at everything, I lose at everything ever.'",
+              "'I should just give up on doing any plays.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Compare your own before and after, not you vs. someone else's highlight reel."
+          "tip": "Compare you before vs. after. Not you vs. them."
         },
         "2": {
-          "definition": "Constantly measuring yourself against curated versions of others \u2014 especially online. Everyone's posting their wins, not their struggles.",
-          "scenarioDoneTo": "You scroll social media and everyone seems happier, prettier, and more successful than you.",
-          "scenarioYouDo": "You scroll social media and everyone seems happier, prettier, and more successful than you.",
+          "definition": "Measuring your life against everyone's highlight reel.",
+          "scenarioDoneTo": "You're scrolling social media at night.",
+          "scenarioYouDo": "You're scrolling social media at night.",
           "challenge": {
-            "scenario": "Social media makes you feel like everyone's ahead. What's the reframe?",
+            "scenario": "'Everyone seems happier than me.' Reframe?",
             "options": [
-              "'I'm comparing my behind-the-scenes to their highlight reel. That's not a fair fight.'",
-              "'They really are all better.'",
-              "'I should feel bad.'"
+              "'My behind-scenes vs. their highlight reel.'",
+              "'They really are all better than me at life.'",
+              "'I should sit here and feel bad about myself.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Social feeds are edited. Nobody posts the boring or bad parts."
+          "tip": "Feeds are edited. Nobody posts the boring."
         },
         "3": {
-          "definition": "Social comparison distorts because you compare full internal experience (your doubt, fear, effort) with only observable output of others.",
-          "scenarioDoneTo": "A peer just launched a company and you think, 'I'm so far behind. What am I even doing?'",
-          "scenarioYouDo": "A peer just launched a company and you think, 'I'm so far behind. What am I even doing?'",
+          "definition": "Comparing your inner doubt to others' outer output.",
+          "scenarioDoneTo": "A peer just launched a company.",
+          "scenarioYouDo": "A peer just launched a company.",
           "challenge": {
-            "scenario": "A peer's launch makes you feel behind. What's the reframe?",
+            "scenario": "'I'm so far behind.' Reframe?",
             "options": [
-              "'Different lanes, different timing. My path isn't slower \u2014 it's mine.'",
-              "'I really am behind at life.'",
-              "'I should just quit.'"
+              "'Different lanes, different timing. Mine works.'",
+              "'I really am behind at life, no doubt about it.'",
+              "'I should just quit trying entirely from here.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Run your own race. Progress vs. yourself is the only fair comparison."
+          "tip": "Run your own race."
         }
       }
     },
@@ -669,52 +669,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Making small problems feel huge (magnifying) or making your strengths feel tiny (minimizing).",
-          "scenarioDoneTo": "You forgot one word in your class presentation and think, 'That was the WORST thing ever. Everyone will remember it forever.'",
-          "scenarioYouDo": "You forgot one word in your class presentation and think, 'That was the WORST thing ever. Everyone will remember it forever.'",
+          "definition": "Small problems feel huge. Strengths feel tiny.",
+          "scenarioDoneTo": "You forgot one word in your presentation.",
+          "scenarioYouDo": "You forgot one word in your presentation.",
           "challenge": {
-            "scenario": "One forgotten word becomes 'worst thing ever.' What's a truer thought?",
+            "scenario": "'That was the WORST ever.' Truer thought?",
             "options": [
-              "'It was awkward for a second. In a week no one will remember.'",
-              "'They'll remember this forever.'",
-              "'I can never present again.'"
+              "'Awkward for a second. Nobody will remember.'",
+              "'They'll remember this forever and ever now.'",
+              "'I can never do another presentation ever.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Ask, 'Will this matter in a week? A month? A year?' Usually the answer shrinks the problem."
+          "tip": "Will this matter in a week? A month?"
         },
         "2": {
-          "definition": "Zooming in on flaws with a microscope and looking at strengths through the wrong end of a telescope.",
-          "scenarioDoneTo": "You aced 4 subjects and got a C in one. You focus 100% on the C.",
-          "scenarioYouDo": "You aced 4 subjects and got a C in one. You focus 100% on the C.",
+          "definition": "Microscope on flaws, telescope on strengths.",
+          "scenarioDoneTo": "You got four A's and one C.",
+          "scenarioYouDo": "You got four A's and one C.",
           "challenge": {
-            "scenario": "You obsess over one C, ignoring 4 A's. What's the reframe?",
+            "scenario": "You focus 100% on the C. Reframe?",
             "options": [
-              "'4 A's and 1 C is a great semester with one area to improve.'",
-              "'The C ruined the report card.'",
-              "'I'm bad at school.'"
+              "'4 A's and 1 C. One area to improve.'",
+              "'The C ruined the entire report card for me.'",
+              "'I must actually be really bad at school.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Use the same magnification for wins as for losses. Fair reporting."
+          "tip": "Same magnification for wins and losses. Fair."
         },
         "3": {
-          "definition": "Distortion of proportion that skews self-assessment and decision-making. Real problems shrink, minor ones balloon.",
-          "scenarioDoneTo": "You had a great quarter but one client complaint and you decide the whole quarter was a failure.",
-          "scenarioYouDo": "You had a great quarter but one client complaint and you decide the whole quarter was a failure.",
+          "definition": "Skewed proportion that warps decision-making.",
+          "scenarioDoneTo": "You had a great quarter with one complaint.",
+          "scenarioYouDo": "You had a great quarter with one complaint.",
           "challenge": {
-            "scenario": "One complaint erases a great quarter in your mind. What's the reframe?",
+            "scenario": "One complaint erases a great quarter. Reframe?",
             "options": [
-              "'A great quarter plus one issue to address. Both are true.'",
-              "'The complaint is the whole story.'",
-              "'The quarter was a failure.'"
+              "'Great quarter plus one issue. Both are true.'",
+              "'The complaint is basically the whole story here.'",
+              "'The entire quarter was a real failure for me.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Real perspective sizes things accurately. Big things big, small things small."
+          "tip": "Size things accurately. Big things big."
         }
       }
     },
@@ -724,52 +724,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Blaming someone else for how you feel, or blaming yourself for everything. Real life is usually a mix.",
-          "scenarioDoneTo": "You lost a game and yell, 'It's YOUR fault!' at your teammate.",
-          "scenarioYouDo": "You lost a game and yell, 'It's YOUR fault!' at your teammate.",
+          "definition": "Blaming someone (or yourself) for everything.",
+          "scenarioDoneTo": "Your team lost a game today.",
+          "scenarioYouDo": "Your team lost a game today.",
           "challenge": {
-            "scenario": "You blame your teammate for the loss. What's a healthier response?",
+            "scenario": "'It's YOUR fault!' What's healthier?",
             "options": [
-              "'We lost as a team. Let's figure out what we can do better together.'",
-              "'It's all their fault.'",
-              "'I'm never playing with them again.'"
+              "'We lost as a team. What can we fix?'",
+              "'It's all their fault, no doubt about it.'",
+              "'Never playing with them again for sure.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Look for shared responsibility. Blame ends teams; problem-solving builds them."
+          "tip": "Blame ends teams. Problem-solving builds them."
         },
         "2": {
-          "definition": "Locating 100% of the cause outside yourself (or 100% inside). Both extremes distort what actually happened.",
-          "scenarioDoneTo": "You bombed a chemistry test and think, 'My teacher is TERRIBLE. This is entirely her fault.'",
-          "scenarioYouDo": "You bombed a chemistry test and think, 'My teacher is TERRIBLE. This is entirely her fault.'",
+          "definition": "Placing 100% of the cause outside or inside yourself.",
+          "scenarioDoneTo": "You bombed a chemistry test.",
+          "scenarioYouDo": "You bombed a chemistry test.",
           "challenge": {
-            "scenario": "You blame the teacher 100% for the bad test. What's more accurate?",
+            "scenario": "'The teacher is TERRIBLE. Her fault.' More accurate?",
             "options": [
-              "'The teaching may not be great AND I didn't prep enough. Both are real. I control the second one.'",
-              "'She's entirely to blame.'",
-              "'Nothing I do would help.'"
+              "'Some teaching plus I didn't prep enough.'",
+              "'She's entirely to blame here, all of it.'",
+              "'Nothing I do would help me here at all.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Ask, 'What's my share? What's theirs? What's the situation?' Then act on your share."
+          "tip": "Ask: my share? Theirs? The situation?"
         },
         "3": {
-          "definition": "Attribution distortion. Externalizing blocks growth; over-internalizing crushes self-worth. Balanced attribution is a core resilience skill.",
-          "scenarioDoneTo": "A project fails and you either blame the whole team or take 100% of the fault. Neither is fully true.",
-          "scenarioYouDo": "A project fails and you either blame the whole team or take 100% of the fault. Neither is fully true.",
+          "definition": "Attribution swings between 'all me' and 'all them.'",
+          "scenarioDoneTo": "A big project failed.",
+          "scenarioYouDo": "A big project failed.",
           "challenge": {
-            "scenario": "You swing between 'all them' or 'all me' after a project fail. What's the reframe?",
+            "scenario": "You swing 'all them' or 'all me.' Reframe?",
             "options": [
-              "'Multiple factors. My part, their part, the context. All useful data for next time.'",
-              "'Pure blame on someone.'",
-              "'Pure blame on me.'"
+              "'My part, their part, context. All useful info.'",
+              "'Just blame someone else for the whole thing.'",
+              "'Take 100% blame myself for all of it.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Balanced attribution = 'What was mine, what was shared, what was outside anyone's control?'"
+          "tip": "Balanced blame beats extreme blame."
         }
       }
     },
@@ -779,52 +779,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Getting stuck on 'it's not fair!' even when nothing can be done about it. Fair and unfair are real \u2014 but sitting in unfairness doesn't fix it.",
-          "scenarioDoneTo": "Your sibling got a bigger piece of cake. You think, 'That's not fair! I hate this!'",
-          "scenarioYouDo": "Your sibling got a bigger piece of cake. You think, 'That's not fair! I hate this!'",
+          "definition": "Getting stuck on unfair when nothing can change.",
+          "scenarioDoneTo": "Your sibling got a bigger piece of cake.",
+          "scenarioYouDo": "Your sibling got a bigger piece of cake.",
           "challenge": {
-            "scenario": "The cake wasn't fair. What's a helpful next move?",
+            "scenario": "'That's not fair!' What's helpful next?",
             "options": [
-              "'I can mention it calmly, or let it go and enjoy my slice.'",
-              "'Ruin dessert for everyone.'",
-              "'Stay mad forever.'"
+              "'Mention it calmly, then enjoy my own slice.'",
+              "'Just ruin dessert for absolutely everyone here.'",
+              "'Stay mad about this forever and ever now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Fair matters. Getting stuck on unfair matters less. Notice it, act if you can, move on if you can't."
+          "tip": "Act if you can. Move on if you can't."
         },
         "2": {
-          "definition": "Ruminating on unfairness turns temporary frustration into lasting resentment. Fair is a value, not a guarantee.",
-          "scenarioDoneTo": "You worked harder on a group project but everyone got the same grade. You stay furious for weeks.",
-          "scenarioYouDo": "You worked harder on a group project but everyone got the same grade. You stay furious for weeks.",
+          "definition": "Ruminating on unfairness turns it into resentment.",
+          "scenarioDoneTo": "You worked hardest but got the same group grade.",
+          "scenarioYouDo": "You worked hardest but got the same group grade.",
           "challenge": {
-            "scenario": "The unfair grade eats at you for weeks. What's the reframe?",
+            "scenario": "You stay furious for weeks. Reframe?",
             "options": [
-              "'It was unfair. I can name it, learn from it, and stop letting it own my week.'",
-              "'I'll be mad forever.'",
-              "'I'll refuse to do group work ever.'"
+              "'Unfair. Name it. Learn. Stop owning it.'",
+              "'I'll just be really mad about this forever.'",
+              "'Never do group work with anyone ever again.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Naming unfairness is fine. Living in it hurts you more than anyone else."
+          "tip": "Naming unfair is fine. Living in it hurts you."
         },
         "3": {
-          "definition": "Fairness demands become identity when unaddressed. Distinguish 'this was unfair' (accurate) from 'the world owes me fairness' (a setup for chronic resentment).",
-          "scenarioDoneTo": "A colleague got promoted before you despite you doing more. Months later you're still bitter.",
-          "scenarioYouDo": "A colleague got promoted before you despite you doing more. Months later you're still bitter.",
+          "definition": "'The world owes me fair' sets up chronic resentment.",
+          "scenarioDoneTo": "A colleague got promoted before you.",
+          "scenarioYouDo": "A colleague got promoted before you.",
           "challenge": {
-            "scenario": "You're still bitter about an unfair promotion. What's the reframe?",
+            "scenario": "You're still bitter months later. Reframe?",
             "options": [
-              "'It was unfair. Now what's the best move for MY next chapter?'",
-              "'Stay resentful and hope karma hits.'",
-              "'Nothing will ever be fair.'"
+              "'It was unfair. Now what's my next move?'",
+              "'Just stay bitter and hope karma hits them.'",
+              "'Nothing will ever be fair in this life for me.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: 'It was unfair' can be true AND you can still choose your next move."
+          "tip": "'Unfair' can be true AND I still choose next."
         }
       }
     },
@@ -834,52 +834,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Deciding you know what's happening without checking. Your brain fills in the blanks with the scariest guess.",
-          "scenarioDoneTo": "Your parent asks 'Can we talk?' and you immediately think, 'I'm in HUGE trouble!'",
-          "scenarioYouDo": "Your parent asks 'Can we talk?' and you immediately think, 'I'm in HUGE trouble!'",
+          "definition": "Deciding what's happening without checking.",
+          "scenarioDoneTo": "Your parent says, 'Can we talk?'",
+          "scenarioYouDo": "Your parent says, 'Can we talk?'",
           "challenge": {
-            "scenario": "'Can we talk?' \u2192 huge trouble in your head. What's a healthier thought?",
+            "scenario": "'I'm in HUGE trouble!' Healthier?",
             "options": [
-              "'Could be a hundred things. I'll find out when we actually talk.'",
-              "'Prepare for the worst.'",
-              "'Hide until they forget.'"
+              "'Could be a hundred things. I'll find out.'",
+              "'Definitely prepare for the very worst outcome.'",
+              "'Hide out until they just forget about it.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Wait for actual information before deciding what's happening."
+          "tip": "Wait for real info before deciding what happened."
         },
         "2": {
-          "definition": "Combining Mind Reading and Fortune Telling: assuming both what people think AND how it will end. Double the guessing.",
-          "scenarioDoneTo": "Your crush hasn't texted back in 20 minutes. You conclude they're ghosting you forever.",
-          "scenarioYouDo": "Your crush hasn't texted back in 20 minutes. You conclude they're ghosting you forever.",
+          "definition": "Guessing what people think AND how it ends.",
+          "scenarioDoneTo": "Your crush hasn't texted back in 20 minutes.",
+          "scenarioYouDo": "Your crush hasn't texted back in 20 minutes.",
           "challenge": {
-            "scenario": "20 minutes of silence becomes 'ghosted forever.' What's a truer thought?",
+            "scenario": "'Ghosted forever.' Truer thought?",
             "options": [
-              "'People are busy. 20 minutes is nothing. I don't have to write the ending yet.'",
-              "'Definitely ghosted.'",
-              "'I'll never text again.'"
+              "'People are busy. 20 minutes is nothing.'",
+              "'Definitely ghosted, no question about it now.'",
+              "'Never text this person ever again after this.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Data before drama. Wait for evidence before writing the story."
+          "tip": "Data before drama."
         },
         "3": {
-          "definition": "Pattern-completion under uncertainty. Your brain hates blanks and fills them fast \u2014 usually with the emotionally loudest guess, not the most accurate.",
-          "scenarioDoneTo": "An email from HR marked 'sensitive' triggers you to assume you're being fired.",
-          "scenarioYouDo": "An email from HR marked 'sensitive' triggers you to assume you're being fired.",
+          "definition": "Your brain fills blanks with the loudest guess.",
+          "scenarioDoneTo": "An email from HR is marked 'sensitive.'",
+          "scenarioYouDo": "An email from HR is marked 'sensitive.'",
           "challenge": {
-            "scenario": "HR email = 'I'm being fired.' What's the reframe?",
+            "scenario": "'I'm being fired.' Reframe?",
             "options": [
-              "'HR emails cover a lot of topics. I'll read it before I panic.'",
-              "'Update the resume immediately.'",
-              "'Confront my manager preemptively.'"
+              "'HR emails cover a lot. I'll read it first.'",
+              "'Update the resume right now, don't wait for it.'",
+              "'Confront my manager preemptively about it now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Open the email. Fear guesses way worse than reality most of the time."
+          "tip": "Open the email. Fear guesses worse than reality."
         }
       }
     },
@@ -889,52 +889,52 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "Thinking you have to control everything \u2014 or thinking you can't control anything. Real life is a mix of both.",
-          "scenarioDoneTo": "It rained on your birthday and you feel like YOU ruined it somehow.",
-          "scenarioYouDo": "It rained on your birthday and you feel like YOU ruined it somehow.",
+          "definition": "Thinking you control everything (or nothing).",
+          "scenarioDoneTo": "It rained on your birthday party.",
+          "scenarioYouDo": "It rained on your birthday party.",
           "challenge": {
-            "scenario": "You feel like the rain is your fault. What's a truer thought?",
+            "scenario": "'I ruined it.' Truer thought?",
             "options": [
-              "'Weather is not something I control. I can still make the day fun indoors.'",
-              "'I ruined it.'",
-              "'Nothing good ever happens.'"
+              "'Weather isn't mine. Fun indoors instead.'",
+              "'I somehow ruined the whole day for everyone.'",
+              "'Nothing good ever really happens to me anyway.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Separate 'things I control' from 'things I don't.' Focus on the first list."
+          "tip": "Sort what you control from what you don't."
         },
         "2": {
-          "definition": "Believing you must manage everyone's feelings, or that you have no influence at all. Both flavors are exhausting.",
-          "scenarioDoneTo": "You feel responsible for making sure your friend group is always happy.",
-          "scenarioYouDo": "You feel responsible for making sure your friend group is always happy.",
+          "definition": "Trying to manage everyone's feelings all the time.",
+          "scenarioDoneTo": "There's some tension in your friend group.",
+          "scenarioYouDo": "There's some tension in your friend group.",
           "challenge": {
-            "scenario": "You feel like everyone's mood is your job. What's healthier?",
+            "scenario": "'I have to keep everyone happy.' Healthier?",
             "options": [
-              "'I influence the vibe. I don't control everyone's feelings. That's not my job.'",
-              "'It's all on me.'",
-              "'I need to make everyone happy always.'"
+              "'I influence the vibe. Not everyone's feelings.'",
+              "'It's all on me to fix this for everyone now.'",
+              "'Make everyone happy always, no matter what.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: You are one person in a group. Own your part, not everyone else's."
+          "tip": "Own your part, not everyone else's."
         },
         "3": {
-          "definition": "Distortion of agency. Over-control drives burnout and controlling behavior; under-control drives helplessness. The sweet spot is calibrated influence.",
-          "scenarioDoneTo": "You micromanage every part of a project because if you don't, 'nothing will get done right.'",
-          "scenarioYouDo": "You micromanage every part of a project because if you don't, 'nothing will get done right.'",
+          "definition": "Over-control burns you out; under-control makes helpless.",
+          "scenarioDoneTo": "You're micromanaging every part of a project.",
+          "scenarioYouDo": "You're micromanaging every part of a project.",
           "challenge": {
-            "scenario": "You micromanage because you can't trust it to others. What's the reframe?",
+            "scenario": "'Only I can do it right.' Reframe?",
             "options": [
-              "'What can I delegate and coach vs. own directly? I don't have to hold everything.'",
-              "'Only I can do it right.'",
-              "'Give up and disengage.'"
+              "'What can I delegate plus coach vs. own?'",
+              "'Only I can actually do it correctly here.'",
+              "'Just give up and disengage from all of it.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Reframe: Calibrated control > total control. Trust + verify beats grip-of-death every time."
+          "tip": "Trust + verify beats grip-of-death."
         }
       }
     }

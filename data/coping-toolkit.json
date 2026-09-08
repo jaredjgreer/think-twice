@@ -1,7 +1,7 @@
 {
   "deckName": "Coping Toolkit",
   "deckId": "coping-toolkit",
-  "description": "Real skills for tough moments \u2014 breathing, grounding, movement, self-talk, and knowing when to ask for help.",
+  "description": "Real skills for tough moments \u2014 breathing, grounding, movement, self-talk.",
   "cards": [
     {
       "id": "box-breathing",
@@ -9,52 +9,52 @@
       "category": "Calm Body",
       "tiers": {
         "1": {
-          "definition": "Breathe in for 4, hold for 4, out for 4, hold for 4. It calms your body like a reset button.",
-          "scenarioDoneTo": "You feel your heart racing before a big test. You have 30 seconds to reset.",
-          "scenarioYouDo": "You feel your heart racing before a big test. You have 30 seconds to reset.",
+          "definition": "In 4, hold 4, out 4, hold 4. A reset button for big feelings.",
+          "scenarioDoneTo": "Heart racing before a big test.",
+          "scenarioYouDo": "Heart racing before a big test.",
           "challenge": {
-            "scenario": "Heart racing before the test. What's a fast reset?",
+            "scenario": "Racing heart, 30 seconds to reset. Best move?",
             "options": [
-              "Box breathing: in 4, hold 4, out 4, hold 4. Repeat 3 times.",
-              "Panic more.",
-              "Hold your breath until you calm down."
+              "Box breathe: in 4, hold 4, out 4, hold 4.",
+              "Panic a lot more and stew in it.",
+              "Hold your breath till you calm down."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "4-4-4-4 breathing tells your nervous system 'we're safe.' Works in 30 seconds."
+          "tip": "4-4-4-4 tells your nervous system 'we're safe.'"
         },
         "2": {
-          "definition": "A slow, boxed breath pattern that activates the parasympathetic (calm) system. Used by athletes and Navy SEALs before high-stress moments.",
-          "scenarioDoneTo": "You're about to walk on stage for a debate and your chest feels tight.",
-          "scenarioYouDo": "You're about to walk on stage for a debate and your chest feels tight.",
+          "definition": "A slow, boxed breath that turns on the calm system.",
+          "scenarioDoneTo": "About to walk on stage for a debate.",
+          "scenarioYouDo": "About to walk on stage for a debate.",
           "challenge": {
-            "scenario": "Tight chest, seconds before stage. Best coping move?",
+            "scenario": "Tight chest, seconds before going on. Best?",
             "options": [
-              "Box breathe backstage: 4 in, 4 hold, 4 out, 4 hold, three cycles.",
-              "Chug caffeine.",
-              "Convince yourself you're not nervous."
+              "Box breathe backstage: 3 slow cycles right now.",
+              "Chug a giant energy drink real fast.",
+              "Convince yourself you aren't nervous at all."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "The exhale is the calming part. Extending it slows your heart rate on purpose."
+          "tip": "The exhale is the calming part. Extend it."
         },
         "3": {
-          "definition": "Structured breathing regulates autonomic arousal, reducing cortisol reactivity. Effective for acute anxiety and long-term stress management.",
-          "scenarioDoneTo": "Before a difficult performance review, you have 2 minutes to regulate.",
-          "scenarioYouDo": "Before a difficult performance review, you have 2 minutes to regulate.",
+          "definition": "Structured breathing that lowers cortisol reactivity.",
+          "scenarioDoneTo": "Two minutes before a hard performance review.",
+          "scenarioYouDo": "Two minutes before a hard performance review.",
           "challenge": {
-            "scenario": "2 minutes before a hard review. Best pre-game move?",
+            "scenario": "Two minutes to regulate. Best pre-game move?",
             "options": [
-              "5 rounds of box breathing to lower your baseline arousal.",
-              "Rehearse your defense while pacing.",
-              "Skip breathing, run on adrenaline."
+              "5 rounds of box breathing to drop the arousal.",
+              "Rehearse your defense while pacing the whole hall.",
+              "Skip breathing, just run on the adrenaline high."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Regulate before you communicate. Calm body \u2192 clear thinking."
+          "tip": "Regulate before you communicate."
         }
       }
     },
@@ -64,52 +64,52 @@
       "category": "Calm Mind",
       "tiers": {
         "1": {
-          "definition": "Name 5 things you SEE, 4 you can TOUCH, 3 you HEAR, 2 you SMELL, 1 you TASTE. It pulls you out of your head.",
-          "scenarioDoneTo": "You feel a big wave of worry at recess. Everything feels blurry.",
-          "scenarioYouDo": "You feel a big wave of worry at recess. Everything feels blurry.",
+          "definition": "Notice 5 sights, 4 touches, 3 sounds, 2 smells, 1 taste.",
+          "scenarioDoneTo": "Big wave of worry at recess.",
+          "scenarioYouDo": "Big wave of worry at recess.",
           "challenge": {
-            "scenario": "Big worry hits at recess. What helps?",
+            "scenario": "Worry hits hard. What helps you land?",
             "options": [
-              "5 things I see, 4 I touch, 3 I hear, 2 I smell, 1 I taste.",
-              "Hide and hope it passes.",
-              "Panic harder."
+              "5 see, 4 touch, 3 hear, 2 smell, 1 taste.",
+              "Just hide and hope the worry passes.",
+              "Panic even harder about the whole thing."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Grounding brings your brain back to your body and to right now."
+          "tip": "Grounding brings your brain back to your body."
         },
         "2": {
-          "definition": "A sensory grounding technique that interrupts anxious thought loops by anchoring you to your immediate environment.",
-          "scenarioDoneTo": "You're spiraling in your head at lunch and can't focus on what your friend is saying.",
-          "scenarioYouDo": "You're spiraling in your head at lunch and can't focus on what your friend is saying.",
+          "definition": "A sensory tool that interrupts anxious thought loops.",
+          "scenarioDoneTo": "Spiraling in your head at lunch.",
+          "scenarioYouDo": "Spiraling in your head at lunch.",
           "challenge": {
-            "scenario": "Spiraling at lunch. How do you re-enter the room?",
+            "scenario": "Spiraling. How do you re-enter the room?",
             "options": [
               "Silently walk through 5-4-3-2-1 to re-anchor.",
-              "Fake attention and stay spiraling.",
-              "Excuse yourself and go spiral alone."
+              "Fake attention and keep on spiraling anyway.",
+              "Excuse yourself and go spiral alone somewhere."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "You can't be in your worry AND in your senses at the same time. Grounding wins."
+          "tip": "You can't be worrying AND in your senses at once."
         },
         "3": {
-          "definition": "Multi-sensory attentional anchoring reduces rumination and derealization. Especially useful during panic or dissociative episodes.",
-          "scenarioDoneTo": "During an intense meeting, you feel yourself detaching \u2014 like you're watching from outside.",
-          "scenarioYouDo": "During an intense meeting, you feel yourself detaching \u2014 like you're watching from outside.",
+          "definition": "Multi-sensory anchoring that reduces rumination.",
+          "scenarioDoneTo": "Detaching mid-meeting, watching from outside.",
+          "scenarioYouDo": "Detaching mid-meeting, watching from outside.",
           "challenge": {
-            "scenario": "You're dissociating in a meeting. What's a discreet grounding move?",
+            "scenario": "Dissociating in a meeting. Discreet grounding?",
             "options": [
-              "Feet on floor, notice 5 objects on the desk, 3 sounds, one texture in your palm.",
-              "Push through, ignore the disconnection.",
-              "Get up and leave without a word."
+              "Feet on floor, 5 objects, 3 sounds, one texture.",
+              "Push through, ignore the disconnection completely.",
+              "Get up and just leave without saying a word."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Sensory grounding is the fastest way back to your body when you feel far from it."
+          "tip": "Sensory grounding is the fastest way back."
         }
       }
     },
@@ -119,52 +119,52 @@
       "category": "Calm Body",
       "tiers": {
         "1": {
-          "definition": "Splash cold water on your face or hold ice cubes. It works like a system reset for big feelings.",
-          "scenarioDoneTo": "You're so mad you feel like you might explode after an argument with your sibling.",
-          "scenarioYouDo": "You're so mad you feel like you might explode after an argument with your sibling.",
+          "definition": "Splash cold water on your face. A body reset.",
+          "scenarioDoneTo": "You're about to explode after arguing with your sibling.",
+          "scenarioYouDo": "You're about to explode after arguing with your sibling.",
           "challenge": {
-            "scenario": "Big anger with your sibling. What resets your body fast?",
+            "scenario": "Big anger. What resets your body fast?",
             "options": [
               "Splash cold water on your face for 30 seconds.",
-              "Yell more.",
-              "Break something."
+              "Just yell way more at your sibling right now.",
+              "Break something to get all the anger out."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Cold on your face triggers a calming reflex. Your body drops from red to yellow."
+          "tip": "Cold on your face triggers a calming reflex."
         },
         "2": {
-          "definition": "Cold triggers the mammalian dive reflex, slowing heart rate and reducing emotional overwhelm.",
-          "scenarioDoneTo": "You're crying so hard you can't catch your breath after a bad argument.",
-          "scenarioYouDo": "You're crying so hard you can't catch your breath after a bad argument.",
+          "definition": "Cold triggers the dive reflex and slows your heart.",
+          "scenarioDoneTo": "Crying so hard you can't catch your breath.",
+          "scenarioYouDo": "Crying so hard you can't catch your breath.",
           "challenge": {
-            "scenario": "Sobbing, can't breathe well. What's a fast physiological reset?",
+            "scenario": "Sobbing, breath won't slow. Fast reset?",
             "options": [
-              "Cold water on face + slow exhales.",
-              "Try to argue back through the tears.",
-              "Hold breath to stop crying."
+              "Cold water on face plus slow long exhales.",
+              "Try to argue back through all the tears somehow.",
+              "Hold your breath as hard as you can to stop."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Cold on the face is one of the fastest known ways to lower nervous-system overdrive."
+          "tip": "Cold on face lowers nervous-system overdrive fast."
         },
         "3": {
-          "definition": "A DBT distress-tolerance TIPP skill: Temperature to trigger the dive reflex and rapidly reduce intense emotional activation.",
-          "scenarioDoneTo": "You're in emotional crisis and can't think clearly. Talk therapy won't land until you regulate.",
-          "scenarioYouDo": "You're in emotional crisis and can't think clearly. Talk therapy won't land until you regulate.",
+          "definition": "DBT distress skill: temperature to reduce activation.",
+          "scenarioDoneTo": "In emotional crisis, can't think clearly.",
+          "scenarioYouDo": "In emotional crisis, can't think clearly.",
           "challenge": {
-            "scenario": "Crisis mode. Talk-therapy won't stick yet. What comes first?",
+            "scenario": "Crisis mode. Talk therapy won't stick yet. First?",
             "options": [
-              "Regulate the body first: cold water, slow exhale, then talk.",
-              "Try to reason through it while dysregulated.",
-              "Skip the body, go straight to problem-solving."
+              "Regulate the body first: cold, exhale, then talk.",
+              "Try to reason through it while dysregulated anyway.",
+              "Skip the body, go straight into problem-solving mode."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Body first, brain second. Dysregulated brains can't do reasoning well."
+          "tip": "Body first, brain second. Always."
         }
       }
     },
@@ -174,52 +174,52 @@
       "category": "Calm Body",
       "tiers": {
         "1": {
-          "definition": "Big feelings need somewhere to go. Move your body \u2014 run, jump, dance, shake it out.",
-          "scenarioDoneTo": "You're SO frustrated with your homework you want to rip it up.",
-          "scenarioYouDo": "You're SO frustrated with your homework you want to rip it up.",
+          "definition": "Big feelings need somewhere to go. Move them.",
+          "scenarioDoneTo": "SO frustrated with homework, you want to rip it.",
+          "scenarioYouDo": "SO frustrated with homework, you want to rip it.",
           "challenge": {
-            "scenario": "Frustration is peaking. What's a healthy release?",
+            "scenario": "Frustration peaking. Healthy release?",
             "options": [
-              "Get up, do 20 jumping jacks, then come back.",
-              "Rip the homework.",
-              "Sit in the anger and stew."
+              "Do 20 jumping jacks, then come right back.",
+              "Just rip the homework into a bunch of pieces.",
+              "Sit right there and stew in the anger."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Feelings are physical. Moving your body helps big feelings move too."
+          "tip": "Feelings are physical. Move to move them."
         },
         "2": {
-          "definition": "Physical activity metabolizes stress chemicals (cortisol, adrenaline) that build up during intense emotions.",
-          "scenarioDoneTo": "You're wired with nervous energy before a big audition and can't sit still.",
-          "scenarioYouDo": "You're wired with nervous energy before a big audition and can't sit still.",
+          "definition": "Movement burns off stress chemicals fast.",
+          "scenarioDoneTo": "Wired with nervous energy before a big audition.",
+          "scenarioYouDo": "Wired with nervous energy before a big audition.",
           "challenge": {
             "scenario": "Nervous energy, big moment coming. What helps?",
             "options": [
-              "Take a 5-minute brisk walk to burn off the surplus adrenaline.",
-              "Sit and try to force yourself calm.",
-              "Chug an energy drink."
+              "5-minute brisk walk to burn off the surplus.",
+              "Sit still and try to force yourself calm somehow.",
+              "Chug an energy drink for even more adrenaline."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Adrenaline is fuel. Give it somewhere to burn."
+          "tip": "Adrenaline is fuel. Give it a place to burn."
         },
         "3": {
-          "definition": "Aerobic movement is an evidence-based intervention for acute anxiety and depression symptoms. Sometimes more effective than sitting mindfulness.",
-          "scenarioDoneTo": "You've been depressed for a week and can't motivate to do anything. Bed feels like the only option.",
-          "scenarioYouDo": "You've been depressed for a week and can't motivate to do anything. Bed feels like the only option.",
+          "definition": "Aerobic movement is real medicine for anxiety.",
+          "scenarioDoneTo": "Depressed for a week. Bed feels like the only option.",
+          "scenarioYouDo": "Depressed for a week. Bed feels like the only option.",
           "challenge": {
-            "scenario": "Depression is heavy. What's the smallest useful move?",
+            "scenario": "Depression is heavy. Smallest useful move?",
             "options": [
-              "Get outside for 10 minutes of walking, even at slow pace.",
-              "Wait to 'feel better' before moving.",
-              "Scroll in bed longer."
+              "Get outside for 10 minutes of slow walking.",
+              "Wait to 'feel better' before you move at all.",
+              "Just keep scrolling on your phone in bed."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Action before motivation. Movement is often the medicine you don't feel like taking."
+          "tip": "Action before motivation. Move first."
         }
       }
     },
@@ -229,52 +229,52 @@
       "category": "Calm Mind",
       "tiers": {
         "1": {
-          "definition": "If a friend was hurting, you'd be kind. Try being that kind to yourself.",
-          "scenarioDoneTo": "You messed up in front of the class and your inner voice is being MEAN to you.",
-          "scenarioYouDo": "You messed up in front of the class and your inner voice is being MEAN to you.",
+          "definition": "Talk to yourself the way you'd talk to a friend.",
+          "scenarioDoneTo": "You slipped up in class. Inner voice is mean.",
+          "scenarioYouDo": "You slipped up in class. Inner voice is mean.",
           "challenge": {
-            "scenario": "Your inner voice is being cruel after a slip-up. What's a better move?",
+            "scenario": "Cruel inner voice after a slip. Better move?",
             "options": [
-              "Say what you'd tell a friend: 'That was hard. It's okay. You're still learning.'",
-              "Keep beating yourself up.",
-              "Tell yourself you're the worst."
+              "'That was hard. You're okay. Still learning.'",
+              "Keep beating yourself up over the mistake.",
+              "Tell yourself you are literally the worst."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "You deserve the same kindness you'd give a friend. Practice it."
+          "tip": "Give yourself what you'd give a friend."
         },
         "2": {
-          "definition": "Notice you're struggling, remind yourself struggling is human, and offer yourself kindness \u2014 like a good friend would.",
-          "scenarioDoneTo": "You bombed a test after studying hard, and you're spiraling into 'I'm not smart enough.'",
-          "scenarioYouDo": "You bombed a test after studying hard, and you're spiraling into 'I'm not smart enough.'",
+          "definition": "Notice it's hard, offer yourself some kindness.",
+          "scenarioDoneTo": "You bombed a test after studying hard.",
+          "scenarioYouDo": "You bombed a test after studying hard.",
           "challenge": {
-            "scenario": "Spiraling on 'I'm not smart enough.' What's a self-compassion move?",
+            "scenario": "Spiraling on 'not smart enough.' Self-compassion move?",
             "options": [
-              "'This is really hard right now. Lots of people bomb tests. I'm allowed to be kind to myself.'",
-              "'I really am not smart enough.'",
-              "'I'll punish myself into doing better.'"
+              "'This is hard. I can be kind to myself here.'",
+              "'I really am not smart enough for any of this.'",
+              "'I'll just punish myself into doing better next time.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Self-compassion isn't lowering the bar. It's not stabbing yourself while you climb."
+          "tip": "Self-compassion isn't lowering the bar."
         },
         "3": {
-          "definition": "Kristin Neff's Self-Compassion Break: acknowledge suffering, recognize common humanity, offer self-kindness. Higher self-compassion predicts better resilience than self-esteem.",
-          "scenarioDoneTo": "You made a significant professional mistake and your inner critic is running a courtroom trial against you.",
-          "scenarioYouDo": "You made a significant professional mistake and your inner critic is running a courtroom trial against you.",
+          "definition": "Neff's break: this is hard, others feel this too, be kind.",
+          "scenarioDoneTo": "Big professional mistake. Inner court in session.",
+          "scenarioYouDo": "Big professional mistake. Inner court in session.",
           "challenge": {
-            "scenario": "Inner critic is at full volume after a mistake. What's the reframe?",
+            "scenario": "Inner critic at full volume. Reframe?",
             "options": [
-              "'This is a moment of suffering. Others have been here too. May I be kind to myself right now.'",
-              "'I deserve every bit of the self-attack.'",
-              "'I'll just work harder to avoid ever feeling this.'"
+              "'This is suffering. Others too. Be kind now.'",
+              "'I deserve every bit of the self-attack coming.'",
+              "'Work harder so I never feel this way again ever.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Self-compassion outperforms self-criticism for actual growth. Kindness \u2260 letting yourself off the hook."
+          "tip": "Self-compassion outperforms self-attack for growth."
         }
       }
     },
@@ -284,52 +284,52 @@
       "category": "Reframe",
       "tiers": {
         "1": {
-          "definition": "Write down what you're thinking, how it makes you feel, and then ask, 'Is this really true?'",
-          "scenarioDoneTo": "You keep thinking 'nobody likes me' after one bad day with your friend group.",
-          "scenarioYouDo": "You keep thinking 'nobody likes me' after one bad day with your friend group.",
+          "definition": "Write the thought. Ask 'is it true?'",
+          "scenarioDoneTo": "'Nobody likes me' keeps looping after one bad day.",
+          "scenarioYouDo": "'Nobody likes me' keeps looping after one bad day.",
           "challenge": {
-            "scenario": "'Nobody likes me' keeps running. What's a useful next step?",
+            "scenario": "'Nobody likes me' won't stop. Useful step?",
             "options": [
-              "Write it down and ask: 'Is that really true? What's the evidence?'",
-              "Believe the thought as fact.",
-              "Ignore the thought and hope it goes away."
+              "Write it down. Ask: 'Is that really true?'",
+              "Just believe the thought as full solid fact.",
+              "Ignore it and hope it goes away by itself."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Thoughts get quieter when you look at them on paper instead of feeling swept away."
+          "tip": "Thoughts get quieter on paper."
         },
         "2": {
-          "definition": "Track: the situation \u2192 your automatic thought \u2192 the feeling \u2192 evidence for and against \u2192 balanced thought.",
-          "scenarioDoneTo": "'I'm going to fail this class' keeps looping in your head all week.",
-          "scenarioYouDo": "'I'm going to fail this class' keeps looping in your head all week.",
+          "definition": "Situation → thought → feeling → evidence → balanced view.",
+          "scenarioDoneTo": "'I'm going to fail this class' loops all week.",
+          "scenarioYouDo": "'I'm going to fail this class' loops all week.",
           "challenge": {
-            "scenario": "'I'm going to fail' is on loop. What's a real intervention?",
+            "scenario": "'I'll fail' on loop. Real intervention?",
             "options": [
-              "Do a thought record: situation, thought, feeling, evidence for/against, balanced thought.",
-              "Try to think positive without evidence.",
-              "Accept the thought as the truth."
+              "Thought record: catch, test, build a balanced view.",
+              "Try to just think positive without any evidence.",
+              "Accept the thought as the plain honest truth."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "A thought record is the basic CBT tool. It slows the reactive brain and adds evidence."
+          "tip": "A thought record slows the reactive brain down."
         },
         "3": {
-          "definition": "Structured cognitive restructuring: identify automatic thoughts, test their evidence, generate balanced alternatives. Core CBT skill.",
-          "scenarioDoneTo": "Persistent self-critical thought ('I'm not competent') fuels anxiety before every high-stakes meeting.",
-          "scenarioYouDo": "Persistent self-critical thought ('I'm not competent') fuels anxiety before every high-stakes meeting.",
+          "definition": "Cognitive restructuring. The core CBT skill.",
+          "scenarioDoneTo": "'I'm not competent' fires before every meeting.",
+          "scenarioYouDo": "'I'm not competent' fires before every meeting.",
           "challenge": {
-            "scenario": "'I'm not competent' fires before every meeting. What's the CBT tool?",
+            "scenario": "Chronic self-critical thought. CBT tool?",
             "options": [
-              "Thought record: catch it, test evidence for/against, build a balanced counter-thought.",
-              "Suppress the thought.",
-              "Overprepare to prove the thought wrong."
+              "Thought record: test evidence, build a counter.",
+              "Just try really hard to suppress the whole thought.",
+              "Overprepare each time to prove the thought wrong."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Chronic thoughts need chronic practice. Reps on the thought record retrain the pattern."
+          "tip": "Chronic thoughts need chronic practice. Reps."
         }
       }
     },
@@ -339,52 +339,52 @@
       "category": "Reframe",
       "tiers": {
         "1": {
-          "definition": "When you don't feel like doing something fun, doing it anyway usually makes you feel better.",
-          "scenarioDoneTo": "You feel bummed out and just want to lie down, but a friend invites you to the park.",
-          "scenarioYouDo": "You feel bummed out and just want to lie down, but a friend invites you to the park.",
+          "definition": "When you don't feel like it, do it anyway.",
+          "scenarioDoneTo": "Bummed. Friend invites you to the park.",
+          "scenarioYouDo": "Bummed. Friend invites you to the park.",
           "challenge": {
-            "scenario": "Bummed. Friend invites you out. What's the healthy move?",
+            "scenario": "Don't feel like going. Healthy move?",
             "options": [
-              "Say yes, even if you don't 'feel like it.' Action often changes mood.",
-              "Wait until you feel better to do fun things.",
-              "Cancel because your mood said no."
+              "Say yes even if you don't feel like it.",
+              "Wait until you feel better to do anything fun.",
+              "Cancel because your mood is currently saying no."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Feelings follow action more than we think. Try first, mood catches up."
+          "tip": "Feelings follow action. Mood catches up."
         },
         "2": {
-          "definition": "Scheduling and doing meaningful activities \u2014 even when motivation is low \u2014 gradually lifts mood and rebuilds momentum.",
-          "scenarioDoneTo": "You've been in a slump and stopped doing things you used to love. Nothing feels fun anymore.",
-          "scenarioYouDo": "You've been in a slump and stopped doing things you used to love. Nothing feels fun anymore.",
+          "definition": "Doing valued things gently lifts mood over time.",
+          "scenarioDoneTo": "In a slump. Nothing feels fun anymore.",
+          "scenarioYouDo": "In a slump. Nothing feels fun anymore.",
           "challenge": {
-            "scenario": "Slump. Nothing feels fun. What's the intervention?",
+            "scenario": "Nothing feels fun. Intervention?",
             "options": [
-              "Schedule one small activity you used to enjoy \u2014 do it even without motivation.",
-              "Wait for motivation to return.",
-              "Keep avoiding until you feel better.'"
+              "Schedule one small thing you used to enjoy.",
+              "Wait for the motivation to just come back on its own.",
+              "Keep avoiding until you eventually feel better again."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Depression lies about how it will feel. Do it anyway and reassess after."
+          "tip": "Depression lies about how it will feel."
         },
         "3": {
-          "definition": "Behavioral activation is a first-line evidence-based treatment for depression. Small structured actions counter the withdrawal-mood spiral.",
-          "scenarioDoneTo": "Depressive episode has pulled you off exercise, cooking, and social life. Motivation feels dead.",
-          "scenarioYouDo": "Depressive episode has pulled you off exercise, cooking, and social life. Motivation feels dead.",
+          "definition": "Evidence-based treatment for depression symptoms.",
+          "scenarioDoneTo": "Depression pulled you off exercise and social life.",
+          "scenarioYouDo": "Depression pulled you off exercise and social life.",
           "challenge": {
-            "scenario": "Depression has cleared your calendar. What's the intervention?",
+            "scenario": "Motivation feels dead. Intervention?",
             "options": [
-              "Structured re-entry: schedule 1-2 small mastery/pleasure activities per day, no waiting for motivation.",
-              "Wait for the depression to lift on its own.",
-              "Push for a huge overhaul all at once."
+              "Schedule 1-2 small mastery activities each day.",
+              "Wait for the depression to lift on its own instead.",
+              "Push for one huge overhaul of everything at once."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Motivation is a byproduct of action, not a prerequisite. Small structured reps rebuild."
+          "tip": "Motivation is a byproduct of action."
         }
       }
     },
@@ -394,52 +394,52 @@
       "category": "Care of Self",
       "tiers": {
         "1": {
-          "definition": "Sleep is when your brain cleans up feelings. Skip sleep, and everything feels worse tomorrow.",
-          "scenarioDoneTo": "You want to stay up late scrolling on your phone even though you have school in the morning.",
-          "scenarioYouDo": "You want to stay up late scrolling on your phone even though you have school in the morning.",
+          "definition": "Sleep is when your brain cleans up feelings.",
+          "scenarioDoneTo": "It's 11pm. You want to keep scrolling.",
+          "scenarioYouDo": "It's 11pm. You want to keep scrolling.",
           "challenge": {
-            "scenario": "It's 11pm and you want to keep scrolling. What's the healthy move?",
+            "scenario": "Late night, phone in hand. Healthy move?",
             "options": [
-              "Put the phone down. Future-you tomorrow will thank present-you.",
-              "Scroll for one more hour.",
-              "Stay up all night."
+              "Put the phone down. Tomorrow-you will thank you.",
+              "Just keep scrolling for one more little hour.",
+              "Stay up all night, deal with it in the morning."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Sleep is not optional. Your brain processes emotions overnight."
+          "tip": "Sleep is not optional. Ever."
         },
         "2": {
-          "definition": "Consistent sleep timing and pre-sleep routine (low light, no screens) protect mood, focus, and emotional regulation.",
-          "scenarioDoneTo": "You've been sleeping different times every night and everything feels harder \u2014 school, friends, mood.",
-          "scenarioYouDo": "You've been sleeping different times every night and everything feels harder \u2014 school, friends, mood.",
+          "definition": "Consistent sleep timing protects mood and focus.",
+          "scenarioDoneTo": "Sleeping different times every night lately.",
+          "scenarioYouDo": "Sleeping different times every night lately.",
           "challenge": {
-            "scenario": "Sleep is scattered and everything's harder. What's the first move?",
+            "scenario": "Scattered sleep, everything harder. First move?",
             "options": [
-              "Anchor a consistent bedtime and wake time \u2014 even on weekends.",
-              "Sleep in every day to catch up.",
-              "Push through with more caffeine.'"
+              "Anchor a bedtime and wake time. Weekends too.",
+              "Sleep in every single day to catch up on the debt.",
+              "Just push through the rest of it with more caffeine."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Consistency matters more than total hours. Regular sleep = stable mood."
+          "tip": "Consistency matters more than total hours."
         },
         "3": {
-          "definition": "Sleep debt directly worsens anxiety, depression, and cognitive performance. Sleep hygiene is a foundational intervention often skipped.",
-          "scenarioDoneTo": "Chronic 5-hour sleep nights have you snapping at coworkers and forgetting basic things.",
-          "scenarioYouDo": "Chronic 5-hour sleep nights have you snapping at coworkers and forgetting basic things.",
+          "definition": "Sleep debt directly worsens anxiety and depression.",
+          "scenarioDoneTo": "Chronic 5-hour nights. Snapping, forgetting things.",
+          "scenarioYouDo": "Chronic 5-hour nights. Snapping, forgetting things.",
           "challenge": {
-            "scenario": "Chronic under-sleep is showing up as irritability and forgetting. What's the intervention?",
+            "scenario": "Chronic under-sleep. What's the intervention?",
             "options": [
-              "Treat sleep as a first-order intervention. Fix it before other 'fixes.'",
-              "Take on more caffeine.",
-              "Assume the mood/memory issues are separate problems.'"
+              "Treat sleep as a first-order fix. Do it first.",
+              "Take on even more caffeine to keep pushing through.",
+              "Assume the mood and memory issues are separate."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Sleep is the single highest-leverage lifestyle input for mental health. Fix it first."
+          "tip": "Sleep is the highest-leverage mental-health input."
         }
       }
     },
@@ -449,52 +449,52 @@
       "category": "Calm Mind",
       "tiers": {
         "1": {
-          "definition": "Write down every thought spinning in your head. Getting it out of your brain makes it quieter.",
-          "scenarioDoneTo": "You can't sleep because your mind won't stop worrying about tomorrow.",
-          "scenarioYouDo": "You can't sleep because your mind won't stop worrying about tomorrow.",
+          "definition": "Write every worry down. Quieter than in your head.",
+          "scenarioDoneTo": "Can't sleep. Worries won't stop about tomorrow.",
+          "scenarioYouDo": "Can't sleep. Worries won't stop about tomorrow.",
           "challenge": {
             "scenario": "Mind won't stop at bedtime. What helps?",
             "options": [
-              "Grab paper and write it all out for 5 minutes, no filter.",
-              "Lie there and keep worrying.",
-              "Check your phone."
+              "Grab paper. Write it all out for 5 minutes.",
+              "Just lie there and keep worrying about it all.",
+              "Check your phone to distract yourself for a while."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Worries get louder when trapped in your head. Paper gives them a place to live."
+          "tip": "Paper gives worries a place to live."
         },
         "2": {
-          "definition": "Free-writing worries and thoughts moves them from an anxious loop into a form you can observe and problem-solve.",
-          "scenarioDoneTo": "You have exam prep to do but you keep spinning on random anxieties.",
-          "scenarioYouDo": "You have exam prep to do but you keep spinning on random anxieties.",
+          "definition": "Free-writing worries moves them out of the loop.",
+          "scenarioDoneTo": "Exam prep to do. Random anxieties won't stop.",
+          "scenarioYouDo": "Exam prep to do. Random anxieties won't stop.",
           "challenge": {
-            "scenario": "Anxious thoughts block your study session. What's the move?",
+            "scenario": "Anxious thoughts block your studying. Move?",
             "options": [
-              "Brain-dump for 10 minutes, THEN start studying with a clearer head.",
-              "Study while distracted.",
-              "Give up and doom-scroll.'"
+              "Brain-dump for 10 minutes, THEN study clearer.",
+              "Just study while distracted and hope for the best.",
+              "Give up on studying and doom-scroll for a while."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Externalize before you concentrate. Paper first, focus second."
+          "tip": "Externalize before you concentrate."
         },
         "3": {
-          "definition": "Expressive writing has measurable effects on stress hormones and cognitive load. A cheap, evidence-backed regulation tool.",
-          "scenarioDoneTo": "You're days out from a major decision and your head is full of loops and what-ifs.",
-          "scenarioYouDo": "You're days out from a major decision and your head is full of loops and what-ifs.",
+          "definition": "Expressive writing lowers stress hormones.",
+          "scenarioDoneTo": "Days out from a major decision. Head full of loops.",
+          "scenarioYouDo": "Days out from a major decision. Head full of loops.",
           "challenge": {
-            "scenario": "Loops before a big decision. What's the tool?",
+            "scenario": "Loops before a big decision. Tool?",
             "options": [
-              "Write out the whole loop, then extract: what's known, what's fear, what's actionable.",
-              "Keep looping mentally.",
-              "Decide impulsively to end the loops.'"
+              "Write the loop. Extract known / fear / action.",
+              "Just keep looping in your head, hope it clears.",
+              "Decide impulsively so you can end the whole loop."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Writing separates signal from noise. Loops on paper become questions you can answer."
+          "tip": "Writing separates signal from noise."
         }
       }
     },
@@ -504,52 +504,52 @@
       "category": "Reframe",
       "tiers": {
         "1": {
-          "definition": "When you're stuck, ask: 'What kind of person do I want to be?' Let that guide your next choice.",
-          "scenarioDoneTo": "You're mad and want to say something mean, but part of you knows it'll hurt your friend.",
-          "scenarioYouDo": "You're mad and want to say something mean, but part of you knows it'll hurt your friend.",
+          "definition": "Ask 'what kind of person do I want to be?'",
+          "scenarioDoneTo": "You want to say something mean.",
+          "scenarioYouDo": "You want to say something mean.",
           "challenge": {
-            "scenario": "You want to say something mean. What's a values check?",
+            "scenario": "Mean words on the tip of your tongue. Check?",
             "options": [
-              "'I want to be a good friend. Being mean isn't that. Let me pause and try again.'",
-              "Say the mean thing.",
-              "Ghost the friend."
+              "'Being a good friend matters. Not this.'",
+              "Just go ahead and say the mean thing anyway.",
+              "Ghost the friend right now without saying it."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Feelings pass. The kind of person you're becoming lasts. Choose based on that."
+          "tip": "Feelings pass. Who you're becoming lasts."
         },
         "2": {
-          "definition": "Using your values as a compass \u2014 not your immediate emotions \u2014 to navigate hard moments.",
-          "scenarioDoneTo": "You want to skip your commitment to volunteer because you're not in the mood.",
-          "scenarioYouDo": "You want to skip your commitment to volunteer because you're not in the mood.",
+          "definition": "Let your values steer, not your immediate mood.",
+          "scenarioDoneTo": "You said you'd volunteer. Not in the mood.",
+          "scenarioYouDo": "You said you'd volunteer. Not in the mood.",
           "challenge": {
-            "scenario": "Volunteer commitment vs. bad mood. What's the values move?",
+            "scenario": "Commitment vs. bad mood. Values move?",
             "options": [
-              "'Being reliable matters to me. I'll go, and let the value pull me through the mood.'",
-              "Cancel because you don't feel like it.",
-              "Show up but sulk.'"
+              "'Being reliable matters. Go, let value pull.'",
+              "Just cancel it because you don't feel like going.",
+              "Show up but sulk about it the whole entire time."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Values are steadier than moods. Let them steer when moods can't be trusted."
+          "tip": "Values are steadier than moods. Let them steer."
         },
         "3": {
-          "definition": "ACT (Acceptance & Commitment Therapy) principle: distinguish between values-driven action and mood-driven action. Values give consistent direction.",
-          "scenarioDoneTo": "Anxiety keeps you from applying for a role that aligns with your values.",
-          "scenarioYouDo": "Anxiety keeps you from applying for a role that aligns with your values.",
+          "definition": "ACT skill: choose values over mood-driven action.",
+          "scenarioDoneTo": "Anxiety blocks applying for a values-aligned role.",
+          "scenarioYouDo": "Anxiety blocks applying for a values-aligned role.",
           "challenge": {
-            "scenario": "Anxiety blocks a values-aligned action. What's the ACT move?",
+            "scenario": "Anxiety blocks a values-aligned move. ACT move?",
             "options": [
-              "Take the values-driven action while carrying the anxiety with you.",
-              "Wait until the anxiety is gone (it may not go).",
-              "Choose the low-anxiety path instead."
+              "Take the values action, carry anxiety with you.",
+              "Wait until anxiety is gone (which may never happen).",
+              "Choose the low-anxiety option instead, ignore values."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Anxiety and action can coexist. Values move you forward; feelings come along for the ride."
+          "tip": "Anxiety and action can coexist. Values move you."
         }
       }
     },
@@ -559,52 +559,52 @@
       "category": "Care of Self",
       "tiers": {
         "1": {
-          "definition": "Asking a trusted adult for help isn't weak \u2014 it's smart. You don't have to figure everything out alone.",
-          "scenarioDoneTo": "Someone is being mean to you at school every day and you're too scared to tell anyone.",
-          "scenarioYouDo": "Someone is being mean to you at school every day and you're too scared to tell anyone.",
+          "definition": "Asking a trusted adult isn't weak. It's smart.",
+          "scenarioDoneTo": "Someone at school is being mean every day.",
+          "scenarioYouDo": "Someone at school is being mean every day.",
           "challenge": {
-            "scenario": "Bullying at school. You're scared to tell. What's the healthy move?",
+            "scenario": "Daily mean stuff. Scared to tell. Healthy?",
             "options": [
-              "Tell a trusted adult (parent, teacher, counselor). You don't have to handle it alone.",
-              "Handle it yourself.",
-              "Pretend it isn't happening."
+              "Tell a trusted adult. You don't handle it alone.",
+              "Handle it entirely by yourself no matter what.",
+              "Pretend it isn't happening and hope it stops soon."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Real strength is knowing when to ask for backup. Every hero has a team."
+          "tip": "Real strength knows when to ask for backup."
         },
         "2": {
-          "definition": "Reaching out to trusted people, counselors, or hotlines is a skill \u2014 not a failure. Support is what humans are built for.",
-          "scenarioDoneTo": "You've been having really dark thoughts and haven't told anyone.",
-          "scenarioYouDo": "You've been having really dark thoughts and haven't told anyone.",
+          "definition": "Reaching out is a skill, not a failure.",
+          "scenarioDoneTo": "Having really dark thoughts. Nobody knows.",
+          "scenarioYouDo": "Having really dark thoughts. Nobody knows.",
           "challenge": {
-            "scenario": "Dark thoughts and no one knows. What's the move?",
+            "scenario": "Dark thoughts, told no one. Move?",
             "options": [
-              "Tell a trusted adult or call/text a crisis line (988 in the U.S.). This deserves real support.",
-              "Keep it inside.",
-              "Handle it alone."
+              "Tell a trusted adult. Or call/text 988 today.",
+              "Keep it inside and just handle it by yourself.",
+              "Deal with it entirely on your own from now on."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Dark thoughts deserve real support. You are worth telling someone."
+          "tip": "Dark thoughts deserve real support."
         },
         "3": {
-          "definition": "Help-seeking is one of the strongest predictors of good mental-health outcomes. Isolation multiplies suffering; connection reduces it.",
-          "scenarioDoneTo": "You've been managing serious anxiety alone for months, telling yourself you should handle it.",
-          "scenarioYouDo": "You've been managing serious anxiety alone for months, telling yourself you should handle it.",
+          "definition": "Help-seeking predicts good mental-health outcomes.",
+          "scenarioDoneTo": "Months of managing serious anxiety alone.",
+          "scenarioYouDo": "Months of managing serious anxiety alone.",
           "challenge": {
-            "scenario": "Months of solo-managed anxiety. What's the reframe?",
+            "scenario": "Solo-managing for months. Reframe?",
             "options": [
-              "Schedule with a therapist. Getting expert help is skilled behavior, not failure.",
-              "Keep white-knuckling it.",
-              "Wait until it becomes a crisis to act."
+              "Schedule a therapist. Expert help is a skill.",
+              "Just keep white-knuckling through it on your own.",
+              "Wait until it becomes a full crisis before acting."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Therapy is a skill investment, like a coach. Everyone benefits from support; almost no one regrets seeking it."
+          "tip": "Therapy is a skill investment, like a coach."
         }
       }
     },
@@ -614,52 +614,52 @@
       "category": "Calm Body",
       "tiers": {
         "1": {
-          "definition": "Big urges (to yell, to hit, to run) usually feel huge for a few minutes and then get smaller. You can ride them out like a wave.",
-          "scenarioDoneTo": "You feel a HUGE urge to yell at your parent during an argument.",
-          "scenarioYouDo": "You feel a HUGE urge to yell at your parent during an argument.",
+          "definition": "Big urges peak fast, then shrink. Ride them out.",
+          "scenarioDoneTo": "HUGE urge to yell mid-argument with a parent.",
+          "scenarioYouDo": "HUGE urge to yell mid-argument with a parent.",
           "challenge": {
-            "scenario": "Huge urge to yell. What's a healthy move?",
+            "scenario": "Huge urge to yell. Healthy move?",
             "options": [
-              "Wait 60 seconds and breathe. The urge peak passes.",
-              "Yell it out.",
-              "Storm off and slam a door."
+              "Wait 60 seconds and breathe. Urge peak passes.",
+              "Just yell all of it out right now, in that moment.",
+              "Storm off and slam a door hard on the way out."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Urges are waves \u2014 they rise, peak, and fall. Ride, don't act."
+          "tip": "Urges are waves. Ride, don't act."
         },
         "2": {
-          "definition": "Observing an urge without acting on it \u2014 noticing its shape, watching it peak and fade \u2014 changes your relationship with it.",
-          "scenarioDoneTo": "You have a strong urge to text an ex who is bad for you.",
-          "scenarioYouDo": "You have a strong urge to text an ex who is bad for you.",
+          "definition": "Watch an urge without acting on it. Weakens it.",
+          "scenarioDoneTo": "Strong urge to text an ex who's bad for you.",
+          "scenarioYouDo": "Strong urge to text an ex who's bad for you.",
           "challenge": {
-            "scenario": "Strong urge to send a message you'd regret. What's the practice?",
+            "scenario": "Urge to send something you'd regret. Practice?",
             "options": [
-              "Notice the urge. Rate its intensity 1-10. Wait 20 minutes. Watch it change.",
-              "Send it now.",
-              "Suppress and pretend you're fine."
+              "Rate the urge 1-10. Wait 20 min. Watch it change.",
+              "Just send it right now and see what happens after.",
+              "Suppress it and pretend you feel fine about it."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Urges lose power when watched. They demand action; you decline politely."
+          "tip": "Urges lose power when watched."
         },
         "3": {
-          "definition": "Mindful urge-surfing decouples craving from action. Foundational in addiction and impulse-control work.",
-          "scenarioDoneTo": "You're recovering from an addictive behavior and a heavy craving hits.",
-          "scenarioYouDo": "You're recovering from an addictive behavior and a heavy craving hits.",
+          "definition": "Mindful surfing decouples craving from action.",
+          "scenarioDoneTo": "Recovering. A heavy craving just hit hard.",
+          "scenarioYouDo": "Recovering. A heavy craving just hit hard.",
           "challenge": {
-            "scenario": "Craving hits mid-recovery. What's the skill?",
+            "scenario": "Craving hits mid-recovery. Skill?",
             "options": [
-              "Sit with the craving, describe it in detail, breathe, watch it peak and pass.",
-              "Give in this once.",
-              "White-knuckle in silence."
+              "Sit with it. Describe it. Breathe. Watch it pass.",
+              "Just give in this one time and start over tomorrow.",
+              "White-knuckle it in silence and don't tell anyone."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "The craving is not you. It's a wave passing through. Watch, don't obey."
+          "tip": "The craving is not you. Watch it pass."
         }
       }
     },
@@ -669,52 +669,52 @@
       "category": "Reframe",
       "tiers": {
         "1": {
-          "definition": "Sometimes doing the OPPOSITE of what a feeling tells you is what helps. Sad? Get outside. Angry? Speak softly.",
-          "scenarioDoneTo": "You feel like hiding in your room all day because you're sad.",
-          "scenarioYouDo": "You feel like hiding in your room all day because you're sad.",
+          "definition": "Do the OPPOSITE of what the feeling wants.",
+          "scenarioDoneTo": "Sad. You want to hide in your room all day.",
+          "scenarioYouDo": "Sad. You want to hide in your room all day.",
           "challenge": {
-            "scenario": "Sadness says 'hide.' What's opposite action?",
+            "scenario": "Sadness says 'hide.' Opposite action?",
             "options": [
-              "Open the curtains, go outside, do one small social thing.",
-              "Hide all day as the sadness suggests.",
-              "Scroll in bed."
+              "Open curtains. Go outside. One small social thing.",
+              "Just hide in your room all day like it wants.",
+              "Scroll in bed until the whole feeling passes."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Feelings suggest actions that often make the feeling stronger. Do the opposite, gently."
+          "tip": "Feelings pull toward avoidance. Push back."
         },
         "2": {
-          "definition": "When your emotion is unjustified or too big for the situation, act opposite to its urge. It weakens the emotion over time.",
-          "scenarioDoneTo": "You feel a rush of shame after a small mistake and want to disappear.",
-          "scenarioYouDo": "You feel a rush of shame after a small mistake and want to disappear.",
+          "definition": "When a feeling is out of proportion, act opposite.",
+          "scenarioDoneTo": "Shame after a small mistake. Want to disappear.",
+          "scenarioYouDo": "Shame after a small mistake. Want to disappear.",
           "challenge": {
-            "scenario": "Shame says 'disappear.' What's opposite action?",
+            "scenario": "Shame says 'disappear.' Opposite action?",
             "options": [
-              "Stay visible: keep talking, keep eye contact, keep engaged.",
-              "Hide as the shame suggests.",
-              "Overapologize and grovel."
+              "Stay visible. Talk. Keep eye contact. Engage.",
+              "Just hide as the shame is telling you to do.",
+              "Overapologize and grovel to everyone all day."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Feelings pull you toward avoidance. Opposite action pulls you toward growth."
+          "tip": "Half-doing feeds the feeling. Full opposite works."
         },
         "3": {
-          "definition": "A core DBT skill for regulating unjustified or intensity-mismatched emotions. Effective across anxiety, depression, shame, anger.",
-          "scenarioDoneTo": "Anxiety tells you to avoid a networking event that's actually good for your goals.",
-          "scenarioYouDo": "Anxiety tells you to avoid a networking event that's actually good for your goals.",
+          "definition": "DBT: regulate unjustified emotions by acting opposite.",
+          "scenarioDoneTo": "Anxiety says skip a networking event good for goals.",
+          "scenarioYouDo": "Anxiety says skip a networking event good for goals.",
           "challenge": {
-            "scenario": "Anxiety says 'skip the event.' It's actually good for your goals. What's the move?",
+            "scenario": "Anxiety says 'skip.' Actually good for you. Move?",
             "options": [
-              "Attend fully engaged (opposite action) rather than skip or attend half-in.",
-              "Skip because anxiety said so.",
-              "Show up but hide in a corner."
+              "Attend fully engaged. Not skip. Not half-in.",
+              "Just skip it because anxiety told you to skip.",
+              "Show up but hide in a corner all night long."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Half-doing feeds the avoidance. Full opposite action is where the change happens."
+          "tip": "Full opposite is where the change lives."
         }
       }
     },
@@ -724,52 +724,52 @@
       "category": "Reframe",
       "tiers": {
         "1": {
-          "definition": "Your Feeling Brain and Thinking Brain both have a voice. Wise Mind is when they work together.",
-          "scenarioDoneTo": "Feeling Brain says 'quit soccer, I'm frustrated.' Thinking Brain says 'don't quit, you'll regret it.'",
-          "scenarioYouDo": "Feeling Brain says 'quit soccer, I'm frustrated.' Thinking Brain says 'don't quit, you'll regret it.'",
+          "definition": "Feeling Brain and Thinking Brain working together.",
+          "scenarioDoneTo": "Feelings say quit soccer. Logic says don't.",
+          "scenarioYouDo": "Feelings say quit soccer. Logic says don't.",
           "challenge": {
-            "scenario": "Feelings say quit, thoughts say stay. What's Wise Mind?",
+            "scenario": "Feelings quit, thoughts stay. Wise mind?",
             "options": [
-              "'I'm frustrated AND I love soccer. I'll take a break, not quit forever.'",
-              "Quit right now.",
-              "Ignore your feelings entirely.'"
+              "'Frustrated AND love it. Take a break, don't quit.'",
+              "Just quit soccer entirely, right now, no going back.",
+              "Ignore all your feelings and stay no matter what."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Wise Mind holds both. Not all feelings, not all logic \u2014 both."
+          "tip": "Wise mind holds both."
         },
         "2": {
-          "definition": "The overlap of emotional mind and reasonable mind. Where intuition meets analysis and better decisions live.",
-          "scenarioDoneTo": "You want to text an ex (emotion mind) and know you shouldn't (reasonable mind).",
-          "scenarioYouDo": "You want to text an ex (emotion mind) and know you shouldn't (reasonable mind).",
+          "definition": "Where intuition meets logic. Better decisions live here.",
+          "scenarioDoneTo": "Emotion says text an ex. Logic says don't.",
+          "scenarioYouDo": "Emotion says text an ex. Logic says don't.",
           "challenge": {
-            "scenario": "Emotion says text, logic says don't. What's Wise Mind?",
+            "scenario": "Emotion says text. Logic says no. Wise?",
             "options": [
-              "'I miss them AND texting won't help me. I'll write it in a note I don't send.'",
-              "Text now.",
-              "Suppress the feeling."
+              "'I miss them AND texting hurts. Write, don't send.'",
+              "Text them right now without thinking about it.",
+              "Just suppress the whole feeling and move on today."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Wise Mind honors both voices but acts on neither alone."
+          "tip": "Wise mind honors both. Acts on neither alone."
         },
         "3": {
-          "definition": "DBT's integrated decision-making state. Emotion mind alone impulsive; reasonable mind alone cold. Wise Mind is where values-aligned action lives.",
-          "scenarioDoneTo": "A big career decision has your emotions and your logic saying opposite things.",
-          "scenarioYouDo": "A big career decision has your emotions and your logic saying opposite things.",
+          "definition": "Integrated state. Values-aligned action lives here.",
+          "scenarioDoneTo": "Career pivot. Emotions and logic disagree.",
+          "scenarioYouDo": "Career pivot. Emotions and logic disagree.",
           "challenge": {
-            "scenario": "Emotion vs. logic on a career pivot. What's the Wise Mind approach?",
+            "scenario": "Emotion vs. logic on a pivot. Wise approach?",
             "options": [
-              "Slow down, listen to both, look for the third option that honors both.",
-              "Go with pure emotion.",
-              "Go with pure logic and ignore the feeling."
+              "Slow down. Listen to both. Find the third option.",
+              "Just go with pure emotion and see what happens.",
+              "Go with pure logic and ignore the feeling entirely."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Wise decisions integrate. If you're forcing one voice to lose, you're not there yet."
+          "tip": "Wise decisions integrate. Neither voice loses."
         }
       }
     },
@@ -779,52 +779,52 @@
       "category": "Calm Mind",
       "tiers": {
         "1": {
-          "definition": "Give worries a specific time slot instead of letting them run all day. 'Not now, worry \u2014 I'll see you at 5pm.'",
-          "scenarioDoneTo": "You keep worrying about a school field trip all day when you're trying to focus on class.",
-          "scenarioYouDo": "You keep worrying about a school field trip all day when you're trying to focus on class.",
+          "definition": "Give worries a time slot. 'Not now — see you at 5.'",
+          "scenarioDoneTo": "Worrying about a trip while trying to focus in class.",
+          "scenarioYouDo": "Worrying about a trip while trying to focus in class.",
           "challenge": {
-            "scenario": "Worry keeps interrupting class. What's the move?",
+            "scenario": "Worry interrupts class. Move?",
             "options": [
-              "'I'll worry about that at 5pm for 10 minutes. Right now I'm in class.'",
-              "Worry all day.",
-              "Try to force yourself not to think about it."
+              "'I'll worry at 5pm for 10 minutes. Not now.'",
+              "Just worry about the whole thing all day long.",
+              "Try to force yourself to never think about it."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Worries push harder when told 'no.' Give them an appointment instead."
+          "tip": "Worries push harder when told 'no.' Give a time."
         },
         "2": {
-          "definition": "Schedule 10-15 minutes for worry once a day. When worry comes at other times, postpone it. It reduces both frequency and intensity.",
-          "scenarioDoneTo": "Anxious thoughts about the future are pulling focus during work and social time.",
-          "scenarioYouDo": "Anxious thoughts about the future are pulling focus during work and social time.",
+          "definition": "Postpone worries to a daily 15-min window.",
+          "scenarioDoneTo": "Anxious thoughts pull focus during work and hangs.",
+          "scenarioYouDo": "Anxious thoughts pull focus during work and hangs.",
           "challenge": {
-            "scenario": "Anxiety hijacks focus all day. What's the technique?",
+            "scenario": "Anxiety hijacks focus all day. Technique?",
             "options": [
-              "Set daily 15-minute 'worry window.' Postpone other worries to that window.",
-              "Try to stop worrying entirely.",
-              "Worry as much as it demands."
+              "Daily 15-min 'worry window.' Postpone the rest.",
+              "Just try to stop worrying entirely all the time.",
+              "Worry as much as it demands, right when it hits."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Contained worry loses power. Uncontained worry expands to fill your whole day."
+          "tip": "Contained worry loses power."
         },
         "3": {
-          "definition": "Stimulus-control technique for chronic worry. Postpones and contains worry, breaking the always-on rumination cycle.",
-          "scenarioDoneTo": "Generalized anxiety keeps you in a constant low-grade worry state.",
-          "scenarioYouDo": "Generalized anxiety keeps you in a constant low-grade worry state.",
+          "definition": "Stimulus-control tool for chronic rumination.",
+          "scenarioDoneTo": "General anxiety keeps you in constant low-grade worry.",
+          "scenarioYouDo": "General anxiety keeps you in constant low-grade worry.",
           "challenge": {
-            "scenario": "Constant low-grade worry. What's the structured intervention?",
+            "scenario": "Constant low-grade worry. Structured tool?",
             "options": [
-              "Daily worry appointment, postpone tactic during the day, stick to it consistently.",
-              "Try to think happy thoughts.",
-              "Suppress worry when it comes."
+              "Daily worry appointment. Postpone. Stick to it.",
+              "Just try to think happy thoughts on demand instead.",
+              "Suppress worry whenever it comes up during the day."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Worry loves ambiguity. Structure defeats it. Give it a time and a topic, or none."
+          "tip": "Worry loves ambiguity. Structure defeats it."
         }
       }
     },
@@ -834,52 +834,52 @@
       "category": "Care of Self",
       "tiers": {
         "1": {
-          "definition": "Notice 3 good things from your day before bed. Small things count \u2014 a good snack, a joke, sunshine.",
-          "scenarioDoneTo": "You had a rough day and all you can think about is what went wrong.",
-          "scenarioYouDo": "You had a rough day and all you can think about is what went wrong.",
+          "definition": "Notice 3 good things before bed. Tiny counts.",
+          "scenarioDoneTo": "Rough day. Brain stuck on what went wrong.",
+          "scenarioYouDo": "Rough day. Brain stuck on what went wrong.",
           "challenge": {
-            "scenario": "Rough day, brain stuck on negatives. What helps balance it?",
+            "scenario": "Brain stuck on negatives. What helps balance?",
             "options": [
-              "List 3 good things from today, even tiny ones.",
-              "Focus only on what went wrong.",
-              "Skip bedtime routine altogether."
+              "List 3 good things from today. Even tiny ones.",
+              "Just focus on what went wrong the entire day.",
+              "Skip the whole bedtime routine and stay upset."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Your brain shows you what you practice. Practice noticing good."
+          "tip": "You see what you practice. Practice good."
         },
         "2": {
-          "definition": "Ending the day noting three good things trains attention to the positive without denying the negative.",
-          "scenarioDoneTo": "You've been in a low mood for weeks and want to try something before therapy is next available.",
-          "scenarioYouDo": "You've been in a low mood for weeks and want to try something before therapy is next available.",
+          "definition": "Nightly 3-good-things trains attention to positive.",
+          "scenarioDoneTo": "Low mood for weeks. Waiting on a therapy appointment.",
+          "scenarioYouDo": "Low mood for weeks. Waiting on a therapy appointment.",
           "challenge": {
-            "scenario": "Low mood, waiting on therapy. What's a small daily practice?",
+            "scenario": "Waiting on therapy. Small daily practice?",
             "options": [
-              "Nightly '3 good things' journal for 2 weeks.",
-              "Wait passively for therapy.",
-              "Ruminate on how bad you feel."
+              "Nightly 3-good-things journal for two whole weeks.",
+              "Just wait passively for therapy without doing anything.",
+              "Ruminate on how bad you feel to really process it."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "One of the most evidence-backed positive-psychology interventions. Takes 2 minutes."
+          "tip": "One of the most tested positive practices."
         },
         "3": {
-          "definition": "Documented mood benefits with sustained practice. Shifts baseline attention without invalidating hard experiences.",
-          "scenarioDoneTo": "Chronic dissatisfaction despite objectively good circumstances is eroding your well-being.",
-          "scenarioYouDo": "Chronic dissatisfaction despite objectively good circumstances is eroding your well-being.",
+          "definition": "Documented mood benefits with sustained practice.",
+          "scenarioDoneTo": "Chronic dissatisfaction despite a good life.",
+          "scenarioYouDo": "Chronic dissatisfaction despite a good life.",
           "challenge": {
-            "scenario": "Chronic negativity bias despite a good life. What's the retraining tool?",
+            "scenario": "Chronic negativity bias. Retraining tool?",
             "options": [
-              "Nightly '3 good things' + why they happened. Consistent, for weeks.",
-              "Force yourself to feel grateful on command.",
-              "Ignore the pattern."
+              "Nightly 3-good-things plus 'why.' Weeks of it.",
+              "Just force yourself to feel grateful on command.",
+              "Ignore the pattern and hope it fixes on its own."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Attention is trainable. Practice reshapes the baseline over time."
+          "tip": "Attention is trainable. Practice reshapes it."
         }
       }
     }
