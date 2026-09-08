@@ -242,8 +242,10 @@ const App = (() => {
     requestWakeLock();
   }
 
+  const DECK_VERSION = 'v=20260908c';
+
   async function loadDeck(deckId) {
-    const resp = await fetch(DECK_FILES[deckId]);
+    const resp = await fetch(`${DECK_FILES[deckId]}?${DECK_VERSION}`);
     deckData = await resp.json();
   }
 
@@ -256,7 +258,7 @@ const App = (() => {
     const allCards = [];
     let combinedName = [];
     for (const id of deckIds) {
-      const resp = await fetch(DECK_FILES[id]);
+      const resp = await fetch(`${DECK_FILES[id]}?${DECK_VERSION}`);
       const d = await resp.json();
       // Tag each card so badges/mastery credit the right source deck.
       d.cards.forEach(c => { c.sourceDeckId = id; });
