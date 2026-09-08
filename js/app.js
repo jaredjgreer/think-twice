@@ -18,6 +18,8 @@ const App = (() => {
   let selectedTeams = null; // null or [{ name, color, playerIds }]
   // Accumulates newly-earned badges per player during a game, shown on game-over.
   let sessionNewBadges = {};
+  // Set once per solo game after a regulation break has fired.
+  let regulationBreakUsed = false;
 
   const DECK_FILES = {
     'cognitive-biases': 'data/cognitive-biases.json',
@@ -467,6 +469,8 @@ const App = (() => {
     }
 
     Game.init(players, selectedGridSize, deckData, selectedGameMode, selectedTeams);
+    sessionNewBadges = {};
+    regulationBreakUsed = false;
     Sound.stopMusic();
     renderGameBoard();
     showPassScreen();
@@ -561,6 +565,11 @@ const App = (() => {
 
     // Skip pass screen if single player
     if (gs.players.length === 1) {
+      // Solo mode: occasionally interject a regulation break before the next card.
+      if (maybeTriggerRegulationBreak(() => {
+        showScreen('game-screen');
+        renderGameBoard();
+      })) return;
       showScreen('game-screen');
       renderGameBoard();
       return;
@@ -998,6 +1007,84 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
         if (instr) instr.textContent += `  ${first.emoji} Badge unlocked: ${first.name}!`;
       }
     });
+  }
+
+  // ─── Regulation Break (solo-mode "wild card") ───
+
+  let regulationTimer = null;
+
+  // Returns true if a break started (caller must NOT continue its own advance path).
+  function maybeTriggerRegulationBreak(continueFn) {
+    const gs = Game.getState();
+    if (!gs || !gs.players || gs.players.length !== 1) return false;
+    if (regulationBreakUsed) return false;
+    // Don't fire too early or when the game is basically done.
+    const remaining = gs.totalCards - gs.cardsCompleted;
+    if (gs.cardsCompleted < 3 || remaining < 2) return false;
+    if (Math.random() > 0.18) return false;
+    regulationBreakUsed = true;
+    openRegulationBreak(continueFn);
+    return true;
+  }
+
+  function openRegulationBreak(continueFn) {
+    const modal = document.getElementById('regulation-modal');
+    const orb = document.getElementById('regulation-orb');
+    const text = document.getElementById('regulation-orb-text');
+    const hint = document.getElementById('regulation-hint');
+    const beginBtn = document.getElementById('btn-regulation-begin');
+    const skipBtn = document.getElementById('btn-regulation-skip');
+    // Reset UI to ready state.
+    orb.className = 'calm-orb regulation-orb';
+    text.textContent = 'READY?';
+    hint.textContent = 'Get comfy. Tap begin when you\u2019re ready.';
+    beginBtn.textContent = 'BEGIN';
+    beginBtn.style.display = '';
+    skipBtn.textContent = 'SKIP';
+    modal.classList.add('active');
+    Sound.play('flip');
+
+    const cleanup = () => {
+      if (regulationTimer) { clearTimeout(regulationTimer); regulationTimer = null; }
+      modal.classList.remove('active');
+      orb.className = 'calm-orb regulation-orb';
+      continueFn && continueFn();
+    };
+
+    beginBtn.onclick = () => {
+      beginBtn.style.display = 'none';
+      skipBtn.textContent = 'DONE EARLY';
+      runRegulationCycles(orb, text, hint, 3, cleanup);
+    };
+    skipBtn.onclick = cleanup;
+  }
+
+  // Run N cycles of box-breathing (4-4-4-4), then call done().
+  function runRegulationCycles(orb, text, hint, cycles, done) {
+    const phases = [
+      { name: 'BREATHE IN', cls: 'inhale', dur: 4000, hint: 'Slowly draw the breath in through your nose.' },
+      { name: 'HOLD',       cls: 'inhale', dur: 4000, hint: 'Hold gently. No strain.' },
+      { name: 'BREATHE OUT',cls: 'exhale', dur: 4000, hint: 'Let it out slowly through your mouth.' },
+      { name: 'HOLD',       cls: 'exhale', dur: 4000, hint: 'Rest at the bottom of the breath.' }
+    ];
+    let step = 0;
+    const total = cycles * phases.length;
+    function tick() {
+      if (step >= total) {
+        text.textContent = '\u2713';
+        hint.textContent = 'Nice. Back to the game.';
+        creditCalmCompletion();
+        regulationTimer = setTimeout(done, 1500);
+        return;
+      }
+      const p = phases[step % phases.length];
+      orb.className = 'calm-orb regulation-orb ' + p.cls;
+      text.textContent = p.name;
+      hint.textContent = p.hint;
+      step++;
+      regulationTimer = setTimeout(tick, p.dur);
+    }
+    tick();
   }
 
   function startBoxBreathing() {
@@ -1597,6 +1684,8 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
       gs.gameMode,
       gs.teams
     );
+    sessionNewBadges = {};
+    regulationBreakUsed = false;
     renderGameBoard();
     showPassScreen();
   }

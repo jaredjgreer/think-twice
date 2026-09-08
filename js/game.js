@@ -201,11 +201,15 @@ const Game = (() => {
     const origChallenge = card.selectedChallenges
       ? (card.selectedChallenges[tier] || tierData.challenge)
       : tierData.challenge;
+    // Shuffle option order so length/position aren't a tell.
+    const origOptions = origChallenge.options || [];
+    const correctText = origOptions[origChallenge.correct];
+    const shuffledOptions = shuffle([...origOptions]);
     return {
       scenario: origChallenge.scenario,
       prompt: `What ${word} is this?`,
-      options: origChallenge.options,
-      correct: origChallenge.correct,
+      options: shuffledOptions,
+      correct: shuffledOptions.indexOf(correctText),
       mode: 'classic'
     };
   }

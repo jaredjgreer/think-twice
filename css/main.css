@@ -2104,3 +2104,42 @@ html, body {
   max-width: 400px;
   justify-content: center;
 }
+
+/* ─── Regulation Break Modal ─── */
+
+.regulation-modal {
+  max-width: 420px;
+  text-align: center;
+  padding: 24px;
+}
+.regulation-tag {
+  font-family: var(--font-terminal);
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+.regulation-orb-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0 12px;
+}
+/* Override the absolute-positioned base .calm-orb so it centers inside the modal wrap. */
+.regulation-orb {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  width: 150px;
+  height: 150px;
+}
+.regulation-hint {
+  font-family: var(--font-terminal);
+  font-size: 14px;
+  color: var(--text-white);
+  min-height: 40px;
+  margin-bottom: 12px;
+}
