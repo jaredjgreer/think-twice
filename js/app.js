@@ -104,6 +104,10 @@ const App = (() => {
       Sound.startMusic();
       openSetup();
     });
+    document.getElementById('btn-calm-corner').addEventListener('click', () => {
+      showScreen('calm-corner-screen');
+      resetCalmCorner();
+    });
 
     // Wire up setup screen
     document.getElementById('btn-add-player').addEventListener('click', () => Players.showAddPlayerModal());
@@ -207,6 +211,9 @@ const App = (() => {
 
     // Wire tutor mode events
     wireTutorEvents();
+
+    // Wire calm corner
+    wireCalmCornerEvents();
 
     // Check for saved game
     const savedGame = Storage.getGameState();
@@ -785,17 +792,27 @@ const App = (() => {
     return 'Interesting thought! I\u2019m best at helping with cognitive biases, thinking traps, emotional intelligence, and critical thinking. Try asking about a specific concept, or say "random topic" for a surprise lesson! \ud83c\udfae';
   }
 
-  const BRAIN_COACH_PROMPT = `You are Brain Coach \u2014 the AI tutor inside Think Twice, a retro-arcade educational game. Your personality:
-- You're enthusiastic, witty, and encouraging \u2014 like a mix of a wise mentor and a fun game show host
-- You use casual language with the occasional retro/arcade reference ("Level up!", "Power-up unlocked!", "Boss-level thinking!")
-- You keep answers concise (2-4 sentences) unless the user asks for more detail
-- You explain cognitive biases, logical fallacies, emotional intelligence, and critical thinking concepts in simple, relatable terms with real-life examples
-- ADAPT your language and examples to the user's age, level, and context. If they say they're 7, use playground examples. If they're a CEO, use boardroom examples.
-- When a user gets something right, celebrate briefly. When wrong, be encouraging and explain why
-- You sometimes pose follow-up questions to make the user think deeper
-- You NEVER break character or discuss being an AI language model
-- If asked about non-educational topics, playfully steer back: "That's outside my arcade! Let's power up your brain instead \ud83e\udde0"
-- Use emoji sparingly but effectively (1-2 per message max)`;
+  const BRAIN_COACH_PROMPT = `You are Brain Coach \u2014 the AI tutor inside Think Twice, a family brain-training game about cognitive biases, thinking traps, feelings, and coping skills. Many of your users are kids and teens (age 10-20).
+
+Your personality:
+- Enthusiastic, warm, and encouraging \u2014 a mix of a wise mentor and a fun game show host
+- Casual language with the occasional retro/arcade reference ("Level up!", "Power-up unlocked!", "Boss-level thinking!")
+- Concise answers (2-4 sentences) unless the user asks for more detail
+- You explain cognitive biases, CBT thinking traps, emotional intelligence, and coping skills in simple, relatable terms with age-appropriate examples
+- ADAPT to the user's age and context. Age 7-12: playground, home, family, school examples. Age 13-17: friend groups, school, social media, sports examples. Age 18+: work, relationships, adulting examples.
+- When a user gets something right, celebrate briefly. When wrong, be kind and explain why
+- Sometimes ask a gentle follow-up question to spark deeper thinking
+- Use emoji sparingly but warmly (1-2 per message max)
+
+CRITICAL SAFETY RULES:
+- You are NOT a therapist and NOT medical advice. If asked about diagnosis, medication, or clinical treatment, remind the user to talk with a trusted adult or licensed professional.
+- If a user mentions self-harm, suicide, abuse, being unsafe, or in crisis \u2014 pause the game tone. Respond with warmth: "I'm really glad you told me. Please tell a trusted adult right now, or in the U.S. call or text 988 (Suicide & Crisis Lifeline). You matter, and real people want to help." Do not lecture, do not moralize.
+- Never give advice about romantic/sexual topics, drugs, weapons, or illegal activities. Redirect kindly: "That's not something I can help with here. A trusted adult is the right person for that."
+- No adult content, profanity, or violent examples. Ever.
+- Never claim to remember past sessions or know the user personally.
+- Never break character to discuss being an AI language model, but do not deceive if directly asked \u2014 say "I'm Brain Coach, a helper inside this game."
+
+If asked about non-educational topics, playfully steer back: "That's outside my arcade! Let's power up your brain instead \ud83e\udde0"`;
 
   async function clientSideAI(msg) {
     const aiKey = localStorage.getItem('tt_ai_key');
@@ -927,6 +944,150 @@ const App = (() => {
     document.getElementById('btn-tutor-browse').addEventListener('click', openConceptBrowser);
     document.getElementById('btn-close-concepts').addEventListener('click', () => {
       document.getElementById('concept-browser-modal').classList.remove('active');
+    });
+  }
+
+  // ─── Calm Corner ───
+
+  let calmExercise = 'box-breathing';
+  let calmTimer = null;
+  let calmStep = 0;
+
+  function resetCalmCorner() {
+    stopCalmExercise();
+    calmExercise = 'box-breathing';
+    document.querySelectorAll('.calm-option').forEach(b => b.classList.remove('selected'));
+    const first = document.querySelector('.calm-option[data-exercise="box-breathing"]');
+    if (first) first.classList.add('selected');
+    document.getElementById('calm-orb').className = 'calm-orb';
+    document.getElementById('calm-orb-text').textContent = 'TAP START';
+    document.getElementById('calm-instruction').textContent = 'Pick an exercise, then press start.';
+    document.getElementById('btn-calm-start').style.display = '';
+    document.getElementById('btn-calm-stop').style.display = 'none';
+  }
+
+  function stopCalmExercise() {
+    if (calmTimer) {
+      clearTimeout(calmTimer);
+      calmTimer = null;
+    }
+    calmStep = 0;
+    document.getElementById('calm-orb').className = 'calm-orb';
+    document.getElementById('btn-calm-start').style.display = '';
+    document.getElementById('btn-calm-stop').style.display = 'none';
+  }
+
+  function startBoxBreathing() {
+    const orb = document.getElementById('calm-orb');
+    const text = document.getElementById('calm-orb-text');
+    const instr = document.getElementById('calm-instruction');
+    // Cycle: inhale (4s), hold (4s), exhale (4s), hold (4s)
+    const phases = [
+      { name: 'BREATHE IN', cls: 'inhale', dur: 4000, hint: 'Slowly draw the breath in through your nose.' },
+      { name: 'HOLD', cls: 'inhale', dur: 4000, hint: 'Hold gently. No strain.' },
+      { name: 'BREATHE OUT', cls: 'exhale', dur: 4000, hint: 'Let it out slowly through your mouth.' },
+      { name: 'HOLD', cls: 'exhale', dur: 4000, hint: 'Rest at the bottom of the breath.' }
+    ];
+    function tick() {
+      const p = phases[calmStep % phases.length];
+      orb.className = 'calm-orb ' + p.cls;
+      text.textContent = p.name;
+      instr.textContent = p.hint;
+      calmStep++;
+      calmTimer = setTimeout(tick, p.dur);
+    }
+    tick();
+  }
+
+  function startGrounding() {
+    const orb = document.getElementById('calm-orb');
+    const text = document.getElementById('calm-orb-text');
+    const instr = document.getElementById('calm-instruction');
+    const steps = [
+      { n: '5', sense: 'THINGS YOU SEE', hint: 'Look around. Name 5 things you can see right now.' },
+      { n: '4', sense: 'THINGS YOU TOUCH', hint: 'Notice 4 things you can feel — your feet, the chair, your clothes.' },
+      { n: '3', sense: 'THINGS YOU HEAR', hint: 'Listen for 3 sounds — near or far.' },
+      { n: '2', sense: 'THINGS YOU SMELL', hint: 'Name 2 things you can smell (or two you like).' },
+      { n: '1', sense: 'THING YOU TASTE', hint: 'Notice 1 taste in your mouth.' },
+      { n: '★', sense: 'YOU\'RE HERE', hint: 'Nice. You are right here, right now.' }
+    ];
+    function tick() {
+      if (calmStep >= steps.length) {
+        stopCalmExercise();
+        text.textContent = 'DONE';
+        instr.textContent = 'Notice how you feel now vs. when you started.';
+        return;
+      }
+      const s = steps[calmStep];
+      orb.className = 'calm-orb inhale';
+      text.textContent = s.n + '\n' + s.sense;
+      instr.textContent = s.hint;
+      calmStep++;
+      calmTimer = setTimeout(tick, 12000);
+    }
+    tick();
+  }
+
+  function startBodyScan() {
+    const orb = document.getElementById('calm-orb');
+    const text = document.getElementById('calm-orb-text');
+    const instr = document.getElementById('calm-instruction');
+    const spots = [
+      'TOP OF HEAD', 'FACE & JAW', 'SHOULDERS', 'CHEST', 'BELLY', 'ARMS & HANDS', 'HIPS', 'LEGS', 'FEET'
+    ];
+    const hints = [
+      'Notice the top of your head. Any tightness? Let it soften.',
+      'Face and jaw. Unclench. Let your tongue rest.',
+      'Shoulders. Let them drop away from your ears.',
+      'Chest. Notice your breath moving here.',
+      'Belly. Let it be soft, not held.',
+      'Arms and hands. Let them get heavy.',
+      'Hips. Notice where they meet the chair or floor.',
+      'Legs. Feel the weight.',
+      'Feet. Feel where they touch the ground. You are here.'
+    ];
+    function tick() {
+      if (calmStep >= spots.length) {
+        stopCalmExercise();
+        text.textContent = 'DONE';
+        instr.textContent = 'You just gave your body some kind attention. Good work.';
+        return;
+      }
+      orb.className = 'calm-orb inhale';
+      text.textContent = spots[calmStep];
+      instr.textContent = hints[calmStep];
+      calmStep++;
+      calmTimer = setTimeout(tick, 8000);
+    }
+    tick();
+  }
+
+  function wireCalmCornerEvents() {
+    document.querySelectorAll('.calm-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.calm-option').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        calmExercise = btn.dataset.exercise;
+        stopCalmExercise();
+      });
+    });
+    document.getElementById('btn-calm-start').addEventListener('click', () => {
+      calmStep = 0;
+      document.getElementById('btn-calm-start').style.display = 'none';
+      document.getElementById('btn-calm-stop').style.display = '';
+      if (calmExercise === 'grounding') startGrounding();
+      else if (calmExercise === 'body-scan') startBodyScan();
+      else startBoxBreathing();
+    });
+    document.getElementById('btn-calm-stop').addEventListener('click', () => {
+      stopCalmExercise();
+      document.getElementById('calm-orb-text').textContent = 'TAP START';
+      document.getElementById('calm-instruction').textContent = 'Pick an exercise, then press start.';
+    });
+    document.getElementById('btn-calm-home').addEventListener('click', () => {
+      stopCalmExercise();
+      renderHomeLeaderboard();
+      showScreen('home-screen');
     });
   }
 

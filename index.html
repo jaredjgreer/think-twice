@@ -33,8 +33,42 @@
     <div id="btn-press-start" class="press-start blink glow-yellow">▶ PRESS START ◀</div>
 
     <div class="home-buttons">
+      <button id="btn-calm-corner" class="btn btn-green">🌿 CALM CORNER</button>
       <button id="btn-players-home" class="btn">PLAYERS</button>
       <button id="btn-help" class="btn btn-yellow">HOW TO PLAY</button>
+    </div>
+  </div>
+
+  <!-- ═══ CALM CORNER SCREEN ═══ -->
+  <div id="calm-corner-screen" class="screen calm-corner-screen">
+    <div class="calm-topbar">
+      <button id="btn-calm-home" class="btn btn-sm">← HOME</button>
+      <div class="calm-title glow-cyan">🌿 CALM CORNER</div>
+      <div style="width:60px;"></div>
+    </div>
+    <div class="calm-exercise-select">
+      <button class="calm-option selected" data-exercise="box-breathing">
+        <span class="calm-name">🫁 BOX BREATHING</span>
+        <span class="calm-desc">4 in · 4 hold · 4 out · 4 hold</span>
+      </button>
+      <button class="calm-option" data-exercise="grounding">
+        <span class="calm-name">🌱 5-4-3-2-1 GROUNDING</span>
+        <span class="calm-desc">Notice your senses</span>
+      </button>
+      <button class="calm-option" data-exercise="body-scan">
+        <span class="calm-name">💆 BODY SCAN</span>
+        <span class="calm-desc">Notice head to toes</span>
+      </button>
+    </div>
+    <div id="calm-stage" class="calm-stage">
+      <div id="calm-orb" class="calm-orb">
+        <div id="calm-orb-text" class="calm-orb-text">TAP START</div>
+      </div>
+      <div id="calm-instruction" class="calm-instruction">Pick an exercise, then press start.</div>
+    </div>
+    <div class="calm-controls">
+      <button id="btn-calm-start" class="btn btn-green">START</button>
+      <button id="btn-calm-stop" class="btn" style="display:none;">STOP</button>
     </div>
   </div>
 

@@ -29,6 +29,19 @@ const CloudSync = (() => {
     return online && !!API_URL;
   }
 
+  // COPPA-adjacent hygiene: skip cloud writes for players under 13.
+  function shouldSyncPlayer(playerId) {
+    try {
+      const players = Storage.getPlayers();
+      const p = players.find(pl => pl.id === playerId);
+      if (!p) return true;
+      const age = (p.birthMonth && p.birthYear) ? Players.computeAge(p.birthMonth, p.birthYear) : null;
+      return age === null || age >= 13;
+    } catch (_) {
+      return true;
+    }
+  }
+
   // Pull cloud players into local storage
   async function pullCloudPlayers() {
     if (!isOnline()) return;
@@ -54,6 +67,7 @@ const CloudSync = (() => {
     for (const player of players) {
       const entry = lb[player.id];
       if (!entry) continue;
+      if (!shouldSyncPlayer(player.id)) continue;
       try {
         const res = await fetch(`${API_URL}/api/sync`, {
           method: 'POST',
@@ -87,6 +101,7 @@ const CloudSync = (() => {
   // Push a single game score to cloud
   async function pushScore(playerId, sessionScore, gameMode) {
     if (!isOnline()) return null;
+    if (!shouldSyncPlayer(playerId)) return null;
     try {
       const res = await fetch(`${API_URL}/api/score`, {
         method: 'POST',
@@ -118,6 +133,7 @@ const CloudSync = (() => {
   // Sync a newly created player to cloud
   async function syncNewPlayer(player, lbEntry) {
     if (!isOnline()) return;
+    if (!shouldSyncPlayer(player.id)) return;
     try {
       await fetch(`${API_URL}/api/sync`, {
         method: 'POST',
