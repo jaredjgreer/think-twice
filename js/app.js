@@ -272,22 +272,21 @@ const App = (() => {
 
   function updateModeLabels() {
     const single = selectedDeckIds.length === 1;
-    const isSunday = single && (selectedDeckIds[0] === 'sunday' || selectedDeckIds[0] === 'gospel-questions');
-    const isEQ = single && selectedDeckIds[0] === 'emotional-intelligence';
-    const isPro = single && isProDeck(selectedDeckIds[0]);
-    const isBias = single && selectedDeckIds[0] === 'cognitive-biases';
-    const isTrap = single && selectedDeckIds[0] === 'cbt-distortions';
-    const isCoping = single && selectedDeckIds[0] === 'coping-toolkit';
-    const word = isSunday ? 'principle'
-      : isEQ ? 'skill'
-      : isBias ? 'bias'
-      : isTrap ? 'trap'
-      : isCoping ? 'skill'
-      : 'concept';
+    const id = single ? selectedDeckIds[0] : null;
+    const DECK_LABELS = {
+      'cognitive-biases':       { classic: 'Read scenario, name the bias',           define: 'See the bias, pick its meaning',    spot: 'See description, find the scenario' },
+      'cbt-distortions':        { classic: 'Spot the trap, pick the reframe',        define: 'See the trap, pick its meaning',    spot: 'See description, find the scenario' },
+      'coping-toolkit':         { classic: 'Read the moment, pick the skill',        define: 'See the skill, pick its meaning',   spot: 'See description, find the scenario' },
+      'emotional-intelligence': { classic: 'Read the situation, choose wisely',      define: 'See the skill, pick its meaning',   spot: 'See description, find the scenario' },
+      'sunday':                 { classic: 'Read scenario, apply the principle',     define: 'See principle, pick its meaning',   spot: 'See description, find the scenario' },
+      'gospel-questions':       { classic: 'See the question, choose your response', define: 'See question, pick its meaning',    spot: 'See description, find the scenario' }
+    };
+    const DEFAULT_LABELS = { classic: 'Read scenario, name the concept', define: 'See the concept, pick its meaning', spot: 'See description, find the scenario' };
+    const chosen = (id && DECK_LABELS[id]) ? DECK_LABELS[id] : DEFAULT_LABELS;
     const labels = {
-      classic: `Read scenario, name the ${word}`,
-      define: `See the ${word}, pick its meaning`,
-      spot: 'See description, find the scenario',
+      classic: chosen.classic,
+      define: chosen.define,
+      spot: chosen.spot,
       mixed: 'Random mode every card'
     };
     document.querySelectorAll('.mode-option').forEach(btn => {
@@ -1597,16 +1596,19 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
     Game.finalizeScores();
     const { sortedPlayers, biasesSeen } = Game.getResults();
     const gs = Game.getState();
-    const isSunday = gs.deckData && (gs.deckData.deckId === 'sunday' || gs.deckData.deckId === 'gospel-questions');
-    const isEQ = gs.deckData && gs.deckData.deckId === 'emotional-intelligence';
-    const isCombined = gs.deckData && gs.deckData.deckId === 'combined';
-    const isProGame = gs.deckData && isProDeck(gs.deckData.deckId);
+    const deckId = gs.deckData && gs.deckData.deckId;
+    const HEADINGS = {
+      'combined': 'TOPICS ENCOUNTERED',
+      'sunday': 'PRINCIPLES ENCOUNTERED',
+      'gospel-questions': 'QUESTIONS ENCOUNTERED',
+      'emotional-intelligence': 'EQ SKILLS ENCOUNTERED',
+      'cognitive-biases': 'BIASES ENCOUNTERED',
+      'cbt-distortions': 'THINKING TRAPS ENCOUNTERED',
+      'coping-toolkit': 'COPING SKILLS ENCOUNTERED'
+    };
+    const isProGame = deckId && isProDeck(deckId);
     document.getElementById('gameover-biases-heading').textContent =
-      isCombined ? 'TOPICS ENCOUNTERED'
-      : isSunday ? 'PRINCIPLES ENCOUNTERED'
-      : isEQ ? 'EQ SKILLS ENCOUNTERED'
-      : isProGame ? 'CONCEPTS ENCOUNTERED'
-      : 'BIASES ENCOUNTERED';
+      HEADINGS[deckId] || (isProGame ? 'CONCEPTS ENCOUNTERED' : 'TOPICS ENCOUNTERED');
 
     // Push each player's score to cloud
     sortedPlayers.forEach(p => {

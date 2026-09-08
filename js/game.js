@@ -150,14 +150,30 @@ const Game = (() => {
     };
   }
 
+  // Per-deck prompt/label metadata. When missing, DEFAULT_META handles it.
+  const DECK_META = {
+    'cognitive-biases':       { concept: 'bias',         classic: 'What bias is this?',              spot: 'Which scenario shows this bias?' },
+    'cbt-distortions':        { concept: 'thinking trap', classic: 'Pick the healthier thought.',    spot: 'Which scenario shows this trap?' },
+    'coping-toolkit':         { concept: 'coping skill',  classic: 'Which coping move fits?',        spot: 'When would you use this skill?' },
+    'emotional-intelligence': { concept: 'EQ skill',      classic: 'What would you do?',             spot: 'Which situation shows this skill?' },
+    'sunday':                 { concept: 'principle',     classic: 'What would you do?',             spot: 'Which scenario shows this principle?' },
+    'gospel-questions':       { concept: 'question',      classic: 'How would you respond?',         spot: 'Which situation fits?' }
+  };
+  const DEFAULT_META = { concept: 'concept', classic: 'What concept is this?', spot: 'Which scenario shows this concept?' };
+
+  function metaFor(deckId) {
+    if (!deckId) return DEFAULT_META;
+    if (DECK_META[deckId]) return DECK_META[deckId];
+    if (/^(pe|drugdev|lifesci)-/.test(deckId)) return DEFAULT_META;
+    return DEFAULT_META;
+  }
+
   function buildChallenge(card, tier, mode) {
     const tierData = card.biasData.tiers[tier];
     const allBiases = state.deckData.cards;
-    const isCombined = state.deckData.deckId === 'combined';
-    const isSunday = state.deckData.deckId === 'sunday' || state.deckData.deckId === 'gospel-questions';
-    const isEQ = state.deckData.deckId === 'emotional-intelligence';
-    const isPro = /^(pe|drugdev|lifesci)-/.test(state.deckData.deckId);
-    const word = isCombined ? 'concept' : isSunday ? 'principle' : isEQ ? 'skill' : isPro ? 'concept' : 'bias';
+    // In combined decks, each card carries its own source deck id (tagged at load time).
+    const cardDeckId = (card.biasData && card.biasData.sourceDeckId) || state.deckData.deckId;
+    const meta = metaFor(cardDeckId);
 
     if (mode === 'define') {
       // Show bias name, pick correct definition from options
@@ -190,7 +206,7 @@ const Game = (() => {
       const options = shuffle([correctScenario, ...decoys]);
       return {
         scenario: null,
-        prompt: `Which scenario shows this ${word}?`,
+        prompt: meta.spot,
         options,
         correct: options.indexOf(correctScenario),
         mode: 'spot'
@@ -201,13 +217,16 @@ const Game = (() => {
     const origChallenge = card.selectedChallenges
       ? (card.selectedChallenges[tier] || tierData.challenge)
       : tierData.challenge;
-    // Shuffle option order so length/position aren't a tell.
     const origOptions = origChallenge.options || [];
     const correctText = origOptions[origChallenge.correct];
     const shuffledOptions = shuffle([...origOptions]);
+    // If the scenario itself already asks a question, use a short call-to-action prompt.
+    const scenarioText = origChallenge.scenario || '';
+    const scenarioAsksQuestion = /[?？]\s*$/.test(scenarioText.trim());
+    const prompt = scenarioAsksQuestion ? 'Choose the best answer.' : meta.classic;
     return {
-      scenario: origChallenge.scenario,
-      prompt: `What ${word} is this?`,
+      scenario: scenarioText,
+      prompt,
       options: shuffledOptions,
       correct: shuffledOptions.indexOf(correctText),
       mode: 'classic'
