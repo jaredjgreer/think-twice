@@ -19,8 +19,10 @@ const App = (() => {
 
   const DECK_FILES = {
     'cognitive-biases': 'data/cognitive-biases.json',
-    'sunday': 'data/sunday.json',
+    'cbt-distortions': 'data/cbt-distortions.json',
     'emotional-intelligence': 'data/emotional-intelligence.json',
+    'coping-toolkit': 'data/coping-toolkit.json',
+    'sunday': 'data/sunday.json',
     'gospel-questions': 'data/gospel-questions.json',
     'pe-foundations': 'data/pe-foundations.json',
     'pe-mechanics': 'data/pe-mechanics.json',
@@ -258,7 +260,14 @@ const App = (() => {
     const isEQ = single && selectedDeckIds[0] === 'emotional-intelligence';
     const isPro = single && isProDeck(selectedDeckIds[0]);
     const isBias = single && selectedDeckIds[0] === 'cognitive-biases';
-    const word = isSunday ? 'principle' : isEQ ? 'skill' : isBias ? 'bias' : 'concept';
+    const isTrap = single && selectedDeckIds[0] === 'cbt-distortions';
+    const isCoping = single && selectedDeckIds[0] === 'coping-toolkit';
+    const word = isSunday ? 'principle'
+      : isEQ ? 'skill'
+      : isBias ? 'bias'
+      : isTrap ? 'trap'
+      : isCoping ? 'skill'
+      : 'concept';
     const labels = {
       classic: `Read scenario, name the ${word}`,
       define: `See the ${word}, pick its meaning`,
@@ -988,8 +997,13 @@ const App = (() => {
     const tipReveal = document.getElementById('tip-reveal');
     tipReveal.className = 'tip-reveal show';
     const gs2 = Game.getState();
-    const tipIsBias = gs2.deckData && gs2.deckData.deckId === 'cognitive-biases';
-    document.getElementById('tip-label').textContent = tipIsBias ? '🛡 HOW TO AVOID IT' : '💡 PRO TIP';
+    const deckIdForTip = gs2.deckData && gs2.deckData.deckId;
+    let tipLabel = '💡 PRO TIP';
+    if (deckIdForTip === 'cognitive-biases') tipLabel = '🛡 HOW TO AVOID IT';
+    else if (deckIdForTip === 'cbt-distortions') tipLabel = '🔄 REFRAME IT';
+    else if (deckIdForTip === 'coping-toolkit') tipLabel = '🧰 TRY THIS';
+    else if (deckIdForTip === 'emotional-intelligence') tipLabel = '❤️ EQ INSIGHT';
+    document.getElementById('tip-label').textContent = tipLabel;
     document.getElementById('tip-text').textContent = cardData.tip || '';
 
     // Scroll challenge box to show tip and next button
