@@ -1,7 +1,7 @@
 {
   "deckName": "Coping Toolkit",
   "deckId": "coping-toolkit",
-  "description": "Real skills for tough moments \u2014 breathing, grounding, movement, self-talk.",
+  "description": "Real skills for tough moments \u2014 pick the coping move that fits.",
   "cards": [
     {
       "id": "box-breathing",
@@ -16,13 +16,13 @@
             "scenario": "Racing heart, 30 seconds to reset. Best move?",
             "options": [
               "Box breathe: in 4, hold 4, out 4, hold 4.",
-              "Panic a lot more and stew in it.",
-              "Hold your breath till you calm down."
+              "Chug water and try to push the feeling down.",
+              "Tell yourself 'don't be nervous, don't be nervous.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "4-4-4-4 tells your nervous system 'we're safe.'"
+          "tip": "Slow breathing tells the body 'we're safe.'"
         },
         "2": {
           "definition": "A slow, boxed breath that turns on the calm system.",
@@ -32,13 +32,13 @@
             "scenario": "Tight chest, seconds before going on. Best?",
             "options": [
               "Box breathe backstage: 3 slow cycles right now.",
-              "Chug a giant energy drink real fast.",
-              "Convince yourself you aren't nervous at all."
+              "Rehearse your opening line out loud one more time.",
+              "Take a big gulp of air and just push through it."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "The exhale is the calming part. Extend it."
+          "tip": "A long exhale is the calming part."
         },
         "3": {
           "definition": "Structured breathing that lowers cortisol reactivity.",
@@ -48,13 +48,13 @@
             "scenario": "Two minutes to regulate. Best pre-game move?",
             "options": [
               "5 rounds of box breathing to drop the arousal.",
-              "Rehearse your defense while pacing the whole hall.",
-              "Skip breathing, just run on the adrenaline high."
+              "Mentally rehearse the defense you plan to make.",
+              "Take one deep sigh and try to feel confident."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Regulate before you communicate."
+          "tip": "Regulate the body before you communicate."
         }
       }
     },
@@ -68,11 +68,11 @@
           "scenarioDoneTo": "Big wave of worry at recess.",
           "scenarioYouDo": "Big wave of worry at recess.",
           "challenge": {
-            "scenario": "Worry hits hard. What helps you land?",
+            "scenario": "Worry hits hard. What helps you land right now?",
             "options": [
               "5 see, 4 touch, 3 hear, 2 smell, 1 taste.",
-              "Just hide and hope the worry passes.",
-              "Panic even harder about the whole thing."
+              "Text a friend about how anxious you're feeling.",
+              "Repeat 'I'm okay, I'm okay' in your head fast."
             ],
             "correct": 0
           },
@@ -87,13 +87,13 @@
             "scenario": "Spiraling. How do you re-enter the room?",
             "options": [
               "Silently walk through 5-4-3-2-1 to re-anchor.",
-              "Fake attention and keep on spiraling anyway.",
-              "Excuse yourself and go spiral alone somewhere."
+              "Try to figure out exactly why you're spiraling.",
+              "Excuse yourself and go get some fresh air."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "You can't be worrying AND in your senses at once."
+          "tip": "You can't worry AND be in your senses at once."
         },
         "3": {
           "definition": "Multi-sensory anchoring that reduces rumination.",
@@ -103,8 +103,8 @@
             "scenario": "Dissociating in a meeting. Discreet grounding?",
             "options": [
               "Feet on floor, 5 objects, 3 sounds, one texture.",
-              "Push through, ignore the disconnection completely.",
-              "Get up and just leave without saying a word."
+              "Take fast shallow breaths to jolt yourself awake.",
+              "Focus hard on what the speaker is actually saying."
             ],
             "correct": 0
           },
@@ -126,13 +126,13 @@
             "scenario": "Big anger. What resets your body fast?",
             "options": [
               "Splash cold water on your face for 30 seconds.",
-              "Just yell way more at your sibling right now.",
-              "Break something to get all the anger out."
+              "Storm to your room and slam the door hard.",
+              "Explain to your parents that it's not your fault."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Cold on your face triggers a calming reflex."
+          "tip": "Cold on the face triggers a calming reflex."
         },
         "2": {
           "definition": "Cold triggers the dive reflex and slows your heart.",
@@ -142,8 +142,8 @@
             "scenario": "Sobbing, breath won't slow. Fast reset?",
             "options": [
               "Cold water on face plus slow long exhales.",
-              "Try to argue back through all the tears somehow.",
-              "Hold your breath as hard as you can to stop."
+              "Try to talk it out even through the tears.",
+              "Wrap up in a blanket and let it all out."
             ],
             "correct": 0
           },
@@ -158,8 +158,8 @@
             "scenario": "Crisis mode. Talk therapy won't stick yet. First?",
             "options": [
               "Regulate the body first: cold, exhale, then talk.",
-              "Try to reason through it while dysregulated anyway.",
-              "Skip the body, go straight into problem-solving mode."
+              "Call a friend and vent for a full 30 minutes.",
+              "Journal for an hour to work through the feeling."
             ],
             "correct": 0
           },
@@ -175,14 +175,14 @@
       "tiers": {
         "1": {
           "definition": "Big feelings need somewhere to go. Move them.",
-          "scenarioDoneTo": "SO frustrated with homework, you want to rip it.",
-          "scenarioYouDo": "SO frustrated with homework, you want to rip it.",
+          "scenarioDoneTo": "SO frustrated with homework you want to rip it.",
+          "scenarioYouDo": "SO frustrated with homework you want to rip it.",
           "challenge": {
             "scenario": "Frustration peaking. Healthy release?",
             "options": [
               "Do 20 jumping jacks, then come right back.",
-              "Just rip the homework into a bunch of pieces.",
-              "Sit right there and stew in the anger."
+              "Vent to a friend on the phone for 20 minutes.",
+              "Push through and just finish the homework anyway."
             ],
             "correct": 0
           },
@@ -197,8 +197,8 @@
             "scenario": "Nervous energy, big moment coming. What helps?",
             "options": [
               "5-minute brisk walk to burn off the surplus.",
-              "Sit still and try to force yourself calm somehow.",
-              "Chug an energy drink for even more adrenaline."
+              "Sit still and try to force your mind to calm.",
+              "Repeat your lines faster to feel more prepared."
             ],
             "correct": 0
           },
@@ -213,13 +213,13 @@
             "scenario": "Depression is heavy. Smallest useful move?",
             "options": [
               "Get outside for 10 minutes of slow walking.",
-              "Wait to 'feel better' before you move at all.",
-              "Just keep scrolling on your phone in bed."
+              "Journal about why you're feeling this way today.",
+              "Wait until you feel motivated to make a plan."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Action before motivation. Move first."
+          "tip": "Motion before motivation. Move first."
         }
       }
     },
@@ -235,25 +235,25 @@
           "challenge": {
             "scenario": "Cruel inner voice after a slip. Better move?",
             "options": [
-              "'That was hard. You're okay. Still learning.'",
-              "Keep beating yourself up over the mistake.",
-              "Tell yourself you are literally the worst."
+              "Say to yourself: 'That was hard. You're okay.'",
+              "Analyze exactly what went wrong step by step.",
+              "Promise yourself you'll be perfect next time."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Give yourself what you'd give a friend."
+          "tip": "Kindness inside beats a strict inside coach."
         },
         "2": {
           "definition": "Notice it's hard, offer yourself some kindness.",
           "scenarioDoneTo": "You bombed a test after studying hard.",
           "scenarioYouDo": "You bombed a test after studying hard.",
           "challenge": {
-            "scenario": "Spiraling on 'not smart enough.' Self-compassion move?",
+            "scenario": "Spiraling on 'not smart enough.' Compassion move?",
             "options": [
               "'This is hard. I can be kind to myself here.'",
-              "'I really am not smart enough for any of this.'",
-              "'I'll just punish myself into doing better next time.'"
+              "Plan a much stricter study schedule right now.",
+              "Vent to a friend about how unfair the test was."
             ],
             "correct": 0
           },
@@ -268,8 +268,8 @@
             "scenario": "Inner critic at full volume. Reframe?",
             "options": [
               "'This is suffering. Others too. Be kind now.'",
-              "'I deserve every bit of the self-attack coming.'",
-              "'Work harder so I never feel this way again ever.'"
+              "Draft a detailed apology and rehearse it aloud.",
+              "Make a list of every mistake to never repeat."
             ],
             "correct": 0
           },
@@ -291,8 +291,8 @@
             "scenario": "'Nobody likes me' won't stop. Useful step?",
             "options": [
               "Write it down. Ask: 'Is that really true?'",
-              "Just believe the thought as full solid fact.",
-              "Ignore it and hope it goes away by itself."
+              "Text three friends to check if they still like you.",
+              "Distract yourself with a show until it goes away."
             ],
             "correct": 0
           },
@@ -300,15 +300,15 @@
           "tip": "Thoughts get quieter on paper."
         },
         "2": {
-          "definition": "Situation → thought → feeling → evidence → balanced view.",
+          "definition": "Situation \u2192 thought \u2192 feeling \u2192 evidence \u2192 balanced view.",
           "scenarioDoneTo": "'I'm going to fail this class' loops all week.",
           "scenarioYouDo": "'I'm going to fail this class' loops all week.",
           "challenge": {
             "scenario": "'I'll fail' on loop. Real intervention?",
             "options": [
               "Thought record: catch, test, build a balanced view.",
-              "Try to just think positive without any evidence.",
-              "Accept the thought as the plain honest truth."
+              "Pull an all-nighter to prove you can handle it.",
+              "Email the teacher and confess you're struggling."
             ],
             "correct": 0
           },
@@ -323,8 +323,8 @@
             "scenario": "Chronic self-critical thought. CBT tool?",
             "options": [
               "Thought record: test evidence, build a counter.",
-              "Just try really hard to suppress the whole thought.",
-              "Overprepare each time to prove the thought wrong."
+              "Over-prepare so nobody notices any weak spot.",
+              "Repeat 'I am competent' in a mirror each morning."
             ],
             "correct": 0
           },
@@ -346,8 +346,8 @@
             "scenario": "Don't feel like going. Healthy move?",
             "options": [
               "Say yes even if you don't feel like it.",
-              "Wait until you feel better to do anything fun.",
-              "Cancel because your mood is currently saying no."
+              "Say maybe and see how you feel closer to time.",
+              "Cancel now so you can rest and recharge for later."
             ],
             "correct": 0
           },
@@ -362,8 +362,8 @@
             "scenario": "Nothing feels fun. Intervention?",
             "options": [
               "Schedule one small thing you used to enjoy.",
-              "Wait for the motivation to just come back on its own.",
-              "Keep avoiding until you eventually feel better again."
+              "Read about depression to understand what's going on.",
+              "Take a longer break to fully recharge before trying."
             ],
             "correct": 0
           },
@@ -378,8 +378,8 @@
             "scenario": "Motivation feels dead. Intervention?",
             "options": [
               "Schedule 1-2 small mastery activities each day.",
-              "Wait for the depression to lift on its own instead.",
-              "Push for one huge overhaul of everything at once."
+              "Wait until you feel a burst of energy to restart.",
+              "Journal daily until the mood naturally lifts again."
             ],
             "correct": 0
           },
@@ -401,24 +401,24 @@
             "scenario": "Late night, phone in hand. Healthy move?",
             "options": [
               "Put the phone down. Tomorrow-you will thank you.",
-              "Just keep scrolling for one more little hour.",
-              "Stay up all night, deal with it in the morning."
+              "Scroll for 10 more minutes, then set an alarm.",
+              "Watch one calming video to help you fall asleep."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Sleep is not optional. Ever."
+          "tip": "Sleep is not optional."
         },
         "2": {
           "definition": "Consistent sleep timing protects mood and focus.",
           "scenarioDoneTo": "Sleeping different times every night lately.",
           "scenarioYouDo": "Sleeping different times every night lately.",
           "challenge": {
-            "scenario": "Scattered sleep, everything harder. First move?",
+            "scenario": "Scattered sleep. First move to fix it?",
             "options": [
               "Anchor a bedtime and wake time. Weekends too.",
-              "Sleep in every single day to catch up on the debt.",
-              "Just push through the rest of it with more caffeine."
+              "Take a long nap in the afternoon each day.",
+              "Cut out caffeine after noon and hope for the best."
             ],
             "correct": 0
           },
@@ -433,8 +433,8 @@
             "scenario": "Chronic under-sleep. What's the intervention?",
             "options": [
               "Treat sleep as a first-order fix. Do it first.",
-              "Take on even more caffeine to keep pushing through.",
-              "Assume the mood and memory issues are separate."
+              "Start therapy for the irritability first, then sleep.",
+              "Add supplements and hope the mood evens out first."
             ],
             "correct": 0
           },
@@ -456,8 +456,8 @@
             "scenario": "Mind won't stop at bedtime. What helps?",
             "options": [
               "Grab paper. Write it all out for 5 minutes.",
-              "Just lie there and keep worrying about it all.",
-              "Check your phone to distract yourself for a while."
+              "Try to solve every worry in your head first.",
+              "Count sheep or repeat a calming word slowly."
             ],
             "correct": 0
           },
@@ -471,9 +471,9 @@
           "challenge": {
             "scenario": "Anxious thoughts block your studying. Move?",
             "options": [
-              "Brain-dump for 10 minutes, THEN study clearer.",
-              "Just study while distracted and hope for the best.",
-              "Give up on studying and doom-scroll for a while."
+              "Brain-dump for 10 minutes, then study clearer.",
+              "Start studying and push through the anxious noise.",
+              "Take a long break to let the anxiety fade first."
             ],
             "correct": 0
           },
@@ -488,8 +488,8 @@
             "scenario": "Loops before a big decision. Tool?",
             "options": [
               "Write the loop. Extract known / fear / action.",
-              "Just keep looping in your head, hope it clears.",
-              "Decide impulsively so you can end the whole loop."
+              "Talk it through with three trusted advisors first.",
+              "Sleep on it and see if it feels clearer in the morning."
             ],
             "correct": 0
           },
@@ -511,8 +511,8 @@
             "scenario": "Mean words on the tip of your tongue. Check?",
             "options": [
               "'Being a good friend matters. Not this.'",
-              "Just go ahead and say the mean thing anyway.",
-              "Ghost the friend right now without saying it."
+              "Take a deep breath and say it a bit softer.",
+              "Walk away and text the mean thing instead."
             ],
             "correct": 0
           },
@@ -527,8 +527,8 @@
             "scenario": "Commitment vs. bad mood. Values move?",
             "options": [
               "'Being reliable matters. Go, let value pull.'",
-              "Just cancel it because you don't feel like going.",
-              "Show up but sulk about it the whole entire time."
+              "Text them you'll be an hour late and stay short.",
+              "Reschedule for next week when you'll feel better."
             ],
             "correct": 0
           },
@@ -540,11 +540,11 @@
           "scenarioDoneTo": "Anxiety blocks applying for a values-aligned role.",
           "scenarioYouDo": "Anxiety blocks applying for a values-aligned role.",
           "challenge": {
-            "scenario": "Anxiety blocks a values-aligned move. ACT move?",
+            "scenario": "Anxiety blocks a values move. ACT move?",
             "options": [
               "Take the values action, carry anxiety with you.",
-              "Wait until anxiety is gone (which may never happen).",
-              "Choose the low-anxiety option instead, ignore values."
+              "Prepare for six more months, then feel more ready.",
+              "Apply for a similar role that feels less scary."
             ],
             "correct": 0
           },
@@ -565,9 +565,9 @@
           "challenge": {
             "scenario": "Daily mean stuff. Scared to tell. Healthy?",
             "options": [
-              "Tell a trusted adult. You don't handle it alone.",
-              "Handle it entirely by yourself no matter what.",
-              "Pretend it isn't happening and hope it stops soon."
+              "Tell a trusted adult. You don't handle this alone.",
+              "Confront the kid yourself after school today.",
+              "Change your route and try to avoid them for a while."
             ],
             "correct": 0
           },
@@ -582,8 +582,8 @@
             "scenario": "Dark thoughts, told no one. Move?",
             "options": [
               "Tell a trusted adult. Or call/text 988 today.",
-              "Keep it inside and just handle it by yourself.",
-              "Deal with it entirely on your own from now on."
+              "Journal about it for a week and see if it lifts.",
+              "Search online for coping tips and try a few this week."
             ],
             "correct": 0
           },
@@ -598,8 +598,8 @@
             "scenario": "Solo-managing for months. Reframe?",
             "options": [
               "Schedule a therapist. Expert help is a skill.",
-              "Just keep white-knuckling through it on your own.",
-              "Wait until it becomes a full crisis before acting."
+              "Try one more self-help book before spending money.",
+              "Add meditation and journaling and give it 3 months."
             ],
             "correct": 0
           },
@@ -621,8 +621,8 @@
             "scenario": "Huge urge to yell. Healthy move?",
             "options": [
               "Wait 60 seconds and breathe. Urge peak passes.",
-              "Just yell all of it out right now, in that moment.",
-              "Storm off and slam a door hard on the way out."
+              "Try to explain calmly why you're right anyway.",
+              "Walk out of the room and slam the door behind you."
             ],
             "correct": 0
           },
@@ -637,8 +637,8 @@
             "scenario": "Urge to send something you'd regret. Practice?",
             "options": [
               "Rate the urge 1-10. Wait 20 min. Watch it change.",
-              "Just send it right now and see what happens after.",
-              "Suppress it and pretend you feel fine about it."
+              "Write the message but don't press send yet.",
+              "Delete their number so you can't send anything."
             ],
             "correct": 0
           },
@@ -653,8 +653,8 @@
             "scenario": "Craving hits mid-recovery. Skill?",
             "options": [
               "Sit with it. Describe it. Breathe. Watch it pass.",
-              "Just give in this one time and start over tomorrow.",
-              "White-knuckle it in silence and don't tell anyone."
+              "Call a friend and stay on the line until it fades.",
+              "Distract with a movie until the craving disappears."
             ],
             "correct": 0
           },
@@ -676,8 +676,8 @@
             "scenario": "Sadness says 'hide.' Opposite action?",
             "options": [
               "Open curtains. Go outside. One small social thing.",
-              "Just hide in your room all day like it wants.",
-              "Scroll in bed until the whole feeling passes."
+              "Journal about why you're feeling sad right now.",
+              "Watch something comforting to lift the mood first."
             ],
             "correct": 0
           },
@@ -692,8 +692,8 @@
             "scenario": "Shame says 'disappear.' Opposite action?",
             "options": [
               "Stay visible. Talk. Keep eye contact. Engage.",
-              "Just hide as the shame is telling you to do.",
-              "Overapologize and grovel to everyone all day."
+              "Apologize once quickly, then move on and be quiet.",
+              "Step outside for a minute to calm the shame first."
             ],
             "correct": 0
           },
@@ -708,8 +708,8 @@
             "scenario": "Anxiety says 'skip.' Actually good for you. Move?",
             "options": [
               "Attend fully engaged. Not skip. Not half-in.",
-              "Just skip it because anxiety told you to skip.",
-              "Show up but hide in a corner all night long."
+              "Go for 15 minutes then leave when you feel done.",
+              "Invite a friend to come along for moral support."
             ],
             "correct": 0
           },
@@ -731,8 +731,8 @@
             "scenario": "Feelings quit, thoughts stay. Wise mind?",
             "options": [
               "'Frustrated AND love it. Take a break, don't quit.'",
-              "Just quit soccer entirely, right now, no going back.",
-              "Ignore all your feelings and stay no matter what."
+              "Sleep on it and see how you feel in the morning.",
+              "Ask your coach if you can skip a few practices."
             ],
             "correct": 0
           },
@@ -747,8 +747,8 @@
             "scenario": "Emotion says text. Logic says no. Wise?",
             "options": [
               "'I miss them AND texting hurts. Write, don't send.'",
-              "Text them right now without thinking about it.",
-              "Just suppress the whole feeling and move on today."
+              "Text a mutual friend to check how the ex is doing.",
+              "Journal for a while to figure out what you really want."
             ],
             "correct": 0
           },
@@ -763,8 +763,8 @@
             "scenario": "Emotion vs. logic on a pivot. Wise approach?",
             "options": [
               "Slow down. Listen to both. Find the third option.",
-              "Just go with pure emotion and see what happens.",
-              "Go with pure logic and ignore the feeling entirely."
+              "Make a giant pros-and-cons list and pick the winner.",
+              "Trust your gut and commit before you overthink it."
             ],
             "correct": 0
           },
@@ -779,20 +779,20 @@
       "category": "Calm Mind",
       "tiers": {
         "1": {
-          "definition": "Give worries a time slot. 'Not now — see you at 5.'",
+          "definition": "Give worries a time slot. 'Not now \u2014 see you at 5.'",
           "scenarioDoneTo": "Worrying about a trip while trying to focus in class.",
           "scenarioYouDo": "Worrying about a trip while trying to focus in class.",
           "challenge": {
             "scenario": "Worry interrupts class. Move?",
             "options": [
               "'I'll worry at 5pm for 10 minutes. Not now.'",
-              "Just worry about the whole thing all day long.",
-              "Try to force yourself to never think about it."
+              "Write the worry down and try to solve it right now.",
+              "Ask to go to the bathroom to catch your breath."
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Worries push harder when told 'no.' Give a time."
+          "tip": "Give worries a time and they get quieter."
         },
         "2": {
           "definition": "Postpone worries to a daily 15-min window.",
@@ -802,8 +802,8 @@
             "scenario": "Anxiety hijacks focus all day. Technique?",
             "options": [
               "Daily 15-min 'worry window.' Postpone the rest.",
-              "Just try to stop worrying entirely all the time.",
-              "Worry as much as it demands, right when it hits."
+              "Do a full brain dump each morning when you wake up.",
+              "Schedule 10 minutes of worry every 2 hours instead."
             ],
             "correct": 0
           },
@@ -818,8 +818,8 @@
             "scenario": "Constant low-grade worry. Structured tool?",
             "options": [
               "Daily worry appointment. Postpone. Stick to it.",
-              "Just try to think happy thoughts on demand instead.",
-              "Suppress worry whenever it comes up during the day."
+              "Meditate 20 minutes each morning to clear the mind.",
+              "Read a self-help book for a fresh reframe this week."
             ],
             "correct": 0
           },
@@ -841,8 +841,8 @@
             "scenario": "Brain stuck on negatives. What helps balance?",
             "options": [
               "List 3 good things from today. Even tiny ones.",
-              "Just focus on what went wrong the entire day.",
-              "Skip the whole bedtime routine and stay upset."
+              "Talk through everything that went wrong first.",
+              "Watch something funny to cheer yourself up now."
             ],
             "correct": 0
           },
@@ -857,8 +857,8 @@
             "scenario": "Waiting on therapy. Small daily practice?",
             "options": [
               "Nightly 3-good-things journal for two whole weeks.",
-              "Just wait passively for therapy without doing anything.",
-              "Ruminate on how bad you feel to really process it."
+              "Journal about what's making you feel down each night.",
+              "Watch mood-boosting videos before bed every night."
             ],
             "correct": 0
           },
@@ -873,8 +873,8 @@
             "scenario": "Chronic negativity bias. Retraining tool?",
             "options": [
               "Nightly 3-good-things plus 'why.' Weeks of it.",
-              "Just force yourself to feel grateful on command.",
-              "Ignore the pattern and hope it fixes on its own."
+              "Cut all social media for a month to reset the mind.",
+              "Book a big vacation to interrupt the mood pattern."
             ],
             "correct": 0
           },

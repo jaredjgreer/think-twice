@@ -13,11 +13,11 @@
           "scenarioDoneTo": "You got a B on your spelling test.",
           "scenarioYouDo": "You got a B on your spelling test.",
           "challenge": {
-            "scenario": "You got a B and think, 'I'm a total failure.' What's a truer thought?",
+            "scenario": "You got a B and think, 'I'm a total failure.' Truer thought?",
             "options": [
               "'A B means most of them were right.'",
-              "'I'm the worst speller ever born.'",
-              "'I should just quit trying at this.'"
+              "'I'm just not a smart kid at spelling.'",
+              "'Hide the test so nobody has to see it.'"
             ],
             "correct": 0
           },
@@ -32,8 +32,8 @@
             "scenario": "'One miss means I should quit the team.' Better?",
             "options": [
               "'One miss doesn't erase every make I have.'",
-              "'One miss proves I don't belong on this team.'",
-              "'I'll never shoot the ball again after this.'"
+              "'I should probably move down to a lower team.'",
+              "'I'll pretend I'm not into basketball anymore.'"
             ],
             "correct": 0
           },
@@ -48,8 +48,8 @@
             "scenario": "'My future is over.' Balanced reframe?",
             "options": [
               "'One door closed. Still have real options.'",
-              "'That was my only path in life for me.'",
-              "'I'll just skip college entirely from here.'"
+              "'Take a gap year until I figure out a new plan.'",
+              "'Reapply next year and settle for nothing less.'"
             ],
             "correct": 0
           },
@@ -70,9 +70,9 @@
           "challenge": {
             "scenario": "'They hate me.' Truer thought?",
             "options": [
-              "'Maybe they didn't see me. I'll ask.'",
-              "'They definitely hate me forever now.'",
-              "'I should end the friendship first.'"
+              "'Maybe they didn't see me. I'll ask later.'",
+              "'They're probably mad about something I said.'",
+              "'I'll avoid them for a few days to be safe.'"
             ],
             "correct": 0
           },
@@ -84,11 +84,11 @@
           "scenarioDoneTo": "You have a small headache.",
           "scenarioYouDo": "You have a small headache.",
           "challenge": {
-            "scenario": "'Something is seriously wrong with me.' Reframe?",
+            "scenario": "'Something is seriously wrong.' Reframe?",
             "options": [
               "'Probably tired, thirsty, or stressed. Check first.'",
-              "'Google every disease that causes bad headaches now.'",
-              "'Assume the very worst just to be safe here.'"
+              "'Text a friend to see if theirs feels the same.'",
+              "'Book a full checkup just to rule everything out.'"
             ],
             "correct": 0
           },
@@ -100,11 +100,11 @@
           "scenarioDoneTo": "Your boss schedules a 'quick chat.'",
           "scenarioYouDo": "Your boss schedules a 'quick chat.'",
           "challenge": {
-            "scenario": "'Chat → fired → homeless.' Grounded reframe?",
+            "scenario": "'Chat \u2192 fired \u2192 homeless.' Grounded reframe?",
             "options": [
               "'A chat could be a hundred things.'",
-              "'Update the resume and pack up now.'",
-              "'Assume the worst so I'm ready.'"
+              "'Quietly polish the resume just in case.'",
+              "'Ask a coworker what they think the chat is about.'"
             ],
             "correct": 0
           },
@@ -126,8 +126,8 @@
             "scenario": "'She thinks I'm dumb.' Truer thought?",
             "options": [
               "'She might just be scanning the whole room.'",
-              "'She definitely thinks I'm the dumbest ever.'",
-              "'I should hide and avoid her from now on.'"
+              "'Maybe she wants me to answer next question.'",
+              "'I'll look at my desk so she doesn't notice me.'"
             ],
             "correct": 0
           },
@@ -142,8 +142,8 @@
             "scenario": "'Everyone hates it.' More honest thought?",
             "options": [
               "'Most people didn't even see the post.'",
-              "'They all secretly hate the whole post.'",
-              "'I should delete it and disappear now.'"
+              "'Maybe the algorithm just buried it today.'",
+              "'Post something else quick to save my ratio.'"
             ],
             "correct": 0
           },
@@ -158,8 +158,8 @@
             "scenario": "'She wants me off the project.' Better move?",
             "options": [
               "Ask her directly: 'Hey, everything okay?'",
-              "Assume she hates my work and quietly withdraw.",
-              "Complain about her to someone else on the team."
+              "Copy her manager on your next update just in case.",
+              "Send a very cheerful message to smooth things over."
             ],
             "correct": 0
           },
@@ -181,13 +181,13 @@
             "scenario": "'I know I'll mess up.' Healthier thought?",
             "options": [
               "'I've practiced. I'll just do my best.'",
-              "'Fake sick and skip the whole thing.'",
-              "'I'll mess up big time, so why try?'"
+              "'Study my lines one more time backstage.'",
+              "'Ask to trade for a smaller part right now.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "You don't have a crystal ball. Future isn't written."
+          "tip": "You don't have a crystal ball."
         },
         "2": {
           "definition": "So sure it fails you don't try. Never find out.",
@@ -197,8 +197,8 @@
             "scenario": "'They'll say no.' You don't ask. Reframe?",
             "options": [
               "'I don't know until I ask them.'",
-              "'They'd say no, so save the effort.'",
-              "'I'll wait for them to ask me first.'"
+              "'Ask a mutual friend to feel it out first.'",
+              "'Wait until we're both in a group setting.'"
             ],
             "correct": 0
           },
@@ -213,13 +213,13 @@
             "scenario": "'They'll never hire me.' Reframe?",
             "options": [
               "'Not applying guarantees I don't get it.'",
-              "'They'd never pick me, don't waste time.'",
-              "'Wait until I feel fully qualified' (never).'"
+              "'Add another certification and apply next quarter.'",
+              "'Apply for a smaller role at the same company first.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Predicted rejection isn't real rejection. Try to know."
+          "tip": "Predicted rejection isn't real rejection."
         }
       }
     },
@@ -236,8 +236,8 @@
             "scenario": "'She's mad at me.' More likely?",
             "options": [
               "'She's tired or stressed. Not about me.'",
-              "'It's definitely all my fault this morning.'",
-              "'Hide out until she's cheered up again.'"
+              "'Ask her softly what I might have done wrong.'",
+              "'Do all my chores so she has less to be upset about.'"
             ],
             "correct": 0
           },
@@ -252,8 +252,8 @@
             "scenario": "'It's because of me.' Truer thought?",
             "options": [
               "'Adults have their own stuff. Not mine.'",
-              "'If I was better they wouldn't be fighting.'",
-              "'I need to be the perfect kid always.'"
+              "'Try to distract them so they stop arguing.'",
+              "'Be extra good for a week to help ease things.'"
             ],
             "correct": 0
           },
@@ -268,8 +268,8 @@
             "scenario": "'It's entirely my fault.' Reframe?",
             "options": [
               "'What was mine? What was outside my control?'",
-              "'Yeah, it's completely on me for sure.'",
-              "'I should just quit my job right now.'"
+              "'Work weekends until I've made up the whole miss.'",
+              "'Take full accountability at the retro to look strong.'"
             ],
             "correct": 0
           },
@@ -291,13 +291,13 @@
             "scenario": "'I should never forget things.' More useful?",
             "options": [
               "'Everyone forgets. Set a reminder for tomorrow.'",
-              "'I'm the absolute worst. I should be perfect.'",
-              "'I'll just give up on all of school now.'"
+              "'Promise myself I'll never make this mistake again.'",
+              "'Skip lunch to redo the homework right now instead.'"
             ],
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Swap 'should' for 'next time.' Less punishing."
+          "tip": "Swap 'should' for 'next time.'"
         },
         "2": {
           "definition": "Strict inner rules that make being human feel like failing.",
@@ -307,8 +307,8 @@
             "scenario": "'I shouldn't feel nervous.' Healthier?",
             "options": [
               "'Nervous is normal. I can feel it and go.'",
-              "'I should feel absolutely nothing right now.'",
-              "'I'll just skip the whole party entirely.'"
+              "'Rehearse a few conversation starters just in case.'",
+              "'Have one drink to help the nerves calm down first.'"
             ],
             "correct": 0
           },
@@ -323,8 +323,8 @@
             "scenario": "'I shouldn't need help.' Reframe?",
             "options": [
               "'Getting help is a skill, not weakness.'",
-              "'Real adults handle it entirely alone.'",
-              "'I'll just push through this alone forever.'"
+              "'I'll try a self-help book before going to therapy.'",
+              "'Wait until things get really bad before booking one.'"
             ],
             "correct": 0
           },
@@ -346,8 +346,8 @@
             "scenario": "'I feel stupid, so I AM stupid.' Truer?",
             "options": [
               "'Feeling it doesn't make it true.'",
-              "'The feeling IS the actual fact.'",
-              "'Never raise my hand again ever.'"
+              "'Study extra tonight so tomorrow I feel smarter.'",
+              "'Sit in the back so nobody calls on me again.'"
             ],
             "correct": 0
           },
@@ -362,8 +362,8 @@
             "scenario": "'Feeling lonely means no one likes me.' Healthier?",
             "options": [
               "'Lonely right now doesn't mean no friends.'",
-              "'The feeling is the actual solid proof.'",
-              "'Give up on making friends entirely now.'"
+              "'Message a lot of people so I don't feel this way.'",
+              "'Scroll on my phone until I feel less alone at lunch.'"
             ],
             "correct": 0
           },
@@ -375,11 +375,11 @@
           "scenarioDoneTo": "You feel like a fraud at work.",
           "scenarioYouDo": "You feel like a fraud at work.",
           "challenge": {
-            "scenario": "Feeling like a fraud despite good reviews. Reframe?",
+            "scenario": "Fraud feeling despite good reviews. Reframe?",
             "options": [
               "'The feeling is real. Not always accurate.'",
-              "'My feelings clearly know the actual truth.'",
-              "'Quit now before they figure me out.'"
+              "'Take on more work to prove I actually belong here.'",
+              "'Keep quiet in meetings so nobody figures me out.'"
             ],
             "correct": 0
           },
@@ -400,9 +400,9 @@
           "challenge": {
             "scenario": "'I'm such a loser.' Truer thought?",
             "options": [
-              "'I dropped a tray. That's a moment, not me.'",
-              "'I really am a loser through and through.'",
-              "'I should be embarrassed about it forever now.'"
+              "'I dropped a tray. A moment, not who I am.'",
+              "'Skip lunch tomorrow so this doesn't happen again.'",
+              "'Practice carrying trays until I get it right always.'"
             ],
             "correct": 0
           },
@@ -417,8 +417,8 @@
             "scenario": "'I missed one, so I'm stupid.' Healthier?",
             "options": [
               "'I missed one question. I'll review it later.'",
-              "'Yep, my stupidity is confirmed for good now.'",
-              "'I'll never get anything right ever again.'"
+              "'Study 2 more hours a night to never miss again.'",
+              "'Drop down a class level so it feels easier next time.'"
             ],
             "correct": 0
           },
@@ -433,8 +433,8 @@
             "scenario": "'I'm just unlovable.' Reframe?",
             "options": [
               "'One relationship ended. That's about fit, not worth.'",
-              "'Nobody could ever really love someone like me.'",
-              "'I'll definitely be alone completely from now on.'"
+              "'Download a dating app to feel wanted again fast.'",
+              "'Change what I look like so next time works out.'"
             ],
             "correct": 0
           },
@@ -456,8 +456,8 @@
             "scenario": "'It was probably easy. Doesn't count.' Healthier?",
             "options": [
               "'I worked hard. Let this one count.'",
-              "'It was easy, so it doesn't really matter.'",
-              "'Literally anyone could have done that.'"
+              "'Sign up for a harder class to really challenge myself.'",
+              "'Redo the project just to make sure the A was earned.'"
             ],
             "correct": 0
           },
@@ -472,8 +472,8 @@
             "scenario": "'They're just being nice.' Reframe?",
             "options": [
               "'Say thanks. Let it actually land.'",
-              "'They didn't really mean any of it.'",
-              "'Argue with them about it right now.'"
+              "'Ask them to point out what could be improved.'",
+              "'Make a nicer piece so their compliment feels earned.'"
             ],
             "correct": 0
           },
@@ -488,8 +488,8 @@
             "scenario": "'They just needed to fill the role.' Reframe?",
             "options": [
               "'They picked me over others. That's earned.'",
-              "'It was purely luck, plain and simple.'",
-              "'I really don't deserve any of this.'"
+              "'Work extra hard this quarter to justify the promotion.'",
+              "'Stay humble so nobody thinks I got a big head about it.'"
             ],
             "correct": 0
           },
@@ -511,8 +511,8 @@
             "scenario": "One tease ate the whole day. Truer picture?",
             "options": [
               "'Lots of good AND one bad thing. Both real.'",
-              "'That one tease ruined the whole entire day.'",
-              "'My whole day was actually terrible.'"
+              "'Plan a comeback in case they tease me again.'",
+              "'Avoid that kid the rest of the week to be safe.'"
             ],
             "correct": 0
           },
@@ -526,9 +526,9 @@
           "challenge": {
             "scenario": "You obsess over the wrong note. Healthier?",
             "options": [
-              "'9 out of 10 were great. One miss is fine.'",
-              "'That wrong note ruined the whole entire recital.'",
-              "'I'll never perform in front of people again.'"
+              "'9 great, 1 miss. Overall a good recital.'",
+              "'Practice that song 100 more times until perfect.'",
+              "'Pick easier pieces for the next recital instead.'"
             ],
             "correct": 0
           },
@@ -542,9 +542,9 @@
           "challenge": {
             "scenario": "You spiral on the 2 negatives. Reframe?",
             "options": [
-              "'Both parts are useful. Neither cancels the other.'",
-              "'The 2 negatives are the actual real review here.'",
-              "'The 20 positives were basically just filler notes.'"
+              "'Both are useful. Neither cancels the other.'",
+              "'Draft a plan that only tackles the 2 growth notes.'",
+              "'Ask your manager for another review to be sure.'"
             ],
             "correct": 0
           },
@@ -559,15 +559,15 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "One time → 'always.' 'Always' and 'never' are giveaways.",
+          "definition": "One time \u2192 'always.' 'Always' and 'never' are giveaways.",
           "scenarioDoneTo": "One kid said no to playing today.",
           "scenarioYouDo": "One kid said no to playing today.",
           "challenge": {
             "scenario": "'Nobody EVER wants to play.' Truer?",
             "options": [
-              "'One no today. Doesn't mean everyone forever.'",
-              "'Nobody will ever want to play with me again.'",
-              "'I'll play alone forever for the rest of time.'"
+              "'One no today. Doesn't mean everyone.'",
+              "'Try three more kids in a row and see the pattern.'",
+              "'Bring a really cool toy tomorrow to change my luck.'"
             ],
             "correct": 0
           },
@@ -579,11 +579,11 @@
           "scenarioDoneTo": "One crush wasn't interested in you.",
           "scenarioYouDo": "One crush wasn't interested in you.",
           "challenge": {
-            "scenario": "'This ALWAYS happens. I'll NEVER find someone.' Reframe?",
+            "scenario": "'This ALWAYS happens.' Reframe?",
             "options": [
               "'One person, one moment. Just a data point.'",
-              "'Nobody will ever really want to be with me.'",
-              "'This is basically my whole life story now.'"
+              "'Pick someone easier next so I don't get hurt again.'",
+              "'Ask their friends what I could've done differently.'"
             ],
             "correct": 0
           },
@@ -595,11 +595,11 @@
           "scenarioDoneTo": "One pitch didn't land in the meeting.",
           "scenarioYouDo": "One pitch didn't land in the meeting.",
           "challenge": {
-            "scenario": "'I'm bad at pitching — always will be.' Reframe?",
+            "scenario": "'I'm bad at pitching \u2014 always will be.' Reframe?",
             "options": [
               "'This pitch, this audience, this specific day.'",
-              "'I'm just bad at this forever, no matter what.'",
-              "'Never pitch anything again for the rest of my life.'"
+              "'Hire a coach and rebuild my pitching from scratch.'",
+              "'Let a teammate pitch next time to be safer for now.'"
             ],
             "correct": 0
           },
@@ -618,11 +618,11 @@
           "scenarioDoneTo": "Your classmate got the lead role.",
           "scenarioYouDo": "Your classmate got the lead role.",
           "challenge": {
-            "scenario": "'They're better at everything.' Truer thought?",
+            "scenario": "'They're better at everything.' Truer?",
             "options": [
               "'Better at this. I'm good at other things.'",
-              "'They win at everything, I lose at everything ever.'",
-              "'I should just give up on doing any plays.'"
+              "'Study their acting so I can beat them next year.'",
+              "'Quietly stop hanging out with them for a while.'"
             ],
             "correct": 0
           },
@@ -637,8 +637,8 @@
             "scenario": "'Everyone seems happier than me.' Reframe?",
             "options": [
               "'My behind-scenes vs. their highlight reel.'",
-              "'They really are all better than me at life.'",
-              "'I should sit here and feel bad about myself.'"
+              "'Follow only people whose life looks worse than mine.'",
+              "'Post my own highlight reel to feel better about mine.'"
             ],
             "correct": 0
           },
@@ -653,8 +653,8 @@
             "scenario": "'I'm so far behind.' Reframe?",
             "options": [
               "'Different lanes, different timing. Mine works.'",
-              "'I really am behind at life, no doubt about it.'",
-              "'I should just quit trying entirely from here.'"
+              "'Rush to launch my own thing before I fall further.'",
+              "'Study their business plan and copy the winning parts.'"
             ],
             "correct": 0
           },
@@ -676,8 +676,8 @@
             "scenario": "'That was the WORST ever.' Truer thought?",
             "options": [
               "'Awkward for a second. Nobody will remember.'",
-              "'They'll remember this forever and ever now.'",
-              "'I can never do another presentation ever.'"
+              "'Redo the whole presentation for extra credit maybe.'",
+              "'Skip the next talk so it doesn't happen again.'"
             ],
             "correct": 0
           },
@@ -691,9 +691,9 @@
           "challenge": {
             "scenario": "You focus 100% on the C. Reframe?",
             "options": [
-              "'4 A's and 1 C. One area to improve.'",
-              "'The C ruined the entire report card for me.'",
-              "'I must actually be really bad at school.'"
+              "'4 A's + 1 C. One area to improve.'",
+              "'Drop the C class next semester to save the GPA.'",
+              "'Get a tutor and don't rest until it's an A next time.'"
             ],
             "correct": 0
           },
@@ -707,9 +707,9 @@
           "challenge": {
             "scenario": "One complaint erases a great quarter. Reframe?",
             "options": [
-              "'Great quarter plus one issue. Both are true.'",
-              "'The complaint is basically the whole story here.'",
-              "'The entire quarter was a real failure for me.'"
+              "'Great quarter plus one issue. Both true.'",
+              "'Personally follow up with that client every week now.'",
+              "'Downplay the win to your boss so you seem humble.'"
             ],
             "correct": 0
           },
@@ -731,8 +731,8 @@
             "scenario": "'It's YOUR fault!' What's healthier?",
             "options": [
               "'We lost as a team. What can we fix?'",
-              "'It's all their fault, no doubt about it.'",
-              "'Never playing with them again for sure.'"
+              "'Call out the two players who played worst today.'",
+              "'Get on the coach so they benches those players.'"
             ],
             "correct": 0
           },
@@ -744,11 +744,11 @@
           "scenarioDoneTo": "You bombed a chemistry test.",
           "scenarioYouDo": "You bombed a chemistry test.",
           "challenge": {
-            "scenario": "'The teacher is TERRIBLE. Her fault.' More accurate?",
+            "scenario": "'The teacher is TERRIBLE.' More accurate?",
             "options": [
               "'Some teaching plus I didn't prep enough.'",
-              "'She's entirely to blame here, all of it.'",
-              "'Nothing I do would help me here at all.'"
+              "'Switch out of her class before the next quarter.'",
+              "'Complain to the principal about her teaching style.'"
             ],
             "correct": 0
           },
@@ -760,11 +760,11 @@
           "scenarioDoneTo": "A big project failed.",
           "scenarioYouDo": "A big project failed.",
           "challenge": {
-            "scenario": "You swing 'all them' or 'all me.' Reframe?",
+            "scenario": "'All them' or 'all me.' Reframe?",
             "options": [
               "'My part, their part, context. All useful info.'",
-              "'Just blame someone else for the whole thing.'",
-              "'Take 100% blame myself for all of it.'"
+              "'Write a memo naming each team member's specific miss.'",
+              "'Take the full blame publicly so the team looks strong.'"
             ],
             "correct": 0
           },
@@ -786,8 +786,8 @@
             "scenario": "'That's not fair!' What's helpful next?",
             "options": [
               "'Mention it calmly, then enjoy my own slice.'",
-              "'Just ruin dessert for absolutely everyone here.'",
-              "'Stay mad about this forever and ever now.'"
+              "'Ask mom to make sure they get the small piece next.'",
+              "'Take a bite off theirs when they aren't looking.'"
             ],
             "correct": 0
           },
@@ -802,8 +802,8 @@
             "scenario": "You stay furious for weeks. Reframe?",
             "options": [
               "'Unfair. Name it. Learn. Stop owning it.'",
-              "'I'll just be really mad about this forever.'",
-              "'Never do group work with anyone ever again.'"
+              "'Ask the teacher to weight the grades individually now.'",
+              "'Refuse to be in a group with those kids ever again.'"
             ],
             "correct": 0
           },
@@ -815,11 +815,11 @@
           "scenarioDoneTo": "A colleague got promoted before you.",
           "scenarioYouDo": "A colleague got promoted before you.",
           "challenge": {
-            "scenario": "You're still bitter months later. Reframe?",
+            "scenario": "Still bitter months later. Reframe?",
             "options": [
               "'It was unfair. Now what's my next move?'",
-              "'Just stay bitter and hope karma hits them.'",
-              "'Nothing will ever be fair in this life for me.'"
+              "'Confront your manager about being passed over.'",
+              "'Start job hunting to punish them for the decision.'"
             ],
             "correct": 0
           },
@@ -841,8 +841,8 @@
             "scenario": "'I'm in HUGE trouble!' Healthier?",
             "options": [
               "'Could be a hundred things. I'll find out.'",
-              "'Definitely prepare for the very worst outcome.'",
-              "'Hide out until they just forget about it.'"
+              "'Start apologizing before they even say anything.'",
+              "'Rehearse a defense for the worst thing I've done.'"
             ],
             "correct": 0
           },
@@ -857,8 +857,8 @@
             "scenario": "'Ghosted forever.' Truer thought?",
             "options": [
               "'People are busy. 20 minutes is nothing.'",
-              "'Definitely ghosted, no question about it now.'",
-              "'Never text this person ever again after this.'"
+              "'Send a second message so they know you're around.'",
+              "'Post something cool so they see you're doing fine.'"
             ],
             "correct": 0
           },
@@ -873,8 +873,8 @@
             "scenario": "'I'm being fired.' Reframe?",
             "options": [
               "'HR emails cover a lot. I'll read it first.'",
-              "'Update the resume right now, don't wait for it.'",
-              "'Confront my manager preemptively about it now.'"
+              "'Ask a coworker if they got the same message too.'",
+              "'Save all your work files locally just in case.'"
             ],
             "correct": 0
           },
@@ -896,8 +896,8 @@
             "scenario": "'I ruined it.' Truer thought?",
             "options": [
               "'Weather isn't mine. Fun indoors instead.'",
-              "'I somehow ruined the whole day for everyone.'",
-              "'Nothing good ever really happens to me anyway.'"
+              "'Reschedule the party for a sunny weekend soon.'",
+              "'Apologize to every guest for the bad weather today.'"
             ],
             "correct": 0
           },
@@ -912,8 +912,8 @@
             "scenario": "'I have to keep everyone happy.' Healthier?",
             "options": [
               "'I influence the vibe. Not everyone's feelings.'",
-              "'It's all on me to fix this for everyone now.'",
-              "'Make everyone happy always, no matter what.'"
+              "'Plan a group activity that everyone will love.'",
+              "'Text each person separately to check on them.'"
             ],
             "correct": 0
           },
@@ -928,8 +928,8 @@
             "scenario": "'Only I can do it right.' Reframe?",
             "options": [
               "'What can I delegate plus coach vs. own?'",
-              "'Only I can actually do it correctly here.'",
-              "'Just give up and disengage from all of it.'"
+              "'Add another checkpoint each day to catch any issues.'",
+              "'Work late every night so I can review each item myself.'"
             ],
             "correct": 0
           },
