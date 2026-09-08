@@ -1114,13 +1114,16 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
     const text = document.getElementById('calm-orb-text');
     const instr = document.getElementById('calm-instruction');
     const steps = [
-      { n: '5', sense: 'THINGS YOU SEE', hint: 'Look around. Name 5 things you can see right now.' },
-      { n: '4', sense: 'THINGS YOU TOUCH', hint: 'Notice 4 things you can feel — your feet, the chair, your clothes.' },
-      { n: '3', sense: 'THINGS YOU HEAR', hint: 'Listen for 3 sounds — near or far.' },
-      { n: '2', sense: 'THINGS YOU SMELL', hint: 'Name 2 things you can smell (or two you like).' },
-      { n: '1', sense: 'THING YOU TASTE', hint: 'Notice 1 taste in your mouth.' },
-      { n: '★', sense: 'YOU\'RE HERE', hint: 'Nice. You are right here, right now.' }
+      { n: '5', sense: 'THINGS YOU SEE',   hint: 'Look around slowly. Name 5 things you can see \u2014 shapes, colors, small details.', pause: 'Take your time. There\u2019s no rush.' },
+      { n: '4', sense: 'THINGS YOU TOUCH', hint: 'Notice 4 things you can feel \u2014 your feet, the chair, your clothes, the air on your skin.', pause: 'Really feel them. Warm? Cool? Rough? Smooth?' },
+      { n: '3', sense: 'THINGS YOU HEAR',  hint: 'Listen for 3 sounds \u2014 near or far. The sounds that were always there.', pause: 'Some sounds are loud, some are tiny. Both count.' },
+      { n: '2', sense: 'THINGS YOU SMELL', hint: 'Name 2 things you can smell (or two smells you love).', pause: 'A slow sniff in. What\u2019s there?' },
+      { n: '1', sense: 'THING YOU TASTE',  hint: 'Notice 1 taste in your mouth.', pause: 'Even faint tastes count.' },
+      { n: '\u2605', sense: 'YOU\u2019RE HERE', hint: 'Nice work. You are right here, right now.', pause: 'Take one more slow breath.' }
     ];
+    // Each grounding step is 22s: 10s to notice + 12s pause/reflect.
+    const NOTICE_MS = 10000;
+    const PAUSE_MS = 12000;
     function tick() {
       if (calmStep >= steps.length) {
         stopCalmExercise();
@@ -1130,11 +1133,19 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
         return;
       }
       const s = steps[calmStep];
+      // Notice phase.
       orb.className = 'calm-orb inhale';
       text.textContent = s.n + '\n' + s.sense;
       instr.textContent = s.hint;
-      calmStep++;
-      calmTimer = setTimeout(tick, 12000);
+      calmTimer = setTimeout(() => {
+        // Pause / reflect phase.
+        orb.className = 'calm-orb';
+        instr.textContent = s.pause;
+        calmTimer = setTimeout(() => {
+          calmStep++;
+          tick();
+        }, PAUSE_MS);
+      }, NOTICE_MS);
     }
     tick();
   }
@@ -1165,11 +1176,18 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
         creditCalmCompletion();
         return;
       }
+      // Notice phase (orb expanded), then pause (orb relaxed) before the next spot.
       orb.className = 'calm-orb inhale';
       text.textContent = spots[calmStep];
       instr.textContent = hints[calmStep];
-      calmStep++;
-      calmTimer = setTimeout(tick, 8000);
+      calmTimer = setTimeout(() => {
+        orb.className = 'calm-orb';
+        instr.textContent = 'Rest here for a moment.';
+        calmTimer = setTimeout(() => {
+          calmStep++;
+          tick();
+        }, 4000);
+      }, 8000);
     }
     tick();
   }
@@ -1193,7 +1211,7 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
           if (calmExercise === 'grounding') startGrounding();
           else if (calmExercise === 'body-scan') startBodyScan();
           else startBoxBreathing();
-        }, 500);
+        }, 1200);
       });
     });
     document.getElementById('btn-calm-stop').addEventListener('click', () => {
