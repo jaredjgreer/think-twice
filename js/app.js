@@ -962,15 +962,8 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
 
   function resetCalmCorner() {
     stopCalmExercise();
-    calmExercise = 'box-breathing';
-    document.querySelectorAll('.calm-option').forEach(b => b.classList.remove('selected'));
-    const first = document.querySelector('.calm-option[data-exercise="box-breathing"]');
-    if (first) first.classList.add('selected');
-    document.getElementById('calm-orb').className = 'calm-orb';
-    document.getElementById('calm-orb-text').textContent = 'TAP START';
-    document.getElementById('calm-instruction').textContent = 'Pick an exercise, then press start.';
-    document.getElementById('btn-calm-start').style.display = '';
-    document.getElementById('btn-calm-stop').style.display = 'none';
+    calmExercise = null;
+    document.getElementById('calm-instruction').textContent = 'Tap a bubble to begin.';
   }
 
   function stopCalmExercise() {
@@ -979,8 +972,13 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
       calmTimer = null;
     }
     calmStep = 0;
-    document.getElementById('calm-orb').className = 'calm-orb';
-    document.getElementById('btn-calm-start').style.display = '';
+    // Reset orb + bubbles state.
+    const orb = document.getElementById('calm-orb');
+    orb.className = 'calm-orb';
+    orb.style.display = 'none';
+    const bubbles = document.getElementById('calm-bubbles');
+    bubbles.classList.remove('exercising');
+    document.querySelectorAll('.calm-bubble').forEach(b => b.classList.remove('bubble-away'));
     document.getElementById('btn-calm-stop').style.display = 'none';
   }
 
@@ -1090,28 +1088,32 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
   }
 
   function wireCalmCornerEvents() {
-    document.querySelectorAll('.calm-option').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.calm-option').forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
-        calmExercise = btn.dataset.exercise;
-        stopCalmExercise();
+    document.querySelectorAll('.calm-bubble').forEach(bubble => {
+      bubble.addEventListener('click', () => {
+        if (calmTimer) return; // ignore if an exercise is already running
+        calmExercise = bubble.dataset.exercise;
+        // Fly the other bubbles away.
+        document.querySelectorAll('.calm-bubble').forEach(b => {
+          if (b !== bubble) b.classList.add('bubble-away');
+        });
+        // After the outbound animation, hide bubbles + reveal orb + kick off exercise.
+        setTimeout(() => {
+          document.getElementById('calm-bubbles').classList.add('exercising');
+          const orb = document.getElementById('calm-orb');
+          orb.style.display = '';
+          document.getElementById('btn-calm-stop').style.display = '';
+          calmStep = 0;
+          if (calmExercise === 'grounding') startGrounding();
+          else if (calmExercise === 'body-scan') startBodyScan();
+          else startBoxBreathing();
+        }, 500);
       });
-    });
-    document.getElementById('btn-calm-start').addEventListener('click', () => {
-      calmStep = 0;
-      document.getElementById('btn-calm-start').style.display = 'none';
-      document.getElementById('btn-calm-stop').style.display = '';
-      if (calmExercise === 'grounding') startGrounding();
-      else if (calmExercise === 'body-scan') startBodyScan();
-      else startBoxBreathing();
     });
     document.getElementById('btn-calm-stop').addEventListener('click', () => {
       // Credit if the user completed at least 3 full cycles / meaningful practice.
       if (calmExercise === 'box-breathing' && calmStep >= 12) creditCalmCompletion();
       stopCalmExercise();
-      document.getElementById('calm-orb-text').textContent = 'TAP START';
-      document.getElementById('calm-instruction').textContent = 'Pick an exercise, then press start.';
+      document.getElementById('calm-instruction').textContent = 'Tap a bubble to begin.';
     });
     document.getElementById('btn-calm-home').addEventListener('click', () => {
       stopCalmExercise();

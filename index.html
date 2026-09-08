@@ -46,28 +46,27 @@
       <div class="calm-title glow-cyan">🌿 CALM CORNER</div>
       <div style="width:60px;"></div>
     </div>
-    <div class="calm-exercise-select">
-      <button class="calm-option selected" data-exercise="box-breathing">
-        <span class="calm-name">🫁 BOX BREATHING</span>
-        <span class="calm-desc">4 in · 4 hold · 4 out · 4 hold</span>
-      </button>
-      <button class="calm-option" data-exercise="grounding">
-        <span class="calm-name">🌱 5-4-3-2-1 GROUNDING</span>
-        <span class="calm-desc">Notice your senses</span>
-      </button>
-      <button class="calm-option" data-exercise="body-scan">
-        <span class="calm-name">💆 BODY SCAN</span>
-        <span class="calm-desc">Notice head to toes</span>
-      </button>
-    </div>
     <div id="calm-stage" class="calm-stage">
-      <div id="calm-orb" class="calm-orb">
-        <div id="calm-orb-text" class="calm-orb-text">TAP START</div>
+      <div id="calm-bubbles" class="calm-bubbles">
+        <button class="calm-bubble bubble-1" data-exercise="box-breathing">
+          <span class="bubble-emoji">🫁</span>
+          <span class="bubble-label">BOX<br>BREATHING</span>
+        </button>
+        <button class="calm-bubble bubble-2" data-exercise="grounding">
+          <span class="bubble-emoji">🌱</span>
+          <span class="bubble-label">5-4-3-2-1<br>GROUNDING</span>
+        </button>
+        <button class="calm-bubble bubble-3" data-exercise="body-scan">
+          <span class="bubble-emoji">💆</span>
+          <span class="bubble-label">BODY<br>SCAN</span>
+        </button>
       </div>
-      <div id="calm-instruction" class="calm-instruction">Pick an exercise, then press start.</div>
+      <div id="calm-orb" class="calm-orb" style="display:none;">
+        <div id="calm-orb-text" class="calm-orb-text"></div>
+      </div>
+      <div id="calm-instruction" class="calm-instruction">Tap a bubble to begin.</div>
     </div>
     <div class="calm-controls">
-      <button id="btn-calm-start" class="btn btn-green">START</button>
       <button id="btn-calm-stop" class="btn" style="display:none;">STOP</button>
     </div>
   </div>
