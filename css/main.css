@@ -48,7 +48,10 @@ html, body {
 
 .home-screen {
   justify-content: flex-start;
-  padding: 5vh 30px 30px;
+  padding:
+    max(5vh, calc(env(safe-area-inset-top, 0px) + 24px))
+    clamp(20px, 5vw, 48px)
+    calc(env(safe-area-inset-bottom, 0px) + 32px);
   gap: 20px;
 }
 
@@ -195,7 +198,10 @@ html, body {
 
 .setup-screen {
   justify-content: flex-start;
-  padding: 30px;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + 24px)
+    clamp(16px, 5vw, 48px)
+    calc(env(safe-area-inset-bottom, 0px) + 32px);
   gap: 20px;
 }
 
@@ -398,6 +404,11 @@ html, body {
   z-index: 1000;
   justify-content: center;
   align-items: center;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + 12px)
+    calc(env(safe-area-inset-right, 0px) + 12px)
+    calc(env(safe-area-inset-bottom, 0px) + 12px)
+    calc(env(safe-area-inset-left, 0px) + 12px);
 }
 
 .modal-overlay.active {
@@ -715,7 +726,10 @@ html, body {
 
 .game-screen {
   justify-content: flex-start;
-  padding: 10px 16px 16px;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + 10px)
+    clamp(12px, 3vw, 32px)
+    calc(env(safe-area-inset-bottom, 0px) + 16px);
   gap: 8px;
 }
 
@@ -911,6 +925,11 @@ html, body {
   z-index: 2000;
   justify-content: center;
   align-items: center;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + 8px)
+    calc(env(safe-area-inset-right, 0px) + 8px)
+    calc(env(safe-area-inset-bottom, 0px) + 8px)
+    calc(env(safe-area-inset-left, 0px) + 8px);
 }
 
 .challenge-overlay.active {
@@ -1071,6 +1090,10 @@ html, body {
 .pass-screen {
   justify-content: center;
   gap: 24px;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + 24px)
+    clamp(20px, 6vw, 60px)
+    calc(env(safe-area-inset-bottom, 0px) + 24px);
 }
 
 .pass-screen .pass-emoji {
@@ -1106,7 +1129,10 @@ html, body {
 .gameover-screen {
   justify-content: center;
   gap: 20px;
-  padding: 30px;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + 24px)
+    clamp(20px, 5vw, 48px)
+    calc(env(safe-area-inset-bottom, 0px) + 32px);
 }
 
 .gameover-title {
@@ -1531,8 +1557,36 @@ html, body {
   .challenge-box .bias-title { font-size: 12px; }
 }
 
+/* Tablets — keep readable line lengths */
+@media (min-width: 700px) {
+  .home-screen,
+  .setup-screen,
+  .gameover-screen {
+    gap: 24px;
+  }
+  .home-screen .press-start { font-size: 18px; }
+  .game-title { font-size: 36px; }
+  .title-emoji { font-size: 64px; }
+  .game-subtitle { font-size: 12px; }
+  .setup-title { font-size: 16px; }
+  .high-scores,
+  .player-list { max-width: 560px; }
+  .deck-selector,
+  .grid-selector,
+  .mode-selector { max-width: 560px; margin-left: auto; margin-right: auto; }
+}
+
+/* Desktop — cap content, add breathing room */
 @media (min-width: 1024px) {
   .card-grid { max-width: 900px; }
+  .home-screen { padding-top: 8vh; }
+  .high-scores,
+  .player-list { max-width: 640px; }
+  .deck-selector,
+  .grid-selector,
+  .mode-selector { max-width: 640px; }
+  .home-buttons { max-width: 560px; margin-left: auto; margin-right: auto; }
+  .modal { max-width: min(90vw, 640px); }
 }
 
 /* ─── LANDSCAPE MODE ─── */
@@ -1634,6 +1688,10 @@ html, body {
 /* ─── Mute Button ─── */
 
 .mute-btn {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 12px);
+  right: calc(env(safe-area-inset-right, 0px) + 12px);
+  z-index: 1000;
   font-size: 20px !important;
   background: rgba(10, 10, 15, 0.7) !important;
   border: 1px solid var(--text-dim) !important;
@@ -1652,7 +1710,9 @@ html, body {
   height: 100vh;
   height: 100dvh;
   background: var(--bg-dark);
-  padding: 0;
+  padding:
+    env(safe-area-inset-top, 0px) 0
+    env(safe-area-inset-bottom, 0px) 0;
 }
 
 .tutor-topbar {
@@ -1808,7 +1868,9 @@ html, body {
 
 .calm-corner-screen {
   align-items: center;
-  padding: 0;
+  padding:
+    env(safe-area-inset-top, 0px) 0
+    calc(env(safe-area-inset-bottom, 0px) + 8px) 0;
   background: linear-gradient(180deg, var(--bg-dark) 0%, #061826 100%);
 }
 

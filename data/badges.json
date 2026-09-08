@@ -1,0 +1,172 @@
+{
+  "badges": [
+    {
+      "id": "first-answer",
+      "emoji": "🎯",
+      "name": "First Answer",
+      "desc": "Answered your first challenge correctly.",
+      "type": "any-correct",
+      "count": 1
+    },
+    {
+      "id": "brain-warming-up",
+      "emoji": "🧠",
+      "name": "Brain Warming Up",
+      "desc": "10 correct answers, any deck.",
+      "type": "any-correct",
+      "count": 10
+    },
+    {
+      "id": "brain-online",
+      "emoji": "⚡",
+      "name": "Brain Online",
+      "desc": "50 correct answers, any deck.",
+      "type": "any-correct",
+      "count": 50
+    },
+    {
+      "id": "brain-boss",
+      "emoji": "👑",
+      "name": "Brain Boss",
+      "desc": "200 correct answers. You're a Think Twice pro.",
+      "type": "any-correct",
+      "count": 200
+    },
+    {
+      "id": "bias-spotter",
+      "emoji": "🛡",
+      "name": "Bias Spotter",
+      "desc": "10 correct on Cognitive Biases.",
+      "type": "deck-correct",
+      "deck": "cognitive-biases",
+      "count": 10
+    },
+    {
+      "id": "bias-buster",
+      "emoji": "🔎",
+      "name": "Bias Buster",
+      "desc": "25 correct on Cognitive Biases.",
+      "type": "deck-correct",
+      "deck": "cognitive-biases",
+      "count": 25
+    },
+    {
+      "id": "trap-detector",
+      "emoji": "🪤",
+      "name": "Trap Detector",
+      "desc": "10 correct on Thinking Traps.",
+      "type": "deck-correct",
+      "deck": "cbt-distortions",
+      "count": 10
+    },
+    {
+      "id": "reframe-master",
+      "emoji": "🔄",
+      "name": "Reframe Master",
+      "desc": "25 correct on Thinking Traps.",
+      "type": "deck-correct",
+      "deck": "cbt-distortions",
+      "count": 25
+    },
+    {
+      "id": "feelings-namer",
+      "emoji": "❤️",
+      "name": "Feelings Namer",
+      "desc": "10 correct on Feelings deck.",
+      "type": "deck-correct",
+      "deck": "emotional-intelligence",
+      "count": 10
+    },
+    {
+      "id": "emotion-sensei",
+      "emoji": "🌈",
+      "name": "Emotion Sensei",
+      "desc": "25 correct on Feelings deck.",
+      "type": "deck-correct",
+      "deck": "emotional-intelligence",
+      "count": 25
+    },
+    {
+      "id": "toolkit-starter",
+      "emoji": "🧰",
+      "name": "Toolkit Starter",
+      "desc": "10 correct on Coping Toolkit.",
+      "type": "deck-correct",
+      "deck": "coping-toolkit",
+      "count": 10
+    },
+    {
+      "id": "coping-champ",
+      "emoji": "💪",
+      "name": "Coping Champ",
+      "desc": "25 correct on Coping Toolkit.",
+      "type": "deck-correct",
+      "deck": "coping-toolkit",
+      "count": 25
+    },
+    {
+      "id": "streak-3",
+      "emoji": "🔥",
+      "name": "On a Roll",
+      "desc": "Hit a 3-in-a-row streak.",
+      "type": "streak",
+      "count": 3
+    },
+    {
+      "id": "streak-5",
+      "emoji": "🚀",
+      "name": "Streak Sensei",
+      "desc": "Hit a 5-in-a-row streak.",
+      "type": "streak",
+      "count": 5
+    },
+    {
+      "id": "streak-10",
+      "emoji": "🌟",
+      "name": "Unstoppable",
+      "desc": "Hit a 10-in-a-row streak.",
+      "type": "streak",
+      "count": 10
+    },
+    {
+      "id": "first-game",
+      "emoji": "🎮",
+      "name": "First Game",
+      "desc": "Finished your first game.",
+      "type": "games",
+      "count": 1
+    },
+    {
+      "id": "ten-games",
+      "emoji": "🏅",
+      "name": "Regular Player",
+      "desc": "Played 10 games.",
+      "type": "games",
+      "count": 10
+    },
+    {
+      "id": "calm-visitor",
+      "emoji": "🌿",
+      "name": "Calm Visitor",
+      "desc": "Finished an exercise in the Calm Corner.",
+      "type": "calm-corner",
+      "count": 1
+    },
+    {
+      "id": "calm-regular",
+      "emoji": "🍃",
+      "name": "Calm Regular",
+      "desc": "Finished 5 Calm Corner exercises.",
+      "type": "calm-corner",
+      "count": 5
+    },
+    {
+      "id": "curious-mind",
+      "emoji": "💡",
+      "name": "Curious Mind",
+      "desc": "Explored 3 different decks.",
+      "type": "decks-touched",
+      "count": 3
+    }
+  ]
+}

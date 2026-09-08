@@ -135,6 +135,41 @@ const Storage = (() => {
     localStorage.removeItem(KEYS.GAME_STATE);
   }
 
+  // ─── Badges & Mastery (Phase 3 gamification) ───
+
+  function _badgeKey(playerId) { return 'tt_badges_' + playerId; }
+  function _masteryKey(playerId) { return 'tt_mastery_' + playerId; }
+
+  function getBadges(playerId) {
+    try { return JSON.parse(localStorage.getItem(_badgeKey(playerId)) || '{}'); }
+    catch { return {}; }
+  }
+
+  function awardBadge(playerId, badgeId) {
+    const badges = getBadges(playerId);
+    if (badges[badgeId]) return false;
+    badges[badgeId] = { earnedAt: Date.now() };
+    localStorage.setItem(_badgeKey(playerId), JSON.stringify(badges));
+    return true;
+  }
+
+  function getMastery(playerId) {
+    try { return JSON.parse(localStorage.getItem(_masteryKey(playerId)) || '{}'); }
+    catch { return {}; }
+  }
+
+  function recordMastery(playerId, deckId, conceptId, correct) {
+    if (!playerId || !conceptId) return;
+    const mastery = getMastery(playerId);
+    const key = deckId + ':' + conceptId;
+    const m = mastery[key] || { seen: 0, correct: 0, lastSeen: 0, deckId, conceptId };
+    m.seen++;
+    if (correct) m.correct++;
+    m.lastSeen = Date.now();
+    mastery[key] = m;
+    localStorage.setItem(_masteryKey(playerId), JSON.stringify(mastery));
+  }
+
   return {
     getPlayers,
     savePlayers,
@@ -151,6 +186,10 @@ const Storage = (() => {
     clearGameState,
     getAdminPin,
     setAdminPin,
-    saveLeaderboard
+    saveLeaderboard,
+    getBadges,
+    awardBadge,
+    getMastery,
+    recordMastery
   };
 })();
