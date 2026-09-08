@@ -1203,6 +1203,46 @@ html, body {
   color: var(--neon-red);
 }
 
+.gameover-badges {
+  width: 100%;
+  max-width: 460px;
+}
+.gameover-badges h3 {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--neon-yellow);
+  margin-bottom: 10px;
+}
+.gameover-badge-row {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  grid-template-areas: "emoji name" "emoji desc";
+  gap: 2px 10px;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--neon-yellow);
+  border-radius: 6px;
+  animation: chatFadeIn 0.3s ease-out;
+}
+.go-badge-emoji {
+  grid-area: emoji;
+  font-size: 28px;
+  align-self: center;
+}
+.go-badge-name {
+  grid-area: name;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--neon-yellow);
+}
+.go-badge-desc {
+  grid-area: desc;
+  font-family: var(--font-terminal);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
 .gameover-buttons {
   display: flex;
   gap: 16px;

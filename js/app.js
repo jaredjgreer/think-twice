@@ -16,6 +16,8 @@ const App = (() => {
   let timerInterval = null;
   let timerSeconds = 60;
   let selectedTeams = null; // null or [{ name, color, playerIds }]
+  // Accumulates newly-earned badges per player during a game, shown on game-over.
+  let sessionNewBadges = {};
 
   const DECK_FILES = {
     'cognitive-biases': 'data/cognitive-biases.json',
@@ -91,6 +93,9 @@ const App = (() => {
     updateMuteBtn();
     // Load default deck data
     await loadDecks(selectedDeckIds);
+
+    // Load badge definitions (non-blocking-ish)
+    Badges.load();
 
     // Initialize cloud sync (non-blocking)
     CloudSync.init().then(() => renderHomeLeaderboard());
@@ -251,6 +256,8 @@ const App = (() => {
     for (const id of deckIds) {
       const resp = await fetch(DECK_FILES[id]);
       const d = await resp.json();
+      // Tag each card so badges/mastery credit the right source deck.
+      d.cards.forEach(c => { c.sourceDeckId = id; });
       allCards.push(...d.cards);
       combinedName.push(d.name || id);
     }
@@ -977,6 +984,24 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
     document.getElementById('btn-calm-stop').style.display = 'none';
   }
 
+  // Credit calm-corner completion to selected players; falls back to all if none picked.
+  function creditCalmCompletion() {
+    let ids = selectedPlayerIds && selectedPlayerIds.length ? selectedPlayerIds : null;
+    if (!ids) {
+      const all = Storage.getPlayers();
+      if (all.length === 1) ids = [all[0].id];
+    }
+    if (!ids) return;
+    ids.forEach(id => {
+      const newly = Badges.recordCalmCornerFinished(id);
+      if (newly.length) {
+        const instr = document.getElementById('calm-instruction');
+        const first = newly[0];
+        if (instr) instr.textContent += `  ${first.emoji} Badge unlocked: ${first.name}!`;
+      }
+    });
+  }
+
   function startBoxBreathing() {
     const orb = document.getElementById('calm-orb');
     const text = document.getElementById('calm-orb-text');
@@ -1016,6 +1041,7 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
         stopCalmExercise();
         text.textContent = 'DONE';
         instr.textContent = 'Notice how you feel now vs. when you started.';
+        creditCalmCompletion();
         return;
       }
       const s = steps[calmStep];
@@ -1051,6 +1077,7 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
         stopCalmExercise();
         text.textContent = 'DONE';
         instr.textContent = 'You just gave your body some kind attention. Good work.';
+        creditCalmCompletion();
         return;
       }
       orb.className = 'calm-orb inhale';
@@ -1080,6 +1107,8 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
       else startBoxBreathing();
     });
     document.getElementById('btn-calm-stop').addEventListener('click', () => {
+      // Credit if the user completed at least 3 full cycles / meaningful practice.
+      if (calmExercise === 'box-breathing' && calmStep >= 12) creditCalmCompletion();
       stopCalmExercise();
       document.getElementById('calm-orb-text').textContent = 'TAP START';
       document.getElementById('calm-instruction').textContent = 'Pick an exercise, then press start.';
@@ -1110,6 +1139,26 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
       result = Game.attemptSteal(selectedIndex, cardData.challenge);
     } else {
       result = Game.answerChallenge(cardIndex, selectedIndex, cardData.challenge);
+    }
+
+    // Persist per-player mastery + award badges (skips tutor mode where no player is scoring).
+    if (!tutorModeActive && result && result.player) {
+      const gsHook = Game.getState();
+      const activeDeckId = gsHook.deckData && gsHook.deckData.deckId;
+      const cardDeckId = (cardData.card && cardData.card.biasData && cardData.card.biasData.sourceDeckId) || activeDeckId;
+      const conceptId = (cardData.card && cardData.card.biasId) || null;
+      Storage.recordMastery(result.player.id, cardDeckId, conceptId, !!result.correct);
+      if (result.correct) {
+        const newly = Badges.recordCorrect(result.player.id, cardDeckId);
+        if (result.streak) {
+          const streakNewly = Badges.recordStreak(result.player.id, result.streak);
+          newly.push(...streakNewly);
+        }
+        if (newly.length) {
+          sessionNewBadges[result.player.id] = sessionNewBadges[result.player.id] || [];
+          sessionNewBadges[result.player.id].push(...newly);
+        }
+      }
     }
 
     // Disable all options
@@ -1457,6 +1506,15 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
       CloudSync.pushScore(p.id, p.sessionScore, gs.gameMode || 'classic');
     });
 
+    // Award "games finished" badge counters — happens once per player per game.
+    sortedPlayers.forEach(p => {
+      const newly = Badges.recordGameFinished(p.id);
+      if (newly.length) {
+        sessionNewBadges[p.id] = sessionNewBadges[p.id] || [];
+        sessionNewBadges[p.id].push(...newly);
+      }
+    });
+
     document.getElementById('gameover-winner-text').innerHTML =
       `WINNER: ${Players.iconHTML(sortedPlayers[0])} ${sanitize(sortedPlayers[0].name.toUpperCase())}`;
 
@@ -1501,6 +1559,28 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
       row.textContent = (b.wasCompleted ? '✧ ' : '✗ ') + b.name;
       biasesContainer.appendChild(row);
     });
+
+    // Render newly-earned badges from this game.
+    const badgesSection = document.getElementById('gameover-badges-section');
+    const badgesList = document.getElementById('gameover-badges-list');
+    badgesList.innerHTML = '';
+    let anyBadges = false;
+    sortedPlayers.forEach(p => {
+      const list = sessionNewBadges[p.id];
+      if (!list || !list.length) return;
+      anyBadges = true;
+      const dedup = new Map(list.map(b => [b.id, b]));
+      dedup.forEach(b => {
+        const row = document.createElement('div');
+        row.className = 'gameover-badge-row';
+        row.innerHTML = `<span class="go-badge-emoji">${b.emoji}</span>` +
+          `<span class="go-badge-name">${sanitize(p.name)}: ${sanitize(b.name)}</span>` +
+          `<span class="go-badge-desc">${sanitize(b.desc)}</span>`;
+        badgesList.appendChild(row);
+      });
+    });
+    badgesSection.style.display = anyBadges ? '' : 'none';
+    sessionNewBadges = {};
 
     showScreen('gameover-screen');
   }
