@@ -1818,15 +1818,18 @@ If asked about non-educational topics, playfully steer back: "That's outside my 
 
   function renderProDeckSelector() {
     const container = document.getElementById('pro-deck-selector');
+    const section = document.getElementById('pro-deck-section');
     const enabled = getEnabledProDecks();
     container.innerHTML = '';
     if (enabled.length === 0) {
+      if (section) section.style.display = 'none';
       container.style.display = 'none';
       // Deselect any pro decks that may have been selected
       selectedDeckIds = selectedDeckIds.filter(id => !isProDeck(id));
       if (selectedDeckIds.length === 0) selectedDeckIds = ['cognitive-biases'];
       return;
     }
+    if (section) section.style.display = '';
     container.style.display = '';
     enabled.forEach(deckId => {
       const info = PRO_DECKS[deckId];

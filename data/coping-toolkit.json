@@ -1,7 +1,7 @@
 {
   "deckName": "Coping Toolkit",
   "deckId": "coping-toolkit",
-  "description": "Real skills for tough moments \u2014 pick the coping move that fits.",
+  "description": "Real skills for tough moments — pick the coping move that fits.",
   "cards": [
     {
       "id": "box-breathing",
@@ -13,7 +13,7 @@
           "scenarioDoneTo": "Heart racing before a big test.",
           "scenarioYouDo": "Heart racing before a big test.",
           "challenge": {
-            "scenario": "Racing heart, 30 seconds to reset. Best move?",
+            "scenario": "Racing heart, 30 seconds to reset. What's the best move?",
             "options": [
               "Box breathe: in 4, hold 4, out 4, hold 4.",
               "Chug water and try to push the feeling down.",
@@ -29,7 +29,7 @@
           "scenarioDoneTo": "About to walk on stage for a debate.",
           "scenarioYouDo": "About to walk on stage for a debate.",
           "challenge": {
-            "scenario": "Tight chest, seconds before going on. Best?",
+            "scenario": "Tight chest, seconds before going on. What's the best move?",
             "options": [
               "Box breathe backstage: 3 slow cycles right now.",
               "Rehearse your opening line out loud one more time.",
@@ -45,7 +45,7 @@
           "scenarioDoneTo": "Two minutes before a hard performance review.",
           "scenarioYouDo": "Two minutes before a hard performance review.",
           "challenge": {
-            "scenario": "Two minutes to regulate. Best pre-game move?",
+            "scenario": "Two minutes to regulate. What's the best pre-game move?",
             "options": [
               "5 rounds of box breathing to drop the arousal.",
               "Mentally rehearse the defense you plan to make.",
@@ -100,7 +100,7 @@
           "scenarioDoneTo": "Detaching mid-meeting, watching from outside.",
           "scenarioYouDo": "Detaching mid-meeting, watching from outside.",
           "challenge": {
-            "scenario": "Dissociating in a meeting. Discreet grounding?",
+            "scenario": "Dissociating in a meeting. What's the discreet grounding?",
             "options": [
               "Feet on floor, 5 objects, 3 sounds, one texture.",
               "Take fast shallow breaths to jolt yourself awake.",
@@ -139,7 +139,7 @@
           "scenarioDoneTo": "Crying so hard you can't catch your breath.",
           "scenarioYouDo": "Crying so hard you can't catch your breath.",
           "challenge": {
-            "scenario": "Sobbing, breath won't slow. Fast reset?",
+            "scenario": "Sobbing, breath won't slow. What's the fast reset?",
             "options": [
               "Cold water on face plus slow long exhales.",
               "Try to talk it out even through the tears.",
@@ -155,7 +155,7 @@
           "scenarioDoneTo": "In emotional crisis, can't think clearly.",
           "scenarioYouDo": "In emotional crisis, can't think clearly.",
           "challenge": {
-            "scenario": "Crisis mode. Talk therapy won't stick yet. First?",
+            "scenario": "Crisis mode. Talk therapy won't stick yet. What do you do first?",
             "options": [
               "Regulate the body first: cold, exhale, then talk.",
               "Call a friend and vent for a full 30 minutes.",
@@ -178,7 +178,7 @@
           "scenarioDoneTo": "SO frustrated with homework you want to rip it.",
           "scenarioYouDo": "SO frustrated with homework you want to rip it.",
           "challenge": {
-            "scenario": "Frustration peaking. Healthy release?",
+            "scenario": "Frustration peaking. What's the healthy release?",
             "options": [
               "Do 20 jumping jacks, then come right back.",
               "Vent to a friend on the phone for 20 minutes.",
@@ -194,7 +194,7 @@
           "scenarioDoneTo": "Wired with nervous energy before a big audition.",
           "scenarioYouDo": "Wired with nervous energy before a big audition.",
           "challenge": {
-            "scenario": "Nervous energy, big moment coming. What helps?",
+            "scenario": "Nervous energy, big moment coming. What helps here?",
             "options": [
               "5-minute brisk walk to burn off the surplus.",
               "Sit still and try to force your mind to calm.",
@@ -210,7 +210,7 @@
           "scenarioDoneTo": "Depressed for a week. Bed feels like the only option.",
           "scenarioYouDo": "Depressed for a week. Bed feels like the only option.",
           "challenge": {
-            "scenario": "Depression is heavy. Smallest useful move?",
+            "scenario": "Depression is heavy. What's the smallest useful move?",
             "options": [
               "Get outside for 10 minutes of slow walking.",
               "Journal about why you're feeling this way today.",
@@ -233,7 +233,7 @@
           "scenarioDoneTo": "You slipped up in class. Inner voice is mean.",
           "scenarioYouDo": "You slipped up in class. Inner voice is mean.",
           "challenge": {
-            "scenario": "Cruel inner voice after a slip. Better move?",
+            "scenario": "Cruel inner voice after a slip. What's the better move?",
             "options": [
               "Say to yourself: 'That was hard. You're okay.'",
               "Analyze exactly what went wrong step by step.",
@@ -249,7 +249,7 @@
           "scenarioDoneTo": "You bombed a test after studying hard.",
           "scenarioYouDo": "You bombed a test after studying hard.",
           "challenge": {
-            "scenario": "Spiraling on 'not smart enough.' Compassion move?",
+            "scenario": "Spiraling on 'not smart enough.' What's the compassion move?",
             "options": [
               "'This is hard. I can be kind to myself here.'",
               "Plan a much stricter study schedule right now.",
@@ -265,7 +265,7 @@
           "scenarioDoneTo": "Big professional mistake. Inner court in session.",
           "scenarioYouDo": "Big professional mistake. Inner court in session.",
           "challenge": {
-            "scenario": "Inner critic at full volume. Reframe?",
+            "scenario": "Inner critic at full volume. What's the reframe?",
             "options": [
               "'This is suffering. Others too. Be kind now.'",
               "Draft a detailed apology and rehearse it aloud.",
@@ -288,7 +288,7 @@
           "scenarioDoneTo": "'Nobody likes me' keeps looping after one bad day.",
           "scenarioYouDo": "'Nobody likes me' keeps looping after one bad day.",
           "challenge": {
-            "scenario": "'Nobody likes me' won't stop. Useful step?",
+            "scenario": "'Nobody likes me' won't stop. What's the useful step?",
             "options": [
               "Write it down. Ask: 'Is that really true?'",
               "Text three friends to check if they still like you.",
@@ -300,11 +300,11 @@
           "tip": "Thoughts get quieter on paper."
         },
         "2": {
-          "definition": "Situation \u2192 thought \u2192 feeling \u2192 evidence \u2192 balanced view.",
+          "definition": "Situation → thought → feeling → evidence → balanced view.",
           "scenarioDoneTo": "'I'm going to fail this class' loops all week.",
           "scenarioYouDo": "'I'm going to fail this class' loops all week.",
           "challenge": {
-            "scenario": "'I'll fail' on loop. Real intervention?",
+            "scenario": "'I'll fail' on loop. What's the real intervention?",
             "options": [
               "Thought record: catch, test, build a balanced view.",
               "Pull an all-nighter to prove you can handle it.",
@@ -320,7 +320,7 @@
           "scenarioDoneTo": "'I'm not competent' fires before every meeting.",
           "scenarioYouDo": "'I'm not competent' fires before every meeting.",
           "challenge": {
-            "scenario": "Chronic self-critical thought. CBT tool?",
+            "scenario": "Chronic self-critical thought. What's the cbt tool?",
             "options": [
               "Thought record: test evidence, build a counter.",
               "Over-prepare so nobody notices any weak spot.",
@@ -343,7 +343,7 @@
           "scenarioDoneTo": "Bummed. Friend invites you to the park.",
           "scenarioYouDo": "Bummed. Friend invites you to the park.",
           "challenge": {
-            "scenario": "Don't feel like going. Healthy move?",
+            "scenario": "Don't feel like going. What's the healthy move?",
             "options": [
               "Say yes even if you don't feel like it.",
               "Say maybe and see how you feel closer to time.",
@@ -359,7 +359,7 @@
           "scenarioDoneTo": "In a slump. Nothing feels fun anymore.",
           "scenarioYouDo": "In a slump. Nothing feels fun anymore.",
           "challenge": {
-            "scenario": "Nothing feels fun. Intervention?",
+            "scenario": "Nothing feels fun. What's the intervention?",
             "options": [
               "Schedule one small thing you used to enjoy.",
               "Read about depression to understand what's going on.",
@@ -375,7 +375,7 @@
           "scenarioDoneTo": "Depression pulled you off exercise and social life.",
           "scenarioYouDo": "Depression pulled you off exercise and social life.",
           "challenge": {
-            "scenario": "Motivation feels dead. Intervention?",
+            "scenario": "Motivation feels dead. What's the intervention?",
             "options": [
               "Schedule 1-2 small mastery activities each day.",
               "Wait until you feel a burst of energy to restart.",
@@ -398,7 +398,7 @@
           "scenarioDoneTo": "It's 11pm. You want to keep scrolling.",
           "scenarioYouDo": "It's 11pm. You want to keep scrolling.",
           "challenge": {
-            "scenario": "Late night, phone in hand. Healthy move?",
+            "scenario": "Late night, phone in hand. What's the healthy move?",
             "options": [
               "Put the phone down. Tomorrow-you will thank you.",
               "Scroll for 10 more minutes, then set an alarm.",
@@ -453,7 +453,7 @@
           "scenarioDoneTo": "Can't sleep. Worries won't stop about tomorrow.",
           "scenarioYouDo": "Can't sleep. Worries won't stop about tomorrow.",
           "challenge": {
-            "scenario": "Mind won't stop at bedtime. What helps?",
+            "scenario": "Mind won't stop at bedtime. What helps here?",
             "options": [
               "Grab paper. Write it all out for 5 minutes.",
               "Try to solve every worry in your head first.",
@@ -469,7 +469,7 @@
           "scenarioDoneTo": "Exam prep to do. Random anxieties won't stop.",
           "scenarioYouDo": "Exam prep to do. Random anxieties won't stop.",
           "challenge": {
-            "scenario": "Anxious thoughts block your studying. Move?",
+            "scenario": "Anxious thoughts block your studying. What's the move?",
             "options": [
               "Brain-dump for 10 minutes, then study clearer.",
               "Start studying and push through the anxious noise.",
@@ -485,7 +485,7 @@
           "scenarioDoneTo": "Days out from a major decision. Head full of loops.",
           "scenarioYouDo": "Days out from a major decision. Head full of loops.",
           "challenge": {
-            "scenario": "Loops before a big decision. Tool?",
+            "scenario": "Loops before a big decision. Which tool fits?",
             "options": [
               "Write the loop. Extract known / fear / action.",
               "Talk it through with three trusted advisors first.",
@@ -508,7 +508,7 @@
           "scenarioDoneTo": "You want to say something mean.",
           "scenarioYouDo": "You want to say something mean.",
           "challenge": {
-            "scenario": "Mean words on the tip of your tongue. Check?",
+            "scenario": "Mean words on the tip of your tongue. What's the check?",
             "options": [
               "'Being a good friend matters. Not this.'",
               "Take a deep breath and say it a bit softer.",
@@ -524,7 +524,7 @@
           "scenarioDoneTo": "You said you'd volunteer. Not in the mood.",
           "scenarioYouDo": "You said you'd volunteer. Not in the mood.",
           "challenge": {
-            "scenario": "Commitment vs. bad mood. Values move?",
+            "scenario": "Commitment vs. bad mood. What's the values move?",
             "options": [
               "'Being reliable matters. Go, let value pull.'",
               "Text them you'll be an hour late and stay short.",
@@ -540,7 +540,7 @@
           "scenarioDoneTo": "Anxiety blocks applying for a values-aligned role.",
           "scenarioYouDo": "Anxiety blocks applying for a values-aligned role.",
           "challenge": {
-            "scenario": "Anxiety blocks a values move. ACT move?",
+            "scenario": "Anxiety blocks a values move. What's the act move?",
             "options": [
               "Take the values action, carry anxiety with you.",
               "Prepare for six more months, then feel more ready.",
@@ -563,7 +563,7 @@
           "scenarioDoneTo": "Someone at school is being mean every day.",
           "scenarioYouDo": "Someone at school is being mean every day.",
           "challenge": {
-            "scenario": "Daily mean stuff. Scared to tell. Healthy?",
+            "scenario": "Daily mean stuff. Scared to tell. What's the healthy move?",
             "options": [
               "Tell a trusted adult. You don't handle this alone.",
               "Confront the kid yourself after school today.",
@@ -579,7 +579,7 @@
           "scenarioDoneTo": "Having really dark thoughts. Nobody knows.",
           "scenarioYouDo": "Having really dark thoughts. Nobody knows.",
           "challenge": {
-            "scenario": "Dark thoughts, told no one. Move?",
+            "scenario": "Dark thoughts, told no one. What's the move?",
             "options": [
               "Tell a trusted adult. Or call/text 988 today.",
               "Journal about it for a week and see if it lifts.",
@@ -595,7 +595,7 @@
           "scenarioDoneTo": "Months of managing serious anxiety alone.",
           "scenarioYouDo": "Months of managing serious anxiety alone.",
           "challenge": {
-            "scenario": "Solo-managing for months. Reframe?",
+            "scenario": "Solo-managing for months. What's the reframe?",
             "options": [
               "Schedule a therapist. Expert help is a skill.",
               "Try one more self-help book before spending money.",
@@ -618,7 +618,7 @@
           "scenarioDoneTo": "HUGE urge to yell mid-argument with a parent.",
           "scenarioYouDo": "HUGE urge to yell mid-argument with a parent.",
           "challenge": {
-            "scenario": "Huge urge to yell. Healthy move?",
+            "scenario": "Huge urge to yell. What's the healthy move?",
             "options": [
               "Wait 60 seconds and breathe. Urge peak passes.",
               "Try to explain calmly why you're right anyway.",
@@ -634,7 +634,7 @@
           "scenarioDoneTo": "Strong urge to text an ex who's bad for you.",
           "scenarioYouDo": "Strong urge to text an ex who's bad for you.",
           "challenge": {
-            "scenario": "Urge to send something you'd regret. Practice?",
+            "scenario": "Urge to send something you'd regret. Which practice fits?",
             "options": [
               "Rate the urge 1-10. Wait 20 min. Watch it change.",
               "Write the message but don't press send yet.",
@@ -650,7 +650,7 @@
           "scenarioDoneTo": "Recovering. A heavy craving just hit hard.",
           "scenarioYouDo": "Recovering. A heavy craving just hit hard.",
           "challenge": {
-            "scenario": "Craving hits mid-recovery. Skill?",
+            "scenario": "Craving hits mid-recovery. Which coping skill fits?",
             "options": [
               "Sit with it. Describe it. Breathe. Watch it pass.",
               "Call a friend and stay on the line until it fades.",
@@ -673,7 +673,7 @@
           "scenarioDoneTo": "Sad. You want to hide in your room all day.",
           "scenarioYouDo": "Sad. You want to hide in your room all day.",
           "challenge": {
-            "scenario": "Sadness says 'hide.' Opposite action?",
+            "scenario": "Sadness says 'hide.' What's the opposite action?",
             "options": [
               "Open curtains. Go outside. One small social thing.",
               "Journal about why you're feeling sad right now.",
@@ -689,7 +689,7 @@
           "scenarioDoneTo": "Shame after a small mistake. Want to disappear.",
           "scenarioYouDo": "Shame after a small mistake. Want to disappear.",
           "challenge": {
-            "scenario": "Shame says 'disappear.' Opposite action?",
+            "scenario": "Shame says 'disappear.' What's the opposite action?",
             "options": [
               "Stay visible. Talk. Keep eye contact. Engage.",
               "Apologize once quickly, then move on and be quiet.",
@@ -705,7 +705,7 @@
           "scenarioDoneTo": "Anxiety says skip a networking event good for goals.",
           "scenarioYouDo": "Anxiety says skip a networking event good for goals.",
           "challenge": {
-            "scenario": "Anxiety says 'skip.' Actually good for you. Move?",
+            "scenario": "Anxiety says 'skip.' Actually good for you. What's the move?",
             "options": [
               "Attend fully engaged. Not skip. Not half-in.",
               "Go for 15 minutes then leave when you feel done.",
@@ -728,7 +728,7 @@
           "scenarioDoneTo": "Feelings say quit soccer. Logic says don't.",
           "scenarioYouDo": "Feelings say quit soccer. Logic says don't.",
           "challenge": {
-            "scenario": "Feelings quit, thoughts stay. Wise mind?",
+            "scenario": "Feelings quit, thoughts stay. What's the wise mind?",
             "options": [
               "'Frustrated AND love it. Take a break, don't quit.'",
               "Sleep on it and see how you feel in the morning.",
@@ -744,7 +744,7 @@
           "scenarioDoneTo": "Emotion says text an ex. Logic says don't.",
           "scenarioYouDo": "Emotion says text an ex. Logic says don't.",
           "challenge": {
-            "scenario": "Emotion says text. Logic says no. Wise?",
+            "scenario": "Emotion says text. Logic says no. What's the wise move?",
             "options": [
               "'I miss them AND texting hurts. Write, don't send.'",
               "Text a mutual friend to check how the ex is doing.",
@@ -760,7 +760,7 @@
           "scenarioDoneTo": "Career pivot. Emotions and logic disagree.",
           "scenarioYouDo": "Career pivot. Emotions and logic disagree.",
           "challenge": {
-            "scenario": "Emotion vs. logic on a pivot. Wise approach?",
+            "scenario": "Emotion vs. logic on a pivot. What's the wise approach?",
             "options": [
               "Slow down. Listen to both. Find the third option.",
               "Make a giant pros-and-cons list and pick the winner.",
@@ -779,11 +779,11 @@
       "category": "Calm Mind",
       "tiers": {
         "1": {
-          "definition": "Give worries a time slot. 'Not now \u2014 see you at 5.'",
+          "definition": "Give worries a time slot. 'Not now — see you at 5.'",
           "scenarioDoneTo": "Worrying about a trip while trying to focus in class.",
           "scenarioYouDo": "Worrying about a trip while trying to focus in class.",
           "challenge": {
-            "scenario": "Worry interrupts class. Move?",
+            "scenario": "Worry interrupts class. What's the move?",
             "options": [
               "'I'll worry at 5pm for 10 minutes. Not now.'",
               "Write the worry down and try to solve it right now.",
@@ -799,7 +799,7 @@
           "scenarioDoneTo": "Anxious thoughts pull focus during work and hangs.",
           "scenarioYouDo": "Anxious thoughts pull focus during work and hangs.",
           "challenge": {
-            "scenario": "Anxiety hijacks focus all day. Technique?",
+            "scenario": "Anxiety hijacks focus all day. Which technique fits?",
             "options": [
               "Daily 15-min 'worry window.' Postpone the rest.",
               "Do a full brain dump each morning when you wake up.",
@@ -815,7 +815,7 @@
           "scenarioDoneTo": "General anxiety keeps you in constant low-grade worry.",
           "scenarioYouDo": "General anxiety keeps you in constant low-grade worry.",
           "challenge": {
-            "scenario": "Constant low-grade worry. Structured tool?",
+            "scenario": "Constant low-grade worry. What's the structured tool?",
             "options": [
               "Daily worry appointment. Postpone. Stick to it.",
               "Meditate 20 minutes each morning to clear the mind.",
@@ -854,7 +854,7 @@
           "scenarioDoneTo": "Low mood for weeks. Waiting on a therapy appointment.",
           "scenarioYouDo": "Low mood for weeks. Waiting on a therapy appointment.",
           "challenge": {
-            "scenario": "Waiting on therapy. Small daily practice?",
+            "scenario": "Waiting on therapy. What's the small daily practice?",
             "options": [
               "Nightly 3-good-things journal for two whole weeks.",
               "Journal about what's making you feel down each night.",
@@ -870,7 +870,7 @@
           "scenarioDoneTo": "Chronic dissatisfaction despite a good life.",
           "scenarioYouDo": "Chronic dissatisfaction despite a good life.",
           "challenge": {
-            "scenario": "Chronic negativity bias. Retraining tool?",
+            "scenario": "Chronic negativity bias. What's the retraining tool?",
             "options": [
               "Nightly 3-good-things plus 'why.' Weeks of it.",
               "Cut all social media for a month to reset the mind.",

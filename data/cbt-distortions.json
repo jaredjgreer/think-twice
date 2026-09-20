@@ -13,7 +13,7 @@
           "scenarioDoneTo": "You got a B on your spelling test.",
           "scenarioYouDo": "You got a B on your spelling test.",
           "challenge": {
-            "scenario": "You got a B and think, 'I'm a total failure.' Truer thought?",
+            "scenario": "You got a B and think, 'I'm a total failure.' What's the truer thought?",
             "options": [
               "'A B means most of them were right.'",
               "'I'm just not a smart kid at spelling.'",
@@ -29,7 +29,7 @@
           "scenarioDoneTo": "You missed one shot in the game.",
           "scenarioYouDo": "You missed one shot in the game.",
           "challenge": {
-            "scenario": "'One miss means I should quit the team.' Better?",
+            "scenario": "'One miss means I should quit the team.' What's the better move?",
             "options": [
               "'One miss doesn't erase every make I have.'",
               "'I should probably move down to a lower team.'",
@@ -45,7 +45,7 @@
           "scenarioDoneTo": "You didn't get into your top-choice college.",
           "scenarioYouDo": "You didn't get into your top-choice college.",
           "challenge": {
-            "scenario": "'My future is over.' Balanced reframe?",
+            "scenario": "'My future is over.' What's the balanced reframe?",
             "options": [
               "'One door closed. Still have real options.'",
               "'Take a gap year until I figure out a new plan.'",
@@ -68,7 +68,7 @@
           "scenarioDoneTo": "Your friend didn't wave back at you.",
           "scenarioYouDo": "Your friend didn't wave back at you.",
           "challenge": {
-            "scenario": "'They hate me.' Truer thought?",
+            "scenario": "'They hate me.' What's the truer thought?",
             "options": [
               "'Maybe they didn't see me. I'll ask later.'",
               "'They're probably mad about something I said.'",
@@ -84,7 +84,7 @@
           "scenarioDoneTo": "You have a small headache.",
           "scenarioYouDo": "You have a small headache.",
           "challenge": {
-            "scenario": "'Something is seriously wrong.' Reframe?",
+            "scenario": "'Something is seriously wrong.' What's the reframe?",
             "options": [
               "'Probably tired, thirsty, or stressed. Check first.'",
               "'Text a friend to see if theirs feels the same.'",
@@ -100,7 +100,7 @@
           "scenarioDoneTo": "Your boss schedules a 'quick chat.'",
           "scenarioYouDo": "Your boss schedules a 'quick chat.'",
           "challenge": {
-            "scenario": "'Chat \u2192 fired \u2192 homeless.' Grounded reframe?",
+            "scenario": "'Chat → fired → homeless.' What's the grounded reframe?",
             "options": [
               "'A chat could be a hundred things.'",
               "'Quietly polish the resume just in case.'",
@@ -123,7 +123,7 @@
           "scenarioDoneTo": "Your teacher glances at you.",
           "scenarioYouDo": "Your teacher glances at you.",
           "challenge": {
-            "scenario": "'She thinks I'm dumb.' Truer thought?",
+            "scenario": "'She thinks I'm dumb.' What's the truer thought?",
             "options": [
               "'She might just be scanning the whole room.'",
               "'Maybe she wants me to answer next question.'",
@@ -139,7 +139,7 @@
           "scenarioDoneTo": "Your post only got 3 likes.",
           "scenarioYouDo": "Your post only got 3 likes.",
           "challenge": {
-            "scenario": "'Everyone hates it.' More honest thought?",
+            "scenario": "'Everyone hates it.' What's the more honest thought?",
             "options": [
               "'Most people didn't even see the post.'",
               "'Maybe the algorithm just buried it today.'",
@@ -155,7 +155,7 @@
           "scenarioDoneTo": "A colleague was short in a meeting.",
           "scenarioYouDo": "A colleague was short in a meeting.",
           "challenge": {
-            "scenario": "'She wants me off the project.' Better move?",
+            "scenario": "'She wants me off the project.' What's the better move?",
             "options": [
               "Ask her directly: 'Hey, everything okay?'",
               "Copy her manager on your next update just in case.",
@@ -178,7 +178,7 @@
           "scenarioDoneTo": "You have the school play tonight.",
           "scenarioYouDo": "You have the school play tonight.",
           "challenge": {
-            "scenario": "'I know I'll mess up.' Healthier thought?",
+            "scenario": "'I know I'll mess up.' What's the healthier thought?",
             "options": [
               "'I've practiced. I'll just do my best.'",
               "'Study my lines one more time backstage.'",
@@ -194,7 +194,7 @@
           "scenarioDoneTo": "You want to ask someone to hang out.",
           "scenarioYouDo": "You want to ask someone to hang out.",
           "challenge": {
-            "scenario": "'They'll say no.' You don't ask. Reframe?",
+            "scenario": "'They'll say no.' You don't ask. What's the reframe?",
             "options": [
               "'I don't know until I ask them.'",
               "'Ask a mutual friend to feel it out first.'",
@@ -210,7 +210,7 @@
           "scenarioDoneTo": "You want to apply for a great job.",
           "scenarioYouDo": "You want to apply for a great job.",
           "challenge": {
-            "scenario": "'They'll never hire me.' Reframe?",
+            "scenario": "'They'll never hire me.' What's the reframe?",
             "options": [
               "'Not applying guarantees I don't get it.'",
               "'Add another certification and apply next quarter.'",
@@ -233,7 +233,7 @@
           "scenarioDoneTo": "Your mom seems grumpy this morning.",
           "scenarioYouDo": "Your mom seems grumpy this morning.",
           "challenge": {
-            "scenario": "'She's mad at me.' More likely?",
+            "scenario": "'She's mad at me.' What's the more likely?",
             "options": [
               "'She's tired or stressed. Not about me.'",
               "'Ask her softly what I might have done wrong.'",
@@ -249,7 +249,7 @@
           "scenarioDoneTo": "Your parents are arguing.",
           "scenarioYouDo": "Your parents are arguing.",
           "challenge": {
-            "scenario": "'It's because of me.' Truer thought?",
+            "scenario": "'It's because of me.' What's the truer thought?",
             "options": [
               "'Adults have their own stuff. Not mine.'",
               "'Try to distract them so they stop arguing.'",
@@ -265,7 +265,7 @@
           "scenarioDoneTo": "Your team missed a quarterly target.",
           "scenarioYouDo": "Your team missed a quarterly target.",
           "challenge": {
-            "scenario": "'It's entirely my fault.' Reframe?",
+            "scenario": "'It's entirely my fault.' What's the reframe?",
             "options": [
               "'What was mine? What was outside my control?'",
               "'Work weekends until I've made up the whole miss.'",
@@ -288,7 +288,7 @@
           "scenarioDoneTo": "You forgot your homework at home today.",
           "scenarioYouDo": "You forgot your homework at home today.",
           "challenge": {
-            "scenario": "'I should never forget things.' More useful?",
+            "scenario": "'I should never forget things.' What's the more useful?",
             "options": [
               "'Everyone forgets. Set a reminder for tomorrow.'",
               "'Promise myself I'll never make this mistake again.'",
@@ -304,7 +304,7 @@
           "scenarioDoneTo": "You're nervous before a party tonight.",
           "scenarioYouDo": "You're nervous before a party tonight.",
           "challenge": {
-            "scenario": "'I shouldn't feel nervous.' Healthier?",
+            "scenario": "'I shouldn't feel nervous.' What's the healthier thought?",
             "options": [
               "'Nervous is normal. I can feel it and go.'",
               "'Rehearse a few conversation starters just in case.'",
@@ -320,7 +320,7 @@
           "scenarioDoneTo": "You're skipping therapy.",
           "scenarioYouDo": "You're skipping therapy.",
           "challenge": {
-            "scenario": "'I shouldn't need help.' Reframe?",
+            "scenario": "'I shouldn't need help.' What's the reframe?",
             "options": [
               "'Getting help is a skill, not weakness.'",
               "'I'll try a self-help book before going to therapy.'",
@@ -343,7 +343,7 @@
           "scenarioDoneTo": "You got an answer wrong in class today.",
           "scenarioYouDo": "You got an answer wrong in class today.",
           "challenge": {
-            "scenario": "'I feel stupid, so I AM stupid.' Truer?",
+            "scenario": "'I feel stupid, so I AM stupid.' What's the truer thought?",
             "options": [
               "'Feeling it doesn't make it true.'",
               "'Study extra tonight so tomorrow I feel smarter.'",
@@ -359,7 +359,7 @@
           "scenarioDoneTo": "You feel lonely at lunch today.",
           "scenarioYouDo": "You feel lonely at lunch today.",
           "challenge": {
-            "scenario": "'Feeling lonely means no one likes me.' Healthier?",
+            "scenario": "'Feeling lonely means no one likes me.' What's the healthier thought?",
             "options": [
               "'Lonely right now doesn't mean no friends.'",
               "'Message a lot of people so I don't feel this way.'",
@@ -375,7 +375,7 @@
           "scenarioDoneTo": "You feel like a fraud at work.",
           "scenarioYouDo": "You feel like a fraud at work.",
           "challenge": {
-            "scenario": "Fraud feeling despite good reviews. Reframe?",
+            "scenario": "Fraud feeling despite good reviews. What's the reframe?",
             "options": [
               "'The feeling is real. Not always accurate.'",
               "'Take on more work to prove I actually belong here.'",
@@ -398,7 +398,7 @@
           "scenarioDoneTo": "You dropped your lunch tray at school.",
           "scenarioYouDo": "You dropped your lunch tray at school.",
           "challenge": {
-            "scenario": "'I'm such a loser.' Truer thought?",
+            "scenario": "'I'm such a loser.' What's the truer thought?",
             "options": [
               "'I dropped a tray. A moment, not who I am.'",
               "'Skip lunch tomorrow so this doesn't happen again.'",
@@ -414,7 +414,7 @@
           "scenarioDoneTo": "You missed one test question today.",
           "scenarioYouDo": "You missed one test question today.",
           "challenge": {
-            "scenario": "'I missed one, so I'm stupid.' Healthier?",
+            "scenario": "'I missed one, so I'm stupid.' What's the healthier thought?",
             "options": [
               "'I missed one question. I'll review it later.'",
               "'Study 2 more hours a night to never miss again.'",
@@ -430,7 +430,7 @@
           "scenarioDoneTo": "A relationship ended.",
           "scenarioYouDo": "A relationship ended.",
           "challenge": {
-            "scenario": "'I'm just unlovable.' Reframe?",
+            "scenario": "'I'm just unlovable.' What's the reframe?",
             "options": [
               "'One relationship ended. That's about fit, not worth.'",
               "'Download a dating app to feel wanted again fast.'",
@@ -453,7 +453,7 @@
           "scenarioDoneTo": "You got an A on your project.",
           "scenarioYouDo": "You got an A on your project.",
           "challenge": {
-            "scenario": "'It was probably easy. Doesn't count.' Healthier?",
+            "scenario": "'It was probably easy. Doesn't count.' What's the healthier thought?",
             "options": [
               "'I worked hard. Let this one count.'",
               "'Sign up for a harder class to really challenge myself.'",
@@ -469,7 +469,7 @@
           "scenarioDoneTo": "A friend complimented your art.",
           "scenarioYouDo": "A friend complimented your art.",
           "challenge": {
-            "scenario": "'They're just being nice.' Reframe?",
+            "scenario": "'They're just being nice.' What's the reframe?",
             "options": [
               "'Say thanks. Let it actually land.'",
               "'Ask them to point out what could be improved.'",
@@ -485,7 +485,7 @@
           "scenarioDoneTo": "You just got a big promotion.",
           "scenarioYouDo": "You just got a big promotion.",
           "challenge": {
-            "scenario": "'They just needed to fill the role.' Reframe?",
+            "scenario": "'They just needed to fill the role.' What's the reframe?",
             "options": [
               "'They picked me over others. That's earned.'",
               "'Work extra hard this quarter to justify the promotion.'",
@@ -508,7 +508,7 @@
           "scenarioDoneTo": "You had a fun day but got teased once.",
           "scenarioYouDo": "You had a fun day but got teased once.",
           "challenge": {
-            "scenario": "One tease ate the whole day. Truer picture?",
+            "scenario": "One tease ate the whole day. What's the truer picture?",
             "options": [
               "'Lots of good AND one bad thing. Both real.'",
               "'Plan a comeback in case they tease me again.'",
@@ -524,7 +524,7 @@
           "scenarioDoneTo": "You played 9 songs well and hit 1 wrong note.",
           "scenarioYouDo": "You played 9 songs well and hit 1 wrong note.",
           "challenge": {
-            "scenario": "You obsess over the wrong note. Healthier?",
+            "scenario": "You obsess over the wrong note. What's the healthier thought?",
             "options": [
               "'9 great, 1 miss. Overall a good recital.'",
               "'Practice that song 100 more times until perfect.'",
@@ -540,7 +540,7 @@
           "scenarioDoneTo": "Your review had 20 positives and 2 growth notes.",
           "scenarioYouDo": "Your review had 20 positives and 2 growth notes.",
           "challenge": {
-            "scenario": "You spiral on the 2 negatives. Reframe?",
+            "scenario": "You spiral on the 2 negatives. What's the reframe?",
             "options": [
               "'Both are useful. Neither cancels the other.'",
               "'Draft a plan that only tackles the 2 growth notes.'",
@@ -559,11 +559,11 @@
       "category": "Thinking Traps",
       "tiers": {
         "1": {
-          "definition": "One time \u2192 'always.' 'Always' and 'never' are giveaways.",
+          "definition": "One time → 'always.' 'Always' and 'never' are giveaways.",
           "scenarioDoneTo": "One kid said no to playing today.",
           "scenarioYouDo": "One kid said no to playing today.",
           "challenge": {
-            "scenario": "'Nobody EVER wants to play.' Truer?",
+            "scenario": "'Nobody EVER wants to play.' What's the truer thought?",
             "options": [
               "'One no today. Doesn't mean everyone.'",
               "'Try three more kids in a row and see the pattern.'",
@@ -579,7 +579,7 @@
           "scenarioDoneTo": "One crush wasn't interested in you.",
           "scenarioYouDo": "One crush wasn't interested in you.",
           "challenge": {
-            "scenario": "'This ALWAYS happens.' Reframe?",
+            "scenario": "'This ALWAYS happens.' What's the reframe?",
             "options": [
               "'One person, one moment. Just a data point.'",
               "'Pick someone easier next so I don't get hurt again.'",
@@ -595,7 +595,7 @@
           "scenarioDoneTo": "One pitch didn't land in the meeting.",
           "scenarioYouDo": "One pitch didn't land in the meeting.",
           "challenge": {
-            "scenario": "'I'm bad at pitching \u2014 always will be.' Reframe?",
+            "scenario": "'I'm bad at pitching — always will be.' What's the reframe?",
             "options": [
               "'This pitch, this audience, this specific day.'",
               "'Hire a coach and rebuild my pitching from scratch.'",
@@ -618,7 +618,7 @@
           "scenarioDoneTo": "Your classmate got the lead role.",
           "scenarioYouDo": "Your classmate got the lead role.",
           "challenge": {
-            "scenario": "'They're better at everything.' Truer?",
+            "scenario": "'They're better at everything.' What's the truer thought?",
             "options": [
               "'Better at this. I'm good at other things.'",
               "'Study their acting so I can beat them next year.'",
@@ -634,7 +634,7 @@
           "scenarioDoneTo": "You're scrolling social media at night.",
           "scenarioYouDo": "You're scrolling social media at night.",
           "challenge": {
-            "scenario": "'Everyone seems happier than me.' Reframe?",
+            "scenario": "'Everyone seems happier than me.' What's the reframe?",
             "options": [
               "'My behind-scenes vs. their highlight reel.'",
               "'Follow only people whose life looks worse than mine.'",
@@ -650,7 +650,7 @@
           "scenarioDoneTo": "A peer just launched a company.",
           "scenarioYouDo": "A peer just launched a company.",
           "challenge": {
-            "scenario": "'I'm so far behind.' Reframe?",
+            "scenario": "'I'm so far behind.' What's the reframe?",
             "options": [
               "'Different lanes, different timing. Mine works.'",
               "'Rush to launch my own thing before I fall further.'",
@@ -673,7 +673,7 @@
           "scenarioDoneTo": "You forgot one word in your presentation.",
           "scenarioYouDo": "You forgot one word in your presentation.",
           "challenge": {
-            "scenario": "'That was the WORST ever.' Truer thought?",
+            "scenario": "'That was the WORST ever.' What's the truer thought?",
             "options": [
               "'Awkward for a second. Nobody will remember.'",
               "'Redo the whole presentation for extra credit maybe.'",
@@ -689,7 +689,7 @@
           "scenarioDoneTo": "You got four A's and one C.",
           "scenarioYouDo": "You got four A's and one C.",
           "challenge": {
-            "scenario": "You focus 100% on the C. Reframe?",
+            "scenario": "You focus 100% on the C. What's the reframe?",
             "options": [
               "'4 A's + 1 C. One area to improve.'",
               "'Drop the C class next semester to save the GPA.'",
@@ -705,7 +705,7 @@
           "scenarioDoneTo": "You had a great quarter with one complaint.",
           "scenarioYouDo": "You had a great quarter with one complaint.",
           "challenge": {
-            "scenario": "One complaint erases a great quarter. Reframe?",
+            "scenario": "One complaint erases a great quarter. What's the reframe?",
             "options": [
               "'Great quarter plus one issue. Both true.'",
               "'Personally follow up with that client every week now.'",
@@ -744,7 +744,7 @@
           "scenarioDoneTo": "You bombed a chemistry test.",
           "scenarioYouDo": "You bombed a chemistry test.",
           "challenge": {
-            "scenario": "'The teacher is TERRIBLE.' More accurate?",
+            "scenario": "'The teacher is TERRIBLE.' What's the more accurate?",
             "options": [
               "'Some teaching plus I didn't prep enough.'",
               "'Switch out of her class before the next quarter.'",
@@ -760,7 +760,7 @@
           "scenarioDoneTo": "A big project failed.",
           "scenarioYouDo": "A big project failed.",
           "challenge": {
-            "scenario": "'All them' or 'all me.' Reframe?",
+            "scenario": "'All them' or 'all me.' What's the reframe?",
             "options": [
               "'My part, their part, context. All useful info.'",
               "'Write a memo naming each team member's specific miss.'",
@@ -799,7 +799,7 @@
           "scenarioDoneTo": "You worked hardest but got the same group grade.",
           "scenarioYouDo": "You worked hardest but got the same group grade.",
           "challenge": {
-            "scenario": "You stay furious for weeks. Reframe?",
+            "scenario": "You stay furious for weeks. What's the reframe?",
             "options": [
               "'Unfair. Name it. Learn. Stop owning it.'",
               "'Ask the teacher to weight the grades individually now.'",
@@ -815,7 +815,7 @@
           "scenarioDoneTo": "A colleague got promoted before you.",
           "scenarioYouDo": "A colleague got promoted before you.",
           "challenge": {
-            "scenario": "Still bitter months later. Reframe?",
+            "scenario": "Still bitter months later. What's the reframe?",
             "options": [
               "'It was unfair. Now what's my next move?'",
               "'Confront your manager about being passed over.'",
@@ -838,7 +838,7 @@
           "scenarioDoneTo": "Your parent says, 'Can we talk?'",
           "scenarioYouDo": "Your parent says, 'Can we talk?'",
           "challenge": {
-            "scenario": "'I'm in HUGE trouble!' Healthier?",
+            "scenario": "'I'm in HUGE trouble!' What's the healthier thought?",
             "options": [
               "'Could be a hundred things. I'll find out.'",
               "'Start apologizing before they even say anything.'",
@@ -854,7 +854,7 @@
           "scenarioDoneTo": "Your crush hasn't texted back in 20 minutes.",
           "scenarioYouDo": "Your crush hasn't texted back in 20 minutes.",
           "challenge": {
-            "scenario": "'Ghosted forever.' Truer thought?",
+            "scenario": "'Ghosted forever.' What's the truer thought?",
             "options": [
               "'People are busy. 20 minutes is nothing.'",
               "'Send a second message so they know you're around.'",
@@ -870,7 +870,7 @@
           "scenarioDoneTo": "An email from HR is marked 'sensitive.'",
           "scenarioYouDo": "An email from HR is marked 'sensitive.'",
           "challenge": {
-            "scenario": "'I'm being fired.' Reframe?",
+            "scenario": "'I'm being fired.' What's the reframe?",
             "options": [
               "'HR emails cover a lot. I'll read it first.'",
               "'Ask a coworker if they got the same message too.'",
@@ -893,7 +893,7 @@
           "scenarioDoneTo": "It rained on your birthday party.",
           "scenarioYouDo": "It rained on your birthday party.",
           "challenge": {
-            "scenario": "'I ruined it.' Truer thought?",
+            "scenario": "'I ruined it.' What's the truer thought?",
             "options": [
               "'Weather isn't mine. Fun indoors instead.'",
               "'Reschedule the party for a sunny weekend soon.'",
@@ -909,7 +909,7 @@
           "scenarioDoneTo": "There's some tension in your friend group.",
           "scenarioYouDo": "There's some tension in your friend group.",
           "challenge": {
-            "scenario": "'I have to keep everyone happy.' Healthier?",
+            "scenario": "'I have to keep everyone happy.' What's the healthier thought?",
             "options": [
               "'I influence the vibe. Not everyone's feelings.'",
               "'Plan a group activity that everyone will love.'",
@@ -925,7 +925,7 @@
           "scenarioDoneTo": "You're micromanaging every part of a project.",
           "scenarioYouDo": "You're micromanaging every part of a project.",
           "challenge": {
-            "scenario": "'Only I can do it right.' Reframe?",
+            "scenario": "'Only I can do it right.' What's the reframe?",
             "options": [
               "'What can I delegate plus coach vs. own?'",
               "'Add another checkpoint each day to catch any issues.'",

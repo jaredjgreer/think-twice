@@ -28,7 +28,7 @@
           "scenarioDoneTo": "A seller lists a used bike at $500.",
           "scenarioYouDo": "A seller lists a used bike at $500.",
           "challenge": {
-            "scenario": "You offer $400 without checking what the bike is really worth. Bias?",
+            "scenario": "You offer $400 without checking what the bike is really worth. Which bias is at play?",
             "options": [
               "Anchoring bias.",
               "Optimism bias.",
@@ -44,7 +44,7 @@
           "scenarioDoneTo": "Client opens with a $1M budget number.",
           "scenarioYouDo": "Client opens with a $1M budget number.",
           "challenge": {
-            "scenario": "You size the deal around $1M without checking scope. Bias?",
+            "scenario": "You size the deal around $1M without checking scope. Which bias is at play?",
             "options": [
               "Anchoring bias.",
               "Availability heuristic.",
@@ -66,7 +66,7 @@
           "scenarioDoneTo": "You think your teacher is unfair.",
           "scenarioYouDo": "You think your teacher is unfair.",
           "challenge": {
-            "scenario": "You only remember times she was strict, not kind. What bias?",
+            "scenario": "You only remember times she was strict, not kind. Which bias is at play?",
             "options": [
               "Confirmation bias.",
               "Anchoring bias.",
@@ -82,7 +82,7 @@
           "scenarioDoneTo": "You believe a diet works.",
           "scenarioYouDo": "You believe a diet works.",
           "challenge": {
-            "scenario": "You share success stories and skip the failures. Bias?",
+            "scenario": "You share success stories and skip the failures. Which bias is at play?",
             "options": [
               "Confirmation bias.",
               "Survivorship bias.",
@@ -98,7 +98,7 @@
           "scenarioDoneTo": "You believe the strategy will work.",
           "scenarioYouDo": "You believe the strategy will work.",
           "challenge": {
-            "scenario": "You highlight supportive data and dismiss counter-signals. Bias?",
+            "scenario": "You highlight supportive data and dismiss counter-signals. Which bias is at play?",
             "options": [
               "Confirmation bias.",
               "Anchoring bias.",
@@ -120,7 +120,7 @@
           "scenarioDoneTo": "Everyone at school loves a new game.",
           "scenarioYouDo": "Everyone at school loves a new game.",
           "challenge": {
-            "scenario": "You buy it just because your friends did. What bias?",
+            "scenario": "You buy it just because your friends did. Which bias is at play?",
             "options": [
               "Bandwagon effect.",
               "Anchoring bias.",
@@ -129,14 +129,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Popular \u2260 right for you. Ask what YOU want."
+          "tip": "Popular ≠ right for you. Ask what YOU want."
         },
         "2": {
           "definition": "Adopting a view because it's trending, not because it's true.",
           "scenarioDoneTo": "A stock is going viral online.",
           "scenarioYouDo": "A stock is going viral online.",
           "challenge": {
-            "scenario": "You buy in because 'everyone' is buying. Bias?",
+            "scenario": "You buy in because 'everyone' is buying. Which bias is at play?",
             "options": [
               "Bandwagon effect.",
               "Availability heuristic.",
@@ -152,7 +152,7 @@
           "scenarioDoneTo": "The whole industry adopts a new framework.",
           "scenarioYouDo": "The whole industry adopts a new framework.",
           "challenge": {
-            "scenario": "You adopt it too, without checking fit for your case. Bias?",
+            "scenario": "You adopt it too, without checking fit for your case. Which bias is at play?",
             "options": [
               "Bandwagon effect.",
               "Groupthink.",
@@ -174,7 +174,7 @@
           "scenarioDoneTo": "You learn one chess move.",
           "scenarioYouDo": "You learn one chess move.",
           "challenge": {
-            "scenario": "You brag you'd beat a chess champ. What bias?",
+            "scenario": "You brag you'd beat a chess champ. Which bias is at play?",
             "options": [
               "Dunning-Kruger effect.",
               "Halo effect.",
@@ -190,7 +190,7 @@
           "scenarioDoneTo": "You just started coding.",
           "scenarioYouDo": "You just started coding.",
           "challenge": {
-            "scenario": "You promise a full app in a week. Bias?",
+            "scenario": "You promise a full app in a week. Which bias is at play?",
             "options": [
               "Dunning-Kruger effect.",
               "Optimism bias.",
@@ -206,7 +206,7 @@
           "scenarioDoneTo": "A new hire debates a specialist on their turf.",
           "scenarioYouDo": "A new hire debates a specialist on their turf.",
           "challenge": {
-            "scenario": "They insist they're right without knowing what they don't know. Bias?",
+            "scenario": "They insist they're right without knowing what they don't know. Which bias is at play?",
             "options": [
               "Dunning-Kruger effect.",
               "Impostor syndrome.",
@@ -228,7 +228,7 @@
           "scenarioDoneTo": "You're watching a boring movie you paid for.",
           "scenarioYouDo": "You're watching a boring movie you paid for.",
           "challenge": {
-            "scenario": "You keep watching so it's 'not a waste.' What bias?",
+            "scenario": "You keep watching so it's 'not a waste.' Which bias is at play?",
             "options": [
               "Sunk cost fallacy.",
               "Loss aversion.",
@@ -244,7 +244,7 @@
           "scenarioDoneTo": "You've spent months on a losing hobby.",
           "scenarioYouDo": "You've spent months on a losing hobby.",
           "challenge": {
-            "scenario": "You keep going 'because you're already this far.' Bias?",
+            "scenario": "You keep going 'because you're already this far.' Which bias is at play?",
             "options": [
               "Sunk cost fallacy.",
               "Endowment effect.",
@@ -260,7 +260,7 @@
           "scenarioDoneTo": "A failing project has burned $2M already.",
           "scenarioYouDo": "A failing project has burned $2M already.",
           "challenge": {
-            "scenario": "You add $500K to 'save' the $2M. Bias?",
+            "scenario": "You add $500K to 'save' the $2M. Which bias is at play?",
             "options": [
               "Sunk cost fallacy.",
               "Loss aversion.",
@@ -282,7 +282,7 @@
           "scenarioDoneTo": "You saw a news story about a shark attack.",
           "scenarioYouDo": "You saw a news story about a shark attack.",
           "challenge": {
-            "scenario": "You're scared to swim, though attacks are super rare. What bias?",
+            "scenario": "You're scared to swim, though attacks are super rare. Which bias is at play?",
             "options": [
               "Availability heuristic.",
               "Optimism bias.",
@@ -291,14 +291,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Easy to picture \u2260 likely."
+          "tip": "Easy to picture ≠ likely."
         },
         "2": {
           "definition": "Recent or vivid examples feel more common than they are.",
           "scenarioDoneTo": "A plane crash is in the news.",
           "scenarioYouDo": "A plane crash is in the news.",
           "challenge": {
-            "scenario": "You feel scared to fly, though driving is riskier. Bias?",
+            "scenario": "You feel scared to fly, though driving is riskier. Which bias is at play?",
             "options": [
               "Availability heuristic.",
               "Negativity bias.",
@@ -314,7 +314,7 @@
           "scenarioDoneTo": "Everyone remembers the one competitor that failed.",
           "scenarioYouDo": "Everyone remembers the one competitor that failed.",
           "challenge": {
-            "scenario": "You plan around that story instead of the actual data. Bias?",
+            "scenario": "You plan around that story instead of the actual data. Which bias is at play?",
             "options": [
               "Availability heuristic.",
               "Survivorship bias.",
@@ -336,7 +336,7 @@
           "scenarioDoneTo": "A kid is good at soccer.",
           "scenarioYouDo": "A kid is good at soccer.",
           "challenge": {
-            "scenario": "You assume they're good at math too. What bias?",
+            "scenario": "You assume they're good at math too. Which bias is at play?",
             "options": [
               "Halo effect.",
               "Bandwagon effect.",
@@ -352,7 +352,7 @@
           "scenarioDoneTo": "An attractive person applies for a job.",
           "scenarioYouDo": "An attractive person applies for a job.",
           "challenge": {
-            "scenario": "You rate their skills higher without checking. Bias?",
+            "scenario": "You rate their skills higher without checking. Which bias is at play?",
             "options": [
               "Halo effect.",
               "Attractiveness bias.",
@@ -368,7 +368,7 @@
           "scenarioDoneTo": "A CEO grew revenue 3x last year.",
           "scenarioYouDo": "A CEO grew revenue 3x last year.",
           "challenge": {
-            "scenario": "You assume they're also a great culture builder. Bias?",
+            "scenario": "You assume they're also a great culture builder. Which bias is at play?",
             "options": [
               "Halo effect.",
               "Outcome bias.",
@@ -390,7 +390,7 @@
           "scenarioDoneTo": "A famous coach gives bad advice.",
           "scenarioYouDo": "A famous coach gives bad advice.",
           "challenge": {
-            "scenario": "You follow it because they're famous. What bias?",
+            "scenario": "You follow it because they're famous. Which bias is at play?",
             "options": [
               "Authority bias.",
               "Bandwagon effect.",
@@ -406,7 +406,7 @@
           "scenarioDoneTo": "A doctor tells you which stock to buy.",
           "scenarioYouDo": "A doctor tells you which stock to buy.",
           "challenge": {
-            "scenario": "You trust it because they're a doctor. Bias?",
+            "scenario": "You trust it because they're a doctor. Which bias is at play?",
             "options": [
               "Authority bias.",
               "Halo effect.",
@@ -415,14 +415,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Authority in one field \u2260 authority in another."
+          "tip": "Authority in one field ≠ authority in another."
         },
         "3": {
           "definition": "Deference to titles or credentials overrides scrutiny.",
           "scenarioDoneTo": "A senior VP proposes a shaky plan.",
           "scenarioYouDo": "A senior VP proposes a shaky plan.",
           "challenge": {
-            "scenario": "The room approves because of their rank. Bias?",
+            "scenario": "The room approves because of their rank. Which bias is at play?",
             "options": [
               "Authority bias.",
               "Groupthink.",
@@ -444,7 +444,7 @@
           "scenarioDoneTo": "You pick teammates for a game.",
           "scenarioYouDo": "You pick teammates for a game.",
           "challenge": {
-            "scenario": "You pick only your close friends, ignoring skill. What bias?",
+            "scenario": "You pick only your close friends, ignoring skill. Which bias is at play?",
             "options": [
               "In-group bias.",
               "Halo effect.",
@@ -460,7 +460,7 @@
           "scenarioDoneTo": "Two schools argue about a game call.",
           "scenarioYouDo": "Two schools argue about a game call.",
           "challenge": {
-            "scenario": "You're sure your school is right, without watching the replay. Bias?",
+            "scenario": "You're sure your school is right, without watching the replay. Which bias is at play?",
             "options": [
               "In-group bias.",
               "Confirmation bias.",
@@ -476,7 +476,7 @@
           "scenarioDoneTo": "Two teams pitch competing ideas.",
           "scenarioYouDo": "Two teams pitch competing ideas.",
           "challenge": {
-            "scenario": "You back your team's idea without judging it fairly. Bias?",
+            "scenario": "You back your team's idea without judging it fairly. Which bias is at play?",
             "options": [
               "In-group bias.",
               "Halo effect.",
@@ -498,7 +498,7 @@
           "scenarioDoneTo": "You had 4 fun days and 1 bad day.",
           "scenarioYouDo": "You had 4 fun days and 1 bad day.",
           "challenge": {
-            "scenario": "You call it 'a bad week' anyway. What bias?",
+            "scenario": "You call it 'a bad week' anyway. Which bias is at play?",
             "options": [
               "Negativity bias.",
               "Recency bias.",
@@ -514,7 +514,7 @@
           "scenarioDoneTo": "Your review has 20 positives and 2 negatives.",
           "scenarioYouDo": "Your review has 20 positives and 2 negatives.",
           "challenge": {
-            "scenario": "You obsess over the 2. Bias?",
+            "scenario": "You obsess over the 2. Which bias is at play?",
             "options": [
               "Negativity bias.",
               "Mental filter.",
@@ -530,7 +530,7 @@
           "scenarioDoneTo": "One angry client email vs. 50 happy ones.",
           "scenarioYouDo": "One angry client email vs. 50 happy ones.",
           "challenge": {
-            "scenario": "The team spends the week only on the angry one. Bias?",
+            "scenario": "The team spends the week only on the angry one. Which bias is at play?",
             "options": [
               "Negativity bias.",
               "Availability heuristic.",
@@ -552,7 +552,7 @@
           "scenarioDoneTo": "A better lunch spot opens.",
           "scenarioYouDo": "A better lunch spot opens.",
           "challenge": {
-            "scenario": "You stick with your usual place. What bias?",
+            "scenario": "You stick with your usual place. Which bias is at play?",
             "options": [
               "Status quo bias.",
               "Endowment effect.",
@@ -568,7 +568,7 @@
           "scenarioDoneTo": "A new phone plan saves you $30/mo.",
           "scenarioYouDo": "A new phone plan saves you $30/mo.",
           "challenge": {
-            "scenario": "You don't switch because switching feels like a hassle. Bias?",
+            "scenario": "You don't switch because switching feels like a hassle. Which bias is at play?",
             "options": [
               "Status quo bias.",
               "Loss aversion.",
@@ -584,7 +584,7 @@
           "scenarioDoneTo": "A vendor is clearly worse than a new option.",
           "scenarioYouDo": "A vendor is clearly worse than a new option.",
           "challenge": {
-            "scenario": "The team keeps the incumbent because 'we always have.' Bias?",
+            "scenario": "The team keeps the incumbent because 'we always have.' Which bias is at play?",
             "options": [
               "Status quo bias.",
               "Sunk cost fallacy.",
@@ -606,7 +606,7 @@
           "scenarioDoneTo": "You spill your drink at lunch.",
           "scenarioYouDo": "You spill your drink at lunch.",
           "challenge": {
-            "scenario": "You feel like everyone saw and will remember forever. What bias?",
+            "scenario": "You feel like everyone saw and will remember forever. Which bias is at play?",
             "options": [
               "Spotlight effect.",
               "Catastrophizing.",
@@ -622,7 +622,7 @@
           "scenarioDoneTo": "You wear the wrong shirt to school.",
           "scenarioYouDo": "You wear the wrong shirt to school.",
           "challenge": {
-            "scenario": "You feel like the whole school is staring. Bias?",
+            "scenario": "You feel like the whole school is staring. Which bias is at play?",
             "options": [
               "Spotlight effect.",
               "Availability heuristic.",
@@ -638,7 +638,7 @@
           "scenarioDoneTo": "You stumbled in a big presentation.",
           "scenarioYouDo": "You stumbled in a big presentation.",
           "challenge": {
-            "scenario": "You assume the audience will never forget. Bias?",
+            "scenario": "You assume the audience will never forget. Which bias is at play?",
             "options": [
               "Spotlight effect.",
               "Peak-end rule.",
@@ -660,7 +660,7 @@
           "scenarioDoneTo": "You skip your bike helmet.",
           "scenarioYouDo": "You skip your bike helmet.",
           "challenge": {
-            "scenario": "'I'd never crash.' What bias?",
+            "scenario": "'I'd never crash.' Which bias is at play?",
             "options": [
               "Optimism bias.",
               "Availability heuristic.",
@@ -676,7 +676,7 @@
           "scenarioDoneTo": "You start a project the night before it's due.",
           "scenarioYouDo": "You start a project the night before it's due.",
           "challenge": {
-            "scenario": "'I always pull it off.' Bias?",
+            "scenario": "'I always pull it off.' Which bias is at play?",
             "options": [
               "Optimism bias.",
               "Planning fallacy.",
@@ -692,7 +692,7 @@
           "scenarioDoneTo": "You forecast the launch with best-case numbers.",
           "scenarioYouDo": "You forecast the launch with best-case numbers.",
           "challenge": {
-            "scenario": "You skip a downside case. Bias?",
+            "scenario": "You skip a downside case. Which bias is at play?",
             "options": [
               "Optimism bias.",
               "Planning fallacy.",
@@ -714,7 +714,7 @@
           "scenarioDoneTo": "You had a good week and one bad day.",
           "scenarioYouDo": "You had a good week and one bad day.",
           "challenge": {
-            "scenario": "You call the week bad because of today. What bias?",
+            "scenario": "You call the week bad because of today. Which bias is at play?",
             "options": [
               "Recency bias.",
               "Peak-end rule.",
@@ -730,7 +730,7 @@
           "scenarioDoneTo": "Your teammate had one bad game last week.",
           "scenarioYouDo": "Your teammate had one bad game last week.",
           "challenge": {
-            "scenario": "You bench them, forgetting a whole season of good ones. Bias?",
+            "scenario": "You bench them, forgetting a whole season of good ones. Which bias is at play?",
             "options": [
               "Recency bias.",
               "Availability heuristic.",
@@ -746,7 +746,7 @@
           "scenarioDoneTo": "Q4 dipped after a great year.",
           "scenarioYouDo": "Q4 dipped after a great year.",
           "challenge": {
-            "scenario": "The board treats Q4 as the trend. Bias?",
+            "scenario": "The board treats Q4 as the trend. Which bias is at play?",
             "options": [
               "Recency bias.",
               "Negativity bias.",
@@ -768,7 +768,7 @@
           "scenarioDoneTo": "A snack is '90% fat free' vs. '10% fat.'",
           "scenarioYouDo": "A snack is '90% fat free' vs. '10% fat.'",
           "challenge": {
-            "scenario": "'90% fat free' feels healthier. What bias?",
+            "scenario": "'90% fat free' feels healthier. Which bias is at play?",
             "options": [
               "Framing effect.",
               "Anchoring bias.",
@@ -784,7 +784,7 @@
           "scenarioDoneTo": "'Survival rate 90%' vs. 'death rate 10%.'",
           "scenarioYouDo": "'Survival rate 90%' vs. 'death rate 10%.'",
           "challenge": {
-            "scenario": "You feel safer with 'survival rate.' Bias?",
+            "scenario": "You feel safer with 'survival rate.' Which bias is at play?",
             "options": [
               "Framing effect.",
               "Loss aversion.",
@@ -800,7 +800,7 @@
           "scenarioDoneTo": "A pitch says 'save $5M' vs. 'lose $5M.'",
           "scenarioYouDo": "A pitch says 'save $5M' vs. 'lose $5M.'",
           "challenge": {
-            "scenario": "You buy one and reject the other, same math. Bias?",
+            "scenario": "You buy one and reject the other, same math. Which bias is at play?",
             "options": [
               "Framing effect.",
               "Loss aversion.",
@@ -822,7 +822,7 @@
           "scenarioDoneTo": "You picked the pizza. It was okay.",
           "scenarioYouDo": "You picked the pizza. It was okay.",
           "challenge": {
-            "scenario": "Later you insist it was the best pick ever. What bias?",
+            "scenario": "Later you insist it was the best pick ever. Which bias is at play?",
             "options": [
               "Choice-supportive bias.",
               "Confirmation bias.",
@@ -838,7 +838,7 @@
           "scenarioDoneTo": "You picked college A over B.",
           "scenarioYouDo": "You picked college A over B.",
           "challenge": {
-            "scenario": "A year later you insist A was the obvious winner. Bias?",
+            "scenario": "A year later you insist A was the obvious winner. Which bias is at play?",
             "options": [
               "Choice-supportive bias.",
               "Confirmation bias.",
@@ -854,7 +854,7 @@
           "scenarioDoneTo": "You backed vendor X over Y.",
           "scenarioYouDo": "You backed vendor X over Y.",
           "challenge": {
-            "scenario": "Now you 'remember' X as clearly stronger from the start. Bias?",
+            "scenario": "Now you 'remember' X as clearly stronger from the start. Which bias is at play?",
             "options": [
               "Choice-supportive bias.",
               "Hindsight bias.",
@@ -876,7 +876,7 @@
           "scenarioDoneTo": "A game you didn't predict ends 5-0.",
           "scenarioYouDo": "A game you didn't predict ends 5-0.",
           "challenge": {
-            "scenario": "You claim you called it. What bias?",
+            "scenario": "You claim you called it. Which bias is at play?",
             "options": [
               "Hindsight bias.",
               "Choice-supportive bias.",
@@ -892,7 +892,7 @@
           "scenarioDoneTo": "A stock jumps 50%.",
           "scenarioYouDo": "A stock jumps 50%.",
           "challenge": {
-            "scenario": "You insist you saw it coming. Bias?",
+            "scenario": "You insist you saw it coming. Which bias is at play?",
             "options": [
               "Hindsight bias.",
               "Confirmation bias.",
@@ -908,7 +908,7 @@
           "scenarioDoneTo": "A competitor pivots and wins the market.",
           "scenarioYouDo": "A competitor pivots and wins the market.",
           "challenge": {
-            "scenario": "The board says 'we should have seen it.' Bias?",
+            "scenario": "The board says 'we should have seen it.' Which bias is at play?",
             "options": [
               "Hindsight bias.",
               "Outcome bias.",
@@ -930,7 +930,7 @@
           "scenarioDoneTo": "You win a game and lose one.",
           "scenarioYouDo": "You win a game and lose one.",
           "challenge": {
-            "scenario": "You brag on the win and blame refs for the loss. What bias?",
+            "scenario": "You brag on the win and blame refs for the loss. Which bias is at play?",
             "options": [
               "Self-serving bias.",
               "Confirmation bias.",
@@ -946,7 +946,7 @@
           "scenarioDoneTo": "A group project goes great or badly.",
           "scenarioYouDo": "A group project goes great or badly.",
           "challenge": {
-            "scenario": "You take credit if great, blame others if not. Bias?",
+            "scenario": "You take credit if great, blame others if not. Which bias is at play?",
             "options": [
               "Self-serving bias.",
               "In-group bias.",
@@ -962,7 +962,7 @@
           "scenarioDoneTo": "A launch soars or flops.",
           "scenarioYouDo": "A launch soars or flops.",
           "challenge": {
-            "scenario": "You claim strategy wins and blame the market for flops. Bias?",
+            "scenario": "You claim strategy wins and blame the market for flops. Which bias is at play?",
             "options": [
               "Self-serving bias.",
               "Outcome bias.",
@@ -984,7 +984,7 @@
           "scenarioDoneTo": "A driver cuts you off.",
           "scenarioYouDo": "A driver cuts you off.",
           "challenge": {
-            "scenario": "You say 'they're a jerk' with no other info. What bias?",
+            "scenario": "You say 'they're a jerk' with no other info. Which bias is at play?",
             "options": [
               "Fundamental attribution error.",
               "Negativity bias.",
@@ -1000,7 +1000,7 @@
           "scenarioDoneTo": "A classmate snaps at you.",
           "scenarioYouDo": "A classmate snaps at you.",
           "challenge": {
-            "scenario": "You think they're mean. Bias?",
+            "scenario": "You think they're mean. Which bias is at play?",
             "options": [
               "Fundamental attribution error.",
               "Confirmation bias.",
@@ -1016,7 +1016,7 @@
           "scenarioDoneTo": "A hire misses a deadline in week one.",
           "scenarioYouDo": "A hire misses a deadline in week one.",
           "challenge": {
-            "scenario": "You label them lazy without checking onboarding. Bias?",
+            "scenario": "You label them lazy without checking onboarding. Which bias is at play?",
             "options": [
               "Fundamental attribution error.",
               "Halo effect.",
@@ -1038,7 +1038,7 @@
           "scenarioDoneTo": "A song keeps playing everywhere.",
           "scenarioYouDo": "A song keeps playing everywhere.",
           "challenge": {
-            "scenario": "You start to love it. What bias?",
+            "scenario": "You start to love it. Which bias is at play?",
             "options": [
               "Mere exposure effect.",
               "Bandwagon effect.",
@@ -1047,14 +1047,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Familiar \u2260 great."
+          "tip": "Familiar ≠ great."
         },
         "2": {
           "definition": "Familiarity turns into preference over repetition.",
           "scenarioDoneTo": "A brand you see daily online.",
           "scenarioYouDo": "A brand you see daily online.",
           "challenge": {
-            "scenario": "You trust it more than a new one you haven't heard of. Bias?",
+            "scenario": "You trust it more than a new one you haven't heard of. Which bias is at play?",
             "options": [
               "Mere exposure effect.",
               "Availability heuristic.",
@@ -1070,7 +1070,7 @@
           "scenarioDoneTo": "A logo shows up in every meeting.",
           "scenarioYouDo": "A logo shows up in every meeting.",
           "challenge": {
-            "scenario": "You favor that vendor's proposal without deeper review. Bias?",
+            "scenario": "You favor that vendor's proposal without deeper review. Which bias is at play?",
             "options": [
               "Mere exposure effect.",
               "Halo effect.",
@@ -1092,7 +1092,7 @@
           "scenarioDoneTo": "You win a school award.",
           "scenarioYouDo": "You win a school award.",
           "challenge": {
-            "scenario": "You feel like they'll find out you don't deserve it. What bias?",
+            "scenario": "You feel like they'll find out you don't deserve it. Which bias is at play?",
             "options": [
               "Impostor syndrome.",
               "Emotional reasoning.",
@@ -1108,7 +1108,7 @@
           "scenarioDoneTo": "You get accepted to a top program.",
           "scenarioYouDo": "You get accepted to a top program.",
           "challenge": {
-            "scenario": "You assume you slipped in by mistake. Bias?",
+            "scenario": "You assume you slipped in by mistake. Which bias is at play?",
             "options": [
               "Impostor syndrome.",
               "Discounting positives.",
@@ -1124,7 +1124,7 @@
           "scenarioDoneTo": "You're promoted to senior role.",
           "scenarioYouDo": "You're promoted to senior role.",
           "challenge": {
-            "scenario": "You dread being 'found out' despite years of results. Bias?",
+            "scenario": "You dread being 'found out' despite years of results. Which bias is at play?",
             "options": [
               "Impostor syndrome.",
               "Dunning-Kruger effect.",
@@ -1146,7 +1146,7 @@
           "scenarioDoneTo": "You start homework 30 minutes before bed.",
           "scenarioYouDo": "You start homework 30 minutes before bed.",
           "challenge": {
-            "scenario": "'It'll take 10 minutes.' It takes an hour. What bias?",
+            "scenario": "'It'll take 10 minutes.' It takes an hour. Which bias is at play?",
             "options": [
               "Planning fallacy.",
               "Optimism bias.",
@@ -1162,7 +1162,7 @@
           "scenarioDoneTo": "Group project due next week.",
           "scenarioYouDo": "Group project due next week.",
           "challenge": {
-            "scenario": "You plan like nothing will slip. Bias?",
+            "scenario": "You plan like nothing will slip. Which bias is at play?",
             "options": [
               "Planning fallacy.",
               "Optimism bias.",
@@ -1178,7 +1178,7 @@
           "scenarioDoneTo": "Product roadmap for the quarter.",
           "scenarioYouDo": "Product roadmap for the quarter.",
           "challenge": {
-            "scenario": "You commit best-case dates and skip buffers. Bias?",
+            "scenario": "You commit best-case dates and skip buffers. Which bias is at play?",
             "options": [
               "Planning fallacy.",
               "Optimism bias.",
@@ -1200,7 +1200,7 @@
           "scenarioDoneTo": "You love a certain movie.",
           "scenarioYouDo": "You love a certain movie.",
           "challenge": {
-            "scenario": "You assume 'everyone' loves it. What bias?",
+            "scenario": "You assume 'everyone' loves it. Which bias is at play?",
             "options": [
               "False consensus effect.",
               "Confirmation bias.",
@@ -1216,7 +1216,7 @@
           "scenarioDoneTo": "You hate a school rule.",
           "scenarioYouDo": "You hate a school rule.",
           "challenge": {
-            "scenario": "You're sure everyone hates it too. Bias?",
+            "scenario": "You're sure everyone hates it too. Which bias is at play?",
             "options": [
               "False consensus effect.",
               "Bandwagon effect.",
@@ -1232,7 +1232,7 @@
           "scenarioDoneTo": "Your team likes the new brand.",
           "scenarioYouDo": "Your team likes the new brand.",
           "challenge": {
-            "scenario": "You assume customers will too, without testing. Bias?",
+            "scenario": "You assume customers will too, without testing. Which bias is at play?",
             "options": [
               "False consensus effect.",
               "In-group bias.",
@@ -1254,7 +1254,7 @@
           "scenarioDoneTo": "A dog looks cute at the shelter.",
           "scenarioYouDo": "A dog looks cute at the shelter.",
           "challenge": {
-            "scenario": "You want to adopt without asking about care. What bias?",
+            "scenario": "You want to adopt without asking about care. Which bias is at play?",
             "options": [
               "Affect heuristic.",
               "Optimism bias.",
@@ -1270,7 +1270,7 @@
           "scenarioDoneTo": "A car ad makes you feel powerful.",
           "scenarioYouDo": "A car ad makes you feel powerful.",
           "challenge": {
-            "scenario": "You decide to buy it without comparing prices. Bias?",
+            "scenario": "You decide to buy it without comparing prices. Which bias is at play?",
             "options": [
               "Affect heuristic.",
               "Halo effect.",
@@ -1286,7 +1286,7 @@
           "scenarioDoneTo": "An acquisition target looks exciting.",
           "scenarioYouDo": "An acquisition target looks exciting.",
           "challenge": {
-            "scenario": "Diligence gets skipped because it feels right. Bias?",
+            "scenario": "Diligence gets skipped because it feels right. Which bias is at play?",
             "options": [
               "Affect heuristic.",
               "Halo effect.",
@@ -1308,7 +1308,7 @@
           "scenarioDoneTo": "You flip 5 heads in a row.",
           "scenarioYouDo": "You flip 5 heads in a row.",
           "challenge": {
-            "scenario": "You bet tails is 'due.' What bias?",
+            "scenario": "You bet tails is 'due.' Which bias is at play?",
             "options": [
               "Gambler's fallacy.",
               "Availability heuristic.",
@@ -1324,7 +1324,7 @@
           "scenarioDoneTo": "A slot machine hasn't paid all night.",
           "scenarioYouDo": "A slot machine hasn't paid all night.",
           "challenge": {
-            "scenario": "You feel it's about to pay. Bias?",
+            "scenario": "You feel it's about to pay. Which bias is at play?",
             "options": [
               "Gambler's fallacy.",
               "Hot-hand fallacy.",
@@ -1340,7 +1340,7 @@
           "scenarioDoneTo": "Your fund had 3 down years.",
           "scenarioYouDo": "Your fund had 3 down years.",
           "challenge": {
-            "scenario": "You expect a good year is 'due.' Bias?",
+            "scenario": "You expect a good year is 'due.' Which bias is at play?",
             "options": [
               "Gambler's fallacy.",
               "Availability heuristic.",
@@ -1362,7 +1362,7 @@
           "scenarioDoneTo": "A kid falls in a busy hallway.",
           "scenarioYouDo": "A kid falls in a busy hallway.",
           "challenge": {
-            "scenario": "You don't help because 'someone else will.' What bias?",
+            "scenario": "You don't help because 'someone else will.' Which bias is at play?",
             "options": [
               "Bystander effect.",
               "Diffusion of responsibility.",
@@ -1378,7 +1378,7 @@
           "scenarioDoneTo": "Someone's clearly upset in the group chat.",
           "scenarioYouDo": "Someone's clearly upset in the group chat.",
           "challenge": {
-            "scenario": "Nobody replies. You assume someone will. Bias?",
+            "scenario": "Nobody replies. You assume someone will. Which bias is at play?",
             "options": [
               "Bystander effect.",
               "Social desirability bias.",
@@ -1394,7 +1394,7 @@
           "scenarioDoneTo": "A risk is raised in a 15-person meeting.",
           "scenarioYouDo": "A risk is raised in a 15-person meeting.",
           "challenge": {
-            "scenario": "No one owns it \u2014 all assume 'someone will.' Bias?",
+            "scenario": "No one owns it — all assume 'someone will.' Which bias is at play?",
             "options": [
               "Bystander effect.",
               "Groupthink.",
@@ -1416,7 +1416,7 @@
           "scenarioDoneTo": "A movie is boring but has a great ending.",
           "scenarioYouDo": "A movie is boring but has a great ending.",
           "challenge": {
-            "scenario": "You call it a great movie. What bias?",
+            "scenario": "You call it a great movie. Which bias is at play?",
             "options": [
               "Peak-end rule.",
               "Recency bias.",
@@ -1432,7 +1432,7 @@
           "scenarioDoneTo": "A trip had two great days and five okay ones.",
           "scenarioYouDo": "A trip had two great days and five okay ones.",
           "challenge": {
-            "scenario": "You remember it as amazing. Bias?",
+            "scenario": "You remember it as amazing. Which bias is at play?",
             "options": [
               "Peak-end rule.",
               "Negativity bias.",
@@ -1448,7 +1448,7 @@
           "scenarioDoneTo": "A rocky quarter ends with one big win.",
           "scenarioYouDo": "A rocky quarter ends with one big win.",
           "challenge": {
-            "scenario": "The team feels great about the whole quarter. Bias?",
+            "scenario": "The team feels great about the whole quarter. Which bias is at play?",
             "options": [
               "Peak-end rule.",
               "Recency bias.",
@@ -1470,7 +1470,7 @@
           "scenarioDoneTo": "You already know how to ride a bike.",
           "scenarioYouDo": "You already know how to ride a bike.",
           "challenge": {
-            "scenario": "You teach it too fast for a beginner. What bias?",
+            "scenario": "You teach it too fast for a beginner. Which bias is at play?",
             "options": [
               "Curse of knowledge.",
               "Impostor syndrome.",
@@ -1486,7 +1486,7 @@
           "scenarioDoneTo": "You explain a video game with jargon.",
           "scenarioYouDo": "You explain a video game with jargon.",
           "challenge": {
-            "scenario": "Your friend is lost but you keep going. Bias?",
+            "scenario": "Your friend is lost but you keep going. Which bias is at play?",
             "options": [
               "Curse of knowledge.",
               "Spotlight effect.",
@@ -1502,7 +1502,7 @@
           "scenarioDoneTo": "You explain a strategy to a new board member.",
           "scenarioYouDo": "You explain a strategy to a new board member.",
           "challenge": {
-            "scenario": "They look confused; you keep going. Bias?",
+            "scenario": "They look confused; you keep going. Which bias is at play?",
             "options": [
               "Curse of knowledge.",
               "Fundamental attribution error.",
@@ -1524,7 +1524,7 @@
           "scenarioDoneTo": "You hear about famous college dropouts.",
           "scenarioYouDo": "You hear about famous college dropouts.",
           "challenge": {
-            "scenario": "You conclude dropping out works. What bias?",
+            "scenario": "You conclude dropping out works. Which bias is at play?",
             "options": [
               "Survivorship bias.",
               "Confirmation bias.",
@@ -1540,7 +1540,7 @@
           "scenarioDoneTo": "You read startup success interviews.",
           "scenarioYouDo": "You read startup success interviews.",
           "challenge": {
-            "scenario": "You copy their moves without checking failure rates. Bias?",
+            "scenario": "You copy their moves without checking failure rates. Which bias is at play?",
             "options": [
               "Survivorship bias.",
               "Confirmation bias.",
@@ -1556,7 +1556,7 @@
           "scenarioDoneTo": "You back-test on funds that still exist.",
           "scenarioYouDo": "You back-test on funds that still exist.",
           "challenge": {
-            "scenario": "Dead funds aren't in the data. Bias?",
+            "scenario": "Dead funds aren't in the data. Which bias is at play?",
             "options": [
               "Survivorship bias.",
               "Availability heuristic.",
@@ -1578,7 +1578,7 @@
           "scenarioDoneTo": "You worry about lightning.",
           "scenarioYouDo": "You worry about lightning.",
           "challenge": {
-            "scenario": "You focus on that instead of car safety. What bias?",
+            "scenario": "You focus on that instead of car safety. Which bias is at play?",
             "options": [
               "Zero-risk bias.",
               "Availability heuristic.",
@@ -1594,7 +1594,7 @@
           "scenarioDoneTo": "Two safety options: one perfect on 5%, one halves 60%.",
           "scenarioYouDo": "Two safety options: one perfect on 5%, one halves 60%.",
           "challenge": {
-            "scenario": "You pick 'perfect' on the 5%. Bias?",
+            "scenario": "You pick 'perfect' on the 5%. Which bias is at play?",
             "options": [
               "Zero-risk bias.",
               "Loss aversion.",
@@ -1610,7 +1610,7 @@
           "scenarioDoneTo": "Two safety programs: one closes 100% of a small risk, one cuts a big one in half.",
           "scenarioYouDo": "Two safety programs: one closes 100% of a small risk, one cuts a big one in half.",
           "challenge": {
-            "scenario": "You pick the 100% on the small risk. Bias?",
+            "scenario": "You pick the 100% on the small risk. Which bias is at play?",
             "options": [
               "Zero-risk bias.",
               "Loss aversion.",
@@ -1628,11 +1628,11 @@
       "name": "Just-World Hypothesis",
       "tiers": {
         "1": {
-          "definition": "Believing the world is always fair \u2014 bad things happen for a reason.",
+          "definition": "Believing the world is always fair — bad things happen for a reason.",
           "scenarioDoneTo": "A kid gets bullied.",
           "scenarioYouDo": "A kid gets bullied.",
           "challenge": {
-            "scenario": "You think 'they must have done something.' What bias?",
+            "scenario": "You think 'they must have done something.' Which bias is at play?",
             "options": [
               "Just-world hypothesis.",
               "Victim blaming.",
@@ -1648,7 +1648,7 @@
           "scenarioDoneTo": "Someone loses their phone in a robbery.",
           "scenarioYouDo": "Someone loses their phone in a robbery.",
           "challenge": {
-            "scenario": "You say they 'should've been more careful.' Bias?",
+            "scenario": "You say they 'should've been more careful.' Which bias is at play?",
             "options": [
               "Just-world hypothesis.",
               "Fundamental attribution error.",
@@ -1664,7 +1664,7 @@
           "scenarioDoneTo": "A team fails despite doing everything right.",
           "scenarioYouDo": "A team fails despite doing everything right.",
           "challenge": {
-            "scenario": "You assume they must have done something wrong. Bias?",
+            "scenario": "You assume they must have done something wrong. Which bias is at play?",
             "options": [
               "Just-world hypothesis.",
               "Outcome bias.",
@@ -1686,7 +1686,7 @@
           "scenarioDoneTo": "You'd hate losing $5 more than love finding $5.",
           "scenarioYouDo": "You'd hate losing $5 more than love finding $5.",
           "challenge": {
-            "scenario": "You skip a fair coin flip for $10. What bias?",
+            "scenario": "You skip a fair coin flip for $10. Which bias is at play?",
             "options": [
               "Loss aversion.",
               "Zero-risk bias.",
@@ -1702,7 +1702,7 @@
           "scenarioDoneTo": "You hold a losing stock 'to break even.'",
           "scenarioYouDo": "You hold a losing stock 'to break even.'",
           "challenge": {
-            "scenario": "You'd rather wait than lock the loss. Bias?",
+            "scenario": "You'd rather wait than lock the loss. Which bias is at play?",
             "options": [
               "Loss aversion.",
               "Sunk cost fallacy.",
@@ -1718,7 +1718,7 @@
           "scenarioDoneTo": "A cost cut has a symmetric probability distribution.",
           "scenarioYouDo": "A cost cut has a symmetric probability distribution.",
           "challenge": {
-            "scenario": "You reject positive-EV choices to avoid downside. Bias?",
+            "scenario": "You reject positive-EV choices to avoid downside. Which bias is at play?",
             "options": [
               "Loss aversion.",
               "Ambiguity effect.",
@@ -1740,7 +1740,7 @@
           "scenarioDoneTo": "A friend proves your fun fact was wrong.",
           "scenarioYouDo": "A friend proves your fun fact was wrong.",
           "challenge": {
-            "scenario": "You believe it more, not less. What bias?",
+            "scenario": "You believe it more, not less. Which bias is at play?",
             "options": [
               "Backfire effect.",
               "Belief perseverance.",
@@ -1756,7 +1756,7 @@
           "scenarioDoneTo": "A study contradicts a diet you love.",
           "scenarioYouDo": "A study contradicts a diet you love.",
           "challenge": {
-            "scenario": "You defend the diet harder. Bias?",
+            "scenario": "You defend the diet harder. Which bias is at play?",
             "options": [
               "Backfire effect.",
               "Belief perseverance.",
@@ -1772,7 +1772,7 @@
           "scenarioDoneTo": "A postmortem shows the strategy was flawed.",
           "scenarioYouDo": "A postmortem shows the strategy was flawed.",
           "challenge": {
-            "scenario": "The lead doubles down on the same strategy. Bias?",
+            "scenario": "The lead doubles down on the same strategy. Which bias is at play?",
             "options": [
               "Backfire effect.",
               "Belief perseverance.",
@@ -1794,7 +1794,7 @@
           "scenarioDoneTo": "A fire alarm goes off in school.",
           "scenarioYouDo": "A fire alarm goes off in school.",
           "challenge": {
-            "scenario": "You assume it's a drill and don't move. What bias?",
+            "scenario": "You assume it's a drill and don't move. Which bias is at play?",
             "options": [
               "Normalcy bias.",
               "Optimism bias.",
@@ -1810,7 +1810,7 @@
           "scenarioDoneTo": "A storm warning comes.",
           "scenarioYouDo": "A storm warning comes.",
           "challenge": {
-            "scenario": "You don't prep because 'it's usually fine.' Bias?",
+            "scenario": "You don't prep because 'it's usually fine.' Which bias is at play?",
             "options": [
               "Normalcy bias.",
               "Optimism bias.",
@@ -1826,7 +1826,7 @@
           "scenarioDoneTo": "Market volatility spikes.",
           "scenarioYouDo": "Market volatility spikes.",
           "challenge": {
-            "scenario": "You keep the same plan; 'this always passes.' Bias?",
+            "scenario": "You keep the same plan; 'this always passes.' Which bias is at play?",
             "options": [
               "Normalcy bias.",
               "Optimism bias.",
@@ -1848,7 +1848,7 @@
           "scenarioDoneTo": "Popcorn: small $3, big $8, medium $7.",
           "scenarioYouDo": "Popcorn: small $3, big $8, medium $7.",
           "challenge": {
-            "scenario": "The medium makes the big look like a deal. What bias?",
+            "scenario": "The medium makes the big look like a deal. Which bias is at play?",
             "options": [
               "Decoy effect.",
               "Anchoring bias.",
@@ -1864,7 +1864,7 @@
           "scenarioDoneTo": "Plans: basic, decoy, premium.",
           "scenarioYouDo": "Plans: basic, decoy, premium.",
           "challenge": {
-            "scenario": "You pick premium because decoy makes it look worth it. Bias?",
+            "scenario": "You pick premium because decoy makes it look worth it. Which bias is at play?",
             "options": [
               "Decoy effect.",
               "Anchoring bias.",
@@ -1880,7 +1880,7 @@
           "scenarioDoneTo": "Vendor puts a decoy tier between two SKUs.",
           "scenarioYouDo": "Vendor puts a decoy tier between two SKUs.",
           "challenge": {
-            "scenario": "The team upgrades because the decoy makes it look cheap. Bias?",
+            "scenario": "The team upgrades because the decoy makes it look cheap. Which bias is at play?",
             "options": [
               "Decoy effect.",
               "Anchoring bias.",
@@ -1902,7 +1902,7 @@
           "scenarioDoneTo": "Your parent says 'don't touch the cookies.'",
           "scenarioYouDo": "Your parent says 'don't touch the cookies.'",
           "challenge": {
-            "scenario": "You want them more than before. What bias?",
+            "scenario": "You want them more than before. Which bias is at play?",
             "options": [
               "Reactance.",
               "Optimism bias.",
@@ -1918,7 +1918,7 @@
           "scenarioDoneTo": "A rule bans phones at dinner.",
           "scenarioYouDo": "A rule bans phones at dinner.",
           "challenge": {
-            "scenario": "You want your phone more just because. Bias?",
+            "scenario": "You want your phone more just because. Which bias is at play?",
             "options": [
               "Reactance.",
               "Status quo bias.",
@@ -1934,7 +1934,7 @@
           "scenarioDoneTo": "New policy limits remote days.",
           "scenarioYouDo": "New policy limits remote days.",
           "challenge": {
-            "scenario": "People push back regardless of the merits. Bias?",
+            "scenario": "People push back regardless of the merits. Which bias is at play?",
             "options": [
               "Reactance.",
               "Status quo bias.",
@@ -1956,7 +1956,7 @@
           "scenarioDoneTo": "Your friends pick a movie you don't want.",
           "scenarioYouDo": "Your friends pick a movie you don't want.",
           "challenge": {
-            "scenario": "You go with it silently. What bias?",
+            "scenario": "You go with it silently. Which bias is at play?",
             "options": [
               "Groupthink.",
               "Bandwagon effect.",
@@ -1972,7 +1972,7 @@
           "scenarioDoneTo": "Everyone in class agrees fast.",
           "scenarioYouDo": "Everyone in class agrees fast.",
           "challenge": {
-            "scenario": "Nobody voices doubts. Bias?",
+            "scenario": "Nobody voices doubts. Which bias is at play?",
             "options": [
               "Groupthink.",
               "Bandwagon effect.",
@@ -1988,7 +1988,7 @@
           "scenarioDoneTo": "The exec team all approve at once.",
           "scenarioYouDo": "The exec team all approve at once.",
           "challenge": {
-            "scenario": "Doubts stay off the table. Bias?",
+            "scenario": "Doubts stay off the table. Which bias is at play?",
             "options": [
               "Groupthink.",
               "Authority bias.",
@@ -2006,11 +2006,11 @@
       "name": "Adjustment Insufficiency",
       "tiers": {
         "1": {
-          "definition": "You start from a number and adjust \u2014 but not enough.",
+          "definition": "You start from a number and adjust — but not enough.",
           "scenarioDoneTo": "Someone guesses 500. You adjust to 480.",
           "scenarioYouDo": "Someone guesses 500. You adjust to 480.",
           "challenge": {
-            "scenario": "Real answer is 200. You stayed too close. What bias?",
+            "scenario": "Real answer is 200. You stayed too close. Which bias is at play?",
             "options": [
               "Adjustment insufficiency.",
               "Anchoring bias.",
@@ -2026,7 +2026,7 @@
           "scenarioDoneTo": "A listing is $500K; you offer $480K.",
           "scenarioYouDo": "A listing is $500K; you offer $480K.",
           "challenge": {
-            "scenario": "The house is worth $350K. Bias?",
+            "scenario": "The house is worth $350K. Which bias is at play?",
             "options": [
               "Adjustment insufficiency.",
               "Anchoring bias.",
@@ -2042,7 +2042,7 @@
           "scenarioDoneTo": "Benchmark says 8x revenue.",
           "scenarioYouDo": "Benchmark says 8x revenue.",
           "challenge": {
-            "scenario": "You end at 7.2x when 4x is right. Bias?",
+            "scenario": "You end at 7.2x when 4x is right. Which bias is at play?",
             "options": [
               "Adjustment insufficiency.",
               "Anchoring bias.",
@@ -2064,7 +2064,7 @@
           "scenarioDoneTo": "Someone disagrees with you.",
           "scenarioYouDo": "Someone disagrees with you.",
           "challenge": {
-            "scenario": "You assume they're wrong or biased. What bias?",
+            "scenario": "You assume they're wrong or biased. Which bias is at play?",
             "options": [
               "Naive realism.",
               "Confirmation bias.",
@@ -2080,7 +2080,7 @@
           "scenarioDoneTo": "You call a news source 'balanced.'",
           "scenarioYouDo": "You call a news source 'balanced.'",
           "challenge": {
-            "scenario": "Others feel it leans. You disagree. Bias?",
+            "scenario": "Others feel it leans. You disagree. Which bias is at play?",
             "options": [
               "Naive realism.",
               "Confirmation bias.",
@@ -2096,7 +2096,7 @@
           "scenarioDoneTo": "Two teams disagree on strategy.",
           "scenarioYouDo": "Two teams disagree on strategy.",
           "challenge": {
-            "scenario": "You conclude the other side is irrational. Bias?",
+            "scenario": "You conclude the other side is irrational. Which bias is at play?",
             "options": [
               "Naive realism.",
               "Fundamental attribution error.",
@@ -2118,7 +2118,7 @@
           "scenarioDoneTo": "You're hungry and buy a huge lunch.",
           "scenarioYouDo": "You're hungry and buy a huge lunch.",
           "challenge": {
-            "scenario": "Later you can't finish it. What bias?",
+            "scenario": "Later you can't finish it. Which bias is at play?",
             "options": [
               "Projection bias.",
               "Optimism bias.",
@@ -2134,7 +2134,7 @@
           "scenarioDoneTo": "You commit to weekend plans on Monday.",
           "scenarioYouDo": "You commit to weekend plans on Monday.",
           "challenge": {
-            "scenario": "By Friday you're wiped and don't want to go. Bias?",
+            "scenario": "By Friday you're wiped and don't want to go. Which bias is at play?",
             "options": [
               "Projection bias.",
               "Optimism bias.",
@@ -2150,7 +2150,7 @@
           "scenarioDoneTo": "You sign a two-year gym plan post-workout.",
           "scenarioYouDo": "You sign a two-year gym plan post-workout.",
           "challenge": {
-            "scenario": "Six weeks later you never go. Bias?",
+            "scenario": "Six weeks later you never go. Which bias is at play?",
             "options": [
               "Projection bias.",
               "Optimism bias.",
@@ -2172,7 +2172,7 @@
           "scenarioDoneTo": "Your old toy is worth $5.",
           "scenarioYouDo": "Your old toy is worth $5.",
           "challenge": {
-            "scenario": "You demand $20 because it's yours. What bias?",
+            "scenario": "You demand $20 because it's yours. Which bias is at play?",
             "options": [
               "Endowment effect.",
               "Sunk cost fallacy.",
@@ -2188,7 +2188,7 @@
           "scenarioDoneTo": "You sell your used bike.",
           "scenarioYouDo": "You sell your used bike.",
           "challenge": {
-            "scenario": "You want double what you'd pay for a stranger's. Bias?",
+            "scenario": "You want double what you'd pay for a stranger's. Which bias is at play?",
             "options": [
               "Endowment effect.",
               "Anchoring bias.",
@@ -2204,7 +2204,7 @@
           "scenarioDoneTo": "You hold a stock you'd never buy today.",
           "scenarioYouDo": "You hold a stock you'd never buy today.",
           "challenge": {
-            "scenario": "You won't sell because 'it's mine.' Bias?",
+            "scenario": "You won't sell because 'it's mine.' Which bias is at play?",
             "options": [
               "Endowment effect.",
               "Sunk cost fallacy.",
@@ -2226,7 +2226,7 @@
           "scenarioDoneTo": "Cookie now or two cookies in an hour.",
           "scenarioYouDo": "Cookie now or two cookies in an hour.",
           "challenge": {
-            "scenario": "You pick the one cookie now. What bias?",
+            "scenario": "You pick the one cookie now. Which bias is at play?",
             "options": [
               "Hyperbolic discounting.",
               "Optimism bias.",
@@ -2242,7 +2242,7 @@
           "scenarioDoneTo": "$50 today or $75 next month.",
           "scenarioYouDo": "$50 today or $75 next month.",
           "challenge": {
-            "scenario": "You take $50 today. Bias?",
+            "scenario": "You take $50 today. Which bias is at play?",
             "options": [
               "Hyperbolic discounting.",
               "Loss aversion.",
@@ -2258,7 +2258,7 @@
           "scenarioDoneTo": "Short-term cash vs. long-term equity.",
           "scenarioYouDo": "Short-term cash vs. long-term equity.",
           "challenge": {
-            "scenario": "You take cash despite higher EV in equity. Bias?",
+            "scenario": "You take cash despite higher EV in equity. Which bias is at play?",
             "options": [
               "Hyperbolic discounting.",
               "Loss aversion.",
@@ -2280,7 +2280,7 @@
           "scenarioDoneTo": "You blow on the dice for luck.",
           "scenarioYouDo": "You blow on the dice for luck.",
           "challenge": {
-            "scenario": "You feel it changes the roll. What bias?",
+            "scenario": "You feel it changes the roll. Which bias is at play?",
             "options": [
               "Illusion of control.",
               "Optimism bias.",
@@ -2289,14 +2289,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Skill \u2260 ritual. Randomness ignores you."
+          "tip": "Skill ≠ ritual. Randomness ignores you."
         },
         "2": {
           "definition": "You feel like your inputs sway outcomes that are chance.",
           "scenarioDoneTo": "You pick your own lottery numbers.",
           "scenarioYouDo": "You pick your own lottery numbers.",
           "challenge": {
-            "scenario": "You believe your picks improve odds. Bias?",
+            "scenario": "You believe your picks improve odds. Which bias is at play?",
             "options": [
               "Illusion of control.",
               "Optimism bias.",
@@ -2312,7 +2312,7 @@
           "scenarioDoneTo": "You attribute market wins to your process.",
           "scenarioYouDo": "You attribute market wins to your process.",
           "challenge": {
-            "scenario": "You credit skill over luck for a wide range of outcomes. Bias?",
+            "scenario": "You credit skill over luck for a wide range of outcomes. Which bias is at play?",
             "options": [
               "Illusion of control.",
               "Outcome bias.",
@@ -2334,7 +2334,7 @@
           "scenarioDoneTo": "A tall kid walks in.",
           "scenarioYouDo": "A tall kid walks in.",
           "challenge": {
-            "scenario": "You assume they play basketball. What bias?",
+            "scenario": "You assume they play basketball. Which bias is at play?",
             "options": [
               "Representativeness heuristic.",
               "Halo effect.",
@@ -2350,7 +2350,7 @@
           "scenarioDoneTo": "Someone quiet and bookish is a librarian?",
           "scenarioYouDo": "Someone quiet and bookish is a librarian?",
           "challenge": {
-            "scenario": "You forget farmers vastly outnumber librarians. Bias?",
+            "scenario": "You forget farmers vastly outnumber librarians. Which bias is at play?",
             "options": [
               "Representativeness heuristic.",
               "Base rate neglect.",
@@ -2366,7 +2366,7 @@
           "scenarioDoneTo": "A resume 'looks the part.'",
           "scenarioYouDo": "A resume 'looks the part.'",
           "challenge": {
-            "scenario": "You overrate fit vs. actual performance data. Bias?",
+            "scenario": "You overrate fit vs. actual performance data. Which bias is at play?",
             "options": [
               "Representativeness heuristic.",
               "Halo effect.",
@@ -2388,7 +2388,7 @@
           "scenarioDoneTo": "A friend has confirmation bias.",
           "scenarioYouDo": "A friend has confirmation bias.",
           "challenge": {
-            "scenario": "You say you don't. What bias?",
+            "scenario": "You say you don't. Which bias is at play?",
             "options": [
               "Blind spot bias.",
               "Naive realism.",
@@ -2404,7 +2404,7 @@
           "scenarioDoneTo": "You call out mind reading in your friend.",
           "scenarioYouDo": "You call out mind reading in your friend.",
           "challenge": {
-            "scenario": "You do it too but don't see it. Bias?",
+            "scenario": "You do it too but don't see it. Which bias is at play?",
             "options": [
               "Blind spot bias.",
               "Fundamental attribution error.",
@@ -2420,7 +2420,7 @@
           "scenarioDoneTo": "Team calls the CFO biased in a debate.",
           "scenarioYouDo": "Team calls the CFO biased in a debate.",
           "challenge": {
-            "scenario": "Nobody flags their own leanings. Bias?",
+            "scenario": "Nobody flags their own leanings. Which bias is at play?",
             "options": [
               "Blind spot bias.",
               "Naive realism.",
@@ -2442,7 +2442,7 @@
           "scenarioDoneTo": "You don't check your test grade.",
           "scenarioYouDo": "You don't check your test grade.",
           "challenge": {
-            "scenario": "You'd rather not know. What bias?",
+            "scenario": "You'd rather not know. Which bias is at play?",
             "options": [
               "Ostrich effect.",
               "Optimism bias.",
@@ -2458,7 +2458,7 @@
           "scenarioDoneTo": "You skip checking your bank balance.",
           "scenarioYouDo": "You skip checking your bank balance.",
           "challenge": {
-            "scenario": "You'd rather guess than see it. Bias?",
+            "scenario": "You'd rather guess than see it. Which bias is at play?",
             "options": [
               "Ostrich effect.",
               "Optimism bias.",
@@ -2474,7 +2474,7 @@
           "scenarioDoneTo": "Team stops reviewing a losing dashboard.",
           "scenarioYouDo": "Team stops reviewing a losing dashboard.",
           "challenge": {
-            "scenario": "You skip the meeting. Bias?",
+            "scenario": "You skip the meeting. Which bias is at play?",
             "options": [
               "Ostrich effect.",
               "Confirmation bias.",
@@ -2496,7 +2496,7 @@
           "scenarioDoneTo": "You built a wobbly Lego rocket.",
           "scenarioYouDo": "You built a wobbly Lego rocket.",
           "challenge": {
-            "scenario": "You call it the best rocket ever. What bias?",
+            "scenario": "You call it the best rocket ever. Which bias is at play?",
             "options": [
               "IKEA effect.",
               "Endowment effect.",
@@ -2512,7 +2512,7 @@
           "scenarioDoneTo": "You assembled a bookshelf.",
           "scenarioYouDo": "You assembled a bookshelf.",
           "challenge": {
-            "scenario": "You defend it as a masterpiece though it wobbles. Bias?",
+            "scenario": "You defend it as a masterpiece though it wobbles. Which bias is at play?",
             "options": [
               "IKEA effect.",
               "Effort justification.",
@@ -2528,7 +2528,7 @@
           "scenarioDoneTo": "Team built its own internal tool.",
           "scenarioYouDo": "Team built its own internal tool.",
           "challenge": {
-            "scenario": "You defend it over a better off-the-shelf tool. Bias?",
+            "scenario": "You defend it over a better off-the-shelf tool. Which bias is at play?",
             "options": [
               "IKEA effect.",
               "Not-invented-here syndrome.",
@@ -2550,7 +2550,7 @@
           "scenarioDoneTo": "Two bags: one shows candy, one hides prizes.",
           "scenarioYouDo": "Two bags: one shows candy, one hides prizes.",
           "challenge": {
-            "scenario": "You pick the known bag even if it's worse. What bias?",
+            "scenario": "You pick the known bag even if it's worse. Which bias is at play?",
             "options": [
               "Ambiguity effect.",
               "Loss aversion.",
@@ -2559,14 +2559,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Unknown \u2260 bad."
+          "tip": "Unknown ≠ bad."
         },
         "2": {
           "definition": "Preferring known odds over unknown ones.",
           "scenarioDoneTo": "Two colleges: one you know, one is new.",
           "scenarioYouDo": "Two colleges: one you know, one is new.",
           "challenge": {
-            "scenario": "You pick the known one regardless of fit. Bias?",
+            "scenario": "You pick the known one regardless of fit. Which bias is at play?",
             "options": [
               "Ambiguity effect.",
               "Status quo bias.",
@@ -2582,7 +2582,7 @@
           "scenarioDoneTo": "Investment A: known 6%. Investment B: unclear 4-12%.",
           "scenarioYouDo": "Investment A: known 6%. Investment B: unclear 4-12%.",
           "challenge": {
-            "scenario": "You pick A on principle even though B has higher expected value. Bias?",
+            "scenario": "You pick A on principle even though B has higher expected value. Which bias is at play?",
             "options": [
               "Ambiguity effect.",
               "Loss aversion.",
@@ -2604,7 +2604,7 @@
           "scenarioDoneTo": "You trade cards with a friend.",
           "scenarioYouDo": "You trade cards with a friend.",
           "challenge": {
-            "scenario": "You sell the winners to lock in a win and keep losers. What bias?",
+            "scenario": "You sell the winners to lock in a win and keep losers. Which bias is at play?",
             "options": [
               "Disposition effect.",
               "Loss aversion.",
@@ -2620,7 +2620,7 @@
           "scenarioDoneTo": "You own a rising stock and a falling one.",
           "scenarioYouDo": "You own a rising stock and a falling one.",
           "challenge": {
-            "scenario": "You sell the winner and hold the loser. Bias?",
+            "scenario": "You sell the winner and hold the loser. Which bias is at play?",
             "options": [
               "Disposition effect.",
               "Loss aversion.",
@@ -2636,7 +2636,7 @@
           "scenarioDoneTo": "Portfolio has clear winners and losers.",
           "scenarioYouDo": "Portfolio has clear winners and losers.",
           "challenge": {
-            "scenario": "You harvest gains and hold underperformers. Bias?",
+            "scenario": "You harvest gains and hold underperformers. Which bias is at play?",
             "options": [
               "Disposition effect.",
               "Loss aversion.",
@@ -2658,7 +2658,7 @@
           "scenarioDoneTo": "A big power outage happens.",
           "scenarioYouDo": "A big power outage happens.",
           "challenge": {
-            "scenario": "You think it's a huge attack \u2014 it was a squirrel. What bias?",
+            "scenario": "You think it's a huge attack — it was a squirrel. Which bias is at play?",
             "options": [
               "Proportionality bias.",
               "Availability heuristic.",
@@ -2670,11 +2670,11 @@
           "tip": "Small causes can trigger big outcomes."
         },
         "2": {
-          "definition": "Big consequence \u2260 big cause.",
+          "definition": "Big consequence ≠ big cause.",
           "scenarioDoneTo": "A viral post starts with one small tweet.",
           "scenarioYouDo": "A viral post starts with one small tweet.",
           "challenge": {
-            "scenario": "You assume there must be a huge plot behind it. Bias?",
+            "scenario": "You assume there must be a huge plot behind it. Which bias is at play?",
             "options": [
               "Proportionality bias.",
               "Availability heuristic.",
@@ -2690,7 +2690,7 @@
           "scenarioDoneTo": "A minor bug takes down the site.",
           "scenarioYouDo": "A minor bug takes down the site.",
           "challenge": {
-            "scenario": "Team hunts a massive failure, when it was a config typo. Bias?",
+            "scenario": "Team hunts a massive failure, when it was a config typo. Which bias is at play?",
             "options": [
               "Proportionality bias.",
               "Availability heuristic.",
@@ -2712,7 +2712,7 @@
           "scenarioDoneTo": "You helped clean the house.",
           "scenarioYouDo": "You helped clean the house.",
           "challenge": {
-            "scenario": "You feel entitled to skip homework. What bias?",
+            "scenario": "You feel entitled to skip homework. Which bias is at play?",
             "options": [
               "Moral licensing.",
               "Self-serving bias.",
@@ -2728,7 +2728,7 @@
           "scenarioDoneTo": "You worked out this morning.",
           "scenarioYouDo": "You worked out this morning.",
           "challenge": {
-            "scenario": "You justify skipping the next 4 days. Bias?",
+            "scenario": "You justify skipping the next 4 days. Which bias is at play?",
             "options": [
               "Moral licensing.",
               "Optimism bias.",
@@ -2744,7 +2744,7 @@
           "scenarioDoneTo": "Company recycles heavily.",
           "scenarioYouDo": "Company recycles heavily.",
           "challenge": {
-            "scenario": "Leaders justify a big carbon expense as fine. Bias?",
+            "scenario": "Leaders justify a big carbon expense as fine. Which bias is at play?",
             "options": [
               "Moral licensing.",
               "Self-serving bias.",
@@ -2766,7 +2766,7 @@
           "scenarioDoneTo": "You cross a busy street quickly and make it.",
           "scenarioYouDo": "You cross a busy street quickly and make it.",
           "challenge": {
-            "scenario": "You call it a smart move. What bias?",
+            "scenario": "You call it a smart move. Which bias is at play?",
             "options": [
               "Outcome bias.",
               "Hindsight bias.",
@@ -2775,14 +2775,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Good outcome \u2260 good decision."
+          "tip": "Good outcome ≠ good decision."
         },
         "2": {
           "definition": "You judge the choice by results, not process.",
           "scenarioDoneTo": "A risky trade pays off.",
           "scenarioYouDo": "A risky trade pays off.",
           "challenge": {
-            "scenario": "You conclude the plan was smart, not lucky. Bias?",
+            "scenario": "You conclude the plan was smart, not lucky. Which bias is at play?",
             "options": [
               "Outcome bias.",
               "Hindsight bias.",
@@ -2798,7 +2798,7 @@
           "scenarioDoneTo": "A bet paid off in one draw of a wide distribution.",
           "scenarioYouDo": "A bet paid off in one draw of a wide distribution.",
           "challenge": {
-            "scenario": "Team credits the process; ignores the odds. Bias?",
+            "scenario": "Team credits the process; ignores the odds. Which bias is at play?",
             "options": [
               "Outcome bias.",
               "Survivorship bias.",
@@ -2820,7 +2820,7 @@
           "scenarioDoneTo": "You believed a fact. It got debunked.",
           "scenarioYouDo": "You believed a fact. It got debunked.",
           "challenge": {
-            "scenario": "You still believe it. What bias?",
+            "scenario": "You still believe it. Which bias is at play?",
             "options": [
               "Belief perseverance.",
               "Backfire effect.",
@@ -2836,7 +2836,7 @@
           "scenarioDoneTo": "You believed a story from years ago.",
           "scenarioYouDo": "You believed a story from years ago.",
           "challenge": {
-            "scenario": "Even after correction, you still feel it's true. Bias?",
+            "scenario": "Even after correction, you still feel it's true. Which bias is at play?",
             "options": [
               "Belief perseverance.",
               "Illusory truth effect.",
@@ -2852,7 +2852,7 @@
           "scenarioDoneTo": "New data contradicts the current thesis.",
           "scenarioYouDo": "New data contradicts the current thesis.",
           "challenge": {
-            "scenario": "The team keeps the thesis intact. Bias?",
+            "scenario": "The team keeps the thesis intact. Which bias is at play?",
             "options": [
               "Belief perseverance.",
               "Backfire effect.",
@@ -2874,7 +2874,7 @@
           "scenarioDoneTo": "You're picking between two flavors.",
           "scenarioYouDo": "You're picking between two flavors.",
           "challenge": {
-            "scenario": "You look up 12 reviews for a $2 ice cream. What bias?",
+            "scenario": "You look up 12 reviews for a $2 ice cream. Which bias is at play?",
             "options": [
               "Information bias.",
               "Analysis paralysis.",
@@ -2883,14 +2883,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "More info \u2260 better decision."
+          "tip": "More info ≠ better decision."
         },
         "2": {
           "definition": "Gathering info that can't change your action.",
           "scenarioDoneTo": "You're deciding between two similar apartments.",
           "scenarioYouDo": "You're deciding between two similar apartments.",
           "challenge": {
-            "scenario": "You keep researching irrelevant details for hours. Bias?",
+            "scenario": "You keep researching irrelevant details for hours. Which bias is at play?",
             "options": [
               "Information bias.",
               "Analysis paralysis.",
@@ -2906,7 +2906,7 @@
           "scenarioDoneTo": "Team runs another study to decide.",
           "scenarioYouDo": "Team runs another study to decide.",
           "challenge": {
-            "scenario": "Even a null result won't change the plan. Bias?",
+            "scenario": "Even a null result won't change the plan. Which bias is at play?",
             "options": [
               "Information bias.",
               "Ambiguity effect.",
@@ -2928,7 +2928,7 @@
           "scenarioDoneTo": "You're worried about grades.",
           "scenarioYouDo": "You're worried about grades.",
           "challenge": {
-            "scenario": "Everyone's report cards catch your eye. What bias?",
+            "scenario": "Everyone's report cards catch your eye. Which bias is at play?",
             "options": [
               "Attentional bias.",
               "Availability heuristic.",
@@ -2944,7 +2944,7 @@
           "scenarioDoneTo": "You're anxious about health.",
           "scenarioYouDo": "You're anxious about health.",
           "challenge": {
-            "scenario": "Every symptom online catches your eye. Bias?",
+            "scenario": "Every symptom online catches your eye. Which bias is at play?",
             "options": [
               "Attentional bias.",
               "Availability heuristic.",
@@ -2960,7 +2960,7 @@
           "scenarioDoneTo": "A leader worries about churn.",
           "scenarioYouDo": "A leader worries about churn.",
           "challenge": {
-            "scenario": "Every dashboard filter is churn. Growth suffers. Bias?",
+            "scenario": "Every dashboard filter is churn. Growth suffers. Which bias is at play?",
             "options": [
               "Attentional bias.",
               "Availability heuristic.",
@@ -2982,7 +2982,7 @@
           "scenarioDoneTo": "The GPS tells you to turn into a lake.",
           "scenarioYouDo": "The GPS tells you to turn into a lake.",
           "challenge": {
-            "scenario": "You'd almost follow it. What bias?",
+            "scenario": "You'd almost follow it. Which bias is at play?",
             "options": [
               "Automation bias.",
               "Authority bias.",
@@ -2998,7 +2998,7 @@
           "scenarioDoneTo": "A calculator says 2 + 2 = 22.",
           "scenarioYouDo": "A calculator says 2 + 2 = 22.",
           "challenge": {
-            "scenario": "You write 22 because 'the calculator said so.' Bias?",
+            "scenario": "You write 22 because 'the calculator said so.' Which bias is at play?",
             "options": [
               "Automation bias.",
               "Authority bias.",
@@ -3014,7 +3014,7 @@
           "scenarioDoneTo": "A model recommends a bad move.",
           "scenarioYouDo": "A model recommends a bad move.",
           "challenge": {
-            "scenario": "The team follows despite red flags. Bias?",
+            "scenario": "The team follows despite red flags. Which bias is at play?",
             "options": [
               "Automation bias.",
               "Authority bias.",
@@ -3036,7 +3036,7 @@
           "scenarioDoneTo": "You help a new kid with homework.",
           "scenarioYouDo": "You help a new kid with homework.",
           "challenge": {
-            "scenario": "You start liking them more afterward. What bias?",
+            "scenario": "You start liking them more afterward. Which bias is at play?",
             "options": [
               "Ben Franklin effect.",
               "Halo effect.",
@@ -3052,7 +3052,7 @@
           "scenarioDoneTo": "You lend a book to a coworker.",
           "scenarioYouDo": "You lend a book to a coworker.",
           "challenge": {
-            "scenario": "You warm up to them afterward. Bias?",
+            "scenario": "You warm up to them afterward. Which bias is at play?",
             "options": [
               "Ben Franklin effect.",
               "Halo effect.",
@@ -3068,7 +3068,7 @@
           "scenarioDoneTo": "You mentor a rival team member.",
           "scenarioYouDo": "You mentor a rival team member.",
           "challenge": {
-            "scenario": "You now root for them. Bias?",
+            "scenario": "You now root for them. Which bias is at play?",
             "options": [
               "Ben Franklin effect.",
               "Empathy gap.",
@@ -3090,7 +3090,7 @@
           "scenarioDoneTo": "You flip a coin and get HHHH.",
           "scenarioYouDo": "You flip a coin and get HHHH.",
           "challenge": {
-            "scenario": "You feel like it's rigged. What bias?",
+            "scenario": "You feel like it's rigged. Which bias is at play?",
             "options": [
               "Clustering illusion.",
               "Availability heuristic.",
@@ -3106,7 +3106,7 @@
           "scenarioDoneTo": "A basketball player hits 4 shots in a row.",
           "scenarioYouDo": "A basketball player hits 4 shots in a row.",
           "challenge": {
-            "scenario": "You call it a hot streak with meaning. Bias?",
+            "scenario": "You call it a hot streak with meaning. Which bias is at play?",
             "options": [
               "Clustering illusion.",
               "Hot-hand fallacy.",
@@ -3122,7 +3122,7 @@
           "scenarioDoneTo": "A metric spikes for three days.",
           "scenarioYouDo": "A metric spikes for three days.",
           "challenge": {
-            "scenario": "You announce a trend. Bias?",
+            "scenario": "You announce a trend. Which bias is at play?",
             "options": [
               "Clustering illusion.",
               "Recency bias.",
@@ -3144,7 +3144,7 @@
           "scenarioDoneTo": "You win three carnival games.",
           "scenarioYouDo": "You win three carnival games.",
           "challenge": {
-            "scenario": "You feel unstoppable and bet more. What bias?",
+            "scenario": "You feel unstoppable and bet more. Which bias is at play?",
             "options": [
               "Hot-hand fallacy.",
               "Optimism bias.",
@@ -3160,7 +3160,7 @@
           "scenarioDoneTo": "Your team wins 4 games in a row.",
           "scenarioYouDo": "Your team wins 4 games in a row.",
           "challenge": {
-            "scenario": "You expect a 5th. Bias?",
+            "scenario": "You expect a 5th. Which bias is at play?",
             "options": [
               "Hot-hand fallacy.",
               "Recency bias.",
@@ -3176,7 +3176,7 @@
           "scenarioDoneTo": "Your fund had three great quarters.",
           "scenarioYouDo": "Your fund had three great quarters.",
           "challenge": {
-            "scenario": "You size up positions for the next. Bias?",
+            "scenario": "You size up positions for the next. Which bias is at play?",
             "options": [
               "Hot-hand fallacy.",
               "Recency bias.",
@@ -3198,7 +3198,7 @@
           "scenarioDoneTo": "You promise to share candy tomorrow.",
           "scenarioYouDo": "You promise to share candy tomorrow.",
           "challenge": {
-            "scenario": "Tomorrow you don't want to. What bias?",
+            "scenario": "Tomorrow you don't want to. Which bias is at play?",
             "options": [
               "Empathy gap.",
               "Projection bias.",
@@ -3214,7 +3214,7 @@
           "scenarioDoneTo": "You plan to study during finals week.",
           "scenarioYouDo": "You plan to study during finals week.",
           "challenge": {
-            "scenario": "Come finals, you're too fried to follow through. Bias?",
+            "scenario": "Come finals, you're too fried to follow through. Which bias is at play?",
             "options": [
               "Empathy gap.",
               "Planning fallacy.",
@@ -3230,7 +3230,7 @@
           "scenarioDoneTo": "You promise a demanding rollout schedule.",
           "scenarioYouDo": "You promise a demanding rollout schedule.",
           "challenge": {
-            "scenario": "In launch stress you break the commitment. Bias?",
+            "scenario": "In launch stress you break the commitment. Which bias is at play?",
             "options": [
               "Empathy gap.",
               "Planning fallacy.",
@@ -3252,7 +3252,7 @@
           "scenarioDoneTo": "A friend needs help you could give.",
           "scenarioYouDo": "A friend needs help you could give.",
           "challenge": {
-            "scenario": "You do nothing to 'stay out of it.' What bias?",
+            "scenario": "You do nothing to 'stay out of it.' Which bias is at play?",
             "options": [
               "Omission bias.",
               "Bystander effect.",
@@ -3264,11 +3264,11 @@
           "tip": "Not choosing is choosing."
         },
         "2": {
-          "definition": "Inaction feels less risky than action \u2014 even when it's worse.",
+          "definition": "Inaction feels less risky than action — even when it's worse.",
           "scenarioDoneTo": "A vaccine is available.",
           "scenarioYouDo": "A vaccine is available.",
           "challenge": {
-            "scenario": "You skip it 'to be safe' \u2014 riskier by odds. Bias?",
+            "scenario": "You skip it 'to be safe' — riskier by odds. Which bias is at play?",
             "options": [
               "Omission bias.",
               "Loss aversion.",
@@ -3284,7 +3284,7 @@
           "scenarioDoneTo": "Team can pivot early or wait out a decline.",
           "scenarioYouDo": "Team can pivot early or wait out a decline.",
           "challenge": {
-            "scenario": "Team stalls because acting feels riskier. Bias?",
+            "scenario": "Team stalls because acting feels riskier. Which bias is at play?",
             "options": [
               "Omission bias.",
               "Status quo bias.",
@@ -3306,7 +3306,7 @@
           "scenarioDoneTo": "A new toy comes out.",
           "scenarioYouDo": "A new toy comes out.",
           "challenge": {
-            "scenario": "You want it even though your old one is fine. What bias?",
+            "scenario": "You want it even though your old one is fine. Which bias is at play?",
             "options": [
               "Appeal to novelty.",
               "Bandwagon effect.",
@@ -3315,14 +3315,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "New \u2260 better. Try before you upgrade."
+          "tip": "New ≠ better. Try before you upgrade."
         },
         "2": {
           "definition": "Assuming the new version wins because it's the new version.",
           "scenarioDoneTo": "A new phone has a slightly bigger screen.",
           "scenarioYouDo": "A new phone has a slightly bigger screen.",
           "challenge": {
-            "scenario": "You upgrade even though your current one works fine. Bias?",
+            "scenario": "You upgrade even though your current one works fine. Which bias is at play?",
             "options": [
               "Appeal to novelty.",
               "Bandwagon effect.",
@@ -3338,7 +3338,7 @@
           "scenarioDoneTo": "A new framework replaces a working one.",
           "scenarioYouDo": "A new framework replaces a working one.",
           "challenge": {
-            "scenario": "Team migrates for 'newness' alone. Bias?",
+            "scenario": "Team migrates for 'newness' alone. Which bias is at play?",
             "options": [
               "Appeal to novelty.",
               "Bandwagon effect.",
@@ -3360,7 +3360,7 @@
           "scenarioDoneTo": "A game auto-picks a character.",
           "scenarioYouDo": "A game auto-picks a character.",
           "challenge": {
-            "scenario": "You use it without checking others. What bias?",
+            "scenario": "You use it without checking others. Which bias is at play?",
             "options": [
               "Default effect.",
               "Status quo bias.",
@@ -3376,7 +3376,7 @@
           "scenarioDoneTo": "An app opts you into a plan by default.",
           "scenarioYouDo": "An app opts you into a plan by default.",
           "challenge": {
-            "scenario": "You stay on it even though a cheaper plan fits. Bias?",
+            "scenario": "You stay on it even though a cheaper plan fits. Which bias is at play?",
             "options": [
               "Default effect.",
               "Status quo bias.",
@@ -3392,7 +3392,7 @@
           "scenarioDoneTo": "An enterprise tool ships with defaults.",
           "scenarioYouDo": "An enterprise tool ships with defaults.",
           "challenge": {
-            "scenario": "Nobody reviews. Six months later they lock in. Bias?",
+            "scenario": "Nobody reviews. Six months later they lock in. Which bias is at play?",
             "options": [
               "Default effect.",
               "Status quo bias.",
@@ -3414,7 +3414,7 @@
           "scenarioDoneTo": "Someone asks if you brushed your teeth.",
           "scenarioYouDo": "Someone asks if you brushed your teeth.",
           "challenge": {
-            "scenario": "You say yes even though you didn't. What bias?",
+            "scenario": "You say yes even though you didn't. Which bias is at play?",
             "options": [
               "Social desirability bias.",
               "Confirmation bias.",
@@ -3430,7 +3430,7 @@
           "scenarioDoneTo": "A survey asks about your habits.",
           "scenarioYouDo": "A survey asks about your habits.",
           "challenge": {
-            "scenario": "You over-report exercise and study. Bias?",
+            "scenario": "You over-report exercise and study. Which bias is at play?",
             "options": [
               "Social desirability bias.",
               "Self-serving bias.",
@@ -3446,7 +3446,7 @@
           "scenarioDoneTo": "An engagement survey is not anonymous.",
           "scenarioYouDo": "An engagement survey is not anonymous.",
           "challenge": {
-            "scenario": "Scores skew positive despite real issues. Bias?",
+            "scenario": "Scores skew positive despite real issues. Which bias is at play?",
             "options": [
               "Social desirability bias.",
               "Groupthink.",
@@ -3468,7 +3468,7 @@
           "scenarioDoneTo": "'An apple a day keeps the doctor away.'",
           "scenarioYouDo": "'An apple a day keeps the doctor away.'",
           "challenge": {
-            "scenario": "It feels true because it rhymes. What bias?",
+            "scenario": "It feels true because it rhymes. Which bias is at play?",
             "options": [
               "Rhyme-as-reason effect.",
               "Illusory truth effect.",
@@ -3484,7 +3484,7 @@
           "scenarioDoneTo": "'If the glove don't fit, you must acquit.'",
           "scenarioYouDo": "'If the glove don't fit, you must acquit.'",
           "challenge": {
-            "scenario": "The rhyme sways your view of the argument. Bias?",
+            "scenario": "The rhyme sways your view of the argument. Which bias is at play?",
             "options": [
               "Rhyme-as-reason effect.",
               "Illusory truth effect.",
@@ -3500,7 +3500,7 @@
           "scenarioDoneTo": "A slogan-driven memo circulates.",
           "scenarioYouDo": "A slogan-driven memo circulates.",
           "challenge": {
-            "scenario": "The strategy 'feels right' because it rhymes. Bias?",
+            "scenario": "The strategy 'feels right' because it rhymes. Which bias is at play?",
             "options": [
               "Rhyme-as-reason effect.",
               "Illusory truth effect.",
@@ -3522,7 +3522,7 @@
           "scenarioDoneTo": "A photo of your friend group.",
           "scenarioYouDo": "A photo of your friend group.",
           "challenge": {
-            "scenario": "Each face is more appealing in the group. What bias?",
+            "scenario": "Each face is more appealing in the group. Which bias is at play?",
             "options": [
               "Cheerleader effect.",
               "Halo effect.",
@@ -3538,7 +3538,7 @@
           "scenarioDoneTo": "A band photo vs. solo shots.",
           "scenarioYouDo": "A band photo vs. solo shots.",
           "challenge": {
-            "scenario": "The group looks stronger than each solo. Bias?",
+            "scenario": "The group looks stronger than each solo. Which bias is at play?",
             "options": [
               "Cheerleader effect.",
               "Halo effect.",
@@ -3554,7 +3554,7 @@
           "scenarioDoneTo": "Team headshot vs. individuals.",
           "scenarioYouDo": "Team headshot vs. individuals.",
           "challenge": {
-            "scenario": "The team feels stronger than any single member. Bias?",
+            "scenario": "The team feels stronger than any single member. Which bias is at play?",
             "options": [
               "Cheerleader effect.",
               "Halo effect.",
@@ -3573,10 +3573,10 @@
       "tiers": {
         "1": {
           "definition": "You believe things you hear over and over, even if they're false.",
-          "scenarioDoneTo": "'Bulls hate red' \u2014 they don't.",
-          "scenarioYouDo": "'Bulls hate red' \u2014 they don't.",
+          "scenarioDoneTo": "'Bulls hate red' — they don't.",
+          "scenarioYouDo": "'Bulls hate red' — they don't.",
           "challenge": {
-            "scenario": "You believe it because you've heard it a lot. What bias?",
+            "scenario": "You believe it because you've heard it a lot. Which bias is at play?",
             "options": [
               "Illusory truth effect.",
               "Bandwagon effect.",
@@ -3585,14 +3585,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Repeated \u2260 real."
+          "tip": "Repeated ≠ real."
         },
         "2": {
           "definition": "Repetition raises perceived truth.",
           "scenarioDoneTo": "A myth trends for a week.",
           "scenarioYouDo": "A myth trends for a week.",
           "challenge": {
-            "scenario": "You start to believe it despite no evidence. Bias?",
+            "scenario": "You start to believe it despite no evidence. Which bias is at play?",
             "options": [
               "Illusory truth effect.",
               "Bandwagon effect.",
@@ -3608,7 +3608,7 @@
           "scenarioDoneTo": "A talking point is repeated in memos.",
           "scenarioYouDo": "A talking point is repeated in memos.",
           "challenge": {
-            "scenario": "The team treats it as truth without a source. Bias?",
+            "scenario": "The team treats it as truth without a source. Which bias is at play?",
             "options": [
               "Illusory truth effect.",
               "Groupthink.",
@@ -3630,7 +3630,7 @@
           "scenarioDoneTo": "You've googled it 10 times.",
           "scenarioYouDo": "You've googled it 10 times.",
           "challenge": {
-            "scenario": "You still can't remember. What bias?",
+            "scenario": "You still can't remember. Which bias is at play?",
             "options": [
               "Google effect.",
               "Availability heuristic.",
@@ -3639,14 +3639,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Write it down. Externalized \u2260 known."
+          "tip": "Write it down. Externalized ≠ known."
         },
         "2": {
           "definition": "The brain outsources memory to the web.",
           "scenarioDoneTo": "You outsource all facts to search.",
           "scenarioYouDo": "You outsource all facts to search.",
           "challenge": {
-            "scenario": "You struggle to recall stuff you use daily. Bias?",
+            "scenario": "You struggle to recall stuff you use daily. Which bias is at play?",
             "options": [
               "Google effect.",
               "Curse of knowledge.",
@@ -3662,7 +3662,7 @@
           "scenarioDoneTo": "Team relies fully on the wiki.",
           "scenarioYouDo": "Team relies fully on the wiki.",
           "challenge": {
-            "scenario": "Nobody actually knows the reasoning. Bias?",
+            "scenario": "Nobody actually knows the reasoning. Which bias is at play?",
             "options": [
               "Google effect.",
               "Curse of knowledge.",
@@ -3684,7 +3684,7 @@
           "scenarioDoneTo": "A friend suggests a good game plan.",
           "scenarioYouDo": "A friend suggests a good game plan.",
           "challenge": {
-            "scenario": "You reject it because it wasn't yours. What bias?",
+            "scenario": "You reject it because it wasn't yours. Which bias is at play?",
             "options": [
               "Not-invented-here syndrome.",
               "In-group bias.",
@@ -3700,7 +3700,7 @@
           "scenarioDoneTo": "A rival team publishes a good method.",
           "scenarioYouDo": "A rival team publishes a good method.",
           "challenge": {
-            "scenario": "Your team refuses to try it. Bias?",
+            "scenario": "Your team refuses to try it. Which bias is at play?",
             "options": [
               "Not-invented-here syndrome.",
               "In-group bias.",
@@ -3716,7 +3716,7 @@
           "scenarioDoneTo": "A vendor tool clearly beats homegrown.",
           "scenarioYouDo": "A vendor tool clearly beats homegrown.",
           "challenge": {
-            "scenario": "Team builds their own anyway. Bias?",
+            "scenario": "Team builds their own anyway. Which bias is at play?",
             "options": [
               "Not-invented-here syndrome.",
               "IKEA effect.",
@@ -3738,7 +3738,7 @@
           "scenarioDoneTo": "You struggled to earn a prize.",
           "scenarioYouDo": "You struggled to earn a prize.",
           "challenge": {
-            "scenario": "You love it more than an easy prize. What bias?",
+            "scenario": "You love it more than an easy prize. Which bias is at play?",
             "options": [
               "Effort justification.",
               "IKEA effect.",
@@ -3754,7 +3754,7 @@
           "scenarioDoneTo": "A club had a tough hazing to join.",
           "scenarioYouDo": "A club had a tough hazing to join.",
           "challenge": {
-            "scenario": "You're more loyal than to easier clubs. Bias?",
+            "scenario": "You're more loyal than to easier clubs. Which bias is at play?",
             "options": [
               "Effort justification.",
               "IKEA effect.",
@@ -3770,7 +3770,7 @@
           "scenarioDoneTo": "A grueling MBA path.",
           "scenarioYouDo": "A grueling MBA path.",
           "challenge": {
-            "scenario": "You defend it as clearly worth the cost. Bias?",
+            "scenario": "You defend it as clearly worth the cost. Which bias is at play?",
             "options": [
               "Effort justification.",
               "Sunk cost fallacy.",
@@ -3792,7 +3792,7 @@
           "scenarioDoneTo": "Two pizzas: one huge, one small.",
           "scenarioYouDo": "Two pizzas: one huge, one small.",
           "challenge": {
-            "scenario": "The small one feels tiny. What bias?",
+            "scenario": "The small one feels tiny. Which bias is at play?",
             "options": [
               "Contrast effect.",
               "Framing effect.",
@@ -3808,7 +3808,7 @@
           "scenarioDoneTo": "A house showing after a mansion.",
           "scenarioYouDo": "A house showing after a mansion.",
           "challenge": {
-            "scenario": "It feels small even though it's average. Bias?",
+            "scenario": "It feels small even though it's average. Which bias is at play?",
             "options": [
               "Contrast effect.",
               "Anchoring bias.",
@@ -3824,7 +3824,7 @@
           "scenarioDoneTo": "Candidate B follows a star candidate A.",
           "scenarioYouDo": "Candidate B follows a star candidate A.",
           "challenge": {
-            "scenario": "B seems weaker than if they'd interviewed alone. Bias?",
+            "scenario": "B seems weaker than if they'd interviewed alone. Which bias is at play?",
             "options": [
               "Contrast effect.",
               "Anchoring bias.",
@@ -3846,7 +3846,7 @@
           "scenarioDoneTo": "A cloud that looks like a bunny.",
           "scenarioYouDo": "A cloud that looks like a bunny.",
           "challenge": {
-            "scenario": "You're sure the cloud is a bunny. What bias?",
+            "scenario": "You're sure the cloud is a bunny. Which bias is at play?",
             "options": [
               "Pareidolia.",
               "Clustering illusion.",
@@ -3862,7 +3862,7 @@
           "scenarioDoneTo": "A face in your morning toast.",
           "scenarioYouDo": "A face in your morning toast.",
           "challenge": {
-            "scenario": "It feels like a sign. Bias?",
+            "scenario": "It feels like a sign. Which bias is at play?",
             "options": [
               "Pareidolia.",
               "Illusion of control.",
@@ -3878,7 +3878,7 @@
           "scenarioDoneTo": "A pattern in the noise of a chart.",
           "scenarioYouDo": "A pattern in the noise of a chart.",
           "challenge": {
-            "scenario": "You call it a signal without a test. Bias?",
+            "scenario": "You call it a signal without a test. Which bias is at play?",
             "options": [
               "Pareidolia.",
               "Clustering illusion.",
@@ -3900,7 +3900,7 @@
           "scenarioDoneTo": "A school rule seems unfair.",
           "scenarioYouDo": "A school rule seems unfair.",
           "challenge": {
-            "scenario": "You defend it because it's 'the rule.' What bias?",
+            "scenario": "You defend it because it's 'the rule.' Which bias is at play?",
             "options": [
               "System justification.",
               "Status quo bias.",
@@ -3916,7 +3916,7 @@
           "scenarioDoneTo": "A grading policy hurts you.",
           "scenarioYouDo": "A grading policy hurts you.",
           "challenge": {
-            "scenario": "You defend it anyway. Bias?",
+            "scenario": "You defend it anyway. Which bias is at play?",
             "options": [
               "System justification.",
               "Status quo bias.",
@@ -3932,7 +3932,7 @@
           "scenarioDoneTo": "A policy limits mobility across teams.",
           "scenarioYouDo": "A policy limits mobility across teams.",
           "challenge": {
-            "scenario": "Beneficiaries defend it as fair. Bias?",
+            "scenario": "Beneficiaries defend it as fair. Which bias is at play?",
             "options": [
               "System justification.",
               "In-group bias.",
@@ -3954,7 +3954,7 @@
           "scenarioDoneTo": "A rumor spreads at school.",
           "scenarioYouDo": "A rumor spreads at school.",
           "challenge": {
-            "scenario": "Everyone talks about it \u2014 you assume it's true. What bias?",
+            "scenario": "Everyone talks about it — you assume it's true. Which bias is at play?",
             "options": [
               "Availability cascade.",
               "Bandwagon effect.",
@@ -3963,14 +3963,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Volume \u2260 truth."
+          "tip": "Volume ≠ truth."
         },
         "2": {
           "definition": "Repetition amplifies a story's perceived importance.",
           "scenarioDoneTo": "A news story dominates the week.",
           "scenarioYouDo": "A news story dominates the week.",
           "challenge": {
-            "scenario": "You inflate its real risk. Bias?",
+            "scenario": "You inflate its real risk. Which bias is at play?",
             "options": [
               "Availability cascade.",
               "Availability heuristic.",
@@ -3986,7 +3986,7 @@
           "scenarioDoneTo": "A rare risk trends in every earnings call.",
           "scenarioYouDo": "A rare risk trends in every earnings call.",
           "challenge": {
-            "scenario": "The market prices it as more likely than it is. Bias?",
+            "scenario": "The market prices it as more likely than it is. Which bias is at play?",
             "options": [
               "Availability cascade.",
               "Availability heuristic.",
@@ -4008,7 +4008,7 @@
           "scenarioDoneTo": "$5 in quarters vs. one $5 bill.",
           "scenarioYouDo": "$5 in quarters vs. one $5 bill.",
           "challenge": {
-            "scenario": "You spend the quarters and save the bill. What bias?",
+            "scenario": "You spend the quarters and save the bill. Which bias is at play?",
             "options": [
               "Denomination effect.",
               "Endowment effect.",
@@ -4024,7 +4024,7 @@
           "scenarioDoneTo": "You have a $20 and four $5s.",
           "scenarioYouDo": "You have a $20 and four $5s.",
           "challenge": {
-            "scenario": "You spend the $5s fast, hold the $20. Bias?",
+            "scenario": "You spend the $5s fast, hold the $20. Which bias is at play?",
             "options": [
               "Denomination effect.",
               "Mental accounting.",
@@ -4040,7 +4040,7 @@
           "scenarioDoneTo": "Small daily charges vs. one big invoice.",
           "scenarioYouDo": "Small daily charges vs. one big invoice.",
           "challenge": {
-            "scenario": "Team scrutinizes the invoice, ignores the drips. Bias?",
+            "scenario": "Team scrutinizes the invoice, ignores the drips. Which bias is at play?",
             "options": [
               "Denomination effect.",
               "Mental accounting.",
@@ -4062,7 +4062,7 @@
           "scenarioDoneTo": "You didn't finish your homework.",
           "scenarioYouDo": "You didn't finish your homework.",
           "challenge": {
-            "scenario": "You can't stop thinking about it at bedtime. What bias?",
+            "scenario": "You can't stop thinking about it at bedtime. Which bias is at play?",
             "options": [
               "Zeigarnik effect.",
               "Attentional bias.",
@@ -4078,7 +4078,7 @@
           "scenarioDoneTo": "A conversation ended mid-topic.",
           "scenarioYouDo": "A conversation ended mid-topic.",
           "challenge": {
-            "scenario": "You keep replaying it in your head. Bias?",
+            "scenario": "You keep replaying it in your head. Which bias is at play?",
             "options": [
               "Zeigarnik effect.",
               "Attentional bias.",
@@ -4087,14 +4087,14 @@
             "correct": 0
           },
           "altChallenges": [],
-          "tip": "Close the loop \u2014 note next step, or let it go."
+          "tip": "Close the loop — note next step, or let it go."
         },
         "3": {
           "definition": "Incomplete tasks show privileged memory access.",
           "scenarioDoneTo": "Team leaves a decision unresolved.",
           "scenarioYouDo": "Team leaves a decision unresolved.",
           "challenge": {
-            "scenario": "Focus fragments the rest of the week. Bias?",
+            "scenario": "Focus fragments the rest of the week. Which bias is at play?",
             "options": [
               "Zeigarnik effect.",
               "Attentional bias.",
